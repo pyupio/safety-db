@@ -3864,6 +3864,12 @@
             "v": "<1.4.20"
         }
     ],
+    "rpyc": [
+        {
+            "changelog": "-----\n* Changed versioning scheme: now 3.0.3 instead of 3.03, and the version tuple is (3, 0, 3)\n\n* Added ``servers/vdbconf.py`` - a utility to manage verifier databases (used by ``tlslite``)\n\n* Added the ``--vdb`` switch to ``classic_server.py``, which invokes a secure server\n  (TLS) with the given VDB file.\n\n\n",
+            "v": "<3.0.3"
+        }
+    ],
     "rsa": [
         {
             "cve": "CVE-2016-1494",
