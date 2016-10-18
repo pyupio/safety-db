@@ -3768,6 +3768,10 @@
         },
         {
             "changelog": "-------------\n\n- [SECURITY] Fixed a bug which allows API keys more permission than granted within the organization.\n\n",
+            "v": "<8.2.5"
+        },
+        {
+            "changelog": "-------------\n\n- [SECURITY] Fixed a bug which allows API keys more permission than granted within the organization.\n\n",
             "v": "<8.3.3"
         },
         {
