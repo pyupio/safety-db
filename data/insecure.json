@@ -92,6 +92,9 @@
     "formencode": [
         "<1.0"
     ],
+    "glances": [
+        "<2.0"
+    ],
     "google-appengine": [
         "<1.5.4"
     ],
