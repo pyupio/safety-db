@@ -313,6 +313,9 @@
     "maxminddb": [
         "<1.1.2"
     ],
+    "medialog.mobilethemetwo": [
+        "<0.5.7dev"
+    ],
     "mgp2pdf": [
         "<0.10"
     ],
