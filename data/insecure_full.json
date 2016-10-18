@@ -1738,6 +1738,12 @@
             "v": "<5.1.2"
         }
     ],
+    "flask": [
+        {
+            "changelog": "-------------\n\nBugfix release, released on December 31st 2010\n\n- Fixed an issue where the default ``OPTIONS`` response was\n  not exposing all valid methods in the ``Allow`` header.\n- Jinja2 template loading syntax now allows \"./\" in front of\n  a template load path.  Previously this caused issues with\n  module setups.\n- Fixed an issue where the subdomain setting for modules was\n  ignored for the static folder.\n- Fixed a security problem that allowed clients to download arbitrary files\n  if the host server was a windows based operating system and the client\n  uses backslashes to escape the directory the files where exposed from.\n\n",
+            "v": "<0.6.1"
+        }
+    ],
     "flask-oauthlib": [
         {
             "changelog": "-------------\n\nReleased on Mar 9, 2015\n\n- Improve on security.\n- Fix on contrib client.\n\n",
