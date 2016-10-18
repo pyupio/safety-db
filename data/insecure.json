@@ -134,6 +134,9 @@
     "nova": [
         "<2013.2.3"
     ],
+    "oscrypto": [
+        "<0.14.2"
+    ],
     "ovirt-engine-sdk-python": [
         "<3.1.0.8"
     ],
