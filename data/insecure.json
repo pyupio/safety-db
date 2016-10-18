@@ -120,6 +120,9 @@
     "django-autocomplete-light": [
         "<2.3.0"
     ],
+    "django-cookieless": [
+        "<0.2"
+    ],
     "django-embed-video": [
         "<0.3"
     ],
