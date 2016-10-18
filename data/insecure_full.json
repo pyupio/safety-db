@@ -1876,6 +1876,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "kinetic": [
+        {
+            "changelog": "===========================\n\n New features\n- Added setSecurity on AdminClient\n- Added getVersion and getVersionAsync to the library.\n\n Bug Fixes\n- Fixed tests not running and testcases with hardcoded 'localhost'\n- Fixed flush operation build parameters (Merge 5, contributed by rpcope1).\n- AsyncClient returns NotConnected exception when an operation is attempted on a client before calling connect().\n- Lowered default number of keys asked on ranges to 200 (ASKOVAD-287).\n- Fixed typo on baset test case (Merge 2, contributed by zaitcev).\n\n",
+            "v": "<0.7.1"
+        }
+    ],
     "lambdajson": [
         {
             "changelog": "-- Security fix. Using ast.literal_eval as eval.\n\n",
