@@ -3440,6 +3440,12 @@
             "v": "<1.0.5"
         }
     ],
+    "python-dbusmock": [
+        {
+            "changelog": "-------------------\n - SECURITY FIX: When loading a template from an arbitrary file through the\n   AddTemplate() D-Bus method call or DBusTestCase.spawn_server_template()\n   Python method, don't create or use Python's *.pyc cached files. By tricking\n   a user into loading a template from a world-writable directory like /tmp, an\n   attacker could run arbitrary code with the user's privileges by putting a\n   crafted .pyc file into that directory. Note that this is highly unlikely to\n   actually appear in practice as custom dbusmock templates are usually shipped\n   in project directories, not directly in world-writable directories.\n   Thanks to Simon McVittie for discovering this!\n   (LP: 1453815, CVE-2015-1326)\n\n",
+            "v": "<0.15.1"
+        }
+    ],
     "python-keystoneclient": [
         {
             "cve": "CVE-2015-1852",
