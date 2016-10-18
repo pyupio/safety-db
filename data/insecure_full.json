@@ -1834,6 +1834,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-security": [
+        {
+            "changelog": "-------------\n\nReleased June 20th 2013\n\n- Fixed bug in `flask.ext.security.confirmable.generate_confirmation_link`\n\n\n",
+            "v": "<1.6.5"
+        }
+    ],
     "formencode": [
         {
             "cve": "CVE-2008-6547",
