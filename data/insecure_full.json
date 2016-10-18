@@ -61,6 +61,10 @@
     ],
     "bok-choy": [
         {
+            "changelog": "* Implement feature for XSS (cross-site scripting) vulnerability auditing\n* Added `scroll_to_element(element_selector)`\n* Make browser instantiation more resilient to transient webdriver failures\n* Disable default promo tabs on firefox profile\n* Updates for contributors (i.e. we use Slack now, not IRC)\n* Various improvements for how the bok-choy repo itself is tested\n* Python version compatibility improvements\n\n",
+            "v": "<0.5.0"
+        },
+        {
             "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",
             "v": "<0.5.1"
         }
