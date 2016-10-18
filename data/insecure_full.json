@@ -1705,6 +1705,12 @@
             "v": "<0.10"
         }
     ],
+    "geventhttpclient": [
+        {
+            "changelog": "=====\n\n- security: fix SSL support\n",
+            "v": "<1.2.0"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",
