@@ -361,6 +361,9 @@
     "pypiserver": [
         "<1.1.7"
     ],
+    "pyramid-odesk": [
+        "<1.1.2"
+    ],
     "pyshop": [
         "<0.7.1"
     ],
