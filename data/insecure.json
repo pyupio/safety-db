@@ -195,6 +195,9 @@
     "django-rated": [
         "<1.1.2"
     ],
+    "django-registration-redux": [
+        "<1.5"
+    ],
     "django-relatives": [
         "<0.3.0"
     ],
