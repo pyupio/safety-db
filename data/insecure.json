@@ -248,6 +248,9 @@
     "gandi.cli": [
         "<0.10"
     ],
+    "gevent": [
+        "<1.2a1"
+    ],
     "geventhttpclient": [
         "<1.2.0"
     ],
