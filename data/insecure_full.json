@@ -3393,6 +3393,12 @@
             "v": "<2.0.1"
         }
     ],
+    "tiddlyweb": [
+        {
+            "changelog": "\n  * SECURITY: Ensure that a password which exists but is the empty\n    string cannot auth.\n  * Make it so a tiddler with title ' ' is clickable in the HTML\n    serialization.\n\n",
+            "v": "<1.2.18"
+        }
+    ],
     "tornado": [
         {
             "cve": "CVE-2012-2374",
