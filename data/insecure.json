@@ -387,6 +387,9 @@
     "products.ldapuserfolder": [
         "<2.19"
     ],
+    "products.ploneldap": [
+        "<1.0"
+    ],
     "products.plonepas": [
         "<3.9"
     ],
