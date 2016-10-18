@@ -1875,6 +1875,12 @@
             "v": "<1.2.0"
         }
     ],
+    "gingerit": [
+        {
+            "changelog": "---------------------\n\n* Update to new secure api url\n\n\n",
+            "v": "<0.6"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",
