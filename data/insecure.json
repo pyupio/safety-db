@@ -219,6 +219,9 @@
     "pastescript": [
         "<1.7.5"
     ],
+    "pdc-updater": [
+        "<0.2.4"
+    ],
     "peppercorn": [
         "<0.5"
     ],
