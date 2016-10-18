@@ -1758,6 +1758,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "libtaxii": [
+        {
+            "changelog": "-------\n`(diff) <https://github.com/TAXIIProject/libtaxii/compare/1.1.104...1.1.105>`__\n\n- Fixed multiple XML parsing related vulnerabilities (Thanks guidovranken of IntelWorks for the vulnerability research!)\n\n",
+            "v": "<1.1.105"
+        }
+    ],
     "mailman": [
         {
             "cve": "CVE-2011-0707",
