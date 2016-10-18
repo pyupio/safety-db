@@ -2051,6 +2051,10 @@
     ],
     "gns3-gui": [
         {
+            "changelog": "\n* Support for full screen mode (View -> Fullscreen).\n* Bundled Qemu 0.13.0 in the Windows all-in-one. Default for all local Qemu VMs.\n* Bundled Qemu 0.14.1 in the Mac OS X App. Default for all local Qemu VMs.\n* Changed ASA defaults to use Qemu 0.13.0 (on Windows), have 4 interfaces and CPU throttling to 65%.\n* Fixed SecureCRT command line when space in the device name.\n* Fixed port sorting issues.\n* Added default path for VBoxManage on Mac OS X\n* Upgraded gns3-converter to version 1.1.1 for Windows all-in-one and Mac OS X DMG.\n* New idle-PC field validation.\n* Possibility to load the project from command line (or double-click on a project on Windows).\n* Fixed Unicode error when using VirtualBox VM with a name containing non-english characters.\n\n",
+            "v": "<1.2.1"
+        },
+        {
             "changelog": "\n* Try to fix a crash when reseting interface label\n* Fix a crash with broken file system\n* Fix EtherSwitch default name format\n* Fix crash when you have utf-8 char in the README\n* Fix rare crash when creating a link\n* Stop node before hot unlink\n* Prevent a crash due to issue in Qt\n* Add another security to prevent client to send empty hostname\n* Fix rare crash when deleting interface from the cloud\n* Fix rare crash in topology summary view\n* Ask user to send explanation if they cross a rare error\n* Fix rare crash when deleting a node\n* Hotlink support for Docker\n* Fix typo in the a warning dialog\n* Fix Remote GNS3 VM requires local server\n* Fix AttributeError: 'NoneType' object has no attribute '_server'\n* No timeout when importing a .gns3project\n\n",
             "v": "<1.5.1"
         }
