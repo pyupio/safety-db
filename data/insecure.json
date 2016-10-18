@@ -163,6 +163,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "eke.study": [
+        "<0.0.2"
+    ],
     "euphorie": [
         "<6.1"
     ],
