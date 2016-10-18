@@ -2055,6 +2055,12 @@
             "v": "<3.1.0.8"
         }
     ],
+    "paramiko": [
+        {
+            "changelog": "----------------------\n  * (bug 137219) catch EINTR and handle correctly\n  * (bug 157205) fix select() to trigger on stderr for a channel too\n  * added SSHClient.get_transport()\n  * added Channel.send_ready()\n  * added direct-tcpip forwarding [patch from david guerizec]\n  * fixed the PRNG to be more secure on windows and in cases where fork() is\n    called [patch from dwayne litzenberger]\n\n",
+            "v": "<1.7.2"
+        }
+    ],
     "pastescript": [
         {
             "cve": "CVE-2012-0878",
