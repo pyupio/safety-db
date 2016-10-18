@@ -1863,6 +1863,12 @@
             "v": "<1.2.0"
         }
     ],
+    "gocept.country": [
+        {
+            "changelog": "------------------\n\n- Added security declarations for tokens.\n\n",
+            "v": "<0.4.2"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",
