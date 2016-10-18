@@ -133,6 +133,9 @@
     "django-autocomplete-light": [
         "<2.3.0"
     ],
+    "django-crispy-forms": [
+        "<0.9.0"
+    ],
     "django-dajaxice-ng": [
         "<0.1.7"
     ],
