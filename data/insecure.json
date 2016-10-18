@@ -254,6 +254,9 @@
     "httpsig": [
         "<1.0.0"
     ],
+    "internetarchive": [
+        "<1.0.3"
+    ],
     "ipython": [
         "<3.2.2"
     ],
