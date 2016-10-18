@@ -1699,6 +1699,12 @@
             "v": "<0.10"
         }
     ],
+    "gocept.country": [
+        {
+            "changelog": "------------------\n\n- Added security declarations for token.\n- Bugfix in comparison of db objects, where `isinstance` returns False\n  for objects of the same type\n\n",
+            "v": "<0.6.2"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",
