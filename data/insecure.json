@@ -245,6 +245,9 @@
     "plone.mockup": [
         "<2.1.3"
     ],
+    "plone.namedfile": [
+        "<3.0.1"
+    ],
     "plone.openid": [
         "<2.0.2"
     ],
