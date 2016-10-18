@@ -377,7 +377,8 @@
         "<1.2.15"
     ],
     "plone.formwidget.contenttree": [
-        "<1.0a3"
+        "<1.0a3",
+        "<1.0b2"
     ],
     "plone.mockup": [
         "<2.1.3"
