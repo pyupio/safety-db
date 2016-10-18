@@ -3659,6 +3659,12 @@
             "v": "<1.5.2"
         }
     ],
+    "wtframework": [
+        {
+            "changelog": "- Fix broken map object in Chrome extension caused by increased Chrome security.\n- Tweaks to exception handling in WebdriverFactory and PageFactory to make it more \n  Appium friendly.\n- Additional desired capabilities properties can be passed in via ENV variable, \n  for example:\n\n       >export WTF_selenium_desired_capabilities_app=path/to/my/app\n\t\t\n  will set:\n   \n       desired_capabilities['app'] = \"path/to/my/app\"\n   \t\t\n   This is useful for passing additional capabilities that are dynamic via ENV vars.\t\t\n- Added `WebUtils.get_browser_datetime(driver)` for getting the date time local to the\n  browser.\n\n",
+            "v": "<0.4.7"
+        }
+    ],
     "zeep": [
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
