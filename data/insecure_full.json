@@ -3010,6 +3010,12 @@
             "v": "<2.1.1"
         }
     ],
+    "pycorrfit": [
+        {
+            "changelog": " - Added model functions to documentation.\n - Weights from fitting are now exported in .csv files.\n - Rework of info panel for fitting\n - Cleared unintuitive behavior of session saving:\n   The fitting parameters were read from the frontend. This could have\n   led to saving false fit meta data.\n - During fitting, units are now displayed as \"human readable\" (17).\n - Slider simulation now also uses human readable units (17).\n - Secured support for Ubuntu 12.10 and 13.04\n - Fixed: new line (\\n) characters for LaTeX plotting on Windows\n",
+            "v": "<0.7.5"
+        }
+    ],
     "pycrypto": [
         {
             "cve": "CVE-2013-1445",
