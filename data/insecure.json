@@ -404,6 +404,9 @@
     "pytest-server-fixtures": [
         "<1.1.0"
     ],
+    "pytest-virtualenv": [
+        "<1.1.0"
+    ],
     "python": [
         "<2.5.2",
         "<2.5.6c1",
