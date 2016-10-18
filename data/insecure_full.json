@@ -1520,6 +1520,12 @@
             "v": "<0.1.1"
         }
     ],
+    "django-herokuapp": [
+        {
+            "changelog": "-------------------\n\n- Adding an --app parameter to the herokuapp and heroku_deploy management commands.\n- Updating Django version for new security release.\n- Package updates for all base requirements.\n- Changing default HTTP server to waitress.\n- Adding default settings for HTTPS proxy headers and allowed hosts.\n\n\n",
+            "v": "<0.9.11"
+        }
+    ],
     "django-initial-avatars": [
         {
             "changelog": "\t- feat: avatar path now use md5 of username + first_name + last_name insted of simple username:\n\t\tpermit to updates the avatar when user changes its settings\n\t\t+ better for security\n",
