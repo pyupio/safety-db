@@ -478,6 +478,9 @@
     "products.ldapuserfolder": [
         "<2.19"
     ],
+    "products.membrane": [
+        "<2.1.1"
+    ],
     "products.plonepas": [
         "<3.9"
     ],

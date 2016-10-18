@@ -3116,6 +3116,12 @@
             "v": "<2.19"
         }
     ],
+    "products.membrane": [
+        {
+            "changelog": "------------------------\n\n- Made the getUserObject method private for better security.\n  Use ``portal_membership.getMemberInfo(user_id)`` when you need something\n  similar in a skin script or template.  Or ``pas_member`` on Plone 4.0+.\n  Problem reported by Richard Mitchell, thanks!\n  [maurits]\n\n\n",
+            "v": "<2.1.1"
+        }
+    ],
     "products.plonepas": [
         {
             "cve": "CVE-2009-0662",
