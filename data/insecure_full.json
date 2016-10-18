@@ -3723,6 +3723,12 @@
             "v": "<0.4.0"
         }
     ],
+    "ziirish": [
+        {
+            "changelog": "------------------\n\n- **BREAKING**: New configuration file format to allow further improvements (The conversion is automatic, but LDAP settings might need some attention)\n- **BREAKING**: Passwords are now *salted* for the *BASIC* authentication backend (The conversion is automatic too)\n- **BREAKING**: If you plan to use the SQL storage along with gunicorn, you **MUST** add the *--preload* parameter (see the *gunicorn.d/burp-ui* file)\n- Add: `Celery <http://www.celeryproject.org/>`_ support for asynchronous tasks\n- Add: `SQLAlchemy <http://www.sqlalchemy.org/>`_ support for persistent storage\n- Add: `RESTful restore <https://git.ziirish.me/ziirish/burp-ui/issues/111>`_\n- Add: `autoreload config <https://git.ziirish.me/ziirish/burp-ui/issues/142>`_\n- Add: `remember some user settings <https://git.ziirish.me/ziirish/burp-ui/issues/133>`_\n- Add: `client certificate revocation <https://git.ziirish.me/ziirish/burp-ui/issues/131>`_\n- Add: new `local authentication backend <https://git.ziirish.me/ziirish/burp-ui/issues/130>`_\n- Add: new `filters on history API call <https://git.ziirish.me/ziirish/burp-ui/issues/140>`_\n- Add: implement backend `keepalive <https://git.ziirish.me/ziirish/burp-ui/issues/98>`_\n- Add: allow to *disable* `server-initiated restoration <https://git.ziirish.me/ziirish/burp-ui/issues/136>`_\n- Fix: disable Basic-Auth login from UI to prevent some bugs with sessions\n- Fix: issue `134 <https://git.ziirish.me/ziirish/burp-ui/issues/134>`_\n- Fix: issue `135 <https://git.ziirish.me/ziirish/burp-ui/issues/135>`_\n- Fix: issue `137 <https://git.ziirish.me/ziirish/burp-ui/issues/137>`_\n- Fix: issue `138 <https://git.ziirish.me/ziirish/burp-ui/issues/138>`_\n- Fix: issue `145 <https://git.ziirish.me/ziirish/burp-ui/issues/145>`_\n- Fix: issue `148 <https://git.ziirish.me/ziirish/burp-ui/issues/148>`_\n- Improvement: new asynchronous `backup-running API call <https://git.ziirish.me/ziirish/burp-ui/issues/139>`_\n- Security: restrict files that can be sent by the agent\n- `Full changelog <https://git.ziirish.me/ziirish/burp-ui/compare/v0.2.1...v0.3.0>`__\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "zodb": [
         {
             "cve": "CVE-2010-3495",
