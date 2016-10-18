@@ -2178,6 +2178,12 @@
             "v": "<1.1.105"
         }
     ],
+    "locustio": [
+        {
+            "changelog": "===\n\nHTTP client functionality moved to HttpLocust\n---------------------------------------------\n\nPreviously, the Locust class instantiated a :py:class:`HttpSession <locust.clients.HttpSession>` \nunder the client attribute that was used to make HTTP requests. This funcionality has \nnow been moved into the :py:class:`HttpLocust <locust.core.HttpLocust>` class, in an \neffort to make it more obvious how one can use Locust to \n:doc:`load test non-HTTP systems <testing-other-systems>`.\n\nTo make existing locust scripts compatible with the new version you should make your \nlocust classes inherit from HttpLocust instead of the base Locust class.\n\n\nmsgpack for serializing master/slave data\n-----------------------------------------\n\nLocust now uses `msgpack <http://msgpack.org/>`_ for serializing data that is sent between \na master node and it's slaves. This adresses a possible attack that can be used to execute \ncode remote, if one has access to the internal locust ports that are used for master-slave \ncommunication. The reason for this exploit was due to the fact that pickle was used. \n\n.. warning::\n\n    Anyone who uses an older version should make sure that their Locust machines are not publicly \n    accessible on port 5557 and 5558. Also, one should never run Locust as root.\n\nAnyone who uses the :py:class:`report_to_master <locust.events.report_to_master>` and \n:py:class:`slave_report <locust.events.slave_report>` events, needs to make sure that \nany data that is attached to the slave reports is serializable by msgpack.\n\n",
+            "v": "<0.7"
+        }
+    ],
     "mailman": [
         {
             "cve": "CVE-2011-0707",
