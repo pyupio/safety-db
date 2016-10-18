@@ -137,6 +137,9 @@
     "ironic-inspector": [
         "<2.3.0"
     ],
+    "jinja": [
+        "<2.6"
+    ],
     "keyring": [
         "<0.9.1"
     ],
