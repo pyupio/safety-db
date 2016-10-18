@@ -1668,6 +1668,12 @@
             "v": "<2.3.0"
         }
     ],
+    "jaraco.windows": [
+        {
+            "changelog": "===\n\n* Added mmap module with MemoryMap class. This class allows the client to\n  specify SECURITY_ATTRIBUTES, which the Python mmap module does not.\n* Added security module with support for security descriptors and security\n  attributes.\n\n",
+            "v": "<2.9"
+        }
+    ],
     "keyring": [
         {
             "cve": "CVE-2012-4571",
