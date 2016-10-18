@@ -4107,6 +4107,10 @@
             "v": "<3.3"
         },
         {
+            "changelog": "----------------------------------------\n\n- Thanks to Filippo Valsorda: Fix BB'06 attack in verify() by\n  switching from parsing to comparison. See [1] for more information.\n- Simplified Tox configuration and dropped Python 3.2 support. The\n  coverage package uses a u'' prefix, which was reintroduced in 3.3\n  for ease of porting.\n\n[1] https://blog.filippo.io/bleichenbacher-06-signature-forgery-in-python-rsa/\n\n\n",
+            "v": "<3.3"
+        },
+        {
             "changelog": "----------------------------------------\n\n- Moved development to Github: https://github.com/sybrenstuvel/python-rsa\n- Solved side-channel vulnerability by implementing blinding, fixes 19\n- Deprecated the VARBLOCK format and rsa.bigfile module due to security issues, see\n    https://github.com/sybrenstuvel/python-rsa/issues/13\n- Integration with Travis-CI [1], Coveralls [2] and Code Climate [3]\n- Deprecated the old rsa._version133 and rsa._version200 submodules, they will be\n  completely removed in version 4.0.\n- Add an 'exponent' argument to key.newkeys()\n- Switched from Solovay-Strassen to Miller-Rabin primality testing, to\n  comply with NIST FIPS 186-4 [4] as probabilistic primality test\n  (Appendix C, subsection C.3):\n- Fixed bugs 12, 14, 27, 30, 49\n\n[1] https://travis-ci.org/sybrenstuvel/python-rsa\n[2] https://coveralls.io/github/sybrenstuvel/python-rsa\n[3] https://codeclimate.com/github/sybrenstuvel/python-rsa\n[4] http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-4.pdf\n\n\n",
             "v": "<3.4"
         }
