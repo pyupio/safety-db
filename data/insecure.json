@@ -23,6 +23,9 @@
     "cmsplugin-filer": [
         "<1.0.0"
     ],
+    "collective.googleanalytics": [
+        "<1.0"
+    ],
     "collective.noticeboard": [
         "<0.7.1"
     ],
