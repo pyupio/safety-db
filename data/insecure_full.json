@@ -1557,6 +1557,12 @@
             "v": "<1.0"
         }
     ],
+    "ftw.permissionmanager": [
+        {
+            "changelog": "------------------\n\n- No longer allow users with view permission to access the advanced\n  security features. Since it's possible to search for all users, which\n  exposes all usernames and email addresses to anyone with view permission.\n  [mathias.leimgruber]\n\n\n",
+            "v": "<2.2.2"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",
