@@ -2595,6 +2595,12 @@
             "v": "<2.1.3"
         }
     ],
+    "plone.namedfile": [
+        {
+            "changelog": "------------------\n\n- Fixed inserting filename in Content-Disposition header.\n  [kroman0]\n\n- Respect field level security in download views also for primary fields.\n  [jensens]\n\n- Internationalize field factory label.\n  [thomasdesvenain]\n\n\n",
+            "v": "<3.0.1"
+        }
+    ],
     "plone.openid": [
         {
             "changelog": "------------------\n\n- Replace deprecated test assert statements.\n  [timo]\n\n- Use system random when available. This is part of the fix for\n  https://plone.org/products/plone/security/advisories/20121106/24\n  [davisagli]\n\n- Fixed extractCredentials to strip whitespaces around __ac_identity_url.\n  This fixes http://dev.plone.org/plone/ticket/11044\n  [datakurre]\n\n\n",
