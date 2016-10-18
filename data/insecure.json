@@ -520,6 +520,9 @@
     "requests-kerberos": [
         "<0.6"
     ],
+    "rocket-depot": [
+        "<0.18"
+    ],
     "roundup": [
         "<1.4.20"
     ],
