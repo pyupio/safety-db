@@ -2072,6 +2072,12 @@
             "v": "<0.7.0"
         }
     ],
+    "onegov.core": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~~\n\n- Tighten security around static file serving.\n  [href]\n\n- Urls generated from titles no longer contain double dashes ('--').\n  [href]\n\n- The browser session now only adds a session_id to the cookies if there's\n  a change in the browser session.\n  [href]\n\n- Adds the ability to count and print the sql queries that go into a single\n  request.\n  [href]\n\n- Store all login information server-side. The client only gets a random\n  session id scoped to the application.\n  [href]\n\n- Make sure that signatures are only valid for the origin application.\n  [href]\n\n",
+            "v": "<0.2.0"
+        }
+    ],
     "otpauth": [
         {
             "changelog": "~~~~~~~~~~~~~\n\nReleased on May 26, 2015\n\nUse ``compare_digest`` to avoid timing attack.\n\n",
