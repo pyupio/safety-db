@@ -181,6 +181,9 @@
     "django-watchman": [
         "<0.10.0"
     ],
+    "djrill": [
+        "<2.1"
+    ],
     "docker-registry": [
         "<0.8.1"
     ],
