@@ -1616,6 +1616,12 @@
             "v": "<6.1"
         }
     ],
+    "expyriment": [
+        {
+            "changelog": "--------------------------\nNew Features:\n- new feature in testsuite: Font viewer\n- new extra stimulus: stimuli.extras.RandomDotKinematogram\n- new timer and experiment clock to ensure monotonic timing\n- Clock: new method (static) monotonic_time (this time should be always used)\n- data_preprocessing: new exclusion rule, which allows removing trials\n  depending on their deviation (std) from mean (e.g., 'RT > 1.5*std')\n- improvements for OS X in get_system_info()\n- proper unicode handling: use unicode strings whenever unicode characters\n  are needed\n- files: the character encoding is now written to files and used when opening\n  them\n- FreeFonts are now part of the Expyriment distribution to guarantee the same\n  fonts across platforms\n- new io class: TouchScreenButtonBox\n- new options for control.start(): skip_ready_screen and subject_id to start\n  with predefined subject id\n- experiments now also have a global mouse object: experiment.mouse \n- new property for io.Mouse: is_visible\n- Secure hashes for experiments help to ensure that the correct version is\n  running in the lab. Secure hashes will be displayed at the start and printed\n  in all output files as well as in the command line output.\n  \nFixed:\n- experiment clock now with monotonic timing\n- bug in extras.CedrusResponseDevice\n- several bugs in documentation\n- incompatibility with multiprocessing.Pool\n- bug in Visual.add_noise()\n- bug in io.SerialPort.read_line()\n- bugfix: stimuli.shapes can now be used as background stimuli for io.TextInput\n  & io.TextMenu\n\nChanged:\n- several Android related changes (have no impact for normal use of Expyriment)\n- overlapping methods of stimuli now work on absolute_position by default\n\n",
+            "v": "<0.7.0"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
