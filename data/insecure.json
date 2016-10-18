@@ -320,6 +320,9 @@
     "products.plonepas": [
         "<3.9"
     ],
+    "products.printingmailhost": [
+        "<0.7"
+    ],
     "ptah": [
         "<0.3.3"
     ],
