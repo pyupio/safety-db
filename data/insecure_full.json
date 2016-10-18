@@ -2603,6 +2603,12 @@
             "v": "<4.0"
         }
     ],
+    "pysap": [
+        {
+            "changelog": "--------------------\n\n- Added support for handling SAP SAR file formats.\n- `pysap/SAPCAR.py`: New module for handling SAP SAR file formats.\n- `extra/dlmanager_decrypt.py`: Example PoC for [decrypting](https://www.coresecurity.com/advisories/sap-download-manager-password-weak-encryption)\n  [SAP Download Manager](https://support.sap.com/software/download-manager.html) stored passwords.\n- `examples/dlmanager_infector.py`: Example script to open a SAP SAR archive file and infect it by adding files with\n  arbitrary filenames (e.g. including absolute or relative paths). It can be also used as a\n  [mitmproxy](https://mitmproxy.org/) script for on-the-fly infecting SAR files being downloaded.\n\n\n",
+            "v": "<0.1.10"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
