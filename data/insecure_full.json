@@ -62,6 +62,12 @@
             "v": "<1.0.0"
         }
     ],
+    "collective.multisearch": [
+        {
+            "changelog": "----------------\n\n- Add uninstall profile. Doesn't remove portlet assignments yet.\n  [fredvd]\n\n- Bring search results page more in line with Plone 4.3 html/css. Default \n  view should already be reasonable.\n  [fredvd]\n\n- Add viewlets.xml ordering that hides the default plone.searchbox viewlet and\n  adds the collective.multisearch widget on the same location (no upgrade step\n  on purpose, installed base should be fine and already have catered for this)\n  [fredvd]\n\n- Add browserlayer for add'on installed and register the viewlets/views on this\n  specific layer so we don't pollute the site when nothing is installed.\n  [fredvd]\n\n- Always disable liveview on multisearch viewlet.\n  [fredvd]\n\n- Remove dependency on five.grok.\n  [fredvd]\n\n- Add verify_ssl option to remote search portlet to disable ssl certificate\n  validation when you have to query a 'secure' internal site over firewalls\n  that ruin the certificate chain.\n  [fredvd]\n\n- Give validation error when inputting a search url without ``%s``.\n  [maurits]\n\n- Catch \"TypeError: not all arguments converted during string\n  formatting\" when the ``remote_site_search_url`` or the\n  ``remote_site_search_rss_url`` does not contain a ``%s``.\n  [maurits]\n\n- Added PloneTestCase to test requirements.\n  [maurits]\n\n\n",
+            "v": "<1.1"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
