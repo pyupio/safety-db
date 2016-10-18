@@ -1822,14 +1822,12 @@
     ],
     "markdown2": [
         {
-
             "changelog": "\n- [Issue 29] Fix security hole in the md5-hashing scheme for handling HTML\n  chunks during processing.\n- [Issue 27] Fix problem with underscores in footnotes content (with\n  \"footnotes\" extra).\n\n",
             "v": "<1.0.1.14"
         },
         {
             "changelog": "\n- [Issue 30] Fix a possible XSS via JavaScript injection in a carefully\n  crafted image reference (usage of double-quotes in the URL).\n\n",
             "v": "<1.0.1.15"
-
         }
     ],
     "mixminion": [
@@ -3289,6 +3287,12 @@
             "v": "<3.3"
         }
     ],
+    "rtv": [
+        {
+            "changelog": "--------------------\nBugfixes\n\n* Fixed security vulnerability where malicious URLs could inject python code.\n* No longer hangs when using mpv on long videos.\n* Now falls back to ascii mode when the system locale is not utf-8.\n\n--------------------\n",
+            "v": "<1.12.1"
+        }
+    ],
     "setuptools": [
         {
             "changelog": "-----\n\n* Python 17980: Fix security vulnerability in SSL certificate validation.\n\n",
@@ -3299,7 +3303,6 @@
             "v": "<1.0"
         },
         {
-
             "changelog": "-----\n\n* Issue 75: Add ``--insecure`` option to ez_setup.py to accommodate\n  environments where a trusted SSL connection cannot be validated.\n* Issue 76: Fix AttributeError in upload command with Python 2.4.\n\n",
             "v": "<1.1.1"
         },
