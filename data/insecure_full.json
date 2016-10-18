@@ -4151,6 +4151,12 @@
             "v": "<1.5.2"
         }
     ],
+    "z3c.pt": [
+        {
+            "changelog": "------------------\n\n- Bind translation context (request) to translation method. Although\n  not required in newer versions of the translation machinery, some\n  versions will ask for a translation context in order to negotiate\n  language even when a language is explicitly passed in.\n\n- Declare zope security settings for classes when zope.security is present\n  as the \"class\" ZCML directive was moved there.\n\n",
+            "v": "<1.0.1"
+        }
+    ],
     "zeep": [
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
