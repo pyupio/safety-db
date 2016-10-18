@@ -1460,6 +1460,12 @@
             "v": "<0.4"
         }
     ],
+    "django-custard": [
+        {
+            "changelog": "-----------------\n\n* Fixed admin integration\n* Updated example project\n* Removed validate_unique for fields so your subclass can decide what to do with fields with the same name\n* Removed models.py (useless with Django>=1.7)\n* Dropped support for Django < 1.7 (insecure)\n* Dropped support for Python 3.2 and 3.3\n\n\n",
+            "v": "<0.11"
+        }
+    ],
     "django-embed-video": [
         {
             "changelog": "---------------------------\n\n- Security fix: faked urls are treated as invalid. See `this page\n  <https://github.com/yetty/django-embed-video/commit/d0d357b767e324a7cc21b5035357fdfbc7c8ce8e>`_\n  for more details.\n\n- Fixes:\n\n  - allow of empty video field.\n\n  - requirements in setup.py\n\n- Added simplier way to embed video in one-line template tag::\n\n    {{ 'http://www.youtube.com/watch?v=guXyvo2FfLs'|embed:'large' }}\n\n- ``backend`` variable in ``video`` template tag.\n\n  Usage::\n\n    {% video item.video as my_video %}\n        Backend: {{ my_video.backend }}\n    {% endvideo %}\n\n\n",

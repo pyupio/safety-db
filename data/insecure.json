@@ -102,6 +102,9 @@
     "django-anonymizer-compat": [
         "<0.4"
     ],
+    "django-custard": [
+        "<0.11"
+    ],
     "django-embed-video": [
         "<0.3"
     ],
