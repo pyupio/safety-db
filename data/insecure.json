@@ -44,6 +44,9 @@
     "conn-check": [
         "<1.0.18"
     ],
+    "datagrepper": [
+        "<0.7.0"
+    ],
     "defusedexpat": [
         "<0.3"
     ],
