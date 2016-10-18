@@ -8,6 +8,9 @@
     "bise.theme": [
         "<2.4"
     ],
+    "bravado-core": [
+        "<4.4.0"
+    ],
     "centrifuge": [
         "<0.3.8"
     ],
