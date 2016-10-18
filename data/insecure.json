@@ -236,6 +236,9 @@
     "formencode": [
         "<1.0"
     ],
+    "ftw.builder": [
+        "<1.3.0"
+    ],
     "ftw.permissionmanager": [
         "<2.2.2"
     ],
