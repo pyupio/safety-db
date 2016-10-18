@@ -387,6 +387,9 @@
     "requests": [
         ">=2.1,<=2.5.3"
     ],
+    "requests-kerberos": [
+        "<0.6"
+    ],
     "roundup": [
         "<1.4.20"
     ],
