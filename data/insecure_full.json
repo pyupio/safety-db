@@ -1444,6 +1444,10 @@
     ],
     "django-initial-avatars": [
         {
+            "changelog": "\t- feat: avatar path now use md5 of username + first_name + last_name insted of simple username:\n\t\tpermit to updates the avatar when user changes its settings\n\t\t+ better for security\n",
+            "v": "<0.4"
+        },
+        {
             "changelog": "\t- security: use user_id instead of user_username for the url\n\n",
             "v": "<0.5.0"
         }
