@@ -4169,6 +4169,12 @@
             "v": "<1.5.2"
         }
     ],
+    "webhaak": [
+        {
+            "changelog": "\n2016-05-05\n\n- Initial release\n- Flask API with appkey-secured endpoints to:\n  - Git clone/fetch a repo to a certain directory\n  - Run a pre-defined command\n  - Return result of both the repo update and command execution as json response\n- Configuration through yaml file: actions are pre-defined\n- /getappkey helper endpoint to generate keys for usage in the yaml configuration\n",
+            "v": "<0.1.0"
+        }
+    ],
     "zeep": [
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
