@@ -38,6 +38,9 @@
     "chanjo-report": [
         "<2.4.0"
     ],
+    "cherrymusic": [
+        "<0.36.0"
+    ],
     "cinder": [
         "<2013.2.3"
     ],
