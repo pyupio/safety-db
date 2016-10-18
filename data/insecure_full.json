@@ -1935,6 +1935,12 @@
             "v": "<1.0"
         }
     ],
+    "ftw.mail": [
+        {
+            "changelog": "-----\n\n- Removed `save_attachments`: moved to `opengever.mail` since its opengever specific\n  [02.11.2010, jbaumann]\n\n- Added `remove_attachments` method\n  [01.11.2010, jbaumann]\n\n- Added test for filename encoding problem. Test still fails...\n  [Thomas Buchberger]\n\n- Moved unwrapping of attached messages into utility method. Added test.\n  [Thomas Buchberger]\n\n- Correctly restore current SecurityManger after mail creation.\n  [Thomas Buchberger]\n\n- Added tests for unknown sender\n  [Thomas Buchberger]\n\n\n",
+            "v": "<1.0a3"
+        }
+    ],
     "ftw.permissionmanager": [
         {
             "changelog": "------------------\n\n- No longer allow users with view permission to access the advanced\n  security features. Since it's possible to search for all users, which\n  exposes all usernames and email addresses to anyone with view permission.\n  [mathias.leimgruber]\n\n\n",
