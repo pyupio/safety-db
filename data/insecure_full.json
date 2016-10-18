@@ -1520,6 +1520,12 @@
             "v": "<0.1.1"
         }
     ],
+    "django-html5-appcache": [
+        {
+            "changelog": "\n - Templatetag added to display cache status\n - More tests\n - Added security check for sensitive views\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "django-initial-avatars": [
         {
             "changelog": "\t- feat: avatar path now use md5 of username + first_name + last_name insted of simple username:\n\t\tpermit to updates the avatar when user changes its settings\n\t\t+ better for security\n",
