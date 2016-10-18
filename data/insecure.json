@@ -241,6 +241,9 @@
         "<1.5.4",
         ">=2.0,<2.3.3"
     ],
+    "python-lefthandclient": [
+        "<1.1.0"
+    ],
     "python-muranoclient": [
         "<0.7.3",
         ">=0.8,<0.8.5"
