@@ -185,6 +185,9 @@
     "products.plonepas": [
         "<3.9"
     ],
+    "pybrowserid": [
+        "<0.5.0"
+    ],
     "pycrypto": [
         "<2.6.1"
     ],
