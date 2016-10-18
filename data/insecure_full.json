@@ -35,6 +35,12 @@
             "v": "<0.1.4"
         }
     ],
+    "awscli": [
+        {
+            "changelog": "=====\n\n* bugfix:``aws s3``: Fix an issue with the ``s3`` command when using GovCloud regions (boto/botocore170)\n* bugfix:``aws s3``: Fix an issue with the ``s3 ls`` command making an extra query at the root level (issue 439)\n* bugfix:``aws s3``: Add detailed error message when unable to decode local filenames during an ``s3 sync`` (issue 378)\n* bugfix:``aws ec2``: Support ``-1`` and ``all`` as valid values to the ``--protocol`` argument to ``ec2 authorize-security-group-ingress`` and ``ec2 authorize-security-group-egress`` (issue 460)\n* feature:``aws s3``: Log the reason why a file is synced when using the ``s3 sync`` command\n* bugfix:``aws s3``: Fix an issue when uploading large files on low bandwidth networks (issue 454)\n* bugfix:Argument Parsing: Fix an issue with parsing shorthand boolean argument values (issue 477)\n* bugfix:CloudSearch: Fix an issue with the ``cloudsearch`` command missing a required attribute (boto/botocore175)\n* bugfix:Response Parsing: Fix an issue with parsing XML response for ``ec2 describe-instance-attribute`` (boto/botocore174)\n* feature:``aws cloudformation``: Update ``cloudformation`` command to support new features for stacks and templates\n* feature:``aws storagegateway``: Update ``storagegateway`` command to support a new gateway configuration, Gateway-Virtual Tape Library (Gateway-VTL)\n* feature:``aws elb``: Update ``elb`` command to support cross-zone load balancing, which changes the way that Elastic Load Balancing (ELB) routes incoming requests\n\n\n",
+            "v": "<1.2.4"
+        }
+    ],
     "bbcode": [
         {
             "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
