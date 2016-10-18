@@ -3209,6 +3209,12 @@
             "v": "<4.0"
         }
     ],
+    "pyjwt": [
+        {
+            "changelog": "-------------------------------------------------------------------------\n Changed\n- Moved `jwt.api.header` out of the public API. [85][85]\n- Added README details how to extract public / private keys from an x509 certificate. [100][100]\n- Refactor api.py functions into an object (`PyJWT`). [101][101]\n- Added support for PyCrypto and ecdsa when cryptography isn't available. [101][103]\n\n Fixed\n- Fixed a security vulnerability where `alg=None` header could bypass signature verification. [109][109]\n- Fixed a security vulnerability by adding support for a whitelist of allowed `alg` values `jwt.decode(algorithms=[])`. [110][110]\n\n\n[unreleased]: https://github.com/jpadilla/pyjwt/compare/1.3.0...HEAD\n",
+            "v": "<1.0.01.0.0"
+        }
+    ],
     "pymemcache": [
         {
             "changelog": "--------------------\n* Fix flake8 and cleanup tox building\n* Fix security vulnerability by sanitizing key input\n\n",
