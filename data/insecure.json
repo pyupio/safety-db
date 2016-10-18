@@ -109,6 +109,9 @@
     "django-markupfield": [
         "<1.3.2"
     ],
+    "django-model-utils": [
+        "<1.1.0"
+    ],
     "django-piston": [
         "<0.2.3"
     ],
