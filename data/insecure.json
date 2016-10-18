@@ -96,6 +96,9 @@
     "django-pluggable-filebrowser": [
         "<3.4.2"
     ],
+    "django-relatives": [
+        "<0.3.0"
+    ],
     "django-tastypie": [
         "<0.9.10"
     ],

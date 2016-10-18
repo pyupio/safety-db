@@ -1461,6 +1461,12 @@
             "v": "<3.4.2"
         }
     ],
+    "django-relatives": [
+        {
+            "changelog": "------------------\n\n- Fix XSS vulnerability\n- Allow relatives/includes/fieldset.html template to be extended further\n- Improve documentation\n\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "django-tastypie": [
         {
             "cve": "CVE-2011-4104",
