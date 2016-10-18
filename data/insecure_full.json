@@ -3141,6 +3141,12 @@
             "v": "<1.2.15"
         }
     ],
+    "plone.app.event": [
+        {
+            "changelog": "----------------\n\nBreaking changes:\n\n.. note::\n    This release depends on ``plone.app.z3cform >= 2.0.1``, which is only available for Plone 5.1.\n    This is a backwards incompatible change, which satisfy a major version change for plone.app.event.\n    Consequently, Plone 4 compatibility code will be removed in this release.\n\nNew features:\n\n- Use ``schema.URI`` instead of ``schema.TextLine`` for ``event_url`` field.\n  [thet]\n\n- Make JavaScript date/time update work with optional start/end dates.\n  [thet]\n\n- Make use of more generic selectors in JavaScript, so that JavaScript works also for derived classes.\n  [thet]\n\n- Configure custom css classes for all event behavior fields.\n  This makes it easier to use same selectors also for derived behaviors.\n  Needs ``plone.app.z3cform >= 2.0.1``.\n  [thet]\n\n- Use ``plone.autoform.directives`` for manipulating field widgets instead of overriding the default Fieldwidget adapters.\n  [thet]\n\nBug fixes:\n\n- Fixed possible cross site scripting (XSS) attack in location field.  [maurits]\n\n- Remove Archetypes based JavaScript code.\n  [thet]\n\n- Don't validate the ``validate_start_end`` invariant, if start or end are ``None``.\n  This can happen on non-required, default empty start or end fields during editing.\n  [thet]\n\n\n",
+            "v": "<3.0"
+        }
+    ],
     "plone.formwidget.contenttree": [
         {
             "changelog": "------------------\n\n* Fix security validator to work properly on add views and other views using\n  namespace traversal (++add++...)\n  [optilude]\n\n",
