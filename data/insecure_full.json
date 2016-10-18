@@ -3526,6 +3526,12 @@
             "v": ">=2.1,<=2.5.3"
         }
     ],
+    "requests-kerberos": [
+        {
+            "changelog": "---------------\n\n- Handle mutual authentication (see pull request 36_)\n\n  All users should upgrade immediately. This has been reported to\n  oss-security_ and we are awaiting a proper CVE identifier.\n\n  **Update**: We were issued CVE-2014-8650\n\n- Distribute as a wheel.\n\n.. _36: https://github.com/requests/requests-kerberos/pull/36\n.. _oss-security: http://www.openwall.com/lists/oss-security/\n\n",
+            "v": "<0.6"
+        }
+    ],
     "roundup": [
         {
             "cve": "CVE-2012-6130",
