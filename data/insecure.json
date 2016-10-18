@@ -35,6 +35,9 @@
     "collective.noticeboard": [
         "<0.7.1"
     ],
+    "compliancelib": [
+        "<0.9.0"
+    ],
     "conn-check": [
         "<1.0.18"
     ],
