@@ -2007,6 +2007,12 @@
             "v": "<1.0"
         }
     ],
+    "ftw.dashboard.dragndrop": [
+        {
+            "changelog": "------------------\n\n- Fix browserlayer name.\n  [mathias.leimgruber]\n\n- Security fixes.\n  [mathias.leimgruber]\n\n\n",
+            "v": "<1.5.1"
+        }
+    ],
     "ftw.dashboard.portlets.postit": [
         {
             "changelog": "------------------\n\n- Replace jq by $.\n  [mathias.leimgruber]\n\n- Fix security error, it was possible to add postit comment on a\n  foreign dashboard if the userid an portlet id was known. (Security audit)\n\n- Updated css for add postit form.\n  [Julian Infanger]\n\n\n",
