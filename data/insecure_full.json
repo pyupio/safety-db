@@ -2573,6 +2573,12 @@
             "v": "<4.0"
         }
     ],
+    "pypicloud": [
+        {
+            "changelog": "------------------\n* Bug fix: Connection problems with new S3 regions (:issue:`39`)\n* Usability: Warn users trying to log in over http when ``session.secure = true`` (:issue:`40`)\n\n",
+            "v": "<0.2.9"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
