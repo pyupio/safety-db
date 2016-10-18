@@ -17,6 +17,12 @@
             "v": "<2.4"
         }
     ],
+    "bok-choy": [
+        {
+            "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",
+            "v": "<0.5.1"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
