@@ -1482,6 +1482,12 @@
             "v": "<0.5.0"
         }
     ],
+    "django-leonardo": [
+        {
+            "changelog": "--------\n\n* render widget content securely without debug mode\n* update meta\n* handle dbtemplates and create themes from them 65\n* last fix travis build\n* fix db dict\n* remove old log occurency\n* i hope that finally fix travis tests\n* warnings for some part of loading process\n* export pythonpath\n* fix travis build\n* ordering\n* sites,sessions\n* auth before ct\n* separate migrate cmd\n* migrate contenttypes before dbtemplates\n* migrate just dbtemplates\n* migrate before testing\n* switchable page theme/color schemes, switch floppyforms to bootstrap3 and cleanup icon widget code\n* icon widget preview\n* last fix reqs\n* fix duplicity of adminlte requirement\n* fix travis build\n* path to static reqs fix\n* install static extras in the default state, bump required version ofdjango-filer, subcategorize for extras\n* fix public/private media urls\n* fix media on dj 1.8\n* sort module to include and cleanup admin dependecies, new extras\n* live settings for media options\n* empty base widget theme, empty slider\n* heading fixes\n* guterless page\n* included icon widget and removed db field\n* bump required version of horizon-contrib\n* redactor removed from defaults\n* widget update fix\n* removed redactor\n* fixes\n* icon widget\n* fix model inheritence\n* moved to auth\n* import fixes\n* navigation extensions, fullscreen context\n* make cache update nullable\n* media final\n* comment for now\n* cleanups nav templates, simple link widget\n* new devel module, make optional site title, content proxy widget mixin and reworked feed widget, updated required version leonardo adim\n* navigation cleanups\n* common widget mixins and cleanup widget models\n* replaces page memoized by cached_property\n\n",
+            "v": "<2015.7.3"
+        }
+    ],
     "django-lfs": [
         {
             "changelog": "------------------\n\n* Security fix\n* Added manufacturer field to product management (Maciej Wi\u015bniowski)\n* Bugfix: fixed pagination for product page; issue 152 (Maciej Wi\u015bniowski)\n* Bugfix: fixed deleting of image for payment and shipping methods; issue 150\n* Bugfix: fixed markup; issue 148\n\n",
