@@ -2745,6 +2745,12 @@
             "v": "<4.0"
         }
     ],
+    "pymatgen": [
+        {
+            "changelog": "------\n* Updated and checked for Python 3.5.* compatibility.\n* Element, Spin, Orbital and various other Enum-like classes are now actually\n  implemented using Enum (with enum34 dependency for Python < 3.4).\n* Speed up Site creation by 20% for ordered sites, with cost in terms of\n  slightly slower non-ordered Sites. Since ordered Sites is the far more common\n  case, this gives significant boost for large scale manipulations of\n  structures.\n* Alternative, more pythonic syntax for creating supercells via simply\n  Structure * 3 or Structure * (3, 1, 1).\n* zeo++ fixes.\n* More stable incar settings for MITMDVaspInputSet.\n\n",
+            "v": "<3.3.0"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
