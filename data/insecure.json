@@ -195,6 +195,9 @@
     "django-safedelete": [
         "<0.3.3"
     ],
+    "django-secure": [
+        "<1.0.1"
+    ],
     "django-select2-py3": [
         "<5.7.0"
     ],

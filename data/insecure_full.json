@@ -1665,6 +1665,12 @@
             "v": "<0.3.3"
         }
     ],
+    "django-secure": [
+        {
+            "changelog": "------------------\n\n* Hide django-secure tests from pre-1.6 Django test runners, to avoid breaking\n  project tests.\n\n\n",
+            "v": "<1.0.1"
+        }
+    ],
     "django-select2-py3": [
         {
             "changelog": "* Security fix that allows a `field_id` to only be used for the intended JSON endpoint.\n  \n      Prior to that change you could use any `field_id` on any select2 JSON endpoint.\n      Even if the id was intended to be used on a private endpoint if could be used on\n      the default one and therefore leak sensitive data.\n      \n* Breaking change on how `Heavy` widgets are being cached.\n      \n      Heavy widgets used to add themselves to the cache. Now they add a dictionary to\n      the cache containing themselves and the target url.\n      \n      ```python\n      {\n          'widget': self,\n          'url': self.get_url(),\n      }\n      ```\n\n",
