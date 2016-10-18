@@ -324,6 +324,9 @@
     "pywebsite": [
         "<0.1.9pre"
     ],
+    "quokka-flask-security": [
+        "<1.6.5"
+    ],
     "requests": [
         ">=2.1,<=2.5.3"
     ],
