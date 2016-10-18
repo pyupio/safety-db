@@ -150,6 +150,12 @@
             "v": "<0.6.4"
         }
     ],
+    "cyther": [
+        {
+            "changelog": "    Gave travis a secure password in the yaml file\n    Fixed a few bugs with the run() function\n    Added a readme generator system to have the readme.md and readme.rst\n    Changed the '-t' option to '-s'\n    Added --execute and --timer to the commandline argument system\n    Made timer and execute be '-t', and '-x' respectively\n    Did some README updates\n    Added to the testing script significantly, and got travis to run that AND nosetests\n    Properly encapsulated the 'cytherize' and 'core' functions\n    Added the -X and -T options, meant for super powerful debugging and building\n    Gave the option to print the commands passed off only if wanted to\n    Formatted the '-h' text to be even more helpful!\n    Deleted the current useless documentation, adding new docs soon\n    Did some serious encapsulation and reorganization of entire compilation system\n    Fixed the error management system to make sure it is reliable\n    All communications from cyther to the user are located in a single place, and done through stdout\n\n",
+            "v": "<0.6.1"
+        }
+    ],
     "defusedexpat": [
         {
             "cve": "CVE-2013-1664",
