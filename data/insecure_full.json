@@ -3895,6 +3895,12 @@
             "v": "<1.12.1"
         }
     ],
+    "securepass": [
+        {
+            "changelog": " * Fixup for missing config file in sp-config \n * Add \\__version__ attribute to securepass package\n * package split, forgot commit\n\n",
+            "v": "<0.4.4"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
