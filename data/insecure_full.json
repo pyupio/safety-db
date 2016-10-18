@@ -130,6 +130,12 @@
             "v": "<0.4"
         }
     ],
+    "diceware": [
+        {
+            "changelog": "----------------\n\n- Added sample ``.diceware.ini``.\n- Added new english wordlist ``en_securedrop``. This is the new\n  default list. Thanks to `heartsucker\n  <https://github.com/heartsucker>`_ who compiled and added the list.\n- Remove support for Python 3.2. Several packages we depend on for testing\n  and sandboxing stopped Python 3.2 support. We follow them.\n\n\n",
+            "v": "<0.7"
+        }
+    ],
     "django": [
         {
             "cve": "CVE-2016-6186",
