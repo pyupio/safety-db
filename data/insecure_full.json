@@ -1737,6 +1737,12 @@
             "v": "<0.999999991.0b9"
         }
     ],
+    "impacket": [
+        {
+            "changelog": "1) Library improvements\n   * [MS-TSCH] - ATSVC, SASec and ITaskSchedulerService Interface implementations\n   * [MS-DRSR] - Directory Replication Service DRSUAPI Interface implementation\n   * Network Data Representation (NDR) runtime overhaul. Big performance and reliability improvements achieved\n   * Unicode support (optional) for the SMBv1 stack (by rdubourguais)\n   * NTLMv2 enforcement option on SMBv1 client stack (by scriptjunkie)\n   * Kerberos support for TDS (MSSQL)\n   * Extended present flags support on RadioTap class\n   * Old DCERPC runtime code removed\n\n2) Examples improvements\n   * mssqlclient.py: Added Kerberos authentication support\n   * atexec.py: It now uses ITaskSchedulerService interface, adding support for Windows 2012 R2\n   * smbrelayx.py:\n     * If no file to upload and execute is specified (-E) it just dumps the target user's hashes by default\n     * Added -c option to execute custom commands in the target (by byt3bl33d3r)\n   * secretsdump.py:\n       a. Active Directory hashes/Kerberos keys are dumped using [MS-DRSR] (IDL_DRSGetNCChanges method)\n          by default. VSS method is still available by using the -use-vss switch\n       b. Added -just-dc (Extract only NTDS.DIT NTLM Hashes and Kerberos) and\n          -just-dc-ntlm ( only NTDS.DIT NTLM Hashes ) options\n       c. Added resume capability (only for NTDS in DRSUAPI mode) in case the connection drops. Use -resumefile option\n       d. Added Primary:CLEARTEXT Property from supplementalCredentials attribute dump ([MS-SAMR] 3.1.1.8.11.5)\n       e. Add support for multiple password encryption keys (PEK) (by s0crat)\n   * goldenPac.py: Tests all DCs in domain and adding forest's enterprise admin group inside PAC\n\n3) New examples\n   * raiseChild.py: Child domain to forest privilege escalation exploit. Implements a child-domain to forest privilege\n     escalation as detailed by Sean Metcalf at https://adsecurity.org/?p=1640\n   * netview.py: Gets a list of the sessions opened at the remote hosts and keep track of them (original idea by mubix)\n\n",
+            "v": "<0.9.14"
+        }
+    ],
     "ipython": [
         {
             "cve": "CVE-2015-6938",
