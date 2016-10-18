@@ -275,6 +275,9 @@
     "pplone": [
         "<4.2.3"
     ],
+    "prat-gevent": [
+        "<0.12.0"
+    ],
     "pretaweb.healthcheck": [
         "<1.0"
     ],
