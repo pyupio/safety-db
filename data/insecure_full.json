@@ -3353,6 +3353,12 @@
             "v": "<1.1.0"
         }
     ],
+    "quality-report": [
+        {
+            "changelog": "\n  * Bug fix: Better report for the metrics that count user stories without security and performance risk assessment.\n  * More consistent dashboard layout.\n  \n  \n",
+            "v": "<1.57.2"
+        }
+    ],
     "requests": [
         {
             "cve": "CVE-2015-2296",
