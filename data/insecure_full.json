@@ -1412,6 +1412,12 @@
             "v": ">=1.9,<1.9rc2"
         }
     ],
+    "django-defender": [
+        {
+            "changelog": "===\nAdded fixes to include possible security issue\n\n",
+            "v": "<0.2"
+        }
+    ],
     "django-lfs": [
         {
             "changelog": "------------------\n\n* Security fix\n* Added manufacturer field to product management (Maciej Wi\u015bniowski)\n* Bugfix: fixed pagination for product page; issue 152 (Maciej Wi\u015bniowski)\n* Bugfix: fixed deleting of image for payment and shipping methods; issue 150\n* Bugfix: fixed markup; issue 148\n\n",
