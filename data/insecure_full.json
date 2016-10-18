@@ -2475,6 +2475,12 @@
             "v": "<0.42"
         }
     ],
+    "paramiko-3k": [
+        {
+            "changelog": "-----------------------\n\n* 152: Add tentative support for ECDSA keys. *This adds the ecdsa\n  module as a dependency of Paramiko.* The module is available at\n  `warner/python-ecdsa on Github\n  <https://github.com/warner/python-ecdsa>`_ and `ecdsa on PyPI\n  <https://pypi.python.org/pypi/ecdsa>`_. Note that you might still\n  run into problems with key negotiation -- Paramiko picks the first\n  key that the server offers, which might not be what you have in your\n  known_hosts file.\n* 98: On Windows, when interacting with the PuTTY PAgeant, Paramiko now\n  creates the shared memory map with explicit Security Attributes of the user,\n  which is the same technique employed by the canonical PuTTY library to avoid\n  permissions issues when Paramiko is running under a different UAC context\n  than the PuTTY Ageant process. Thanks to Jason R. Coombs for the patch.\n* 100: Remove use of PyWin32 in `win_pageant` module. Module was already\n  dependent on ctypes for constructing appropriate structures and had ctypes\n  implementations of all functionality. Thanks to Jason R. Coombs for the\n  patch.\n* 87: Ensure updates to `known_hosts` files account for any updates to said\n  files after Paramiko initially read them. (Includes related fix to guard\n  against duplicate entries during subsequent `known_hosts` loads.) Thanks to\n  `sunweaver` for the contribution.\n\n",
+            "v": "<1.11.0"
+        }
+    ],
     "pastescript": [
         {
             "cve": "CVE-2012-0878",
