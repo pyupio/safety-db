@@ -20,6 +20,9 @@
     "bbcode": [
         "<1.0.9"
     ],
+    "beeswarm": [
+        "<0.7.12"
+    ],
     "birdhousebuilder.recipe.nginx": [
         "<0.1.5"
     ],
