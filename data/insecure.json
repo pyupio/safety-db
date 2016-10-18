@@ -139,6 +139,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "eea.facetednavigation": [
+        "<8.7"
+    ],
     "euphorie": [
         "<6.1"
     ],
