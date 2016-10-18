@@ -140,6 +140,9 @@
     "formencode": [
         "<1.0"
     ],
+    "ftw.downloadtoken": [
+        "<1.0.0"
+    ],
     "ftw.permissionmanager": [
         "<2.2.2"
     ],

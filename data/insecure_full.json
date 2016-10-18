@@ -1653,6 +1653,12 @@
             "v": "<1.0"
         }
     ],
+    "ftw.downloadtoken": [
+        {
+            "changelog": "------------------\n\n- Fork and refactor package from ftw.securefiledownload.\n  [mathias.leimgruber]\n",
+            "v": "<1.0.0"
+        }
+    ],
     "ftw.permissionmanager": [
         {
             "changelog": "------------------\n\n- No longer allow users with view permission to access the advanced\n  security features. Since it's possible to search for all users, which\n  exposes all usernames and email addresses to anyone with view permission.\n  [mathias.leimgruber]\n\n\n",
