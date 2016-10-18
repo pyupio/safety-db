@@ -73,6 +73,12 @@
             "v": "<0.3.1"
         }
     ],
+    "attic": [
+        {
+            "changelog": "------------\n\n(bugfix release, released on May 16, 2015)\n- Fix typo preventing the security confirmation prompt from working (303)\n- Improve handling of systems with improperly configured file system encoding (289)\n- Fix \"All archives\" output for attic info. (183)\n- More user friendly error message when repository key file is not found (236)\n- Fix parsing of iso 8601 timestamps with zero microseconds (282)\n\n",
+            "v": "<0.16"
+        }
+    ],
     "authbwc": [
         {
             "changelog": "=========================\n\n* (SECURITY FIX) fixed an issue with the way the HTTP session user permissions\n  were loaded.  This vulnerability made it possible for a user to gain the\n  permissions of the user logged in previously.  The user would have had\n  to be sharing the same http session for this access to have been\n  gained.\n\n",
