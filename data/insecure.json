@@ -396,6 +396,9 @@
     "pywebsite": [
         "<0.1.9pre"
     ],
+    "react-render-client": [
+        "<0.13.0"
+    ],
     "requests": [
         ">=2.1,<=2.5.3"
     ],
