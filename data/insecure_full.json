@@ -2618,6 +2618,12 @@
             "v": "<3.9"
         }
     ],
+    "prudentia": [
+        {
+            "changelog": "+++++++++++++++++\n\n**Improvements**\n\n- Makes Nginx bundled task disable the default site.\n- Shows more information about the DigitalOcean image when registering/reconfiguring a droplet.\n- Allows only the newly added sudo user to not be prompted for password.\n- Upgrades to Ansible 1.9.2.\n- Adds bundled tasks: vault (https://vaultproject.io), fail2ban, tomcat7.\n- Adds an action for the simple provider to set the password used to decrypt Ansible vault files.\n- Refactors main cli to properly parse input arguments.\n- Accepts list of commands as arguments.\n- Introduces -v (--version) argument to print current Prudentia version.\n- Adds an action for the simple provider to loads extra vars from an external .yml or .json file.\n- Checks if current version is the latest released one.\n- Accepts input paths relative to the directory where Prudentia was started or relative to the user home directory.\n- Upgrades dopy to 0.3.6 and switches to DigitalOcean API version 2 based on API token.\n\n**Bugfixes**\n\n- Makes Nginx bundled task properly idempotent and reload the service at the end of the task.\n- Fixes ElasticSearch init script.\n- Makes sure variables value are set even if they contain spaces.\n- Waits for async bash thread to finish.\n- Fixes InsecurePlatformWarning when https connections are initiated.\n\n**Misc**\n\n- Updates Client component example.\n- Moves build to new Travis container based infrastructure.\n- Enables properly coverage verification and improved the coverage itself.\n- Verifies support for Python 3.2+.\n\n**Documentation**\n\n- Adds `decrypt` action doc.\n- Adds `vars` action doc.\n- Extends Usage section describing the new Commands list argument.\n\n",
+            "v": "<0.12"
+        }
+    ],
     "pycrypto": [
         {
             "cve": "CVE-2013-1445",
