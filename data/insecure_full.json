@@ -3007,6 +3007,12 @@
             "v": "<1.0"
         }
     ],
+    "pritunl": [
+        {
+            "changelog": "------------------------------\n\nImprove security in initial setup process\nImprove database setup and upgrade process\nFix issue with database upgrades\n\n",
+            "v": "<1.20.922.99"
+        }
+    ],
     "products.btreefolder2": [
         {
             "changelog": "-------------------\n\n- Provide security declaration for `BTreeFolder2Base.hasObject` method.\n\n- Add some tests for correct `getattr` behavior.\n\n- Minor `__getattr__` and `_getOb` optimizations.\n\n",
