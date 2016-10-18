@@ -2294,6 +2294,12 @@
             "v": "<0.6.14"
         }
     ],
+    "marabunta": [
+        {
+            "changelog": "++++++++++++++++++\n\n**Features**\n\n- Added support for Python 3.4 and 3.5 in addition to 2.7.\n\n**Bugfixes**\n\n- Fixed a crash with empty install args\n\n**Improvements**\n\n- Use YAML ``safe_load`` for added security.\n\n**Documentation**\n\n- Bootstrapped the Sphinx documentation.\n\n**Build**\n\n- Switched to tox for the build. This allow to run the same tests in all\n  environment locally like in travis. The travis configuration just calls tox\n  now.\n- Added runtime dependencies to the package, kept separate from the build and test dependencies (installed separately by tox).\n\n",
+            "v": "<0.2.0"
+        }
+    ],
     "markdown2": [
         {
             "changelog": "\n- [Issue 29] Fix security hole in the md5-hashing scheme for handling HTML\n  chunks during processing.\n- [Issue 27] Fix problem with underscores in footnotes content (with\n  \"footnotes\" extra).\n\n",
