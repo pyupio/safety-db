@@ -5,6 +5,12 @@
             "v": "<0.1.4"
         }
     ],
+    "bise.theme": [
+        {
+            "changelog": "------------------\n* Bug fix: fix potential XSS issue with catalogue search\n  [tiberich 75243]\n\n",
+            "v": "<2.4"
+        }
+    ],
     "cinder": [
         {
             "cve": "CVE-2013-1068",
