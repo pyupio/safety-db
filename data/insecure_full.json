@@ -3575,6 +3575,12 @@
             "v": "<0.1.9pre"
         }
     ],
+    "react-render-client": [
+        {
+            "changelog": "\nFixed a potential XSS bug when using `render_props` as per the example.\nThis changes the output of `render_props` to be `JSON.parse(\"[escapedJsonString]\")`.\n\n**Potentially Breaking Change:** This could potentially break if you are using `render_props` in any way other\nthan to put things into a script tag.\n\n*NOTE: Only the python code changed in this release*\n\n",
+            "v": "<0.13.0"
+        }
+    ],
     "requests": [
         {
             "cve": "CVE-2015-2296",
