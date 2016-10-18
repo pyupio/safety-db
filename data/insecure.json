@@ -186,6 +186,9 @@
     "flask-oidc": [
         "<0.1.2"
     ],
+    "flintrock": [
+        "<0.2.0"
+    ],
     "formencode": [
         "<1.0"
     ],
