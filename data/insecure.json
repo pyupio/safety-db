@@ -53,6 +53,9 @@
     "centrifuge": [
         "<0.3.8"
     ],
+    "cfncluster-node": [
+        "<0.0.18"
+    ],
     "chanjo-report": [
         "<2.4.0"
     ],
