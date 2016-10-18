@@ -1555,6 +1555,12 @@
             "v": "<5.7.0"
         }
     ],
+    "django-sql-explorer": [
+        {
+            "changelog": "===\n\n2/14/2014 - Happy Valentine's Day!\n\n- Templatized columns for easy linking\n- Additional security config options for splitting create vs. view permissions\n- Show many-to-many relation tables in schema helper\n\n",
+            "v": "<0.4"
+        }
+    ],
     "django-tastypie": [
         {
             "cve": "CVE-2011-4104",
