@@ -17,6 +17,9 @@
     "clearsilver": [
         "<0.10.5"
     ],
+    "collective.editskinswitcher": [
+        "<0.8"
+    ],
     "conn-check": [
         "<1.0.18"
     ],

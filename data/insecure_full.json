@@ -50,6 +50,12 @@
             "v": "<0.10.5"
         }
     ],
+    "collective.editskinswitcher": [
+        {
+            "changelog": "----------------\n\n- Slightly better check for anonymous users, using getSecurityManager\n  instead of checking for an ``__ac`` cookie.\n  [maurits]\n\n- When a X_FORCE_LOGIN header is passed (exact spelling is configurable)\n  only allow access to logged in users (you get redirected usually).\n  [maurits]\n\n- Allow specifying the admin_header; defaults to HTTP_PLONEADMIN.\n  [maurits]\n\n- Added z3c.autoinclude.plugin entry point for plone, to avoid having\n  collective.editskinswitcher in the zcml option of your zope\n  instance; only effective in Plone 3.3 or higher.  In earlier\n  versions you still need to do this manually.\n  [maurits]\n\n\n",
+            "v": "<0.8"
+        }
+    ],
     "conn-check": [
         {
             "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
