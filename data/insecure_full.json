@@ -1912,6 +1912,12 @@
             "v": "<2013.2.3"
         }
     ],
+    "nsot": [
+        {
+            "changelog": "------------------\n\n* Implemented API key (auth_token) authentication\n* Cookies are now stored as secure cookies using cookie_secret setting.\n* New site setting for storing secret_key used for crypto.\n* User has a new .secret_key field which is generated when User is\n  created\n\n  + User should obtain key through web UI (however that is NYI)\n  + Secret key is used as user password to generate an auth_token\n\n* Auth token is serialized, and encrypted with server's key and also\n  contains an expiration timestamp (default 10 minutes)\n* AuthToken can be done using \"Authorization\" header or query args.\n* New User methods for generating and validating auth_token\n* API endpoints still also accept \"default\" login methods.\n* Added a models.get_db_session() function to make getting a session\n  easier!\n* Added a Model.query classmethod to make model queries easier!!\n* All new changes are unit tested!\n* If you're checking out the API auth stuff and want to test it out, see\n  the README.auth.rst file!\n* Web views use \"default\" auth (currently user_auth_header)\n* API views use \"default\" or \"auth_token\"\n* AuthToken can now be done using \"Authorization\" header or query args.\n\n",
+            "v": "<0.0.9"
+        }
+    ],
     "ovirt-engine-sdk-python": [
         {
             "cve": "CVE-2012-3533",
