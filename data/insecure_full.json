@@ -3742,6 +3742,12 @@
             "v": "<2.13.19"
         }
     ],
+    "zope.component": [
+        {
+            "changelog": "------------------\n\n- Remove the dependencies on ``zope.proxy`` and ``zope.security`` from the\n  zcml extra: ``zope.component`` no longer has a hard dependency on them;\n  the support for security proxied components ZCML registrations is enabled\n  only if ``zope.security`` and ``zope.proxy`` are available.\n\n- Move the ``IPossibleSite`` and ``ISite`` interfaces here from\n  ``zope.location`` as they are dealing with ``zope.component``'s concept of\n  a site, but not with location.\n\n- Move the ``zope.site.hooks`` functionality to ``zope.component.hooks`` as it\n  isn't actually dealing with ``zope.site``'s concept of a site.\n\n",
+            "v": "<3.8.0"
+        }
+    ],
     "zope.html": [
         {
             "cve": "CVE-2009-2265",
