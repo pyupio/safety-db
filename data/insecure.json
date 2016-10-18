@@ -132,6 +132,9 @@
     "django-guts": [
         "<0.1.1"
     ],
+    "django-html5-appcache": [
+        "<0.3.0"
+    ],
     "django-initial-avatars": [
         "<0.4",
         "<0.5.0"
