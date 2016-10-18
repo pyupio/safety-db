@@ -2252,6 +2252,12 @@
             "v": "<0.7.0"
         }
     ],
+    "ooniprobe": [
+        {
+            "changelog": "------------------------\n\n* Add ooniprobe manpage.\n\n* Fix various security issues raised by the least authority audit.\n\n* Add a test that checks for Tor bridge reachability.\n\n* Record the IP address of the exit node being used in torified requests.\n\n* Captive portal test now uses the ooni-probe test templates.\n\n* Have better test naming consistency.\n\n",
+            "v": "<1.0.2"
+        }
+    ],
     "otpauth": [
         {
             "changelog": "~~~~~~~~~~~~~\n\nReleased on May 26, 2015\n\nUse ``compare_digest`` to avoid timing attack.\n\n",
