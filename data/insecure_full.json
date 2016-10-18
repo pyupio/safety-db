@@ -1557,6 +1557,12 @@
             "v": "<1.0"
         }
     ],
+    "ftw.permissionmanager": [
+        {
+            "changelog": "------------------\n\n- Refactor reindexObjectSecurity patch to be less invasive. [jone]\n\n\n",
+            "v": "<2.4.1"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",
