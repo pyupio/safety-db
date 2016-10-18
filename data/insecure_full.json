@@ -160,6 +160,12 @@
             "v": "<1.0.0"
         }
     ],
+    "collective.deletepermission": [
+        {
+            "changelog": "------------------\n\n- Also patch manage_pasteObjects security deceleration the same way as manage_cutObjects.\n  This way it's possible to paste objects in a container, without Modify portal content\n  permission on the container itself.\n  [mathias.leimgruber]\n\n\n",
+            "v": "<1.3.0"
+        }
+    ],
     "collective.documentviewer": [
         {
             "changelog": "------------------\n\n- fix security on file resources\n\n\n",
