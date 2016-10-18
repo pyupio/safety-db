@@ -32,6 +32,9 @@
     "collective.noticeboard": [
         "<0.7.1"
     ],
+    "collective.stomach": [
+        "<0.2"
+    ],
     "conn-check": [
         "<1.0.18"
     ],
