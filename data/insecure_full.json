@@ -3294,6 +3294,12 @@
             "v": ">=2.1,<=2.5.3"
         }
     ],
+    "rinse": [
+        {
+            "changelog": "-----\n* Validate messages against SOAP 1.1 Envelope and SOAP 1.2 XML schema.\n* Add support for WSSE (Security) headers.\n\n",
+            "v": "<0.0.2"
+        }
+    ],
     "roundup": [
         {
             "cve": "CVE-2012-6130",
