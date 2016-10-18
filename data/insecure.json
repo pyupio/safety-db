@@ -145,6 +145,9 @@
     "django-python3-ldap": [
         "<0.9.5"
     ],
+    "django-rated": [
+        "<1.1.2"
+    ],
     "django-relatives": [
         "<0.3.0"
     ],
