@@ -4103,6 +4103,10 @@
                 "http://xforce.iss.net/xforce/xfdb/79831"
             ],
             "v": "<3.0"
+        },
+        {
+            "changelog": "-----------\n  - Added multiple list members operation api methods (add_list_members, remove_list_members).\n  - Added sitestream endpoint.\n  - Switch to using Requests instead of httplib.\n  - Fully removed support for non-secure HTTP.\n  - Proxy support.\n  - Add API method for /statuses/lookup.json\n  - Add missing 'count' parameter to followers_ids\n  - Added allowed_param to update_profile_image\n  - Comparison between Status objects\n  - Extend on_data method by including a conditional to process warning messages and add the definition of the method to manage those warning messages\n  - Better Python 3 support.\n\n",
+            "v": "<3.0"
         }
     ],
     "virtualenv": [
