@@ -3215,6 +3215,12 @@
             "v": "<1.3.6"
         }
     ],
+    "pymodbustcp": [
+        {
+            "changelog": "\n    - Now deal with IPv6 host.\n    - Fix Python3 issue in _crc().\n    - Improve modbus RTU receive code.\n    - Secure frame size before struct.unpack invocation.\n\n",
+            "v": "<0.0.5"
+        }
+    ],
     "pypicloud": [
         {
             "changelog": "-----------------\n* Bug fix: Security bug in user auth (:sha:`001e8a5`)\n* Bug fix: Package caching from pypi was slightly broken (:sha:`065f6c5`)\n* Bug fix: ``ppc-migrate`` works when migrating to the same storage type (:sha:`45abcde`)\n\n",
