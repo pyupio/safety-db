@@ -2711,6 +2711,12 @@
             "v": "<1.0"
         }
     ],
+    "products.carousel": [
+        {
+            "changelog": "------------------\n\n- Add 'Carousel Banner' to types not searched.\n  [davisagli]\n\n- Locate carousel folder correctly on containers used as default pages\n  (e.g. a Topic)\n  [davisagli]\n\n- Apply proper security declarations to the getSize and tag methods of the\n  banner type so that the view works okay when customized TTW.\n  [davisagli]\n\n- Only display the carousel on default view; not any of the other tabs.\n  [davisagli]\n\n- Fix viewlet removal on uninstallation.\n  [davisagli]\n\n- Fix duplicate entries in quick installer.\n  [davisagli]\n\n\n",
+            "v": "<1.0b3"
+        }
+    ],
     "products.ldapuserfolder": [
         {
             "cve": "CVE-2010-2944",
