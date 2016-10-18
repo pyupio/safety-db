@@ -50,6 +50,9 @@
     "cmsplugin-filer": [
         "<1.0.0"
     ],
+    "collective.confirmableforms": [
+        "<1.4.2"
+    ],
     "collective.documentviewer": [
         "<1.5.1"
     ],

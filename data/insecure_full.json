@@ -116,6 +116,12 @@
             "v": "<1.0.0"
         }
     ],
+    "collective.confirmableforms": [
+        {
+            "changelog": "------------------\n\n- Do not give our ConfirmedFormMailerAdapter a workflow.\n  [maurits]\n\n- Make more secure.\n  [maurits]\n\n\n",
+            "v": "<1.4.2"
+        }
+    ],
     "collective.documentviewer": [
         {
             "changelog": "------------------\n\n- fix security on file resources\n\n\n",
