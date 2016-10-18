@@ -426,6 +426,9 @@
     "requests-kerberos": [
         "<0.6"
     ],
+    "riakkit": [
+        "<0.6a"
+    ],
     "roundup": [
         "<1.4.20"
     ],
