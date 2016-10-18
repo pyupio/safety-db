@@ -2094,6 +2094,12 @@
             "v": "<1.3"
         }
     ],
+    "plecost": [
+        {
+            "changelog": "=============\n\nInternal modifications\n----------------------\n\n- Code REWRITTEN in Python 3.\n- Removed threads support in favor of asyncio connections.\n\nImprovements and fixes\n----------------------\n\n- Improved (a lot) the performance, thanks to asyncio module.\n- Improved vulnerability search for plugins.\n- Improved verbosity feature, adding different verbosity levels, not only one.\n- Fixed a lot of bugs.\n\nNew features\n------------\n\n- Added vulnerability search for wordpress version. Now Plecost indicated CVEs to installed wordpress.\n- Added progress bars\n- Automatic learning of site redirects and follow them.\n- Possibility of install using pip\n- Added command line option to consult plugins vulnerabilities and CVE database.\n- Added CVE searcher for outdated wordpress versions.\n",
+            "v": "<1.0.0"
+        }
+    ],
     "plone": [
         {
             "cve": "CVE-2011-2528",
