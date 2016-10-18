@@ -1888,6 +1888,12 @@
             "v": ">=2.0,<2.0.1"
         }
     ],
+    "neuronvisio": [
+        {
+            "changelog": "====================\n\n- Updated the version recall to GitPython 0.3.1 (used only if present!)\n- HocVector into NumpyArray for saving with swap in place, to reduce overhead\n- Restructured the package for an easier installation\n- Added the possibility to build documentation offline\n\n\n",
+            "v": "<0.5.2"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",
