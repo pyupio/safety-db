@@ -107,6 +107,9 @@
     "flask-oidc": [
         "<0.1.2"
     ],
+    "flask-social": [
+        "<1.5.0"
+    ],
     "formencode": [
         "<1.0"
     ],
