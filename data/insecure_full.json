@@ -1504,6 +1504,12 @@
             "v": "<0.7"
         }
     ],
+    "enstaller": [
+        {
+            "changelog": "-------------------\n\nMain highlights:\n\n  * added support for python 3 (>= 3.3) and pypy (274)\n  * http connections consolidated, CA certificates validated everywhere by\n    default.\n  * Add -k/--insecure option to ignore CA certification checks.\n  * enstaller now provides a proper user-agent when accessing a remote\n    server (319)\n  * token-based authentication when using brood store (266). One can also\n    use API token instead of passwords.\n  * enpkg now retries downloading eggs when checksum mismatch occurs\n    before bailing out (278), and retry connection failures as well (350)\n  * indices are fetched in parallel (424)\n  * new bootstrap script that works on every platform and is more reliable\n    than the old build.sh hack (320)\n  * `.enstaller4rc` is now searched in the following order:\n    * sys.prefix\n    * user's home directory\n    * parent virtualenv (when applicable)\n\nBug fixes:\n\n  * pypi confirmation is asked before resolving dependencies (323)\n  * fix enpkg crash when atom is installed over gdata (338)\n  * enpkg --info \"last modified\" output has been restored (296)\n\nInternals:\n\n  * dependency resolution is now in enstaller.solver. The new Solver class only\n    resolve dependencies (install/remove action, no fetch action anymore)\n  * http handling has been consolidated in the Session class. Authentication is\n    now pluggable through the IAuthManager.\n  * test suite does not access network anymore. Http tests handled through\n    the response library (285)\n  * add a new YAML-based configuration (not enabled yet).\n  * Auth configuration has been consolidated and is now pluggable\n    (currently supports storing authentication as username/password or api\n    token).\n  * enstaller.tools.repack added (replacement of endist `build_egg -r`).\n    This feature requires okonomiyaki >= 0.3.3 (available in Enthought'\n    repositories and on pypi).\n\n",
+            "v": "<4.8.0"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
