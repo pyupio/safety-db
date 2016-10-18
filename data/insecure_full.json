@@ -2499,6 +2499,12 @@
             "v": "<2.0.2"
         }
     ],
+    "plumi.skin": [
+        {
+            "changelog": "==================\n\nRelease for Plumi 4.1b1 [Dimitris Moraitis]\n\n - fix padding on author page [clopy]\n - remove background from portlet header [clopy]\n - remove bottom border from portlets [clopy]\n - Updated help for the Paypal donation mechanism [axxs]\n - author page layouts and check to see data entered before display of the donate button [axxs]\n - metadata file so authors comments show on getAuthorsComments [axxs]\n - Moved paypal donations button back to just on top of the video listing [axxs]\n - css and styling for latest comments listing as per ticket 469 [axxs]\n - Removed configlet for the moment as per ticket 222 [axxs]\n - update torrent details [clopy]\n - fix torrent download link display [clopy]\n - Moved donation button to bottom of listings, and added explanatory text [axss]\n - System for making popups from formHelp sections on edit forms, including a first formHelp popup for information on Paypal donation setup for members [axxs]\n - fullname is added to the comment search, as it is stored in the catalog either as the login OR full name [axxs]\n - Start of addition of Members latest comments side wide to their author page [axxs]\n - fixed issue with merge that broke the template and added change to text for linking to the authors member folder [axxs]\n\n\n",
+            "v": "<4.1b1"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
