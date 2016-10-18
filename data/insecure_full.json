@@ -2252,6 +2252,12 @@
             "v": "<0.7.0"
         }
     ],
+    "ooniprobe": [
+        {
+            "changelog": "------------------------\n\nooniprobe:\n\n* Set the default ASN to 0\n\n* Make Beautiful soup a soft depedency\n\n* Add support for sending the ASN number of the probe:\n\tthe ASN number will get sent when creating a new report\n\n* Add support for obtaining the probes IP address via getinfo address as per\n\thttps://trac.torproject.org/projects/tor/ticket/7447\n\n* Fix bug in ooniprobe test decks\n\thttps://trac.torproject.org/projects/tor/ticket/7664\n\noonib:\n\n* Use twisted fdesc when writing to files\n\n* Add support for processing the ASN number of the probe\n\n* Test reports shall follow the specification detailed inside of docs/reports.rst\n\n* Add support for setting the tor binary path in oonib/config.py\n\nscripts:\n\n* Add a very simple example on how to securely parse the ooniprobe reports\n\ndocumentation:\n\n* Add documentation for the DNSSpoof test\n\n* Add documentation for HTTPHeaderFieldManipulation\n\n* Clean up writing_tests.rst\n\n* Properly use the power of sphinx!\n\nTests:\n\n* fixup Netalyzr third party plugin\n\n",
+            "v": "<0.0.9"
+        }
+    ],
     "otpauth": [
         {
             "changelog": "~~~~~~~~~~~~~\n\nReleased on May 26, 2015\n\nUse ``compare_digest`` to avoid timing attack.\n\n",
