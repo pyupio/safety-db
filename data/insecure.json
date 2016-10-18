@@ -129,6 +129,9 @@
     "django-filebrowser-no-grappelli-staff": [
         "<3.4.2"
     ],
+    "django-fobi": [
+        "<0.4"
+    ],
     "django-guts": [
         "<0.1.1"
     ],
