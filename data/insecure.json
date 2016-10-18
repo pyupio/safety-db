@@ -114,6 +114,9 @@
     "django-autocomplete-light": [
         "<2.3.0"
     ],
+    "django-email-auth": [
+        "<0.1.4"
+    ],
     "django-embed-video": [
         "<0.3"
     ],
