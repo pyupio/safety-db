@@ -252,6 +252,9 @@
     "jose": [
         "<0.3.0"
     ],
+    "jottacloudclient": [
+        "<0.3"
+    ],
     "jottalib": [
         "<0.3"
     ],
