@@ -1500,6 +1500,12 @@
             "v": "<0.5.0"
         }
     ],
+    "django-lazysignup": [
+        {
+            "changelog": "-----\n\nThis version fixes a number of issues, adds new features and has backwards-\nincompatible changes:\n\n  - Fix a RST issue in README\n  - Fix an issue where a POST to the convert view would break if the user was anonymous.\n    The convert view now redirects to the LOGIN_URL by default, parameterised in the view.\n\nNew features:\n\n  - It is now easier to customise the process of converting a lazy user into a real user.\n    Previous versions allowed a custom form to be passed to the ``convert`` view, but the\n    code always expected a ``username`` and ``password1`` field to get credentials from to\n    log the user in. Now, a new ``get_credentials()`` method is called on the form to obtain\n    these credentials.\n  - The tests module now includes a ``no_lazysignup`` decorator that you can apply to a\n    method on your test case, which removes the lazy signup middleware for the duration\n    of that test only. This is useful for testing what happens when a view that is\n    marked with with the ``allow_lazy_user`` decorator ends up with an anonymous user\n    (most commonly, when a search engine visits).\n\nBackwards-incompatible changes:\n\n  - Generated usernames are now based on the session key, rather than actually being the\n    session key. This is to avoid a potential security issue where an app might simply\n    display a username, giving away a significant part of the user's session key. The\n    username is now generated from a SHA1 hash of the session key. This change means that\n    existing generated users will become invalid.\n\n",
+            "v": "<0.4.0"
+        }
+    ],
     "django-lfs": [
         {
             "changelog": "------------------\n\n* Security fix\n* Added manufacturer field to product management (Maciej Wi\u015bniowski)\n* Bugfix: fixed pagination for product page; issue 152 (Maciej Wi\u015bniowski)\n* Bugfix: fixed deleting of image for payment and shipping methods; issue 150\n* Bugfix: fixed markup; issue 148\n\n",
