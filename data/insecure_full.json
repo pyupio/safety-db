@@ -104,6 +104,12 @@
             "v": "<1.0.0"
         }
     ],
+    "collective.dexteritytextindexer": [
+        {
+            "changelog": "---\n\n- Made reindexer more robust, since sometimes the field values may be wrong.\n  [jbaumann]\n\n- Do not traverse to \"view\" in indexer, this could cause security issues especially in tests.\n  Using now a fake-view for enabling z2 mode.\n  [jbaumann]\n\n\n",
+            "v": "<1.1"
+        }
+    ],
     "collective.documentviewer": [
         {
             "changelog": "------------------\n\n- fix security on file resources\n\n\n",
