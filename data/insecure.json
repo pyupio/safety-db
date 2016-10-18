@@ -593,6 +593,9 @@
     "tornado": [
         "<2.2.1"
     ],
+    "tox-plus": [
+        "<1.6.1"
+    ],
     "tripleo-heat-templates": [
         "<0.8.10",
         "<0.8.7",
