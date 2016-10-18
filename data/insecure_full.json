@@ -1561,6 +1561,12 @@
             "v": "<0.9.5"
         }
     ],
+    "django-rated": [
+        {
+            "changelog": "=======\n\nSECURITY RELEASE\n\n+ X-Forwarded-For is no longer used by default.\n\nYou can enable the old behavior by setting USE_X_FORWARDED_FOR = True in your\nsettings.\n\n",
+            "v": "<1.1.2"
+        }
+    ],
     "django-relatives": [
         {
             "changelog": "------------------\n\n- Fix XSS vulnerability\n- Allow relatives/includes/fieldset.html template to be extended further\n- Improve documentation\n\n\n",
