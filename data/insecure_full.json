@@ -3573,6 +3573,12 @@
             "v": "<1.12.1"
         }
     ],
+    "semantic-version": [
+        {
+            "changelog": "------------------\n\n*Bugfix:*\n\n    * `2 <https://github.com/rbarrois/python-semanticversion/issues/2>`_: Properly expose\n      :func:`~semantic_version.validate` as a top-level module function.\n\n",
+            "v": "<2.2.1"
+        }
+    ],
     "setuptools": [
         {
             "changelog": "-----\n\n* Python 17980: Fix security vulnerability in SSL certificate validation.\n\n",
