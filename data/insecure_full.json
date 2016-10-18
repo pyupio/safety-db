@@ -65,6 +65,12 @@
             "v": "<0.5.1"
         }
     ],
+    "bottle": [
+        {
+            "changelog": "==============\n\n* New SimpleTemplate parser implementation\n\n  * Support for multi-line code blocks (`<% ... %>`).\n  * The keywords `include` and `rebase` are functions now and can accept variable template names.\n\n* The new :attr:`BaseRequest.route` property returns the :class:`Route` that originally matched the request.\n* Removed the ``BaseRequest.MAX_PARAMS`` limit. The hash collision bug in CPythons dict() implementation was fixed over a year ago. If you are still using Python 2.5 in production, consider upgrading or at least make sure that you get security fixed from your distributor.\n* New :class:`ConfigDict` API (see :doc:`configuration`)\n\nMore information can be found in this `development blog post <http://blog.bottlepy.org/2013/07/19/preview-bottle-012.html>`_.\n\n\n",
+            "v": "<0.12"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
