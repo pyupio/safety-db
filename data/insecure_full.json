@@ -1734,6 +1734,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "lxml-cffi": [
+        {
+            "changelog": "==================\n\nFeatures added\n--------------\n\n* Injecting default attributes into a document during XML Schema\n  validation (also at parse time).\n\n* Pass ``huge_tree`` parser option to disable parser security\n  restrictions imposed by libxml2 2.7.\n\nBugs fixed\n----------\n\n* The script for statically building libxml2 and libxslt didn't work\n  in Py3.\n\n* ``XMLSchema()`` also passes invalid schema documents on to libxml2\n  for parsing (which could lead to a crash before release 2.6.24).\n\nOther changes\n-------------\n\n\n",
+            "v": "<2.2.1"
+        }
+    ],
     "mailman": [
         {
             "cve": "CVE-2011-0707",
