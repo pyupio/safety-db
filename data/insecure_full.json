@@ -2188,6 +2188,12 @@
             "v": "<0.3"
         }
     ],
+    "jsonschema": [
+        {
+            "changelog": "----\n\n* Default for unknown types and properties is now to *not* error (consistent\n  with the schema).\n* Python 3 support\n* Removed dependency on SecureTypes now that the hash bug has been resolved.\n* \"Numerous bug fixes\" -- most notably, a divisibleBy error for floats and a\n  bunch of missing typechecks for irrelevant properties.\n",
+            "v": "<0.3"
+        }
+    ],
     "keyring": [
         {
             "cve": "CVE-2012-4571",

@@ -348,6 +348,9 @@
     "jottalib": [
         "<0.3"
     ],
+    "jsonschema": [
+        "<0.3"
+    ],
     "keyring": [
         "<0.9.1"
     ],
