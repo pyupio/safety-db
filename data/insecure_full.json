@@ -3355,6 +3355,10 @@
     ],
     "requests": [
         {
+            "changelog": "++++++++++++++++++\n\n**Features and Improvements**\n\n- Add sha256 fingerprint support. (`shazow/urllib3540`_)\n\n- Improve the performance of headers. (`shazow/urllib3544`_)\n\n**Bugfixes**\n\n- Copy pip's import machinery. When downstream redistributors remove\n  requests.packages.urllib3 the import machinery will continue to let those\n  same symbols work. Example usage in requests' documentation and 3rd-party\n  libraries relying on the vendored copies of urllib3 will work without having\n  to fallback to the system urllib3.\n\n- Attempt to quote parts of the URL on redirect if unquoting and then quoting\n  fails. (2356)\n\n- Fix filename type check for multipart form-data uploads. (2411)\n\n- Properly handle the case where a server issuing digest authentication\n  challenges provides both auth and auth-int qop-values. (2408)\n\n- Fix a socket leak. (`shazow/urllib3549`_)\n\n- Fix multiple ``Set-Cookie`` headers properly. (`shazow/urllib3534`_)\n\n- Disable the built-in hostname verification. (`shazow/urllib3526`_)\n\n- Fix the behaviour of decoding an exhausted stream. (`shazow/urllib3535`_)\n\n**Security**\n\n- Pulled in an updated ``cacert.pem``.\n\n- Drop RC4 from the default cipher list. (`shazow/urllib3551`_)\n\n.. _shazow/urllib3551: https://github.com/shazow/urllib3/pull/551\n.. _shazow/urllib3549: https://github.com/shazow/urllib3/pull/549\n.. _shazow/urllib3544: https://github.com/shazow/urllib3/pull/544\n.. _shazow/urllib3540: https://github.com/shazow/urllib3/pull/540\n.. _shazow/urllib3535: https://github.com/shazow/urllib3/pull/535\n.. _shazow/urllib3534: https://github.com/shazow/urllib3/pull/534\n.. _shazow/urllib3526: https://github.com/shazow/urllib3/pull/526\n\n",
+            "v": "<2.5.2"
+        },
+        {
             "cve": "CVE-2015-2296",
             "description": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct session fixation attacks via a cookie without a host value in a redirect.",
             "urls": [
