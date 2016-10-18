@@ -290,6 +290,9 @@
     "pretaweb.healthcheck": [
         "<1.0"
     ],
+    "products.carousel": [
+        "<1.0b3"
+    ],
     "products.ldapuserfolder": [
         "<2.19"
     ],
