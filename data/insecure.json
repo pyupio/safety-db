@@ -102,6 +102,9 @@
     "django-pluggable-filebrowser": [
         "<3.4.2"
     ],
+    "django-ratelimit2": [
+        "<0.2"
+    ],
     "django-relatives": [
         "<0.3.0"
     ],
