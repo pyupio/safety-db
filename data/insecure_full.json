@@ -1665,6 +1665,12 @@
             "v": "<1.1.2"
         }
     ],
+    "django-registration-redux": [
+        {
+            "changelog": "----------------\n\n* BACKWARDS-INCOMPATIBLE CHANGE: Remove support for Django 1.7.\n* Feature: Added workflow to resend activation email. See\n  `161 <https://github.com/macropin/django-registration/pull/161>`_.\n* Enhancement: Separate logic between account creation and activation.\n  See: `171 <https://github.com/macropin/django-registration/issues/171>`_.\n* Bugfix: Add page title to `activate.html`\n* Feature: Added a 3-step registration flow requiring manual admin approval.\n  See: `184 <https://github.com/macropin/django-registration/pull/184>`_.\n* Enhancement: Using a more cryptographically secure method for generating activation keys.\n  See: `213 <https://github.com/macropin/django-registration/issues/213>`_.\n\n",
+            "v": "<1.5"
+        }
+    ],
     "django-relatives": [
         {
             "changelog": "------------------\n\n- Fix XSS vulnerability\n- Allow relatives/includes/fieldset.html template to be extended further\n- Improve documentation\n\n\n",
