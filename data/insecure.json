@@ -623,6 +623,9 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "quality-report": [
+        "<1.41.1"
+    ],
     "requests": [
         "<2.3.0",
         "<2.6.0",
