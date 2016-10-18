@@ -17,6 +17,12 @@
             "v": "<2.4"
         }
     ],
+    "bravado-core": [
+        {
+            "changelog": "------------------\n- Adds support for security scheme definitions, mostly focusing on the \"apiKey\" type - PR 112.\n\n",
+            "v": "<4.4.0"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
