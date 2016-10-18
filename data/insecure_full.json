@@ -1822,14 +1822,12 @@
     ],
     "markdown2": [
         {
-
             "changelog": "\n- [Issue 29] Fix security hole in the md5-hashing scheme for handling HTML\n  chunks during processing.\n- [Issue 27] Fix problem with underscores in footnotes content (with\n  \"footnotes\" extra).\n\n",
             "v": "<1.0.1.14"
         },
         {
             "changelog": "\n- [Issue 30] Fix a possible XSS via JavaScript injection in a carefully\n  crafted image reference (usage of double-quotes in the URL).\n\n",
             "v": "<1.0.1.15"
-
         }
     ],
     "mixminion": [
@@ -3299,7 +3297,6 @@
             "v": "<1.0"
         },
         {
-
             "changelog": "-----\n\n* Issue 75: Add ``--insecure`` option to ez_setup.py to accommodate\n  environments where a trusted SSL connection cannot be validated.\n* Issue 76: Fix AttributeError in upload command with Python 2.4.\n\n",
             "v": "<1.1.1"
         },
@@ -3414,6 +3411,12 @@
                 "https://bitbucket.org/ianb/virtualenv/changeset/8be37c509fe5"
             ],
             "v": "<1.5"
+        }
+    ],
+    "yeast": [
+        {
+            "changelog": "=======\n* Add Kotlin example (Thanks Pelle Almquist)\n* Breaking change: S3 event source bucket definition can't be an ARN anymore\n* New: S3 event source bucket definition can be a reference now.\n* New: VPC security-groups and subnet-ids can now be customized using parameters.\n* New: S3 prefix and suffix can now be references.\n\n",
+            "v": "<0.3.0"
         }
     ],
     "zodb": [
