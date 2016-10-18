@@ -148,6 +148,9 @@
     "django-fluent-comments": [
         "<1.0.1"
     ],
+    "django-friendship": [
+        "<1.2.0"
+    ],
     "django-guts": [
         "<0.1.1"
     ],
