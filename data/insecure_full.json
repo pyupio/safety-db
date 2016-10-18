@@ -2833,6 +2833,12 @@
             "v": "<2.0.2"
         }
     ],
+    "pmxbot": [
+        {
+            "changelog": "======\n\n* 47: !password now generates more secure passwords.\n\n",
+            "v": "<1115.4"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
