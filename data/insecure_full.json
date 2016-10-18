@@ -1882,6 +1882,12 @@
             "v": "<0.1.5"
         }
     ],
+    "lassie": [
+        {
+            "changelog": "++++++++++++++++++\n- Support for secure url image and videos from Open Graph\n- Simplified `merge_settings` and data updating internally\n\n\n",
+            "v": "<0.6.0"
+        }
+    ],
     "lemur": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~~\n\n* **SECURITY ISSUE**: Switched from use a AES static key to Fernet encryption.\n  Affects all versions prior to 0.1.5. If upgrading this will require a data migration.\n  see: `Upgrading Lemur <https://lemur.readthedocs.com/adminstrationUpgradingLemur>`_\n",
