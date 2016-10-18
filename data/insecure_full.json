@@ -3446,6 +3446,12 @@
             "v": ">=2.1,<=2.5.3"
         }
     ],
+    "robotframework-imaplibrary": [
+        {
+            "changelog": "==================\n\n* Add subject and text filters\n* Add non-secure connection support\n* Adjust documentation\n* Add more unit test\n* Add backward compatible support\n* Add `Delete All Emails`, `Delete Email`, `Mark All Emails As Read`, and `Mark Email As Read` keywords\n* Add alternative keyword to deprecated keywords\n\n",
+            "v": "<0.2.1"
+        }
+    ],
     "roundup": [
         {
             "cve": "CVE-2012-6130",
