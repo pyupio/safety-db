@@ -1418,6 +1418,12 @@
             "v": "<0.9.2"
         }
     ],
+    "django-embed-video": [
+        {
+            "changelog": "---------------------------\n\n- Security fix: faked urls are treated as invalid. See `this page\n  <https://github.com/yetty/django-embed-video/commit/d0d357b767e324a7cc21b5035357fdfbc7c8ce8e>`_\n  for more details.\n\n- Fixes:\n\n  - allow of empty video field.\n\n  - requirements in setup.py\n\n- Added simplier way to embed video in one-line template tag::\n\n    {{ 'http://www.youtube.com/watch?v=guXyvo2FfLs'|embed:'large' }}\n\n- ``backend`` variable in ``video`` template tag.\n\n  Usage::\n\n    {% video item.video as my_video %}\n        Backend: {{ my_video.backend }}\n    {% endvideo %}\n\n\n",
+            "v": "<0.3"
+        }
+    ],
     "django-lfs": [
         {
             "changelog": "------------------\n\n* Security fix\n* Added manufacturer field to product management (Maciej Wi\u015bniowski)\n* Bugfix: fixed pagination for product page; issue 152 (Maciej Wi\u015bniowski)\n* Bugfix: fixed deleting of image for payment and shipping methods; issue 150\n* Bugfix: fixed markup; issue 148\n\n",
