@@ -3271,6 +3271,12 @@
             "v": "<1.1"
         }
     ],
+    "swiftsc": [
+        {
+            "changelog": "^^^^^^^^^^^^^^^^^^\n\n* Suppressed InsecureRequestWarning\n\n",
+            "v": "<0.6.2"
+        }
+    ],
     "tornado": [
         {
             "cve": "CVE-2012-2374",
