@@ -3867,6 +3867,12 @@
             "v": "<1.5.2"
         }
     ],
+    "winkerberos": [
+        {
+            "changelog": "------------------------\n\n- Switched to InitializeSecurityContextW to better support unicode\n  service principal names.\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "zeep": [
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
