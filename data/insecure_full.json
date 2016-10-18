@@ -2166,6 +2166,12 @@
             "v": "<2.3.0"
         }
     ],
+    "isso": [
+        {
+            "changelog": "----------------\n\nMajor improvements:\n\n- override thread discovery with data-isso-id=\"...\", 27\n\n  To use the same thread for different URLs, you can now add a custom\n  ``data-isso-id=\"my-id\"`` attribute which is used to identify and retrieve\n  comments (defaults to current URL aka `window.location.pathname`).\n\n- `isso.dispatch` now dispatches multiple websites (= configurations) based on\n  URL prefixes\n\n- fix a cross-site request forgery vulnerability for comment creation, voting,\n  editing and deletion, 40\n\n- show modal dialog to confirm comment deletion and activation, 36\n\n- new, comprehensive documentation based on reST + Sphinx:\n  http://posativ.org/docs (or docs/ in the repository). Also includes an\n  annotated `example.conf`, 43\n\n- new italian and russian translations\n\nMinor improvements:\n\n- move `isso:application` to `isso.run:application` to avoid uneccessary\n  initialization in some cases (change module if you use uWSGI or Gunicorn)\n- add Date header to email notifications, 42\n- check for blank text in new comment, 41\n- work around IE10's HTML5 abilities for custom data-attributes\n- add support for Gunicorn (and other pre-forking WSGI servers)\n\n\n",
+            "v": "<0.6"
+        }
+    ],
     "jinja": [
         {
             "changelog": "-------------\n(bugfix release, released on January 10th 2014)\n\n- Prefix loader was not forwarding the locals properly to\n  inner loaders.  This is now fixed.\n- Security issue: Changed the default folder for the filesystem cache to be\n  user specific and read and write protected on UNIX systems.  See `Debian bug\n  734747`_ for more information.\n\n.. _Debian bug 734747: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734747\n\n",
