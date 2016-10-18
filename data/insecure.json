@@ -248,6 +248,9 @@
     "products.plonepas": [
         "<3.9"
     ],
+    "prudentia": [
+        "<0.12"
+    ],
     "pycrypto": [
         "<2.6.1"
     ],
