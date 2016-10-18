@@ -3777,6 +3777,12 @@
             "v": "<0.1.9pre"
         }
     ],
+    "pywws": [
+        {
+            "changelog": "    1/ Added lowest daytime max and highest nighttime min temperatures\n       to monthly data.\n    2/ Added average temperature to daily and monthly data.\n    3/ Added 'terminal' element to Plot.py templates for greater control\n       over output appearance.\n    4/ Added 'command' element to Plot.py templates for even more\n       control, for advanced users.\n    5/ Added secure upload option.\n    6/ Minor speed improvements.\n\n",
+            "v": "<0.9"
+        }
+    ],
     "requests": [
         {
             "cve": "CVE-2015-2296",
