@@ -3351,6 +3351,12 @@
             "v": "<1.5"
         }
     ],
+    "wammu": [
+        {
+            "changelog": "==== (2010-01-21)\n\n* Fix manually updating Gammu settings (bdo 565165).\n* Disable phone search while connected to phone (bug 460).\n* Properly handle errors when submitting to phonedb (bug 1102).\n* Make talkback dialog modal (bug 487).\n* Wammu asks for PIN code on connection if required (bug 305).\n* Command wammu -i now also shows security status.\n* Do not try bluetooth connections on cable (bdo 565122).\n\n",
+            "v": "<0.32.1"
+        }
+    ],
     "zodb": [
         {
             "cve": "CVE-2010-3495",
