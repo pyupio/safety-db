@@ -87,6 +87,9 @@
     "django-piston": [
         "<0.2.3"
     ],
+    "django-pluggable-filebrowser": [
+        "<3.4.2"
+    ],
     "django-tastypie": [
         "<0.9.10"
     ],
