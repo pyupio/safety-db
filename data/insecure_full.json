@@ -1481,6 +1481,12 @@
             "v": "<1.3.2"
         }
     ],
+    "django-model-utils": [
+        {
+            "changelog": "------------------\n\n- Updated AutoCreatedField, AutoLastModifiedField, MonitorField, and\n  TimeFramedModel to use ``django.utils.timezone.now`` on Django 1.4.\n  Thanks Donald Stufft.\n\n- Fixed annotation of InheritanceQuerysets. Thanks Jeff Elmore and Facundo\n  Gaich.\n\n- Dropped support for Python 2.5 and Django 1.1. Both are no longer supported\n  even for security fixes, and should not be used.\n\n- Added ``PassThroughManager.for_queryset_class()``, which fixes use of\n  ``PassThroughManager`` with related fields. Thanks Ryan Kaskel for report and\n  fix.\n\n- Added ``InheritanceManager.get_subclass()``. Thanks smacker.\n\n",
+            "v": "<1.1.0"
+        }
+    ],
     "django-piston": [
         {
             "cve": "CVE-2011-4103",
