@@ -1671,6 +1671,12 @@
             "v": "<2.4.0"
         }
     ],
+    "django-socialnetworks": [
+        {
+            "changelog": "\nFeatures:\n\n+ Added new 'security' extra egg that installs requests[security] as dependency.\n\n\n",
+            "v": "<0.4.8"
+        }
+    ],
     "django-sql-explorer": [
         {
             "changelog": "===\n\n2/14/2014 - Happy Valentine's Day!\n\n- Templatized columns for easy linking\n- Additional security config options for splitting create vs. view permissions\n- Show many-to-many relation tables in schema helper\n\n",
