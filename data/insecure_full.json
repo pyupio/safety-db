@@ -56,6 +56,12 @@
             "v": "<1.0.18"
         }
     ],
+    "createsend": [
+        {
+            "changelog": "\n* Added support for validating SSL certificates to avoid man-in-the-middle attacks.\n\n",
+            "v": "<3.3.0"
+        }
+    ],
     "defusedexpat": [
         {
             "cve": "CVE-2013-1664",

@@ -20,6 +20,9 @@
     "conn-check": [
         "<1.0.18"
     ],
+    "createsend": [
+        "<3.3.0"
+    ],
     "defusedexpat": [
         "<0.3"
     ],
