@@ -17,6 +17,9 @@
     "clearsilver": [
         "<0.10.5"
     ],
+    "conn-check": [
+        "<1.0.18"
+    ],
     "defusedexpat": [
         "<0.3"
     ],
