@@ -369,6 +369,9 @@
     "pastescript": [
         "<1.7.5"
     ],
+    "pdfextract": [
+        "<0.0.2"
+    ],
     "peppercorn": [
         "<0.5"
     ],
