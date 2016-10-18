@@ -1912,6 +1912,12 @@
             "v": "<0.1.2"
         }
     ],
+    "formbar": [
+        {
+            "changelog": "===\n- Set autocomplete=\"off\" for password fields.\n- Added serialisation of dates.\n- Security fix: Fixed potential code injection issue by removing the rule\n  parsing out of formbar and use brabbel library for rule parsing and\n  evaluation.\n\n",
+            "v": "<0.9"
+        }
+    ],
     "formencode": [
         {
             "cve": "CVE-2008-6547",
