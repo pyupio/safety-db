@@ -11,6 +11,12 @@
             "v": "<0.6.0"
         }
     ],
+    "aldryn-cms": [
+        {
+            "changelog": "--------------------\n\n* Adds security setting for 3.0.16\n* bump django-filer to 1.2.x\n\n\n.. == other releases ==\n\n\n",
+            "v": "<3.2.4.3"
+        }
+    ],
     "aldryn-django": [
         {
             "changelog": "---------------------\n\n* Django 1.8.10 (security release)\n\n\n",
