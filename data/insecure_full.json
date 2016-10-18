@@ -2094,6 +2094,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "kotti": [
+        {
+            "changelog": "------------------\n\n- Add ``kotti.util.ViewLink.visible`` method for better control over\n  whether a view link should be visible or not.  This allows us to\n  move formerly hardcoded action links defined in\n  ``kotti.views.edit.actions`` into ``TypeInfo.action_links`` and thus\n  make them configurable either globally or per content type.\n\n- ``kotti.security.view_permitted`` will now check for\n  ``pyramid.security.view_execution_permitted`` with a request method\n  set to 'GET' by default.  It used to check for a view that matches\n  the current request's method.\n\n  This fixes an issue where ``kotti.util.ViewLink.permitted`` would by\n  mistake check for a 'POST' view when the current request was 'POST'.\n\n- Add ``INavigationRoot`` interface and ``TemplateAPI.navigation_root``\n  property.  The latter returns the first content node in the lineage that\n  implements ``INavigationRoot`` or the root node if ``INavigationRoot`` is not\n  implemented by any node in the lineage.  Make the ``nav.pt`` template use\n  ``api.navigation_root`` instead of ``api.root``.  This allows third party\n  add-ons to define content types that can reside somewhere in the content tree\n  while still being the root for the navigation.\n\n- Move navigation related view code to new module ``kotti.views.navigation``.\n  Deprecate imports from the old locations.\n\n- Remove *some* code that has been deprecated in 0.6 or 0.7.\n\n- A view assigned to a slot can access the slot name where its rendered.\n\n- Add missing `transaction.commit()` in `kotti-reset-workflow`.\n\n- Fix bug in `kotti.views.util.render_view` where local roles weren't\n  respected correctly.\n\n- Add helper method `kotti.message.send_email` for sending general\n  emails. These emails must follow a particular structure. Look at\n  `kotti:templates/email-set-password.pt` as an example.\n\n",
+            "v": "<0.9b1"
+        }
+    ],
     "lambdajson": [
         {
             "changelog": "-- Security fix. Using ast.literal_eval as eval.\n\n",
