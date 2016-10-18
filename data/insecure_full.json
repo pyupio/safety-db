@@ -1497,6 +1497,12 @@
             "v": "<0.9.7"
         }
     ],
+    "django-secure": [
+        {
+            "changelog": "------------------\n\n* Added the ``SECURE_HSTS_INCLUDE_SUBDOMAINS`` setting. Thanks Paul McMillan\n  for the report and Donald Stufft for the patch. Fixes 13.\n\n* Added the ``X-XSS-Protection: 1; mode=block`` header. Thanks Johannas Heller.\n\n\n",
+            "v": "<0.1.2"
+        }
+    ],
     "django-tastypie": [
         {
             "cve": "CVE-2011-4104",
