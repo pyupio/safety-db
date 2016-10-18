@@ -92,6 +92,12 @@
             "v": "<0.7.1"
         }
     ],
+    "collective.transcode.star": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~\n - provide three different embed sizes [clopy]\n - FIX security errors introduced with Plone Hotfix 20130618 [mgogoulos]\n - Update styling on share popup [clopy]\n - Add dexterity support [Gagaro]\n\n",
+            "v": "<0.22"
+        }
+    ],
     "conn-check": [
         {
             "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
