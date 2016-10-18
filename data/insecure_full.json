@@ -2510,6 +2510,12 @@
             "v": "<3.9"
         }
     ],
+    "pybrowserid": [
+        {
+            "changelog": "==================\n\n  * add support of requests rather than custom code for ssl checking when\n    retrieving certificates.\n  * removed patch utility for secure_urlopen (we are now using requests)\n  * add more verbose errors when dealing with RSA/DSA Keys.\n\n",
+            "v": "<0.5.0"
+        }
+    ],
     "pycrypto": [
         {
             "cve": "CVE-2013-1445",
