@@ -433,6 +433,9 @@
     "pretaweb.healthcheck": [
         "<1.0"
     ],
+    "pritunl": [
+        "<1.20.922.99"
+    ],
     "products.btreefolder2": [
         "<2.13.4"
     ],
