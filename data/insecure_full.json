@@ -2166,6 +2166,12 @@
             "v": "<2.3.0"
         }
     ],
+    "isso": [
+        {
+            "changelog": "----------------\n\n- fix malicious HTML injection (due to wrong API usage). All unknown/unsafe\n  HTML tags are now removed from the output (`html5lib` 0.99(9) or later) or\n  properly escaped (older `html5lib` versions).\n\n  See 36d702c and 3a1f92b for more details.\n\n- remove kriskowal/q JS library (promises implementation) in favour of a\n  self-made 50 LoC implementation to ease packaging (for Debian), 51\n\n- add documentation to display a comment counter, 56 and 57\n\n- SMTP notifications now support STARTTLS and use this transport security\n  by default, 48 and 58. This also changes the configuration option from\n  `ssl = [yes|no]` to `security = [none|starttls|ssl]`.\n\n- translation can now be made (and updated) with Transifex_. If you want to\n  take ownership for a language, contact me on IRC.\n\n- fix french pluralform\n\n- the (by default random) session-key is now shown on application startup\n  to make different keys per startup more visible\n\n- use `threading.lock` by default for systems without semaphore support\n\n.. _Transifex: https://www.transifex.com/projects/p/isso/\n\n\n",
+            "v": "<0.7"
+        }
+    ],
     "jinja": [
         {
             "changelog": "-------------\n(bugfix release, released on January 10th 2014)\n\n- Prefix loader was not forwarding the locals properly to\n  inner loaders.  This is now fixed.\n- Security issue: Changed the default folder for the filesystem cache to be\n  user specific and read and write protected on UNIX systems.  See `Debian bug\n  734747`_ for more information.\n\n.. _Debian bug 734747: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734747\n\n",
