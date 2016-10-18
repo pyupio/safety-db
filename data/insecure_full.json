@@ -3801,6 +3801,12 @@
             "v": "<0.1.9pre"
         }
     ],
+    "qi.jabberhelpdesk": [
+        {
+            "changelog": "  - Security fixes, some vulnerable xml-rpc calls fixed. [ggozad]\n\n",
+            "v": "<0.30"
+        }
+    ],
     "requests": [
         {
             "cve": "CVE-2015-2296",
