@@ -17,6 +17,12 @@
             "v": "<2.4"
         }
     ],
+    "botocore": [
+        {
+            "changelog": "=====\n\n* feature:``EC2``: Add support for VPC peering with security groups.\n* feature:``DirectoryService``: Add SNS event notification support\n\n\n",
+            "v": "<1.4.1"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
