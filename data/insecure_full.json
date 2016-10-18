@@ -35,6 +35,12 @@
             "v": "<0.1.4"
         }
     ],
+    "bang": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~\n- AWS provider\n\n    - Create and manage EC2 security groups and their rules.\n\n",
+            "v": "<0.8"
+        }
+    ],
     "bbcode": [
         {
             "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
