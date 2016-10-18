@@ -383,6 +383,9 @@
     "vnccollab.theme": [
         "<1.5.2"
     ],
+    "wtframework": [
+        "<0.4.7"
+    ],
     "zeep": [
         "<0.4.0"
     ],
