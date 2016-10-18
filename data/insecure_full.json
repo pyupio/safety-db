@@ -2504,6 +2504,12 @@
             "v": "<3.9"
         }
     ],
+    "products.printingmailhost": [
+        {
+            "changelog": "---\n\n- Updated to use the new standard log mechanism: logging.getLogger.\n  Reformated messages/docstrings.\n  [dtremea] (2006-03-17)\n\n- Extended to also patch SecureMailBase from SecureMailHost, if\n  available.\n  [dtremea] (2005-10-23)\n\n- Fixed to work both with old-style and new-style classes, as in\n  the later, dict is a 'dictproxy' instance, which doesn't have the\n  setitem method. Bumpped version. Noted changes. And clean up\n  whitespaces, of course... ;-)\n  [dtremea] (2005-10-23)\n\n- Initial creation/release\n  [optilude] (2005-04-05)\n",
+            "v": "<0.1"
+        }
+    ],
     "pycrypto": [
         {
             "cve": "CVE-2013-1445",
