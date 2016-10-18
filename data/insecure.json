@@ -288,6 +288,9 @@
     "python-otr": [
         "<1.1.0"
     ],
+    "quokka-flask-security": [
+        "<1.7.0"
+    ],
     "requests": [
         ">=2.1,<=2.5.3"
     ],
