@@ -146,6 +146,9 @@
     "gandi.cli": [
         "<0.10"
     ],
+    "gc-docker-py": [
+        "<0.5.0"
+    ],
     "google-appengine": [
         "<1.5.4"
     ],
