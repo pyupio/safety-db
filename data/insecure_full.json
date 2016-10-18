@@ -3693,6 +3693,12 @@
             "v": "<1.1.0"
         }
     ],
+    "python-saml": [
+        {
+            "changelog": "* Change the decrypt assertion process.\n* Add 2 extra validations to prevent Signature wrapping attacks.\n\n",
+            "v": "<2.1.9"
+        }
+    ],
     "pywebsite": [
         {
             "changelog": "---------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* hash_url fixes for length extension attack, and value equivalence attacks.\n\n\n",
