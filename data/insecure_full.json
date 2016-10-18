@@ -1607,6 +1607,12 @@
             "v": "<0.2.3"
         }
     ],
+    "django-pj-portfolio": [
+        {
+            "changelog": "-------------------\n\nNew features\n~~~~~~~~~~~~\n\n- Add management commands to update prices. [Petri Jokimies]\n\n\n\n\nRefactor\n~~~~~~~~\n\n- *test*: Security test and factories separeted. [Petri Jokimies]\n\n- *test*: Price tests and factories sepateted. [Petri Jokimies]\n\nDocumentation\n~~~~~~~~~~~~~\n\n- Added comments for management commads. [Petri Jokimies]\n\n",
+            "v": "<1.0.0"
+        }
+    ],
     "django-pluggable-filebrowser": [
         {
             "changelog": "-----------------\n\n* Fixed security bug: added staff_member_required decorator to the upload-function.\n* Fixed a XSS vulnerability with fb_tags.\n\n",
