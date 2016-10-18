@@ -3749,6 +3749,12 @@
             "v": "<2.1.9"
         }
     ],
+    "pytoolbox": [
+        {
+            "changelog": "---------------------------\n\nDeprecated\n==========\n\n* flask.get_request_data replaced by network.http.get_request_data\n\nMinor compatibility breaks\n==========================\n\n* Split django module into submodules\n* Rename SmartModel to AbsoluteUrlMixin\n\nFeatures\n========\n\n* Embed smpte2022lib\n* Add entry points (socket-fec-generator + twisted-fec-generator)\n* Add commit and release scripts to make it more securely (run tests before, check sphinx ...)\n* Add module network.http and classes juju.SimulatedUnit(s)\n* Add module django.templatetags with getattribute function\n* Add class django.models.SaveInstanceFilesMixin\n* Add function django.forms.update_widget_attributes\n\nFixes and enhancements\n======================\n\n* Lighter list of dependencies\n* Add --extra-... flags to install dependencies for the extra features/modules.\n* Filter packages to avoid installing tests module !\n* Fix setup.py to avoid removing tests from packages list if it did not exist.\n* Add kwargs to serialization.object2json -> json.dumps\n* map_marker : Convert to unicode sooner (to handle special field class)\n* django.forms.SmartModelForm : Attributes & replacement class applied depending of the form field's class\n* Add fill option to collections.pygal_deque.list()\n* Replace range by xrange, values by itervalues, ...\n* Handle datetime.date class (function datetime.dateime2epoch)\n* Add suffix parameter to AbsoluteUrlMixin.get_absolute_url\n* Ensure import from future of great things\n* Fix docstrings\n\nExample usage::\n\n    sudo python setup.py install --help\n    sudo python setup.py install --extra-flask\n\n--------------------------\n",
+            "v": "<5.0.0beta"
+        }
+    ],
     "pywebsite": [
         {
             "changelog": "---------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* hash_url fixes for length extension attack, and value equivalence attacks.\n\n\n",
