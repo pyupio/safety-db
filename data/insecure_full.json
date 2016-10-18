@@ -3297,6 +3297,12 @@
             "v": "<1.0.01.0.0"
         }
     ],
+    "pymatgen": [
+        {
+            "changelog": "------\n* Beta support for ABINIT input and output via pymatgen.io.abinitio\n  (courtesy of the excellent work of Matteo Giantomassi).\n* Properties are now checked when comparing two Species for equality.\n* MaterialsProjectVaspInputSet is now renamed to MPVaspInputSet for easier\n  typing. The old input sets have been deprecated.\n* New VaspInputSets for MPStatic, MPNonSCF, MITMD which supports uniform\n  grid, bandstructure and molecular dynamics calculations. The MD input set\n  uses MIT parameters for speed.\n* A beta DiffusionAnalysis class in the apps package.\n* A revised KPOINT grid algorithm that generates more reasonable meshes.\n* A guided install script is now provided for Mac and Linux users.\n\n",
+            "v": "<2.7.0"
+        }
+    ],
     "pymemcache": [
         {
             "changelog": "--------------------\n* Fix flake8 and cleanup tox building\n* Fix security vulnerability by sanitizing key input\n\n",
