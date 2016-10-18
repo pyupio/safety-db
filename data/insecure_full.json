@@ -3010,6 +3010,12 @@
             "v": "<2.1.1"
         }
     ],
+    "pycorrfit": [
+        {
+            "changelog": "- Removed unused fitting parameter d_eva from model 6022 and\n  secured backwards compatibility.\n- Improved support for ALV700X (92)\n- Bugfix: Corrected false display of Unicode characters on Windows\n- Under the hood:\n   - Code cleanup with pyflakes\n   - Repo cleanup (98)\n",
+            "v": "<0.8.7"
+        }
+    ],
     "pycrypto": [
         {
             "cve": "CVE-2013-1445",
