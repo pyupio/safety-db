@@ -62,6 +62,12 @@
             "v": "<1.0.0"
         }
     ],
+    "collective.googleanalytics": [
+        {
+            "changelog": "----------------\n\n* Added icon expression for control panel in Plone 4.\n  [2010-12-07 - yomatters]\n\n* Fixed permission bug so that the Google Analytics portlet can be made visible\n  to non-managers.\n  [2010-12-07 - yomatters]\n\n* Allowed requesting Google API javascript over HTTPS if the current page is\n  being served securely.\n  [2010-11-04 - yomatters]\n\n* Reduced logging level for query messages.\n  [2010-08-13 - yomatters]\n\n* wrap inline javascript in CDATA, making it easier to use with Deliverance.\n  [2010-08-13 - garbas]\n\n",
+            "v": "<1.0"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
