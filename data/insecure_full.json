@@ -1,4 +1,10 @@
 {
+    "1pass": [
+        {
+            "changelog": "* Added support for keys identified by a security level or an ID (at some point\n  1Password switched from using one to using the other).\n\n",
+            "v": "<0.1.7"
+        }
+    ],
     "cinder": [
         {
             "cve": "CVE-2013-1068",
