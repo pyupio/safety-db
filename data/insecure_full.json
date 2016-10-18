@@ -50,6 +50,12 @@
             "v": "<0.10.5"
         }
     ],
+    "cmsplugin-filer": [
+        {
+            "changelog": "------------------\n\n* Pin requirements for Django-Filer to >= 1.0.0\n* Improve test coverage\n* Fix icon_src / remove references of FILER_STATICMEDIA_PREFIX\n* XSS fix\n* Fix path names for storage backends\n* Fix migrations\n* Update README\n\n\n",
+            "v": "<1.0.0"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
