@@ -3161,6 +3161,12 @@
             "v": "<4.2.3"
         }
     ],
+    "praw": [
+        {
+            "changelog": "----------\n\n * **[BUGFIX]** PRAW automatically retries failed requests to reddit if the\n   error is likely to be a temporary one. This resulted in spamming reddit if\n   the error occurred after content had been saved to reddit's database.\n   Therefore the following methods will no longer retry failed request\n   :meth:`~praw.__init__.ModConfigMixin.upload_image`,\n   :meth:`~praw.__init__.PrivateMessagesMixin.send_message`,\n   :meth:`~praw.__init__.SubmitMixin.submit`,\n   :meth:`~praw.__init__.UnauthenticatedReddit.send_feedback`,\n   :meth:`~praw.objects.Inboxable.reply` and\n   :meth:`~praw.objects.Submission.add_comment`.\n   Additionally :meth:`~praw.__init__.BaseReddit.request_json` now has the\n   ``retry_on_error`` argument, which if set to ``True`` will prevent retries\n   of the request if it fails.\n\n",
+            "v": "<2.1.6"
+        }
+    ],
     "pretaweb.healthcheck": [
         {
             "changelog": "----------------\n\n- Removed force=yes option to prevent DoS attacks \n- Output now to instance stderr\n\n\n",
