@@ -1648,6 +1648,12 @@
             "v": "<5.1.2"
         }
     ],
+    "flask-oauthlib": [
+        {
+            "changelog": "-------------\n\nReleased on Mar 9, 2015\n\n- Improve on security.\n- Fix on contrib client.\n\n",
+            "v": "<0.9.1"
+        }
+    ],
     "flask-oidc": [
         {
             "cve": "CVE-2016-1000001",
