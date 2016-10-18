@@ -2049,6 +2049,12 @@
             "v": "<1.2.0"
         }
     ],
+    "gns3-gui": [
+        {
+            "changelog": "\n* Fix warning when closing GUI\n* Update links for new website.\n* Ask user to send bug reports to GNS3.com\n* Fix travis dependencies installation\n* Drop Webkit from 1.3.X\n* Fix crash when opening a new topologies after gns3 converter failure\n* Set Wireshark 2.0 as default OSX version\n* iTerm 2.9 support\n* Add informations about GNS3 VM\n* Drops securecrt.vbs\n* Fix analytics report on OSX\n* Analytics send windows\n* Fix the progress dialog freeze bug\n* Fix typo in analytics\n* Send stats to GNS3 team\n* Licenses compliance.\n* Fix error when importing dynamips config from non existent directory\n* Fix crash when url is invalid\n* Add a debug level 2 in the console\n\n",
+            "v": "<1.3.12"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",
