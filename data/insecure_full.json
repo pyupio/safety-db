@@ -3497,6 +3497,12 @@
             "v": "<1.1.0"
         }
     ],
+    "pyvisa": [
+        {
+            "changelog": "----------------\n\n- Mentioned possible AttributeError with viParseRsrcEx.\n- Made secure against missing viParseRsrcEx.\n- Removed superfluous calls to parse_resource_extended.\n- setup.py Script can now handle installation with or without setuptools.\n- setup.py: Switched to new distutils version.\n\n",
+            "v": "<1.1"
+        }
+    ],
     "pywebsite": [
         {
             "changelog": "---------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* hash_url fixes for length extension attack, and value equivalence attacks.\n\n\n",
