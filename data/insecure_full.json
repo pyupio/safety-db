@@ -2537,6 +2537,12 @@
             "v": "<4.2.3"
         }
     ],
+    "pretaweb.healthcheck": [
+        {
+            "changelog": "----------------\n\n- Removed force=yes option to prevent DoS attacks \n- Output now to instance stderr\n\n\n",
+            "v": "<1.0"
+        }
+    ],
     "products.ldapuserfolder": [
         {
             "cve": "CVE-2010-2944",
