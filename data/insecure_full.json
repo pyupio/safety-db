@@ -1990,6 +1990,12 @@
             "v": "<0.0.2"
         }
     ],
+    "mkbrutus": [
+        {
+            "changelog": "- Fixed: no accuracy when reading some dictionaries files with hidden characters (CR/LF).\n- Added: -s | --seconds option, to give a delay seconds between attempts.\n- Added: Stats at the end of attack.\n- Fixed: deleted some no needed lines.\n\n",
+            "v": "<1.0.2"
+        }
+    ],
     "moin": [
         {
             "cve": "CVE-2008-6549",
