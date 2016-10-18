@@ -1442,6 +1442,12 @@
             "v": "<0.3"
         }
     ],
+    "django-filebrowser-no-grappelli-staff": [
+        {
+            "changelog": "-----------------\n\n* Fixed security bug: added staff_member_required decorator to the upload-function.\n* Fixed a XSS vulnerability with fb_tags.\n\n",
+            "v": "<3.4.2"
+        }
+    ],
     "django-initial-avatars": [
         {
             "changelog": "\t- feat: avatar path now use md5 of username + first_name + last_name insted of simple username:\n\t\tpermit to updates the avatar when user changes its settings\n\t\t+ better for security\n",
