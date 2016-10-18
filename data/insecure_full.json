@@ -3831,6 +3831,10 @@
             "v": "<2.3.0"
         },
         {
+            "changelog": "++++++++++++++++++\n\n- Now has a \"security\" package extras set, ``$ pip install requests[security]``\n- Requests will now use Certifi if it is available.\n- Capture and re-raise urllib3 ProtocolError\n- Bugfix for responses that attempt to redirect to themselves forever (wtf?).\n\n\n",
+            "v": "<2.4.1"
+        },
+        {
             "cve": "CVE-2015-2296",
             "description": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct session fixation attacks via a cookie without a host value in a redirect.",
             "urls": [
