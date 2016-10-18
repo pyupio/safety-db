@@ -501,6 +501,9 @@
     "pymemcache": [
         "<1.3.6"
     ],
+    "pymodbustcp": [
+        "<0.0.5"
+    ],
     "pypicloud": [
         "<0.2.2"
     ],
