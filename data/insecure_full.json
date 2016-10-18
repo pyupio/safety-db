@@ -3599,6 +3599,12 @@
             "v": "<2.2.1"
         }
     ],
+    "trakt.py": [
+        {
+            "changelog": "------------------\n - Switched to manual interface importing to avoid security restrictions\n\n",
+            "v": "<2.0.6"
+        }
+    ],
     "tripleo-heat-templates": [
         {
             "cve": "CVE-2015-5303",
