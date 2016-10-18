@@ -2030,6 +2030,12 @@
             "v": ">=2.0,<2.0.1"
         }
     ],
+    "mygeotab": [
+        {
+            "changelog": "++++++++++++++++\n\n**Enhancements**\n\n- Extension for facilitating use of the MyGeotab `Data Feed <https://my.geotab.com/sdk//dataFeed>`_\n- Allow Pythonic underscore-separated parameters mapped to camelcase ones\n- Force the use of TLS 1.2 for `upcoming strict security requirements <https://www.geotab.com/blog/securing-mygeotab-with-tls/>`_ in MyGeotab\n  (Note that TLS 1.2 is only supported in Python 2.7.9+ and 3.4+)\n\n**Bug Fixes**\n\n- Fixed issue with CLI console startup\n- Use the system's default user location for config files\n",
+            "v": "<0.4"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",
