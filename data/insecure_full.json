@@ -85,6 +85,12 @@
             "v": "<1.0.9"
         }
     ],
+    "bepasty": [
+        {
+            "changelog": "-------------\n\nNew features:\n\n* support http basic auth header (it just reads the password from there, the\n  user name is ignored). this is useful for scripting, e.g. you can do now:\n  $ curl -F 'file=somefile;type=text/plain' http://user:passwordlocalhost:5000/+upload\n* you can give the filename for the list items now\n* do not use paste.txt as default filename, but <uuid>.txt or <uuid>.bin\n  (this is less pretty, but avoids collisions if you download multiple files)\n* allow uploading of multiple files via the fileselector of the browser\n* display download (view) timestamp\n* sorting of file lists\n* use iso-8859-1 if decoding with utf-8 fails\n* let admin directly delete locked files, without having to unlock first\n* new bepasty-object cli command\n* added REST api for bepasty-client-cli\n* MAX_RENDER_SIZE can be used to set up maximum sizes for items of misc. types,\n  so bepasty e.g. won't try to render a 1 GB text file with highlighting.\n* offer a \"max. lifetime\" when creating a pastebin\n* if you link to some specific text line, it will highlight that line now\n* add filename to the pastebin url (as anchor)\n\nRemoved features:\n\n* removed ceph-storage implementation due to bugs, missing features and general\n  lack of maintenance. it is still in the repo in branch ceph-storage, waiting\n  to be merged back after these issues have been fixed:\n  https://github.com/bepasty/bepasty-server/issues/13\n  https://github.com/bepasty/bepasty-server/issues/38\n\nFixes:\n\n* security fix: when showing potentially dangerous text/* types, force the\n  content-type to be text/plain and also turn the browser's sniffer off.\n* security fix: prevent disclosure of locked item's metadata\n* use POST for delete/lock actions\n* application/x-pdf content-type items are offer for in-browser rendering, too\n* fix typo in cli command bepasty-object set --incomplete (not: uncomplete)\n* quite some UI / UX and other bug fixes\n* filesystem storage: check if the configured directory is actually writeable\n\nOther changes:\n\n* using xstatic packages now for all 3rd party static files\n* docs updated / enhanced\n\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "birdhousebuilder.recipe.nginx": [
         {
             "changelog": "==================\n\n* disabled SSLv3 (poodle attack)\n\n",
