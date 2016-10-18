@@ -68,6 +68,12 @@
             "v": "<0.7.1"
         }
     ],
+    "collective.recipe.plonesite": [
+        {
+            "changelog": "==================\n\n- Update VirtualHostMonster support to correct loss of elevated security\n  context. [davidblewett]\n\n",
+            "v": "<1.6.3"
+        }
+    ],
     "conn-check": [
         {
             "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
