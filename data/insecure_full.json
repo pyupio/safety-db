@@ -1876,6 +1876,12 @@
             "v": "<0.1.5"
         }
     ],
+    "ldclient-py": [
+        {
+            "changelog": " Added\n- Support for multivariate feature flags. `variation` replaces `toggle` and can return a string, number, dict, or boolean value depending on how the flag is defined.\n- New `all_flags` method returns all flag values for a specified user.\n- New `secure_mode_hash` function computes a hash suitable for the new LaunchDarkly [JavaScript client's secure mode feature](https://github.com/launchdarkly/js-clientsecure-mode).\n\n Deprecated\n- The `toggle` call has been deprecated in favor of `variation`.\n \n Removed\n- Twisted support has temporarily been removed.\n\n",
+            "v": "<2.0.0"
+        }
+    ],
     "lemur": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~~\n\n* **SECURITY ISSUE**: Switched from use a AES static key to Fernet encryption.\n  Affects all versions prior to 0.1.5. If upgrading this will require a data migration.\n  see: `Upgrading Lemur <https://lemur.readthedocs.com/adminstrationUpgradingLemur>`_\n",
