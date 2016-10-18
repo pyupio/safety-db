@@ -1405,6 +1405,12 @@
             "v": "<1.3.2"
         }
     ],
+    "django-orderable": [
+        {
+            "changelog": "======\n\n* Don't use `commit_on_success` in model save.\n\n**Warning** Potentially backwards incompatible. We have removed this feature\nbecause it can cause database transactions to be commited that would\notherwise have been rolled back.\n\nWe recommend you make sure to use 'django.middleware.transaction.TransactionMiddleware', or at least use `django.db.transaction.commit_on_success` on any code that invokes the save method as it would otherwise be vulnerable to race conditions. If you are on django 1.6 we would instead recommend setting `settings.ATOMIC_REQUESTS = True`.\n\nThis version added `django.db.transation.atomic` to `Orderable.save` method\n(in django 1.6 only) but it was immediately removed in `2.0.1`.\n\n",
+            "v": "<2.0.0"
+        }
+    ],
     "django-piston": [
         {
             "cve": "CVE-2011-4103",
@@ -1822,14 +1828,12 @@
     ],
     "markdown2": [
         {
-
             "changelog": "\n- [Issue 29] Fix security hole in the md5-hashing scheme for handling HTML\n  chunks during processing.\n- [Issue 27] Fix problem with underscores in footnotes content (with\n  \"footnotes\" extra).\n\n",
             "v": "<1.0.1.14"
         },
         {
             "changelog": "\n- [Issue 30] Fix a possible XSS via JavaScript injection in a carefully\n  crafted image reference (usage of double-quotes in the URL).\n\n",
             "v": "<1.0.1.15"
-
         }
     ],
     "mixminion": [
@@ -3299,7 +3303,6 @@
             "v": "<1.0"
         },
         {
-
             "changelog": "-----\n\n* Issue 75: Add ``--insecure`` option to ez_setup.py to accommodate\n  environments where a trusted SSL connection cannot be validated.\n* Issue 76: Fix AttributeError in upload command with Python 2.4.\n\n",
             "v": "<1.1.1"
         },
