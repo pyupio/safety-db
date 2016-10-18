@@ -17,6 +17,12 @@
             "v": "<2.4"
         }
     ],
+    "centrifuge": [
+        {
+            "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
+            "v": "<0.3.8"
+        }
+    ],
     "cinder": [
         {
             "cve": "CVE-2013-1068",
