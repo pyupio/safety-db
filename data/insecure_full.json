@@ -1448,6 +1448,12 @@
             "v": "<0.5.0"
         }
     ],
+    "django-leonardo": [
+        {
+            "changelog": "--------\n\n* fix old permalink location\n* huge cleanup and support for FeinCMS 2\n* finalize rendering of external application\n* update docutils version and added pygments\n* fix linkedpage templates\n* fix fullscreen template\n* support django rest framework as external application\n* render region tools in bootstrap template\n* try to use kilo horizon in production\n* update meta\n* fixed secure media, mark logical structured media as experimental and non default\n* fix media location\n* breadcrumbs renamed\n* progress in list widgets\n* update aplication process\n* cleanup widget fragments and added head_title tag which respects actual fragments\n* added fragments US101\n* fix template\n* cleanup templates\n* fixes\n* template fix\n* make list\n* fix user login navbar\n* list templating PoC\n* use proper method for navigation url\n* fix asset name\n* fixed const\n* wow effect implementation\n* added choices\n* contextnavigation\n* fix asset name\n* fixed const\n* wow effect implementation\n* added choices\n* fix settings key\n* removed squash\n* properly load all urls from leonardo modules\n* fix page mass update form\n* widget update form layout changed\n* use ListMixin for ContextNavigation and FeedReader widgets\n* add widget label to main tab\n* fix title\n* page create fixes\n* fix bootstrap yaml and dumpweb cleanup\n* no exclude\n* dump web fix\n* small changes in dumpweb function\n* fix sync templates from management commands\n* fix installing extras in test environment\n* fix install dev skript\n* rebuild index task\n* get may has some extra attributes\n* updated migrations\n* inform users about ungrouped widgets\n* improve ContentProxyMixin and provide new JsonContentProxy\n* reworked cache mechanism for content proxy\n* keep requirements in one directory\n\n",
+            "v": "<2015.8.1"
+        }
+    ],
     "django-lfs": [
         {
             "changelog": "------------------\n\n* Security fix\n* Added manufacturer field to product management (Maciej Wi\u015bniowski)\n* Bugfix: fixed pagination for product page; issue 152 (Maciej Wi\u015bniowski)\n* Bugfix: fixed deleting of image for payment and shipping methods; issue 150\n* Bugfix: fixed markup; issue 148\n\n",
