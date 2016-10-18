@@ -2065,6 +2065,12 @@
             "v": "<3.1.1"
         }
     ],
+    "pinax-likes": [
+        {
+            "changelog": "\n-   Renamed `likes\\_css` and `likes\\_widget` to `likes\\_css` and `likes\\_widget`\n-   Turned the JavaScript code in to a jQuery plugin, removed most of\n    the initialization code from the individual widget templates to a\n    external JavaScript file, and added a `{% likes\\_js %}` tag to load\n    this plugin.\n-   Each like button gets a unique ID, so multiple like buttons can\n    appear on a single page\n-   The like form works without JavaScript.\n-   Likable models need to be added to `PINAX\\_LIKES\\_LIKABLE\\_MODELS`\n    setting. This prevents users from liking anything and everything,\n    which could potentially lead to security problems (eg. liking\n    entries in permission tables, and thus seeing their content; liking\n    administrative users and thus getting their username).\n-   Added request objects to both `object\\_liked` and `object\\_unliked`\n    signals.\n\n Backward Incompatibilities\n\n-   Pretty much all the template tags have been renamed and work\n    slightly differently\n\n",
+            "v": "<0.3"
+        }
+    ],
     "pip": [
         {
             "cve": "CVE-2013-1629",
