@@ -3728,6 +3728,12 @@
             "v": "<2.13.19"
         }
     ],
+    "zope.app.http": [
+        {
+            "changelog": "------------------\n\n- Replaced a testing dependency on `zope.app.securitypolicy` with one on\n  `zope.securitypolicy`.\n\n- Removed test dependency on `zope.app.file` by moving the test which needs\n  this package to `zope.app.file`.\n\n\n",
+            "v": "<3.9.0"
+        }
+    ],
     "zope.html": [
         {
             "cve": "CVE-2009-2265",
