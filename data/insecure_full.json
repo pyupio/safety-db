@@ -1540,6 +1540,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-stormpath": [
+        {
+            "changelog": "-------------\n\n**Released on July 14, 2014.**\n\n- Adding in easy 'Password Reset' functionality.  If a developer enables this\n  functionality, users can easily reset their passwords securely.  This feature\n  is disabled by default.\n\n\n",
+            "v": "<0.2.6"
+        }
+    ],
     "formencode": [
         {
             "cve": "CVE-2008-6547",
