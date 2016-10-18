@@ -2980,6 +2980,12 @@
             "v": "<3.9"
         }
     ],
+    "products.sqlalchemyda": [
+        {
+            "changelog": "------------------\n\n- fixed some security assertions\n- added \"Test\" tab for executing SQL queries directly\n- better error handling for ZMI screens\n- no longer depending on a pre-registered SQLAlchemy wrapper. SQLAlchemyDA\n  now accepts (as any other DA) a DSN as property 'dsn'\n- DSN can be passed through the add form\n- redirect directly to \"Info\" tab after creating an instance through the ZMI\n- catching some low-level exceptions from the sqlite interface in order to\n  make it work with SQLite\n- new properties 'transactional' and 'quoting_style'\n- improved support for Oracle and MySQL\n- SQLAlchemyDA no longer provides access to mapper related functionalities.\n  It now acts as a DA for executing SQL statements *only*.\n- fixed unregistration code for a wrapper (hopefully works with Zope 2.8 or\n  higher)\n\n- updated documentation\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "ptah": [
         {
             "changelog": "==================\n\nFeatures\n--------\n\n- Added `ptah.enable_modules` setting, list of enabled\n  management modules.\n\n- Require alembic 0.1.1\n\n\nBug fixes\n---------\n\n- Encode `content-type` header for blob `data` rest action\n\n- Do not use `request` for application factories in\n  `applications` rest action. It brakes security for current root object.\n\n\n",
