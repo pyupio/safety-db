@@ -62,6 +62,12 @@
             "v": "<1.0.0"
         }
     ],
+    "collective.documentviewer": [
+        {
+            "changelog": "------------------\n\n- fix security on file resources\n\n\n",
+            "v": "<1.5.1"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
