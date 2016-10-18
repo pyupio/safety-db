@@ -3723,6 +3723,12 @@
             "v": "<1.5.2"
         }
     ],
+    "webapp2": [
+        {
+            "changelog": "===========================\n- Added support for the (not yet released) App Engine Python 2.7 SDK.\n\n- Deprecated webapp2_extras.local_app. WSGIApplication is now thread-safe\n\tby default when webapp2_extras.local is available.\n\twebapp2_extras.local_app.WSGIApplication can still be imported, but it is\n\tjust an alias to webapp2.WSGIApplication (and a deprecation warning is\n\temitted when it is imported).\n\n- Like DomainRoute, PathPrefixRoute now only tests the nested routes if the\n\tprefix matches. So now it is not only convenient but matches smartly and\n\tfaster. ;)\n\n- Added webapp2_extras.security, with security related helpers such as secure\n\tpassword hashing tools.\n\n- webapp2_extras.sessions:\n\t- Now uses webapp2_extras.security.create_token() to generate session IDs\n\t\tinstead of uuid.\n\t- Added 'backends' configuration: get_session() can now be called passing\n\t\ta more convenient 'backend' key. Default ones are 'securecookie',\n\t\t'datastore' and 'memcache'.\n\n- get_build_routes() now yields (name, route) instead of simply route. This\n\twill allow routes with nested routes to act as a proxy to build URIs.\n\n- webapp2.urlunsplit() was removed from the public API.\n\n- Variables names in routes must now look like python identifiers -\n\tthis means that they can no longer start with a number, like before.\n\n- Removed support for _anchor in uri_for() -- the documented keyword is\n\t_fragment.\n\n- Removed support for handler functions receiving (request, response). The\n\tcorrect arguments for function handlers are (request, *args, **kwargs).\n\n- webapp2_extras.json:\n\t- Fixed an issue with importing json on non-GAE environments (missing\n\t\tabsolute import).\n\t- Now imports simplejson directly instead of using the one from Django,\n\t\tsince it is now included in the App Engine SDK (since version 1.4.2).\n\n- Added WSGIApplication.clear_globals(). Instead of\n\tapp.set_globals(app=None, request=None), use app.clear_globals().\n\n\n",
+            "v": "<2.0"
+        }
+    ],
     "zeep": [
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
