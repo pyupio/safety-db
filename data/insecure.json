@@ -8,6 +8,9 @@
     "aldryn-django": [
         "<1.8.10.1"
     ],
+    "algoliasearch": [
+        "<1.7.0"
+    ],
     "ansible": [
         "<2.0.2"
     ],
