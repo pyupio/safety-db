@@ -1572,6 +1572,12 @@
             "v": "<0.9.2"
         }
     ],
+    "django-anonymizer": [
+        {
+            "changelog": "-----------\n\n* Changed 'Anonymizer.attributes' to require every field to be listed.  This is\n  deal with the common security problem when a model is updated, but the\n  Anonymizer is not updated.\n\n  Fields that should not be anonymized should specify the special value \"SKIP\"\n  as the 'replacer'.\n\n* attributes must now be a list of tuples, not a dictionary.\n\n",
+            "v": "<0.4"
+        }
+    ],
     "django-anonymizer-compat": [
         {
             "changelog": "-----------\n\n* Changed 'Anonymizer.attributes' to require every field to be listed.  This is\n  deal with the common security problem when a model is updated, but the\n  Anonymizer is not updated.\n\n  Fields that should not be anonymized should specify the special value \"SKIP\"\n  as the 'replacer'.\n\n* attributes must now be a list of tuples, not a dictionary.\n\n",
