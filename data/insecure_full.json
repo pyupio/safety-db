@@ -1641,6 +1641,12 @@
             "v": "<0.10.0"
         }
     ],
+    "djrill": [
+        {
+            "changelog": "\n* Use Mandrill secure https API endpoint (rather than http).\n* Support :attr:`merge_language` option (for choosing between\n  Handlebars and Mailchimp templates).\n\n\n",
+            "v": "<1.3"
+        }
+    ],
     "docker-registry": [
         {
             "changelog": "\n * security fixes (path traversing prevention and token validation)\n\n",
