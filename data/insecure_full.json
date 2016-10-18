@@ -1722,6 +1722,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "kryptomime": [
+        {
+            "changelog": "------------------\n- added kryptomime.version\n- detect signed single-part mails\n- major bugfixes for secure IMAP and SMTP transport\n- bugfixes for default key: always lookup key ids\n- more tests\n\n",
+            "v": "<0.2.0"
+        }
+    ],
     "mailman": [
         {
             "cve": "CVE-2011-0707",
