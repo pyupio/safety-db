@@ -23,6 +23,12 @@
             "v": "<0.5.1"
         }
     ],
+    "cent": [
+        {
+            "changelog": "=====\n\n* add `insecure_api` boolean option to `Client` - when `True` then client\n    won't generate sign for every request to Centrifugo. This will work when Centrifugo\n    itself started with `--insecure_api` option. Don't forget about firewall rules in production.\n\n\n",
+            "v": "<1.2.0"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
