@@ -1870,6 +1870,12 @@
             "v": "<1.1.105"
         }
     ],
+    "mackup": [
+        {
+            "changelog": "\n- Added support for SecureCRT (via micate)\n- Added dry-run and verbose options (via yastero)\n- Removed a git link which was overwritten by GitHub to a file\n\n",
+            "v": "<0.8.10"
+        }
+    ],
     "mailman": [
         {
             "cve": "CVE-2011-0707",
