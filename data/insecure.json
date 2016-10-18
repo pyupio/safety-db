@@ -246,6 +246,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "eke.biomarker": [
+        "<0.0.1"
+    ],
     "euphorie": [
         "<6.1"
     ],
