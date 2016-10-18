@@ -29,6 +29,12 @@
             "v": "<1.0.9"
         }
     ],
+    "birdhousebuilder.recipe.nginx": [
+        {
+            "changelog": "==================\n\n* disabled SSLv3 (poodle attack)\n\n",
+            "v": "<0.1.5"
+        }
+    ],
     "bise.theme": [
         {
             "changelog": "------------------\n* Bug fix: fix potential XSS issue with catalogue search\n  [tiberich 75243]\n\n",
