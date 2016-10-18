@@ -1935,6 +1935,12 @@
             "v": "<1.0"
         }
     ],
+    "ftw.mail": [
+        {
+            "changelog": "------------------\n\n- Parse <style> tags inside the mail using the `premailer` transform.\n  [phgross]\n\n- Made mail view XSS-save using the safe-html transform for the mail-body display.\n  [phgross]\n\n- Fix an issue while generating links to image-attachments in mails.\n  [deiferni]\n\n\n",
+            "v": "<2.2.3"
+        }
+    ],
     "ftw.permissionmanager": [
         {
             "changelog": "------------------\n\n- No longer allow users with view permission to access the advanced\n  security features. Since it's possible to search for all users, which\n  exposes all usernames and email addresses to anyone with view permission.\n  [mathias.leimgruber]\n\n\n",
