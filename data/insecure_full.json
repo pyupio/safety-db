@@ -1990,6 +1990,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "kinetic": [
+        {
+            "changelog": "===========================\n\n Important\n- Kinetic Protocol version updated to [3.0.0](https://github.com/Seagate/kinetic-protocol/tree/3.0.0)\n- Everything requires proto 3.0.0 or higher on the device\n- Devices pre 3.0.0 do not have handshakes and will raise Handshake timeout\n\n New features\n- Added `--version` to cmd line tool\n- Added background operations Scan and Optimize\n- Added pin operations (Lock, unlock, erase, secureErase)\n- Client auto configures cluster_version based on initial handshake\n- ErasePin and LockPin can be set during the security operation\n- Client fields config and limits show device information\n- Added unsolicited status support\n- Pin based operations MUST have a pin set and SSL enabled\n- setSecurity MUST have SSL enabled\n- getLog / getLogAsync added to Client/AsyncClient\n\n Behavior changes\n- Removed GreenClient (Feature overlap with AsyncClient)\n- Removed PipelinedClient (Only used internally by the kineticc)\n- setPin removed from AdminClient\n\n",
+            "v": "<0.8.0"
+        }
+    ],
     "lambdajson": [
         {
             "changelog": "-- Security fix. Using ast.literal_eval as eval.\n\n",
