@@ -1854,6 +1854,12 @@
             "v": "<1.0.1.15"
         }
     ],
+    "mercurial-all-paths": [
+        {
+            "changelog": "~~~~~~~~~~~~~\n\nRelease by Marcin Kasperski\n\nAdded hg pullall, hg incomingall, hg outgoingall\n\nInternals reworked so all push options work (also --insecure, --ssh)\n\nAdded setup.py, PyPi release.\n\nRenamed to mercurial_all_paths (to make PyPi conflicts less likely). \n\n*\n~~~~~~~~~~~~~\n\nInitial release by Ludovic Chabant. \n\n   hg pushall\n\ncommand, and\n\n   hg pushall -g \u00e2\u0080\u00b9group\u00e2\u0080\u00ba\n",
+            "v": "<0.6.0"
+        }
+    ],
     "mixminion": [
         {
             "changelog": "   - A real SMTP exit module to relay messages via a local MTA.  Blacklisting\n     is supported by address, by username, by host, by entire domain, and\n     by regular expression.\n   - Integrated directory support for clients.\n   - Automatic path selection, along with a better user interface to specify\n     paths.\n   - You can now enable Cottrell (DynamicPool) and Binomial Dynamic Pool\n     batching, though they are disabled by default to make the system more\n     testable.\n   - Servers resist certain trivial DoS attacks more strongly.  In\n     particular, you should no longer be able to send zlib bombs or flood a\n     server with open connections.\n   - Clean build process under FreeBSD.\n   - Ability to run server as a daemon.\n   - Slightly better documentation and error messages.\n   - Better resistance to newline corruption of server descriptors.\n   - Other bugfixes and performance improvements too numerous to mention.\n\n",
