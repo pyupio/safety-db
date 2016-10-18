@@ -3323,6 +3323,12 @@
             "v": "<1.1"
         }
     ],
+    "simplescn": [
+        {
+            "changelog": " bugfixes\n* unix sockets are better secured\n* protect regex against long urls\n* fix wrap support\n* add example\n\n changes\n* require prefix for foreign created services\n* rename *trust to *perm\n* move trusteddb, hasdb into links\n* add more modes for registerservice\n* announce client with info file\n* change defaults\n* speed up by using caches\n* move starter of client, server to start\n* rename classes to python naming convention\n* move certtupel to links (isself support serverside)\n\n",
+            "v": "<0.6"
+        }
+    ],
     "tornado": [
         {
             "cve": "CVE-2012-2374",
