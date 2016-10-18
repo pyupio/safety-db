@@ -17,6 +17,12 @@
             "v": "<2.4"
         }
     ],
+    "bk-flower": [
+        {
+            "changelog": "-----------\n\nReleased on May 25 2014\n\n- documentation\n- --basic_auth option accepts multiple basic http auth users\n- configuration options can be passed through `flowerconfig.py` file\n- --cookie_secret option for setting secure cookie secret\n- new task info api\n- --auto_refresh option allows to disable dashboard auto-refreshes\n- `received` and `started` time columns for tasks dashboard\n- man page\n\n",
+            "v": "<0.7"
+        }
+    ],
     "bok-choy": [
         {
             "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",
