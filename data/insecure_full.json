@@ -31,6 +31,10 @@
             "v": "<1.5.5"
         },
         {
+            "changelog": "\n- Security updates to further protect against the incorrect execution of untrusted data\n\n",
+            "v": "<1.6.6"
+        },
+        {
             "changelog": "\n- Security fixes:\n  * Strip lookup calls out of inventory variables and clean unsafe data\n    returned from lookup plugins (CVE-2014-4966)\n  * Make sure vars don't insert extra parameters into module args and prevent\n    duplicate params from superseding previous params (CVE-2014-4967)\n\n",
             "v": "<1.6.7"
         },
