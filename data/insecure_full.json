@@ -3446,6 +3446,12 @@
             "v": "<1.2"
         }
     ],
+    "zope.untrustedpython": [
+        {
+            "changelog": "------------------\n\n- Test coverage at 100%.\n\n- Package extracted from zope.security, preserving revision history\n",
+            "v": "<4.0.0"
+        }
+    ],
     "zope2": [
         {
             "cve": "CVE-2010-3198",
