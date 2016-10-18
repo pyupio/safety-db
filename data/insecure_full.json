@@ -3759,6 +3759,10 @@
             "v": "<8.1.5"
         },
         {
+            "changelog": "-------------\n\n- [SECURITY] Fixed an issue where a superuser had the ability to inject data into audit logs through the admin UI.\n\n",
+            "v": "<8.2.2"
+        },
+        {
             "changelog": "-------------\n\n- [SECURITY] If being run in multi-organization mode, it was possible for a user to craft a URL which would allow them to view membership details of other users.\n\n",
             "v": "<8.2.4"
         },
