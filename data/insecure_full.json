@@ -1984,6 +1984,12 @@
             "v": "<1.0.1.15"
         }
     ],
+    "max": [
+        {
+            "changelog": "------------------\n\n* Add conversations avatar endpoint [Carles Bruguera]\n* Trim bad characters at the end of actor search [Carles Bruguera]\n* Add endpoints to add/remove users to roles [Carles Bruguera]\n* Reload security settngs on any change [Carles Bruguera]\n* Fix ancient URI reference [Carles Bruguera]\n* Add specific endpoints to manage context tags [Carles Bruguera]\n* Test modify context overwrites tags [Carles Bruguera]\n* Do not remove tags from user subscription data [Carles Bruguera]\n* Add displayName and username parts to activity keywords [Carles Bruguera]\n* Allow operations mutable to the tags attribute [Victor Fernandez de Alba]\n* read limit as integer [Carles Bruguera]\n* Unique based on username instead of full object [Carles Bruguera]\n* Add displayName on conversation creation if provided [Carles Bruguera]\n* Add objectType to errors [Carles Bruguera]\n\n",
+            "v": "<3.5.4"
+        }
+    ],
     "mixminion": [
         {
             "changelog": "   - A real SMTP exit module to relay messages via a local MTA.  Blacklisting\n     is supported by address, by username, by host, by entire domain, and\n     by regular expression.\n   - Integrated directory support for clients.\n   - Automatic path selection, along with a better user interface to specify\n     paths.\n   - You can now enable Cottrell (DynamicPool) and Binomial Dynamic Pool\n     batching, though they are disabled by default to make the system more\n     testable.\n   - Servers resist certain trivial DoS attacks more strongly.  In\n     particular, you should no longer be able to send zlib bombs or flood a\n     server with open connections.\n   - Clean build process under FreeBSD.\n   - Ability to run server as a daemon.\n   - Slightly better documentation and error messages.\n   - Better resistance to newline corruption of server descriptors.\n   - Other bugfixes and performance improvements too numerous to mention.\n\n",
