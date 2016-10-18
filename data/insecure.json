@@ -115,6 +115,9 @@
     "django-pluggable-filebrowser": [
         "<3.4.2"
     ],
+    "django-python3-ldap": [
+        "<0.9.5"
+    ],
     "django-relatives": [
         "<0.3.0"
     ],
