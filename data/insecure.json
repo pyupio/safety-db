@@ -247,6 +247,9 @@
     "pastescript": [
         "<1.7.5"
     ],
+    "paypalrestsdk": [
+        "<1.11.1"
+    ],
     "peppercorn": [
         "<0.5"
     ],
