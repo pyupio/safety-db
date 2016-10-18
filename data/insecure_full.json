@@ -2679,6 +2679,12 @@
             "v": "<2.0.2"
         }
     ],
+    "plumbum": [
+        {
+            "changelog": "---\n* ``Command.popen``: a new argument, ``new_session`` may be passed to ``Command.popen``, which runs the given \n  in a new session (``setsid`` on POSIX, ``CREATE_NEW_PROCESS_GROUP`` on Windows) \n* ``Command.Popen``: args can now also be a list (previously, it was required to be a tuple). See \n* ``local.daemonize``: run commands as full daemons (double-fork and ``setsid``) on POSIX systems, or\n  detached from their controlling console and parent (on Windows).   \n* ``list_processes``: return a list of running process (local/remote machines)\n* ``SshMachine.nohup``: \"daemonize\" remote commands via ``nohup`` (not really a daemon, but good enough)\n* ``atomic``: Atomic file operations (``AtomicFile``, ``AtomicCounterFile`` and ``PidFile``)\n* ``copy`` and ``move``: the ``src`` argument can now be a list of files to move, e.g., ``copy([\"foo\", \"bar\"], \"/usr/bin\")``\n* list local and remote processes\n* cli: better handling of text wrapping in the generated help message\n* cli: add a default ``main()`` method that checks for unknown subcommands\n* terminal: initial commit (``get_terminal_size``)\n* packaging: the package was split into subpackages; it grew too big for a flat namespace.\n  imports are not expected to be broken by this change\n* SshMachine: added ``password`` parameter, which relies on `sshpass <http://linux.die.net/man/1/sshpass>`_ to feed the \n  password to ``ssh``. This is a security risk, but it's occasionally necessary. Use this with caution!\n* Commands now have a ``machine`` attribute that points to the machine they run on\n* Commands gained ``setenv``, which creates a command with a bound environment\n* Remote path: several fixes to ``stat`` (``StatRes``)\n* cli: add lazily-loaded subcommands (e.g., ``MainApp.subcommand(\"foo\", \"my.package.foo.FooApp\")``), which are imported \n  on demand\n* Paths: added `relative_to and split <https://github.com/tomerfiliba/plumbum/blob/c224058bcefaf5c00fe2295389887c7ebc9d5132/tests/test_local.pyL53>`_,\n  which (respectively) computes the difference between two paths and splits paths into lists of nodes\n* cli: ``Predicate`` became a class decorator (it exists solely for pretty-printing anyway)\n* PuttyMachine: `bugfix <https://github.com/tomerfiliba/plumbum/pull/85>`_\n\n",
+            "v": "<1.3"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
