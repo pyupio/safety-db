@@ -2493,6 +2493,12 @@
             "v": "<0.5"
         }
     ],
+    "pex": [
+        {
+            "changelog": "-----\n\n* The crawler now defaults to not follow links for security reasons.\n  (Before the default behavior was to implicitly ``--follow-links`` for all\n  requirements.) `RB 293 <https://rbcommons.com/s/twitter/r/293/>`_\n\n",
+            "v": "<0.5.6"
+        }
+    ],
     "pillow": [
         {
             "changelog": "------------------\n\n- Fixed CVE-2014-3589, a DOS in the IcnsImagePlugin (backport)\n  [Andrew Drake]\n\n\n",
