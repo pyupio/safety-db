@@ -296,6 +296,9 @@
     "formencode": [
         "<1.0"
     ],
+    "ftw.dashboard.dragndrop": [
+        "<1.5.1"
+    ],
     "ftw.dashboard.portlets.postit": [
         "<1.3.4"
     ],
