@@ -142,6 +142,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "easycluster": [
+        "<0.03"
+    ],
     "euphorie": [
         "<6.1"
     ],
