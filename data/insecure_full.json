@@ -29,6 +29,12 @@
             "v": "<0.3.1"
         }
     ],
+    "argon2-cffi": [
+        {
+            "changelog": "-------------------\n\nVendoring Argon2  4fe0d8cda37691228dd5a96a310be57369403a4b_.\n\nChanges:\n^^^^^^^^\n\n- ``verify_password()`` doesn't guess the hash type if passed ``None`` anymore.\n  Supporting this resulted in measurable overhead (~ 0.6ms vs 0.8ms on my notebook) since it had to happen in Python.\n  That means that na\u00efve usage of the API would give attackers an edge.\n  The new behavior is that it has the same default value as ``hash_password()`` such that ``verify_password(hash_password(b\"password\"), b\"password\")`` still works.\n- Conditionally use the `SSE2 <https://en.wikipedia.org/wiki/SSE2>`_-optimized version of ``argon2`` on x86 architectures.\n- More packaging fixes.\n  Most notably compilation on Visual Studio 2010 for Python 3.3 and 3.4.\n- Tweaked default parameters to more reasonable values.\n  Verification should take between 0.5ms and 1ms on recent-ish hardware.\n\n\n----\n\n\n",
+            "v": "<15.0.0"
+        }
+    ],
     "authbwc": [
         {
             "changelog": "=========================\n\n* (SECURITY FIX) fixed an issue with the way the HTTP session user permissions\n  were loaded.  This vulnerability made it possible for a user to gain the\n  permissions of the user logged in previously.  The user would have had\n  to be sharing the same http session for this access to have been\n  gained.\n\n",
