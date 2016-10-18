@@ -3742,6 +3742,12 @@
             "v": "<2.13.19"
         }
     ],
+    "zope.app.http": [
+        {
+            "changelog": "------------------\n\n- Resolved ``ZopeSecurityPolicy`` deprecation warning.\n\n\n",
+            "v": "<3.4.1"
+        }
+    ],
     "zope.html": [
         {
             "cve": "CVE-2009-2265",
