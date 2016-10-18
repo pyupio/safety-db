@@ -354,6 +354,9 @@
     "plone.openid": [
         "<2.0.2"
     ],
+    "plone.testing": [
+        "<4.0a5"
+    ],
     "pplone": [
         "<4.2.3"
     ],
