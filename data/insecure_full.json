@@ -2274,6 +2274,10 @@
     ],
     "nsupdate": [
         {
+            "changelog": "-------------\n\nNote: 0.8 is the last release with Django 1.5.x support, we'll remove support\nfor it in 0.9. Django 1.5 is also EOLed from Django Project, so upgrade your\nDjango soon.\n\nNew Features:\n\n* redesigned UI:\n\n  * unify hosts and domains overview into 1 view\n  * move forms to add hosts/domains to own views\n  * move reverse DNS display to home view\n  * removed some superfluous links and formatting\n* host view: give more feedback about client/server results on the web UI,\n  so a user can see why updates are not working (even if some stupid update\n  client does not tell him).\n  But please note: if you fail to configure your credentials correctly in your\n  update client, we can NOT show that there as we need them to load your host\n  record from the database (and to know it is really YOU who is talking to us).\n* add OpenWRT configuration help\n* add search field to Host and Domain admin\n\nFixes:\n\n* fixed Python 3 incompatibility of Basic Auth code (issue 172)\n* fix security issue: abuse_blocked flag could be worked around by abuser\n* refactored internal api so host/zone boundary is not lost and does not need\n  to be discovered (we KNOW it) - fixes issues 122 and 138.\n* fixed tests so they behave on travis-ci\n* fix unhandled PeerBadTime exception\n\nOther changes:\n\n* form field help texts are translatable now\n* admin views: added \"created\", removed \"created_by\" filter (does not scale)\n\n\n",
+            "v": "<0.8.0"
+        },
+        {
             "changelog": "-------------\n\nFixes:\n\n* fix security issue with \"related hosts\" / \"service updaters\", fixes 177\n\n\n",
             "v": "<0.9.1"
         }
