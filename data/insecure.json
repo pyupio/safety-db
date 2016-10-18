@@ -159,6 +159,9 @@
     "ftw.permissionmanager": [
         "<2.2.2"
     ],
+    "ftw.solr": [
+        "<1.1.2"
+    ],
     "gandi.cli": [
         "<0.10"
     ],
