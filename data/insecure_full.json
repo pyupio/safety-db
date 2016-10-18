@@ -1641,6 +1641,12 @@
             "v": "<0.10.0"
         }
     ],
+    "djrill": [
+        {
+            "changelog": "\n* Handle Mandrill rejection whitelist/blacklist sync event webhooks\n* This is likely the final release of Djrill (other than\n  any critical security updates). See GitHub for more on the\n  `future of Djrill <https://github.com/brack3t/Djrill/issues/111>`_.\n\n\n",
+            "v": "<2.1"
+        }
+    ],
     "docker-registry": [
         {
             "changelog": "\n * security fixes (path traversing prevention and token validation)\n\n",
