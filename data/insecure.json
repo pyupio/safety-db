@@ -180,6 +180,9 @@
     "oauthlib": [
         "<0.7.0"
     ],
+    "otpauth": [
+        "<1.0.1"
+    ],
     "ovirt-engine-sdk-python": [
         "<3.1.0.8"
     ],
