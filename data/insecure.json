@@ -8,6 +8,9 @@
     "bise.theme": [
         "<2.4"
     ],
+    "bok-choy": [
+        "<0.5.1"
+    ],
     "centrifuge": [
         "<0.3.8"
     ],
