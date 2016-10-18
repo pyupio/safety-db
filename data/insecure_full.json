@@ -2027,6 +2027,12 @@
             "v": "<1.0.0"
         }
     ],
+    "impacket": [
+        {
+            "changelog": "1) Library improvements\n   * SMB3.create: define CreateContextsOffset and CreateContextsLength when applicable (by rrerolle)\n   * Retrieve user principal name from CCache file allowing to call any script with -k and just the target system (by MrTchuss)\n   * Packet fragmentation for DCE RPC layer mayor overhaul.\n   * Improved pass-the-key attacks scenarios (by skelsec)\n   * Adding a minimalistic LDAP/s implementation (supports PtH/PtT/PtK). Only search is available (and you need to\n     build the search filter yourself)\n   * IPv6 improvements for DCERPC/LDAP and Kerberos\n\n2) Examples improvements\n   * Adding -dc-ip switch to all examples. It allows to specify what the IP for the domain is. It assumes the DC and KDC\n     resides in the same server\n   * secretsdump.py\n     a. Adding support for Win2016 TP4 in LOCAL or -use-vss mode\n     b. Adding -just-dc-user switch to download just a single user data (DRSUAPI mode only)\n     c. Support for different ReplEpoch (DRSUAPI only)\n     d. pwdLastSet is also included in the output file\n     e. New structures/flags added for 2016 TP5 PAM support\n   * wmiquery.py\n     a. Adding -rpc-auth-level switch (by gadio)\n   * smbrelayx.py\n     a. Added option to specify authentication status code to be sent to requesting client (by mgeeky)\n     b. Added one-shot parameter. After successful authentication, only execute the attack once for each target (per protocol)\n\n3) New Examples\n   * GetUserSPNs.py: This module will try to find Service Principal Names that are associated with normal user account.\n     This is part of the kerberoast attack researched by Tim Medin (timmedin)\n   * ntlmrelayx.py: smbrelayx.py on steroids!. NTLM relay attack from/to multiple protocols (HTTP/SMB/LDAP/MSSQL/etc)\n     (by dirkjanm)\n\n",
+            "v": "<0.9.15"
+        }
+    ],
     "ipython": [
         {
             "cve": "CVE-2015-6938",
