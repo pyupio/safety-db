@@ -1948,6 +1948,12 @@
             "v": "<2013.2.3"
         }
     ],
+    "oauthlib": [
+        {
+            "changelog": "------------------\n\n* (Change) OAuth2 clients will not raise a Warning on scope change if\n  the environment variable ``OAUTHLIB_RELAX_TOKEN_SCOPE`` is set. The token\n  will now be available as an attribute on the error, ``error.token``.\n  Token changes will now also be announced using blinker.\n* (Fix/Feature) Automatic fixes of non-compliant OAuth2 provider responses (e.g. Facebook).\n* (Fix) Logging is now tiered (per file) as opposed to logging all under ``oauthlib``.\n* (Fix) Error messages should now include a description in their message.\n* (Fix/Feature) Optional support for jsonp callbacks after token revocation.\n* (Feature) Client side preparation of OAuth 2 token revocation requests.\n* (Feature) New OAuth2 client API methods for preparing full requests.\n* (Feature) OAuth1 SignatureOnlyEndpoint that only verifies signatures and client IDs.\n* (Fix/Feature) Refresh token grant now allow optional refresh tokens.\n* (Fix) add missing state param to OAuth2 errors.\n* (Fix) add_params_to_uri now properly parse fragment.\n* (Fix/Feature) All OAuth1 errors can now be imported from oauthlib.oauth1.\n* (Fix/Security) OAuth2 logs will now strip client provided password, if present.\n* Allow unescaped  in urlencoded parameters.\n\n",
+            "v": "<0.7.0"
+        }
+    ],
     "ovirt-engine-sdk-python": [
         {
             "cve": "CVE-2012-3533",
