@@ -168,6 +168,9 @@
     "nova": [
         "<2013.2.3"
     ],
+    "oauthlib": [
+        "<0.7.0"
+    ],
     "ovirt-engine-sdk-python": [
         "<3.1.0.8"
     ],
