@@ -1473,6 +1473,12 @@
             "v": "<3.4.2"
         }
     ],
+    "django-ratelimit2": [
+        {
+            "changelog": "====\n\n- Added real docs.\n- Fix unicode field values.\n- Add real tests.\n- Use the Ratelimited exception, RatelimitMiddleware, and\n  RATELIMIT_VIEW setting.\n- Add RATELIMIT_ENABLE setting.\n- Add the skip_if argument.\n- Always add request.limited.\n\n",
+            "v": "<0.2"
+        }
+    ],
     "django-relatives": [
         {
             "changelog": "------------------\n\n- Fix XSS vulnerability\n- Allow relatives/includes/fieldset.html template to be extended further\n- Improve documentation\n\n\n",
