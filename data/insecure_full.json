@@ -3365,6 +3365,12 @@
             "v": "<1.1"
         }
     ],
+    "simple-json": [
+        {
+            "changelog": "\n* Optional C extension for accelerating the decoding of JSON strings\n* Command line interface for pretty-printing JSON (via python -msimplejson)\n* Decoding of integers and floats is now extensible (e.g. to use Decimal) via\n  parse_int, parse_float options.\n* Subversion and issue tracker moved to google code:\n  http://code.google.com/p/simplejson/\n* \"/\" is no longer escaped, so if you're embedding JSON directly in HTML\n  you'll want to use .replace(\"/\", \"\\\\/\") to prevent a close-tag attack.\n\n",
+            "v": "<1.8.1"
+        }
+    ],
     "tornado": [
         {
             "cve": "CVE-2012-2374",
