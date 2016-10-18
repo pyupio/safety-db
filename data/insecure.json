@@ -171,6 +171,9 @@
     "ovirt-engine-sdk-python": [
         "<3.1.0.8"
     ],
+    "passlib": [
+        "<1.4"
+    ],
     "pastescript": [
         "<1.7.5"
     ],
