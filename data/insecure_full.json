@@ -2243,6 +2243,12 @@
             "v": "<1.7.5"
         }
     ],
+    "pdf": [
+        {
+            "changelog": "-----------------------\n\n - Add support for decryption with the standard PDF security handler.  This\n   allows for decrypting PDF files given the proper user or owner password.\n\n - Add support for encryption with the standard PDF security handler.\n\n - Add new pythondoc documentation.\n\n - Fix bug in ASCII85 decode that occurs when whitespace exists inside the\n   two terminating characters of the stream.\n\n",
+            "v": "<1.8"
+        }
+    ],
     "peppercorn": [
         {
             "changelog": "----------------\n\n- Switch to an iterative parser rather than a recursive parser to avoid\n  DoS attacks.\n\n- Add the ``ignore`` operation. The subsequent data elements in the stream\n  will be ignored until the corresponding ``__end__`` marker.  This feature\n  is useful for form elements designed for client-side scripting, such as a\n  \"select all\" checkbox in the middle of a list of other kinds of fields.\n\n- Add support for Python 3.3.\n\n- Drop support for Python 2.5 / Jython.\n\n",
