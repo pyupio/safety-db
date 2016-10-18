@@ -1442,6 +1442,12 @@
             "v": "<0.4"
         }
     ],
+    "django-auth-ldap": [
+        {
+            "changelog": "-------------------\n\n* Fix `33`_: Reject empty passwords by default.\n\n  Unless :setting:`AUTH_LDAP_PERMIT_EMPTY_PASSWORD` is set to True,\n  LDAPBackend.authenticate() will immediately return None if the password is\n  empty. This is technically backwards-incompatible, but it's a more secure\n  default for those LDAP servers that are configured such that binds without\n  passwords always succeed.\n\n* Fix `39`_: Add support for pickling LDAP-authenticated users.\n\n\n.. _33: https://bitbucket.org/psagers/django-auth-ldap/issue/33/\n.. _39: https://bitbucket.org/psagers/django-auth-ldap/issue/39/\n\n\n.. vim: ft=rst nospell tw=80\n",
+            "v": "<1.1.3"
+        }
+    ],
     "django-embed-video": [
         {
             "changelog": "---------------------------\n\n- Security fix: faked urls are treated as invalid. See `this page\n  <https://github.com/yetty/django-embed-video/commit/d0d357b767e324a7cc21b5035357fdfbc7c8ce8e>`_\n  for more details.\n\n- Fixes:\n\n  - allow of empty video field.\n\n  - requirements in setup.py\n\n- Added simplier way to embed video in one-line template tag::\n\n    {{ 'http://www.youtube.com/watch?v=guXyvo2FfLs'|embed:'large' }}\n\n- ``backend`` variable in ``video`` template tag.\n\n  Usage::\n\n    {% video item.video as my_video %}\n        Backend: {{ my_video.backend }}\n    {% endvideo %}\n\n\n",
