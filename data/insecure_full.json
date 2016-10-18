@@ -3735,6 +3735,10 @@
     ],
     "sentry": [
         {
+            "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
+            "v": "<6.1.1"
+        },
+        {
             "changelog": "-------------\n\n- A new features subsystem was added, and many optional features are now run through it.\n- The 'add_organization' permission is no longer used.\n- The 'add_team' permission is no longer used.\n- SENTRY_ALLOW_REGISTRATION is deprecated in favor of SENTRY_FEATURES['auth:register'].\n- SOCIAL_AUTH_CREATE_USERS is deprecated in favor of SENTRY_FEATURES['social-auth:register'].\n- SENTRY_SERVER_EMAIL is no longer used.\n- Added first pass API at storing javascript artifacts via release APIs.\n- Improved error reporting for JavaScript source/sourcemap errors.\n- Improved configuration handling on sentry.cache.\n- Added various release API endpoints.\n- Added various organization API endpoints.\n- Added various tag API endpoints.\n- Sourcemaps will now always treat sourceRoot as a path.\n- Changed many permissions to use new sentry.access abstractions which are now\n  scoped based, shared with the API scopes.\n- Initial first pass at the SSO subsystem.\n- The Sentry internal client will now aggressively prevent recursive errors, but allow more\n  internal errors to be recorded to itself.\n- An XSS vulnerability with tag values not being escaped (on the group details page) has been resolved.\n\n\n",
             "v": "<7.4.0"
         },
