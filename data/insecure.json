@@ -289,6 +289,9 @@
     "ovirt-engine-sdk-python": [
         "<3.1.0.8"
     ],
+    "pando": [
+        "<0.39"
+    ],
     "pastescript": [
         "<1.7.5"
     ],
