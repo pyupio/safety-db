@@ -2786,6 +2786,12 @@
             "v": "<3.9"
         }
     ],
+    "products.printingmailhost": [
+        {
+            "changelog": "----------------\n\n- Also patch (Secure)MaildropHost when available.\n  [maurits]\n\n\n",
+            "v": "<0.7"
+        }
+    ],
     "ptah": [
         {
             "changelog": "==================\n\nFeatures\n--------\n\n- Added `ptah.enable_modules` setting, list of enabled\n  management modules.\n\n- Require alembic 0.1.1\n\n\nBug fixes\n---------\n\n- Encode `content-type` header for blob `data` rest action\n\n- Do not use `request` for application factories in\n  `applications` rest action. It brakes security for current root object.\n\n\n",
