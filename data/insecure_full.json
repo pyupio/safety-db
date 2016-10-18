@@ -3681,6 +3681,12 @@
             "v": "<1.1"
         }
     ],
+    "soappy": [
+        {
+            "changelog": "-------------------\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- LOL part\n  [kiorky]\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- XXE part\n  [kiorky]\n- Remove dependency on fpconst.\n- adding maptype  [Sandro Knau\u00df]\n- Support / (and other reserved characters) in the password. [Ionut Turturica]\n- Client.HTTPWithTimeout: fixed constructor's docstring and comments -named the diferences\n  with respect to the overriden method -fixed\n  wrong reference to class in module 'httplib' -added documentation of param 't[German Larrain\n- fixed module docstring location (all imports must be below them)[German Larrain]f\n- fix error \"Bad types (class java.math.BigInteger -> class java.lang.Integer)\" - Clayton Caetano de Sousa]\n\n\n\n",
+            "v": "<0.12.6"
+        }
+    ],
     "splash": [
         {
             "changelog": "------------------\n\nThis is a bugfix release:\n\n* XSS in HTTP UI is fixed;\n* Splash-Jupyter docker image is fixed.\n\n",
