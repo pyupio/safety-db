@@ -198,6 +198,9 @@
     "flask": [
         "<0.6.1"
     ],
+    "flask-micropub": [
+        "<0.2.2"
+    ],
     "flask-oauthlib": [
         "<0.9.1"
     ],
