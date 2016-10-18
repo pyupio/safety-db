@@ -190,6 +190,9 @@
     "docker-registry": [
         "<0.8.1"
     ],
+    "dyn": [
+        "<1.1.0"
+    ],
     "easy_install": [
         "<0.7"
     ],
