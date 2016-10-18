@@ -1990,6 +1990,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "khard": [
+        {
+            "changelog": "- Use of module atomicwrites to securely write vcards to disk\n\n",
+            "v": "<0.7.2"
+        }
+    ],
     "lambdajson": [
         {
             "changelog": "-- Security fix. Using ast.literal_eval as eval.\n\n",
