@@ -2094,6 +2094,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "kotti": [
+        {
+            "changelog": "------------------\n\n- Fix Kotti's tests to no longer trigger deprecation warnings.\n  Kotti's funcargs need to be better documented still, see 141.\n\n- Add a fanstatic.Group 'tagit' and need() it in the defered widget. This is\n  needed to make the tags widget render correctly with a theme package enabled\n  until the defered widget is replaced by a widget class that declares its\n  requirements in the usual deform style.\n\n- Transform ``setup_users``, ``setup_user`` and ``prefs`` views into\n  class-based views. Add a little text at subsection ``Security`` on\n  developer manual mentioning those views.\n\n",
+            "v": "<0.8b2"
+        }
+    ],
     "lambdajson": [
         {
             "changelog": "-- Security fix. Using ast.literal_eval as eval.\n\n",
