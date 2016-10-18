@@ -50,6 +50,12 @@
             "v": "<0.10.5"
         }
     ],
+    "collective.noticeboard": [
+        {
+            "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
+            "v": "<0.7.1"
+        }
+    ],
     "conn-check": [
         {
             "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
