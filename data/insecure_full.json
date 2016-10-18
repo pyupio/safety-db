@@ -35,6 +35,12 @@
             "v": "<0.1.4"
         }
     ],
+    "bang": [
+        {
+            "changelog": "-----------------------\n- Expose bang server attributes to playbooks.  E.g. in an ansible\n  template, ``{{bang_server_attributes.instance_type}}`` might\n  resolve to the value ``t1.micro``.\n\n- AWS\n\n    - Fix security group handler.  Thanks Sol Reynolds!\n\n- RightScale\n\n    - Support all input types.  E.g. ``key:``, ``cred:``, ``env:``,\n      etc...\n\n",
+            "v": "<0.15"
+        }
+    ],
     "bbcode": [
         {
             "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
