@@ -401,6 +401,9 @@
     "pymemcache": [
         "<1.3.6"
     ],
+    "pymssql": [
+        "<2.1.2"
+    ],
     "pypiserver": [
         "<1.1.7"
     ],
