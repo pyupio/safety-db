@@ -2202,6 +2202,12 @@
             "v": "<1.1.2"
         }
     ],
+    "medialog.mobilethemetwo": [
+        {
+            "changelog": "-------------------\n- Added security settings\n\n",
+            "v": "<0.5.7dev"
+        }
+    ],
     "mgp2pdf": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~\n\n- ``%filter`` is disabled by default for being a security risk.  Use\n  ``--unsafe`` to enable.\n\n- ``-o DIRECTORY`` is now supported.\n\n- Interpret image paths relative to the location of the mgp file.\n\n- Support Python 3.3 and up in addition to 2.6 and 2.7.\n\n- More accurate text positioning (mgp2pdf no longer truncates the\n  corrdinates to integral point values).\n\n- More color names are now recognized: white, red, green, blue, yellow.\n\n- Better font name recognition (requires ``fc-match`` from fontconfig).\n\n- Improved error handling and reporting.\n\n- Support ``%%`` comment syntax.\n\n- Corrected handling of ``%default``, ``%tab``, ``%deffont``.\n\n- Implemented ``%include``.\n\n- Implemented ``%newimage -raise`` (also discovered that mgp itself ignores\n  ``-raise``).\n\n- 100% test coverage.\n\n\n",
