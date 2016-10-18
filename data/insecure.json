@@ -357,6 +357,9 @@
     "python-otr": [
         "<1.1.0"
     ],
+    "pyvisa": [
+        "<1.1"
+    ],
     "pywebsite": [
         "<0.1.9pre"
     ],
