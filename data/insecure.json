@@ -213,6 +213,9 @@
     "ovirt-engine-sdk-python": [
         "<3.1.0.8"
     ],
+    "paramiko": [
+        "<1.7.2"
+    ],
     "pastescript": [
         "<1.7.5"
     ],
