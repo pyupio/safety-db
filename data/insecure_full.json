@@ -3871,6 +3871,12 @@
             "v": "<0.4"
         }
     ],
+    "state-machine": [
+        {
+            "changelog": "\n* Add support for running multiple methods in a callback without using blocks\n* Add more flexibility around how callbacks are defined\n* Add security documentation around mass-assignment in ORM integrations\n* Fix event attribute transitions being publicly accessible\n\n",
+            "v": "<0.7.2"
+        }
+    ],
     "swauth": [
         {
             "changelog": "\n    This is first release after move to OpenStack Infra\n\n    Allow users to change their own password/key\n\n    Add support for storage policy\n\n    Show password prompt if key is not specified\n\n    Allow to use Keystone at same time\n\n    Support SHA512 for password hashing\n\n    Code cleanup\n\n    Bugfixies a security fixies\n\n",
