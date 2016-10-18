@@ -510,6 +510,9 @@
     "pytest-devpi-server": [
         "<1.1.0"
     ],
+    "pytest-git": [
+        "<1.1.0"
+    ],
     "pytest-profiling": [
         "<1.1.0"
     ],
