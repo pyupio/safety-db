@@ -308,6 +308,9 @@
     "pretaweb.healthcheck": [
         "<1.0"
     ],
+    "products.btreefolder2": [
+        "<2.13.4"
+    ],
     "products.ldapuserfolder": [
         "<2.19"
     ],

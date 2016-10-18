@@ -2747,6 +2747,12 @@
             "v": "<1.0"
         }
     ],
+    "products.btreefolder2": [
+        {
+            "changelog": "-------------------\n\n- Provide security declaration for `BTreeFolder2Base.hasObject` method.\n\n- Add some tests for correct `getattr` behavior.\n\n- Minor `__getattr__` and `_getOb` optimizations.\n\n",
+            "v": "<2.13.4"
+        }
+    ],
     "products.ldapuserfolder": [
         {
             "cve": "CVE-2010-2944",
