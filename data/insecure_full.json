@@ -4215,6 +4215,12 @@
             "v": "<1.0.0"
         }
     ],
+    "webhelpers": [
+        {
+            "changelog": "------------------\n\n* Delete ``webhelpers.string24``.  WebHelpers no longer supports Python 2.3.\n\n* webhelpers.feedgenerator:\n\n  - Add a basic ``Geometry`` class for the Geo helpers.\n\n* webhelpers.html.grid_demo:\n\n  - Demonstrates ``webhelpers.html.grid``. Run as \n    \"python -m webhelpers.html.grid_demo OUTPUT_DIRECTORY\".\n\n* webhelpers.html.converters:\n\n  - Don't import ``render`` and ``sanitize`` to converters module.\n    (Reversed in 1.0b5.)\n\n* webhelpers.html.secure_form:\n\n  - Move module to ``webhelpers.pylonslib.secure_form`` because it depends\n    on ``pylons.session``.\n\n* webhelpers.misc:\n\n  - New helper ``flatten`` to interpolate embedded lists and tuples.\n  - New helper ``subclasses_only`` to extract the subclasses of an abstract\n    base class from a module or iterable.\n\n* webhelpers.pylonslib.flash:\n\n  - Moved to its own module.\n  - Changed ``Flash.__html__()`` implementation.\n  - Categories may be specified in constructor. Patch by Eli Collins.\n\n* webhelpers.pylonslib.grid:\n\n  - Bugfixes.\n\n* webhelpers.pylonslib.minify:\n\n  - Bugfix.\n\n* webhelpers.util:\n\n  - Bugfix: ``parse_qs`` moved from ``cgi`` to ``urlparse`` in Python 2.6.\n    Patch by Mike Verdone.\n\n",
+            "v": "<1.0b4"
+        }
+    ],
     "zeep": [
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
