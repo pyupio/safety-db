@@ -2252,6 +2252,12 @@
             "v": "<0.7.0"
         }
     ],
+    "onegov.town": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~~\n\n- Hides hidden resources in the overview.\n  [href]\n\n- Shows missing lead info on resources and forms in addition to pages.\n  [href]\n\n- The user is no longer logged-in right after a password reset.\n\n  This increases security by making sure that this is not a backdoor to\n  circumvent future 2FA implementations.\n  [href]\n\n- Removes the double scrollbars in the file select dialog.\n  [href]\n\n- Improves file/image upload styling, adding a progress bar for uploads.\n  [href]\n\n",
+            "v": "<0.9.0"
+        }
+    ],
     "ooniprobe": [
         {
             "changelog": "------------------------\n\n* Add ooniprobe manpage.\n\n* Fix various security issues raised by the least authority audit.\n\n* Add a test that checks for Tor bridge reachability.\n\n* Record the IP address of the exit node being used in torified requests.\n\n* Captive portal test now uses the ooni-probe test templates.\n\n* Have better test naming consistency.\n\n",
