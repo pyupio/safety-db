@@ -31,6 +31,10 @@
             "v": "<1.6.7"
         },
         {
+            "changelog": "\n- Further improvements to module parameter parsing to address additional regressions caused by security fixes\n\n",
+            "v": "<1.6.9"
+        },
+        {
             "changelog": "\n- Security fix to disallow specifying 'args:' as a string, which could allow the insertion of extra module parameters through variables.\n- Performance enhancements related to previous security fixes, which could cause slowness when modules returned very large JSON results. This specifically impacted the unarchive module frequently, which returns the details of all unarchived files in the result.\n- Docker module bug fixes:\n  * Fixed support for specifying rw/ro bind modes for volumes\n  * Fixed support for allowing the tag in the image parameter\n- Various other bug fixes\n\n",
             "v": "<1.7.1"
         },
