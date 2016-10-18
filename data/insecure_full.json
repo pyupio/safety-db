@@ -3161,6 +3161,12 @@
             "v": "<4.2.3"
         }
     ],
+    "praw": [
+        {
+            "changelog": "-----------\n * **[BUGFIX]** Remove the built-in ``score`` property from comments as reddit\n   provides that attribute as of 2014/06/18.\n * **[FEATURE]** :meth:`~praw.__init__.SubmitMixin.submit` now supports\n   a ``resubmit`` argument to allow the submission of an already submitted url.\n\n",
+            "v": "<2.1.17"
+        }
+    ],
     "pretaweb.healthcheck": [
         {
             "changelog": "----------------\n\n- Removed force=yes option to prevent DoS attacks \n- Output now to instance stderr\n\n\n",

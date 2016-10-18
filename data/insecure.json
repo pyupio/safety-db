@@ -491,6 +491,9 @@
     "pplone": [
         "<4.2.3"
     ],
+    "praw": [
+        "<2.1.17"
+    ],
     "pretaweb.healthcheck": [
         "<1.0"
     ],
