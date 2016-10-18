@@ -1519,6 +1519,12 @@
             "v": "<0.3.3"
         }
     ],
+    "django-sslify-admin": [
+        {
+            "changelog": "-------------------\n\n* only use django's is_secure() method to check for SECURE_PROXY_SSL_HEADER setting to disable header injection of HTTP_X_FORWARDED_PROTO (thanks to Bouke Haarsma)\n\n",
+            "v": "<0.2.0"
+        }
+    ],
     "django-tastypie": [
         {
             "cve": "CVE-2011-4104",
