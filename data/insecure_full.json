@@ -4526,6 +4526,12 @@
             "v": "<1.2"
         }
     ],
+    "zope.testbrowser": [
+        {
+            "changelog": "--------------------\n\n- Update dependency from ``zope.app.publisher`` to\n  ``zope.browserpage``, ``zope.browserresource`` and ``zope.ptresource``.\n\n- Remove dependencies on ``zope.app.principalannotation`` and\n  ``zope.securitypolicy`` by using the simple ``PermissiveSecurityPolicy``.\n\n- Replace the testing dependency on ``zope.app.zcmlfiles`` with explicit\n  dependencies of a minimal set of packages.\n\n- Remove unneeded ``zope.app.authentication`` from ftesting.zcml.\n\n- Update dependency from ``zope.app.securitypolicy`` to\n  ``zope.securitypolicy``.\n\n\n",
+            "v": "<3.7.0a1"
+        }
+    ],
     "zope2": [
         {
             "cve": "CVE-2010-3198",
