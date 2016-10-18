@@ -3365,6 +3365,12 @@
             "v": "<1.1.0"
         }
     ],
+    "quokka-flask-security": [
+        {
+            "changelog": "-------------\n\nReleased January 10th 2014\n\n- Python 3.3 support!\n- Dependency updates\n- Fixed a bug when `SECURITY_LOGIN_WITHOUT_CONFIRMATION = True` did not allow users to log in\n- Added `SECURITY_SEND_PASSWORD_RESET_NOTICE_EMAIL` configuraiton option to optionally send password reset notice emails\n- Add documentation for `security.send_mail_task`\n- Move to `request.get_json` as `request.json` is now deprecated in Flask\n- Fixed a bug when using AJAX to change a user's password\n- Added documentation for select functions in the `flask_security.utils` module\n- Fixed a bug in `flask_security.forms.NextFormMixin`\n- Added `CHANGE_PASSWORD_TEMPLATE` configuration option to optionally specify a different change password template\n- Added the ability to specify addtional fields on the user model to be used for identifying the user via the `USER_IDENTITY_ATTRIBUTES` configuration option\n- An error is now shown if a user tries to change their password and the password is the same as before. The message can be customed with the `SECURITY_MSG_PASSWORD_IS_SAME` configuration option\n- Fixed a bug in `MongoEngineUserDatastore` where user model would not be updated when using the `add_role_to_user` method\n- Added `SECURITY_SEND_PASSWORD_CHANGE_EMAIL` configuration option to optionally disable password change email from being sent\n- Fixed a bug in the `find_or_create_role` method of the PeeWee datastore\n- Removed pypy tests\n- Fixed some tests\n- Include CHANGES and LICENSE in MANIFEST.in\n- A bit of documentation cleanup\n- A bit of code cleanup including removal of unnecessary utcnow call and simplification of get_max_age method\n\n\n",
+            "v": "<1.7.0"
+        }
+    ],
     "requests": [
         {
             "cve": "CVE-2015-2296",
