@@ -93,6 +93,9 @@
     "django-markupfield": [
         "<1.3.2"
     ],
+    "django-photos": [
+        "<0.2"
+    ],
     "django-piston": [
         "<0.2.3"
     ],
