@@ -1982,6 +1982,12 @@
             "v": "<0.3"
         }
     ],
+    "karaage": [
+        {
+            "changelog": "============================\n\n* Fix account detail page for admin.\n* Change get_absolute_url for accounts.\n* Paranoid security checks.\n* Allow users to change default project.\n* Remove depends on python.\n* Ensure admin request emails have correct link.\n* PEP8 improvement.\n* Fix PEP8 issue in comment.\n* Remove non-PEP8 compliant white space.\n* Support searching multiple directories for gold.\n* Display more project application details.\n\n\n",
+            "v": "<3.0.15"
+        }
+    ],
     "keyring": [
         {
             "cve": "CVE-2012-4571",
