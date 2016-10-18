@@ -3503,6 +3503,12 @@
             "v": "<0.1.9pre"
         }
     ],
+    "rapidsms-xforms": [
+        {
+            "changelog": "-----\n - nicpottier: paginate submissions, about time\n - nicpottier: add security framework for authentication either SMS or XForms submissions, see docs (added django_digest dependency)\n\n",
+            "v": "<0.4.0"
+        }
+    ],
     "requests": [
         {
             "cve": "CVE-2015-2296",
