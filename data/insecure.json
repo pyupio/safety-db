@@ -348,6 +348,9 @@
     "python-cjson": [
         "<1.0.5"
     ],
+    "python-dbusmock": [
+        "<0.15.1"
+    ],
     "python-keystoneclient": [
         "<1.4.0",
         "<1.5.4",
