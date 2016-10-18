@@ -189,6 +189,9 @@
     "ftw.permissionmanager": [
         "<2.2.2"
     ],
+    "futurefinity": [
+        "<0.1.0"
+    ],
     "gandi.cli": [
         "<0.10"
     ],
