@@ -2913,6 +2913,12 @@
             "v": "<1.1.7"
         }
     ],
+    "pyramid-odesk": [
+        {
+            "changelog": "-----\n- Login and Logout actions are performed via POST and has protection\n  against CSRF attacks\n\n",
+            "v": "<1.1.2"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
