@@ -68,6 +68,12 @@
             "v": "<0.7.1"
         }
     ],
+    "conda": [
+        {
+            "changelog": "-------------------\n  * skip packages that can't be found with update --all\n  * add --use-local to search and remove\n  * allow --use-local to be used along with -c (--channels) and\n    --override-channels. --override-channels now requires either -c or\n    --use-local\n  * allow paths in has_prefix to be quoted, to allow for spaces in paths on\n    Windows\n  * retain Unix style path separators for prefixes in has_prefix on\n    Windows (if the placeholder path uses /, replace it with a path that uses\n    /, not \\)\n  * fix bug in --use-local due to API changes in conda-build\n  * include user site directories in conda info -s\n  * make binary has_prefix replacement work with spaces after the prefix\n  * make binary has_prefix replacement replace multiple occurrences of the\n    placeholder in the same null-terminated string\n  * don't show packages from other platforms as installed or cached in conda\n    search\n  * be more careful about not warning about conda itself in pscheck\n  * Use a progress bar for the unsatisfiable packages hint generation\n  * Don't use TemporaryFile in try_write, as it is too slow when it fails\n  * Ignore InsecureRequestWarning when ssl_verify is False\n  * conda remove removes features tracked by removed packages in\n    track_features\n\n\n",
+            "v": "<3.6.3"
+        }
+    ],
     "conn-check": [
         {
             "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
