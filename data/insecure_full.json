@@ -2086,6 +2086,12 @@
             "v": "<0.10"
         }
     ],
+    "mrjob": [
+        {
+            "changelog": " * boto>=2.6.0 is required (used to be 2.2.0)\n * runners:\n   * EMR:\n     * moved off deprecated DescribeJobFlows API (876)\n       * time-to-end-of-hour now uses creation time, not \"start\" time\n     * aws_security_token for temporary credentials (1003)\n     * Use AWS managed policies when creating IAM objects (1026)\n     * Fall back to default role/instance profile when no IAM access (1008)\n     * added emr_tags option (1058)\n     * added get_ami_version() method\n     * hadoop_version option no longer has any effect (1017)\n   * Hadoop:\n     * --hadoop-home switch now works (1037)\n * EMR tools:\n   * added switches for AWS connection options etc. (1087)\n   * mrboss is available from command line tool: mrjob boss [args]\n   * terminate_idle_job_flows:\n     * less prone to race condition (910)\n     * prints results to stdout in dry_run mode (1102)\n     * job flows stuck in STARTING state no longer considered idle\n   * report_long_jobs reports job flows stuck in STARTING state\n   * collect_emr_stats and job_flow_pool are deprecated\n * more efficient decoding of bz2 files\n * mrjob.retry.RetryWrapper raises exception when out of tries (1093)\n\n",
+            "v": "<0.4.5"
+        }
+    ],
     "murano-dashboard": [
         {
             "cve": "CVE-2016-4972",
