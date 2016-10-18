@@ -138,6 +138,9 @@
     "flask-oidc": [
         "<0.1.2"
     ],
+    "flask-stormpath-test": [
+        "<0.2.6"
+    ],
     "formencode": [
         "<1.0"
     ],
