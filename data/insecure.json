@@ -246,6 +246,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "eea.versions": [
+        "<6.0"
+    ],
     "euphorie": [
         "<6.1"
     ],
