@@ -172,6 +172,9 @@
     "django-sql-explorer": [
         "<0.4"
     ],
+    "django-storages-redux": [
+        "<1.1.9"
+    ],
     "django-tastypie": [
         "<0.9.10"
     ],
