@@ -1719,6 +1719,12 @@
             "v": "<0.999999991.0b9"
         }
     ],
+    "httpolice": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~\n\nAdded\n-----\n- `Django integration`_ (as a separate distribution).\n- Unwanted notices can now be `silenced`_.\n- Checks for OAuth `bearer tokens`_.\n- Checks for the `Content-Disposition`_ header.\n- Checks for `RFC 5987`_ encoded values.\n- Checks for `alternative services`_.\n- Checks for HTTP/1.1 connection control features `prohibited in HTTP/2`_.\n- `Stale controls`_ are now recognized.\n- Checks for status code `451 (Unavailable For Legal Reasons)`_.\n\n.. _Django integration: http://httpolice.readthedocs.io/en/stable/django.html\n.. _silenced: http://httpolice.readthedocs.io/en/stable/concepts.htmlsilence\n.. _bearer tokens: http://tools.ietf.org/html/rfc6750\n.. _Content-Disposition: http://tools.ietf.org/html/rfc6266\n.. _RFC 5987: https://tools.ietf.org/html/rfc5987\n.. _alternative services: https://tools.ietf.org/html/rfc7838\n.. _prohibited in HTTP/2: https://tools.ietf.org/html/rfc7540section-8.1.2.2\n.. _Stale controls: https://tools.ietf.org/html/rfc5861\n.. _451 (Unavailable For Legal Reasons): https://tools.ietf.org/html/rfc7725\n\nChanged\n-------\n- `mitmproxy integration`_ has been moved into a separate distribution.\n\n.. _mitmproxy integration:\n   http://httpolice.readthedocs.io/en/stable/mitmproxy.html\n\nFixed\n-----\n- Input files from tcpick are sorted correctly.\n- Notice `1108`_ doesn't crash in non-English locales.\n- Notices such as `1038`_ are not reported on responses to HEAD.\n\n.. _1108: http://pythonhosted.org/HTTPolice/notices.html1108\n.. _1038: http://pythonhosted.org/HTTPolice/notices.html1038\n\n\n",
+            "v": "<0.2.0"
+        }
+    ],
     "ipython": [
         {
             "cve": "CVE-2015-6938",
