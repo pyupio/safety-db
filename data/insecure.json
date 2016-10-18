@@ -126,6 +126,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "edrnsite.policy": [
+        "<0.0.6"
+    ],
     "euphorie": [
         "<6.1"
     ],
