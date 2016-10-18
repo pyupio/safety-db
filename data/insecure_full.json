@@ -1550,6 +1550,12 @@
             "v": "<6.1"
         }
     ],
+    "exabgp": [
+        {
+            "changelog": " * Feature: reduce likelyness of route update recalculation causing us to not send keepalive in time\n * Fix: introduced a bug in neighbor printing\n * Fix: we were trying to send a KEEPALIVE after the initial routes, but it was not going\n * Fix: a work around a python bug with TCP was not implemented everywhere\n * Feature: adding a 'ttl-security' to allow to explicit setup of TCP TTL\n * Feature: better handling of BGP timer for keepalive\n * Feature: refuse to run as root, try to run as nobody automatically, uid/gid set to the user defined by env USER otherwise\n * Removed: the old wiki documentation\n * Feature: Debian Packaging (author and maintainer: Henry-Nicolas Tourneur - thank you)\n * Change: renamed env variable DAEMON to DAEMONIZE (to prevent name clash with Debian)\n * Feature: added env variable PDB if set the program will call pdb, the python debugger, on program fault\n * Feature: it is now possible to get some routes withdrawn from an external process (see watchdog example conf.)\n    warning: this code is not yet considered production ready, expect some bugs for complex configurations\n * Feature: it is now possible to modify the configuration without reload from external proccess (see process example conf.)\n    warning: this code is not yet considered production ready, expect some bugs for complex configurations\n * Fix: make sure we can setup a session even if no route (ie: AFI/SAFI families for Mulitprotocol) are in the configuration\n * Fix: many small bug fixes, simple code refactorisation, ...\n\n",
+            "v": "<1.3.0"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
