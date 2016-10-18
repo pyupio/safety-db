@@ -4007,6 +4007,12 @@
             "v": "<0.8"
         }
     ],
+    "ssbench": [
+        {
+            "changelog": "\n    * Fixed 62: Support benchmark results >> size of RAM.\n\n    * Fixed 64: Include more parameters in default results filename.\n\n    * Fixed 56: Allow specification of run-time instead of op count.\n\n    * Fixed 50: Make ssbench output include version number.\n\n    * Fixed 69: Fixes SSL issues with ssbench. [Sergio Rubio]\n\n    * Fixed worker issues when using SSL and --insecure [Sergio Rubio]\n\n    * Added experimental --csv option (CSV reporting output)\n\n",
+            "v": "<0.2.14"
+        }
+    ],
     "stargate": [
         {
             "changelog": "---\n\n- Add support for the HyBi version of WebSockets (specifically version-10). This version was released to solve some previous security concerns and\nwill be the version in Firefox 7/8 and Chrome 14 onwards accoring to Wikipedia.\n- Introduces a dependency on ws4py\n\n- See http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10\n\n",
