@@ -4096,6 +4096,10 @@
     ],
     "rsa": [
         {
+            "changelog": "----------------------------------------\n\n- Security improvements by Barry Mead.\n",
+            "v": "<2.0"
+        },
+        {
             "cve": "CVE-2016-1494",
             "description": "The verify function in the RSA package for Python (Python-RSA) before 3.3 allows attackers to spoof signatures with a small public exponent via crafted signature padding, aka a BERserk attack.",
             "urls": [
