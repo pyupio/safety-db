@@ -3969,6 +3969,12 @@
             "v": "<2.0.1"
         }
     ],
+    "spud": [
+        {
+            "changelog": "=========================\n\n  * Use secure session cookies by default.\n  * Add missing error templates.\n  * Other minor changes.\n\n",
+            "v": "<0.6"
+        }
+    ],
     "stargate": [
         {
             "changelog": "---\n\n- Add support for the HyBi version of WebSockets (specifically version-10). This version was released to solve some previous security concerns and\nwill be the version in Firefox 7/8 and Chrome 14 onwards accoring to Wikipedia.\n- Introduces a dependency on ws4py\n\n- See http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10\n\n",
