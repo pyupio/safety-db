@@ -243,6 +243,9 @@
     "ironic-inspector": [
         "<2.3.0"
     ],
+    "jaraco.packaging": [
+        "<2.10"
+    ],
     "jinja": [
         "<2.7.2"
     ],
