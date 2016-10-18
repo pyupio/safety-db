@@ -2051,6 +2051,10 @@
     ],
     "gns3-gui": [
         {
+            "changelog": "\n* Rename an appliance if the default name is already taken\n* Existing image option should be hidden when none is available\n* Warn users about the need to uncompress the image\n* Fix crash when you have no qemu vms and use gns3a\n* Change sentry key\n* Fix format_exception() missing 2 required positional arguments: 'value' and 'tb' in topologyFile\n* Fix dialog box not returning their result\n* Log to console the Qt Message Boxes\n* Drops securecrt.vbs\n\n",
+            "v": "<1.4.0rc1"
+        },
+        {
             "changelog": "\n* Try to fix a crash when reseting interface label\n* Fix a crash with broken file system\n* Fix EtherSwitch default name format\n* Fix crash when you have utf-8 char in the README\n* Fix rare crash when creating a link\n* Stop node before hot unlink\n* Prevent a crash due to issue in Qt\n* Add another security to prevent client to send empty hostname\n* Fix rare crash when deleting interface from the cloud\n* Fix rare crash in topology summary view\n* Ask user to send explanation if they cross a rare error\n* Fix rare crash when deleting a node\n* Hotlink support for Docker\n* Fix typo in the a warning dialog\n* Fix Remote GNS3 VM requires local server\n* Fix AttributeError: 'NoneType' object has no attribute '_server'\n* No timeout when importing a .gns3project\n\n",
             "v": "<1.5.1"
         }
