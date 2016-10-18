@@ -3161,6 +3161,12 @@
             "v": "<4.2.3"
         }
     ],
+    "praw": [
+        {
+            "changelog": "-----------\n * **[FEATURE]** Add :meth:`.get_new_subreddits` to return the newest\n   subreddits.\n * **[FEATURE]** Add the arguments ``save`` and ``send_replies`` to\n   :meth:`~praw.__init__.SubmitMixin.submit`.\n * **[FEATURE]** Create and add ``history`` scope to\n   :meth:`~praw.objects.Redditor.get_comments`, :meth:`.get_disliked`,\n   :meth:`.get_liked`, :meth:`.get_overview`, :meth:`.get_submitted`,\n   :meth:`.get_hidden` and :meth:`.get_saved`.\n\n",
+            "v": "<2.1.10"
+        }
+    ],
     "pretaweb.healthcheck": [
         {
             "changelog": "----------------\n\n- Removed force=yes option to prevent DoS attacks \n- Output now to instance stderr\n\n\n",
