@@ -2094,6 +2094,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "kotti": [
+        {
+            "changelog": "------------------\n\n- Add 'kotti.security.has_permission' which may be used instead of\n  'pyramid.security.has_permission'.\n\n  The difference is that Kotti's version will set the \"authorization\n  context\" to be the context that you pass to 'has_permission'.  The\n  effect is that 'list_groups' will return a more correct list of\n  local roles, i.e. the groups in the given context instead of\n  'request.context'.\n\n- Add a template ('forbidden.pt') for when user is logged in but still\n  getting HTTPForbidden.\n\n",
+            "v": "<0.4.5"
+        }
+    ],
     "lambdajson": [
         {
             "changelog": "-- Security fix. Using ast.literal_eval as eval.\n\n",
