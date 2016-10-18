@@ -3323,6 +3323,12 @@
             "v": "<1.1"
         }
     ],
+    "tahrir": [
+        {
+            "changelog": "-----\n\n- Add JSOpenID Single Signon `466f41f19 <https://github.com/fedora-infra/tahrir/commit/466f41f19c6f9ddd7a0d787f91ea7bc3e7ae983a>`_\n- Do not report failures (we won't see them anyway) `50503a73b <https://github.com/fedora-infra/tahrir/commit/50503a73b2526aa905d240b091ab960b84282a78>`_\n- Update URL to the new decided URL `6e84b0bac <https://github.com/fedora-infra/tahrir/commit/6e84b0bacf118e2b5246b92b688fc6bd469282f7>`_\n- Merge pull request 287 from fedora-infra/singleLogin `4d7dedf6c <https://github.com/fedora-infra/tahrir/commit/4d7dedf6cdd531797ca15dd47f3c8f6916c73733>`_\n- JSOpenID is renamed to JSAutoLogin `93b09f695 <https://github.com/fedora-infra/tahrir/commit/93b09f6959d53b2a485d099033cad80004639f24>`_\n- Merge pull request 289 from fedora-infra/jsopenid-rename `6fbda8eb6 <https://github.com/fedora-infra/tahrir/commit/6fbda8eb63de2cc13408ae725f4aed9680beb1ad>`_\n- Add a history pane that shows what badges were awarded for. `0eb3115f9 <https://github.com/fedora-infra/tahrir/commit/0eb3115f9084224952cf0a78d486aa9308a40914>`_\n- Merge pull request 290 from fedora-infra/feature/add-history-pane `e3d403c30 <https://github.com/fedora-infra/tahrir/commit/e3d403c30f2eef3a3cbfe53da8aaa2269aad59d7>`_\n- Use UTC when coming up with the relative time text. `7b4ee5075 <https://github.com/fedora-infra/tahrir/commit/7b4ee5075539041b91a25bf9506eaa210ca05d00>`_\n- Merge pull request 291 from fedora-infra/feature/timelord `2ee0b9edb <https://github.com/fedora-infra/tahrir/commit/2ee0b9edb4c0adc2649658ecf33249dd7487a526>`_\n- Allow the http_only flag to be set on authtkt cookies. `8e5f79eef <https://github.com/fedora-infra/tahrir/commit/8e5f79eef9fc3b184912b00048952629c74d0157>`_\n- Remove unused lines. `b829a01c4 <https://github.com/fedora-infra/tahrir/commit/b829a01c43d64ba4c2df65bc647238e9072ff09e>`_\n- Apply secure and http_only settings to both the auth_tkt and session cookies. `44c218d56 <https://github.com/fedora-infra/tahrir/commit/44c218d56769be557c632c20a7787b24182a7396>`_\n- Merge pull request 292 from fedora-infra/feature/httponly-cookies `5411f321a <https://github.com/fedora-infra/tahrir/commit/5411f321ac5cb6130a8c5f4bcc6081e8211ff8a7>`_\n\n",
+            "v": "<0.7.3"
+        }
+    ],
     "tornado": [
         {
             "cve": "CVE-2012-2374",
