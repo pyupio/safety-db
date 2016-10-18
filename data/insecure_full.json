@@ -2133,6 +2133,10 @@
                 "https://github.com/python-pillow/Pillow/pull/1714"
             ],
             "v": "<3.1.1"
+        },
+        {
+            "changelog": "------------------\n\n- Fixed an integer overflow in Resample.c causing writes in the Python heap.\n  [nedwill]\n\n- Fixed a buffer overflow in PcdDecode.c causing a segfault when opening PhotoCD files. CVE-2016-2533\n  [wiredfool]\n\n- Fixed a buffer overflow in FliDecode.c causing a segfault when opening FLI files. CVE-2016-0775\n  [wiredfool]\n\n- Fixed a buffer overflow in TiffDecode.c causing an arbitrary amount of memory to be overwritten when opening a specially crafted invalid TIFF file. CVE-2016-0740\n  [wiredfool]\n\n\n",
+            "v": "<3.1.1"
         }
     ],
     "pinax-likes": [
