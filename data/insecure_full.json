@@ -1421,6 +1421,12 @@
             "v": "<0.9.10"
         }
     ],
+    "docker-registry": [
+        {
+            "changelog": "\n * security fixes (path traversing prevention and token validation)\n\n",
+            "v": ">0.8.1"
+        }
+    ],
     "easy_install": [
         {
             "cve": "CVE-2013-1633",
