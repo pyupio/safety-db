@@ -210,6 +210,12 @@
             "v": "<0.6.4"
         }
     ],
+    "dateable.chronos": [
+        {
+            "changelog": "================\n\n- Include zope.security zcml instead of defining the\n  zope.ManageContent permission ourselves.\n  [maurits]\n\n- Plone 4.3 compatibility. [regebro]\n\n- CSS fixes, and template cleanup. [regebro]\n\nThis version was tested with Plone 4.0.10, 4.1.6, 4.2.5 and 4.3.\n\n",
+            "v": "<1.0"
+        }
+    ],
     "defusedexpat": [
         {
             "cve": "CVE-2013-1664",
