@@ -1,4 +1,10 @@
 {
+    "a2svm": [
+        {
+            "changelog": "*******************\n\n* make command is now doing more security check (macro existence, arguments number, servername duplication...)\n\n\n",
+            "v": "<0.0.4"
+        }
+    ],
     "aldryn-django": [
         {
             "changelog": "---------------------\n\n* Django 1.8.10 (security release)\n\n\n",
