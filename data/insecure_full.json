@@ -79,6 +79,12 @@
             "v": "<0.1.4"
         }
     ],
+    "autobahn": [
+        {
+            "changelog": "-----\n`Published <https://pypi.python.org/pypi/autobahn/0.6.4>`__\n\n* support latest `permessage-deflate` draft\n* allow controlling memory level for `zlib` / `permessage-deflate`\n* updated reference, moved docs to \"Read the Docs\"\n* fixes 157 (a WAMP-CRA timing attack very, very unlikely to be exploitable, but anyway)\n\n",
+            "v": "<0.6.4"
+        }
+    ],
     "bbcode": [
         {
             "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
