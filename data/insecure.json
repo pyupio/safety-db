@@ -182,6 +182,9 @@
     "pyshop": [
         "<0.7.1"
     ],
+    "pytest-server-fixtures": [
+        "<1.1.0"
+    ],
     "python": [
         "<2.5.2",
         "<2.5.6c1",
