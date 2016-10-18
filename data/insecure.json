@@ -623,6 +623,9 @@
     "vnccollab.theme": [
         "<1.5.2"
     ],
+    "z3c.dependencychecker": [
+        "<1.1"
+    ],
     "zeep": [
         "<0.4.0"
     ],
