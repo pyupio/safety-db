@@ -1942,6 +1942,12 @@
             "v": ">=2.0,<2.0.1"
         }
     ],
+    "mutagenx": [
+        {
+            "changelog": "-----------------\n\n* Bug Fixes:\n\n  * FLAC: Raise IOError, instead of UnboundLocalError, when trying\n    to open a non-existant file. (Luk\u00e1\u0161 Lalinsk\u00fd, Debian 448734)\n  * Throw out invalid frames when upgrading from 2.3 to 2.4.\n  * Fixed reading of Unicode strings from ASF files on big-endian\n    platforms.\n\n* TCP/TCMP support. (Debian 452231)\n* Faster implementation of file-writing when mmap fails, and\n  exclusive advisory locking when available.\n* Test cases to ensure Mutagen is not vulnerable to CVE-2007-4619.\n  It is not now, nor was it ever.\n* Use VBRI header to calculate length of VBR MP3 files if the Xing\n  header is not found.\n\n",
+            "v": "<2007.12.03"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",
