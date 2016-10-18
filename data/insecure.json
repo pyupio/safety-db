@@ -87,6 +87,9 @@
     "django-embed-video": [
         "<0.3"
     ],
+    "django-initial-avatars": [
+        "<0.5.0"
+    ],
     "django-lfs": [
         "<0.6.9"
     ],
