@@ -2252,6 +2252,12 @@
             "v": "<0.7.0"
         }
     ],
+    "onixcheck": [
+        {
+            "changelog": "------------------\n\n* Added CLI-support for fast directory traversal validation\n* Secured XML-Parsing via defusedxml\n* Catch basic XML syntax errors\n* Windows standalone binary builds\n\n",
+            "v": "<0.8.0"
+        }
+    ],
     "ooniprobe": [
         {
             "changelog": "------------------------\n\n* Add ooniprobe manpage.\n\n* Fix various security issues raised by the least authority audit.\n\n* Add a test that checks for Tor bridge reachability.\n\n* Record the IP address of the exit node being used in torified requests.\n\n* Captive portal test now uses the ooni-probe test templates.\n\n* Have better test naming consistency.\n\n",
