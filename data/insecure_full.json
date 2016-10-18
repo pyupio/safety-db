@@ -3941,6 +3941,12 @@
             "v": "<8.8"
         }
     ],
+    "serfclient": [
+        {
+            "changelog": "-----\n\n- Support `RPC\n  auth <https://serfdom.io/docs/agent/options.htmlrpc_auth>`_ token\n  when communicating with secure serf members -\n  `12 <https://github.com/KushalP/serfclient-py/pull/12>`_\n- Added `EnvironmentConfig` object that can read Serf environment\n  variables in an easy way -\n  `17 <https://github.com/KushalP/serfclient-py/pull/17>`_\n\n",
+            "v": "<0.5.0"
+        }
+    ],
     "setuptools": [
         {
             "changelog": "-----\n\n* Python 17980: Fix security vulnerability in SSL certificate validation.\n\n",
