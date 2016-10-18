@@ -3709,5 +3709,11 @@
             ],
             "v": ">=3.0,<3.13"
         }
+    ],
+    "zopeskel": [
+        {
+            "changelog": "-------------------------\n\n* Make the Plone 3 buildout default to Plone 3.2.1, and pick up\n  ${versions:zope2-url} for Plone > 3.1\n  [MatthewWilkes]\n\n* added a version requirement for Cheetah (>1.0)\n  [tarek]\n\n* fix zopeskel/docs/localcommands.txt\n  [yboussard]\n\n* Modify zopeskel/templates/plone/+namespace_package+/+package+/tests.py_tmpl\n  to init egg as product if it is a Zope2 product.\n  [yboussard]\n\n* Modify plone3_buildout template to ask for a Plone version. If the version\n  is 3.0 or 3.1 it uses the plone install recipe, otherwise it uses the Plone\n  egg from the cheeseshop.\n  [MatthewWilkes]\n\n* Link to appropriate PyPI pages for recipes used.\n  [MatthewWilkes]\n\n* Add a Zope 2 without Plone buildout template.\n  [evilbungle]\n\n* Reconciling HISTORY.txt to mirror what can be found at the following:\n  http://pypi.python.org/pypi/ZopeSkel/2.10. Release of 2.10 was clobbered\n  due to what looks like a merge at r74790.\n  [andrewb]\n\n* Update plone2.5_template's buildout.cfg_tmpl to use Zope 2.9.10. This\n  release incorporates Hotfix-2008-08-12. Defaulting to a known insecure\n  Zope seems unwise for people that may be updating legacy environments into\n  buildout, since they're likely to forget to include the hotfix. Url to\n  2.9.10 hard-coded (as opposed to the more elegantly self-aware\n  plone.recipe.plone approach) per the practice of a plone.recipe.distros\n  plone part.\n  [andrewb]\n\n* Nearly at the end of the creation of a ZopeSkel template, the local\n  commands available for that template are displayed.\n  [jaraco, markvl]\n\n* The Plone template now has local commands. (Basically moved them\n  from the archetype templates to plone templates and made them\n  available for both.\n  [markvl]\n\n* Added base test setup to the archetype template. Added wiring code that\n  runs README.txt as a doctest.\n  [esartor]\n\n* Added tests to the addcontent contenttype command. These ammend the\n  README.txt file for each content type providing basic tests for creating,\n  editing and removing instances of the added content type.\n  [esartor]\n\n\n",
+            "v": "<2.11"
+        }
     ]
 }
