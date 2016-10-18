@@ -3743,6 +3743,10 @@
             "v": "<8.1.4"
         },
         {
+            "changelog": "-------------\n\n- [SECURITY] If being run in multi-organization mode, it was possible for a user to craft a URL which would allow them to view membership details of other users.\n\n",
+            "v": "<8.2.4"
+        },
+        {
             "changelog": "-------------\n\n- [SECURITY] Fixed a bug which allows API keys more permission than granted within the organization.\n\n",
             "v": "<8.3.3"
         }
