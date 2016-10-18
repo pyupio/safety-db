@@ -2559,6 +2559,12 @@
             "v": "<2.0.2"
         }
     ],
+    "plumbery": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~\n\n* Handover project governance to Dimension Data R&D team\n* 26 tutorials are now provided in separate plumbery-contribs project at GitHub\n* Introduce deployment parameters (location, domain name, network name, ...)\n* Add tutorial on log consolidation (ELK)\n* Add tutorial on disk orchestration (standard, high-performance, economy)\n* Secure SSH communications in most tutorials (no password, no root access)\n* Add virtual storage to many tutorials\n* Derive regionId from locationId to streamline fittings plan\n* Add action 'refresh' to ease iterations in fittings plan\n* Add option -p to load parameters from the command line\n* Accept web links for fittings plan and for parameters file\n* Restructure code to accomodate for more complex data processing\n* Fix multiple bugs and errors\n* Augment test coverage\n* Improve information provided in debug mode\n* Passing Travis CI\n* 3286 python statements\n* Test coverage 53%\n\n",
+            "v": "<0.5.0"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
