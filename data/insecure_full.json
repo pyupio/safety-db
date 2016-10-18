@@ -3669,6 +3669,12 @@
             "v": ">=3.5,<3.5.2"
         }
     ],
+    "python-3parclient": [
+        {
+            "changelog": "------------------------\n* Replaced all httplib2 calls with Python Request calls\n* SSL certificate verification can be enabled by passing secure=True\n* SSL certificate verification can be done against a self provided .crt file\n  with secure='/path/to/ca-certificates.crt'\n\n",
+            "v": "<3.3.0"
+        }
+    ],
     "python-cjson": [
         {
             "cve": "CVE-2009-4924",
