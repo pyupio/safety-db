@@ -248,6 +248,9 @@
     "geventhttpclient": [
         "<1.2.0"
     ],
+    "gingerit": [
+        "<0.6"
+    ],
     "google-appengine": [
         "<1.5.4"
     ],
