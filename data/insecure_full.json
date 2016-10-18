@@ -3761,6 +3761,10 @@
         {
             "changelog": "-------------\n\n- [SECURITY] Fixed a bug which allows API keys more permission than granted within the organization.\n\n",
             "v": "<8.3.3"
+        },
+        {
+            "changelog": "-----------\n\n- Added unique user frequency rule condition.\n- Fixed a major performance regression from 8.7 on the ``GroupTagValue`` model.\n- Various security fixes related to CSRF and XSS.\n- Server side filtering of event ingest.\n\nSchema Changes\n~~~~~~~~~~~~~~\n\n- Removed ``HelpPage`` model.\n- Added ``OrganizationMember.token`` column.\n- Removed ``OrganizationMember.counter`` column.\n\n",
+            "v": "<8.8"
         }
     ],
     "setuptools": [
