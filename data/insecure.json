@@ -394,6 +394,9 @@
     "products.plonepas": [
         "<3.9"
     ],
+    "products.zmintrospection": [
+        "<0.1.1"
+    ],
     "ptah": [
         "<0.3.3"
     ],
