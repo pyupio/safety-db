@@ -1394,6 +1394,12 @@
             "v": ">=1.9,<1.9rc2"
         }
     ],
+    "django-contrib-comments": [
+        {
+            "changelog": "------------------\n\n* Made ``CommentSecurityForm`` pass keyword arguments to its parent class.\n* Added ``COMMENTS_TIMEOUT`` setting to configure the timeout for\n  ``CommentSecurityForm``.\n* Migrated ``Comment.user_email`` to 254 characters.\n* Moved South migrations to ``south_migrations`` folder so they can exist with\n  Django 1.7 migrations.\n* Added Django 1.9 compatibility, dropped support for Django 1.5.\n",
+            "v": "<1.6.0"
+        }
+    ],
     "django-lfs": [
         {
             "changelog": "------------------\n\n* Security fix\n* Added manufacturer field to product management (Maciej Wi\u015bniowski)\n* Bugfix: fixed pagination for product page; issue 152 (Maciej Wi\u015bniowski)\n* Bugfix: fixed deleting of image for payment and shipping methods; issue 150\n* Bugfix: fixed markup; issue 148\n\n",
