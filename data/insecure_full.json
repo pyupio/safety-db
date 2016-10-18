@@ -1834,6 +1834,12 @@
             "v": "<0.1.5"
         }
     ],
+    "lemur": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~\n\n* **SECURITY ISSUE**: Switched from use a AES static key to Fernet encryption.\n  Affects all versions prior to 0.1.5. If upgrading this will require a data migration.\n  see: `Upgrading Lemur <https://lemur.readthedocs.com/adminstrationUpgradingLemur>`_\n",
+            "v": "<0.1.5"
+        }
+    ],
     "libtaxii": [
         {
             "changelog": "-------\n`(diff) <https://github.com/TAXIIProject/libtaxii/compare/1.1.104...1.1.105>`__\n\n- Fixed multiple XML parsing related vulnerabilities (Thanks guidovranken of IntelWorks for the vulnerability research!)\n\n",
