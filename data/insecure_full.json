@@ -2051,6 +2051,10 @@
     ],
     "gns3-gui": [
         {
+            "changelog": "\n* New GUI styles: charcoal (default) & classic. Changing GUI Preferences\n* Integration of GNS3 converter (allows old .net topologies to be opened).\n* Allow Qemu VM to have no interface.\n* Automatically extract IOS configs when a project is closed.\n* Show the cancel button in Wizards on Mac OS X.\n* Fix crash on Windows 32-bit.\n* Fix \"new project\" bug when using the GNS3 IOU VM.\n* Fix \"could not find unused port\" WinError 10013 bug\n* qemu-system-i386 is the new default on 32-bit platforms.\n* Option to deactivate the new project dialog at startup.\n* Add \"open a project\" and \"recent projects\" buttons to the new project dialog.\n* Fix platform detection issue with some Cisco IOS image file name.\n* Add delay (default 500 ms) when Console to all nodes.\n* Check for duplicate node names in Preferences.\n* Fix bug when editing a Qemu VM configured to run on a remote server.\n* News dock widget is smaller.\n* Fix SecureCRT issue when disconnecting from an IOU device on Windows.\n* Update VPCS to version 0.6 in the all-in-one installer.\n\n",
+            "v": "<1.2"
+        },
+        {
             "changelog": "\n* Try to fix a crash when reseting interface label\n* Fix a crash with broken file system\n* Fix EtherSwitch default name format\n* Fix crash when you have utf-8 char in the README\n* Fix rare crash when creating a link\n* Stop node before hot unlink\n* Prevent a crash due to issue in Qt\n* Add another security to prevent client to send empty hostname\n* Fix rare crash when deleting interface from the cloud\n* Fix rare crash in topology summary view\n* Ask user to send explanation if they cross a rare error\n* Fix rare crash when deleting a node\n* Hotlink support for Docker\n* Fix typo in the a warning dialog\n* Fix Remote GNS3 VM requires local server\n* Fix AttributeError: 'NoneType' object has no attribute '_server'\n* No timeout when importing a .gns3project\n\n",
             "v": "<1.5.1"
         }
