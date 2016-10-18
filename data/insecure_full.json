@@ -3969,6 +3969,12 @@
             "v": "<2.0.1"
         }
     ],
+    "spud": [
+        {
+            "changelog": "=========================\n\n  * Fix permission checks. Security issue, anybody could edit photos.\n  * Fix broken XHTML.\n  * Make timezones more flexible. Can specify UTC+nn or UTC-nn for imports.\n  * Improve photo editor, have links to most popular items.\n  * Fix problems with add person and set person logic.\n  * Limit width of photo summary in css.\n  * Optimize how search string is generated.\n  * Don't use CSRF protection for post requests that don't have side effects.\n\n",
+            "v": "<0.8"
+        }
+    ],
     "stargate": [
         {
             "changelog": "---\n\n- Add support for the HyBi version of WebSockets (specifically version-10). This version was released to solve some previous security concerns and\nwill be the version in Firefox 7/8 and Chrome 14 onwards accoring to Wikipedia.\n- Introduces a dependency on ws4py\n\n- See http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10\n\n",
