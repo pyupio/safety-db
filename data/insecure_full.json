@@ -2807,6 +2807,12 @@
             "v": "<2.13.4"
         }
     ],
+    "products.cmfcontentpanels": [
+        {
+            "changelog": "------------------\n\n - fixed two security declare bug, thanks Sasha Vincic\n\n",
+            "v": "<V1.4.1"
+        }
+    ],
     "products.ldapuserfolder": [
         {
             "cve": "CVE-2010-2944",
