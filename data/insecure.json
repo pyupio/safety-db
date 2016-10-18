@@ -312,6 +312,9 @@
     "stargate": [
         "<0.4"
     ],
+    "testlink-api-python-client": [
+        "<1.9.11"
+    ],
     "thorn": [
         "<1.1.0"
     ],
