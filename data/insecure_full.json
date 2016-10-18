@@ -5,6 +5,12 @@
             "v": "<0.0.4"
         }
     ],
+    "abilian-sbe": [
+        {
+            "changelog": "------------------\n\nImprovements\n~~~~~~~~~~~~\n\n*  community views: support graceful csrf failure\n*  added attachment to forum post by email\n*  added attachments views in forum\n*  forum post: show 'send by mail' only if enabled for community or current user\n*  i18n on roles\n\nFixes\n~~~~~\n\n* fix css rule for 'recent users' box\n*  communities settings forms:  fix imagefield arguments\n*  NavAction Communities is now only showed when authenticated\n*  added regex clean forum posts from email\n\nRefactoring\n~~~~~~~~~~~\n\n*  folder security: use Permission/Role objects\n*  * views/social.py: remove before_request\n*  forum views: use CBV\n*  forum: form factorisation\n*  login_required on community index and social.wall, has_access() stops anonymous users\n*  pep8 cleanup\n*  tests/functional  port is now dynamic to avoid runtime errors\n*  replaced csrf_field -> csrf.field() in thread.html to have proper csrf and allow action to go on (16)\n*  unescaped activity entry body_html\n*  fix test: better mock of celery task\n*  abilian-core removed extensions.celery; use periodic_task from abilian.core.celery\n*  forum: in-mail tasks: set app default config values; conditionnaly register check_maildir\n*  celery: use 'shared_task' decorator\n\n",
+            "v": "<0.1.1"
+        }
+    ],
     "aiocouchdb": [
         {
             "changelog": "------------------\n\n- Adopt test suite to run against real CouchDB instance\n- Database, documents and attachments now provides access to their name/id\n- Remove redundant longnamed constructors\n- Construct Database/Document/Attachment instances through __getitem__ protocol\n- Add Document.rev method to get current document`s revision\n- Add helpers to work with authentication database (_users)\n- Add optional limitation of feeds buffer\n- All remove(...) methods are renamed to delete(...) ones\n- Add support for config option existence check\n- Correctly set members for database security\n- Fix requests with Accept-Ranges header against attachments\n- Fix views requests when startkey/endkey should be null\n- Allow to pass custom query parameters and request headers onto changes feed\n  request\n- Handle correctly HTTP 416 error response\n- Minor code fixes and cleanup\n\n",
