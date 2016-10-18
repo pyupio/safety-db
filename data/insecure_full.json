@@ -2552,6 +2552,12 @@
             "v": "<2.6.1"
         }
     ],
+    "pydocusign": [
+        {
+            "changelog": "-----------------\n\nWorkaround environment variables for configuration, and bugfix.\n\n- Feature 45 - ``DocuSignClient`` can be configured using environment\n  variables. Supported environment variables are: ``DOCUSIGN_ROOT_URL``,\n  ``DOCUSIGN_USERNAME``, ``DOCUSIGN_PASSWORD``,\n  ``DOCUSIGN_INTEGRATOR_KEY``, ``DOCUSIGN_ACCOUNT_ID``,\n  ``DOCUSIGN_APP_TOKEN`` and ``DOCUSIGN_TIMEOUT``.\n\n  Obviously, arguments you explicitely pass to the constructor have priority\n  over environment variables.\n\n  Demo scripts were  using environment variables with prefix\n  ``PYDOCUSIGN_TEST_``. The environment variables have been renamed with\n  either ``DOCUSIGN_`` (the ones in the list above) or ``DOCUSIGN_TEST_``\n  prefix.\n\n- Bug 44 - Using http://diecutter.io in\n  ``pydocusign.test.generate_notification_callback_body()``. Secure URL was\n  broken because of SSL certificate.\n\n\n",
+            "v": "<0.12"
+        }
+    ],
     "pyftpdlib": [
         {
             "cve": "CVE-2009-5010",
