@@ -20,6 +20,9 @@
     "clearsilver": [
         "<0.10.5"
     ],
+    "cloudmesh": [
+        "<0.7.2"
+    ],
     "cmsplugin-filer": [
         "<1.0.0"
     ],
