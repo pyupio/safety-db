@@ -2821,6 +2821,12 @@
             "v": "<2.0.2"
         }
     ],
+    "plone.testing": [
+        {
+            "changelog": "------------------\n\n- Fix a problem that would cause ``<meta:redefinePermission />`` to break.\n  In particular fixes the use of the ``zope2.Public`` permission.\n  [optilude]\n\n- Set the security implementation to \"Python\" for easier debugging during\n  the z2.STARTUP layer.\n  [optilude]\n\n- Initialize Five in the z2.Startup layer, pushing a Zope2VocabularyRegistry on\n  layer set-up and restoring the previous one upon tear-down.\n  [dukebody]\n\n\n",
+            "v": "<1.0a2"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
