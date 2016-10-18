@@ -1736,6 +1736,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flintrock": [
+        {
+            "changelog": "\n Added\n\n* [`b00fd12`]: Added `--assume-yes` option to the `launch` command.\n  Use `--assume-yes` to tell Flintrock to automatically destroy the\n  cluster if there are problems during launch.\n\n[`b00fd12`]: https://github.com/nchammas/flintrock/commit/b00fd128f36e0a05dafca69b26c4d1b190fa42c9\n\n Changed\n\n* [69]: Automatically retry Hadoop download from flaky Apache\n  mirrors.\n* [`0df7004`]: Delete unneeded security group after a cluster is\n  destroyed.\n* [`244f734`]: Default HDFS not to install. Going forward, Spark will\n  be the only service that Flintrock installs by default. Defaults can\n  easily be changed via Flintrock's config file.\n* [`de33412`]: Flintrock installs services, not modules. The\n  terminology has been updated accordingly throughout the code and\n  docs. Update your config file to use `services` instead of\n  `modules`. **Warning**: Flintrock will have problems managing\n  existing clusters that were launched with versions of Flintrock from\n  before this change.\n* [73]: Major refactoring of Flintrock internals.\n* [74]: Flintrock now catches common configuration problems upfront\n  and provides simple error messages, instead of barfing out errors\n  from EC2 or launching broken clusters.\n* [`bf766ba`]: Fixed a bug in how Flintrock polls SSH availability\n  from Linux. Cluster launches now work from Linux as intended.\n\n[69]: https://github.com/nchammas/flintrock/pull/69\n[`0df7004`]: https://github.com/nchammas/flintrock/commit/0df70043f3da215fe699165bc961bd0c4ba4ea88\n[`244f734`]: https://github.com/nchammas/flintrock/commit/244f7345696d1b8cec1d1b575a304b9bd9a77840\n[`de33412`]: https://github.com/nchammas/flintrock/commit/de3341221ca8d57f5a465b13f07c8e266ae11a59\n[73]: https://github.com/nchammas/flintrock/pull/73\n[74]: https://github.com/nchammas/flintrock/pull/74\n[`bf766ba`]: https://github.com/nchammas/flintrock/commit/bf766ba48f12a8752c2e32f9b3daf29501c30866\n\n",
+            "v": "<0.2.0"
+        }
+    ],
     "formencode": [
         {
             "cve": "CVE-2008-6547",
