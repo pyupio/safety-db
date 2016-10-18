@@ -2720,6 +2720,12 @@
             "v": "<0.3.3"
         }
     ],
+    "pwnypack": [
+        {
+            "changelog": "==================\n\n* Made IPython an optional dependency (pip install pwnypack[shell]).\n* Added pickle_call function to easily execute a function on unpickle.\n* Added format string vulnerability exploit builder.\n* Renamed TCPSocketChannel to TCPClientSocketChannel.\n* Added TCPServerSocketChannel which can listen for an incoming connection.\n* Added Flow.interact() method.\n* Added support for connecting to SSH servers from Flow.\n\n",
+            "v": "<0.7.0"
+        }
+    ],
     "pycapnp": [
         {
             "changelog": "- Update bundled C++ libcapnp to v0.5.1.2 security release\n\n\n",
