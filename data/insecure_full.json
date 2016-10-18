@@ -2094,6 +2094,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "kotti": [
+        {
+            "changelog": "------------------------\n\n- Add a new scaffold based on Pyramid's ``pcreate``.  To run the tests for the\n  scaffold, you must invoke ``py.test`` with the ``--runslow`` option.  This\n  is enabled by default on Travis.\n\n- ``kotti._resolve_dotted`` now return a resolved copy of the settings\n  (instead of in place resolving as before).\n\n- Factor out DBMS specific patches and make them available to the test fixtures.\n\n- Add new fixtures that can also be used in add on tests:\n\n  - ``custom_settings`` does nothing and is meant to be overridden in add on\n    test suites.  It allows injection of arbitrary key / values into the\n    settings dict used in tests.\n\n  - ``unresolved_settings`` is guaranteed to only contain unresolved string\n    values (or lists therof).\n\n  - ``settings`` is now guaranteed to be fully resolved.\n\n  - ``webtest`` returns a ``webtest.TestApp`` instance with support for the\n    ``user`` marker.  This should be used instead of browser doctests for\n    functional tests.\n\n- Use RTD theme for documentation.\n\n- Use latest versions of all requirements.  The only upgrade with notable\n  differences is ``lingua`` (from 1.4 to 3.6.1).  This completely changes\n  lingua's API.  See docs/developing/basic/translations.rst for details on\n  the greatly simplified new usage.\n\n- Remove code (incl. tests) that has been marked as deprecated since (at least)\n  Kotti 0.8.\n\n- Revise UI to make better use of Bootstrap 3.\n\n- Allow parameters for move-child-position views to either be in\n  ``request.POST`` or ``request.json_body``.\n\n- Don't use Pyramid code that is marked as deprecated:\n\n  - replace ``pyramid.security.authenticated_userid`` with\n    ``request.authenticated_userid``.\n\n- Deprecate ``kotti.security.has_permission`` to be consistent with the\n  corresponding deprecation in Pyramid 1.5.  You should now use\n  ``request.has_permission`` instead.\n\n- Make all values in ``Node.path`` end in ``/``.  This makes it consistent over\n  all nodes (*including* root) and correspond to the values of\n  ``request.resource_url``.  As a side effect querying becomes easier.\n  However, this might need adjustments in your code if you were expecting the\n  old path values before.  A migration step for DB upgrades is included.\n\n",
+            "v": "<1.0.0alpha"
+        }
+    ],
     "lambdajson": [
         {
             "changelog": "-- Security fix. Using ast.literal_eval as eval.\n\n",
