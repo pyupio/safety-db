@@ -251,6 +251,9 @@
     "products.plonepas": [
         "<3.9"
     ],
+    "ptah": [
+        "<0.3.3"
+    ],
     "pycrypto": [
         "<2.6.1"
     ],
