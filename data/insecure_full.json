@@ -3868,6 +3868,12 @@
             "v": "<0.6"
         }
     ],
+    "robotframework-sudslibrary": [
+        {
+            "changelog": "----------------\n- Fixed installation dependency on ez_setup which was not included\n- Support for timeout option for Suds\n- Support for WS-Security: UsernameToken element\n- Support for WS-Security: Timestamp element\n- Support sending a raw SOAP message\n- Removed extra messages logged in keywords with Boolean arguments\n- Improved documentation\n- Clarified license\n\nNew Keywords:\nApply Username Token, Apply Security Timestamp, Create Raw Soap Message, Set Soap Timeout\n",
+            "v": "<0.8"
+        }
+    ],
     "roundup": [
         {
             "cve": "CVE-2012-6130",
