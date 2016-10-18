@@ -1541,6 +1541,12 @@
             "v": "<1.3.2"
         }
     ],
+    "django-pci-auth": [
+        {
+            "changelog": "------------------\n\n- Rename GitHub organization from django-security to django-pci to emphasize focus on providing assistance with building PCI compliant websites with Django.\n\n",
+            "v": "<0.0.9"
+        }
+    ],
     "django-piston": [
         {
             "cve": "CVE-2011-4103",
