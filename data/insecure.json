@@ -23,6 +23,9 @@
     "cmsplugin-filer": [
         "<1.0.0"
     ],
+    "collective.multisearch": [
+        "<1.1"
+    ],
     "collective.noticeboard": [
         "<0.7.1"
     ],
