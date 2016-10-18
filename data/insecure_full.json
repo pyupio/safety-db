@@ -3745,6 +3745,12 @@
             "v": "<1.12.1"
         }
     ],
+    "secureconfig": [
+        {
+            "changelog": "0.1.0, 4/21/2014 -- major overhaul and major features added. SecureConfigParser and SecureString implemented, with cryptkeeper submodule now doing the work of holding the key and doing en/decryption. cryptkeeper_access_methods provide from_key, from_env, and from_file class methods for all SecureConfig* classes.\n",
+            "v": "<0.0.2.2"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
