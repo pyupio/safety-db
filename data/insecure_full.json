@@ -11,6 +11,12 @@
             "v": "<0.1.4"
         }
     ],
+    "beaker": [
+        {
+            "changelog": "=========================\n\n* Added option to make Beaker use a secure cookie.\n* Removed CTRCipher as pycryptopp doesn't need it.\n* Changed AES to use 256 bit.\n* Fixed signing code to use hmac with sha for better signing security.\n* Fixed memcached code to use delete_multi on clearing the keys for efficiency\n  and updated key retrieval to properly store and retrieve None values.\n* Removing cookie.py and signed cookie middleware, as the environ_key option\n  for session middleware provides a close enough setting.\n* Added option to use just cookie-based sessions without requiring\n  encryption.\n* Switched encryption requirement from PyCrypto to pycryptopp which uses a \n  proper AES in Counter Mode.\n\n\n",
+            "v": "<0.9.2"
+        }
+    ],
     "bise.theme": [
         {
             "changelog": "------------------\n* Bug fix: fix potential XSS issue with catalogue search\n  [tiberich 75243]\n\n",
