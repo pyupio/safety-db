@@ -32,6 +32,12 @@
             "v": "<0.10.5"
         }
     ],
+    "collective.contentrules.mail": [
+        {
+            "changelog": "----------------\n\n* Remove an extra From header when calling mailhost.secureSend()\n  [dimboo]\n  \n",
+            "v": "<0.6"
+        }
+    ],
     "defusedexpat": [
         {
             "cve": "CVE-2013-1664",
