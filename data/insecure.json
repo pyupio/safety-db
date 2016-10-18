@@ -412,6 +412,9 @@
     "products.plonepas": [
         "<3.9"
     ],
+    "products.sqlalchemyda": [
+        "<0.3.0"
+    ],
     "ptah": [
         "<0.3.3"
     ],
