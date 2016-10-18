@@ -108,6 +108,9 @@
     "django-anonymizer-compat": [
         "<0.4"
     ],
+    "django-autocomplete-light": [
+        "<2.3.0"
+    ],
     "django-embed-video": [
         "<0.3"
     ],
