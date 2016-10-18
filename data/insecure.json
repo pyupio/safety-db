@@ -130,6 +130,9 @@
     "django-uni-form": [
         "<0.9.0"
     ],
+    "django-watchman": [
+        "<0.10.0"
+    ],
     "docker-registry": [
         "<0.8.1"
     ],
