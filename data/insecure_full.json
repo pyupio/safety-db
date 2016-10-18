@@ -2272,6 +2272,12 @@
             "v": ">=2.0,<2.0.1"
         }
     ],
+    "nexus-yplan": [
+        {
+            "changelog": "------------------\n\n* Removed support for old Django versions\n* Fixed all deprecation warnings on Django 1.7 and 1.8\n* Added Django 1.9 support\n* Added Python 3.4 and 3.5 support\n* Historically Nexus had a module that embedded Django Admin; this has not worked since Django 1.3 due to removal of\n  the ``adminmedia`` template tag that the templates were still using. Because it seems that no one has been using it,\n  it has been removed. Users are encourage to just use the normal Django Admin instead. Nexus thus ships with no\n  modules included.\n* Removed the login/logout pages, which were copied and adapted from an old version of Django Admin, and likely no\n  longer secure. If you are not logged in Nexus will now redirect you to Django Admin - thus Django Admin is now\n  required by Nexus.\n* Fixed Nexus CSRF protection to work if you have changed the CSRF cookie name,\n  thanks to a PR on the original Nexus from Github users karech and\n  graingert.\n* Removed all inline javascript, thanks graingert.\n\n",
+            "v": "<1.1.0"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",
