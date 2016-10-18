@@ -114,6 +114,9 @@
     "django-revproxy": [
         "<0.9.7"
     ],
+    "django-secure": [
+        "<0.1.2"
+    ],
     "django-tastypie": [
         "<0.9.10"
     ],
