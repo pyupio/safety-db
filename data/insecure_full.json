@@ -3971,6 +3971,12 @@
             "v": "<2.2.1"
         }
     ],
+    "tox": [
+        {
+            "changelog": "-----\n\n- fix issue119: {envsitepackagesdir} is now correctly computed and has\n  a better test to prevent regression.\n\n- fix issue116: make 1.6 introduced behaviour of changing to a\n  per-env HOME directory during install activities dependent\n  on \"--set-home\" for now.  Should re-establish the old behaviour\n  when no option is given.\n\n- fix issue118: correctly have two tests use realpath(). Thanks Barry\n  Warsaw.\n\n- fix test runs on environments without a home directory\n  (in this case we use toxinidir as the homedir)\n\n- fix issue117: python2.5 fix: don't use ``--insecure`` option because\n  its very existence depends on presence of \"ssl\".  If you\n  want to support python2.5/pip1.3.1 based test environments you need\n  to install ssl and/or use PIP_INSECURE=1 through ``setenv``. section.\n\n- fix issue102: change to {toxinidir} when installing dependencies.\n  this allows to use relative path like in \"-rrequirements.txt\".\n\n",
+            "v": "<1.6.1"
+        }
+    ],
     "tripleo-heat-templates": [
         {
             "cve": "CVE-2015-5303",
