@@ -39,6 +39,10 @@
             "v": "<1.6.7"
         },
         {
+            "changelog": "\nMajor new features:\n\n* Windows support (alpha) using native PowerShell remoting\n* Tasks can now specify `run_once: true`, meaning they will be executed exactly once. This can be combined with delegate_to to trigger actions you want done just the one time versus for every host in inventory.\n\nNew inventory scripts:\n\n* SoftLayer\n* Windows Azure\n\nNew Modules:\n\n- cloud\n  * azure\n  * rax_meta\n  * rax_scaling_group\n  * rax_scaling_policy\n- windows\n  * *version of setup module*\n  * *version of slurp module*\n  * win_feature\n  * win_get_url\n  * win_group\n  * win_msi\n  * win_ping\n  * win_service\n  * win_user\n\nOther notable changes:\n\n* Security fixes\n  - Prevent the use of lookups when using legacy \"{{ }}\" syntax around variables and with_* loops.\n  - Remove relative paths in TAR-archived file names used by ansible-galaxy.\n* Inventory speed improvements for very large inventories.\n* Vault password files can now be executable, to support scripts that fetch the vault password.\n\n\n",
+            "v": "<1.7"
+        },
+        {
             "changelog": "\n- Security fix to disallow specifying 'args:' as a string, which could allow the insertion of extra module parameters through variables.\n- Performance enhancements related to previous security fixes, which could cause slowness when modules returned very large JSON results. This specifically impacted the unarchive module frequently, which returns the details of all unarchived files in the result.\n- Docker module bug fixes:\n  * Fixed support for specifying rw/ro bind modes for volumes\n  * Fixed support for allowing the tag in the image parameter\n- Various other bug fixes\n\n",
             "v": "<1.7.1"
         },
