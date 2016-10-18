@@ -200,6 +200,9 @@
     "lemur": [
         "<0.1.5"
     ],
+    "letsencrypt-plesk": [
+        "<0.1.1"
+    ],
     "libtaxii": [
         "<1.1.105"
     ],
