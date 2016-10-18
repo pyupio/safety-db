@@ -2356,6 +2356,12 @@
             "v": ">=2.0,<2.0.1"
         }
     ],
+    "myhdl": [
+        {
+            "changelog": "-------------------------\n\n* Maintenance release that solves most outstanding issues\n  and implements some feature requests.\n  See the SourceForge Bug and RFE Trackers for details.\n  (Use the group 'MyHDL 0.4' to find the relevant issues.)\n  More info can also be found on the mailing list.\n\n* Added cosimulation support for the cver Verilog simulator.\n\nNote: the documentation was not modified in this release.\n\n\n",
+            "v": "<0.4.1"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",
