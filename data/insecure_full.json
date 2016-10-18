@@ -68,6 +68,12 @@
             "v": "<0.7.1"
         }
     ],
+    "config-resolver": [
+        {
+            "changelog": "-------------\n\nFeatures added\n~~~~~~~~~~~~~~\n\n* New (optional) argument: ``require_load``. If set to ``True`` creating a\n  config instance will raise an error if no appropriate config file is found.\n\n* New class: ``SecuredConfig``: This class will refuse to load config files\n  which are readable by other users than the owner.\n\nImprovments\n~~~~~~~~~~~~~~~~~\n\n* Documentation updated/extended.\n* Code cleanup.\n\n",
+            "v": "<3.3.0"
+        }
+    ],
     "conn-check": [
         {
             "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
