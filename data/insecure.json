@@ -220,6 +220,9 @@
     "requests": [
         ">=2.1,<=2.5.3"
     ],
+    "requests-oauthlib": [
+        "<0.4.1"
+    ],
     "roundup": [
         "<1.4.20"
     ],

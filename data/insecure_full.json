@@ -3224,6 +3224,12 @@
             "v": ">=2.1,<=2.5.3"
         }
     ],
+    "requests-oauthlib": [
+        {
+            "changelog": "++++++++++++++++++++\n- New install target ``[rsa]`` for people using OAuth1 RSA-SHA1 signature\n  method.\n- Fixed bug in OAuth2 where supplied state param was not used in auth url.\n- OAuth2 HTTPS checking can be disabled by setting environment variable\n  ``OAUTHLIB_INSECURE_TRANSPORT``.\n- OAuth1 now re-authorize upon redirects.\n- OAuth1 token fetching now raise a detailed error message when the\n  response body is incorrectly encoded or the request was denied.\n- Added support for custom OAuth1 clients.\n- OAuth2 compliance fix for Sina Weibo.\n- Multiple fixes to facebook compliance fix.\n- Compliance fixes now re-encode body properly as bytes in Python 3.\n- Logging now properly done under ``requests_oauthlib`` namespace instead\n  of piggybacking on oauthlib namespace.\n- Logging introduced for OAuth1 auth and session.\n\n",
+            "v": "<0.4.1"
+        }
+    ],
     "roundup": [
         {
             "cve": "CVE-2012-6130",
