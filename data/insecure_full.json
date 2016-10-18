@@ -3739,6 +3739,10 @@
             "v": "<7.4.0"
         },
         {
+            "changelog": "-------------\n\n- [Security] An XSS vulnerability was addressed with low cardinality tags and the stream filter box:\n  https://github.com/getsentry/sentry/commit/364b959811561de83f29893e105cc590224edbee\n\n",
+            "v": "<7.5.5"
+        },
+        {
             "changelog": "-------------\n\n- [SECURITY] Fixed an issue where a superuser had the ability to inject data into audit logs through the admin UI.\n\n",
             "v": "<8.1.4"
         },
