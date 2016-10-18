@@ -2213,6 +2213,10 @@
         {
             "changelog": "-------------------------------------------\n\n* fix two security bugs related to CRLF injection\n  https://github.com/gratipay/security-qf35us/issues/1\n\n* remove argv-based configuration; Website now takes kwargs instead (455)\n\n* remove exec-based configuration, i.e., configure-aspen.py (373); use kwargs\n  to Website or environment variables instead\n\n* add a base_url configuration setting and use it in a new algorithm\n  function, redirect_to_base_url (457)\n\n* improve the redirect API: it's now at website.redirect instead of\n  request.redirect; it honors the new website.base_url; and it takes an \n  optional response object (458)\n\n\n",
             "v": "<0.39"
+        },
+        {
+            "changelog": "--------------------------------------------\n\n* the repo is now named `aspen.py` instead of `aspen-python` (485)\n\n* extend the test client to support file uploads (508)\n\n* speclines are no longer required in simplates (296)\n\n* upgrade mimeparse, ahead of porting to Python 3 (500)\n\n* add a website.colorize_tracebacks option (501)\n\n* drop support for Python 2.6 (497)\n\n* refactor simplates internally ahead of splitting them out (481)\n\n* port to Windows (482)\n\n* protect against URL redirection attacks (471)\n\n\n",
+            "v": "<0.42"
         }
     ],
     "pastescript": [
