@@ -1813,6 +1813,12 @@
             "v": "<1.2.0"
         }
     ],
+    "gocept.runner": [
+        {
+            "changelog": "------------------\n\n- An error message is correctly logged when the worker produces an exception\n  which cannot be represented in us-ascii. This used to cause an exception in\n  the logging module. The cause of those exceptions where quite hard to track.\n\n- Removed dependency on zope.app.security which was neither declared nor\n  necessary.\n\n- Moved project home to <https://bitbucket.org/gocept/gocept.runner/>.\n\n\n",
+            "v": "<0.7.0"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",

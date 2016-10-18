@@ -219,6 +219,9 @@
     "geventhttpclient": [
         "<1.2.0"
     ],
+    "gocept.runner": [
+        "<0.7.0"
+    ],
     "google-appengine": [
         "<1.5.4"
     ],
