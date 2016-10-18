@@ -2821,6 +2821,12 @@
             "v": "<2.0.2"
         }
     ],
+    "plone.testing": [
+        {
+            "changelog": "------------------\n\n- Handle test failures due to userFolderAddUser returning the user object in\n  newer versions of Zope.\n  [esteele]\n\n- Add ``setUpZcmlFiles`` and ``tearDownZcmlFiles`` helpers to enable loading\n  of ZCML files without too much boilerplate.\n  [gotcha]\n\n- Add some logging.\n  [gotcha]\n\n- Add the ``[security]`` extra, to provide tear-down of security checkers.\n  [optilude]\n\n- Let the ``IntegrationTesting`` and ``FunctionalTesting`` lifecycle layers\n  set up request ``PARENTS`` and, if present, wire up\n  ``zope.globalrequest``.\n  [optilude]\n\n- Make the test browser support IStreamIterators\n  [optilude]\n\n\n",
+            "v": "<4.0a5"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
