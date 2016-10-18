@@ -29,6 +29,9 @@
     "conn-check": [
         "<1.0.18"
     ],
+    "cookiecutter": [
+        "<1.4.0"
+    ],
     "defusedexpat": [
         "<0.3"
     ],
