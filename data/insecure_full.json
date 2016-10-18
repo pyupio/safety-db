@@ -1476,6 +1476,12 @@
             "v": "<0.5.0"
         }
     ],
+    "django-leonardo": [
+        {
+            "changelog": "----------\n\n* install instead http\n* cleanup\n* more lazy imports\n* django lazy import\n* cleanup unless stuff\n* doc update\n* fixed version and added Changelog from build\n* support for recursive module configs 27\n* working on 6 refactoring loading configuration from modules\n* small update\n* fuj\n* support for JS files CSS files and Angular modules and completly removed redactor from leonardo\n* removed redactor\n* cleanup requirements\n* remove redactor\n* free on Kilo\n* extend leonardo object\n* use Horizon Kilo stable\n* use Changelog\n* debug toolbar for devel environment\n* removed unless db queries, some caches\n* bump required blog version and more security middleware\n* some about leonardo packaging\n* declare namespace packages for proper extends 23\n* installation and migrations\n* removed unless echo\n* script fixes\n* installation fixes and examples\n* bootstrap script\n* 19 use our horizon, leonardo site template example\n* without pbr\n* fix pbr dependency\n* pbr requirement\n* cleanup\n* cleanup main templatetags and update readme, added folio extra\n* python 3 fix and more clean code\n* fix page extensions\n* page permissions\n* delete model dimensions after is deleted\n* fix button name\n* cleanups\n* search configuration and usage\n* patch reverse_lazy, horizon as 3rd party app, but in default state included, allow disable include horizon\n* cleanup, fix requirements\n* search rebuild and get to ready state 14\n* ref fix\n\n",
+            "v": "<2015.0.4b1"
+        }
+    ],
     "django-lfs": [
         {
             "changelog": "------------------\n\n* Security fix\n* Added manufacturer field to product management (Maciej Wi\u015bniowski)\n* Bugfix: fixed pagination for product page; issue 152 (Maciej Wi\u015bniowski)\n* Bugfix: fixed deleting of image for payment and shipping methods; issue 150\n* Bugfix: fixed markup; issue 148\n\n",
