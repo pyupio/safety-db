@@ -3597,6 +3597,12 @@
             "v": "<1.1"
         }
     ],
+    "sopel": [
+        {
+            "changelog": "===============================\nModule changes:\n* Many modules ported to use requests package for stability and security.\n* Weather location lookup is fixed.\n* Confusing and unnecessary commands like .op were removed.\n* Splitting of options in .choice is now more intuitive.\n* Some edge cases in reddit post information were fixed.\n\nCore changes:\n* A check is added to warn about an obscure environment issue that can cause strange errors.\n* Regex characters in the bot's nick no longer cause issues when a rule has the nickname added.\n* Rate limiting is tweaked slightly, which should reduce the severity of the .commands flood bug until a proper solution is found.\n\nAPI changes:\n* The current topic of a channel is now available as the Channel object's topic attribute.\n* sopel.web has been reworked as a wrapper around requests; it remains deprecated.\n\n",
+            "v": "<6.3.0"
+        }
+    ],
     "splash": [
         {
             "changelog": "------------------\n\nThis is a bugfix release:\n\n* XSS in HTTP UI is fixed;\n* Splash-Jupyter docker image is fixed.\n\n",
