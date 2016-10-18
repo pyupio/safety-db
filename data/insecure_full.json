@@ -3921,6 +3921,12 @@
             "v": "<1.2.0"
         }
     ],
+    "pyupdater": [
+        {
+            "changelog": " Renamed to PyUpdater\n\nUpdated\n\n  - Client\n\n    - Better error handling\n\n  - PyUpdater\n\n    - Using json to store config data\n    - Less IO during execution\n    - Header performance improvements - upstream\n    - Central db object\n\nFixed\n\n  - Client\n\n    - Handling of download with corresponding hash\n\n  - PyUpdater\n\n    - session fixation attacks and potentially cookie stealing - upstream\n    - Not writing config file when cleaning repo\n\nRemoved\n\n  - PyUpdater\n\n    - RC4 from default cipher list - upstream\n    - Old migration code\n    - Removed old json version file\n    - Download progress to stdout\n    - Unused imports\n\n\n",
+            "v": "<0.20.0"
+        }
+    ],
     "pywebsite": [
         {
             "changelog": "---------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* hash_url fixes for length extension attack, and value equivalence attacks.\n\n\n",
