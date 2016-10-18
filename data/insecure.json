@@ -288,6 +288,9 @@
     "tornado": [
         "<2.2.1"
     ],
+    "touchpaper": [
+        "<0.2.1"
+    ],
     "tripleo-heat-templates": [
         "<0.8.10",
         "<0.8.7",
