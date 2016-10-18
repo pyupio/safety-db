@@ -502,6 +502,9 @@
     "pywebsite": [
         "<0.1.9pre"
     ],
+    "qi.jabberhelpdesk": [
+        "<0.30"
+    ],
     "requests": [
         ">=2.1,<=2.5.3"
     ],
