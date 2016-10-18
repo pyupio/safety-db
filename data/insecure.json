@@ -142,6 +142,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "eea.app.visualization": [
+        "<8.5"
+    ],
     "euphorie": [
         "<6.1"
     ],
