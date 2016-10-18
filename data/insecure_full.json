@@ -1505,6 +1505,12 @@
             "v": "<1.3.2"
         }
     ],
+    "django-paranoid-sessions": [
+        {
+            "changelog": "        * Add an extra session key that's only used for secure connections.\n        * Set session-related cookies to HttpOnly, if supported by Python.\n        * Back off aggressiveness of nonce-related defaults just a touch; they\n          were bumping too many legitimate sessions.\n\n",
+            "v": "<0.2.0"
+        }
+    ],
     "django-piston": [
         {
             "cve": "CVE-2011-4103",
