@@ -1605,6 +1605,12 @@
             "v": "<2.2.2"
         }
     ],
+    "ftw.solr": [
+        {
+            "changelog": "----------------\n\n- Improve reindexing object security performance.\n  We now walk down the children and stop walking down if the security indexes\n  of an object have not changed.\n  [jone]\n\n- Added support for atomic updates.\n  This means whenever possible, only the necessary / specified attributes get updated\n  in Solr, and more importantly, re-indexed by Plone's indexers.\n  IMPORTANT: This requires the Solr instance to have an <updateLog/> configured in\n  solrconfig.xml and the schema needs to contain a _version_ field.\n  See http://wiki.apache.org/solr/Atomic_Updates for details.\n  [lgraf]\n\n- Make sure values in search patterns are all lowercase.\n  [buchi]\n\n\n",
+            "v": "<1.2"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",
