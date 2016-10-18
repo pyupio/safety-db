@@ -1554,6 +1554,12 @@
             "v": "<1.0.1"
         }
     ],
+    "django-friendship": [
+        {
+            "changelog": "-------------\n\nReleased September 22nd, 2014\n\n    - Updated test runner for 1.7 compatability\n\n    - Fixed security issue where we were not checking the owner of a FriendRequest during accept and\n      cancelation\n\n    - Added optional 'message' kwarg to FriendshipManager.add_friend() so it is easier to set the\n      optional message field on FriendshipRequests\n\n",
+            "v": "<1.2.0"
+        }
+    ],
     "django-guts": [
         {
             "changelog": "-----\n\n* Security hole, allowing to read any file, was fixed.\n* Return 404 for non existent files.\n\n",
