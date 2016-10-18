@@ -1888,6 +1888,12 @@
             "v": "<2.7.3"
         }
     ],
+    "jose": [
+        {
+            "changelog": "------------------\n- Fixed critical JWT vulnerability (patch contributed by yuriikonovaliuk)\n\nImportant: Only unencrypted tokens are vulnerable. This fix lead to backward\nincompatible change to `verify` function signature.\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "jottalib": [
         {
             "changelog": "\n\n Security\n\n- a28f93d4ec4fd03b0f669f580cb8a22dcdf5e319 This project now uses the `certifi` package to use system certificates for https\n- d61a9bbdc17716ff9e40a7bd7eaa56f6737a4dc2 Stop pinning requests and requests_cache, it is dangerous\n\n\n Changed\n\n- The project main repository is now on github\n- 165a283d76695b5f197ece6581725c3874e09cfb Merge `jottalib` and `jottacloudclient` packages to accomplish the following\n  - install jottafuse.py and jottashare.py with `jottacloudclient`, not `jottalib`\n  - Add two *extras* to the `jottacloudclient` package, namely `[FUSE]` and `[monitor]`. Install it like this:\n\n        pip install jottacloudclient[FUSE]\n\n- Add a new script: `jottacloudclientmonitor.py`, that will monitor a folder for changes and upload immediately. *Tested on Windows, Linux and OSX*\n- a89cc2c9cc0f89723cf85aff5c073c69f8fdaddd Add a new mode to `jottafuse.py`, the fastest way to upload local files is to **create a symlink** in your *FUSE* mounted folder.\n- Added automatic testing, which will help us keep the code base more stable as work progresses\n- 519292a1f9e942d2ead67b6a995fc55405e0b24e Added support for resuming uploads.\n- 58c8b70dd7df1dc98d74a7e6629e32a3a0b79a77 `jottalib` Allow per-file progress to be measured during upload. **Contribution by alexschrod**\n\n Fixed\n- `jottafuse.py` is much, much, much faster now.\n- 6cae757bd9ceefa347919f495a1426220dc19f45 Fix off-by-one byte error in `JFSFile.readpartial()`\n- e37a63f5e8f6857c68f933e89c1b43e678436009 Bug fix: rewrite ternary conditionals as \"X if Y else Z\"\n- 079b9f09f6962ab3c9cfd7d8ee36869a0c45a954 Catch odd cases where a device has no mount points. See bug 26\n- d383697924eb65be85b5126d43e97a6a6e85655f Skip symlinks in `jottacloudclientmonitor.py` altogether. See bug 28\n- d5a7cbd3df24c4e44124fdcd8b21b4221b65e67f `jottalib` now properly reads and uploads files that are larger than available memory. **Contribution by alexschrod**\n\n",
