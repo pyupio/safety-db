@@ -2284,6 +2284,12 @@
             "v": "<0.7"
         }
     ],
+    "maestro-ng": [
+        {
+            "changelog": "--------------\n\n_March 14th, 2016_\n\nHmmm, pie. Making version number to match.\n\n* Added support for `security_opt`.\n* Added support for arbitrary bind mount modes instead of restricting to\n  `ro` or `rw`.\n\n",
+            "v": "<0.3.14"
+        }
+    ],
     "mailman": [
         {
             "cve": "CVE-2011-0707",
