@@ -224,7 +224,8 @@
         "<0.10.0"
     ],
     "djangorestframework": [
-        "<2.2.1"
+        "<2.2.1",
+        "<2.3.12"
     ],
     "docker-registry": [
         "<0.8.1"
