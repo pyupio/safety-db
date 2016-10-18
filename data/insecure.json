@@ -338,6 +338,9 @@
     "products.btreefolder2": [
         "<2.13.4"
     ],
+    "products.cmfcontentpanels": [
+        "<V1.4.1"
+    ],
     "products.ldapuserfolder": [
         "<2.19"
     ],
