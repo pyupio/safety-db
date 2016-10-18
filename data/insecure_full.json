@@ -41,6 +41,12 @@
             "v": "<1.0.9"
         }
     ],
+    "beeswarm": [
+        {
+            "changelog": " - Fixed bug that classified http and https bait traffic wrongly.\n - Fixed bug that classified brute force attacks as bait traffic (218),\n - Plugin for custom loggers.\n - Various minor fixes and improvements.\n\n",
+            "v": "<0.7.12"
+        }
+    ],
     "birdhousebuilder.recipe.nginx": [
         {
             "changelog": "==================\n\n* disabled SSLv3 (poodle attack)\n\n",
