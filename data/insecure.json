@@ -206,6 +206,9 @@
     "pplone": [
         "<4.2.3"
     ],
+    "pretaweb.healthcheck": [
+        "<1.0"
+    ],
     "products.ldapuserfolder": [
         "<2.19"
     ],
