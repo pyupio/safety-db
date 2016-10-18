@@ -1659,6 +1659,12 @@
             "v": "<0.8.1"
         }
     ],
+    "dyn": [
+        {
+            "changelog": "++++++++++++++++++\n\n* Internally improved Python2/3 compaability with the intoduction of the dyn.compat module\n* Timestamps for various report types are accepted as Python datetime.datetime instances\n* Added qps report access to Zones\n* Added __str__, __repr__, __unicode__, and __bytes__ methods to all API object types\n* Added conditional password encryption to allow for better in-app security\n* Added the ability for users to specify their own password encryption keys\n* Added __getstate__ and __setstate__ methods to SessionEngine, allowing sessions to be serialized\n* Misc bug fixes\n\n",
+            "v": "<1.1.0"
+        }
+    ],
     "easy_install": [
         {
             "cve": "CVE-2013-1633",
