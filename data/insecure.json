@@ -139,6 +139,9 @@
     "django-select2-py3": [
         "<5.7.0"
     ],
+    "django-sticky-uploads": [
+        "<0.1.0"
+    ],
     "django-tastypie": [
         "<0.9.10"
     ],

@@ -1549,6 +1549,12 @@
             "v": "<5.7.0"
         }
     ],
+    "django-sticky-uploads": [
+        {
+            "changelog": "-----------------------------------\n\nInitial public release includes:\n\n* ``StickyUploadWidget`` as replacement widget for any ``FileField``\n* jQuery plugin to process uploads in the background\n* Server-side code to process/store temporary uploads\n* Full test suite with `Travis CI <https://travis-ci.org/caktus/django-sticky-uploads>`_ integration\n* Documentation covering installation, customization and security notes on `Read the Docs <http://readthedocs.org/docs/django-django-sticky-uploads/>`_\n* Example project\n",
+            "v": "<0.1.0"
+        }
+    ],
     "django-tastypie": [
         {
             "cve": "CVE-2011-4104",
