@@ -120,6 +120,9 @@
     "django-autocomplete-light": [
         "<2.3.0"
     ],
+    "django-dajaxice-ng": [
+        "<0.1.7"
+    ],
     "django-embed-video": [
         "<0.3"
     ],
