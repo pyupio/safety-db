@@ -3195,6 +3195,12 @@
             "v": "<0.5.2"
         }
     ],
+    "pyfxa": [
+        {
+            "changelog": "==================\n\n- Use grequests if available to use PyFxA with the gevent ecosystem.\n- Add the oauth /destroy operation.\n- Profile fetch skips fields you don't have permission to read.\n- Add the BrowserID requests Auth module and related HTTPie plugin.\n- Add the BearerToken requests Auth module and related HTTPie plugin.\n- Add PyOpenSSL support for secure SSL requests handling with Python 2.\n\n\n",
+            "v": "<0.0.7"
+        }
+    ],
     "pygresql": [
         {
             "cve": "CVE-2009-2940",
