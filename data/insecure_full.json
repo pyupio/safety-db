@@ -1786,6 +1786,12 @@
             "v": "<3.2.2"
         }
     ],
+    "irc3": [
+        {
+            "changelog": "==================\n\n- Add cron plugin\n\n- Improve the command plugin. Fix some security issue.\n\n- Add ``--help-page`` option to generate commands help pages\n\n\n",
+            "v": "<0.4.4"
+        }
+    ],
     "ironic-discoverd": [
         {
             "cve": "CVE-2015-5306",
