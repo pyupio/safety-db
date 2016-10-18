@@ -1412,6 +1412,12 @@
             "v": ">=1.9,<1.9rc2"
         }
     ],
+    "django-access-tokens": [
+        {
+            "changelog": "------------------\n\n**SECURITY UPDATE:** Fixing scoping of permissions where the token provides a\nsmaller subset of the required permissions. As an extreme case, an access token\ngranting no permissions could be used to access any permissions on the site.\n\n**AFFECTED SITES:** Since a token cannot be generated without knowledge of the\nsecret key, attackers **cannot** access arbitrary resources using this exploit. However,\nan access token that proves *some*, but not all of the required permissions for a\nresource can be used to access that resource. If the access token provides additional\npermissions not required by the resource, then authorization will still fail.\n\nIn essence, the security was back-to-front. Rather than tokens being required to be a\n*superset* of the required permissions, tokens were, in fact, required to be a *subset*\nof the required permissions.\n\nSites that provide access tokens for the exact set of required permissions are unaffected\nby this exploit.\n\n**RESOLUTION:** The logic for validating an access token has been updated to correctly\nvalidate that a received access token is a *superset* of the required permissions.\n\n\n",
+            "v": "<0.9.2"
+        }
+    ],
     "django-lfs": [
         {
             "changelog": "------------------\n\n* Security fix\n* Added manufacturer field to product management (Maciej Wi\u015bniowski)\n* Bugfix: fixed pagination for product page; issue 152 (Maciej Wi\u015bniowski)\n* Bugfix: fixed deleting of image for payment and shipping methods; issue 150\n* Bugfix: fixed markup; issue 148\n\n",
