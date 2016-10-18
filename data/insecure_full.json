@@ -1637,6 +1637,12 @@
             "v": "<1.5.4"
         }
     ],
+    "gsutil": [
+        {
+            "changelog": "=======================================\n\nOther Changes\n-------------\n\n- Changes to protect security of resumable upload IDs.\n\n\n",
+            "v": "<3.41"
+        }
+    ],
     "ipython": [
         {
             "cve": "CVE-2015-6938",
