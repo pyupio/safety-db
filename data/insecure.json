@@ -113,6 +113,9 @@
     "google-appengine": [
         "<1.5.4"
     ],
+    "gsutil": [
+        "<3.41"
+    ],
     "ipython": [
         "<3.2.2"
     ],
