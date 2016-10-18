@@ -1630,6 +1630,12 @@
             "v": "<5.1.2"
         }
     ],
+    "flask-ldapconn": [
+        {
+            "changelog": "-----\n* v0.3.2: BUGFIX: Allow unsecure connections\n\n",
+            "v": "<0.3.2"
+        }
+    ],
     "flask-oidc": [
         {
             "cve": "CVE-2016-1000001",
