@@ -2834,6 +2834,12 @@
             "v": "<0.5.5"
         }
     ],
+    "pycares": [
+        {
+            "changelog": "=============\n - cffi: fix setting nameserver in Channel.__init__\n - doc: update Sphinx configuration so the docs can be built\n - core: backport fix for CVE-2016-5180\n - cffi: fix structure definition\n - ci: use PyPy 5.4.1 when testing on Travis\n\n",
+            "v": "<2.1.1"
+        }
+    ],
     "pycrypto": [
         {
             "cve": "CVE-2013-1445",
