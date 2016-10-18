@@ -26,6 +26,9 @@
     "collective.noticeboard": [
         "<0.7.1"
     ],
+    "conda": [
+        "<3.6.3"
+    ],
     "conn-check": [
         "<1.0.18"
     ],
