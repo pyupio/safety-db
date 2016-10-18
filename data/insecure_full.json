@@ -3411,6 +3411,12 @@
             "v": "<1.1"
         }
     ],
+    "sipvicious": [
+        {
+            "changelog": "* Feature:  svwar.py has \"scan for default / typical extensions\" option. This\n\t    option tries to guess numeric extensions which have certain patterns\n\t    such as 1212 etc. Option is -D, --enabledefaults\n\n* General:  svwar.py and svcrack.py now have a new option which allows you to set\n\t    how long the tools will scan without receiving any response back.\n\t    This allows us to prevent flooding the target. Some PBX servers now\n\t    have built-in firewalls / intrusion prevention systems which will\n\t    blacklist the IP address of anyone using svwar or svcrack. Therefore\n\t    if the IP is blacklisted it makes sense to stop scanning the target.\n\t    The default for this option is 10 seconds. Set this option by using\n\t    --maximumtime [seconds]\n\n* Removed:  svlearnfp.py is now discontinued. The tool is still included for\n\t    historic reasons but disabled.\n\n* Feature:  svmap.py now includes the following new features:\n\t\t\t--debug - shows messages as they are received (useful for\n\t\t\t\t    developers)\n\t\t\t--first - scans the first X number of hosts, useful for\n\t\t\t\t    random or large address pool scanning\n\t\t\t--inputtext - scans IP ranges taken from a text file\n\t\t\t--fromname - sets the from header to something specific\n\t\t\t\t    useful for abusing other security issues or\n\t\t\t\t    when svmap is used in a more flexible way\n\t\t\t\t    then usual ;-)\n\n* Feature:  svreport.py now has two new modes:\n\t\t\t- stats, which lists some statistics\n\t\t\t- search, allows you to search through logs looking for\n\t\t\t\t    specific user agents\n\n* Bug fix:  svwar.py now by default does not send ACK messages (was a buggy feature\n\t    that did not follow the standard)\n\n* Bug fix:  svwar.py - the template passed through --template option is now checked\n\t    sanity. \n\n",
+            "v": "<0.2.5"
+        }
+    ],
     "splash": [
         {
             "changelog": "------------------\n\nThis is a bugfix release:\n\n* XSS in HTTP UI is fixed;\n* Splash-Jupyter docker image is fixed.\n\n",
