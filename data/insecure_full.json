@@ -1770,6 +1770,12 @@
             "v": "<2.3.0"
         }
     ],
+    "jpl.mcl.protocol": [
+        {
+            "changelog": "-----------------------------------\n\nThis release addresses the following issues:\n\n* https://oodt.jpl.nasa.gov/jira/browse/CA-551 - Add lock icon to biomarkers\n  and science data that are \"secure\" to protocol pages\n* https://oodt.jpl.nasa.gov/jira/browse/CA-523 - Create search indexes; in\n  particular, searches are enabled for abbreviated protocol name, biomarker\n  names, PI names, collaborative group text, dataset names (courtesy of\n  updates to ``eke.ecas``), and involved investigator sites.\n\n\n",
+            "v": "<0.0.2"
+        }
+    ],
     "keyring": [
         {
             "cve": "CVE-2012-4571",
