@@ -3401,6 +3401,12 @@
             "v": "<1.1.0"
         }
     ],
+    "pywebsite": [
+        {
+            "changelog": "---------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* hash_url fixes for length extension attack, and value equivalence attacks.\n\n\n",
+            "v": "<0.1.9pre"
+        }
+    ],
     "requests": [
         {
             "cve": "CVE-2015-2296",
