@@ -1965,6 +1965,12 @@
             "v": "<1.7.5"
         }
     ],
+    "peppercorn": [
+        {
+            "changelog": "----------------\n\n- Switch to an iterative parser rather than a recursive parser to avoid\n  DoS attacks.\n\n- Add the ``ignore`` operation. The subsequent data elements in the stream\n  will be ignored until the corresponding ``__end__`` marker.  This feature\n  is useful for form elements designed for client-side scripting, such as a\n  \"select all\" checkbox in the middle of a list of other kinds of fields.\n\n- Add support for Python 3.3.\n\n- Drop support for Python 2.5 / Jython.\n\n",
+            "v": "<0.5"
+        }
+    ],
     "pillow": [
         {
             "cve": "CVE-2016-0740",
