@@ -11,6 +11,12 @@
             "v": "<2.0.2"
         }
     ],
+    "archmage": [
+        {
+            "changelog": "==============\nBug fixes:\n\n* [CVE-2015-1589] Fixed directory traversal bug\n\n",
+            "v": "<0.3.1"
+        }
+    ],
     "authbwc": [
         {
             "changelog": "=========================\n\n* (SECURITY FIX) fixed an issue with the way the HTTP session user permissions\n  were loaded.  This vulnerability made it possible for a user to gain the\n  permissions of the user logged in previously.  The user would have had\n  to be sharing the same http session for this access to have been\n  gained.\n\n",
