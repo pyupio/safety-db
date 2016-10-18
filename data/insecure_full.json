@@ -3755,6 +3755,12 @@
             "v": "<2.1.9"
         }
     ],
+    "python3-saml": [
+        {
+            "changelog": "* Several security improvements:\n  * Conditions element required and unique.\n  * AuthnStatement element required and unique.\n  * SPNameQualifier must math the SP EntityID\n  * Reject saml:Attribute element with same \u201cName\u201d attribute\n  * Reject empty nameID\n  * Require Issuer element. (Must match IdP EntityID).\n  * Destination value can't be blank (if present must match ACS URL).\n  * Check that the EncryptedAssertion element only contains 1 Assertion element.\n* Improve Signature validation process\n* Document the wantAssertionsEncrypted parameter\n* Support multiple attributeValues on RequestedAttribute\n* Fix AttributeConsumingService\n\n",
+            "v": "<1.2.0"
+        }
+    ],
     "pywebsite": [
         {
             "changelog": "---------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* hash_url fixes for length extension attack, and value equivalence attacks.\n\n\n",
