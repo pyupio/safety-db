@@ -1884,6 +1884,12 @@
             "v": "<2013.2.3"
         }
     ],
+    "oscrypto": [
+        {
+            "changelog": "\n - Fixed `trust_list` to work with new Security.framework behavior on OS X\n   10.11 El Capitan\n - Fixed an occasional bug with `tls.TLSSocket()` on Windows when using TLSv1.2\n   and the server negotiated using a `DHE_RSA` key exchange\n - Fixed a bug on Windows 10 where a TLS handshake would fail if the TLS record\n   was not completely received within one call to `socket.recv()`\n - Fixed a bug where a private key would not be encoded with PEM encoding when\n   requested, if no passphrase was provided to `asymmetric.dump_private_key()`\n\n",
+            "v": "<0.14.2"
+        }
+    ],
     "ovirt-engine-sdk-python": [
         {
             "cve": "CVE-2012-3533",
