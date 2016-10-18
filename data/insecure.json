@@ -93,6 +93,9 @@
     "django-anonymizer-compat": [
         "<0.4"
     ],
+    "django-auth-ldap": [
+        "<1.1.3"
+    ],
     "django-embed-video": [
         "<0.3"
     ],
