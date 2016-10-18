@@ -2666,6 +2666,12 @@
             "v": "<0.3.3"
         }
     ],
+    "pycapnp": [
+        {
+            "changelog": "- Update bundled C++ libcapnp to v0.5.1.2 security release\n\n\n",
+            "v": "<0.5.5"
+        }
+    ],
     "pycrypto": [
         {
             "cve": "CVE-2013-1445",
