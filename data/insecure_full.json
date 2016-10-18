@@ -3271,6 +3271,12 @@
             "v": "<3.3"
         }
     ],
+    "setuptools": [
+        {
+            "changelog": "-----\n\n* Issue 75: Add ``--insecure`` option to ez_setup.py to accommodate\n  environments where a trusted SSL connection cannot be validated.\n* Issue 76: Fix AttributeError in upload command with Python 2.4.\n\n",
+            "v": "<1.1.1"
+        }
+    ],
     "sevabot": [
         {
             "changelog": "----------------\n\n- Use shlex for command line parsing [ztane]\n\n- Interleave stdout and stderr in output [ztane]\n\n- Moved chunk of troubleshooting stuff to Skype4Py itself [miohtama]\n\n- Made some backwards compatiblity adjustment in webhook parameters,\n  so that all existing examples and demo scripts work [miohtama]\n\n- Made it possible to run Sevabot as a background service using --daemon switch [miohtama]\n\n- Updated launch scripts to be more robust and simple [miohtama]\n\n- Security fix to prevent arbitrary commands from being executed [b2jrock]\n\n",
