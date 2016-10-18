@@ -3383,6 +3383,12 @@
             "v": "<2.0.1"
         }
     ],
+    "spur": [
+        {
+            "changelog": "\n* Allow spur to be used with Paramiko 2. To quote the Paramiko changelog [1]:\n\n    Replace PyCrypto with the Python Cryptographic Authority (PyCA)\n    \u2018Cryptography\u2019 library suite. This improves security, installability, and\n    performance; adds PyPy support; and much more.\n\n  This should only affect installation requirements for Paramiko: see the\n  changelog for more information. Since the API of Paramiko remains unchanged,\n  spur should remain compatible with both Paramiko 1 and Paramiko 2.\n\n  Note that Python 3.2 is not compatible with Paramiko 2: you can continue to\n  use spur with Python 3.2 and Paramiko 1, although upgrading is recommended.\n\n[1]: http://www.paramiko.org/changelog.html2.0.0\n\n",
+            "v": "<0.3.19"
+        }
+    ],
     "tornado": [
         {
             "cve": "CVE-2012-2374",
