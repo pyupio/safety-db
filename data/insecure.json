@@ -182,6 +182,9 @@
     "products.plonepas": [
         "<3.9"
     ],
+    "products.printingmailhost": [
+        "<0.1"
+    ],
     "pycrypto": [
         "<2.6.1"
     ],
