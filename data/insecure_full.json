@@ -1501,6 +1501,12 @@
             "v": "<3.4.2"
         }
     ],
+    "django-python3-ldap": [
+        {
+            "changelog": "-----\n\n- Fixing security vulnerability where username and password could be transmitted in plain text before starting TLS (reported by Weitzhofer Bernhard).\n\n\n",
+            "v": "<0.9.5"
+        }
+    ],
     "django-relatives": [
         {
             "changelog": "------------------\n\n- Fix XSS vulnerability\n- Allow relatives/includes/fieldset.html template to be extended further\n- Improve documentation\n\n\n",
