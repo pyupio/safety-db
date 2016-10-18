@@ -3939,6 +3939,12 @@
             "v": "<1.12.1"
         }
     ],
+    "secobj": [
+        {
+            "changelog": ". 'secobj.memoizer.memoize': changed keyword argument 'callback' to 'createkey'\n. 'secobj.provider.base.SecurityPrivider': removed obsoltete properties 'builtin_principals' and 'builtin_subjects'\n. 'secobj.principal.Principal': renamed class method 'get' to 'make'\n. 'secobj.principal.Group': renamed class method 'get' to 'make'\n. 'secobj.principal.GroupList': renamed class method 'get' to 'make'\n. 'secobj.principal.User': renamed class method 'get' to 'make'\n. 'secobj.principal.Principal': reimplemented class method 'get'\n. 'secobj.rule.Rule': principal names are matched against 'secobj.principal.PRINCIPAL_NAME'\n. 'secobj.principal.Principal': added class method 'has'\n. 'secobj.initsecurity': read the policy rules defined in the configuration file\n",
+            "v": "<0.1a"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
