@@ -1514,6 +1514,12 @@
             "v": "<3.4.2"
         }
     ],
+    "django-fobi": [
+        {
+            "changelog": "---\n2014-12-03\n\nNote, that this release contains minor backwards incompatible changes. The\nchanges may affect your existing forms and data. Read the notes below\ncarefully (UPDATE 2014-12-04: the django-fobi==0.4.2 contains a management \ncommand which makes the necessary changes in the database for safe upgrade).\n\n- The ``captcha`` field has been moved from \n  ``fobi.contrib.plugins.form_elements.fields.captcha`` to\n  ``fobi.contrib.plugins.form_elements.security.captcha``. Make sure to update\n  the package paths in ``INSTALLED_APPS`` of your projects' settings module\n  (settings.py) when upgrading to this version.\n- The ``honeypot`` field has been added.\n- The ``birthday`` field has been renamed to ``date_drop_down`` (A real\n  ``birthday`` field is still to come in later releases). The change causes\n  backwards incompatibility issues if you have used that ``birthday`` field.\n  If you haven't - you have nothing to worry. If you have been using it,\n  grab the 0.3.4 version, copy the\n  ``fobi.contrib.plugins.form_elements.fields.date_drop_down`` package to\n  your project apps, make necessary path changes and update the package paths\n  in ``INSTALLED_APPS`` settings module (settings.py) before upgrading to this\n  version. Then, in Django admin management interface, replace all the\n  occurances of ``Birthday`` field with ``Date drop down`` field.\n- Better error validation/handling of hidden fields. A new form snippet \n  template added for displaying the non-field and hidden fields errors. The new\n  template makes a part of a standard theme as an attribute\n  ``form_non_field_and_hidden_errors_snippet_template``.\n- Minor fixes in generic templates.\n- An additional property ``is_hidden`` added to the hidden form elements. Those\n  form elements would be getting a default TextInput widget in the edit mode\n  instead of the widget they come from by default. It's possible to provide an\n  alternative widget for the edit mode as well. Default value of the\n  ``is_hidden`` is set to False.\n\n",
+            "v": "<0.4"
+        }
+    ],
     "django-guts": [
         {
             "changelog": "-----\n\n* Security hole, allowing to read any file, was fixed.\n* Return 404 for non existent files.\n\n",
