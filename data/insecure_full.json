@@ -2204,6 +2204,12 @@
             "v": "<0.3.4"
         }
     ],
+    "mantissa": [
+        {
+            "changelog": "  - Use of _getLoader has been replaced with SiteTemplateResolver.\n  - EmailAddress items are now created for newly created users when\n    UserInfoSignup is being used.\n  - Security problem fixed in xmantissa.webtheme that could allow\n    access to arbitrary filesystem contents.\n\n",
+            "v": "<0.6.14"
+        }
+    ],
     "markdown2": [
         {
             "changelog": "\n- [Issue 29] Fix security hole in the md5-hashing scheme for handling HTML\n  chunks during processing.\n- [Issue 27] Fix problem with underscores in footnotes content (with\n  \"footnotes\" extra).\n\n",
