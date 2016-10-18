@@ -2655,6 +2655,12 @@
             "v": "<2.0.2"
         }
     ],
+    "plumbery": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~\n\n* Add cloud-init for node contextualisation\n* Inject dynamic variables (e.g., node addresses) to node contextualisation\n* Generate and store random secrets for secured node contextualisation\n* Enhance usage page in the documentation\n* Add a full pack of tutorials in the on-line documentation\n* Add actions 'deploy' and 'dispose' to streamline usage\n* Add polishers 'ping' and 'information'\n* Restructure code and consolidate functions\n* Fix multiple bugs and errors\n* Expand information provided in debug mode\n* Passing Travis CI\n* Test coverage 47%\n\n",
+            "v": "<0.4.0"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
