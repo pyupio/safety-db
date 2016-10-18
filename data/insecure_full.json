@@ -35,6 +35,12 @@
             "v": "<0.1.4"
         }
     ],
+    "awsudo": [
+        {
+            "changelog": "=====\n\n* Use ``AWS_SESSION_TOKEN`` instead of legacy ``AWS_SECURITY_TOKEN``\n  environment variable\n\n\n",
+            "v": "<0.2.0"
+        }
+    ],
     "bbcode": [
         {
             "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
