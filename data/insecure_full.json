@@ -2133,6 +2133,10 @@
                 "https://github.com/python-pillow/Pillow/pull/1714"
             ],
             "v": "<3.1.1"
+        },
+        {
+            "changelog": "------------------\n\n- Fixed an integer overflow in Jpeg2KEncode.c causing a buffer overflow. CVE-2016-3076\n  [wiredfool]\n\n",
+            "v": "<3.1.2"
         }
     ],
     "pinax-likes": [
