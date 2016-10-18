@@ -170,6 +170,12 @@
             "v": "<0.10.5"
         }
     ],
+    "cloudmesh": [
+        {
+            "changelog": "------------------\n\n- Travis cleanup. [Gregor von Laszewski]\n\n- Testing doc and cm. [Gregor von Laszewski]\n\n- Force renaming to SecureShellCommand. [Gregor von Laszewski]\n\n- Explicit call of cm via python and not sh. [Gregor von Laszewski]\n\n- Travis experiment. [Gregor von Laszewski]\n\n- Pip install . [Gregor von Laszewski]\n\n- Pip install . [Gregor von Laszewski]\n\n- More travis esxperiments. [Gregor von Laszewski]\n\n- A travis pythonpath set. [Gregor von Laszewski]\n\n- Ignore pep8 warning. [Gregor von Laszewski]\n\n- Modified travis script. [Gregor von Laszewski]\n\n- Use SSHCommand. [Gregor von Laszewski]\n\n- Use old spaleeing of SSHCommand. [Gregor von Laszewski]\n\n- Add doc to travis. [Gregor von Laszewski]\n\n- Cleanup. [Gregor von Laszewski]\n\n",
+            "v": "<0.6.7"
+        }
+    ],
     "cmsplugin-filer": [
         {
             "changelog": "------------------\n\n* Pin requirements for Django-Filer to >= 1.0.0\n* Improve test coverage\n* Fix icon_src / remove references of FILER_STATICMEDIA_PREFIX\n* XSS fix\n* Fix path names for storage backends\n* Fix migrations\n* Update README\n\n\n",
