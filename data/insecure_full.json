@@ -1,4 +1,10 @@
 {
+    "arghandler": [
+        {
+            "changelog": "\n Added\n\n  * The ability to print a short help message, better suited to sub-commands.\n  * Autocompletion support using argcomplete. A new dependency of the library.\n  * Added `reset_registered_subcommands` function, primarily for testing\n\n Changed\n\n  * `Arghandler.run` now returns the arguments parsed from the argument list.\n\n Depricated\n\n Removed\n\n Fixed\n\n Security\n",
+            "v": "<1.2.0"
+        }
+    ],
     "authbwc": [
         {
             "changelog": "=========================\n\n* (SECURITY FIX) fixed an issue with the way the HTTP session user permissions\n  were loaded.  This vulnerability made it possible for a user to gain the\n  permissions of the user logged in previously.  The user would have had\n  to be sharing the same http session for this access to have been\n  gained.\n\n",
