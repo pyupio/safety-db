@@ -2914,6 +2914,12 @@
             "v": "<2.19"
         }
     ],
+    "products.ploneldap": [
+        {
+            "changelog": "---\n\n* Hide LDAPUserFolder from the list of Add-On Products since installing it\n  will kill your Plone site. Plone 3.0 only.\n\n* Fix incorrect security declaration for doDeleteUser\n\n\n",
+            "v": "<1.0"
+        }
+    ],
     "products.plonepas": [
         {
             "cve": "CVE-2009-0662",
