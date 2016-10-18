@@ -108,6 +108,9 @@
     "django-anonymizer-compat": [
         "<0.4"
     ],
+    "django-dform": [
+        "<0.5"
+    ],
     "django-embed-video": [
         "<0.3"
     ],
