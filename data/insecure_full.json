@@ -95,6 +95,10 @@
     ],
     "defusedxml": [
         {
+            "changelog": "--------------\n\n*Release date: 15-Feb-2013*\n\n- Rename ExternalEntitiesForbidden to ExternalReferenceForbidden\n- Rename defusedxml.lxml.check_dtd() to check_docinfo()\n- Unify argument names in callbacks\n- Add arguments and formatted representation to exceptions\n- Add forbid_external argument to all functions and classs\n- More tests\n- LOTS of documentation\n- Add example code for other languages (Ruby, Perl, PHP) and parsers (Genshi)\n- Add protection against XML and gzip attacks to xmlrpclib\n\n",
+            "v": "<0.2"
+        },
+        {
             "cve": "CVE-2013-1664",
             "description": "The XML libraries for Python 3.4, 3.3, 3.2, 3.1, 2.7, and 2.6, as used in OpenStack Keystone Essex, Folsom, and Grizzly; Compute (Nova) Essex and Folsom; Cinder Folsom; Django; and possibly other products allow remote attackers to cause a denial of service (resource consumption and crash) via an XML Entity Expansion (XEE) attack.",
             "urls": [
