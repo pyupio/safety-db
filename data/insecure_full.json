@@ -50,6 +50,12 @@
             "v": "<0.10.5"
         }
     ],
+    "conn-check": [
+        {
+            "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
+            "v": "<1.0.18"
+        }
+    ],
     "defusedexpat": [
         {
             "cve": "CVE-2013-1664",
