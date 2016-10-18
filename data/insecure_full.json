@@ -3253,6 +3253,12 @@
             "v": "<3.3"
         }
     ],
+    "sqlmap": [
+        {
+            "changelog": "\n* Rewritten SQL injection detection engine.\n* Support to directly connect to the database without passing via a SQL injection, option `-d`.\n* Added full support for both time-based blind SQL injection and error-based SQL injection techniques.\n* Implemented support for SQLite 2 and 3.\n* Implemented support for Firebird.\n* Implemented support for Microsoft Access, Sybase and SAP MaxDB.\n* Extended old `--dump -C` functionality to be able to search for specific database(s), table(s) and column(s), option `--search`.\n* Added support to tamper injection data with option `--tamper`.\n* Added automatic recognition of password hashes format and support to crack them with a dictionary-based attack.\n* Added support to enumerate roles on Oracle, `--roles` switch.\n* Added support for SOAP based web services requests.\n* Added support to fetch unicode data.\n* Added support to use persistent HTTP(s) connection for speed improvement, switch `--keep-alive`.\n* Implemented several optimization switches to speed up the exploitation of SQL injections.\n* Support to test and inject against HTTP Referer header.\n* Implemented HTTP(s) proxy authentication support, option `--proxy-cred`.\n* Implemented feature to speedup the enumeration of table names.\n* Support for customizable HTTP(s) redirections.\n* Support to replicate the back-end DBMS tables structure and entries in a local SQLite 3 database, switch `--replicate`.\n* Support to parse and test forms on target url, switch `--forms`.\n* Added switches to brute-force tables names and columns names with a dictionary attack, `--common-tables` and `--common-columns`. Useful for instance when system table `information_schema` is not available on MySQL.\n* Basic support for REST-style URL parameters by using the asterisk (`*`) to mark where to test for and exploit SQL injection.\n* Added safe URL feature, `--safe-url` and `--safe-freq`.\n* Added switch `--text-only` to strip from the HTTP response body the HTML/JS code and compare pages based only on their textual content.\n* Implemented few other features and switches.\n* Over 100 bugs fixed.\n* Major code refactoring.\n* User's manual updated.\n\n",
+            "v": "<0.9"
+        }
+    ],
     "tornado": [
         {
             "cve": "CVE-2012-2374",
