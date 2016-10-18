@@ -3831,6 +3831,10 @@
             "v": "<2.3.0"
         },
         {
+            "changelog": "++++++++++++++++++\n\n**Bugfixes**\n\n- CVE-2015-2296: Fix handling of cookies on redirect. Previously a cookie\n  without a host value set would use the hostname for the redirected URL\n  exposing requests users to session fixation attacks and potentially cookie\n  stealing. This was disclosed privately by Matthew Daley of\n  `BugFuzz <https://bugfuzz.com>`_. This affects all versions of requests from\n  v2.1.0 to v2.5.3 (inclusive on both ends).\n\n- Fix error when requests is an ``install_requires`` dependency and ``python\n  setup.py test`` is run. (2462)\n\n- Fix error when urllib3 is unbundled and requests continues to use the\n  vendored import location.\n\n- Include fixes to ``urllib3``'s header handling.\n\n- Requests' handling of unvendored dependencies is now more restrictive.\n\n**Features and Improvements**\n\n- Support bytearrays when passed as parameters in the ``files`` argument.\n  (2468)\n\n- Avoid data duplication when creating a request with ``str``, ``bytes``, or\n  ``bytearray`` input to the ``files`` argument.\n\n",
+            "v": "<2.6.0"
+        },
+        {
             "cve": "CVE-2015-2296",
             "description": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct session fixation attacks via a cookie without a host value in a redirect.",
             "urls": [
