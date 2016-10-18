@@ -3701,6 +3701,10 @@
         {
             "changelog": "* Change the decrypt assertion process.\n* Add 2 extra validations to prevent Signature wrapping attacks.\n\n",
             "v": "<2.1.9"
+        },
+        {
+            "changelog": "* Several security improvements:\n  * Conditions element required and unique.\n  * AuthnStatement element required and unique.\n  * SPNameQualifier must math the SP EntityID\n  * Reject saml:Attribute element with same \u201cName\u201d attribute\n  * Reject empty nameID\n  * Require Issuer element. (Must match IdP EntityID).\n  * Destination value can't be blank (if present must match ACS URL).\n  * Check that the EncryptedAssertion element only contains 1 Assertion element.\n* Improve Signature validation process\n* [149](https://github.com/onelogin/python-saml/pull/149) Work-around for xmlsec.initialize\n* [151](https://github.com/onelogin/python-saml/pull/151) Fix flask demo error handling and improve documentation\n* \n* [152](https://github.com/onelogin/python-saml/pull/152) Update LICENSE to include MIT rather than BSD license \n* [155](https://github.com/onelogin/python-saml/pull/155) Fix typographical errors in docstring\n* Fix RequestedAttribute Issue\n* Fix __build_signature method. If relay_state is null not be part of the SignQuery\n* [164](https://github.com/onelogin/python-saml/pull/164) Add support for non-ascii fields in settings\n\n\n",
+            "v": "<2.2.0"
         }
     ],
     "pywebsite": [
