@@ -353,6 +353,9 @@
     "ovirt-engine-sdk-python": [
         "<3.1.0.8"
     ],
+    "owncloud-backup": [
+        "<0.1.5"
+    ],
     "pando": [
         "<0.39",
         "<0.42"
