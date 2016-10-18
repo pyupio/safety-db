@@ -3669,6 +3669,12 @@
             "v": ">=3.5,<3.5.2"
         }
     ],
+    "python-3parclient": [
+        {
+            "changelog": "------------------------\n* Changes the exception isinstance check to look for basestring/str instead of\n  bytes in order to properly store the error description.\n* Fixed error where you could not create a LUN with the ID of 0. (issue 17)\n* Allows suppressing of InsecureRequestWarning messages (Issue 18)\n* Adds the ability to retrieve all snapshots associated with a given volume\n\n",
+            "v": "<3.3.1"
+        }
+    ],
     "python-cjson": [
         {
             "cve": "CVE-2009-4924",
