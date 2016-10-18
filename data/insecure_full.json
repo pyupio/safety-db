@@ -61,6 +61,10 @@
     ],
     "bok-choy": [
         {
+            "changelog": "\n* Changed license from AGPL to Apache\n* Unpinned selenium version\n* Bypass the security prompt when accessing a media device in FF\n* Support faking media device access in Chrome\n* Small bug fixes and improvements\n\n",
+            "v": "<0.3.3"
+        },
+        {
             "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",
             "v": "<0.5.1"
         }
