@@ -136,6 +136,9 @@
     "django-filebrowser-no-grappelli-staff": [
         "<3.4.2"
     ],
+    "django-gaekit": [
+        "<1.0.0"
+    ],
     "django-guts": [
         "<0.1.1"
     ],

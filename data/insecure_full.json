@@ -1530,6 +1530,12 @@
             "v": "<3.4.2"
         }
     ],
+    "django-gaekit": [
+        {
+            "changelog": "++++++++++++++++++\n\n* Remove dependency on ImageService. URLs are now constructed from bucket name, with no RPC calls.\n* Resolved inconsistencies with returning bucket name as part of path. This is now hidden.\n* Deprecated ImageService-specific options. IMAGESERVICE_DEFAULT_SIZE and IMAGESERVICE_SECURE_URLS.\n* Deprecated drf_extensions module.\n\n",
+            "v": "<1.0.0"
+        }
+    ],
     "django-guts": [
         {
             "changelog": "-----\n\n* Security hole, allowing to read any file, was fixed.\n* Return 404 for non existent files.\n\n",
