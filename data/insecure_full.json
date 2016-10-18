@@ -1542,6 +1542,12 @@
             "v": "<3.4.2"
         }
     ],
+    "django-fluent-comments": [
+        {
+            "changelog": "-------------\n\n* Fix app registry errors in Django 1.7\n* Fix security hash formatting errors on bad requests.\n\n",
+            "v": "<1.0.1"
+        }
+    ],
     "django-guts": [
         {
             "changelog": "-----\n\n* Security hole, allowing to read any file, was fixed.\n* Return 404 for non existent files.\n\n",
