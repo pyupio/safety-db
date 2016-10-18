@@ -117,6 +117,9 @@
     "django-anonymizer-compat": [
         "<0.4"
     ],
+    "django-attachments": [
+        "<0.3.1"
+    ],
     "django-autocomplete-light": [
         "<2.3.0"
     ],

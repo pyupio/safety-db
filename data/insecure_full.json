@@ -1490,6 +1490,12 @@
             "v": "<0.4"
         }
     ],
+    "django-attachments": [
+        {
+            "changelog": "\n    * Added a note to the README that you should secure your static files.\n\n",
+            "v": "<0.3.1"
+        }
+    ],
     "django-autocomplete-light": [
         {
             "changelog": "\n    - 555 Django 1.4, 1.5 and 1.6 deprecation\n    - 497 Enable registration by model-name by luzfcb\n    - 536 551 Support proxy models by onrik\n    - 553 improved jQuery integration by blueyed\n    - 516 Corrected french transation by apinsard\n    - 541 Use error_messages on FieldBase to allow overrides by dsanders11\n    - 505 Ordering alias clash fix by sandroden\n    - 515 Polish translation update by mpasternak\n    - 543 ModelChoiceField requires the queryset argument\n    - 494 ModelChoiceField Watch changes to 'queryset' by jonashaag\n    - 514 Fixed deprecation warning on Django 1.8 by spookylukey\n    - 498 548 improved i18n support\n    - 547 prevents loading genericm2m if not in INSTALLED_APPS\n    - JAL18 Fix: Get value.length while value is null by hongquan\n    - JAL19 Clarify license by stevellis, all MIT\n    - JAL17 Disable the widget input when it is not in use dsanders11\n    - JAL15 Support openning results in new tab thebao\n    - JAL14 Don't autohilight first choice by default pandabuilder\n    - JAL13 Add option for box aligning with right edge of input dsanders11\n\nIMPORTANT\n\n536 At this point, proxy model support is untested, this is because I intend\nto refactor the test suite and documentation during the 2.3.x serie.\n\n494 Updating the queryset from outside the autocomplete class may lead to a\nsecurity problem, ie. if you don't replicate filters you apply manually on the\nautocomplete object choices into choices_for_request() then a malicious user\ncould see choices which they shouldn't by querying the autocomplete directly.\n",
