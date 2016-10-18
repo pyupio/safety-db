@@ -1962,6 +1962,12 @@
             "v": "<0.6.1"
         }
     ],
+    "flask-jwe": [
+        {
+            "changelog": "\nFeatures:\n\n  - Replace key XORing for security to plain AES key encryption in the Redis datastore\n  - Add `alg` parameter for ES key retrieval to allow for EC and RSA keys\n\nRefactoring:\n\n  - Refactor Key Retrieval, Store and Building to simplify the FlaskJWE.get_server_key() function\n\nOpen Issues:\n\n  - RSA-ES currently does not work as pyjwkest does not support saving CEK for JWE response processing (we are working to provide a pull request to fix this)\n  - Due to this open issue, this version will not be published to PyPI\n\n",
+            "v": "<0.0.6"
+        }
+    ],
     "flask-micropub": [
         {
             "changelog": " Changed\n- Fix vulnerability; re-discover the authorization_endpoint and\n  token_endpoint at each stage in the flow. Prevents a buggy or\n  malicious authorization_endpoint from giving you credentials for\n  another user's domain name.\n\n",
