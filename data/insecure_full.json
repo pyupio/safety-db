@@ -1722,6 +1722,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "ktbs": [
+        {
+            "changelog": "\n    * methods for computed traces\n      * implemented SPARQL method\n      * Filter method now can filter on Obsel types\n\n    * new features for collecting obsels\n      * support multiple obsels in a single POST\n      * support obsel creation via GET (via a plugin)\n      * support Cross Origin Resource Servicve (http://www.w3.org/TR/cors/)\n\n    * HTML serializer\n      * code is now more modular\n      * obsels are now displayed in chronological order\n\n    * various bug fixes\n",
+            "v": "<0.2"
+        }
+    ],
     "mailman": [
         {
             "cve": "CVE-2011-0707",
