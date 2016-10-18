@@ -11,6 +11,9 @@
     "bok-choy": [
         "<0.5.1"
     ],
+    "c2.patch.plone3mail": [
+        "<0.2"
+    ],
     "centrifuge": [
         "<0.3.8"
     ],
