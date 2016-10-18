@@ -224,6 +224,7 @@
         "<0.9.10"
     ],
     "django-tethys-compute": [
+        "<0.95.1",
         "<0.95.3"
     ],
     "django-uni-form": [
