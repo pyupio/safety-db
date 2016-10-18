@@ -1822,14 +1822,12 @@
     ],
     "markdown2": [
         {
-
             "changelog": "\n- [Issue 29] Fix security hole in the md5-hashing scheme for handling HTML\n  chunks during processing.\n- [Issue 27] Fix problem with underscores in footnotes content (with\n  \"footnotes\" extra).\n\n",
             "v": "<1.0.1.14"
         },
         {
             "changelog": "\n- [Issue 30] Fix a possible XSS via JavaScript injection in a carefully\n  crafted image reference (usage of double-quotes in the URL).\n\n",
             "v": "<1.0.1.15"
-
         }
     ],
     "mixminion": [
@@ -2504,6 +2502,12 @@
                 "http://xforce.iss.net/xforce/xfdb/50061"
             ],
             "v": "<3.9"
+        }
+    ],
+    "products.printingmailhost": [
+        {
+            "changelog": "---\n\n- Updated to use the new standard log mechanism: logging.getLogger.\n  Reformated messages/docstrings.\n  [dtremea] (2006-03-17)\n\n- Extended to also patch SecureMailBase from SecureMailHost, if\n  available.\n  [dtremea] (2005-10-23)\n\n- Fixed to work both with old-style and new-style classes, as in\n  the later, dict is a 'dictproxy' instance, which doesn't have the\n  setitem method. Bumpped version. Noted changes. And clean up\n  whitespaces, of course... ;-)\n  [dtremea] (2005-10-23)\n\n- Initial creation/release\n  [optilude] (2005-04-05)\n",
+            "v": "<0.1"
         }
     ],
     "pycrypto": [
@@ -3299,7 +3303,6 @@
             "v": "<1.0"
         },
         {
-
             "changelog": "-----\n\n* Issue 75: Add ``--insecure`` option to ez_setup.py to accommodate\n  environments where a trusted SSL connection cannot be validated.\n* Issue 76: Fix AttributeError in upload command with Python 2.4.\n\n",
             "v": "<1.1.1"
         },
