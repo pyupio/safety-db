@@ -2391,6 +2391,12 @@
             "v": "<1.7.5"
         }
     ],
+    "pdfextract": [
+        {
+            "changelog": "1. Introduced `eval'\n   to achieve simultaneously uniting separated single pages.\n   But see 2.\n\n   Newly wrapped `pdfinfo', thus there is now no need\n   to specify the page count at commandline.\n\n2. That `eval'! command injection!\n   `base_name' is completely under malicious attackers' control.\n   Invoke this script with a valid pdf document\n   whose filename was offensively crafted.\n\n   e.g. test'])==__import__('os').system('rm -rf '+chr(47)).pdf\n   The above example will `rm -rf /'.\n   How about `rm -rf --no-preserve-root /'? :)\n\n3. `eval' is fatally dangerous!\n   All user input are also fatally detrimental!\n   More privileged, more fatally lethal!\n\n\n",
+            "v": "<0.0.2"
+        }
+    ],
     "peppercorn": [
         {
             "changelog": "----------------\n\n- Switch to an iterative parser rather than a recursive parser to avoid\n  DoS attacks.\n\n- Add the ``ignore`` operation. The subsequent data elements in the stream\n  will be ignored until the corresponding ``__end__`` marker.  This feature\n  is useful for form elements designed for client-side scripting, such as a\n  \"select all\" checkbox in the middle of a list of other kinds of fields.\n\n- Add support for Python 3.3.\n\n- Drop support for Python 2.5 / Jython.\n\n",
