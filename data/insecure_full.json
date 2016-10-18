@@ -1472,6 +1472,12 @@
             "v": "<0.4"
         }
     ],
+    "django-dform": [
+        {
+            "changelog": "===\n\n* changed over survey links to now use a dedicated token, not secure but helps\n    prevent cross survey guessing based on the URL\n* added admin pages for showing sample HTML to paste into your web pages to\n    link to or embed a survey\n* added use of pym.js to handle responsive pages when doing a embedded IFRAME\n    inclusion of a form\n* removed a bunch of unused imports\n\n",
+            "v": "<0.5"
+        }
+    ],
     "django-embed-video": [
         {
             "changelog": "---------------------------\n\n- Security fix: faked urls are treated as invalid. See `this page\n  <https://github.com/yetty/django-embed-video/commit/d0d357b767e324a7cc21b5035357fdfbc7c8ce8e>`_\n  for more details.\n\n- Fixes:\n\n  - allow of empty video field.\n\n  - requirements in setup.py\n\n- Added simplier way to embed video in one-line template tag::\n\n    {{ 'http://www.youtube.com/watch?v=guXyvo2FfLs'|embed:'large' }}\n\n- ``backend`` variable in ``video`` template tag.\n\n  Usage::\n\n    {% video item.video as my_video %}\n        Backend: {{ my_video.backend }}\n    {% endvideo %}\n\n\n",
