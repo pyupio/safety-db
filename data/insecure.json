@@ -114,6 +114,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "elasticsearch1": [
+        "<1.4.0"
+    ],
     "euphorie": [
         "<6.1"
     ],
