@@ -1687,6 +1687,12 @@
             "v": "<0.10"
         }
     ],
+    "gocept.amqprun": [
+        {
+            "changelog": "----------------\n\n- Introduce optional integration with zope.security: handlers can declare a\n  principal id with which an interaction will be created.\n- Use a separate channel for sending messages that are not a response to a\n  received message.\n- Introduce SETTINGS_LAYER for tests relying on ISettings.\n\n\n",
+            "v": "<0.9"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",
