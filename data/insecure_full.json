@@ -3299,6 +3299,11 @@
             "v": "<1.0"
         },
         {
+
+            "changelog": "-----\n\n* Issue 75: Add ``--insecure`` option to ez_setup.py to accommodate\n  environments where a trusted SSL connection cannot be validated.\n* Issue 76: Fix AttributeError in upload command with Python 2.4.\n\n",
+            "v": "<1.1.1"
+        },
+        {
             "changelog": "---\n\n* Issue 125: Prevent Subversion support from creating a ~/.subversion\n  directory just for checking the presence of a Subversion repository.\n* Issue 12: Namespace packages are now imported lazily. That is, the mere\n  declaration of a namespace package in an egg on ``sys.path`` no longer\n  causes it to be imported when ``pkg_resources`` is imported. Note that this\n  change means that all of a namespace package's ``__init__.py`` files must\n  include a ``declare_namespace()`` call in order to ensure that they will be\n  handled properly at runtime. In 2.x it was possible to get away without\n  including the declaration, but only at the cost of forcing namespace\n  packages to be imported early, which 3.0 no longer does.\n* Issue 148: When building (bdist_egg), setuptools no longer adds\n  ``__init__.py`` files to namespace packages. Any packages that rely on this\n  behavior will need to create ``__init__.py`` files and include the\n  ``declare_namespace()``.\n* Issue 7: Setuptools itself is now distributed as a zip archive in addition to\n  tar archive. ez_setup.py now uses zip archive. This approach avoids the potential\n  security vulnerabilities presented by use of tar archives in ez_setup.py.\n  It also leverages the security features added to ZipFile.extract in Python 2.7.4.\n* Issue 65: Removed deprecated Features functionality.\n* BB Pull Request 28: Remove backport of ``_bytecode_filenames`` which is\n  available in Python 2.6 and later, but also has better compatibility with\n  Python 3 environments.\n* Issue 156: Fix spelling of __PYVENV_LAUNCHER__ variable.\n\n",
             "v": "<3.0"
         }
