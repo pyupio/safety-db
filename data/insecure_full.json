@@ -23,6 +23,10 @@
             "v": "<1.2.3"
         },
         {
+            "changelog": "\n- Security fix for safe_eval, which further hardens the checking of the evaluation function.\n- Changing order of variable precedence for system facts, to ensure that inventory variables take precedence over any facts that may be set on a host.\n\n",
+            "v": "<1.5.4"
+        },
+        {
             "changelog": "\n- Security fix for vault, to ensure the umask is set to a restrictive mode before creating/editing vault files.\n- Backported apt_repository security fixes relating to filename/mode upon sources list file creation.\n\n",
             "v": "<1.5.5"
         },
