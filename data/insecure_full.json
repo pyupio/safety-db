@@ -1978,6 +1978,12 @@
             "v": "<0.7.0"
         }
     ],
+    "otpauth": [
+        {
+            "changelog": "~~~~~~~~~~~~~\n\nReleased on May 26, 2015\n\nUse ``compare_digest`` to avoid timing attack.\n\n",
+            "v": "<1.0.1"
+        }
+    ],
     "ovirt-engine-sdk-python": [
         {
             "cve": "CVE-2012-3533",
