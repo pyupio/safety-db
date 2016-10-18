@@ -3345,6 +3345,12 @@
             "v": "<1.1.2"
         }
     ],
+    "pyrone": [
+        {
+            "changelog": "-----\n\nReleased 2016-02-27\n\n* updated dependencies;\n* docs rearranged (splitted into smaller parts and converted to Markdown from rst)\n* secure (https-only) cookie, disabled by default, edit production.ini to enable\n* bug fixes: issue 3, issue 9, issue 10\n* recommended database setup is now postgres\n\n\n",
+            "v": "<1.3.0"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
