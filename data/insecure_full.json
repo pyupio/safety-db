@@ -3507,6 +3507,12 @@
             "v": "<1.12.1"
         }
     ],
+    "ruffruffs": [
+        {
+            "changelog": "++++++++++++++++++\n\n- Now has a \"security\" package extras set, ``$ pip install requests[security]``\n- Requests will now use Certifi if it is available.\n- Capture and re-raise urllib3 ProtocolError\n- Bugfix for responses that attempt to redirect to themselves forever (wtf?).\n\n\n",
+            "v": "<2.4.1"
+        }
+    ],
     "setuptools": [
         {
             "changelog": "-----\n\n* Python 17980: Fix security vulnerability in SSL certificate validation.\n\n",
