@@ -68,6 +68,12 @@
             "v": "<0.7.1"
         }
     ],
+    "collective.stomach": [
+        {
+            "changelog": "----------------\n\n- Add little security with token and registry.\n  [bsuttor]\n\n\n",
+            "v": "<0.2"
+        }
+    ],
     "conn-check": [
         {
             "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
