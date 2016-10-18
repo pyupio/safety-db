@@ -1530,6 +1530,12 @@
             "v": "<0.4.1"
         }
     ],
+    "django-fernet-fields": [
+        {
+            "changelog": "----------------\n\n* Remove DualField and HashField. The only cases where they are useful, they\n  aren't secure.\n\n\n",
+            "v": "<2015.05.29"
+        }
+    ],
     "django-filebrowser-no-grappelli-staff": [
         {
             "changelog": "-----------------\n\n* Fixed security bug: added staff_member_required decorator to the upload-function.\n* Fixed a XSS vulnerability with fb_tags.\n\n",

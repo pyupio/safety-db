@@ -136,6 +136,9 @@
     "django-envelope": [
         "<0.4.1"
     ],
+    "django-fernet-fields": [
+        "<2015.05.29"
+    ],
     "django-filebrowser-no-grappelli-staff": [
         "<3.4.2"
     ],
