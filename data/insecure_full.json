@@ -3085,6 +3085,10 @@
                 "https://bugs.launchpad.net/zodb/+bug/135108"
             ],
             "v": "<0.5.2"
+        },
+        {
+            "changelog": "===========================\n\n**Enhancements**\n\n- 378: SSL security was improved by disabling SSLv2, SSLv3 and SSL_COMPRESSION\n  features. New TLS_FTPHandler's ssl_options class attribute was added.\n- 380: AbstractedFS.listdir() can now return also a generator (not only a\n  list).\n\n\n",
+            "v": "<1.6.0"
         }
     ],
     "pygresql": [
