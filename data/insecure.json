@@ -14,6 +14,9 @@
     "bbcode": [
         "<1.0.9"
     ],
+    "birdhousebuilder.recipe.nginx": [
+        "<0.1.5"
+    ],
     "bise.theme": [
         "<2.4"
     ],
