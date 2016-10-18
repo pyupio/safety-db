@@ -3311,6 +3311,12 @@
             "v": ">=0.8,<0.8.5"
         }
     ],
+    "python-otr": [
+        {
+            "changelog": "------------------------\n\n  * Reset OTRProtocol public attributes when encryption ends\n  * Don't allow restarting the protocol to prevent man-in-the-middle attacks\n  * Made OTRSession properties thread-safe\n  * Added OTRSession.id property\n  * Allow specifying the supported protocol versions with OTRSession\n  * Do not allow unsolicited DHCommit messages to restart the AKE\n\n",
+            "v": "<1.1.0"
+        }
+    ],
     "requests": [
         {
             "cve": "CVE-2015-2296",
