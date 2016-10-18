@@ -2416,6 +2416,12 @@
             "v": ">=2.0,<2.0.1"
         }
     ],
+    "newsletter": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~~~~~\n\n* newsletterapp more secure by default.  Does not setup default users for admin section.\n* fixed some test failures.\n* removed single new line at end of template files, that is put there by editors like vim.\n\n* newsletterapp can be used for contact forms through send_message config items in the config file.\n\n\n\n\n\n\n",
+            "v": "<0.1.17pre"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",
