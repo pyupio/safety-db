@@ -3739,6 +3739,10 @@
             "v": "<7.4.0"
         },
         {
+            "changelog": "-------------\n\n- [SECURITY] Fixed an issue where a superuser had the ability to inject data into audit logs through the admin UI.\n\n",
+            "v": "<8.1.4"
+        },
+        {
             "changelog": "-------------\n\n- [SECURITY] Fixed a bug which allows API keys more permission than granted within the organization.\n\n",
             "v": "<8.3.3"
         }
