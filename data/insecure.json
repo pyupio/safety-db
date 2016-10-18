@@ -142,6 +142,9 @@
     "django-select2-py3": [
         "<5.7.0"
     ],
+    "django-sql-explorer": [
+        "<0.4"
+    ],
     "django-tastypie": [
         "<0.9.10"
     ],
