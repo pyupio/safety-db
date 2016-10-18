@@ -2146,6 +2146,12 @@
             "v": "<0.0.2"
         }
     ],
+    "mockup": [
+        {
+            "changelog": "------------------\n\nNew:\n\n- Fix resource registry not allowing to go into development mode when\n  bundle is selected\n  [vangheem]\n\n- Add rootPath suppport to relatedItems, to support navigation roots.\n  [alecm]\n\nFixes:\n\n- fix query string preview using date queries\n  [vangheem]\n\n- fix saving values for query string\n  [vangheem]\n\n- be able to use multiple importcss_file_filter files\n  [vangheem]\n\n- Fix issue where if existing querystring path value is \".::1\",\n  after edit, the wrong value will be selected\n\n- Calculate z-index for modals dynamically to always be on top\n  [vangheem]\n\n- Fix path widgets initialization in querystring pattern.\n  [Gagaro]\n\n- Fix XSS vulnerability issues in structure and relateditem pattern.\n  [metatoaster]\n\n- Fix `aria-hidden` attribute control problem on folder content panel\n  [terapyon]\n\n- Trim links in tinymce before inserting them in the source.\n  [Gagaro]\n\n- Ensure we have all content for tree query in relateditems\n  [Gagaro]\n\n- Fix default value for treeVocabularyUrl in relateditems.\n  [Gagaro]\n\n",
+            "v": "<2.1.3"
+        }
+    ],
     "moin": [
         {
             "cve": "CVE-2008-6549",
