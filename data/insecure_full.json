@@ -1520,6 +1520,12 @@
             "v": "<0.1.1"
         }
     ],
+    "django-hilbert": [
+        {
+            "changelog": "-----------------------------------\n\n- Added :ref:`SSLRedirectMiddleware`\n- Added :ref:`SSLUserMiddleware`\n- Added :ref:`anonymous_required` decorator\n- Added :ref:`secure` decorator\n- Documentation updates\n\n",
+            "v": "<0.2"
+        }
+    ],
     "django-initial-avatars": [
         {
             "changelog": "\t- feat: avatar path now use md5 of username + first_name + last_name insted of simple username:\n\t\tpermit to updates the avatar when user changes its settings\n\t\t+ better for security\n",
