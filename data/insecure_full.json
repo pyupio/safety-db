@@ -1637,6 +1637,12 @@
             "v": "<5.7.0"
         }
     ],
+    "django-selectable": [
+        {
+            "changelog": "--------------------------------------\n\nBug Fixes\n_________________\n\n- Fixed XSS flaw with lookup ``get_item_*`` methods. Thanks slafs for the report.\n- Fixed bug when passing widget instance rather than widget class to ``AutoCompleteSelectField`` or ``AutoCompleteSelectMultipleField``.\n\n\n",
+            "v": "<0.5.2"
+        }
+    ],
     "django-sql-explorer": [
         {
             "changelog": "===\n\n2/14/2014 - Happy Valentine's Day!\n\n- Templatized columns for easy linking\n- Additional security config options for splitting create vs. view permissions\n- Show many-to-many relation tables in schema helper\n\n",
