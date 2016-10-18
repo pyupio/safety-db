@@ -1564,6 +1564,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-security": [
+        {
+            "changelog": "-------------\n\nReleased March 13th 2013\n\n- Added Flask-Pewee support\n- Password hashing is now more flexible and can be changed to a different type at will\n- Flask-Login messages are configurable\n- AJAX requests must now send a CSRF token for security reasons\n- Form messages are now configurable\n- Forms can now be extended with more fields\n- Added change password endpoint\n- Added the user to the request context when successfully authenticated via http basic and token auth\n- The Flask-Security blueprint subdomain is now configurable\n- Redirects to other domains are now not allowed during requests that may redirect\n- Template paths can be configured\n- The welcome/register email can now optionally be sent to the user\n- Passwords can now contain non-latin characters\n- Fixed a bug when confirming an account but the account has been deleted\n\n\n",
+            "v": "<1.6.0"
+        }
+    ],
     "formencode": [
         {
             "cve": "CVE-2008-6547",
