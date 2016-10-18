@@ -41,6 +41,12 @@
             "v": "<0.3.8"
         }
     ],
+    "cheshire3": [
+        {
+            "changelog": "------------------------------\n\nENHANCEMENTS\n~~~~~~~~~~~~\n\n* Improved out-of-the-box indexing capabilities.\n\n  * Support for a number of common file formats. This is achieved by\n    preParsing to XML where possible, and wrapping all formats in METS.\n\n    * PDF\n    * HTML\n    * plain-text\n    * OpenDocument Format (LibreOffice, OpenOffice 3+)\n    * Office Open XML (Microsoft Office 2007+ - docx, pptx, xlsx etc.)\n\n  * Easily load and index data from an iRODS data grid.\n\n  * Attempts to create title index entries by default.\n\n  * Faster retrieval[*]_ by compressing stored records using the lz4\n    algorithm to reduce read time from disk.\n\n* Store low and high values for each Record when ``sortStore`` setting is\n  given for an Index. This provides more intuitive results when ordering\n  ResultSets.\n\n* NLTK Integration enabling configuration of indexes for automatically\n  extracted named entities. This feature can be enabled by installing\n  cheshire3 with 'nlp' or 'textmining' extras, e.g.::\n\n      pip install cheshire3[nlp] >= 1.1.0\n\n* Improved speed, readability and security of ``sql`` sub-package through use\n  of ``psycopg2``.\n\n* Better support for custom OAI-PMH servers (available as part of 'web'\n  extras).\n\n.. [*] Faster retrieval assuming reasonable processing power (>=2.5GHz) and\n       non solid-state storage.\n\n\nBUG FIXES\n~~~~~~~~~\n\n* Fixed major bug with indexing on 64-bit platforms.\n\n* Many more minor bug fixes.\n\n\nTESTS\n~~~~~\n\nNew regression unittests:\n\n* Workflows\n* ResultSets\n* ResultSetStores\n* Loggers\n* Indexes\n\nFor fuller details see the `GitHub Issue Tracker\n<https://github.com/cheshire3/cheshire3/issues?milestone=8&state=closed>`\n\n\n",
+            "v": "<1.1.0"
+        }
+    ],
     "cinder": [
         {
             "cve": "CVE-2013-1068",
