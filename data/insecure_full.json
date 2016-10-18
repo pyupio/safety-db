@@ -2551,6 +2551,12 @@
             "v": "<4.0"
         }
     ],
+    "pyscanfcs": [
+        {
+            "changelog": " - Code cleanup\n - Considerable speed-up in binning of .dat files\n - Secured compatibility with PyCorrFit (.csv files)\n - Fixed small file-naming bug\n",
+            "v": "<0.2.0"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
