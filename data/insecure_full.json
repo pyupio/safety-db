@@ -3848,6 +3848,12 @@
             "v": "<0.6"
         }
     ],
+    "rocket-depot": [
+        {
+            "changelog": "  - Better handling for FreeRDP security options.\n  - Bugfix for handling new config file options.\n\n",
+            "v": "<0.18"
+        }
+    ],
     "roundup": [
         {
             "cve": "CVE-2012-6130",
