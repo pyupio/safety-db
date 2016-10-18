@@ -1930,6 +1930,12 @@
             "v": "<1.1.105"
         }
     ],
+    "littlechef": [
+        {
+            "changelog": "-----------------------------------------\n* NEW: Igal added site-cookbooks support\n* NEW: Igal made LittleChef run with the newest fabric. Fabric 1.0+ is now required\n* NEW: Special effects: colored output!\n* NEW: Nicer displaying of node, roles and cookbook information\n* FIX: Igal changed node's chef-solo directory to improve security, together\n    with other fixes\n* FIX: Added first unit tests!\n\n\n",
+            "v": "<0.5.0"
+        }
+    ],
     "mailman": [
         {
             "cve": "CVE-2011-0707",
