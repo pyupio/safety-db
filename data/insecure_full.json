@@ -3837,6 +3837,12 @@
             "v": "<0.4"
         }
     ],
+    "stripe": [
+        {
+            "changelog": "\n* Update bundled ca-certificates\n* Add certificate blacklist for CVE-2014-0160 mitigation\n\n",
+            "v": "<1.13.0"
+        }
+    ],
     "swauth": [
         {
             "changelog": "\n    This is first release after move to OpenStack Infra\n\n    Allow users to change their own password/key\n\n    Add support for storage policy\n\n    Show password prompt if key is not specified\n\n    Allow to use Keystone at same time\n\n    Support SHA512 for password hashing\n\n    Code cleanup\n\n    Bugfixies a security fixies\n\n",
