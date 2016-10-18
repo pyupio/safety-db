@@ -23,6 +23,12 @@
             "v": "<0.5.1"
         }
     ],
+    "c2.patch.plone3mail": [
+        {
+            "changelog": "------------------\n\n* monkey patch SecureMailHost for non UTF-8\n\n",
+            "v": "<0.2"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
