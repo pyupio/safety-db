@@ -2072,6 +2072,12 @@
             "v": ">=2.0,<2.0.1"
         }
     ],
+    "natcap.invest": [
+        {
+            "changelog": "------------------\n* Refactored API documentation for readability, organization by relevant topics, and to allow docs to build on `invest.readthedocs.io <http://invest.readthedocs.io>`_,\n* Installation of ``natcap.invest`` now requires ``natcap.versioner``.  If this is not available on the system at runtime, setuptools will make it available at runtime.\n* InVEST Windows installer now includes HISTORY.rst as the changelog instead of the old ``InVEST_Updates_<version>`` files.\n* Habitat suitability model is generalized and released as an API only accessible model.  It can be found at ``natcap.invest.habitat_suitability.execute``.  This model replaces the oyster habitat suitability model.\n    * The refactor of this model requires an upgrade to ``numpy >= 1.11.0``.\n* Fixed a crash in the InVEST CLI where calling ``invest`` without a parameter would raise an exception on linux-based systems.  (Issue `3528 <https://bitbucket.org/natcap/invest/issues/3515>`_)\n* Patched an issue in Seasonal Water Yield model where a nodata value in the landcover map that was equal to ``MAX_INT`` would cause an overflow error/crash.\n* InVEST NSIS installer will now optionally install the Microsoft Visual C++ 2008 redistributable on Windows 7 or earlier.  This addresses a known issue on Windows 7 systems when importing GDAL binaries (Issue `3515 <https://bitbucket.org/natcap/invest/issues/3515>`_).  Users opting to install this redistributable agree to abide by the terms and conditions therein.\n* Removed the deprecated subpackage ``natcap.invest.optimization``.\n* Updated the InVEST license to legally define the Natural Capital Project.\n* Corrected an issue in Coastal Vulnerability where an output shapefile was being recreated for each row, and where field values were not being stored correctly.\n* Updated Scenario Generator model to add basic testing, file registry support, PEP8 and PEP257 compliance, and to fix several bugs.\n* Updated Crop Production model to add a simplified UI, faster runtime, and more testing.\n\n",
+            "v": "<3.3.1"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",
