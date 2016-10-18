@@ -96,6 +96,9 @@
     "django-initial-avatars": [
         "<0.5.0"
     ],
+    "django-leonardo": [
+        "<2015.8.1"
+    ],
     "django-lfs": [
         "<0.6.9"
     ],
