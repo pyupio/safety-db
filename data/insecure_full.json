@@ -23,6 +23,12 @@
             "v": "<0.5.1"
         }
     ],
+    "boltons": [
+        {
+            "changelog": "------\n*(November 18, 2015)*\n\nA lot of bugfixes and docfixes in 15.1.1.\n\nupdated AtomicSaver for better permissions handling, update\nBufferedSocket message sending, beta version of iterutils.get_path,\nseveral docs fixes, Stats zscore and cache bugfix, and an LRU refactor\nwith significantly improved behavior and code factoring.\n\n  * Updated [fileutils.AtomicSaver][fileutils.AtomicSaver] handling of\n    filesystem permissions to be simpler and more secure. This also\n    merges `dest_perms` and `part_perms` arguments to AtomicSaver and\n    atomic_save.\n  * Fix large message sending with [socketutils.BufferedSocket][socketutils.BufferedSocket]\n  * [strutils.iter_splitlines][strutils.iter_splitlines] is now in the docs.\n  * [cacheutils][cacheutils]: now imports RLock from the right place for python 2\n  * [statsutils][statsutils]: Only `delattr` when `hasattr` in\n    [Stats.clear_cache][statsutils.Stats.clear_cache]\n  * [statsutils.Stats][statsutils.Stats]: Add\n    [Stats.get_zscore][statsutils.Stats.get_zscore] to support\n    calculating the [z-score][zscore] (see also: t-statistic)\n  * [cacheutils.LRU][cacheutils.LRU]: Massive refactor of the backing\n    linked list for better handling of duplicate data in the\n    cache. More aggressive locking and better `__eq__`\n\n",
+            "v": "<15.1.1"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
