@@ -139,6 +139,9 @@
     "django-markupfield": [
         "<1.3.2"
     ],
+    "django-pci-auth": [
+        "<0.0.9"
+    ],
     "django-piston": [
         "<0.2.3"
     ],
