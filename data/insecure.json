@@ -151,6 +151,9 @@
     "django-tastypie": [
         "<0.9.10"
     ],
+    "django-template-bootstrap": [
+        "<2.0.3"
+    ],
     "django-uni-form": [
         "<0.9.0"
     ],
