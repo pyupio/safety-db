@@ -111,6 +111,9 @@
     "django-embed-video": [
         "<0.3"
     ],
+    "django-envelope": [
+        "<0.4.1"
+    ],
     "django-filebrowser-no-grappelli-staff": [
         "<3.4.2"
     ],
