@@ -4019,6 +4019,12 @@
             "v": "<8.8"
         }
     ],
+    "sesame": [
+        {
+            "changelog": "\nApp CLI now imitates tar\nSupports storing multiple files\nSecure extraction/decryption using tempfile\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "setuptools": [
         {
             "changelog": "-----\n\n* Python 17980: Fix security vulnerability in SSL certificate validation.\n\n",
