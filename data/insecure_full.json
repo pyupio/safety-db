@@ -2469,6 +2469,12 @@
             "v": ">=4.1,<4.2a2"
         }
     ],
+    "plone.openid": [
+        {
+            "changelog": "------------------\n\n- Replace deprecated test assert statements.\n  [timo]\n\n- Use system random when available. This is part of the fix for\n  https://plone.org/products/plone/security/advisories/20121106/24\n  [davisagli]\n\n- Fixed extractCredentials to strip whitespaces around __ac_identity_url.\n  This fixes http://dev.plone.org/plone/ticket/11044\n  [datakurre]\n\n\n",
+            "v": "<2.0.2"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
