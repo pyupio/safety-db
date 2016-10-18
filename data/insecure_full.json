@@ -3308,6 +3308,12 @@
             "v": "<1.0.5"
         }
     ],
+    "python-easyengine": [
+        {
+            "changelog": "++++++++++++++++++\n* Add: Secure methods\n* Add: Stack methods\n\n",
+            "v": "<0.1.2"
+        }
+    ],
     "python-keystoneclient": [
         {
             "cve": "CVE-2015-1852",
