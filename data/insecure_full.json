@@ -1722,6 +1722,12 @@
             "v": "<2.3.0"
         }
     ],
+    "jinja": [
+        {
+            "changelog": "-----------\n(codename Convolution, released on July 24th 2011)\n\n- internal attributes now raise an internal attribute error now instead\n  of returning an undefined.  This fixes problems when passing undefined\n  objects to Python semantics expecting APIs.\n- traceback support now works properly for PyPy.  (Tested with 1.4)\n- implemented operator intercepting for sandboxed environments.  This\n  allows application developers to disable builtin operators for better\n  security.  (For instance limit the mathematical operators to actual\n  integers instead of longs)\n- groupby filter now supports dotted notation for grouping by attributes\n  of attributes.\n- scoped blocks now properly treat toplevel assignments and imports.\n  Previously an import suddenly \"disappeared\" in a scoped block.\n- automatically detect newer Python interpreter versions before loading code\n  from bytecode caches to prevent segfaults on invalid opcodes.  The segfault\n  in earlier Jinja2 versions here was not a Jinja2 bug but a limitation in\n  the underlying Python interpreter.  If you notice Jinja2 segfaulting in\n  earlier versions after an upgrade of the Python interpreter you don't have\n  to upgrade, it's enough to flush the bytecode cache.  This just no longer\n  makes this necessary, Jinja2 will automatically detect these cases now.\n- the sum filter can now sum up values by attribute.  This is a backwards\n  incompatible change.  The argument to the filter previously was the\n  optional starting index which defaultes to zero.  This now became the\n  second argument to the function because it's rarely used.\n- like sum, sort now also makes it possible to order items by attribute.\n- like sum and sort, join now also is able to join attributes of objects\n  as string.\n- the internal eval context now has a reference to the environment.\n- added a mapping test to see if an object is a dict or an object with\n  a similar interface.\n\n",
+            "v": "<2.6"
+        }
+    ],
     "keyring": [
         {
             "cve": "CVE-2012-4571",
