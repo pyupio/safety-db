@@ -3627,6 +3627,12 @@
             "v": "<1.12.1"
         }
     ],
+    "rwt": [
+        {
+            "changelog": "---\n\nIssue 4: No longer use execve because it will suppress\nthe cleanup code after the child exits. Instead, trap\nthe interrupt in the parent process and suppress\nit.\n\n",
+            "v": "<2.7"
+        }
+    ],
     "setuptools": [
         {
             "changelog": "-----\n\n* Python 17980: Fix security vulnerability in SSL certificate validation.\n\n",
