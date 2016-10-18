@@ -1808,6 +1808,12 @@
             "v": "<0.3.4"
         }
     ],
+    "mixminion": [
+        {
+            "changelog": "   - License changed from LGPL to the so-called \"MIT\" license. This has\n     been planned for ages; see\n       http://archives.seul.org/mixminion/dev/May-2004/msg00000.html\n   - Numerous bugfixes:\n     - Implement DESTDIR correctly.\n     - Do not crash when run with python 2.4\n     - Bump preferred openssl version to 0.9.8a\n     - Work when umask setting is bizarre (0077, 0000, etc.)\n     - Make -P and mbox work correctly together.\n     - Catch over-long paths.\n     - Tolerate missing /dev/null\n     - Solve crash on mixminion clean-queue\n     - Do not exit on a spurious protocol string from another MMTP host.\n     - Do not use stdio to read /dev/urandom: This wastes entropy.\n   - Security improvements\n     - Regenerate SSL certificates more frequently.\n     - Servers schedule and retry delivery on a per-address basis, not a\n       per-message basis.\n   - Drop support for pre-0.0.6 servers: Servers are now located by\n     hostname.\n   - Add a \"count-packets\" command to tell how many packets will be needed\n     to send a message.  Some integrators need this.\n   - Add a \"SendmailCommand\" option for invoking an external program to send\n     email rather than simply connecting to an SMTP server.\n   - Write much of ClientAPI, so Mixminion is easier to embed -- having this\n     in a real release should make the Nymbaron team happy.\n   - Experimental pinger code, using pysqlite as a data store and\n     implementing the \"Echolot\" remailer reliability algorithm.\n     More work is needed.\n   - Partially implemented code for distributed coordinated voting directory\n     servers.  Client side and data formats are done; glue remains.\n     - Recommended versions are no longer hard-coded.\n     - Refactor how we learn about servers and generate paths.\n   - Split out option-parsing logic to make option lists more consistent.\n   - Suppress prompt when reading messages from non-TTY fds.\n   - Implement --status-fd option to dump info to would-be integrators.\n   - Better errors on expired certs\n\n",
+            "v": "<0.0.8alpha2"
+        }
+    ],
     "moin": [
         {
             "cve": "CVE-2008-6549",
