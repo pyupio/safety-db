@@ -65,6 +65,12 @@
             "v": "<0.3.8"
         }
     ],
+    "chanjo-report": [
+        {
+            "changelog": " Added\n- handle post/get requests for the coverage report (URL limits)\n- new \"index\" blueprint which displays list of samples and genes\n\n Removed\n- link to the \"index\" page from the report (security)\n\n Changed\n- use a customized version of the HTML form for the PDF link in the navbar\n- avoid searching for group id if sample ids are submitted in query\n- use \"select\" element for picking completeness level\n\n Fixed\n- removes the \"submit\" label from the customizations form\n- look up \"show_genes\" from correct \"args/form\" dict\n\n",
+            "v": "<2.4.0"
+        }
+    ],
     "cinder": [
         {
             "cve": "CVE-2013-1068",

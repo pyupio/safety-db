@@ -32,6 +32,9 @@
     "centrifuge": [
         "<0.3.8"
     ],
+    "chanjo-report": [
+        "<2.4.0"
+    ],
     "cinder": [
         "<2013.2.3"
     ],
