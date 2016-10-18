@@ -3329,6 +3329,12 @@
             "v": "<1.12.1"
         }
     ],
+    "secure-smtplib": [
+        {
+            "changelog": "------------------\n\n- First version of secure-smtplib that can be installed from PyPI\n",
+            "v": "<0.1.0"
+        }
+    ],
     "setuptools": [
         {
             "changelog": "-----\n\n* Python 17980: Fix security vulnerability in SSL certificate validation.\n\n",
