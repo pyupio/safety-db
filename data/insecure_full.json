@@ -74,6 +74,12 @@
             "v": "<1.0.18"
         }
     ],
+    "deform": [
+        {
+            "changelog": "------------------\n\n- ``PasswordWidget`` and ``CheckedPasswordWidget`` have grown an additional\n  argument/attribute named ``redisplay``, which controls what happens on a\n  validation failure of a form involving such a field.  If ``redisplay`` is\n  ``True`` (the default), the password will be re-rendered into the form when\n  the form is re-rendered after validation failure.  If ``redisplay`` is\n  ``False``, the password will not be re-rendered into the form.  The default\n  is ``False``, which means that, as of this release, passwords will not\n  be redisplayed; this changes the default behavior wrt previous releases.\n  Values typed into password fields are not redisplayed by default during\n  validation failure, as a security measure (the value winds up in browser\n  history).  Use ``PasswordWidget(redisplay=True)`` or\n  ``CheckedPasswordWidget(redisplay=True)`` to make these widgets redisplay\n  passwords on validation failures, matching the old behavior.\n\n- When using the default Chameleon template renderer, template names can now\n  be \"asset specifications\" e.g. ``mypackage:subdir1/subdir2/mytemplate.pt``\n  instead of extensionless paths relative to a search path.  When\n  template names are specified as asset specifications, the\n  ``pkg_resources.resource_filename`` API is used to dereference them\n  into an actual file path.\n\n",
+            "v": "<2.0a2"
+        }
+    ],
     "defusedexpat": [
         {
             "cve": "CVE-2013-1664",
