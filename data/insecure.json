@@ -236,6 +236,9 @@
     "ftw.permissionmanager": [
         "<2.2.2"
     ],
+    "ftw.upgrade": [
+        "<1.2"
+    ],
     "gandi.cli": [
         "<0.10"
     ],
