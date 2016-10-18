@@ -2871,6 +2871,10 @@
         {
             "changelog": "------------------\n\n* Fix security validator to work properly on add views and other views using\n  namespace traversal (++add++...)\n  [optilude]\n\n",
             "v": "<1.0a3"
+        },
+        {
+            "changelog": "------------------\n\n* Fall back to the site to perform content-related operations if the\n  context is not wrapped into an acquisition chain.\n  [dukebody]\n\n* Compute the view name as the request URL left-stripped the content\n  absolute URL.\n  [dukebody]\n\n* Make it possible to restrict the field to objects below a path\n  The constructor of ObjPathSource takes a path keyword argument\n  with a PathIndex catalog query. This argument filters objects\n  outside of this path. If the navigation_tree_query does not have\n  a path argument, the path is also copied into this query.\n  [gaudenzius]\n\n* Update widget in the contenttree-fetch browser view\n  The widget.update() call rebinds to source which previously\n  was only bound during traversal. This avoids problems with\n  sources that only work after security is applied.\n  [gaudenzius]\n\n",
+            "v": "<1.0b2"
         }
     ],
     "plone.mockup": [
