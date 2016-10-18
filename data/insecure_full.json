@@ -2672,6 +2672,12 @@
             "v": "<0.3.3"
         }
     ],
+    "pusher": [
+        {
+            "changelog": "\n* Renamed `URLFetchBackend` to `GAEBackend`, which specifically imports the Google App Engine urlfetch library.\n* Library creates an SSL context from certificate, addressing users receiving `InsecurePlatformWarning`s.\n\n",
+            "v": "<1.2.0"
+        }
+    ],
     "pycapnp": [
         {
             "changelog": "- Update bundled C++ libcapnp to v0.5.1.2 security release\n\n\n",
