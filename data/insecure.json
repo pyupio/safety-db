@@ -162,6 +162,9 @@
     "gandi.cli": [
         "<0.10"
     ],
+    "gocept.country": [
+        "<0.6.2"
+    ],
     "google-appengine": [
         "<1.5.4"
     ],
