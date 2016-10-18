@@ -68,6 +68,12 @@
             "v": "<0.7.1"
         }
     ],
+    "compliancelib": [
+        {
+            "changelog": "- Add OpenControlFiles class to read open controls\n- Resolve and ingest opencontrol.yaml file from GitHub repos\n- Resolve and ingest OpenControl component yaml files (no dependencies)\n- Update SystemCompliance class to load components via OpenControl YAML reference\n- Update SystemCompliance to dump plain text write-up of NIST800-53 System Security Plan control implementation write-up\n- NOTE: ingesting OpenControlFiles still incomplete\n\n",
+            "v": "<0.9.0"
+        }
+    ],
     "conn-check": [
         {
             "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
