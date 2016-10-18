@@ -1834,6 +1834,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-security": [
+        {
+            "changelog": "-------------\n\nReleased December 11th 2012\n\n- Fix a small bug in `flask_security.utils.login_user` method\n\n",
+            "v": "<1.5.2"
+        }
+    ],
     "formencode": [
         {
             "cve": "CVE-2008-6547",
