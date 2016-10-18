@@ -17,6 +17,9 @@
     "bok-choy": [
         "<0.5.1"
     ],
+    "ccnmtldjango": [
+        "<0.17.2"
+    ],
     "centrifuge": [
         "<0.3.8"
     ],
