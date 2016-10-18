@@ -3357,6 +3357,12 @@
             "v": "<1.5"
         }
     ],
+    "wammu": [
+        {
+            "changelog": "==== (2010-12-01)\n\n* New Turkish translation.\n* Updated Dutch translation.\n* Handle security error when getting phone info (bug 1264).\n* Read all messages on phones not supporting status but support GetNext (bug 1261).\n\n",
+            "v": "<0.35"
+        }
+    ],
     "zodb": [
         {
             "cve": "CVE-2010-3495",
