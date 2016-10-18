@@ -23,6 +23,12 @@
             "v": "<0.5.1"
         }
     ],
+    "ccnmtldjango": [
+        {
+            "changelog": "===================\n\n* updated to Django 1.4.1 security release\n\n",
+            "v": "<0.17.2"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
