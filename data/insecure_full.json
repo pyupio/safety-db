@@ -35,6 +35,12 @@
             "v": "<0.1.4"
         }
     ],
+    "awscli": [
+        {
+            "changelog": "=====\n\n* feature:``aws emr``: Add support for security groups.\n* feature:``aws cognitio-identity``: Enhance authentication flow by being able to save associations of IAM roles with identity pools.\n\n\n",
+            "v": "<1.7.3"
+        }
+    ],
     "bbcode": [
         {
             "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
