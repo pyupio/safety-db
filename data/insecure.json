@@ -116,6 +116,9 @@
     "ftw.permissionmanager": [
         "<2.2.2"
     ],
+    "ftw.solr": [
+        "<1.2"
+    ],
     "google-appengine": [
         "<1.5.4"
     ],
