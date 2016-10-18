@@ -35,6 +35,12 @@
             "v": "<0.1.4"
         }
     ],
+    "awscli": [
+        {
+            "changelog": "======\n\n* feature:``aws ecr``: Add ``aws ecr`` commands\n* feature:``aws emr``: Update ``aws emr create-cluster`` to accept Amazon EC2 security group\n* feature:``aws ecs``: Update ``ecs`` command to include a new deployment option\n\n\n",
+            "v": "<1.9.15"
+        }
+    ],
     "bbcode": [
         {
             "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
