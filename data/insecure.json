@@ -29,6 +29,9 @@
     "conn-check": [
         "<1.0.18"
     ],
+    "deform": [
+        "<2.0a2"
+    ],
     "defusedexpat": [
         "<0.3"
     ],
