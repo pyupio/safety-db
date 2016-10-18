@@ -327,6 +327,9 @@
     "requests": [
         ">=2.1,<=2.5.3"
     ],
+    "robotframework-imaplibrary": [
+        "<0.2.1"
+    ],
     "roundup": [
         "<1.4.20"
     ],
