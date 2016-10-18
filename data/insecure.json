@@ -108,6 +108,9 @@
     "django-relatives": [
         "<0.3.0"
     ],
+    "django-revproxy": [
+        "<0.9.7"
+    ],
     "django-tastypie": [
         "<0.9.10"
     ],
