@@ -1647,6 +1647,12 @@
             "v": "<0.5.2"
         }
     ],
+    "django-session-security": [
+        {
+            "changelog": "\n    - Django 1.5 and 1.6 support.\n    - Fix 6: Internet Explorer 8 support.\n    - Python 3.3 support.\n    - Minor BC break: we can't set datetime objects directly in the session\n      since django 1.6. Instead, we go through session_security.utils functions\n      get_last_activity() and set_last_activity(). If you were touching\n      session['_session_security'] directly, you should update your code to use\n      those functions.\n\n2.0.6 Fix 5: Make the list of event types to monitor an option.\n\n2.0.5 Removed more debug statements.\n\n2.0.4 Fix 4: Removed debug statement.\n\n2.0.3 Unset data-dirty on form submit, to prevent onbeforeunload.\n\n2.0.2 Added confirmFormDiscard and onbeforeunload handler.\n\n2.0.1 Traded POST ping request for a GET ping request, removed CSRF code.\n\n2.0.0 Rewrite with unit tests.\n",
+            "v": "<2.1.0"
+        }
+    ],
     "django-sql-explorer": [
         {
             "changelog": "===\n\n2/14/2014 - Happy Valentine's Day!\n\n- Templatized columns for easy linking\n- Additional security config options for splitting create vs. view permissions\n- Show many-to-many relation tables in schema helper\n\n",
