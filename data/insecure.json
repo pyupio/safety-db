@@ -38,6 +38,9 @@
     "collective.noticeboard": [
         "<0.7.1"
     ],
+    "collective.transcode.star": [
+        "<0.22"
+    ],
     "conn-check": [
         "<1.0.18"
     ],
