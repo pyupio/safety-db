@@ -166,6 +166,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "edrnsite.portlets": [
+        "<1.0.2"
+    ],
     "euphorie": [
         "<6.1"
     ],
