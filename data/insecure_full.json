@@ -2529,6 +2529,12 @@
             "v": "<2.0.2"
         }
     ],
+    "pneumatic": [
+        {
+            "changelog": "----------------------\n\n* Provide ``User-Agent`` and ``From`` HTTP header fields.\n* Correct issue where ``force_ocr`` and ``secure`` parameters were not being set default to ``false`` in the Ruby way. (`17 <https://github.com/anthonydb/pneumatic/issues/17>`_)\n* Handle 50X errors from the API (which do not return JSON). (`15 <https://github.com/anthonydb/pneumatic/issues/15>`_, thank you, `Tom Meagher <https://github.com/tommeagher>`_!)\n\n",
+            "v": "<0.1.6"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
