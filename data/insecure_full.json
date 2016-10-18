@@ -1834,6 +1834,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-security": [
+        {
+            "changelog": "-------------\n\nReleased March 12th 2012\n\n- Added configuration option `SECURITY_FLASH_MESSAGES` which can be set to a\n  boolean value to specify if Flask-Security should flash messages or not.\n\n",
+            "v": "<1.2.0"
+        }
+    ],
     "formencode": [
         {
             "cve": "CVE-2008-6547",
