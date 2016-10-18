@@ -35,6 +35,12 @@
             "v": "<0.1.4"
         }
     ],
+    "bang": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~~~~~\n- Core Ansible playbook runner\n- Parallel cloud resource deployment\n- Generic OpenStack provider\n- HP Cloud provider\n\n    - Compute (Nova)\n\n        - Including security groups\n\n    - Object Storage (Swift)\n    - DBaaS (RedDwarf)\n",
+            "v": "<0.1"
+        }
+    ],
     "bbcode": [
         {
             "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
