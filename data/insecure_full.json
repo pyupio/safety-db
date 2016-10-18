@@ -1621,6 +1621,10 @@
     ],
     "django-revproxy": [
         {
+            "changelog": "==================\n\n* Fixed connections pools\n* Use wsgiref to check for hop-by-hop headers [50]\n* Refactored tests\n* Fixed security issue that allowed remote-user header injection\n\n\n",
+            "v": "<0.9.6"
+        },
+        {
             "changelog": "==================\n\n* Bug fixed: property preventing to set upstream and diazo_rules (53, 54) [vdemin]\n* Security issue fixed: when colon is present at URL path urljoin ignores the upstream and the request is redirected to the path itself allowing content injection\n\n\n",
             "v": "<0.9.7"
         }
