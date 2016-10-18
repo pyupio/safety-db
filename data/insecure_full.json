@@ -3627,6 +3627,12 @@
             "v": "<1.12.1"
         }
     ],
+    "rwt": [
+        {
+            "changelog": "---\n\nIssue 3: ``rwt`` now relies on ``execve`` to overlay\nthe child process over the current one.\n\n",
+            "v": "<2.6"
+        }
+    ],
     "setuptools": [
         {
             "changelog": "-----\n\n* Python 17980: Fix security vulnerability in SSL certificate validation.\n\n",
