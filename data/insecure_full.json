@@ -3407,6 +3407,12 @@
             "v": "<2.2.1"
         }
     ],
+    "touchpaper": [
+        {
+            "changelog": "--------------------------\n\n* New: Added terminal colours via colorama\n* Improved: Command-line option handling including --help and --version options\n* Improved: Messaging when no security groups are present\n* Improved: Code comments!\n\n",
+            "v": "<0.2.1"
+        }
+    ],
     "tripleo-heat-templates": [
         {
             "cve": "CVE-2015-5303",
