@@ -1709,6 +1709,12 @@
             "v": "<0.8.1"
         }
     ],
+    "dpaste": [
+        {
+            "changelog": "----------------\n\n* The API create view has a new argument 'filename' which is used to determine\n  the lexer out of a given filename.\n* Fixed a XSS bug where HTML tags were not properly escaped with the simple\n  ``code`` lexer.\n\n",
+            "v": "<2.8"
+        }
+    ],
     "easy_install": [
         {
             "cve": "CVE-2013-1633",
