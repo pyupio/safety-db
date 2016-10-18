@@ -1539,6 +1539,12 @@
             "v": "<0.9.0"
         }
     ],
+    "django-watchman": [
+        {
+            "changelog": "-------------------\n\n* [`75 <https://github.com/mwarkentin/django-watchman/pull/75>`_] Enable header-based authentication\n\n  * Set a header instead of passing the token via GET param: ``\"Authorization: WATCHMAN-TOKEN Token=\\\":token\\\"\"``\n  * Improves security by keeping tokens out of logs\n\n* [`79 <https://github.com/mwarkentin/django-watchman/pull/79>`_] Enable customization of email check\n\n  * Add ``WATCHMAN_EMAIL_RECIPIENTS`` setting - pass a list of recipients the email should be sent to\n  * Add ``WATCHMAN_EMAIL_HEADERS`` setting - pass a dict of custom headers to be set on the email\n\n\n",
+            "v": "<0.10.0"
+        }
+    ],
     "docker-registry": [
         {
             "changelog": "\n * security fixes (path traversing prevention and token validation)\n\n",
@@ -1646,6 +1652,12 @@
                 "https://wiki.mageia.org/en/Support/Advisories/MGASA-2012-0157"
             ],
             "v": "<5.1.2"
+        }
+    ],
+    "flask-oauthlib": [
+        {
+            "changelog": "-------------\n\nReleased on Mar 9, 2015\n\n- Improve on security.\n- Fix on contrib client.\n\n",
+            "v": "<0.9.1"
         }
     ],
     "flask-oidc": [
@@ -1796,6 +1808,12 @@
         {
             "changelog": "-------------\n(bugfix release, released on January 10th 2014)\n\n- Prefix loader was not forwarding the locals properly to\n  inner loaders.  This is now fixed.\n- Security issue: Changed the default folder for the filesystem cache to be\n  user specific and read and write protected on UNIX systems.  See `Debian bug\n  734747`_ for more information.\n\n.. _Debian bug 734747: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734747\n\n",
             "v": "<2.7.2"
+        }
+    ],
+    "jinja2": [
+        {
+            "changelog": "-------------\n(bugfix release, released on June 6th 2014)\n\n- Security issue: Corrected the security fix for the cache folder.  This\n  fix was provided by RedHat.\n\n",
+            "v": "<2.7.3"
         }
     ],
     "jottalib": [
@@ -2797,6 +2815,12 @@
         {
             "changelog": "--------------------\n* Fix flake8 and cleanup tox building\n* Fix security vulnerability by sanitizing key input\n\n",
             "v": "<1.3.6"
+        },
+    ],
+    "pypiserver": [
+        {
+            "changelog": "-----------------\n1st release under cooperative ownership:\n\n- 65, 66: Improve Auth for private repos by supporting i\n  password protected package listings and downloads,\n  in addition to uploads (use the -a, --authenticate option\n  to specify which to protect).\n- 67: Add cache-control http-header, reqed by pip.\n- 56, 70: Ignore non-packages when serving.\n- 58, 62: Log all http-requests.\n- 61: Possible to change welcome-msg.\n- 77, 78: Avoid XSS by generating web-content with SimpleTemplate\n  instead of python's string-substs.\n- 38, 79: Instruct to use --extra-index-url for misspelled dependencies to work,\n  reorganize README instructions.\n\n\n",
+            "v": "<1.1.7"
         }
     ],
     "pyshop": [
@@ -3703,6 +3727,12 @@
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
             "v": "<0.4.0"
+        }
+    ],
+    "ziirish": [
+        {
+            "changelog": "------------------\n\n- **BREAKING**: New configuration file format to allow further improvements (The conversion is automatic, but LDAP settings might need some attention)\n- **BREAKING**: Passwords are now *salted* for the *BASIC* authentication backend (The conversion is automatic too)\n- **BREAKING**: If you plan to use the SQL storage along with gunicorn, you **MUST** add the *--preload* parameter (see the *gunicorn.d/burp-ui* file)\n- Add: `Celery <http://www.celeryproject.org/>`_ support for asynchronous tasks\n- Add: `SQLAlchemy <http://www.sqlalchemy.org/>`_ support for persistent storage\n- Add: `RESTful restore <https://git.ziirish.me/ziirish/burp-ui/issues/111>`_\n- Add: `autoreload config <https://git.ziirish.me/ziirish/burp-ui/issues/142>`_\n- Add: `remember some user settings <https://git.ziirish.me/ziirish/burp-ui/issues/133>`_\n- Add: `client certificate revocation <https://git.ziirish.me/ziirish/burp-ui/issues/131>`_\n- Add: new `local authentication backend <https://git.ziirish.me/ziirish/burp-ui/issues/130>`_\n- Add: new `filters on history API call <https://git.ziirish.me/ziirish/burp-ui/issues/140>`_\n- Add: implement backend `keepalive <https://git.ziirish.me/ziirish/burp-ui/issues/98>`_\n- Add: allow to *disable* `server-initiated restoration <https://git.ziirish.me/ziirish/burp-ui/issues/136>`_\n- Fix: disable Basic-Auth login from UI to prevent some bugs with sessions\n- Fix: issue `134 <https://git.ziirish.me/ziirish/burp-ui/issues/134>`_\n- Fix: issue `135 <https://git.ziirish.me/ziirish/burp-ui/issues/135>`_\n- Fix: issue `137 <https://git.ziirish.me/ziirish/burp-ui/issues/137>`_\n- Fix: issue `138 <https://git.ziirish.me/ziirish/burp-ui/issues/138>`_\n- Fix: issue `145 <https://git.ziirish.me/ziirish/burp-ui/issues/145>`_\n- Fix: issue `148 <https://git.ziirish.me/ziirish/burp-ui/issues/148>`_\n- Improvement: new asynchronous `backup-running API call <https://git.ziirish.me/ziirish/burp-ui/issues/139>`_\n- Security: restrict files that can be sent by the agent\n- `Full changelog <https://git.ziirish.me/ziirish/burp-ui/compare/v0.2.1...v0.3.0>`__\n\n",
+            "v": "<0.3.0"
         }
     ],
     "zodb": [
