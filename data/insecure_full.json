@@ -1447,6 +1447,12 @@
             "v": "<1.3.2"
         }
     ],
+    "django-photos": [
+        {
+            "changelog": "---\n\n*Release date: 30-Sep-2010*\n\n* Security enhancements (security by obscurity)\n* Bugfixes (deleting model instance deletes all thumbnail variants from disk)\n* `Photo.name` will be calculated from filename if not given.\n* Admin has a thumbnail now\n\n",
+            "v": "<0.2"
+        }
+    ],
     "django-piston": [
         {
             "cve": "CVE-2011-4103",
