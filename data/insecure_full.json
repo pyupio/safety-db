@@ -4526,6 +4526,12 @@
             "v": "<1.2"
         }
     ],
+    "zope.testbrowser": [
+        {
+            "changelog": "------------------\n\n- Resolve ``ZopeSecurityPolicy`` deprecation warning.\n\n\n",
+            "v": "<3.4.2"
+        }
+    ],
     "zope2": [
         {
             "cve": "CVE-2010-3198",
