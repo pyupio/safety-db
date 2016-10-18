@@ -2190,6 +2190,12 @@
             "v": "<1.0.1.15"
         }
     ],
+    "max": [
+        {
+            "changelog": "----------------\n\n * Conversations with socket.io\n * Improved tests and documentation\n * Cleanup\n * Unsubscribe from contexts\n * Creation and ownership fields\n * Route unification of /admin and /* endpoints\n * New security implementation fully based on oauth2 and roles on db\n * Public contexts\n\n\n",
+            "v": "<3.0"
+        }
+    ],
     "maxminddb": [
         {
             "changelog": "\n* IMPORTANT: This release includes a number of important security fixes. Among\n  these fixes is improved validation of the database metadata. Unfortunately,\n  MaxMind GeoIP2 and GeoLite2 databases created earlier than January 28, 2014\n  had an invalid data type for the `record_size` in the metadata. Previously\n  these databases worked on little endian machines with libmaxminddb but did\n  not work on big endian machines. Due to increased safety checks when reading\n  the file, these databases will no longer work on any platform. If you are\n  using one of these databases, we recommend that you upgrade to the latest\n  GeoLite2 or GeoIP2 database\n* Added pkg-config support. If your system supports it, then running `make\n  install` now installs a `libmaxminddb.pc` file for pkgconfig. Implemented by\n  Jan Vcelak.\n* Several segmentation faults found with afl-fuzz were fixed. These were\n  caused by missing bounds checking and missing data type verification checks.\n* `MMDB_get_entry_data_list` will now fail on data structures with a depth\n  greater than 512 and data structures that are cyclic. This should not\n  affect any known MaxMind DB in production. All databases produced by\n  MaxMind have a depth of less than five.\n\n\n",
