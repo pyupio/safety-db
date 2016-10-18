@@ -104,6 +104,12 @@
             "v": "<1.0.18"
         }
     ],
+    "datagrepper": [
+        {
+            "changelog": "-----\n\nNotably, the /topics endpoint (which never worked) has been removed in\nthis release.\n\n\nPull Requests\n\n- (ralphbean)      166, Be more explicit with Content-Security-Policy.\n  https://github.com/fedora-infra/datagrepper/pull/166\n- (ralphbean)      167, Make the websocket configurable.\n  https://github.com/fedora-infra/datagrepper/pull/167\n- (ralphbean)      168, Remove /topics endpoint\n  https://github.com/fedora-infra/datagrepper/pull/168\n- (ralphbean)      169, Return JSON with tracebacks for internal server errors.\n  https://github.com/fedora-infra/datagrepper/pull/169\n- (ralphbean)      170, Truncate charts to make things prettier.\n  https://github.com/fedora-infra/datagrepper/pull/170\n- (ralphbean)      174, JSON, not Details.\n  https://github.com/fedora-infra/datagrepper/pull/174\n- (pypingou)       176, Raise a 405 error upon POST queries\n  https://github.com/fedora-infra/datagrepper/pull/176\n\nCommits\n\n- 96e109bd9 Be more explicit with Content-Security-Policy.\n  https://github.com/fedora-infra/datagrepper/commit/96e109bd9\n- 41701ae80 Make the websocket configurable.\n  https://github.com/fedora-infra/datagrepper/commit/41701ae80\n- 5abbb8d40 Remove /topics endpoint\n  https://github.com/fedora-infra/datagrepper/commit/5abbb8d40\n- 0abb45e8f Return JSON with tracebacks for internal server errors.\n  https://github.com/fedora-infra/datagrepper/commit/0abb45e8f\n- 073e5493c Truncate charts to make things prettier.\n  https://github.com/fedora-infra/datagrepper/commit/073e5493c\n- df1ae1e69 JSON, not Details.\n  https://github.com/fedora-infra/datagrepper/commit/df1ae1e69\n- ccdac3445 Raise a 405 error upon POST queries\n  https://github.com/fedora-infra/datagrepper/commit/ccdac3445\nChangelog\n=========\n\n",
+            "v": "<0.7.0"
+        }
+    ],
     "defusedexpat": [
         {
             "cve": "CVE-2013-1664",
