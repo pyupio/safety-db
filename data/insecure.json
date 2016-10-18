@@ -5,6 +5,9 @@
     "clearsilver": [
         "<0.10.5"
     ],
+    "collective.hostout": [
+        "<1.0a2"
+    ],
     "defusedexpat": [
         "<0.3"
     ],
