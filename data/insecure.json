@@ -20,6 +20,9 @@
     "clearsilver": [
         "<0.10.5"
     ],
+    "clusterous": [
+        "<0.5.0"
+    ],
     "cmsplugin-filer": [
         "<1.0.0"
     ],
