@@ -1751,6 +1751,10 @@
         {
             "changelog": "\n**Date**: 24 March 2015\n\n* **Security fix**: Escape tab switching cookie name in browsable API. [Backported from 3.1.1](http://www.django-rest-framework.org/topics/release-notes/311).\n\n",
             "v": "<2.4.5"
+        },
+        {
+            "changelog": "\n**Date**: [23rd March 2015][3.1.1-milestone].\n\n* **Security fix**: Escape tab switching cookie name in browsable API.\n* Display input forms in browsable API if `serializer_class` is used, even when `get_serializer` method does not exist on the view. ([2743][gh2743])\n* Use a password input for the AuthTokenSerializer. ([2741][gh2741])\n* Fix missing anchor closing tag after next button. ([2691][gh2691])\n* Fix `lookup_url_kwarg` handling in viewsets. ([2685][gh2685], [2591][gh2591])\n* Fix problem with importing `rest_framework.views` in `apps.py` ([2678][gh2678])\n* LimitOffsetPagination raises `TypeError` if PAGE_SIZE not set ([2667][gh2667], [2700][gh2700])\n* German translation for `min_value` field error message references `max_value`. ([2645][gh2645])\n* Remove `MergeDict`. ([2640][gh2640])\n* Support serializing unsaved models with related fields. ([2637][gh2637], [2641][gh2641])\n* Allow blank/null on radio.html choices. ([2631][gh2631])\n\n\n",
+            "v": "<3.1.1"
         }
     ],
     "docker-registry": [
