@@ -1736,6 +1736,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flintrock": [
+        {
+            "changelog": "\n Added\n\n* [118]: You can now specify `--hdfs-download-source` (or the\n  equivalent in your config file) to tell Flintrock to download Hadoop\n  from a specific URL when launching your cluster.\n* [125]: You can now specify `--spark-download-source` (or the\n  equivalent in your config file) to tell Flintrock to download Spark\n  from a specific URL when launching your cluster.\n* [112]: You can now specify `--ec2-security-group` to associate\n  additional security groups with your cluster on launch.\n\n[118]: https://github.com/nchammas/flintrock/pull/118\n[125]: https://github.com/nchammas/flintrock/pull/125\n[112]: https://github.com/nchammas/flintrock/pull/112\n\n Changed\n\n* [103], [114]: Flintrock now opens port 6066 and 7077 so local\n  clients like Apache Zeppelin can connect directly to the Spark\n  master on the cluster.\n* [122]: Flintrock now automatically adds executables like\n  `spark-submit`, `pyspark`, and `hdfs` to the default `PATH`, so\n  they're available to call right when you login to the cluster.\n\n[103]: https://github.com/nchammas/flintrock/pull/103\n[114]: https://github.com/nchammas/flintrock/pull/114\n[122]: https://github.com/nchammas/flintrock/pull/122\n\n",
+            "v": "<0.5.0"
+        }
+    ],
     "formencode": [
         {
             "cve": "CVE-2008-6547",
