@@ -1636,6 +1636,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-social": [
+        {
+            "changelog": "-------------\n\nReleased October 12 2012\n\n- Change default blueprint name to 'social' to match up with 'security'\n- Ensure commit is called after social login\n- Abstract a bit of the connection callback for more flexibility. See the example app\n\n",
+            "v": "<1.5.1"
+        }
+    ],
     "formencode": [
         {
             "cve": "CVE-2008-6547",
