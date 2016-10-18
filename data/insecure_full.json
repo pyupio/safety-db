@@ -1647,6 +1647,12 @@
             "v": "<0.5.2"
         }
     ],
+    "django-session-security": [
+        {
+            "changelog": "\n    - 75 Fix vulnerability when SESSION_EXPIRE_AT_BROWSER_CLOSE is off\n    - 77 Crash if SESSION_EXPIRE_AT_BROWSER_CLOSE is off\n    - 78 Update test matrix to have Django 1.10 + master instead of just\n      master\n    - 74 Created security mailing list\n\n    Thanks ClaytonDelay for contacting about the issue.\n    Note that if you don't have SESSION_EXPIRE_AT_BROWSER_CLOSE=True in your\n    settings, then the project won't start unless you set\n    SESSION_SECURITY_INSECURE=True, which you shouldn't.\n\n",
+            "v": "<2.4.0"
+        }
+    ],
     "django-sql-explorer": [
         {
             "changelog": "===\n\n2/14/2014 - Happy Valentine's Day!\n\n- Templatized columns for easy linking\n- Additional security config options for splitting create vs. view permissions\n- Show many-to-many relation tables in schema helper\n\n",
