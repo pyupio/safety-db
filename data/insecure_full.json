@@ -3686,6 +3686,12 @@
             "v": "<2.4.0"
         }
     ],
+    "tuf": [
+        {
+            "changelog": "----------------\n\n* SSL Cert Verification; Make https the default for PyPI access.\n  Thanks James Cleveland, Giovanni Bajo, Marcus Smith and many others (Pull 791).\n\n* Added \"pip list\" for listing installed packages and the latest version\n  available. Thanks Rafael Caricio, Miguel Araujo, Dmitry Gladkov (Pull 752)\n\n* Fixed security issues with pip's use of temp build directories.\n  Thanks David (d1b) and Thomas Guttler. (Pull 780)\n\n* Improvements to sphinx docs and cli help. (Pull 773)\n\n* Fixed issue 707, dealing with OS X temp dir handling, which was causing\n  global NumPy installs to fail. (Pull 768)\n\n* Split help output into general vs command-specific option groups.\n  Thanks Georgi Valkov. (Pull 744; Pull 721 contains preceding refactor)\n\n* Fixed dependency resolution when installing from archives with uppercase\n  project names. (Pull 724)\n\n* Fixed problem where re-installs always occurred when using file:// find-links.\n  (Pulls 683/702)\n\n* \"pip install -v\" now shows the full download url, not just the archive name.\n  Thanks Marc Abramowitz (Pull 687)\n\n* Fix to prevent unnecessary PyPI redirects. Thanks Alex Gronholm (Pull 695)\n\n* Fixed issue 670 - install failure under Python 3 when the same version\n  of a package is found under 2 different URLs.  Thanks Paul Moore (Pull 671)\n\n* Fix git submodule recursive updates.  Thanks Roey Berman. (Pulls 674)\n\n* Explicitly ignore rel='download' links while looking for html pages.\n  Thanks Maxime R. (Pull 677)\n\n* --user/--upgrade install options now work together. Thanks 'eevee' for\n  discovering the problem. (Pull 705)\n\n* Added check in ``install --download`` to prevent re-downloading if the target\n  file already exists. Thanks Andrey Bulgakov. (Pull 669)\n\n* Added support for bare paths (including relative paths) as argument to\n  `--find-links`. Thanks Paul Moore for draft patch.\n\n* Added support for --no-index in requirements files.\n\n* Added \"pip show\" command to get information about an installed package.\n  Fixes 131. Thanks Kelsey Hightower and Rafael Caricio.\n\n* Added `--root` option for \"pip install\" to specify root directory. Behaves\n  like the same option in distutils but also plays nice with pip's egg-info.\n  Thanks Przemek Wrzos.  (Issue 253 / Pull 693)\n\n",
+            "v": "<1.3"
+        }
+    ],
     "tweepy": [
         {
             "cve": "CVE-2012-5825",
