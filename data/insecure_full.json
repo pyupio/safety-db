@@ -2966,6 +2966,12 @@
             "v": "<0.3.3"
         }
     ],
+    "py-translate": [
+        {
+            "changelog": "------------------\n- Bug fix with lines longer than 1000 chars\n- Fixed another unicode bug\n- Improved Python 2/3 Compatability\n- Implemented text transliteration where available\n- Implemented simple File IO\n- Better utilization of thread pools using futures module.\n- Vendorized dependencies\n- Swapped transport API from urllib2 with Requests\n- SSL/TLS integration for secure web requests\n\n\n",
+            "v": "<1.0.0"
+        }
+    ],
     "pycapnp": [
         {
             "changelog": "- Update bundled C++ libcapnp to v0.5.1.2 security release\n\n\n",
