@@ -17,6 +17,12 @@
             "v": "<0.1.4"
         }
     ],
+    "bbcode": [
+        {
+            "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
+            "v": "<1.0.9"
+        }
+    ],
     "bise.theme": [
         {
             "changelog": "------------------\n* Bug fix: fix potential XSS issue with catalogue search\n  [tiberich 75243]\n\n",
