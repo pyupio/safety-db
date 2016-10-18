@@ -2027,6 +2027,12 @@
             "v": "<1.0.0"
         }
     ],
+    "impacket": [
+        {
+            "changelog": "1) New RPC and NDR runtime (located at impacket.dcerpc.v5, old one still available)\n  a. Support marshaling/unmarshaling for NDR20 and NDR64 (experimental)\n  b. Support for RPC_C_AUTHN_NETLOGON (experimental)\n  c. The following interface were developed based on its standard definition:\n    * [MS-LSAD] - Local Security Authority (Domain Policy) Remote Protocol (lsad.py)\n    * [MS-LSAT] - Local Security Authority (Translation Methods) Remote Protocol (lsat.py)\n    * [MS-NRPC] - Netlogon Remote Protocol (nrpc.py) \n    * [MS-RRP] - Windows Remote Registry Protocol (rrp.py)\n    * [MS-SAMR] - Security Account Manager (SAM) Remote Protocol (samr.py)\n    * [MS-SCMR] - Service Control Manager Remote Protocol (scmr.py)\n    * [MS-SRVS] - Server Service Remote Protocol (srvs.py) \n    * [MS-WKST] - Workstation Service Remote Protocol (wkst.py) \n    * [MS-RPCE]-C706 -  Remote Procedure Call Protocol Extensions (epm.py)\n    * [MS-DTYP] - Windows Data Types (dtypes.py)\n    Most of the DCE Calls have helper functions for easier use. Test cases added for \n    all calls (check the test cases directory)\n2) ESE parser (Extensive Storage Engine) (ese.py)\n3) Windows Registry parser (winregistry.py)\n4) TDS protocol now supports SSL, can be used from mssqlclient\n5) Support for EAPOL, EAP and WPS decoders\n6) VLAN tagging (IEEE 802.1Q and 802.1ad) support for ImpactPacket, done by dan.pisi\n7) New examples\n  a. rdp_check.py: tests whether an account (pwd or hashes) is valid against an RDP server\n  b. esentutl.py: ESE example to show how to interact with ESE databases (e.g. NTDS.dit)\n  c. ntfs-read.py: mini shell for browsing an NTFS volume\n  d. registry-read.py: Windows offline registry reader\n  e. secretsdump.py: agent-less remote windows secrets dump (SAM, LSA, CDC, NTDS)\n\n",
+            "v": "<0.9.11"
+        }
+    ],
     "ipython": [
         {
             "cve": "CVE-2015-6938",
