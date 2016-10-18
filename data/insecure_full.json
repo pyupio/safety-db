@@ -2815,7 +2815,7 @@
         {
             "changelog": "--------------------\n* Fix flake8 and cleanup tox building\n* Fix security vulnerability by sanitizing key input\n\n",
             "v": "<1.3.6"
-        },
+        }
     ],
     "pypiserver": [
         {
