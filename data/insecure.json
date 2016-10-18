@@ -264,6 +264,9 @@
     "products.plonepas": [
         "<3.9"
     ],
+    "proliantutils": [
+        "<2.1.4"
+    ],
     "ptah": [
         "<0.3.3"
     ],
