@@ -1500,6 +1500,12 @@
             "v": "<0.9.2"
         }
     ],
+    "django-advanced-reports": [
+        {
+            "changelog": "++++++++++++++++++\n\n* Escape AdvancedReport field values by default for security\n* Add link_to HTML decorator possibility by providing the BackOfficeReportMixin\n* Small cleanups and fix MANIFEST.in\n* Fix setup.py and add changelog to docs\n* Converted README to reST format\n\n",
+            "v": "<0.9.6"
+        }
+    ],
     "django-anonymizer-compat": [
         {
             "changelog": "-----------\n\n* Changed 'Anonymizer.attributes' to require every field to be listed.  This is\n  deal with the common security problem when a model is updated, but the\n  Anonymizer is not updated.\n\n  Fields that should not be anonymized should specify the special value \"SKIP\"\n  as the 'replacer'.\n\n* attributes must now be a list of tuples, not a dictionary.\n\n",

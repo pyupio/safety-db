@@ -121,6 +121,9 @@
     "django-access-tokens": [
         "<0.9.2"
     ],
+    "django-advanced-reports": [
+        "<0.9.6"
+    ],
     "django-anonymizer-compat": [
         "<0.4"
     ],
