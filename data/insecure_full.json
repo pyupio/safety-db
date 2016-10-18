@@ -62,6 +62,12 @@
             "v": "<1.0.0"
         }
     ],
+    "collective.localrolesdatatables": [
+        {
+            "changelog": "------------------\n\n- Fixed i18n support [keul]\n- Added italian translation [keul]\n- Added ``hasLocalRoles`` index to the ``_cmf_security_indexes`` list, so\n  the index is updated when security settings is updated [keul]\n- Disabled the CSV button as its output is the same of the Excel ones [keul]\n\n",
+            "v": "<1.0.2"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
