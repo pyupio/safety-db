@@ -5,6 +5,12 @@
             "v": "<2.0.2"
         }
     ],
+    "anuket": [
+        {
+            "changelog": "-----------------------\n\n* Add database migration support with alembic\n* Add database console scripts\n* Add Beaker sessions\n* Add a tutorial in the documentation\n* Improve the security of the deletion of users\n\n",
+            "v": "<0.5"
+        }
+    ],
     "authbwc": [
         {
             "changelog": "=========================\n\n* (SECURITY FIX) fixed an issue with the way the HTTP session user permissions\n  were loaded.  This vulnerability made it possible for a user to gain the\n  permissions of the user logged in previously.  The user would have had\n  to be sharing the same http session for this access to have been\n  gained.\n\n",
