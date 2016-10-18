@@ -2853,6 +2853,12 @@
             "v": "<1.1.7"
         }
     ],
+    "pyramid-fullauth": [
+        {
+            "changelog": "-------\n\n- python 3 compatibility (without oauth2 though)\n- cleared use of deprecated function `pyramid.security.authenticated_userid` in favour of `pyramid.request.Request.authenticated_userid` attribute.\n- make email fields case insensitive by using hybrid properties and CaseInsensitive comparator for model.\n\n",
+            "v": "<0.4.0"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",

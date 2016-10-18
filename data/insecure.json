@@ -331,6 +331,9 @@
     "pypiserver": [
         "<1.1.7"
     ],
+    "pyramid-fullauth": [
+        "<0.4.0"
+    ],
     "pyshop": [
         "<0.7.1"
     ],
