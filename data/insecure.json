@@ -149,6 +149,9 @@
     "django-fernet-fields": [
         "<2015.05.29"
     ],
+    "django-fiber": [
+        "<0.9.9.1"
+    ],
     "django-filebrowser-no-grappelli-staff": [
         "<3.4.2"
     ],
