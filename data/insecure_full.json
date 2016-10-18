@@ -1641,6 +1641,10 @@
         {
             "changelog": "--------------------------------------\n\nBug Fixes\n_________________\n\n- Fixed XSS flaw with lookup ``get_item_*`` methods. Thanks slafs for the report.\n- Fixed bug when passing widget instance rather than widget class to ``AutoCompleteSelectField`` or ``AutoCompleteSelectMultipleField``.\n\n\n",
             "v": "<0.5.2"
+        },
+        {
+            "changelog": "--------------------------------------\n\nThis release continues to clean up the API and JS. This was primarily motivated by\nS\u0142awomir Ehlert (slafs) who is working on an alternate implementation which\nuses Select2 rather than jQuery UI. This opens the door for additional apps\nwhich use the same lookup declaration API with a different JS library on the front\nend.\n\nPython 2.5 support has been dropped to work towards Python 3 support.\nThis also drops Django 1.2 support which is no longer receiving security fixes.\n\nFeatures\n_________________\n\n- Initial translations (pt_BR). Thanks to Felipe Prenholato for the patch.\n- Upgraded default jQuery UI version included by the template tags from 1.8.18 to 1.8.23\n- Added ``djselectableadd`` and ``djselectableremove`` events fired when items are added or removed from a mutliple select\n\nBug Fixes\n_________________\n\n- Cleaned up JS scoping problems when multiple jQuery versions are used on the page. Thanks Antti Kaihola for the report.\n- Fixed minor JS bug where text input was not cleared when selected via the combobox in the multiselect. Thanks Antti Kaihola for the report and Lukas Pirl for a hotfix.\n\nBackwards Incompatible Changes\n________________________________\n\n- ``get_item_value`` and ``get_item_id`` are no longer marked as safe by default.\n- Removed AutoComboboxSelectField and AutoComboboxSelectMultipleField. These were deprecated in 0.5.\n- Dropping official Python 2.5 support.\n- Dropping official Django 1.2 support.\n- ``paginate_results`` signature changed as part of the lookup refactor.\n- ``SELECTABLE_MAX_LIMIT`` can no longer be ``None``.\n\n\n",
+            "v": "<0.6.0"
         }
     ],
     "django-sql-explorer": [
