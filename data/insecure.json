@@ -167,6 +167,9 @@
     "django-piston": [
         "<0.2.3"
     ],
+    "django-pj-portfolio": [
+        "<1.0.0"
+    ],
     "django-pluggable-filebrowser": [
         "<3.4.2"
     ],
