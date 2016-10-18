@@ -17,6 +17,9 @@
     "clearsilver": [
         "<0.10.5"
     ],
+    "cmsplugin-filer": [
+        "<1.0.0"
+    ],
     "collective.noticeboard": [
         "<0.7.1"
     ],
