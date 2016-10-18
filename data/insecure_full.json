@@ -2793,6 +2793,12 @@
             "v": "<4.0"
         }
     ],
+    "pypiserver": [
+        {
+            "changelog": "-----------------\n1st release under cooperative ownership:\n\n- 65, 66: Improve Auth for private repos by supporting i\n  password protected package listings and downloads,\n  in addition to uploads (use the -a, --authenticate option\n  to specify which to protect).\n- 67: Add cache-control http-header, reqed by pip.\n- 56, 70: Ignore non-packages when serving.\n- 58, 62: Log all http-requests.\n- 61: Possible to change welcome-msg.\n- 77, 78: Avoid XSS by generating web-content with SimpleTemplate\n  instead of python's string-substs.\n- 38, 79: Instruct to use --extra-index-url for misspelled dependencies to work,\n  reorganize README instructions.\n\n\n",
+            "v": "<1.1.7"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
