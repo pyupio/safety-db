@@ -142,6 +142,9 @@
     "django-filebrowser-no-grappelli-staff": [
         "<3.4.2"
     ],
+    "django-fluent-comments": [
+        "<1.0.1"
+    ],
     "django-guts": [
         "<0.1.1"
     ],
