@@ -212,6 +212,12 @@
             "v": "<0.4"
         }
     ],
+    "depman": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~\n- Refactored command() for functionality and security\n\n",
+            "v": "<0.2.1"
+        }
+    ],
     "django": [
         {
             "cve": "CVE-2016-6186",
