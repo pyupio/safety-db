@@ -272,6 +272,9 @@
     "formencode": [
         "<1.0"
     ],
+    "ftw.mail": [
+        "<1.0a3"
+    ],
     "ftw.permissionmanager": [
         "<2.2.2"
     ],
