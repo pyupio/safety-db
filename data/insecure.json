@@ -410,6 +410,9 @@
     "pymemcache": [
         "<1.3.6"
     ],
+    "pypicloud": [
+        "<0.2.2"
+    ],
     "pypiserver": [
         "<1.1.7"
     ],
