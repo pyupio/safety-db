@@ -20,6 +20,9 @@
     "conn-check": [
         "<1.0.18"
     ],
+    "creavel": [
+        "<0.9.1"
+    ],
     "defusedexpat": [
         "<0.3"
     ],
