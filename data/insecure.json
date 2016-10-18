@@ -121,6 +121,9 @@
     "django-revproxy": [
         "<0.9.7"
     ],
+    "django-safedelete": [
+        "<0.3.3"
+    ],
     "django-tastypie": [
         "<0.9.10"
     ],

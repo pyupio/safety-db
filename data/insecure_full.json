@@ -1513,6 +1513,12 @@
             "v": "<0.9.7"
         }
     ],
+    "django-safedelete": [
+        {
+            "changelog": "=====\n\n- Prevent XSS in admin\n\n",
+            "v": "<0.3.3"
+        }
+    ],
     "django-tastypie": [
         {
             "cve": "CVE-2011-4104",
