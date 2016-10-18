@@ -3455,6 +3455,12 @@
             "v": "<1.5"
         }
     ],
+    "webhelpers": [
+        {
+            "changelog": "----------------\n* Added the secure_form_tag helper module, for generating form tags\n  including client-specific authorization tokens for preventing CSRF\n  attacks. Original patch by David Turner. Fixes 157.\n* current_url now accepts arguments to pass along to url_for. Fixes 251.\n* Updated prototype to 1.5.1.1.\n* Added image support to button_to. Patch by Alex Conrad. Fixes 184.\n* Fix radio_button and submit_to_remote not handling unicode values.\n  Fixes 235.\n* Added support for the defer attribute to javascript_include_tag. Suggested\n  by s0undt3ch. Fixes 214.\n* Added a distutils command compress_resources, which can combine CSS\n  and Javascript files, and compress Javascript via ShrinkSafe.  Add\n  \"command_packages=webhelpers.commands\" in [global] in setup.cfg to\n  enable this command for your package.\n\n",
+            "v": "<0.3.1"
+        }
+    ],
     "zodb": [
         {
             "cve": "CVE-2010-3495",
