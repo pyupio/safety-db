@@ -26,6 +26,12 @@
             "v": "<0.10.5"
         }
     ],
+    "collective.hostout": [
+        {
+            "changelog": "------------------\n- plugins can now call commands in other plugins\n- use buildout-user and buildout-group to increase security of hosted code\n- added setowners command to reset permissions\n- added setaccess command to setup passwordless access\n- moved hostout.ubuntu and hostout.supervisor to seperate plugins\n- introduced initcommand to set user to particular plugin\n- identify-file default to hostname_key so unique to host\n- usign sdist zips instead of eggs to make cross platform\n- python2.6 compatibility fixes\n\n",
+            "v": "<1.0a2"
+        }
+    ],
     "defusedexpat": [
         {
             "cve": "CVE-2013-1664",
