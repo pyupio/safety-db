@@ -606,6 +606,9 @@
         ">=2.1,<4.2",
         ">=4.1,<4.2a2"
     ],
+    "plone.app.contentmenu": [
+        "<1.1.7"
+    ],
     "plone.app.contenttypes": [
         "<1.2.15"
     ],
