@@ -81,6 +81,9 @@
     "collective.transcode.star": [
         "<0.22"
     ],
+    "collective.xmpp.chat": [
+        "<0.3.1"
+    ],
     "conn-check": [
         "<1.0.18"
     ],
