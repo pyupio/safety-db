@@ -109,6 +109,10 @@
         {
             "changelog": "=========================\n\n* Adding 'google' backend datastore, available by specifying 'google' as the\n  cache/session type. Note that this takes an optional table_name used to name\n  the model class used.\n* SECURITY BUG: Fixed security issue with Beaker not properly removing\n  directory escaping characters from the session ID when un-signed sessions\n  are used. Reported with patch by Felix Schwarz.\n* Fixed bug with Beaker not playing well with Registry when its placed above\n  it in the stack. Thanks Wichert Akkerman.\n\n\n",
             "v": "<0.9.4"
+        },
+        {
+            "changelog": "=========================\n\n.. warning::\n\n    Session hashing for encrypted sessions using PyCrypto has changed. This\n    will result in sessions being invalidated upon upgrading if PyCrypto is\n    used.\n\n* Fix bug with key_length not being coerced to a int for comparison. Patch by\n  Greg Lavallee.\n* Fix bug with cookie invalidation not clearing the cookie data. Patch by\n  Vasiliy Lozovoy.\n* Added ability to pass in cookie_path for the Session. Patch by Marcin\n  Kuzminski.\n* Add NSS crypto support to Beaker. Patch by Miloslav Trmac of Redhat.\n* Fix security bug with pycrypto not securing data such that an attacker could\n  possibly determine parts of the encrypted payload. Patch by Miloslav Trmac of\n  Redhat. See `CVE-2012-3458 <http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3458>`_.\n* Add ability to specify schema for database-backed sessions. Patch by Vladimir\n  Tananko.\n* Fix issue with long key names in memcached backend. Patch by Guillaume\n  Taglang.\n\n",
+            "v": "<1.6.4"
         }
     ],
     "bepasty": [
