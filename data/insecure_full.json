@@ -326,6 +326,12 @@
             "v": "<0.4"
         }
     ],
+    "deis": [
+        {
+            "changelog": "\n Maintenance\n\n - [`3292b7c`](https://github.com/deis/deis/commit/3292b7c693b84f5789bbb12bee33ad61f2ec400d) release: update version to v1.2.1\n - [`0d13d66`](https://github.com/deis/deis/commit/0d13d66ee40b6d41d6328b411b98521283a1300b) controller: update Django to 1.6.10 security release\n\n",
+            "v": "<1.2.0"
+        }
+    ],
     "django": [
         {
             "cve": "CVE-2016-6186",
