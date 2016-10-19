@@ -2112,6 +2112,12 @@
             "v": "<0.7"
         }
     ],
+    "edrnsite.policy": [
+        {
+            "changelog": "-------------------------\n\nThe following issues were addressed in this release:\n\n* CA-743 - Disable Google Analytics\n* CA-742 - Apply fix for CVE-2011-0720\n* CA-597 - Add clock event to update sign-in secret\n\n\n",
+            "v": "<1.0.5"
+        }
+    ],
     "errbot": [
         {
             "changelog": "-------------------\nBugs:\n\n- Security fix : the plugin directory permissions were too lax. Thx to Pinkbyte (Sergey Popov)\n- Corrected a bug in the exit of test mode, the shelves could loose data\n- Added a userfriendly git command check to notify if it is missing\n\nFeatures:\n\n- Added a version check: plugins can define min_err_version and max_err_version to notify their compatibility\n- Added an online configuration of the plugins. No need to make your plugin users hack the config.py anymore ! just use the command !config\n- Added a minimum Windows support.\n\n",
