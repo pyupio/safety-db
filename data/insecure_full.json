@@ -4411,6 +4411,12 @@
             "v": "<0.8"
         }
     ],
+    "stalker": [
+        {
+            "changelog": "========\n\n* **Update:** **Task.schedule_constraint** is now reflected to the tjp file\n  correctly.\n\n* **Fix:** **check_circular_dependency()** now checks if the **entity** and\n  the **other_entity** are the same.\n\n* **Fix:** **Task.to_tjp()** now correctly add the dependent tasks of a\n  container task.\n\n* **Fix:** **Task.__eq__()** now correctly considers the parent, depends,\n  resources, start and end dates.\n\n* **Update:** **Task.priority** is now reflected in tjp file if it is\n  different than the default value (500).\n\n* **New::** Added a new class called **Vacation** to hold user vacations.\n\n* **Update:** Removed dependencies to ``pyramid.security.Allow`` and\n  ``pyramid.security.Deny`` in couple of packages.\n\n* **Update:** Changed the way the ``stalker.defaults`` is created.\n\n* **Fix:** **EnvironmentBase.get_version_from_full_path()**,\n  **EnvironmentBase.get_versions_from_path()**,\n  **EnvironmentBase.trim_repo_path()**, **EnvironmentBase.find_repo** methods\n  are now working properly.\n\n* **Update:** Added **Version.absolute_full_path** property which renders the\n  absolute full path which also includes the repository path.\n\n* **Update:** Added **Version.absolute_path** property which renders the\n  absolute path which also includes the repository path.\n\n",
+            "v": "<0.2.0.b7"
+        }
+    ],
     "stargate": [
         {
             "changelog": "---\n\n- Add support for the HyBi version of WebSockets (specifically version-10). This version was released to solve some previous security concerns and\nwill be the version in Firefox 7/8 and Chrome 14 onwards accoring to Wikipedia.\n- Introduces a dependency on ws4py\n\n- See http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10\n\n",
