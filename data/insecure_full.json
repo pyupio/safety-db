@@ -3801,6 +3801,10 @@
         {
             "changelog": "* WARNING: pylons.lib.decorators has had two functions removed:\n  ``determine_response_charset`` and ``encode_formencode_errors``.\n* Updated dependencies to latest versions of Paste, PasteDeploy, and\n  compatibility for the latest WebOb 1.2 betas.\n* authenticate_form allows for GET. Patch by Domen Ko\u017ear.\n* jsonify now properly sets charset to utf-8.\n* Add ability for jsonify to handle objects with a __json__ attribute using\n  custom JSONEncoder class similar to TG2. Patch by Bob Farrell.\n* Added ability for __before__ to reference a callable function. Patch\n  contributed by mverdone.\n* Pulled in JSON-RPC support from agentultra's pylons fork.\n* Apply patch for proper pylons.__version__ under Windows. Contributed by\n  Christoph Zwerschke.\n* Utilize MarkupSafe for faster HTML escaping.\n* Fix signed cookies by using standard base64 alphabet, and prevent timing\n  attacks on signature comparison.\n* Added setup of app_globals and config to Pylons config.init_app to ensure\n  as long as the Pylons application is loaded, the app_globals and config\n  will be appropriately initialized.\n* Documentation updates.\n\n",
             "v": "<1.0.1RC1"
+        },
+        {
+            "changelog": "* In the event of a NilAccept for the language, request.languages() would\n  throw an AttributeError exception. Fixes 24.\n* Encode Location HTTP header in redirect responses in UTF-8. Per\n  RFC 3987. Refers to 15.\n* Remove \"Post Traceback\" as it was a possible XSS vector with prior versions\n  of WebError, and the PylonsHQ site is no longer in existence to support them.\n\n",
+            "v": "<1.0.2"
         }
     ],
     "pymemcache": [
