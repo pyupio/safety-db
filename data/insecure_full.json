@@ -4872,6 +4872,12 @@
             "v": "==1.0.0"
         }
     ],
+    "troposphere": [
+        {
+            "changelog": "- Added new Google Group for discussion:\n  https://groups.google.com/forum/!forum/cloudtools-dev\n- Fixing ValueError message to refer the correct package [GH-135]\n- Change cfn to add -R with no argument lists all the Stacks [GH-138]\n- Add eu-central-1 region (Frankfurt) [GH-139]\n- ConfigurationTemplate is an Object [GH-140]\n- Release: AWS CloudFormation on 2014-11-06 [GH-141]\n- Remove duplicate security_group from port [GH-143]\n- UpdatePolicy and CreationPolicy [GH-144]\n- Fixes duplicate key error reporting [GH-145]\n- Fix warning in CloudFront example description [GH-148]\n- Cfn script create bucket in the specified region [GH-149]\n- Remove Unnecessary EOL whitespace [GH-150]\n  Note: this changes the default JSON separators.\n- More metadata options [GH-153]\n- Metadata auth [GH-155]\n- Fixed CreationPolicy [GH-157] [GH-160]\n- Addded AWS template VPC_Single_Instance_In_Subnet example [GH-162]\n- Add 2014-12-24 CloudFormation release changes [GH-167] [GH-168] [GH-169]\n- Add GSI & LSI Functionality [GH-161] [GH-172]\n- Fixed landscape.io issues [GH-170]\n\n",
+            "v": "<0.7.0"
+        }
+    ],
     "tryton": [
         {
             "cve": "CVE-2012-0215",
