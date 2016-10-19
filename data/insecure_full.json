@@ -224,6 +224,10 @@
     ],
     "convict": [
         {
+            "changelog": "==================\n\n  * Fix loading consecutive files could cause an error to be thrown 111\n        (Abdullah Ali voodooattack)\n  * Coerce values loaded from a file 96 (Jens Olsson jsol)\n  * Improvement: Pass instance to coerce 109 (Abdullah Ali voodooattack)\n  * Fix missing return in validate reducer 101 (Kris Reeves myndzi)\n  * Deps: moment\n  * Deps: validator\n  * Switch back from Blanket to Istanbul for test coverage (Marc-Aur\u00e8le Darche madarche)\n  * Stricter JSLint linting (Marc-Aur\u00e8le Darche madarche)\n  * Improve documentation (Olivier Lalonde olalonde, Marc-Aur\u00e8le Darche madarche)\n\n",
+            "v": "<1.1.0"
+        },
+        {
             "changelog": "==================\n\n  * Deps: moment2.11.2 to fix\n        https://nodesecurity.io/advisories/moment_regular-expression-denial-of-service\n  * Deps: validator4.6.1 to stay in sync\n\n",
             "v": "<1.1.1"
         }
