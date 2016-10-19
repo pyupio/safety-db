@@ -2434,6 +2434,12 @@
             "v": "<0.4.4"
         }
     ],
+    "ircpdb": [
+        {
+            "changelog": "================\n\n - Reduced security concerns by making it impossible to configure the\n   debugger to respond to all usernames.\n - Fixed a UI glitch in which the prompt would be displayed in inappropriate\n   situations.\n\n",
+            "v": "<1.3"
+        }
+    ],
     "ironic-discoverd": [
         {
             "cve": "CVE-2015-5306",
