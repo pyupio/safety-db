@@ -2328,6 +2328,12 @@
             "v": "<0.1.5"
         }
     ],
+    "letsencrypt-plesk": [
+        {
+            "changelog": "* Debian 6 is now supported\n* No more conflicts with alt-python-virtualenv on CloudLinux\n* Extension now ignores unsupported domains:\n  * Inactive (disabled/suspended) domains\n  * Wildcard subdomains\n  * Domains without web hosting\n  * IDN domains\n* Fixed PHP Warning: Invalid argument supplied for foreach\n* Users can now secure Plesk with www. prefix in hostname (issue 11)\n* Store CLI options for certificate renewal (issue 46)\n\n",
+            "v": "<1.31"
+        }
+    ],
     "libtaxii": [
         {
             "changelog": "-------\n`(diff) <https://github.com/TAXIIProject/libtaxii/compare/1.1.104...1.1.105>`__\n\n- Fixed multiple XML parsing related vulnerabilities (Thanks guidovranken of IntelWorks for the vulnerability research!)\n\n",
