@@ -2321,6 +2321,12 @@
             "v": "<1.5.1"
         }
     ],
+    "gocept.autocomplete": [
+        {
+            "changelog": "----------------\n\n- first release\n- NOTE: still missing security declarations on the autocomplete-search view.\n  This means anyone can query the source for values.\n",
+            "v": "<0.1"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",
