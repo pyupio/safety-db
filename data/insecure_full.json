@@ -3570,6 +3570,12 @@
             "v": "<0.3.3"
         }
     ],
+    "ptahcms": [
+        {
+            "changelog": "==================\n\nFeatures\n--------\n\n- Added `ptah.enable_modules` setting, list of enabled\n  management modules.\n\n- Require alembic 0.1.1\n\n\nBug fixes\n---------\n\n- Encode `content-type` header for blob `data` rest action\n\n- Do not use `request` for application factories in\n  `applications` rest action. It brakes security for current root object.\n\n\n",
+            "v": "<0.3.3"
+        }
+    ],
     "pycapnp": [
         {
             "changelog": "- Update bundled C++ libcapnp to v0.5.1.2 security release\n\n\n",
