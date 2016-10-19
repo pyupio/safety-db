@@ -163,6 +163,12 @@
             "v": "<0.36.0"
         }
     ],
+    "cherrypy-cgiserver": [
+        {
+            "changelog": "=============\n\n2013-01-06\n\n- started to fill the environment variables\n\n- REDIRECT_STATUS ist set because of PHP security settings\n\n\n=============\n",
+            "v": "<0.1.1"
+        }
+    ],
     "cinder": [
         {
             "cve": "CVE-2013-1068",
