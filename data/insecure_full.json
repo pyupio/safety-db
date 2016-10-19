@@ -4791,6 +4791,12 @@
             "v": "<2.0.5"
         }
     ],
+    "supervisor": [
+        {
+            "changelog": "------------------\n\n- Fixed a bug where parsing ``environment=`` did not verify that key/value\n  pairs were correctly separated.  Patch by Martijn Pieters.\n\n- Fixed a bug in the HTTP server code that could cause unnecessary delays\n  when sending large responses.  Patch by Philip Zeyliger.\n\n- When supervisord starts up as root, if the ``-c`` flag was not provided, a\n  warning is now emitted to the console.  Rationale: supervisord looks in the\n  current working directory for a ``supervisord.conf`` file; someone might\n  trick the root user into starting supervisord while cd'ed into a directory\n  that has a rogue ``supervisord.conf``.\n\n- A warning was added to the documentation about the security implications of\n  starting supervisord without the ``-c`` flag.\n\n- Add a boolean program option ``stopasgroup``, defaulting to false.\n  When true, the flag causes supervisor to send the stop signal to the\n  whole process group.  This is useful for programs, such as Flask in debug\n  mode, that do not propagate stop signals to their children, leaving them\n  orphaned.\n\n- Python 2.3 is no longer supported.  The last version that supported Python\n  2.3 is Supervisor 3.0a12.\n\n- Removed the unused \"supervisor_rpc\" entry point from setup.py.\n\n- Fixed a bug in the rotating log handler that would cause unexpected\n  results when two processes were set to log to the same file.  Patch\n  by Whit Morriss.\n\n- Fixed a bug in config file reloading where each reload could leak memory\n  because a list of warning messages would be appended but never cleared.\n  Patch by Philip Zeyliger.\n\n- Added a new Syslog log handler.  Thanks to Denis Bilenko, Nathan L. Smith,\n  and Jason R. Coombs, who each contributed to the patch.\n\n- Put all change history into a single file (CHANGES.txt).\n\n",
+            "v": "<3.0b1"
+        }
+    ],
     "swauth": [
         {
             "changelog": "\n    This is first release after move to OpenStack Infra\n\n    Allow users to change their own password/key\n\n    Add support for storage policy\n\n    Show password prompt if key is not specified\n\n    Allow to use Keystone at same time\n\n    Support SHA512 for password hashing\n\n    Code cleanup\n\n    Bugfixies a security fixies\n\n",
