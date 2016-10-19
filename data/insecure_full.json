@@ -67,6 +67,12 @@
             "v": "<2.0.2"
         }
     ],
+    "apache-libcloud": [
+        {
+            "changelog": "-----------------------------------\n\nGeneral\n~~~~~~~\n\n- Fix a bug with the Libcloud SSL verification code. Code was too strict and\n  didn't allow \"-\" character in the sub-domain when using a wildcard\n  certificate.\n\n  Note: This is NOT a security vulnerability. (LIBCLOUD-244)\n  [Tomaz Muraus]\n\nCompute\n~~~~~~~\n\n- Add new Rackspace Nova driver for Chicago (ORD) location (LIBCLOUD-234)\n  [Brian McDaniel]\n\n- Add capacity information to Vdc objects and implement power operations.\n  (LIBCLOUD-239)\n  [Michal Galet]\n\n- Allow user to pass 'timeout' argument to the 'deploy_node' method.\n  [Tomaz Muraus]\n\n- Add ex_list_security_groups, ex_authorize_security_group and\n  ex_describe_all_keypairs methods to the EC2 driver. (LIBCLOUD-241,\n  LIBCLOUD-243)\n  [Nick Bailey]\n\n- Add new methods for managing storage volumes and other extenstion methods\n  to the IBM SCE driver. (LIBCLOUD-242)\n  [Sengor Kusturica]\n\nStorage\n~~~~~~~\n\n- Add the following new methods to the CloudFiles driver:\n  ex_set_account_metadata_temp_url_key, ex_get_object_temp_url. (GITHUB-72)\n  [Shawn Smith]\n\nLoad-balancer\n~~~~~~~~~~~~~\n\n- Add 'balancer' attribute to the Member instance. This attribute refers to\n  the LoadBalancer instance this member belongs to.\n  [Tomaz Muraus]\n\n",
+            "v": "<0.11.2"
+        }
+    ],
     "archmage": [
         {
             "changelog": "==============\nBug fixes:\n\n* [CVE-2015-1589] Fixed directory traversal bug\n\n",
