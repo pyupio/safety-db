@@ -4609,6 +4609,12 @@
             "v": "<1.1"
         }
     ],
+    "simple-salesforce": [
+        {
+            "changelog": "=====\n\nFeatures\n--------\n- [103] Require requests[secure] to allow for system openssl, which will allow\n  for TLSv1.2 in Python < 2.7.9 assuming system openssl is newer than Python's.\n\nOther\n-----\n- Replaced httpretty with responses for unit tests due to SSL-related errors\n  in httpretty.\n\n\n",
+            "v": "<0.69"
+        }
+    ],
     "soappy": [
         {
             "changelog": "-------------------\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- LOL part\n  [kiorky]\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- XXE part\n  [kiorky]\n- Remove dependency on fpconst.\n- adding maptype  [Sandro Knau\u00df]\n- Support / (and other reserved characters) in the password. [Ionut Turturica]\n- Client.HTTPWithTimeout: fixed constructor's docstring and comments -named the diferences\n  with respect to the overriden method -fixed\n  wrong reference to class in module 'httplib' -added documentation of param 't[German Larrain\n- fixed module docstring location (all imports must be below them)[German Larrain]f\n- fix error \"Bad types (class java.math.BigInteger -> class java.lang.Integer)\" - Clayton Caetano de Sousa]\n\n\n\n",
