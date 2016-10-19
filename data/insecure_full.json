@@ -2056,6 +2056,10 @@
     ],
     "errbot": [
         {
+            "changelog": "-------------------\nBugs:\n\n- Don't nag the user for irrelevant settings from the setting-template\n- Added a message size security in the framework to avoid getting banned from servers when a plugin spills too much\n\nFeatures:\n\n- Added a test mode (-t) to ease plugin development (no need to have XMPP client / server to install and connect to in order to test the bot)\n- Added err-reviewboard a new plugin by Glen Zangirolam https://github.com/glenbot to the repos list\n- Added subcommands supports like the function log_tail will match !log tail [args]\n\n",
+            "v": "<1.2.0"
+        },
+        {
             "changelog": "-------------------\nBugs:\n\n- Security fix : the plugin directory permissions were too lax. Thx to Pinkbyte (Sergey Popov)\n- Corrected a bug in the exit of test mode, the shelves could loose data\n- Added a userfriendly git command check to notify if it is missing\n\nFeatures:\n\n- Added a version check: plugins can define min_err_version and max_err_version to notify their compatibility\n- Added an online configuration of the plugins. No need to make your plugin users hack the config.py anymore ! just use the command !config\n- Added a minimum Windows support.\n\n",
             "v": "<1.3.0"
         }
