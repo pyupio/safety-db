@@ -87,6 +87,9 @@
     "collective.xmpp.chat": [
         "<0.3.1"
     ],
+    "confidant": [
+        "<1.1.14"
+    ],
     "conn-check": [
         "<1.0.18"
     ],
