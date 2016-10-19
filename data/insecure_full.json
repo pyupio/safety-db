@@ -4545,6 +4545,12 @@
             "v": "<1.0.0"
         }
     ],
+    "webapp2": [
+        {
+            "changelog": "=========================\n- Removed Config from webapp2 core. It is now part of the new \"webapp2_extras\"\n\tpackage.\n- Added the package webapp2_extras. These are all optional modules that\n\tcomplement webapp2 with common functionalities. Currently they include:\n\t- webapp2_extras.config: Configuration object.\n\t- webapp2_extras.jinja2: Support for Jinja2 templating.\n\t- webapp2_extras.json: JSON utilities.\n\t- webapp2_extras.routes: Extended route classes.\n\t- webapp2_extras.securecookie: Signed cookie serializer.\n\t- webapp2_extras.sessions: Sessions support.\n\n\n",
+            "v": "<1.2"
+        }
+    ],
     "wpull": [
         {
             "changelog": "=====================\n\n* Security: Fixed ``Referer`` HTTP header field leaking from HTTPS to HTTP.\n* Fixed ``AttributeError`` in proxy when using PhantomJS and ``pre_response`` scripting hook.\n* Fixed early program end when server returns error fetching robots.txt.\n* Fixed uninteresting errors outputted if program is forcefully closed.\n* Fixed ``--referer`` option not applied to subsequent requests.\n\n\n",
