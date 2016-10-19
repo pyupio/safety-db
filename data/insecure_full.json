@@ -722,6 +722,10 @@
             "v": "<1.8.15"
         },
         {
+            "changelog": "==========================\nDjango 1.9.4 release notes\n==========================\n\n*March 5, 2016*\n\nDjango 1.9.4 fixes a regression on Python 2 in the 1.9.3 security release\nwhere ``utils.http.is_safe_url()`` crashes on bytestring URLs (:ticket:`26308`).\n",
+            "v": "<1.9.4"
+        },
+        {
             "cve": "CVE-2009-3695",
             "description": "Algorithmic complexity vulnerability in the forms library in Django 1.0 before 1.0.4 and 1.1 before 1.1.1 allows remote attackers to cause a denial of service (CPU consumption) via a crafted (1) EmailField (email address) or (2) URLField (URL) that triggers a large amount of backtracking in a regular expression.",
             "urls": [
