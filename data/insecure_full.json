@@ -4548,6 +4548,12 @@
             "v": "<1.2"
         }
     ],
+    "zope.i18n": [
+        {
+            "changelog": "-----------\n\n- Bug: Fixed dependency on ``zope.security`` to require a version that\n  does not have the hidden dependency on ``zope.testing``.\n\n\nNote: Releases between 3.2.0 and 3.4.0b1 were not tracked as individual\npackages. The changes can be reconstructed from the Zope 3 changelog.\n\n\n",
+            "v": "<3.4.0b1"
+        }
+    ],
     "zope2": [
         {
             "cve": "CVE-2010-3198",
