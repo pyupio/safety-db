@@ -2600,6 +2600,10 @@
     ],
     "mitmproxy": [
         {
+            "changelog": "\n    * Support for loading and converting older dumpfile formats (0.13 and up)\n\n    * Content views for inline script (chrisczub)\n\n    * Better handling of empty header values (Benjamin Lee/bltb)\n\n    * Fix a gnarly memory leak in mitmdump\n\n    * A number of bugfixes and small improvements\n\n\n",
+            "v": "<0.15"
+        },
+        {
             "changelog": "\n    * Simplify repository and release structure. mitmproxy now comes as a single package, including netlib and pathod.\n\n    * Rename the Python package from libmproxy to mitmproxy.\n\n    * New option to add server certs to client chain (CVE-2016-2402, John Kozyrakis)\n\n    * Enable HTTP/2 by default (Thomas Kriechbaumer)\n\n    * Improved HAR extractor (Shadab Zafar)\n\n    * Add icon for OSX and Windows binaries\n\n    * Add content view for query parameters (Will Coster)\n\n    * Initial work on Python 3 compatibility\n\n    * locust.io export (Zohar Lorberbaum)\n\n    * Fix XSS vulnerability in HTTP errors (Will Coster)\n\n    * Numerous bugfixes and minor improvements\n\n\n",
             "v": "<0.17"
         }
