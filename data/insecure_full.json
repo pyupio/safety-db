@@ -3397,6 +3397,12 @@
             "v": "<2.0.2"
         }
     ],
+    "plumi.app": [
+        {
+            "changelog": "===========================\n\n - file ownership tweaks for production buildouts [dimo, clopy]\n - add security hotfix, update LinguaPlone & plone.app.discussion [dimo]\n - plonesite recipe tweaks [dimo]\n\n\n",
+            "v": "<4.2"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
