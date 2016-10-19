@@ -710,6 +710,9 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "quickfix": [
+        "<1.7.1"
+    ],
     "reprozip": [
         "<0.7.1"
     ],
