@@ -3819,6 +3819,12 @@
             "v": "<1.1.2"
         }
     ],
+    "pyramid-weblayer": [
+        {
+            "changelog": "\nAdd a tween to secure all relative redirect responses when HSTS is enabled. This\nfixes redirects in chrome, for apps running behind a proxy.\n\n",
+            "v": "<0.10.2"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
