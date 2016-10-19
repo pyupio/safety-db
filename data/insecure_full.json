@@ -1969,6 +1969,12 @@
             "v": "<2.8"
         }
     ],
+    "droopescan": [
+        {
+            "changelog": "======\n\n* Update Drupal, new versions: 6.36 & 7.38 (Security fixes)\n\n",
+            "v": "<1.28.0"
+        }
+    ],
     "dulwich": [
         {
             "changelog": "\n SECURITY BUG FIXES\n\n  * Fix buffer overflow in C implementation of pack apply_delta().\n    (CVE-2015-0838)\n\n    Thanks to Ivan Fratric of the Google Security Team for\n    reporting this issue.\n    (Jelmer Vernoo\u0133)\n\n",
