@@ -1875,6 +1875,12 @@
             "v": "<1.3.3"
         }
     ],
+    "django-nested-formset": [
+        {
+            "changelog": "-----\n\n*Release date: 7 March 2015*\n\n* Dropped Django 1.5.x support; it's no longer receiving security\n  updates or maintenance.\n* Updated accepted factory `kwargs` for Django 1.7 and later\n* Fixed builds against Django tip.\n\n",
+            "v": "<0.1.4"
+        }
+    ],
     "django-ninecms": [
         {
             "changelog": "-------\n\nDate:   Thu Aug 27 2015\n\nWhat's new\n\n- Improvements\n\nAll changes\n\n- Various amendments (templatetags)\n- Security fix (urls)\n- Removed parent field (admin)\n- Improved block render template selection, classes, menu rendering (views)\n- Amended TaxonomyTerm (models, migrations)\n- Amended styles (css)\n- Amended tests coverage for page types forms\n- Reorganized tests into multiple files\n\n",
