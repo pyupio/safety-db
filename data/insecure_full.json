@@ -3427,6 +3427,12 @@
             "v": "<1.1.2"
         }
     ],
+    "pysap": [
+        {
+            "changelog": "-------------------\n\n- Fixed vulnerabilities in `LZC` and `LZH` compression libraries ([CVE-2015-2282 and CVE-2015-2278](https://www.coresecurity.com/advisories/sap-lzc-lzh-compression-multiple-vulnerabilities)).\n  Added test cases for checking proper fixes.\n- `pysap/SAPRouter.py`: Moved SAP Router native proxy implementation to the SAP Router module so it can be reused.\n- `examples/router_portfw.py`: Using the native proxy implementation in SAP Router module.\n\n\n",
+            "v": "<0.1.7"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
