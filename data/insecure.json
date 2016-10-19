@@ -415,6 +415,9 @@
     "httpsig": [
         "<1.0.0"
     ],
+    "httpsig-cffi": [
+        "<1.0.0"
+    ],
     "invenio-search": [
         "<0.1.3"
     ],
