@@ -333,6 +333,9 @@
     "flask-async": [
         "<0.6.1"
     ],
+    "flask-hookserver": [
+        "<0.2.1"
+    ],
     "flask-micropub": [
         "<0.2.2"
     ],
