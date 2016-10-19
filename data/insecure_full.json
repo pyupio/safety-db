@@ -2297,6 +2297,12 @@
             "v": "<2.2.2"
         }
     ],
+    "ftw.task": [
+        {
+            "changelog": "------------------\n\n- Hide fields in task, using a dictionary instead of False or -1.\n  [Julian Infanger]\n\n- onegov.ch approved: add badge to readme.\n  [jone]\n\n- Use safe-html-transform for textfield (security audit).\n  [mathias.leimgruber]\n\n- Workspace details PDF: do not show empty listings.\n  [jone]\n\n- Fix task portlet for anonymous users and zope users. 5\n  [jone]\n\n- Fix task creation for Plone 4.2. 4\n  [jone]\n\n\n",
+            "v": "<2.4.2"
+        }
+    ],
     "gandi.cli": [
         {
             "changelog": "----\n\n* Add new dependency to request library, for certificate\n  validation during xmlrpc calls.\n* New command 'gandi vm kernels' to list available kernels,\n  can also be used to filter by vm to know which kernel is\n  compatible.\n* New parameters --cmdline and --kernels for command\n  'gandi disk update' to enable updating of cmdline\n  and/or kernel.\n* New parameter --size for command 'gandi vm create'\n  to specify disk size during vm creation.\n* Handle max_memory setting in command 'gandi vm update'\n  when updating memory. New parameter --reboot added to\n  accept a VM reboot for non-live update.\n* Update command 'gandi vm images' to also display usable\n  disks as image for vm creation.\n* Security: validate server certificate using request as\n  xmlrpc transport.\n* Security: restrict configuration file rights to owner only.\n* Refactor code of custom parameters, to only query API when\n  needed, improving overall speed of all commands.\n* Fixes bug with sshkey parameter for 'gandi paas create'\n  and 'gandi paas update' commands.\n* When an API call fail, we can call again using dry-run flag\n  to get more explicit errors. Used by 'gandi vhost create'\n  command.\n* Allow Gandi CLI to load custom modules using\n  'GANDICLI_PATH' environment variable, was previously only\n  done by commands.\n\n\n",
