@@ -4387,6 +4387,12 @@
             "v": "<1.1"
         }
     ],
+    "slc.mailrouter": [
+        {
+            "changelog": "----------------\n\n- fixed permission and getting user [reinhardt]\n- use getMemberById for group mail, too [reinhardt]\n- newSecurityManager does not make sense when mailing to group [reinhardt]\n- enable validation - needs patterns update [chaoflow]\n- made redirect work [pilz]\n- use SecurityManager.checkPermission(), weird failures with\n  user.has_permission() [reinhardt]\n- added gitignore [thomasw]\n- an id for the main div [reinhardt]\n\n\n",
+            "v": "<0.2"
+        }
+    ],
     "soappy": [
         {
             "changelog": "-------------------\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- LOL part\n  [kiorky]\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- XXE part\n  [kiorky]\n- Remove dependency on fpconst.\n- adding maptype  [Sandro Knau\u00df]\n- Support / (and other reserved characters) in the password. [Ionut Turturica]\n- Client.HTTPWithTimeout: fixed constructor's docstring and comments -named the diferences\n  with respect to the overriden method -fixed\n  wrong reference to class in module 'httplib' -added documentation of param 't[German Larrain\n- fixed module docstring location (all imports must be below them)[German Larrain]f\n- fix error \"Bad types (class java.math.BigInteger -> class java.lang.Integer)\" - Clayton Caetano de Sousa]\n\n\n\n",
