@@ -2955,6 +2955,12 @@
             "v": "<0.5.6"
         }
     ],
+    "pexpect": [
+        {
+            "changelog": "```````````\n\n* Fix exception handling from :func:`select.select` on Python 2 (:ghpull:`38`).\n  This was accidentally broken in the previous release when it was fixed for\n  Python 3.\n* Removed a workaround for ``TIOCSWINSZ`` on very old systems, which was causing\n  issues on some BSD systems (:ghpull:`40`).\n* Fixed an issue with exception handling in :mod:`~pexpect.pxssh` (:ghpull:`43`)\n\nThe documentation for :mod:`~pexpect.pxssh` was improved.\n\n",
+            "v": "<3.2"
+        }
+    ],
     "pillow": [
         {
             "changelog": "------------------\n\n- Fixed CVE-2014-3589, a DOS in the IcnsImagePlugin (backport)\n  [Andrew Drake]\n\n\n",
