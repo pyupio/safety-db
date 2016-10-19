@@ -4872,6 +4872,12 @@
             "v": "==1.0.0"
         }
     ],
+    "troposphere": [
+        {
+            "changelog": "- EC2 SecurityGroup Egress & Ingress rules should be objects\n- Fix Attributes validator for ELB Policies\n- Allow PolicyDocuments to use (if present) awacs Policy objects\n- Add test for matching against a tuple of types\n\n",
+            "v": "<0.2.8"
+        }
+    ],
     "tryton": [
         {
             "cve": "CVE-2012-0215",
