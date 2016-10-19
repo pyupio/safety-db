@@ -3094,6 +3094,12 @@
             "v": "<1.3"
         }
     ],
+    "plock": [
+        {
+            "changelog": "------------------\n\n- Create install_dir if it does not exist\n- Use Plock Pins instead of PythonPackages as zc.buildout configuration host\n- Add -v, ``--version`` to display version\n- Bug fix: don't break ``--list-addons``\n- Bug fix: don't break ``--install-addons``\n- Remove ``--insecure``\n- Remove ``--virtualenv``\n- Remove ``--zope2-only``\n\n",
+            "v": "<0.1.7"
+        }
+    ],
     "plomino": [
         {
             "changelog": "-----------------\n* support for labels associated to fields\n* disabled formula editing for PlominoDesigner (so we can allow a user to change\n  form layouts without breaking the formulas)\n* fix a major vulnerability in open_url (now, targeted sources must be declared\n  safe from an local package)\n* allow to load specific CSS and JS in a PlominoForm\n* GenericSetup import/export for Plomino db marked as templates\n* allow to inject HTML attributes on fields\n* extended translation support for views\n\n",
