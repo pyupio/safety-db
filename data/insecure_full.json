@@ -4667,6 +4667,10 @@
         {
             "changelog": "------------------\n\n- Adjust test for the contentprovider feature to not depend on the\n  ContentProviderBase class that was introduced in zope.contentprovider 3.5.0.\n  This restores compatibility with Zope 2.10.\n\n- Security issue, removed IBrowserRequest from IFormLayer. This prevents to\n  mixin IBrowserRequest into non IBrowserRequest e.g. IJSONRPCRequest.\n  This should be compatible since a browser request using z3c.form already\n  provides IBrowserRequest and the IFormLayer is only a marker interface used\n  as skin layer.\n\n- Add English translation (generated from translation template using\n  msgen z3c.form.pot > en/LC_MESSAGES/z3c.form.po).\n\n- Added Norwegian translation, thanks to Helge Tesdal and Martijn Pieters.\n\n- Updated German translation.\n\n\n",
             "v": "<2.4.2"
+        },
+        {
+            "changelog": "------------------\n\n- Remove unneeded dependency on deprecated ``zope.app.security``.\n\n- Fixed ButtonActions.update() to correctly remove actions when called again,\n  after the button condition become false.\n\n\n",
+            "v": "<2.4.4"
         }
     ],
     "zeep": [
