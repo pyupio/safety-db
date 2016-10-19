@@ -433,6 +433,9 @@
     "google-appengine": [
         "<1.5.4"
     ],
+    "gsutil": [
+        "<3.22"
+    ],
     "holocron": [
         "<0.2.0"
     ],
