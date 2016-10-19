@@ -3311,6 +3311,12 @@
             "v": "<2.0.2"
         }
     ],
+    "ploy": [
+        {
+            "changelog": "-----------------\n\n* There is no need to add the AWS account id to security group names anymore.\n  [fschulze]\n\n* Rules are removed from security groups if they aren't defined in the config.\n  [fschulze]\n\n* Allow adding of custom config massagers from inside the config.\n  [fschulze]\n\n* Support block device maps to enable use of more than one ephemeral disk.\n  [fschulze]\n\n* Added ``do`` method on ec2 and plain instances which allows to call fabric\n  commands.\n  [fschulze]\n\n* Use PathMassager for ``access-key-id`` and ``secret-access-key`` in the\n  ``ec2-master`` section. This might break existing relative paths for these\n  options.\n  [fschulze]\n\n* Added support for EBS boot instances.\n  [fschulze]\n\n* Add option ``ssh-key-filename`` to point to a private ssh key for ec2 and\n  plain instances.\n  [fschulze]\n\n* Fix Fabric integration for newer versions of Fabric.\n  [fschulze]\n\n* Support ``proxycommand`` option for plain instances. This also caused a\n  change in the ``init_ssh_key`` API for plugins.\n  [fschulze]\n\n* Support ``ProxyCommand`` from ``~/.ssh/config`` for plain instances.\n  Requires Fabric 1.5.0 and Paramiko 1.9.0 or newer.\n  [fschulze]\n\n\n",
+            "v": "<0.12"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
