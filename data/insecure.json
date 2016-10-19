@@ -877,6 +877,9 @@
     "vnccollab.theme": [
         "<1.5.2"
     ],
+    "wagtail": [
+        "<1.7"
+    ],
     "waitress": [
         "<1.0.0"
     ],
