@@ -4577,6 +4577,12 @@
             "v": "<0.1006.1"
         }
     ],
+    "yaybu": [
+        {
+            "changelog": "-------------------\n\n- Better error handling. Proper detection of resource redefinition and of\n  undefined resource type use. Yay node graph is walked lazily so Yaybu\n  errors can access line numbers and other metadata. The resource bundle\n  is parsed and error checked before we even try and connect to server.\n\n- Exit code ``254`` is now used when no changes have been made. ``253`` is\n  used for unknown errors. ``255`` is now a connection errror.\n\n- Refactor template handling to allow ``{% extends \"index.html\" %}``. You can\n  refer to templates on the ``YAYBUPATH``, and you can override templates by\n  putting new templates higher up the ``YAYBUPATH`` search.\n\n- Yaybu hackers now have additional ways of invoking the debugger, including\n  an equivalent to the pdb ``pm()`` and ``set_trace()`` methods..\n\n- File creation is now more secure: permissions are set before content\n  is written.\n\n- We now use Yay 0.0.41 as it has a cleaner API for injecting Python objects.\n\n\n",
+            "v": "<0.1.14"
+        }
+    ],
     "zeep": [
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
