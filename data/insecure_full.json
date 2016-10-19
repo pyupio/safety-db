@@ -1777,6 +1777,10 @@
         {
             "changelog": "-----\n\n- Fixing security vulnerability where username and password could be transmitted in plain text before starting TLS (reported by Weitzhofer Bernhard).\n\n\n",
             "v": "<0.9.5"
+        },
+        {
+            "changelog": "-----\n\n- Fixing security vulnerability allowing users to authenticate with a valid username but with an empty password if anonymous authentication is allowed on the LDAP server (Petros Moisiadis).\n- Fixing sync_users command for Microsoft Active Directory (jjagielka).\n\n\n",
+            "v": "<0.9.8"
         }
     ],
     "django-rated": [
