@@ -204,6 +204,12 @@
             "v": "<0.22"
         }
     ],
+    "collective.xmpp.chat": [
+        {
+            "changelog": "------------------\n\n- Update JS to converse.js 0.6.3 (includes important security fix). [jcbrand] \n\n\n",
+            "v": "<0.3.1"
+        }
+    ],
     "conn-check": [
         {
             "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
