@@ -4613,6 +4613,12 @@
             "v": "<2.6.0"
         }
     ],
+    "semantic-version": [
+        {
+            "changelog": "------------------\n\n*New:*\n\n    * Handle the full ``semver-2.0.0`` specifications (instead of the ``2.0.0-rc2`` of previous releases)\n    * `8  <https://github.com/rbarrois/python-semanticversion/issues/8>`_: Allow ``'*'`` as a valid version spec\n\n\n",
+            "v": "<2.3.0"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
