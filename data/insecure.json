@@ -265,6 +265,9 @@
     "django-sql-explorer": [
         "<0.4"
     ],
+    "django-staticfiles": [
+        "<0.3.3"
+    ],
     "django-sticky-uploads": [
         "<0.2.0"
     ],
