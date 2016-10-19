@@ -4257,6 +4257,12 @@
             "v": "<1.1.0"
         }
     ],
+    "python-recode": [
+        {
+            "changelog": "\n  * fixed -Werror=format-security issues\n\n",
+            "v": "<1.2.6"
+        }
+    ],
     "python-saml": [
         {
             "changelog": "* Prevent signature wrapping attack!!\n* [111](https://github.com/onelogin/python-saml/pull/111) Add support for nested `NameID` children inside `AttributeValue`s\n* ALOWED Misspell\n* Improve how we obtain the settings path.\n* Update docs adding reference to test depencence installation\n* Fix Organization element on SP metadata.\n* [100](https://github.com/onelogin/python-saml/pull/100) Support Responses that don't have AttributeStatements.\n\n",
