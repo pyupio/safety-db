@@ -78,6 +78,9 @@
     "collective.noticeboard": [
         "<0.7.1"
     ],
+    "collective.recipe.solrinstance": [
+        "<1.0b1"
+    ],
     "collective.solr": [
         "<1.0b24"
     ],
