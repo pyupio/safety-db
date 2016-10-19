@@ -441,6 +441,9 @@
     "mixminion": [
         "<0.0.2"
     ],
+    "mkpassphrase": [
+        "<0.8.0"
+    ],
     "mockup": [
         "<2.1.3"
     ],
