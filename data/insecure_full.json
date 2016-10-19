@@ -4501,6 +4501,12 @@
             "v": "<1.0.0"
         }
     ],
+    "zeam.form.silva": [
+        {
+            "changelog": "----------------\n\n* Review security restriction on add forms and edit forms.\n\n* Add support for *add in position* in default add forms.\n\n* Various improvements in the form code (status feedback), default\n  form templates and i18n.\n\n* Add a datetime widget based on the JQueryUI datetime picker.\n\n* Add some Javascript helpers: inline validation via AJAX query on\n  simple form widgets. By default the first required field of a form\n  gets the focus.\n\n* Add support to create REST forms in a popup in SMI or included in\n  Kupu.\n\n* Add support for public forms.\n\n* Add support for zope.interfaces invariant by default in SMI forms.\n\n",
+            "v": "<1.1"
+        }
+    ],
     "zeep": [
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
