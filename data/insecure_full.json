@@ -135,6 +135,12 @@
             "v": "<0.5.1"
         }
     ],
+    "briefkasten": [
+        {
+            "changelog": "------------------\n\n * use a `cryptographically suitable random generator <http://docs.python.org/library/os.htmlos.urandom>`_\n   This addresses `issue 2 <https://github.com/ZeitOnline/briefkasten/issues/2>`_ \n   thanks to alech (Alexander Klink) for reporting this.\n\n * use a `constant time comparison algorithm <http://codahale.com/a-lesson-in-timing-attacks/>`_ to avoid\n   `timing attacks <https://en.wikipedia.org/wiki/Timing_attack>`_.\n   This addresses `issue 4 <https://github.com/ZeitOnline/briefkasten/issues/4>`_\n   thanks to stefanw (Stefan Wehrmeyer) for reporting this.\n\n * generate random filenames when saving uploaded attachments.\n   this is both because their names may contain compromising information but also this could otherwise\n   lead to files outside the dropbox container being overwritten.\n   Thanks to Alexander Klink (alech) for pointing out this flaw.\n\n * Use secure rm instead of rm, if it is available.\n\n",
+            "v": "<0.1.3"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
