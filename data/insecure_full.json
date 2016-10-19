@@ -2432,6 +2432,12 @@
             "v": "<3.2.2"
         }
     ],
+    "ipython-beautifulsoup": [
+        {
+            "changelog": "----------------\n\n- security improvement (configure_ipython_beautifulsoup)\n- tests!\n- mostly the work of westurner, see https://github.com/Psycojoker/ipython-beautifulsoup/pull/3\n\n",
+            "v": "<0.2"
+        }
+    ],
     "irc3": [
         {
             "changelog": "==================\n\n- Add cron plugin\n\n- Improve the command plugin. Fix some security issue.\n\n- Add ``--help-page`` option to generate commands help pages\n\n\n",
