@@ -3405,6 +3405,10 @@
         {
             "changelog": "=============================\n\n - Update to Plone 4.0.7 that includes the latest security fixes [dimo]\n - don't use sudo in front of chown commands in production buildout [dimo]\n\n\n",
             "v": "<4.2.1"
+        },
+        {
+            "changelog": "=============================\n\n - Include Zope_Hotfix_20110622 that patches a serious security vulnerability [dimo]\n\n\n",
+            "v": "<4.2.2"
         }
     ],
     "pplone": [
