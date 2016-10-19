@@ -72,6 +72,9 @@
     "cmsplugin-filer": [
         "<1.0.0"
     ],
+    "collective.disqus": [
+        "<2.0b1"
+    ],
     "collective.documentviewer": [
         "<1.5.1"
     ],
