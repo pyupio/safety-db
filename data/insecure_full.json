@@ -2345,6 +2345,12 @@
             "v": "<1.5.4"
         }
     ],
+    "gsutil": [
+        {
+            "changelog": "=======================================\nNew Features\n------------\n- When using the JSON API, the ch acl/defacl subcommand now supports\n  project groups via the -p flag. For details, see \"gsutil help acl ch\".\n\nBug Fixes\n---------\n- Fixed a bug that caused daisy-chain copies (including cross-provider\n  copies) for files large than 100MiB to fail.\n- Fixed a bug that caused streaming uploads than ran for longer than\n  an hour to fail with HTTP 400s.\n- Fixed a bug where perfdiag would not properly clean up its test files.\n- Fixed a bug where using ls with the XML API could mistakenly report bucket\n  configuration as present.\n\nOther Changes\n-------------\n- Updated documentation for metadata, retries, security, and subdirs.\n- Tracker files are no longer written for small downloads.\n\n\n",
+            "v": "<4.9"
+        }
+    ],
     "holocron": [
         {
             "changelog": "==================\n\n- Added reStructuredText converter.\n- Added ``holocron.ext.abc.Extension`` interface.\n- Added Python 3.5 support.\n- Added Twitter Cards support.\n- Fixed Markdown title parser for documents with multiple <h1> titles..\n- Fixed security issue when content author may steal private data through\n  content's meta header.\n- Fixed YAML header parser for documents with multiple ``---`` signs.\n- Fixed rebuilding of HTML produced by Tags and Feed extensions.\n- Default theme is more responsive for smartphones & tablets now.\n\n\n",
