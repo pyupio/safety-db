@@ -2297,6 +2297,12 @@
             "v": "<1.0.0"
         }
     ],
+    "httpsig-cffi": [
+        {
+            "changelog": "-------------------\n* Written against http://tools.ietf.org/html/draft-cavage-http-signatures-02\n* Added \"setup.py test\" and tox support.\n* Added sign/verify unit tests for all currently-supported algorithms.\n* HeaderSigner and HeaderVerifier now share the same message-building logic.\n* The HTTP method in the message is now properly lower-case.\n* Resolved unit test failures.\n* Updated Verifier and HeaderVerifier to handle verifying both RSA and HMAC sigs.\n* Updated versioneer.\n* Updated contact/author info.\n* Removed stray keypair in test dir.\n* Removed SSH agent support.\n* Removed suport for reading keyfiles from disk as this is a huge security hole if this is used in a server framework like drf-httpsig.\n\n",
+            "v": "<1.0.0"
+        }
+    ],
     "invenio-search": [
         {
             "changelog": "-----------------------------------\n\n- Fixes potential XSS issues by changing search flash messages\n  template so that they are not displayed as safe HTML by default.\n- Adds missing `invenio_access` dependency and amends past upgrade\n  recipes following its separation into standalone package.\n- Displaying HTML safe flash messages can be done by using one of\n  these flash contexts: 'search-results-after(html_safe)', 'websearch-\n  after-search-form(html_safe)' instead of the standard ones (which\n  are the same without '(html safe)' at the end).\n\n",
