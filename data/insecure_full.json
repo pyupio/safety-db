@@ -2315,6 +2315,12 @@
             "v": "<1.2.0"
         }
     ],
+    "git-deploy": [
+        {
+            "changelog": "-----------\n\n    * revert (rollback) functionality\n    * fix tagging model\n    * dulwich dependencies for git remote push/pulls\n    * driver model abstraction to allow for extensibility to other deployment models\n    * split core git deploy functions into git_methods module that handles git interfacing\n    * upgrades to init_gd to make tool setup more seamless\n    * add paramiko support for securely talking to remotes\n    * add project to pypi\n\n\n",
+            "v": "<0.3"
+        }
+    ],
     "gns3-gui": [
         {
             "changelog": "\n* Try to fix a crash when reseting interface label\n* Fix a crash with broken file system\n* Fix EtherSwitch default name format\n* Fix crash when you have utf-8 char in the README\n* Fix rare crash when creating a link\n* Stop node before hot unlink\n* Prevent a crash due to issue in Qt\n* Add another security to prevent client to send empty hostname\n* Fix rare crash when deleting interface from the cloud\n* Fix rare crash in topology summary view\n* Ask user to send explanation if they cross a rare error\n* Fix rare crash when deleting a node\n* Hotlink support for Docker\n* Fix typo in the a warning dialog\n* Fix Remote GNS3 VM requires local server\n* Fix AttributeError: 'NoneType' object has no attribute '_server'\n* No timeout when importing a .gns3project\n\n",
