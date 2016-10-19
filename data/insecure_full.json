@@ -4705,6 +4705,12 @@
             "v": "<3.0"
         }
     ],
+    "twilio": [
+        {
+            "changelog": "-------------\n\nReleased on May 21, 2013\n\n- `date_created` and `date_updated` objects are now returned as Python\n  `datetime.datetime` objects instead of as RFC 2822 formatted strings. This is\n  a backwards incompatible change. (via [abrinsmead](/abrinsmead))\n- The library will not throw a UnicodeDecodeError when parsing API responses\n  with Python 3.\n- You can pass integers to Twiml arguments. (via [jvankoten](/jvankoten))\n- Ensuring the tests always pass on Python 3. (via [ftobia](/ftobia))\n- Add the list of AUTHORS\n- Fixes a timing attack vector in signature validation. (via [zacharyvoase](/zacharyvoase))\n\n",
+            "v": "<3.5.0"
+        }
+    ],
     "virtualenv": [
         {
             "changelog": "-----------------\n\n* **BACKWARDS INCOMPATIBLE** Dropped support for Python 2.5. The minimum\n  supported Python version is now Python 2.6.\n\n* **BACKWARDS INCOMPATIBLE** Using ``virtualenv.py`` as an isolated script\n  (i.e. without an associated ``virtualenv_support`` directory) is no longer\n  supported for security reasons and will fail with an error.\n\n  Along with this, ``--never-download`` is now always pinned to ``True``, and\n  is only being maintained in the short term for backward compatibility\n  (Pull 412).\n\n* **IMPORTANT** Switched to the new setuptools (v0.9.7) which has been merged\n  with Distribute_ again and works for Python 2 and 3 with one codebase.\n  The ``--distribute`` and ``--setuptools`` options are now no-op.\n\n* Updated to pip 1.4.\n\n* Added support for PyPy3k\n\n* Added the option to use a version number with the ``-p`` option to get the\n  system copy of that Python version (Windows only)\n\n* Removed embedded ``ez_setup.py``, ``distribute_setup.py`` and\n  ``distribute_from_egg.py`` files as part of switching to merged setuptools.\n\n* Fixed ``--relocatable`` to work better on Windows.\n\n* Fixed issue with readline on Windows.\n\n.. _Distribute: https://pypi.python.org/pypi/distribute\n\n",
