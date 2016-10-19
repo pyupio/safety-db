@@ -3819,6 +3819,12 @@
             "v": "<1.1.2"
         }
     ],
+    "pyramid-weblayer": [
+        {
+            "changelog": "\nAnd complete the set with a secured `request.resource_url` when HSTS is enabled.\n\n",
+            "v": "<0.10.1"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
