@@ -78,6 +78,9 @@
     "collective.noticeboard": [
         "<0.7.1"
     ],
+    "collective.solr": [
+        "<1.0b24"
+    ],
     "collective.transcode.star": [
         "<0.22"
     ],
