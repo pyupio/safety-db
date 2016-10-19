@@ -54,6 +54,9 @@
     "bok-choy": [
         "<0.5.1"
     ],
+    "ccnmtldjango": [
+        "<1.2.1"
+    ],
     "centrifuge": [
         "<0.3.8"
     ],
