@@ -709,6 +709,9 @@
     "pymemcache": [
         "<1.3.6"
     ],
+    "pymongo": [
+        "<2.1"
+    ],
     "pypicloud": [
         "<0.2.2"
     ],
