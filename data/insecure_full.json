@@ -71,6 +71,10 @@
         {
             "changelog": "-----------------------------------\n\nGeneral\n~~~~~~~\n\n- Fix hostname validation in the SSL verification code (CVE-2012-3446).\n\n  Reported by researchers from the University of Texas at Austin (Martin\n  Georgiev, Suman Jana and Vitaly Shmatikov).\n\n",
             "v": "<0.11.1"
+        },
+        {
+            "changelog": "-----------------------------------\n\nCompute\n~~~~~~~\n\n- Send \"scrub_data\" query parameter when destroying a DigitalOcean node.\n  This will cause disk to be scrubbed (overwritten with 0's) when destroying\n  a node. (LIBCLOUD-487)\n\n  Note: This fixes a security issue with a potential leak of data contained\n  on the destroyed node which only affects users of the DigitalOcean driver.\n  (CVE-2013-6480)\n  [Tomaz Muraus]\n\n",
+            "v": "<0.13.3"
         }
     ],
     "archmage": [
