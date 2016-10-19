@@ -4515,6 +4515,10 @@
     ],
     "wpull": [
         {
+            "changelog": "=====================\n\n* Fixed TypeError crash on a bad cookie.\n* Fixed PhantomJS mode's MITM proxy SSL certificates not installed.\n\n\n",
+            "v": "<0.1004.1"
+        },
+        {
             "changelog": "=====================\n\n* Security: Fixed ``Referer`` HTTP header field leaking from HTTPS to HTTP.\n* Fixed ``AttributeError`` in proxy when using PhantomJS and ``pre_response`` scripting hook.\n* Fixed early program end when server returns error fetching robots.txt.\n* Fixed uninteresting errors outputted if program is forcefully closed.\n* Fixed ``--referer`` option not applied to subsequent requests.\n\n\n",
             "v": "<0.1006.1"
         }
