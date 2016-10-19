@@ -226,6 +226,10 @@
         {
             "changelog": "==================\n\n  * Deps: moment2.11.2 to fix\n        https://nodesecurity.io/advisories/moment_regular-expression-denial-of-service\n  * Deps: validator4.6.1 to stay in sync\n\n",
             "v": "<1.1.1"
+        },
+        {
+            "changelog": "==================\n\n  * Support for built-in formats in schema files 138 (Hem Brahmbhatt damnhipster)\n  * Improve stability and security: Use shrinkwrap to lock module dependencies 139 (Marc-Aur\u00e8le Darche madarche)\n  * devDeps: coveralls2.11.9 to stay in sync\n  * devDeps: eslint2.5.3 to stay in sync\n\n",
+            "v": "<1.2.0"
         }
     ],
     "creavel": [
