@@ -4903,6 +4903,12 @@
             "v": "<3.5.0"
         }
     ],
+    "urllib3": [
+        {
+            "changelog": "-----------------\n\n* Disabled SSLv3. (Issue 473)\n\n* Add ``Url.url`` property to return the composed url string. (Issue 394)\n\n* Fixed PyOpenSSL + gevent ``WantWriteError``. (Issue 412)\n\n* ``MaxRetryError.reason`` will always be an exception, not string.\n  (Issue 481)\n\n* Fixed SSL-related timeouts not being detected as timeouts. (Issue 492)\n\n* Py3: Use ``ssl.create_default_context()`` when available. (Issue 473)\n\n* Emit ``InsecureRequestWarning`` for *every* insecure HTTPS request.\n  (Issue 496)\n\n* Emit ``SecurityWarning`` when certificate has no ``subjectAltName``.\n  (Issue 499)\n\n* Close and discard sockets which experienced SSL-related errors.\n  (Issue 501)\n\n* Handle ``body`` param in ``.request(...)``. (Issue 513)\n\n* Respect timeout with HTTPS proxy. (Issue 505)\n\n* PyOpenSSL: Handle ZeroReturnError exception. (Issue 520)\n\n\n",
+            "v": "<1.10"
+        }
+    ],
     "virtualenv": [
         {
             "changelog": "-----------------\n\n* **BACKWARDS INCOMPATIBLE** Dropped support for Python 2.5. The minimum\n  supported Python version is now Python 2.6.\n\n* **BACKWARDS INCOMPATIBLE** Using ``virtualenv.py`` as an isolated script\n  (i.e. without an associated ``virtualenv_support`` directory) is no longer\n  supported for security reasons and will fail with an error.\n\n  Along with this, ``--never-download`` is now always pinned to ``True``, and\n  is only being maintained in the short term for backward compatibility\n  (Pull 412).\n\n* **IMPORTANT** Switched to the new setuptools (v0.9.7) which has been merged\n  with Distribute_ again and works for Python 2 and 3 with one codebase.\n  The ``--distribute`` and ``--setuptools`` options are now no-op.\n\n* Updated to pip 1.4.\n\n* Added support for PyPy3k\n\n* Added the option to use a version number with the ``-p`` option to get the\n  system copy of that Python version (Windows only)\n\n* Removed embedded ``ez_setup.py``, ``distribute_setup.py`` and\n  ``distribute_from_egg.py`` files as part of switching to merged setuptools.\n\n* Fixed ``--relocatable`` to work better on Windows.\n\n* Fixed issue with readline on Windows.\n\n.. _Distribute: https://pypi.python.org/pypi/distribute\n\n",
