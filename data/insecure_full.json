@@ -4517,6 +4517,10 @@
         {
             "changelog": "=====================\n\n* Security: Fixed ``Referer`` HTTP header field leaking from HTTPS to HTTP.\n* Fixed ``AttributeError`` in proxy when using PhantomJS and ``pre_response`` scripting hook.\n* Fixed early program end when server returns error fetching robots.txt.\n* Fixed uninteresting errors outputted if program is forcefully closed.\n* Fixed ``--referer`` option not applied to subsequent requests.\n\n\n",
             "v": "<0.1006.1"
+        },
+        {
+            "changelog": "================\n\n* Security: Updated certificate bundle.\n* Fixed: ``--regex-type`` to accept ``pcre`` instead of ``posix``. Regular expressions always use Python's regex library. Posix regex is not supported.\n* Fixed: when using ``--warc-max-size`` and ``--warc-append``, it wrote to existing sequential WARC files unnecessarily.\n* Fixed: input URLs stored in memory instead of saved on disk. This issue was notable if there were many URLs provided by the ``--input-file`` option.\n* Changed: when using ``--warc-max-size`` and ``--warc-append``, the next sequential WARC file is created to avoid appending to corrupt files.\n* Changed: WARC file writing to use journal files and refuse to start program if any journals exist. This avoids corrupting files through naive use of ``--warc-append`` and allow for future automated recovery.\n* Added: Open Graph and Twitter Card element links extraction.\n\n\n",
+            "v": "<1.1"
         }
     ],
     "zeep": [
