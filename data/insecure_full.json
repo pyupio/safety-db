@@ -226,6 +226,12 @@
             "v": "<0.6.4"
         }
     ],
+    "cryptography": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~\n* **SECURITY ISSUE**: The OpenSSL backend prior to 1.0.2 made extensive use\n  of assertions to check response codes where our tests could not trigger a\n  failure.  However, when Python is run with ``-O`` these asserts are optimized\n  away.  If a user ran Python with this flag and got an invalid response code\n  this could result in undefined behavior or worse. Accordingly, all response\n  checks from the OpenSSL backend have been converted from ``assert``\n  to a true function call. Credit **Emilia K\u00e4sper (Google Security Team)**\n  for the report.\n\n",
+            "v": "<1.0.2"
+        }
+    ],
     "cryptography-vectors": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~~\n\n* **SECURITY ISSUE**: Fixed a double free in the OpenSSL backend when using DSA\n  to verify signatures. Note that this only affects PyPy 2.6.0 and (presently\n  unreleased) CFFI versions greater than 1.1.0.\n\n",
