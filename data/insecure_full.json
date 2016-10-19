@@ -4263,6 +4263,12 @@
             "v": "<0.30"
         }
     ],
+    "quokka-flask-security": [
+        {
+            "changelog": "-------------\n\nReleased March 12th 2012\n\n- Added configuration option `SECURITY_FLASH_MESSAGES` which can be set to a\n  boolean value to specify if Flask-Security should flash messages or not.\n\n",
+            "v": "<1.2.0"
+        }
+    ],
     "reprozip": [
         {
             "changelog": "------------------\n\n(reprozip only)\n\nBugfixes:\n* Files (or links) created with rename, link or symlink then read will no longer be packed.\n* A buffer overflow could happen in the log module, for instance when the experiment passes a very long argument to execve (over 4kB in a single argument) and running in debug mode (-v -v)\n\n\n",
