@@ -4151,6 +4151,12 @@
             "v": "<0.20.0"
         }
     ],
+    "pyvep": [
+        {
+            "changelog": "==================\n\n  * add support of requests rather than custom code for ssl checking when\n    retrieving certificates.\n  * removed patch utility for secure_urlopen (we are now using requests)\n  * add more verbose errors when dealing with RSA/DSA Keys.\n\n",
+            "v": "<0.5.0"
+        }
+    ],
     "pywebsite": [
         {
             "changelog": "---------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* hash_url fixes for length extension attack, and value equivalence attacks.\n\n\n",
