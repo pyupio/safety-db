@@ -2090,6 +2090,12 @@
             "v": "<5.1.2"
         }
     ],
+    "fiware-cloto": [
+        {
+            "changelog": "-------------------\n\nNew\n~~~\n\n- Add Jenkins config files to utils directory. [Guillermo Jimenez\n  Prieto]\n\n- Add new tests related to restCloto authentication. [Guillermo Jimenez\n  Prieto]\n\n- Add new SECURITY LEVEL to define when user tokens should be checked\n  against keystone. [Guillermo Jimenez Prieto]\n\n- User Tokens are now stored in memory to decrease the number of\n  requests to keystone. [Guillermo Jimenez Prieto]\n\n- Remove migrations from coverage report. [Guillermo Jimenez Prieto]\n\nChanges\n~~~~~~~\n\n- Refactor and new tests to check tokens stored in memory. [Guillermo\n  Jimenez Prieto]\n\n- Update Readme file with a better explanation about MYSQL PATH.\n  [Guillermo Jimenez Prieto]\n\n- Fix coverage report using coverage util. [Guillermo Jimenez Prieto]\n\n- Update Readme with new installation order according to new django\n  version. [Guillermo Jimenez Prieto]\n\n- Update  django version to improve security system. [Guillermo Jimenez\n  Prieto]\n\n",
+            "v": "<2.5.0"
+        }
+    ],
     "flask": [
         {
             "changelog": "-------------\n\nBugfix release, released on December 31st 2010\n\n- Fixed an issue where the default ``OPTIONS`` response was\n  not exposing all valid methods in the ``Allow`` header.\n- Jinja2 template loading syntax now allows \"./\" in front of\n  a template load path.  Previously this caused issues with\n  module setups.\n- Fixed an issue where the subdomain setting for modules was\n  ignored for the static folder.\n- Fixed a security problem that allowed clients to download arbitrary files\n  if the host server was a windows based operating system and the client\n  uses backslashes to escape the directory the files where exposed from.\n\n",
