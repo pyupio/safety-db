@@ -1921,6 +1921,12 @@
             "v": "<0.7.2"
         }
     ],
+    "django-social-auth3": [
+        {
+            "changelog": "------------------\n\n  * Make the pipeline raise import and not-callable errors. Refs 376\n  * Merge branch 'master' of github.com:omab/django-social-auth\n  * Update docs droping deprecated setting and explanation of security risk for associate_by_email. Refs 289\n  * Merge pull request 443 from droptype/master\n  * Merge pull request 444 from droptype/minor-docs-cleanup\n  * Minor docs cleanup\n  * Allow exception processors to redirect to arbitrary URLs\n\n",
+            "v": "<0.7.5"
+        }
+    ],
     "django-sql-explorer": [
         {
             "changelog": "===\n\n2/14/2014 - Happy Valentine's Day!\n\n- Templatized columns for easy linking\n- Additional security config options for splitting create vs. view permissions\n- Show many-to-many relation tables in schema helper\n\n",
