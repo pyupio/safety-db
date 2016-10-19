@@ -1911,6 +1911,12 @@
             "v": "<0.8.1"
         }
     ],
+    "docker-registry-core": [
+        {
+            "changelog": "\n * security fixes (path traversing prevention and token validation)\n\n",
+            "v": "<0.8.1"
+        }
+    ],
     "dpaste": [
         {
             "changelog": "----------------\n\n* The API create view has a new argument 'filename' which is used to determine\n  the lexer out of a given filename.\n* Fixed a XSS bug where HTML tags were not properly escaped with the simple\n  ``code`` lexer.\n\n",

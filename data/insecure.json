@@ -292,6 +292,9 @@
     "docker-registry": [
         "<0.8.1"
     ],
+    "docker-registry-core": [
+        "<0.8.1"
+    ],
     "dpaste": [
         "<2.8"
     ],
