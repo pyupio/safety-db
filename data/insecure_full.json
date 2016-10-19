@@ -3819,6 +3819,12 @@
             "v": "<1.1.2"
         }
     ],
+    "pyramid-weblayer": [
+        {
+            "changelog": "\nSecure the `request.application_url` property, in the same way we secure the\n`request.route_url` method, when HSTS is enabled.\n\n",
+            "v": "<0.10"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
