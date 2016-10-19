@@ -139,6 +139,12 @@
             "v": "<1.4.2"
         }
     ],
+    "bobtemplates.odoo": [
+        {
+            "changelog": "--------------------\n- add post render message inviting the user to add the generated xml\n  files in __openerp__.py data section\n- auto add model import to models/__init__.py\n- many improvements and fixes to the model template (views, security,\n  demo data, and more)\n- addon template\n- test template\n- tests (with tox and travis)\n\n",
+            "v": "<1.0.0b1"
+        }
+    ],
     "bok-choy": [
         {
             "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",

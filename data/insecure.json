@@ -55,6 +55,9 @@
     "bjoern": [
         "<1.4.2"
     ],
+    "bobtemplates.odoo": [
+        "<1.0.0b1"
+    ],
     "bok-choy": [
         "<0.5.1"
     ],
