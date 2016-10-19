@@ -5008,6 +5008,12 @@
             "v": "<2.13.19"
         }
     ],
+    "zope.component": [
+        {
+            "changelog": "------------------\n\n- Add PyPy and Python 3.2 support:\n\n  - Security support omitted until ``zope.security`` ported.\n\n  - Persistent registry support omitted until ``ZODB`` ported (or\n    ``persistent`` factored out).\n\n- Bring unit test coverage to 100%.\n\n- Remove the long-deprecated ``layer`` argument to the\n  ``zope.component.zcml.view`` and ``zope.component.zcml.resource``\n  ZCML directives.\n\n- Add support for continuous integration using ``tox`` and ``jenkins``.\n\n- Got tests to run using ``setup.py test``.\n\n- Add ``Sphinx`` documentation.\n\n- Add ``setup.py docs`` alias (installs ``Sphinx`` and dependencies).\n\n- Add ``setup.py dev`` alias (runs ``setup.py develop`` plus installs\n  ``nose`` and ``coverage``).\n\n",
+            "v": "<4.0.0"
+        }
+    ],
     "zope.html": [
         {
             "cve": "CVE-2009-2265",
