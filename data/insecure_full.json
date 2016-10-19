@@ -479,6 +479,10 @@
             "v": "<1.2.2"
         },
         {
+            "changelog": "==========================\nDjango 1.2.3 release notes\n==========================\n\nDjango 1.2.3 fixed a couple of release problems in the 1.2.2 release and was\nreleased two days after 1.2.2.\n\nThis release corrects the following problems:\n\n* The patch_ applied for the security issue covered in Django 1.2.2 caused\n  issues with non-ASCII responses using CSRF tokens.\n\n* The patch also caused issues with some forms, most notably the user-editing\n  forms in the Django administrative interface.\n\n* The packaging manifest did not contain the full list of required files.\n\n.. _patch: https://code.djangoproject.com/changeset/13699\n\n",
+            "v": "<1.2.3"
+        },
+        {
             "cve": "CVE-2011-4136",
             "description": "django.contrib.sessions in Django before 1.2.7 and 1.3.x before 1.3.1, when session data is stored in the cache, uses the root namespace for both session identifiers and application-data keys, which allows remote attackers to modify a session by triggering use of a key that is equal to that session's identifier.",
             "urls": [
