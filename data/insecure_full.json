@@ -4331,6 +4331,12 @@
             "v": "<0.30"
         }
     ],
+    "repoze.bitblt": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~~~~~~~~\n\n- Rewritten URLs are now signed by the middleware to ensure that\n  bitblt requests are only crafted by the middleware. This is required\n  to shield against DoS attacks. [malthe]\n\n",
+            "v": "<0.5"
+        }
+    ],
     "reprozip": [
         {
             "changelog": "------------------\n\n(reprozip only)\n\nBugfixes:\n* Files (or links) created with rename, link or symlink then read will no longer be packed.\n* A buffer overflow could happen in the log module, for instance when the experiment passes a very long argument to execve (over 4kB in a single argument) and running in debug mode (-v -v)\n\n\n",

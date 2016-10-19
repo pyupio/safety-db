@@ -731,6 +731,9 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "repoze.bitblt": [
+        "<0.5"
+    ],
     "reprozip": [
         "<0.7.1"
     ],
