@@ -192,6 +192,12 @@
             "v": "<1.5.1"
         }
     ],
+    "collective.mockmailhost": [
+        {
+            "changelog": "----------------\n\n- Remove ZopeSkel and Paster dependency from setup.py\n  [saily]\n\n- Moved to github and changed to README.rst, links in setup.py\n  [saily]\n\n- Allow multiple paramters for ``send`` and ``secureSend`` method in\n  MockMailHost class.  [saily]\n\n\n",
+            "v": "<0.5"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
