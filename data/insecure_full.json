@@ -4531,6 +4531,12 @@
             "v": "<0.8"
         }
     ],
+    "spur.local": [
+        {
+            "changelog": "\n* Allow spur to be used with Paramiko 2. To quote the Paramiko changelog [1]:\n\n    Replace PyCrypto with the Python Cryptographic Authority (PyCA)\n    \u2018Cryptography\u2019 library suite. This improves security, installability, and\n    performance; adds PyPy support; and much more.\n\n  This should only affect installation requirements for Paramiko: see the\n  changelog for more information. Since the API of Paramiko remains unchanged,\n  spur should remain compatible with both Paramiko 1 and Paramiko 2.\n\n  Note that Python 3.2 is not compatible with Paramiko 2: you can continue to\n  use spur with Python 3.2 and Paramiko 1, although upgrading is recommended.\n\n[1]: http://www.paramiko.org/changelog.html2.0.0\n\n",
+            "v": "<0.3.19"
+        }
+    ],
     "stargate": [
         {
             "changelog": "---\n\n- Add support for the HyBi version of WebSockets (specifically version-10). This version was released to solve some previous security concerns and\nwill be the version in Firefox 7/8 and Chrome 14 onwards accoring to Wikipedia.\n- Introduces a dependency on ws4py\n\n- See http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10\n\n",
