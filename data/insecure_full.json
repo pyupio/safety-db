@@ -1702,6 +1702,10 @@
     ],
     "django-cms": [
         {
+            "changelog": "\n- Addresses security vulnerabilities in the `render_model` template tag that could\n  lead to escalation of privileges or other security issues.\n- Fix ExtensionToolbar when language is removed but titles still exists\u2026\n- Fix PageSelectWidget JS syntax\n- Fix cache settings\n\n\n",
+            "v": "<3.0.17"
+        },
+        {
             "changelog": "\n- Fix cache settings\n- Fix user lookup for view restrictions/page permissions when using raw id field\n- Fixed regression when page couldn't be copied if CMS_PERMISSION was False\n- Fixes an issue relating to uninstalling a namespaced application\n- Adds \"Can change page\" permission\n- Fixes a number of page-tree issues the could lead data corruption under\n  certain conditions\n- Addresses security vulnerabilities in the `render_model` template tag that\n  could lead to escalation of privileges or other security issues.\n- Addresses a security vulnerability in the cms' usage of the messages framework\n- Fixes security vulnerabilities in custom FormFields that could lead to\n  escalation of privileges or other security issues.\n\n\n",
             "v": "<3.2.4"
         }
