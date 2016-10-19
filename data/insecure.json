@@ -187,6 +187,9 @@
     "django-fiber": [
         "<0.9.9.1"
     ],
+    "django-filebrowser-no-grappelli": [
+        "<3.4.2"
+    ],
     "django-filebrowser-no-grappelli-staff": [
         "<3.4.2"
     ],
