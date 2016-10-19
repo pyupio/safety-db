@@ -4872,6 +4872,12 @@
             "v": "==1.0.0"
         }
     ],
+    "troposphere": [
+        {
+            "changelog": "- Allow to extend resource classes by adding custom attributes [GH-16]\n- Add AWS::ElastiCache::SubnetGroup [GH-27]\n- Fix examples/VPC\\_EC2\\_Instance\\_With\\_Multiple\\_Dynamic\\_IPAddresses.py [GH-29]\n- CacheSecurityGroupNames not required if using VpcSecurityGroupIds [GH-31]\n- Add VPNConnectionRoute object and attribute to VPNConnection [GH-33]\n- add new CrossZone option to ELB [GH-34]\n- Add VPC\\_With\\_VPN\\_Connection example\n- Fixup some of the network related validators and pep8 changes\n- Add support for Tags and PortRange\n- Add more resource name properties per CloudFormation release 2013-12-19\n- Add Tier Environment property per CloudFormation release 2013-12-19\n- Add VPNGatewayRoutePropagation per CloudFormation release 2013-11-22\n- Add Tags properties  per CloudFormation release 2013-09-24\n- Add network changes from CloudFormation release 2013-09-17\n- Canonicalize integer and bool values for more consistent output [GH-35]\n- Add travis-ci for automated testing [GH-38]\n- Check output of examples in test\\_examples [GH-40]\n- Add support for conditions and for Fn::If() [GH-41]\n- Tweak ELB ranges to match ec2 console [GH-43]\n- Handle bool values better in cfn2py [GH-45]\n- Allow strings (as well as Refs) for Subnet VpcId [GH-47]\n- Add InstanceID to AutoScalingGroup and LaunchConfiguration\n- ec2.DHCPOptions NTPservers -> NtpServers [GH-54]\n- Add SQS dead letter queue from CloudFormation release 2014-01-29\n- Add AutoScaling ScheduledAction from release 2014-01-27\n- Add Tags for SecurityGroups [GH-55]\n- RecordSets in Route53 not formatted correctly [GH-51]\n- Allow Ref() in NetworkInterfaceProperty GroupSet list [GH-56]\n\n",
+            "v": "<0.4.0"
+        }
+    ],
     "tryton": [
         {
             "cve": "CVE-2012-0215",
