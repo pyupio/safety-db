@@ -4872,6 +4872,12 @@
             "v": "==1.0.0"
         }
     ],
+    "troposphere": [
+        {
+            "changelog": "- UpdatePolicy validation enhancements [GH-5]\n- Add VPCSecurityGroups property to AWS::RDS::DBInstance\n- DefaultCacheBehavior is a required property for DistributionConfig\n- Fix CustomGateway -> CustomerGateway\n- Domain does not have any properties\n- Fix VPC security group rule bugs\n- Added EBSBlockDevice and BlockDeviceMapping classes.\n- Add a post-validator to allow individual object to validate themselves\n- Add ability to use validate functions on property values\n- Add validation of list element types\n- Add unit tests\n\n",
+            "v": "<0.2.5"
+        }
+    ],
     "tryton": [
         {
             "cve": "CVE-2012-0215",
