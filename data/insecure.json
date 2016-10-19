@@ -742,6 +742,9 @@
     "spud": [
         "<0.8"
     ],
+    "starcluster-openstack": [
+        "<0.92"
+    ],
     "stargate": [
         "<0.4"
     ],
