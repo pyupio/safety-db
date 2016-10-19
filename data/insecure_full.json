@@ -2602,6 +2602,10 @@
         {
             "changelog": "\n    * Simplify repository and release structure. mitmproxy now comes as a single package, including netlib and pathod.\n\n    * Rename the Python package from libmproxy to mitmproxy.\n\n    * New option to add server certs to client chain (CVE-2016-2402, John Kozyrakis)\n\n    * Enable HTTP/2 by default (Thomas Kriechbaumer)\n\n    * Improved HAR extractor (Shadab Zafar)\n\n    * Add icon for OSX and Windows binaries\n\n    * Add content view for query parameters (Will Coster)\n\n    * Initial work on Python 3 compatibility\n\n    * locust.io export (Zohar Lorberbaum)\n\n    * Fix XSS vulnerability in HTTP errors (Will Coster)\n\n    * Numerous bugfixes and minor improvements\n\n\n",
             "v": "<0.17"
+        },
+        {
+            "changelog": "\n    * Full serialization of HTTP conversations\n\n    * Client and server replay\n\n    * On-the-fly generation of dummy SSL certificates\n\n    * mitmdump has \"grown up\" into a powerful tcpdump-like tool for HTTP/S\n\n    * Dozens of improvements to the mitmproxy console interface\n\n    * Python scripting hooks for programmatic modification of traffic\n\n\n",
+            "v": "<0.4"
         }
     ],
     "mixminion": [
