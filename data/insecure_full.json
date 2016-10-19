@@ -2955,6 +2955,12 @@
             "v": "<0.5.6"
         }
     ],
+    "pexpect": [
+        {
+            "changelog": "```````````\n\nThe new major version number doesn't indicate any deliberate API incompatibility.\nWe have endeavoured to avoid breaking existing APIs. However, pexpect is under\nnew maintenance after a long dormancy, so some caution is warranted.\n\n* A new :ref:`unicode API <unicode>` was introduced.\n* Python 3 is now supported, using a single codebase.\n* Pexpect now requires at least Python 2.6 or 3.2.\n* The modules other than pexpect, such as :mod:`pexpect.fdpexpect` and\n  :mod:`pexpect.pxssh`, were moved into the pexpect package. For now, wrapper\n  modules are installed to the old locations for backwards compatibility (e.g.\n  ``import pxssh`` will still work), but these will be removed at some point in\n  the future.\n* Ignoring ``SIGHUP`` is now optional - thanks to Kimmo Parviainen-Jalanko for\n  the patch.\n\nWe also now have `docs on ReadTheDocs <https://pexpect.readthedocs.io/>`_,\nand `continuous integration on Travis CI <https://travis-ci.org/pexpect/pexpect>`_.\n\n",
+            "v": "<3.0"
+        }
+    ],
     "pillow": [
         {
             "changelog": "------------------\n\n- Fixed CVE-2014-3589, a DOS in the IcnsImagePlugin (backport)\n  [Andrew Drake]\n\n\n",
