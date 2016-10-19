@@ -3427,6 +3427,12 @@
             "v": "<1.1.2"
         }
     ],
+    "pysap": [
+        {
+            "changelog": "-------------------\n\n- Updated to use scapy v2.3.1.\n- Code is more Python3-friendly.\n- Added travis script for running tests.\n- General minor fixes and code improvements.\n- Added test suites for SAPNI, SAPDiag and SAPRouter modules.\n- Added support for routing via SAP Router in almost all example scripts.\n- `pysap/SAPDiag.py`: Added support for message info and Diag error packets.\n- `pysap/SAPDiag.py`: Diag item lookup now support looking up multiple items, and string lookups.\n- `pysap/SAPDiagClient.py`: Added support for specifying support bits when connecting, support for routing via SAP Router.\n- `pysap/SAPDiagClient.py`: If no terminal is supplied, use a random looking IP by default to avoid identification\n  ([SAP Note 1497445](https://launchpad.support.sap.com//notes/1497445)).\n- `pysap/SAPDiagItems.py`: Fixes on some atom items for old versions.\n- `pysap/SAPEnqueue.py`: Added trace max file size field.\n- `pysap/SAPNI.py`: Added helpers for creating new connections.\n- `pysap/SAPNI.py`: `SAPNIProxy` implemented using a Worker thread.\n- `pysap/SAPNI.py`: `SAPNIServer` implemented using `SAPNIStreamSocket`.\n- `pysap/SAPRouter.py`: Added route hop conversion helpers.\n- `pysap/SAPRouter.py`: Added info client and info server packets.\n- `pysap/SAPRouter.py`: Added `SAPRoutedStreamSocket`.\n- `pysap/utils.py`: Reimplemented `MutablePacketField` with evaluators.\n- `pysapcompress/pysapcompress.cpp`: Improved routines and added handling of some error conditions.\n- `examples/diag_capturer.py`: New example script for dumping Diag login credentials by sniffing or reading a pcap file.\n- `examples/enqueue_monitor.py`: Added command for get replication info and command for checking trace pattern endless\n  loop vulnerability ([CVE-2014-0995](https://www.coresecurity.com/advisories/sap-netweaver-enqueue-server-trace-pattern-denial-service-vulnerability)).\n- `examples/router_admin.py`: Parsing of info request responses.\n- `examples/router_password_check`: New example script for testing if a SAP Router is vulnerable to a timing attack on\n  the password check ([CVE-2014-0984](https://www.coresecurity.com/advisories/sap-router-password-timing-attack)).\n- `requirements-optional.txt`: Added optional requirements.\n\n\n",
+            "v": "<0.1.5"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
