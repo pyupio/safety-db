@@ -192,6 +192,12 @@
             "v": "<1.5.1"
         }
     ],
+    "collective.googleanalytics": [
+        {
+            "changelog": "------------------\n\n* Add security assertions for report categories.\n  [2010-02-10 - yomatters]\n\n* Update documentation to reflect date range changes.\n  [2010-02-10 - yomatters]\n\n* Make date range independent of report and update tests and default reports\n  to reflect the new reality; add javascript to set the width of the\n  visualization based on the width of the container; add categories to reports\n  and adjust vocabularies to be category-specific; handle auth token expiration\n  error.\n  [2010-02-03 - yomatters]\n\n* Make report IDs unique so that the same page can contain multiple copies\n  of the same report.\n  [2010-01-19 - yomatters]\n\n* Fix a bug that caused an error if the query returned no results.\n  [2010-01-19 - yomatters]\n\n* Fix bug in older Zopes that required the user to reenter the password every\n  time the configlet form was saved.\n  [2010-01-14 - yomatters]\n\n* Add fallback for importing InitializeClass in Zopes prior to 2.12.\n  [2010-01-05 - yomatters]\n\n",
+            "v": "<1.0a2"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
