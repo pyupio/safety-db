@@ -2637,6 +2637,12 @@
             "v": "<0.42"
         }
     ],
+    "paste": [
+        {
+            "changelog": "---\n\n* Security fix for ``paste.urlparser.StaticURLParser``.  The problem\n  allowed escaping the root (and reading files) when used with\n  ``paste.httpserver`` (this does not effect other servers, and does\n  not apply when proxying requests from Apache to\n  ``paste.httpserver``).\n\n* ``paste.httpserver`` and ``paste.fixture.TestApp`` url-unquote\n  ``SCRIPT_NAME`` and ``PATH_INFO``, as specified in the CGI spec.\n  Thanks to Jon Nelson for pointing out both these issues.\n\n* ``paste.registry`` now works within the ``EvalException``\n  interactive debugger.\n\n* Fixed ``paste.auth.open_id`` failures not returning a correct\n  response.\n\n* Changed ``paste.httpexceptions.HTTPUnauthorized`` so that the\n  ``WWW-Authenticate`` header is not required.  401 responses don't\n  *have* to have that header.\n\n* In ``paste.fixture.TestApp``: ``<form>`` tags that have to\n  ``action`` will preserve the existing query string.  (Generally\n  relative links that are completely empty should but were not\n  preserving the query string)\n\n* Made ``paste.*`` compatible with `py2exe <http://www.py2exe.org/>`_\n  by adding a ``modulefinder`` call in ``__init__.py``\n\n* The ``paste.gzipper`` gzipping middleware wasn't changing the\n  Content-Length header properly; thanks to Brad Clements for the fix.\n\n* Fixed ``paste.proxy`` to not use anything based on the dict form of\n  ``httplib..HTTPMessage``.  This form folds headers together in a way\n  that breaks ``Set-Cookie`` headers (two ``Set-Cookie`` headers would\n  be merged into one).\n\n* ``paste.request.parse_formvars`` didn't accept parameters in\n  ``CONTENT_TYPE``.  ``prototype.js`` sets a ``charset`` parameter,\n  which caused a problem.\n\n* Added a ``__traceback_decorator__`` magic local variable, to allow\n  arbitrary manipulation of the output of\n  ``paste.exceptions.collector`` before formatting.\n\n* Added unicorn power to ``paste.pony`` (from Chad Whitacre)\n\n* For ``paste.httpserver`` SSL support: add support loading an\n  explicit certificate context, and using ``ssl_pem='*'`` create an\n  unsigned SSL certificate (from Jason Kirtland).\n\n* Fix some cases where ``paste.httpserver`` can have an orphaned\n  thread pool (causing the process to not shut down properly).  Patch\n  from jek.\n\n",
+            "v": "<1.1"
+        }
+    ],
     "pastescript": [
         {
             "cve": "CVE-2012-0878",
