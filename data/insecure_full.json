@@ -2234,6 +2234,12 @@
             "v": "<0.6"
         }
     ],
+    "jaraco.financial": [
+        {
+            "changelog": "===\n\n* Integrated OFX support based on scripts provided by Jeremy Jongsma. Includes\n  ability to specify financial institutions as plugins and download OFX data\n  via the command-line script `ofx`.\n* Added keyring support, so credentials for financial institutions are stored\n  securely within the Windows Vault.\n* Added command to clean up temporary files that crash MS Money.\n\n",
+            "v": "<0.2"
+        }
+    ],
     "jinja": [
         {
             "changelog": "-------------\n(bugfix release, released on January 10th 2014)\n\n- Prefix loader was not forwarding the locals properly to\n  inner loaders.  This is now fixed.\n- Security issue: Changed the default folder for the filesystem cache to be\n  user specific and read and write protected on UNIX systems.  See `Debian bug\n  734747`_ for more information.\n\n.. _Debian bug 734747: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734747\n\n",
