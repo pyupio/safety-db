@@ -2095,6 +2095,12 @@
             "v": "<2.2.3"
         }
     ],
+    "ftw.meeting": [
+        {
+            "changelog": "------------------\n\n- Use safe-html-transform for textfields (Secure audit).\n  [mathias.leimgruber]\n\n- PDF: handle empty field value conversion.\n  [jone]\n\n- Workspace details PDF: do not show empty listings.\n  [jone]\n\n- Start date can not be set after end date anymore.\n  [Julian Infanger]\n\n\n",
+            "v": "<1.4.1"
+        }
+    ],
     "ftw.permissionmanager": [
         {
             "changelog": "------------------\n\n- No longer allow users with view permission to access the advanced\n  security features. Since it's possible to search for all users, which\n  exposes all usernames and email addresses to anyone with view permission.\n  [mathias.leimgruber]\n\n\n",
