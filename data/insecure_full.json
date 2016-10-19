@@ -3447,6 +3447,10 @@
         {
             "changelog": "------------------\n\n- Use attribute for DefaultAddForm and DefaultEditForm success message so it can\n  be easily customized.\n  [cedricmessiant]\n\n- Big major overhaul to use everywhere the same way to fetch the main schema,\n  behavior schemata and its markers. This was very scrmabled: sometimes\n  behaviors weren't taken into account, or only FTI based behaviors but not\n  those returned by the IBehaviorAssignable adapter. Also the caching was\n  cleaned up. The tests are now better readable (at least I hope so).  In order\n  to avoid circular imports some methods where moved fro ``utils.py`` to\n  ``schema.py``.  Deprecations are in place.\n  [jensens]\n\n- Fix (security): Attribute access to schema fields can be protected. This\n  worked for direct schemas, but was not implemented for permissions coming\n  from behaviors.\n  [jensens]\n\n",
             "v": "<2.3.0"
+        },
+        {
+            "changelog": "------------------\n\nFixes:\n\n- Added security declarations from Products.PloneHotfix20160419.  [maurits]\n\n\n",
+            "v": "<2.4.2"
         }
     ],
     "plone.formwidget.contenttree": [
