@@ -2114,6 +2114,12 @@
             "v": "<0.6.1"
         }
     ],
+    "flask-images": [
+        {
+            "changelog": "-----\n- Fix 3 security bugs, each of which would allow for reading any image on disk.\n\n",
+            "v": "<1.1.3"
+        }
+    ],
     "flask-micropub": [
         {
             "changelog": " Changed\n- Fix vulnerability; re-discover the authorization_endpoint and\n  token_endpoint at each stage in the flow. Prevents a buggy or\n  malicious authorization_endpoint from giving you credentials for\n  another user's domain name.\n\n",
