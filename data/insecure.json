@@ -89,6 +89,9 @@
     "collective.noticeboard": [
         "<0.7.1"
     ],
+    "collective.portlet.twitter": [
+        "<1.0b3"
+    ],
     "collective.solr": [
         "<1.0b24"
     ],
