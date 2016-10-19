@@ -2506,6 +2506,12 @@
             "v": "<0.1.17pre"
         }
     ],
+    "nodeconductor": [
+        {
+            "changelog": "--------------\n- Moved to a container based Travis infrastructure.\n- Replaced whistles.org with extranet.whistles.org in test data set.\n- Max one license of specific type is now allowed.\n- Removed IaaS template fees.\n- Update versions of OpenStack libraries.\n- Fixed Zabbix host and security groups creation on CPM creation.\n\n",
+            "v": "<0.71.0"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",

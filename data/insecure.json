@@ -434,6 +434,9 @@
     "newsletter": [
         "<0.1.17pre"
     ],
+    "nodeconductor": [
+        "<0.71.0"
+    ],
     "notebook": [
         "<4.0.5",
         ">=4.0,<4.0.5"
