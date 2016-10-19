@@ -1917,6 +1917,12 @@
             "v": "<1.1.2"
         }
     ],
+    "django-ratelimit": [
+        {
+            "changelog": "====\n\n- (Sort of) make ratelimit decorators stack.\n- Add RateLimitMixin for CBVs.\n- Fixes for Python <2.7.\n- Clean up Travis and tox tests.\n\n",
+            "v": "<0.4"
+        }
+    ],
     "django-relatives": [
         {
             "changelog": "------------------\n\n- Fix XSS vulnerability\n- Allow relatives/includes/fieldset.html template to be extended further\n- Improve documentation\n\n\n",

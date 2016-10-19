@@ -296,6 +296,9 @@
     "django-rated": [
         "<1.1.2"
     ],
+    "django-ratelimit": [
+        "<0.4"
+    ],
     "django-relatives": [
         "<0.3.0"
     ],
