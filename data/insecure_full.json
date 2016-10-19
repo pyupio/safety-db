@@ -1809,6 +1809,12 @@
             "v": "<0.4"
         }
     ],
+    "django-sticky-uploads": [
+        {
+            "changelog": "-----------------------------------\n\n* Security issue related to client changing the upload url specified by the widget for the upload\n* Added documentation for plugin extensions and callbacks\n* *Backwards Incompatible*: The signatures of the internal ``UploadForm.stash``, ``serialize_upload``, ``deserialize_upload`` and ``open_stored_file`` now require the upload url\n\n\n",
+            "v": "<0.2.0"
+        }
+    ],
     "django-tastypie": [
         {
             "cve": "CVE-2011-4104",

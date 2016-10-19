@@ -252,6 +252,9 @@
     "django-sql-explorer": [
         "<0.4"
     ],
+    "django-sticky-uploads": [
+        "<0.2.0"
+    ],
     "django-tastypie": [
         "<0.9.10"
     ],
