@@ -3443,6 +3443,12 @@
             "v": "<3.0"
         }
     ],
+    "plone.dexterity": [
+        {
+            "changelog": "------------------\n\n* Update the label for the default fieldset to something more humane.\n  [wichert]\n\n* Make the default add form extend BrowserPage to avoid warnings about\n  security declarations for nonexistent methods.  This closes\n  http://code.google.com/p/dexterity/issues/detail?id=69\n  [davisagli]\n\n* For now, no longer ensure that Dexterity content provides ILocation (in\n  particular, that it has a __parent__ pointer), since that causes problems\n  when exporting in Zope 2.10.\n  [davisagli]\n\n* Don't assume the cancel and actions buttons are always present in the\n  default forms.\n  [optilude]\n\n",
+            "v": "<1.0b1"
+        }
+    ],
     "plone.formwidget.contenttree": [
         {
             "changelog": "------------------\n\n* Fix security validator to work properly on add views and other views using\n  namespace traversal (++add++...)\n  [optilude]\n\n",
