@@ -4613,6 +4613,12 @@
             "v": "<2.6.0"
         }
     ],
+    "semantic-version": [
+        {
+            "changelog": "------------------\n\n*New:*\n\n    * `43 <https://github.com/rbarrois/python-semanticversion/issues/43>`_:\n      Add support for Django up to 1.10.\n\n*Removed:*\n\n    * Remove support for Django<1.7\n\n*Bugfix:*\n\n    * `35 <https://github.com/rbarrois/python-semanticversion/issues/35>`_:\n      Properly handle `^0.X.Y` in a NPM-compatible way\n\n",
+            "v": "<2.6.0"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
