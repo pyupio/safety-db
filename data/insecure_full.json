@@ -2040,6 +2040,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-wtf": [
+        {
+            "changelog": "-------------\n\nReleased 2013/8/15\n\n- Add i18n support (issue 65)\n- Use default html5 widgets and fields provided by wtforms\n- Python 3.3+ support\n- Redesign form, replace SessionSecureForm\n- CSRF protection solution\n- Drop wtforms imports\n- Fix recaptcha i18n support\n- Fix recaptcha validator for python 3\n- More test cases, it's 90%+ coverage now\n- Redesign documentation\n\n",
+            "v": "<0.9.0"
+        }
+    ],
     "formbar": [
         {
             "changelog": "===\n- Set autocomplete=\"off\" for password fields.\n- Added serialisation of dates.\n- Security fix: Fixed potential code injection issue by removing the rule\n  parsing out of formbar and use brabbel library for rule parsing and\n  evaluation.\n\n",
