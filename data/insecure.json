@@ -278,6 +278,9 @@
     "django-session-security": [
         "<2.4.0"
     ],
+    "django-sonic-screwdriver": [
+        "<0.2.2"
+    ],
     "django-sql-explorer": [
         "<0.4"
     ],

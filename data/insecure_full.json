@@ -1869,6 +1869,12 @@
             "v": "<2.4.0"
         }
     ],
+    "django-sonic-screwdriver": [
+        {
+            "changelog": "- add command git:add\n- rename PRE_RELEASE_SEPARATOR to RELEASE_SEPARATOR\n- update README.rst\n- Sonic Screwdriver is able to create secure production tags. See more on the README.rst\n\n\n",
+            "v": "<0.2.2"
+        }
+    ],
     "django-sql-explorer": [
         {
             "changelog": "===\n\n2/14/2014 - Happy Valentine's Day!\n\n- Templatized columns for easy linking\n- Additional security config options for splitting create vs. view permissions\n- Show many-to-many relation tables in schema helper\n\n",
