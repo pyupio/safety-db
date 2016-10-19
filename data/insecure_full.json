@@ -192,6 +192,12 @@
             "v": "<1.5.1"
         }
     ],
+    "collective.editskinswitcher": [
+        {
+            "changelog": "----------------\n\n- Fix: when we need authentication and we are anonymous then we do\n  *not* want to switch: we want to have the default behaviour of\n  getting the standard skin instead of the edit skin.  Added some more\n  inline documentation.\n  [maurits]\n\n- Switch back to checking the ``__ac`` cookie to see if someone is\n  anonymous or not; the getSecurityManager check always says we are\n  anonymous, though I thought I had seen it working previously.\n  [maurits]\n\n- Add logging lines for debugging.\n  [maurits]\n\n\n",
+            "v": "<1.0"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
