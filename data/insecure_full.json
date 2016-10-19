@@ -198,6 +198,10 @@
     ],
     "collective.documentviewer": [
         {
+            "changelog": "--------------------\n\n- be able to move jobs to front of queue\n\n- use portal_catalog instead of uid_catalog so security\n  checks apply to resource urls.\n\n\n",
+            "v": "<1.5.0b1"
+        },
+        {
             "changelog": "------------------\n\n- fix security on file resources\n\n\n",
             "v": "<1.5.1"
         }
