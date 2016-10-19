@@ -4531,6 +4531,12 @@
             "v": "<0.8"
         }
     ],
+    "sqlmap": [
+        {
+            "changelog": "\n* Added support to execute arbitrary commands on the database server underlying operating system either returning the standard output or not via UDF injection on MySQL and PostgreSQL and via xp_cmdshell() stored procedure on Microsoft SQL Server;\n* Added support for out-of-band connection between the attacker box and the database server underlying operating system via stand-alone payload stager created by Metasploit and supporting Meterpreter, shell and VNC payloads for both Windows and Linux;\n* Added support for out-of-band connection via Microsoft SQL Server 2000 and 2005 'sp_replwritetovarbin' stored procedure heap-based buffer overflow (MS09-004) exploitation with multi-stage Metasploit payload support;\n* Added support for out-of-band connection via SMB reflection attack with UNC path request from the database server to the attacker box by using the Metasploit smb_relay exploit;\n* Added support to read and write (upload) both text and binary files on the database server underlying file system for MySQL, PostgreSQL and Microsoft SQL Server;\n* Added database process' user privilege escalation via Windows Access Tokens kidnapping on MySQL and Microsoft SQL Server via either Meterpreter's incognito extension or Churrasco stand-alone executable;\n* Speed up the inference algorithm by providing the minimum required charset for the query output;\n* Major bug fix in the comparison algorithm to correctly handle also the case that the url is stable and the False response changes the page content very little;\n* Many minor bug fixes, minor enhancements and layout adjustments.\n\n",
+            "v": "<0.7"
+        }
+    ],
     "stargate": [
         {
             "changelog": "---\n\n- Add support for the HyBi version of WebSockets (specifically version-10). This version was released to solve some previous security concerns and\nwill be the version in Firefox 7/8 and Chrome 14 onwards accoring to Wikipedia.\n- Introduces a dependency on ws4py\n\n- See http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10\n\n",
