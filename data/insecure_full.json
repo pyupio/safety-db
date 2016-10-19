@@ -1837,6 +1837,12 @@
             "v": "<0.4"
         }
     ],
+    "django-staticfiles": [
+        {
+            "changelog": "-------------------\n\n.. warning:: django-staticfiles was added to Django 1.3 as a contrib app.\n\n   The django-staticfiles 0.3.X series will only receive security and data los\n   bug fixes after the release of django-staticfiles 1.0. Any Django 1.2.X\n   project using django-staticfiles 0.3.X and lower should be upgraded to use\n   either Django 1.3's staticfiles app or django-staticfiles >= 1.0 to profit\n   from the new features and stability.\n\n   You may want to chose to use django-staticfiles instead of Django's own\n   staticfiles app since any new feature (additionally to those backported\n   from Django) will be released first in django-staticfiles.\n\n* Fixed an issue that could prevent the ``build_static`` management command\n  to fail if the destination storage doesn't implement the ``listdir``\n  method.\n\n* Fixed an issue that caused non-local storage backends to fail saving\n  the files when running ``build_static``.\n\n",
+            "v": "<0.3.3"
+        }
+    ],
     "django-sticky-uploads": [
         {
             "changelog": "-----------------------------------\n\n* Security issue related to client changing the upload url specified by the widget for the upload\n* Added documentation for plugin extensions and callbacks\n* *Backwards Incompatible*: The signatures of the internal ``UploadForm.stash``, ``serialize_upload``, ``deserialize_upload`` and ``open_stored_file`` now require the upload url\n\n\n",
