@@ -192,6 +192,12 @@
             "v": "<1.5.1"
         }
     ],
+    "collective.geo.mapwidget": [
+        {
+            "changelog": "----------------\n\n- Added French translation [Fabien Moret]\n- Added ability to hit enter key within geocoder input and search. Previously,\n  hitting enter submitted the parent form.\n  [davidjb]\n- Fix minor typo on geocoder error div\n  [davidjb]\n- Replace deprecated usage of ``jq`` with ``$`` (using ``jQuery`` function)\n  [davidjb]\n- Allow mapwidget to utilise HTTPS mapping resources, where possible, to\n  attempt to avoid issues of loading insecure resources like map tiles. Only\n  Google and Bing support HTTPS for their APIs at present - Yahoo and OSM do\n  not. To avoid security errors, avoid the use of the latter two map APIs\n  when on HTTPS.\n  [davidjb]\n- Provide request protocol to layer templates\n  [davidjb]\n- Make tests install the collective.geo.settings extension profile so\n  plone.app.registry knows about settings.\n  [davidjb]\n- Added Danish translation [stonor]\n\n\n",
+            "v": "<1.5"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
