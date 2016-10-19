@@ -4727,6 +4727,12 @@
             "v": "<1.1"
         }
     ],
+    "simplejson": [
+        {
+            "changelog": "\n* Optional C extension for accelerating the decoding of JSON strings\n* Command line interface for pretty-printing JSON (via python -msimplejson)\n* Decoding of integers and floats is now extensible (e.g. to use Decimal) via\n  parse_int, parse_float options.\n* Subversion and issue tracker moved to google code:\n  http://code.google.com/p/simplejson/\n* \"/\" is no longer escaped, so if you're embedding JSON directly in HTML\n  you'll want to use .replace(\"/\", \"\\\\/\") to prevent a close-tag attack.\n\n",
+            "v": "<1.8.1"
+        }
+    ],
     "soappy": [
         {
             "changelog": "-------------------\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- LOL part\n  [kiorky]\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- XXE part\n  [kiorky]\n- Remove dependency on fpconst.\n- adding maptype  [Sandro Knau\u00df]\n- Support / (and other reserved characters) in the password. [Ionut Turturica]\n- Client.HTTPWithTimeout: fixed constructor's docstring and comments -named the diferences\n  with respect to the overriden method -fixed\n  wrong reference to class in module 'httplib' -added documentation of param 't[German Larrain\n- fixed module docstring location (all imports must be below them)[German Larrain]f\n- fix error \"Bad types (class java.math.BigInteger -> class java.lang.Integer)\" - Clayton Caetano de Sousa]\n\n\n\n",
