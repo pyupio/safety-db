@@ -79,6 +79,9 @@
     "collective.documentviewer": [
         "<1.5.1"
     ],
+    "collective.js.datatables": [
+        "<4.1.1"
+    ],
     "collective.noticeboard": [
         "<0.7.1"
     ],
