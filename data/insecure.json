@@ -612,6 +612,9 @@
     "plone.app.event": [
         "<3.0"
     ],
+    "plone.formwidget.autocomplete": [
+        "<1.1"
+    ],
     "plone.formwidget.contenttree": [
         "<1.0a3"
     ],
