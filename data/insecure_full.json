@@ -129,6 +129,12 @@
             "v": "<1.4.2"
         }
     ],
+    "blobxfer": [
+        {
+            "changelog": " Changed\n- Pin azure dependencies due to breaking changes\n\n Fixed\n- Minor bug fixes\n\n Security\n- Update cryptography requirement to 1.2.2\n\n",
+            "v": "<0.9.9.11"
+        }
+    ],
     "bok-choy": [
         {
             "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",
