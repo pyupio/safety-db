@@ -2223,6 +2223,12 @@
             "v": "<2.2.2"
         }
     ],
+    "ftw.solr": [
+        {
+            "changelog": "------------------\n\n- Add support for search results from external sites. Solr flares having a\n  getRemoteUrl attribute that starts with 'http' are handled as external\n  results. External sites can be indexed with ftw.crawler.\n  [buchi]\n\n- BugFix in \"recursive_index_security\" method. Do not try to reindex the\n  security on not catalog aware objects.\n  [mathias.leimgruber]\n\n- Some work on docs (fix Pythonism, add some info, improve markup). [jean]\n\n\n",
+            "v": "<1.4.0"
+        }
+    ],
     "gandi.cli": [
         {
             "changelog": "----\n\n* Add new dependency to request library, for certificate\n  validation during xmlrpc calls.\n* New command 'gandi vm kernels' to list available kernels,\n  can also be used to filter by vm to know which kernel is\n  compatible.\n* New parameters --cmdline and --kernels for command\n  'gandi disk update' to enable updating of cmdline\n  and/or kernel.\n* New parameter --size for command 'gandi vm create'\n  to specify disk size during vm creation.\n* Handle max_memory setting in command 'gandi vm update'\n  when updating memory. New parameter --reboot added to\n  accept a VM reboot for non-live update.\n* Update command 'gandi vm images' to also display usable\n  disks as image for vm creation.\n* Security: validate server certificate using request as\n  xmlrpc transport.\n* Security: restrict configuration file rights to owner only.\n* Refactor code of custom parameters, to only query API when\n  needed, improving overall speed of all commands.\n* Fixes bug with sshkey parameter for 'gandi paas create'\n  and 'gandi paas update' commands.\n* When an API call fail, we can call again using dry-run flag\n  to get more explicit errors. Used by 'gandi vhost create'\n  command.\n* Allow Gandi CLI to load custom modules using\n  'GANDICLI_PATH' environment variable, was previously only\n  done by commands.\n\n\n",
