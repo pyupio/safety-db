@@ -2955,6 +2955,12 @@
             "v": "<0.5.6"
         }
     ],
+    "pexpect": [
+        {
+            "changelog": "`````````````\n\n* Fix to allow running ``env`` in replwrap-ed bash.\n* Raise more informative exception from pxssh if it fails to connect.\n* Change ``passmass`` example to not log passwords entered.\n\n",
+            "v": "<4.2.1"
+        }
+    ],
     "pillow": [
         {
             "changelog": "------------------\n\n- Fixed CVE-2014-3589, a DOS in the IcnsImagePlugin (backport)\n  [Andrew Drake]\n\n\n",
