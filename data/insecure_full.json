@@ -2506,6 +2506,12 @@
             "v": "<0.1.17pre"
         }
     ],
+    "nodeconductor": [
+        {
+            "changelog": "--------------\n- UUID is now exposed for hooks.\n- Non-staff user can now create new organizations.\n- Fix project deletion.\n- Implemented endpoint for price list items.\n- Fixed stevedore dependency version.\n- Improved price estimate API.\n- Added ability to aggregate licenses by customer.\n- Fix repository configuration step in install script.\n- Added an option to list unmanaged resources.\n- Zabbix hosts are now created for PaaS tenants.\n- Added price list table endpoint.\n- Price list creation and update are now done in one transaction.\n- Added Azure service type.\n- Instance security groups are now validated on instance provisioning.\n- Added plugin settings configuration support.\n- Logging improvements.\n- Bugfixes.\n\n",
+            "v": "<0.70.0"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",
