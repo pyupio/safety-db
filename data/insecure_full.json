@@ -2023,6 +2023,12 @@
             "v": "<0.10.0"
         }
     ],
+    "djangocms-helper": [
+        {
+            "changelog": "++++++++++++++++++\n\n* Add --no-migrate option to skip migrations\n* Add secure argument to generate HTTPS requests\n* Better request mocking\n* Fix test on django CMS 3.2 (develop)\n* Add support for Python 3.5\n* Add --persistent option for persistent storage\n\n",
+            "v": "<0.9.3"
+        }
+    ],
     "djangocms-highlightjs": [
         {
             "changelog": "++++++++++++++++++\n\n* Fix security issue.\n\n",
