@@ -2544,6 +2544,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "ktbs": [
+        {
+            "changelog": "\n    * for users\n       * changes of semantics\n         + now a Base can contain other Bases\n         + monotonicity is now based on a total order on obsels (based on: end, begin, URI)\n         + hasSubject is now optional, and supports URIs as well as literals\n         + AttributeTypes and RelationTypes can now have multiple domains/range\n       * new features\n         + method based on Finite State Automata\n         + geojson serializer (experimental)\n         + new class DataGraph, and trace property hasContext\n         + trace statistics available as ./stats in every trace\n       * improved features\n         + now support special origin \"now\" when creating StoredTrace\n         + extensible HTML view through x-gereco/* mimetype, with a plugin for obsel tables\n         + empty StoreTrace by DELETEing is obsel collection\n         + SPARQL can now query multiple graphs (experimental)\n         + Bases can now provide additional information about their items\n       * other changes\n         + improved documentation\n         + numerous bug fixes and optimizations\n\n    * for developpers\n       * ktbs.method.abstract makes it easier to write new methods \n\n    * for admins\n       * method 'external' is now a plugin (consider the security issues before enabling it)\n       * new plugin for profiling performances (and tool for visualizing profile data)\n       * added tutorial for using Virtuoso as a back-end\n       * script bin/ktbs-add-stats can be used to add stats to all existing traces\n\n\n",
+            "v": "<0.5"
+        }
+    ],
     "lambdajson": [
         {
             "changelog": "-- Security fix. Using ast.literal_eval as eval.\n\n",
