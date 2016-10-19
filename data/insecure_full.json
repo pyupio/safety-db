@@ -1959,6 +1959,12 @@
             "v": "<0.10.0"
         }
     ],
+    "djangocms-highlightjs": [
+        {
+            "changelog": "++++++++++++++++++\n\n* Fix security issue.\n\n",
+            "v": "<0.3.1"
+        }
+    ],
     "djangorestframework": [
         {
             "changelog": "\n**Date**: 22nd Feb 2013\n\n* Security fix: Use `defusedxml` package to address XML parsing vulnerabilities.\n* Raw data tab added to browsable API.  (Eg. Allow for JSON input.)\n* Added TimeField.\n* Serializer fields can be mapped to any method that takes no args, or only takes kwargs which have defaults.\n* Unicode support for view names/descriptions in browsable API.\n* Bugfix: request.DATA should return an empty `QueryDict` with no data, not `None`.\n* Bugfix: Remove unneeded field validation, which caused extra queries.\n\n**Security note**: Following the [disclosure of security vulnerabilities][defusedxml-announce] in Python's XML parsing libraries, use of the `XMLParser` class now requires the `defusedxml` package to be installed.\n\nThe security vulnerabilities only affect APIs which use the `XMLParser` class, by enabling it in any views, or by having it set in the `DEFAULT_PARSER_CLASSES` setting.  Note that the `XMLParser` class is not enabled by default, so this change should affect a minority of users.\n\n",
