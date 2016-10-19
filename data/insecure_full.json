@@ -186,6 +186,12 @@
             "v": "<1.0.0"
         }
     ],
+    "collective.disqus": [
+        {
+            "changelog": "^^^^^^^^^^^^^^^^^^^\n\n- Added a \"Disqus summary view\" to include comments count on listings.\n  [frapell]\n\n- Added a viewlet that will display the comments count beneath the object's\n  title. [frapell]\n\n- If wrong url (not returning json), return empty list. [flecox]\n\n- Use network-path reference to load Disqus JavaScript to avoid \"This Page\n  Contains Both Secure and Non-Secure Items\" messages over HTTPS. [hvelarde]\n\n- Updated Brazilian Portuguese translation. [hvelarde]\n\n- Updated German translation. [fRiSi]\n\n- Updated Spanish translation. [frapell]\n\n- Bugfix for the article's titles. [frapell]\n\n- Avoid removal of registry records on reinstall. [hvelarde]\n\n- Tested for Plone 4.2 compatibility. [hvelarde]\n\n- Added portlets for hot and popular threads. [hvelarde]\n\n- Added records to access the Disqus API to the control panel. [hvelarde]\n\n- Updated development buildout configurations. [hvelarde]\n\n- Updated package distribution and documentation. [hvelarde]\n\n- Add control panel and viewlet. [toutpt]\n\n- Complete refactoring of the package. [toutpt, hvelarde, frapell]\n\n\n",
+            "v": "<2.0b1"
+        }
+    ],
     "collective.documentviewer": [
         {
             "changelog": "------------------\n\n- fix security on file resources\n\n\n",
