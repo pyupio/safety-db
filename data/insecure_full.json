@@ -4677,6 +4677,12 @@
             "v": "<0.4"
         }
     ],
+    "stix": [
+        {
+            "changelog": "2015-03-19\n- 44 Added StructuredCOA support. This completes the COA structure.\n- 75 Added support for non-list iterable collections in many add_foo()\n  methods and/or property setters.\n- 90 Fixed Campaign.status bug which raised a TypeError\n- 137 Added STIXPackage.add() method which adds input to the appropriate\n  top-level collection.\n- 164 stix.utils.set_id_namespace() also sets the python-cybox id namespace.\n- 187 Added support for OrganisationName and PersonName in CIQ Identity\n  extension.\n- 189 The ns_dict parameter cannot alter default STIX/CybOX namespace mappings.\n- 192 Added support for Related Campaigns on Indicator\n- 197 Created a TypedList abstraction for non-STIX collection objects.\n- 224 Added support for additional entries in the ns_dict parater on to_xml()\n- 240 Added support for references field on Vulnerability\n\n",
+            "v": "<1.1.1.4"
+        }
+    ],
     "swauth": [
         {
             "changelog": "\n    This is first release after move to OpenStack Infra\n\n    Allow users to change their own password/key\n\n    Add support for storage policy\n\n    Show password prompt if key is not specified\n\n    Allow to use Keystone at same time\n\n    Support SHA512 for password hashing\n\n    Code cleanup\n\n    Bugfixies a security fixies\n\n",
