@@ -3739,6 +3739,12 @@
             "v": "<1.0.01.0.0"
         }
     ],
+    "pyldap": [
+        {
+            "changelog": "- Fine-grained locking when linking against libldap_r\n- New wrapper class ldap.ReconnectLDAPObject\n- Security fix to module ldapurl\n- Other fixes and improvements to whole package\n- LDAPv3 schema support\n  (still somewhat premature and undocumented)\n\n----------------------------------------------------------------\nReleased 2.0.0pre05 2002-07-20\n\n----------------------------------------------------------------\nReleased 2.0.0pre04 2002-02-09\n\n----------------------------------------------------------------\nReleased 2.0.0pre02 2002-02-01\n\n----------------------------------------------------------------\nReleased 1.10alpha3 2000-09-19\n\n$Id: CHANGES,v 1.370 2016/01/18 15:16:29 stroeder Exp $\n",
+            "v": "<2.0.0pre05"
+        }
+    ],
     "pymemcache": [
         {
             "changelog": "--------------------\n* Fix flake8 and cleanup tox building\n* Fix security vulnerability by sanitizing key input\n\n",
