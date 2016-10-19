@@ -186,6 +186,12 @@
             "v": "<1.0.0"
         }
     ],
+    "collective.contentrules.mailtorole": [
+        {
+            "changelog": "----------------\n\n- Fixed error when used on Plone 4: passing 'From' to secureSend is\n  not needed in Plone 3 and breaks in Plone 4.\n  [maurits]\n\n\n",
+            "v": "<1.0"
+        }
+    ],
     "collective.documentviewer": [
         {
             "changelog": "------------------\n\n- fix security on file resources\n\n\n",

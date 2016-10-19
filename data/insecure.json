@@ -72,6 +72,9 @@
     "cmsplugin-filer": [
         "<1.0.0"
     ],
+    "collective.contentrules.mailtorole": [
+        "<1.0"
+    ],
     "collective.documentviewer": [
         "<1.5.1"
     ],
