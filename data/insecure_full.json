@@ -2712,6 +2712,12 @@
             "v": "<0.10"
         }
     ],
+    "mistune": [
+        {
+            "changelog": "~~~~~~~~~~~~~\n\nReleased on Feb. 26, 2016\n\n* Fix `hard_wrap` options on renderer.\n* Fix emphasis regex pattern\n* Fix base64 image link `80`_.\n* Fix link security per `87`_.\n\n.. _`80`: https://github.com/lepture/mistune/issues/80\n.. _`87`: https://github.com/lepture/mistune/issues/87\n\n\n",
+            "v": "<0.7.2"
+        }
+    ],
     "mitmproxy": [
         {
             "changelog": "\n    * Simplify repository and release structure. mitmproxy now comes as a single package, including netlib and pathod.\n\n    * Rename the Python package from libmproxy to mitmproxy.\n\n    * New option to add server certs to client chain (CVE-2016-2402, John Kozyrakis)\n\n    * Enable HTTP/2 by default (Thomas Kriechbaumer)\n\n    * Improved HAR extractor (Shadab Zafar)\n\n    * Add icon for OSX and Windows binaries\n\n    * Add content view for query parameters (Will Coster)\n\n    * Initial work on Python 3 compatibility\n\n    * locust.io export (Zohar Lorberbaum)\n\n    * Fix XSS vulnerability in HTTP errors (Will Coster)\n\n    * Numerous bugfixes and minor improvements\n\n\n",
