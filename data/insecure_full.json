@@ -1969,6 +1969,12 @@
             "v": "<2.8"
         }
     ],
+    "droopescan": [
+        {
+            "changelog": "======\n\n* New Joomla, WP, SS and Drupal versions. WP has a XSS vuln.\n\n",
+            "v": "<1.33.7"
+        }
+    ],
     "dulwich": [
         {
             "changelog": "\n SECURITY BUG FIXES\n\n  * Fix buffer overflow in C implementation of pack apply_delta().\n    (CVE-2015-0838)\n\n    Thanks to Ivan Fratric of the Google Security Team for\n    reporting this issue.\n    (Jelmer Vernoo\u0133)\n\n",
