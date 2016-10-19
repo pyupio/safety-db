@@ -479,6 +479,10 @@
             "v": "<1.2.2"
         },
         {
+            "changelog": "==========================\nDjango 1.2.6 release notes\n==========================\n\n*September 9, 2011*\n\nWelcome to Django 1.2.6!\n\nThis is the sixth bugfix/security release in the Django 1.2 series, fixing\nseveral security issues present in Django 1.2.5.  Django 1.2.6 is a\nrecommended upgrade for all users of any Django release in the 1.2.X series.\n\nFor a full list of issues addressed in this release, see the `security\nadvisory`_.\n\n.. _security advisory: https://www.djangoproject.com/weblog/2011/sep/09/security-releases-issued/\n",
+            "v": "<1.2.6"
+        },
+        {
             "cve": "CVE-2011-4136",
             "description": "django.contrib.sessions in Django before 1.2.7 and 1.3.x before 1.3.1, when session data is stored in the cache, uses the root namespace for both session identifiers and application-data keys, which allows remote attackers to modify a session by triggering use of a key that is equal to that session's identifier.",
             "urls": [
