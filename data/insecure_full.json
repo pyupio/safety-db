@@ -135,6 +135,12 @@
             "v": "<0.5.1"
         }
     ],
+    "ccnmtldjango": [
+        {
+            "changelog": "==================\n\n* Django 1.7.7\n* latest pip and setuptools\n* misc library updates\n* admin login style fix\n* messages context processor\n* Pillow 2.7.0 (security update)\n\n",
+            "v": "<1.9.0"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
