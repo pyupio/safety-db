@@ -2955,6 +2955,12 @@
             "v": "<0.5.6"
         }
     ],
+    "pexpect": [
+        {
+            "changelog": "```````````\n\n* Fix an issue that prevented importing pexpect on Python 3 when ``sys.stdout``\n  was reassigned (:ghissue:`30`).\n* Improve prompt synchronisation in :mod:`~pexpect.pxssh` (:ghpull:`28`).\n* Fix pickling exception instances (:ghpull:`34`).\n* Fix handling exceptions from :func:`select.select` on Python 3 (:ghpull:`33`).\n\nThe examples have also been cleaned up somewhat - this will continue in future\nreleases.\n\n",
+            "v": "<3.1"
+        }
+    ],
     "pillow": [
         {
             "changelog": "------------------\n\n- Fixed CVE-2014-3589, a DOS in the IcnsImagePlugin (backport)\n  [Andrew Drake]\n\n\n",
