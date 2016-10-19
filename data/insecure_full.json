@@ -4749,6 +4749,10 @@
         {
             "changelog": "''''''''''''''''''''''''''\n\nSecurity-related Bugfix\n-----------------------\n\n- Fix flaw that would allow a person who knows a storage index of a file to\n  delete shares of that file. (`1528`_)\n- Remove corner cases in mutable file bounds management which could expose\n  extra lease info or old share data (from prior versions of the mutable\n  file) if someone with write authority to that mutable file exercised these\n  corner cases in a way that no actual Tahoe-LAFS client does. (Probably not\n  exploitable.) (`1528`_)\n\n.. _`1528`: https://tahoe-lafs.org/trac/tahoe-lafs/ticket/1528\n\n\n",
             "v": "<1.8.3"
+        },
+        {
+            "changelog": "''''''''''''''''''''''''''\n\nSecurity-related Bugfix\n-----------------------\n\n- Fix flaw that would allow servers to cause undetected corruption when\n  retrieving the contents of mutable files (both SDMF and MDMF). (`1654`_)\n\n.. _`1654`: https://tahoe-lafs.org/trac/tahoe-lafs/ticket/1654\n\n\n",
+            "v": "<1.9.1"
         }
     ],
     "thorn": [
