@@ -2337,6 +2337,12 @@
             "v": "<1.0.0"
         }
     ],
+    "invenio-accounts": [
+        {
+            "changelog": "--------------------------------------\n\n- Module rewrite using Flask-Security.\n\n",
+            "v": "<1.0.0a15"
+        }
+    ],
     "invenio-search": [
         {
             "changelog": "-----------------------------------\n\n- Fixes potential XSS issues by changing search flash messages\n  template so that they are not displayed as safe HTML by default.\n- Adds missing `invenio_access` dependency and amends past upgrade\n  recipes following its separation into standalone package.\n- Displaying HTML safe flash messages can be done by using one of\n  these flash contexts: 'search-results-after(html_safe)', 'websearch-\n  after-search-form(html_safe)' instead of the standard ones (which\n  are the same without '(html safe)' at the end).\n\n",
