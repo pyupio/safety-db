@@ -220,6 +220,12 @@
             "v": "<0.6.4"
         }
     ],
+    "cryptography-vectors": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~\n* **SECURITY ISSUE**: The OpenSSL backend prior to 1.0.2 made extensive use\n  of assertions to check response codes where our tests could not trigger a\n  failure.  However, when Python is run with ``-O`` these asserts are optimized\n  away.  If a user ran Python with this flag and got an invalid response code\n  this could result in undefined behavior or worse. Accordingly, all response\n  checks from the OpenSSL backend have been converted from ``assert``\n  to a true function call. Credit **Emilia K\u00e4sper (Google Security Team)**\n  for the report.\n\n",
+            "v": "<1.0.2"
+        }
+    ],
     "defusedexpat": [
         {
             "cve": "CVE-2013-1664",
