@@ -379,6 +379,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "edrnsite.policy": [
+        "<1.0.5"
+    ],
     "errbot": [
         "<1.3.0"
     ],
