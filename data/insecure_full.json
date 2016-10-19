@@ -4401,6 +4401,10 @@
     ],
     "pywebsite": [
         {
+            "changelog": "----------------------\n\nFeatures added\n~~~~~~~~~~~~~~\n\n* resizing routines useful for images.\n\nBugs fixed\n~~~~~~~~~~\n\n* signed_url extra layer of protection against timing attacks.\n* signed_url now uses base64 url safe encoding to shorten hash.\n* Imported __doc__ from all sub packages.  So help(pywebsite.module) works.\n\n\n",
+            "v": "<0.1.15pre"
+        },
+        {
             "changelog": "---------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* hash_url fixes for length extension attack, and value equivalence attacks.\n\n\n",
             "v": "<0.1.9pre"
         }
