@@ -1700,6 +1700,12 @@
             "v": "<2.3.0"
         }
     ],
+    "django-cms": [
+        {
+            "changelog": "\n- Fix cache settings\n- Fix user lookup for view restrictions/page permissions when using raw id field\n- Fixed regression when page couldn't be copied if CMS_PERMISSION was False\n- Fixes an issue relating to uninstalling a namespaced application\n- Adds \"Can change page\" permission\n- Fixes a number of page-tree issues the could lead data corruption under\n  certain conditions\n- Addresses security vulnerabilities in the `render_model` template tag that\n  could lead to escalation of privileges or other security issues.\n- Addresses a security vulnerability in the cms' usage of the messages framework\n- Fixes security vulnerabilities in custom FormFields that could lead to\n  escalation of privileges or other security issues.\n\n\n",
+            "v": "<3.2.4"
+        }
+    ],
     "django-countries": [
         {
             "changelog": "=============================\n\n* Extend test suite to cover Django 1.8\n\n* Fix XSS escaping issue in CountrySelectWidget\n\n* Common name changes: fix typo of Moldova, add United Kingdom\n\n* Add ``{% get_country %}`` template tag.\n\n* New ``CountryField`` Django Rest Framework serializer field.\n\n",
