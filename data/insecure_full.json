@@ -3547,6 +3547,12 @@
             "v": "<1.1.7"
         }
     ],
+    "pyrad": [
+        {
+            "changelog": "------------------\n\n* Use a different random generator to improve the security of generated\n  packet ids and authenticators.\n\n\n",
+            "v": "<2.1"
+        }
+    ],
     "pyramid-odesk": [
         {
             "changelog": "-----\n- Login and Logout actions are performed via POST and has protection\n  against CSRF attacks\n\n",
