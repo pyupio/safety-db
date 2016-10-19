@@ -403,6 +403,9 @@
     "geventhttpclient": [
         "<1.2.0"
     ],
+    "glibc": [
+        "<0.5"
+    ],
     "gns3-gui": [
         "<1.5.1"
     ],
