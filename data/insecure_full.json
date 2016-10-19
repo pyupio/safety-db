@@ -678,6 +678,10 @@
             "v": "<1.7.11"
         },
         {
+            "changelog": "==========================\nDjango 1.7.4 release notes\n==========================\n\n*January 27, 2015*\n\nDjango 1.7.4 fixes several bugs in 1.7.3.\n\nBugfixes\n========\n\n* Fixed a migration crash when unapplying ``contrib.contenttypes``\u2019s or\n  ``contrib.auth``\u2019s first migration (:ticket:`24075`).\n\n* Made the migration's ``RenameModel`` operation rename ``ManyToManyField``\n  tables (:ticket:`24135`).\n\n* Fixed a migration crash on MySQL when migrating from a ``OneToOneField`` to a\n  ``ForeignKey`` (:ticket:`24163`).\n\n* Prevented the ``static.serve`` view from producing ``ResourceWarning``\\s in\n  certain circumstances (security fix regression, :ticket:`24193`).\n\n* Fixed schema check for ManyToManyField to look for internal type instead\n  of checking class instance, so you can write custom m2m-like fields with the\n  same behavior. (:ticket:`24104`).\n",
+            "v": "<1.7.4"
+        },
+        {
             "cve": "CVE-2015-2241",
             "description": "Cross-site scripting (XSS) vulnerability in the contents function in admin/helpers.py in Django before 1.7.6 and 1.8 before 1.8b2 allows remote attackers to inject arbitrary web script or HTML via a model attribute in ModelAdmin.readonly_fields, as demonstrated by a @property.",
             "urls": [
