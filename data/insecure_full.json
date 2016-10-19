@@ -2092,6 +2092,12 @@
             "v": "<6.1"
         }
     ],
+    "fedex": [
+        {
+            "changelog": "-----\n\n* Added Validation, Availability and Commitment (AVC) service. (radzhome)\n* Added [Validation]AvailabilityAndCommitmentService_v4.wsdl for AVC service. (radzhome)\n* Added examples and unit tests for AVC service.\n* Refactored examples and documentation. (radzhome)\n* A quick PEP8 pass using pycharm on most of the codebase (radzhome)\n* Add travis yml (radzhome)\n\n\n",
+            "v": "<2.1.0"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
