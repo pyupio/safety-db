@@ -1768,6 +1768,12 @@
             "v": "<1.1.4"
         }
     ],
+    "django-dajaxice-me": [
+        {
+            "changelog": "^^^^^\n* Fixing dajaxice callback model to improve security against XSS attacks.\n* Dajaxice callbacks should be passed as functions and not as strings.\n* Old string-callback maintained for backward compatibility.(usage not recommended)\n* New documentation using Sphinx\n* Adding a decorators.py file with a helper decorator to register functions (Douglas Soares de Andrade)\n\n",
+            "v": "<0.1.7"
+        }
+    ],
     "django-dajaxice-ng": [
         {
             "changelog": "^^^^^\n* Fixing dajaxice callback model to improve security against XSS attacks.\n* Dajaxice callbacks should be passed as functions and not as strings.\n* Old string-callback maintained for backward compatibility.(usage not recommended)\n* New documentation using Sphinx\n* Adding a decorators.py file with a helper decorator to register functions (Douglas Soares de Andrade)\n\n",
