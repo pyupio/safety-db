@@ -2602,6 +2602,10 @@
         {
             "changelog": "\n    * Simplify repository and release structure. mitmproxy now comes as a single package, including netlib and pathod.\n\n    * Rename the Python package from libmproxy to mitmproxy.\n\n    * New option to add server certs to client chain (CVE-2016-2402, John Kozyrakis)\n\n    * Enable HTTP/2 by default (Thomas Kriechbaumer)\n\n    * Improved HAR extractor (Shadab Zafar)\n\n    * Add icon for OSX and Windows binaries\n\n    * Add content view for query parameters (Will Coster)\n\n    * Initial work on Python 3 compatibility\n\n    * locust.io export (Zohar Lorberbaum)\n\n    * Fix XSS vulnerability in HTTP errors (Will Coster)\n\n    * Numerous bugfixes and minor improvements\n\n\n",
             "v": "<0.17"
+        },
+        {
+            "changelog": "\n    * New scripting API that allows much more flexible and fine-grained\n      rewriting of traffic. See the docs for more info.\n\n    * Support for gzip and deflate content encodings. A new \"z\"\n      keybinding in mitmproxy to let us quickly encode and decode content, plus\n      automatic decoding for the \"pretty\" view mode.\n\n    * An event log, viewable with the \"v\" shortcut in mitmproxy, and the\n      \"-e\" command-line flag in mitmdump.\n\n    * Huge performance improvements: mitmproxy interface, loading\n      large numbers of flows from file.\n\n    * A new \"replace\" convenience method for all flow objects, that does a\n      universal regex-based string replacement.\n\n    * Header management has been rewritten to maintain both case and order.\n\n    * Improved stability for SSL interception.\n\n    * Default expiry time on generated SSL certs has been dropped to avoid an\n      OpenSSL overflow bug that caused certificates to expire in the distant\n      past on some systems.\n\n    * A \"pretty\" view mode for JSON and form submission data.\n\n    * Expanded documentation and examples.\n\n    * Countless other small improvements and bugfixes.\n\n\n",
+            "v": "<0.6"
         }
     ],
     "mixminion": [
