@@ -141,6 +141,12 @@
             "v": "<0.3.8"
         }
     ],
+    "cfncluster": [
+        {
+            "changelog": "======\n* updates:``ami``: Custom CentOS 6 kernel repo added, support for >32 vCPUs\n* feature:``ami``: Chef 11.x client + berkshelf\n* feature:``cfncluster``: Support for S3 based pre/post install scripts\n* feature:``cfncluster``: Support for EBS shared directory variable\n* feature:``cfncluster``: Support for C4 instances\n* feature:``cfncluster``: Support for additional VPC security group\n* updates:``ami``: Pulled latest NVIDIA driver 340.65\n* feature:``cli``: Added support for version command\n* updates:``cli``: Removed unimplemented stop command from CLI\n\n",
+            "v": "<0.0.18"
+        }
+    ],
     "chanjo-report": [
         {
             "changelog": " Added\n- handle post/get requests for the coverage report (URL limits)\n- new \"index\" blueprint which displays list of samples and genes\n\n Removed\n- link to the \"index\" page from the report (security)\n\n Changed\n- use a customized version of the HTML form for the PDF link in the navbar\n- avoid searching for group id if sample ids are submitted in query\n- use \"select\" element for picking completeness level\n\n Fixed\n- removes the \"submit\" label from the customizations form\n- look up \"show_genes\" from correct \"args/form\" dict\n\n",
