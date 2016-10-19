@@ -3407,6 +3407,12 @@
             "v": ">=4.1,<4.2a2"
         }
     ],
+    "plone.app.contentmenu": [
+        {
+            "changelog": "------------------\n\n- Made a test independent of an internal sort order.\n  [hannosch]\n\n- Escape the title of the defaultpage in the DisplayMenu. This fixes a potential\n  xss attack and http://dev.plone.org/plone/ticket/8377.\n  [csenger]\n\n- Added the prefix \"folder-\" to the CSS id of the folder part of the view\n  contentmenu. This closes http://dev.plone.org/plone/ticket/8375.\n  [realefab]\n\n\n",
+            "v": "<1.1.7"
+        }
+    ],
     "plone.app.contenttypes": [
         {
             "changelog": "-------------------\n\nBug fixes:\n\n- Fixed possible cross site scripting (XSS) attack in lead image caption.  [maurits]\n\n\n",
