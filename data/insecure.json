@@ -224,6 +224,9 @@
     "django-dajaxice-ng": [
         "<0.1.7"
     ],
+    "django-ddp": [
+        "<0.14.0"
+    ],
     "django-embed-video": [
         "<0.3"
     ],
