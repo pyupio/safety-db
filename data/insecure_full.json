@@ -1616,6 +1616,10 @@
     ],
     "django-allauth": [
         {
+            "changelog": "*******************\n\nNote worthy changes\n-------------------\n\n- Storing social access tokens is now optional\n  (``SOCIALACCOUNT_STORE_TOKENS``).\n\n- ``nimiq`` contributed ORCID support, thanks.\n\n- All forms are now pluggable via a new setting:\n  ``(SOCIAL)ACCOUNT_FORMS``.\n\n- James Thompson contributed Windows Live support, thanks!\n\n\nBackwards incompatible changes\n------------------------------\n\n- SECURITY: The Persona provider now requires the ``AUDIENCE`` parameter\n  to be explicitly configured, as required by the Persona\n  specification for security reasons.\n\n- The inline Javascript is removed from the ``fbconnect.html`` template,\n  which allows for a more strict ``Content-Security-Policy``. If you\n  were using the builtin ``fbconnect.html`` this change should go by\n  unnoticed.\n\n\n",
+            "v": "<0.18.0"
+        },
+        {
             "changelog": "*******************\n\nSecurity notice\n---------------\n\n- Previous versions contained a vulnerability allowing an attacker to alter the\n  provider specific settings for ``SCOPE`` and/or ``AUTH_PARAMS`` (part of the\n  larger ``SOCIALACCOUNT_PROVIDERS`` setting). The changes would persist across\n  subsequent requests for all users, provided these settings were explicitly set\n  within your project. These settings translate directly into request\n  parameters, giving the attacker undesirable control over the OAuth(2)\n  handshake. You are not affected if you did not explicitly configure these\n  settings. Thanks to Ryan Kelly for reporting!\n\n\nNote worthy changes\n-------------------\n\n- New providers: Doximity.\n\n- New translations: Korean.\n\n\n",
             "v": "<0.28.0"
         }
