@@ -78,6 +78,9 @@
     "collective.noticeboard": [
         "<0.7.1"
     ],
+    "collective.recaptcha": [
+        "<1.0b2"
+    ],
     "collective.solr": [
         "<1.0b24"
     ],
