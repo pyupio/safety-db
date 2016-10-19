@@ -722,6 +722,10 @@
             "v": "<1.8.15"
         },
         {
+            "changelog": "===========================\nDjango 1.9.10 release notes\n===========================\n\n*September 26, 2016*\n\nDjango 1.9.10 fixes a security issue in 1.9.9.\n\nCSRF protection bypass on a site with Google Analytics\n======================================================\n\nAn interaction between Google Analytics and Django's cookie parsing could allow\nan attacker to set arbitrary cookies leading to a bypass of CSRF protection.\n\nThe parser for ``request.COOKIES`` is simplified to better match the behavior\nof browsers and to mitigate this attack. ``request.COOKIES`` may now contain\ncookies that are invalid according to :rfc:`6265` but are possible to set via\n``document.cookie``.\n",
+            "v": "<1.9.10"
+        },
+        {
             "cve": "CVE-2009-3695",
             "description": "Algorithmic complexity vulnerability in the forms library in Django 1.0 before 1.0.4 and 1.1 before 1.1.1 allows remote attackers to cause a denial of service (CPU consumption) via a crafted (1) EmailField (email address) or (2) URLField (URL) that triggers a large amount of backtracking in a regular expression.",
             "urls": [
