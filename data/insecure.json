@@ -86,6 +86,9 @@
     "collective.js.datatables": [
         "<4.1.1"
     ],
+    "collective.liveblog": [
+        "<1.0b2"
+    ],
     "collective.noticeboard": [
         "<0.7.1"
     ],
