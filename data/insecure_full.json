@@ -67,6 +67,12 @@
             "v": "<2.0.2"
         }
     ],
+    "ansible-tower-cli": [
+        {
+            "changelog": "------------------\n\n-  Fixed an issue where the settings file could be world readable\n-  Added the ability to associate a project with an organization\n-  Added setting \"verify\\_ssl\" to disallow insecure connections\n-  Added support for additional cloud credentials\n-  Exposed additional options for a cloud inventory source\n-  Combined \" launch-time extra\\_vars\" with \" job\\_template extra\\_vars\"\n   for older Tower versions\n-  Changed the extra\\_vars parameters to align with Ansible parameter\n   handling\n-  Added the ability to run ad hoc commands\n-  Included more detail when displaying job information\n-  Added an example bash script to demonstrate tower-cli usage\n\n",
+            "v": "<2.3.0"
+        }
+    ],
     "apache-libcloud": [
         {
             "changelog": "-----------------------------------\n\nGeneral\n~~~~~~~\n\n- Fix hostname validation in the SSL verification code (CVE-2012-3446).\n\n  Reported by researchers from the University of Texas at Austin (Martin\n  Georgiev, Suman Jana and Vitaly Shmatikov).\n\n",
