@@ -637,6 +637,9 @@
     "pypiserver": [
         "<1.1.7"
     ],
+    "pyrad": [
+        "<0.6"
+    ],
     "pyramid-odesk": [
         "<1.1.2"
     ],
