@@ -3401,6 +3401,10 @@
         {
             "changelog": "===========================\n\n - file ownership tweaks for production buildouts [dimo, clopy]\n - add security hotfix, update LinguaPlone & plone.app.discussion [dimo]\n - plonesite recipe tweaks [dimo]\n\n\n",
             "v": "<4.2"
+        },
+        {
+            "changelog": "=============================\n\n - Update to Plone 4.0.7 that includes the latest security fixes [dimo]\n - don't use sudo in front of chown commands in production buildout [dimo]\n\n\n",
+            "v": "<4.2.1"
         }
     ],
     "pplone": [
