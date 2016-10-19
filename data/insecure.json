@@ -948,6 +948,9 @@
     "vnccollab.theme": [
         "<1.5.2"
     ],
+    "vsm-dashboard": [
+        "<2.1.0"
+    ],
     "waitress": [
         "<1.0.0"
     ],
