@@ -439,6 +439,7 @@
     ],
     "humblesetuptools": [
         "<0.9.5",
+        "<1.0",
         "<1.3"
     ],
     "invenio-search": [
