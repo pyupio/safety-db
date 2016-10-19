@@ -2598,6 +2598,12 @@
             "v": "<0.10"
         }
     ],
+    "mitmproxy": [
+        {
+            "changelog": "\n    * An -n option to start the tools without binding to a proxy port.\n\n    * Allow scripts, hooks, sticky cookies etc. to run on flows loaded from\n      save files.\n\n    * Regularize command-line options for mitmproxy and mitmdump.\n\n    * Add an \"SSL exception\" to mitmproxy's license to remove possible\n      distribution issues.\n\n    * Add a --cert-wait-time option to make mitmproxy pause after a new SSL\n      certificate is generated. This can pave over small discrepancies in\n      system time between the client and server.\n\n    * Handle viewing big request and response bodies more elegantly. Only\n      render the first 100k of large documents, and try to avoid running the\n      XML indenter on non-XML data.\n\n    * BUGFIX: Make the \"revert\" keyboard shortcut in mitmproxy work after a\n      flow has been replayed.\n\n    * BUGFIX: Repair a problem that sometimes caused SSL connections to consume\n      100% of CPU.\n\n\n",
+            "v": "<0.5"
+        }
+    ],
     "mixminion": [
         {
             "changelog": "   - A real SMTP exit module to relay messages via a local MTA.  Blacklisting\n     is supported by address, by username, by host, by entire domain, and\n     by regular expression.\n   - Integrated directory support for clients.\n   - Automatic path selection, along with a better user interface to specify\n     paths.\n   - You can now enable Cottrell (DynamicPool) and Binomial Dynamic Pool\n     batching, though they are disabled by default to make the system more\n     testable.\n   - Servers resist certain trivial DoS attacks more strongly.  In\n     particular, you should no longer be able to send zlib bombs or flood a\n     server with open connections.\n   - Clean build process under FreeBSD.\n   - Ability to run server as a daemon.\n   - Slightly better documentation and error messages.\n   - Better resistance to newline corruption of server descriptors.\n   - Other bugfixes and performance improvements too numerous to mention.\n\n",
