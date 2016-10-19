@@ -719,6 +719,9 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "qtmud": [
+        "<0.0.3"
+    ],
     "reprozip": [
         "<0.7.1"
     ],
