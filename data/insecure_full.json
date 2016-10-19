@@ -67,6 +67,12 @@
             "v": "<2.0.2"
         }
     ],
+    "apache-libcloud": [
+        {
+            "changelog": "-----------------------------------\n\nGeneral\n~~~~~~~\n\n- Fix hostname validation in the SSL verification code (CVE-2012-3446).\n\n  Reported by researchers from the University of Texas at Austin (Martin\n  Georgiev, Suman Jana and Vitaly Shmatikov).\n\n",
+            "v": "<0.11.1"
+        }
+    ],
     "archmage": [
         {
             "changelog": "==============\nBug fixes:\n\n* [CVE-2015-1589] Fixed directory traversal bug\n\n",
