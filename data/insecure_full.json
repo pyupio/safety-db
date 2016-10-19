@@ -4470,6 +4470,12 @@
             "v": "<0.6"
         }
     ],
+    "robotframework-imaplibrary": [
+        {
+            "changelog": "==================\n\n* Fix is_secure parameter. Thanks to davidrums\n\n",
+            "v": "<0.2.4"
+        }
+    ],
     "roundup": [
         {
             "cve": "CVE-2012-6130",
