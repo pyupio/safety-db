@@ -149,6 +149,10 @@
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
             "v": "<0.3.8"
+        },
+        {
+            "changelog": "======\n\n* possibility to override security related options via environment variables (see example below)\n* Toro dependency updated\n* Use new SockJS cdn if no explicitly provided (cdn.sockjs.org will be retired soon)\n\n```bash\nCENTRIFUGE_PASSWORD=x45d CENTRIFUGE_COOKIE_SECRET=longlongrandomstring CENTRIFUGE_API_SECRET=54sfg centrifuge --logging=DEBUG\n```\n\n",
+            "v": "<0.6.1"
         }
     ],
     "chanjo-report": [
