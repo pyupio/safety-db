@@ -372,6 +372,9 @@
     "google-appengine": [
         "<1.5.4"
     ],
+    "herculeum": [
+        "<0.10"
+    ],
     "holocron": [
         "<0.2.0"
     ],
