@@ -192,6 +192,12 @@
             "v": "<1.5.1"
         }
     ],
+    "collective.mockmailhost": [
+        {
+            "changelog": "----------------\n\n- Register MockMailHost in SiteManager to get MockMailHost when using\n  ``getToolByName(context, 'MailHost')`` or ``getUtility(IMailHost)``.\n  [saily]\n\n- Inherit from MailHost instead of SimpleItem\n  [saily]\n\n- Implement the secureSend method\n  [saily]\n\n\n",
+            "v": "<0.4"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
