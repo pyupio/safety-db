@@ -4517,6 +4517,10 @@
         {
             "changelog": "=====================\n\n* Security: Fixed ``Referer`` HTTP header field leaking from HTTPS to HTTP.\n* Fixed ``AttributeError`` in proxy when using PhantomJS and ``pre_response`` scripting hook.\n* Fixed early program end when server returns error fetching robots.txt.\n* Fixed uninteresting errors outputted if program is forcefully closed.\n* Fixed ``--referer`` option not applied to subsequent requests.\n\n\n",
             "v": "<0.1006.1"
+        },
+        {
+            "changelog": "================\n\n* Fixed: a ``--database`` path with a question mark (``?``) truncated the path, did not use a on-disk database, or causes ``TypeError``. The question mark is automatically replaced with an underscore.\n* Fixed: HTTP proxy support broken since version 0.1001.\n* Added: ``no_proxy`` environment variable support.\n* Added: ``--proxy-domains``, ``--proxy-exclude-domains``, ``--proxy-hostnames``, ``--proxy-exclude-hostnames``\n* Removed: ``--no-secure-proxy-tunnel``.\n\n\n",
+            "v": "<1.0"
         }
     ],
     "zeep": [
