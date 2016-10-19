@@ -2544,6 +2544,12 @@
             "v": "<1.1.2"
         }
     ],
+    "metadataproxy": [
+        {
+            "changelog": "\n* Security release. [Ross Vandegrift](https://github.com/rvandegrift/) discovered a flaw in the proxy functionality when used in passthrough mode that would expose the host's IAM role credentials when extra paths were added to the end of the security-credentials end-point. metadataproxy will now properly capture any call to iam/security-credentials/<role> and return the scoped credentials, rather than the host's credentials.\n\n",
+            "v": "<1.1.1"
+        }
+    ],
     "mgp2pdf": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~\n\n- ``%filter`` is disabled by default for being a security risk.  Use\n  ``--unsafe`` to enable.\n\n- ``-o DIRECTORY`` is now supported.\n\n- Interpret image paths relative to the location of the mgp file.\n\n- Support Python 3.3 and up in addition to 2.6 and 2.7.\n\n- More accurate text positioning (mgp2pdf no longer truncates the\n  corrdinates to integral point values).\n\n- More color names are now recognized: white, red, green, blue, yellow.\n\n- Better font name recognition (requires ``fc-match`` from fontconfig).\n\n- Improved error handling and reporting.\n\n- Support ``%%`` comment syntax.\n\n- Corrected handling of ``%default``, ``%tab``, ``%deffont``.\n\n- Implemented ``%include``.\n\n- Implemented ``%newimage -raise`` (also discovered that mgp itself ignores\n  ``-raise``).\n\n- 100% test coverage.\n\n\n",
