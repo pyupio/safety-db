@@ -1650,6 +1650,12 @@
             "v": "<0.9.9.1"
         }
     ],
+    "django-fields": [
+        {
+            "changelog": "-----\n\n* Added: Ability to specify `secret_key` as an argument to the field constructor (via [markkennedy](https://github.com/svetlyak40wt/django-fields/pull/40 \"Issue 40\")).\n* Added: `EncryptedUSPhoneNumberField` and `EncryptedUSSocialSecurityNumberField` now try to import from the standalone django-localflavor before falling back to the version included in Django (this is necessary to support Django 1.6 and newer) (via [mjacksonw](https://github.com/svetlyak40wt/django-fields/pull/36 \"Issue 33\")).\n\n",
+            "v": "<0.2.3"
+        }
+    ],
     "django-filebrowser-no-grappelli-staff": [
         {
             "changelog": "-----------------\n\n* Fixed security bug: added staff_member_required decorator to the upload-function.\n* Fixed a XSS vulnerability with fb_tags.\n\n",
