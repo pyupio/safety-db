@@ -2866,6 +2866,12 @@
             "v": "<1.0.2"
         }
     ],
+    "osmapi": [
+        {
+            "changelog": " Added\n- initial import\n\n\n Categories\n- `Added` for new features.\n- `Changed` for changes in existing functionality.\n- `Deprecated` for once-stable features removed in upcoming releases.\n- `Removed` for deprecated features removed in this release.\n- `Fixed` for any bug fixes.\n- `Security` to invite users to upgrade in case of vulnerabilities.\n",
+            "v": "<0.2"
+        }
+    ],
     "otpauth": [
         {
             "changelog": "~~~~~~~~~~~~~\n\nReleased on May 26, 2015\n\nUse ``compare_digest`` to avoid timing attack.\n\n",
