@@ -1662,6 +1662,12 @@
             "v": "<0.9.9.1"
         }
     ],
+    "django-filebrowser-no-grappelli": [
+        {
+            "changelog": "-----------------\n\n* Fixed security bug: added staff_member_required decorator to the upload-function.\n* Fixed a XSS vulnerability with fb_tags.\n\n",
+            "v": "<3.4.2"
+        }
+    ],
     "django-filebrowser-no-grappelli-staff": [
         {
             "changelog": "-----------------\n\n* Fixed security bug: added staff_member_required decorator to the upload-function.\n* Fixed a XSS vulnerability with fb_tags.\n\n",
