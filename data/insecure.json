@@ -75,6 +75,9 @@
     "collective.documentviewer": [
         "<1.5.1"
     ],
+    "collective.googleanalytics": [
+        "<1.0a2"
+    ],
     "collective.noticeboard": [
         "<0.7.1"
     ],
