@@ -438,6 +438,9 @@
     "google-appengine": [
         "<1.5.4"
     ],
+    "gordon": [
+        "<0.3.0"
+    ],
     "holocron": [
         "<0.2.0"
     ],
