@@ -4723,6 +4723,12 @@
             "v": "<0.12.6"
         }
     ],
+    "socketio-client-2": [
+        {
+            "changelog": "-----\n- Replaced secure=True with host='https://example.com'\n- Fixed sending heartbeats thanks to Travis Odom\n\n",
+            "v": "<0.5.2"
+        }
+    ],
     "sopel": [
         {
             "changelog": "===============================\nModule Changes (for users):\n* .cur behaves better when bad arguments are given\n* Fixed numerous unicode errors\n* Added a command to open an IPython console within the module context\n* Added mass units and millimeters to .cur\n* GitHub pull requests now get extended URL info\n* .weather now displays wind in m/s instead of kts\n* A security issue involving improperly named channel logs was fixed\n* Misc bugfixed\n\nCore changes (for users):\n* Channel joins at bot startup can be rate limited with the `throttle_joins` option in the [core] config section to work around server limits\n* Added the ability for SASL login where the nickname and username are different\n* Improved loop protection and rate limiting\n* Fixed multiple Python 3 errors\n* Enable logging the bot in to Authserv at startup\n* Added support for Postgres as the database backend\n* SSL cert location detection now works on Debian-based systems\n* Misc bugfixes\n\nAPI Changes (for developers):\n* Unicode in command decorators now works properly\n* `web.get` now decodes the result from UTF-8, with a `dont_decode` argument to disable\n\n\n\n",
