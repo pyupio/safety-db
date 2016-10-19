@@ -4177,6 +4177,12 @@
             "v": ">=3.5,<3.5.2"
         }
     ],
+    "python-chess": [
+        {
+            "changelog": "--------------\n\n**This is a bugfix release for a move generation bug.** Other than the bugfix\nitself there are only minimal fully backwardscompatible changes.\nYou should update immediately.\n\nBugfixes:\n\n* When capturing en passant, both the capturer and the captured pawn disappear\n  from the fourth or fifth rank. If those pawns were covering a horizontal\n  attack on the king, then capturing en passant should not have been legal.\n\n  `Board.generate_legal_moves()` and `Board.is_into_check()` have been fixed.\n\n  The same principle applies for diagonal skewers, but nothing has been done\n  in this release: If the last double pawn move covers a diagonal attack, then\n  the king would have already been in check.\n\n  v0.14.0 adds additional hardening for all cases. It is recommended you\n  upgrade to v0.14.0 as soon as you can deal with the\n  non-backwards compatible changes.\n\nChanges:\n\n* `chess.uci` now uses `subprocess32` if applicable (and available).\n  Additionally a lock is used to work around a race condition in Python 2, that\n  can occur when spawning engines from multiple threads at the same time.\n\n* Consistently handle tabs in UCI engine output.\n\n",
+            "v": "<0.13.3"
+        }
+    ],
     "python-cjson": [
         {
             "cve": "CVE-2009-4924",
