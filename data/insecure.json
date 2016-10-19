@@ -295,7 +295,8 @@
         "<2.4.0"
     ],
     "django-social-auth": [
-        "<0.7.2"
+        "<0.7.2",
+        "<0.7.5"
     ],
     "django-sql-explorer": [
         "<0.4"
