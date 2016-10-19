@@ -2078,6 +2078,12 @@
             "v": "<0.6.1"
         }
     ],
+    "flask-hookserver": [
+        {
+            "changelog": "++++++++++++++++++\n\n- Install Requests security dependencies\n\n",
+            "v": "<0.2.1"
+        }
+    ],
     "flask-micropub": [
         {
             "changelog": " Changed\n- Fix vulnerability; re-discover the authorization_endpoint and\n  token_endpoint at each stage in the flow. Prevents a buggy or\n  malicious authorization_endpoint from giving you credentials for\n  another user's domain name.\n\n",
