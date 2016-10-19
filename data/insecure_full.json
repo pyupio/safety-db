@@ -1778,6 +1778,12 @@
             "v": "<1.0.7"
         }
     ],
+    "django-hosts": [
+        {
+            "changelog": "----------------\n\n- **BACKWARD-INCOMPATIBLE** Dropped support for Django 1.7 as it doesn't\n  receive security releases anymore.\n\n- Added support for Django 1.9.\n\n- Moved repo to https://github.com/jazzband/django-hosts\n\n- Moved tests to https://travis-ci.org/jazzband/django-hosts\n\n- Start to use `setuptools_scm <https://pypi.python.org/pypi/setuptools_scm>`_\n  for easier versioning.\n\n",
+            "v": "<1.3"
+        }
+    ],
     "django-html5-appcache": [
         {
             "changelog": "\n - Templatetag added to display cache status\n - More tests\n - Added security check for sensitive views\n\n",
