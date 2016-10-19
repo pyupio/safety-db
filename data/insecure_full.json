@@ -599,6 +599,10 @@
             "v": "<1.3.4"
         },
         {
+            "changelog": "===========================\nDjango 1.4.16 release notes\n===========================\n\n*October 22, 2014*\n\nDjango 1.4.16 fixes a couple regressions in the 1.4.14 security release and a\nbug preventing the use of some GEOS versions with GeoDjango.\n\nBugfixes\n========\n\n* Allowed related many-to-many fields to be referenced in the admin\n  (:ticket:`23604`).\n\n* Allowed inline and hidden references to admin fields\n  (:ticket:`23431`).\n\n* Fixed parsing of the GEOS version string\n  (:ticket:`20036`).\n",
+            "v": "<1.4.16"
+        },
+        {
             "cve": "CVE-2015-0219",
             "description": "Django before 1.4.18, 1.6.x before 1.6.10, and 1.7.x before 1.7.3 allows remote attackers to spoof WSGI headers by using an _ (underscore) character instead of a - (dash) character in an HTTP header, as demonstrated by an X-Auth_User header.",
             "urls": [
