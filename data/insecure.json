@@ -219,7 +219,8 @@
         "<1.1.4"
     ],
     "django-crispy-forms-ng": [
-        "<0.9.0"
+        "<0.9.0",
+        "<1.1.4"
     ],
     "django-dajaxice-ng": [
         "<0.1.7"
