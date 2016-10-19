@@ -53,6 +53,9 @@
     "centrifuge": [
         "<0.3.8"
     ],
+    "chameleon": [
+        "<2.6.2"
+    ],
     "chanjo-report": [
         "<2.4.0"
     ],

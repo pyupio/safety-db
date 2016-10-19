@@ -131,6 +131,12 @@
             "v": "<0.3.8"
         }
     ],
+    "chameleon": [
+        {
+            "changelog": "------------------\n\nBugfixes:\n\n- Fixed issue where ``tal:on-error`` would not respect\n  ``tal:omit-tag`` or namespace elements which are omitted by default\n  (such as ``<tal:block />``).\n\n- Fixed issue where ``macros`` attribute would not be available on\n  file-based templates due to incorrect initialization.\n\n- The ``TryExcept`` and ``TryFinally`` AST nodes are not available on\n  Python 3.3. These have been aliased to ``Try``. This fixes issue\n  75.\n\nFeatures:\n\n- The TAL repeat item now makes a security declaration that grants\n  access to unprotected subobjects on the Zope 2 platform::\n\n    __allow_access_to_unprotected_subobjects__ = True\n\n  This is required for legacy compatibility and does not affect other\n  environments.\n\n- The template object now has a method ``write(body)`` which\n  explicitly decodes and cooks a string input.\n\n- Added configuration option ``loader_class`` which sets the class\n  used to create the template loader object.\n\n  The class (essentially a callable) is created at template\n  construction time.\n\n",
+            "v": "<2.6.2"
+        }
+    ],
     "chanjo-report": [
         {
             "changelog": " Added\n- handle post/get requests for the coverage report (URL limits)\n- new \"index\" blueprint which displays list of samples and genes\n\n Removed\n- link to the \"index\" page from the report (security)\n\n Changed\n- use a customized version of the HTML form for the PDF link in the navbar\n- avoid searching for group id if sample ids are submitted in query\n- use \"select\" element for picking completeness level\n\n Fixed\n- removes the \"submit\" label from the customizations form\n- look up \"show_genes\" from correct \"args/form\" dict\n\n",
