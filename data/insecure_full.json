@@ -250,6 +250,12 @@
             "v": "<0.6.4"
         }
     ],
+    "cryptacular": [
+        {
+            "changelog": "===\n- Update to crypt_blowfish 1.2 (which fixes CVE-2011-2483, 8-bit character\n  encoding vulterability. See http://www.openwall.com/crypt/ for details.)\n\n",
+            "v": "<1.2"
+        }
+    ],
     "cryptography": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~~\n\n* **SECURITY ISSUE**: Fixed a double free in the OpenSSL backend when using DSA\n  to verify signatures. Note that this only affects PyPy 2.6.0 and (presently\n  unreleased) CFFI versions greater than 1.1.0.\n\n",
