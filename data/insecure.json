@@ -696,6 +696,9 @@
     "python-otr": [
         "<1.1.0"
     ],
+    "python-recode": [
+        "<1.2.6"
+    ],
     "python-saml": [
         "<2.1.6",
         "<2.1.9"
