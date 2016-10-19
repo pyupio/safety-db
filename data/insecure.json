@@ -205,6 +205,9 @@
     "django-lfs": [
         "<0.6.9"
     ],
+    "django-lockdown": [
+        "<1.1"
+    ],
     "django-markupfield": [
         "<1.3.2"
     ],
