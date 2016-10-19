@@ -67,6 +67,12 @@
             "v": "<2.0.2"
         }
     ],
+    "apache-libcloud": [
+        {
+            "changelog": "----------------------------------\n\nGeneral\n~~~~~~~\n\n- Add support for automatic SNI (SSL extension) using the hostname\n  supplied to connect to.\n\n  Note: This functionality is only available in Python 2.7.9 and\n  Python >= 3.2.\n  (LIBCLOUD-827, GITHUB-808)\n  [David Freedman]\n\nCompute\n~~~~~~~\n\n- Add support image guest OS features in GCE driver\n  (GITHUB-825)\n  [Max Illfelder]\n\n- Added forceCustimization option for vcloud director driver\n  (GITHUB-824)\n  [Juan Font]\n\n- Add node lookup by UUID for libvirt driver\n  (GITHUB-823)\n  [Frank Wu]\n\n- Add block storage support to DigitalOcean node driver\n  (GITHUB-807)\n  [Adam Wolfe Gordon]\n\n- Add SASL auth support to libvirt driver.\n  (GITHUB-809)\n  [Katana-Steel]\n\n- Allow VIPs in Dimension Data driver to bind to any port.\n  (GITHUB-818)\n  [Mark Maglana]\n\n- Add support for deleting a security group to the Aliyun ECS driver.\n  (GITHUB-816)\n  [Heng Wu]\n\n- Add ``ex_force_customization`` argument to the ``ex_deploy_node`` in vCloud\n  driver.\n  (GITHUB-824)\n  [Juan Font]\n\n- Add support for listing  attributes for a particular security group\n  (``ex_list_security_group_attributes``) to the Aliyun ECS driver.\n  (GITHUB-826)\n  [Heng Wu]\n\n- Add new Mumbai, India region to the EC2 driver.\n  [Tomaz Muraus]\n\n- Add driver for the new AWS cn-north-1 region.\n  (GITHUB-827, LIBCLOUD-820)\n  [Jamie Cressey]\n\n- Fix authentication with temporary IAM role credentials (token) in the EC2\n  driver.\n  (GITHUB-820)\n  [Alejandro Gonz\u00e1lez]\n\nContainer\n~~~~~~~~~\n\n- Fixed API compatibility for Docker Container driver with API 1.24, set driver\n  to use versioned URL for all communication. Backported changes to 1.21 API\n  (GITHUB-821)\n  [Anthony Shaw]\n\nLoad Balancer\n~~~~~~~~~~~~~\n\n- Added additional parameters to the Rackspace driver in `list_balancers` for filtering and\n  searching.\n  (GITHUB-803)\n  [Jo\u00e3o Paulo Raittes]\n\n\n",
+            "v": "<1.1.0"
+        }
+    ],
     "archmage": [
         {
             "changelog": "==============\nBug fixes:\n\n* [CVE-2015-1589] Fixed directory traversal bug\n\n",
