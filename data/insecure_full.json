@@ -3423,6 +3423,12 @@
             "v": "<V1.4.1"
         }
     ],
+    "products.eventregistration": [
+        {
+            "changelog": "-------\n\nWritten and developed by Jason McVetta\n",
+            "v": "<1.0.0"
+        }
+    ],
     "products.ldapuserfolder": [
         {
             "cve": "CVE-2010-2944",
