@@ -1917,6 +1917,12 @@
             "v": "<1.1.2"
         }
     ],
+    "django-ratelimit": [
+        {
+            "changelog": "====\n\n- Rates are now counted in fixed\u2014instead of sliding\u2014windows, except for\n  per-second limits. See the Upgrade Notes.\n- Mixin renamed to `RatelimitMixin` (lowercase `l`) for consistency.\n- Dramatic rewrite.\n  - `ip`, `field`, and `keys` arguments replaced with `key`.\n  - well-known \"key\" values support.\n- Custom callable rate functions.\n  - Support for \"not limited\" rate.\n  - Replaces ``skip_if`` argument.\n\n",
+            "v": "<0.5"
+        }
+    ],
     "django-relatives": [
         {
             "changelog": "------------------\n\n- Fix XSS vulnerability\n- Allow relatives/includes/fieldset.html template to be extended further\n- Improve documentation\n\n\n",
