@@ -5008,6 +5008,12 @@
             "v": "<2.13.19"
         }
     ],
+    "zope.component": [
+        {
+            "changelog": "-------------------\n\n- Remove the ``docs`` extra and the ``sphinxdoc`` recipe.\n\n- Create a ``security`` extra to move security-related dependencies out of the\n  ``test`` extra.\n\n- Use the new ``zope.testrunner`` package for tests.\n\n- Add a basic test for the ``configure.zcml`` file provided.\n\n",
+            "v": "<3.10.0"
+        }
+    ],
     "zope.html": [
         {
             "cve": "CVE-2009-2265",
