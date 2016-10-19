@@ -3693,6 +3693,12 @@
             "v": "<1.1.2"
         }
     ],
+    "pyramid-sqlassist": [
+        {
+            "changelog": "\tmaking this production usable by removing the non-bind paramter sql searching ( possible attack vector )\n\n",
+            "v": "<0.0.7"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
