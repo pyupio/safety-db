@@ -1994,6 +1994,12 @@
             "v": "<5.1.2"
         }
     ],
+    "fig": [
+        {
+            "changelog": "------------------\n\n - Added an `--allow-insecure-ssl` option to allow `fig up`, `fig run` and `fig pull` to pull from insecure registries.\n - Fixed `fig run` not showing output in Jenkins.\n - Fixed a bug where Fig couldn't build Dockerfiles with ADD statements pointing at URLs.\n\n",
+            "v": "<1.0.1"
+        }
+    ],
     "flask": [
         {
             "changelog": "-------------\n\nBugfix release, released on December 31st 2010\n\n- Fixed an issue where the default ``OPTIONS`` response was\n  not exposing all valid methods in the ``Allow`` header.\n- Jinja2 template loading syntax now allows \"./\" in front of\n  a template load path.  Previously this caused issues with\n  module setups.\n- Fixed an issue where the subdomain setting for modules was\n  ignored for the static folder.\n- Fixed a security problem that allowed clients to download arbitrary files\n  if the host server was a windows based operating system and the client\n  uses backslashes to escape the directory the files where exposed from.\n\n",
