@@ -2434,6 +2434,12 @@
             "v": "<0.4.4"
         }
     ],
+    "ircpdb": [
+        {
+            "changelog": "================\n\n - Many UI improvements including:\n   - Display a prompt after the response has been written.\n - Added '!!forbid' command.\n - Added a thunderous warning to the readme about the security implications\n   of this library.\n\n",
+            "v": "<1.2"
+        }
+    ],
     "ironic-discoverd": [
         {
             "cve": "CVE-2015-5306",
