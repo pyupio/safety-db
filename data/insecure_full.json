@@ -2888,6 +2888,10 @@
     ],
     "plomino": [
         {
+            "changelog": "-----------------\n* support for labels associated to fields\n* disabled formula editing for PlominoDesigner (so we can allow a user to change\n  form layouts without breaking the formulas)\n* fix a major vulnerability in open_url (now, targeted sources must be declared\n  safe from an local package)\n* allow to load specific CSS and JS in a PlominoForm\n* GenericSetup import/export for Plomino db marked as templates\n* allow to inject HTML attributes on fields\n* extended translation support for views\n\n",
+            "v": "<1.18"
+        },
+        {
             "changelog": "-----\n\n* Security fix: when a group has PlominoAuthors rights, members of this group are just authors on their own documents\n\n",
             "v": "<1.5.3"
         }
