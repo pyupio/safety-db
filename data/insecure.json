@@ -806,6 +806,9 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "rauth": [
+        "<0.7.0"
+    ],
     "reprozip": [
         "<0.7.1"
     ],

@@ -4509,6 +4509,12 @@
             "v": "<0.30"
         }
     ],
+    "rauth": [
+        {
+            "changelog": "------------------------\n  * Made OAuth1 nonces more secure via SystemRandom\n  * Exposed authentication responses\n  * Allowed Requests versions >= 1.2.3\n  * Fixed OAuth1 unicode encoding issues\n\n",
+            "v": "<0.7.0"
+        }
+    ],
     "reprozip": [
         {
             "changelog": "------------------\n\n(reprozip only)\n\nBugfixes:\n* Files (or links) created with rename, link or symlink then read will no longer be packed.\n* A buffer overflow could happen in the log module, for instance when the experiment passes a very long argument to execve (over 4kB in a single argument) and running in debug mode (-v -v)\n\n\n",
