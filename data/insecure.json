@@ -234,6 +234,9 @@
     "django-markupfield": [
         "<1.3.2"
     ],
+    "django-ninecms": [
+        "<0.4.5b"
+    ],
     "django-piston": [
         "<0.2.3"
     ],
