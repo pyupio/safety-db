@@ -2349,6 +2349,10 @@
             "v": "<0.9.5"
         },
         {
+            "changelog": "-----\n\n* Issue 75: Add ``--insecure`` option to ez_setup.py to accommodate\n  environments where a trusted SSL connection cannot be validated.\n* Issue 76: Fix AttributeError in upload command with Python 2.4.\n\n---\n",
+            "v": "<1.1.1"
+        },
+        {
             "changelog": "---\n\n* Address security vulnerability in SSL match_hostname check as reported in\n  Python 17997.\n* Prefer `backports.ssl_match_hostname\n  <https://pypi.python.org/pypi/backports.ssl_match_hostname>`_ for backport\n  implementation if present.\n* Correct NameError in ``ssl_support`` module (``socket.error``).\n\n---\n",
             "v": "<1.3"
         }
