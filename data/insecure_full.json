@@ -668,6 +668,10 @@
             "v": "<1.4.20"
         },
         {
+            "changelog": "==========================\nDjango 1.4.8 release notes\n==========================\n\n*September 14, 2013*\n\nDjango 1.4.8 fixes two security issues present in previous Django releases in\nthe 1.4 series.\n\nDenial-of-service via password hashers\n======================================\n\nIn previous versions of Django, no limit was imposed on the plaintext\nlength of a password. This allowed a denial-of-service attack through\nsubmission of bogus but extremely large passwords, tying up server\nresources performing the (expensive, and increasingly expensive with\nthe length of the password) calculation of the corresponding hash.\n\nAs of 1.4.8, Django's authentication framework imposes a 4096-byte\nlimit on passwords and will fail authentication with any submitted\npassword of greater length.\n\nCorrected usage of :func:`~django.views.decorators.debug.sensitive_post_parameters` in :mod:`django.contrib.auth`\u2019s admin\n=========================================================================================================================\n\nThe decoration of the ``add_view`` and ``user_change_password`` user admin\nviews with :func:`~django.views.decorators.debug.sensitive_post_parameters`\ndid not include :func:`~django.utils.decorators.method_decorator` (required\nsince the views are methods) resulting in the decorator not being properly\napplied. This usage has been fixed and\n:func:`~django.views.decorators.debug.sensitive_post_parameters` will now\nthrow an exception if it's improperly used.\n",
+            "v": "<1.4.8"
+        },
+        {
             "cve": "CVE-2015-8213",
             "description": "The get_format function in utils/formats.py in Django before 1.7.x before 1.7.11, 1.8.x before 1.8.7, and 1.9.x before 1.9rc2 might allow remote attackers to obtain sensitive application secrets via a settings key in place of a date/time format setting, as demonstrated by SECRET_KEY.",
             "urls": [
