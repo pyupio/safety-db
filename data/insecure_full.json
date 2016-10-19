@@ -678,6 +678,10 @@
             "v": "<1.7.11"
         },
         {
+            "changelog": "===========================\nDjango 1.7.11 release notes\n===========================\n\n*November 24, 2015*\n\nDjango 1.7.11 fixes a security issue and a data loss bug in 1.7.10.\n\nFixed settings leak possibility in ``date`` template filter\n===========================================================\n\nIf an application allows users to specify an unvalidated format for dates and\npasses this format to the :tfilter:`date` filter, e.g.\n``{{ last_updated|date:user_date_format }}``, then a malicious user could\nobtain any secret in the application's settings by specifying a settings key\ninstead of a date format. e.g. ``\"SECRET_KEY\"`` instead of ``\"j/m/Y\"``.\n\nTo remedy this, the underlying function used by the ``date`` template filter,\n``django.utils.formats.get_format()``, now only allows accessing the date/time\nformatting settings.\n\nBugfixes\n========\n\n* Fixed a data loss possibility with :class:`~django.db.models.Prefetch` if\n  ``to_attr`` is set to a ``ManyToManyField`` (:ticket:`25693`).\n",
+            "v": "<1.7.11"
+        },
+        {
             "cve": "CVE-2015-2241",
             "description": "Cross-site scripting (XSS) vulnerability in the contents function in admin/helpers.py in Django before 1.7.6 and 1.8 before 1.8b2 allows remote attackers to inject arbitrary web script or HTML via a model attribute in ModelAdmin.readonly_fields, as demonstrated by a @property.",
             "urls": [
