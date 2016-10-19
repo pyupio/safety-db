@@ -3337,6 +3337,12 @@
             "v": "<4.0"
         }
     ],
+    "pyitect": [
+        {
+            "changelog": "------------------\n- Large API incompatible update\n- supports Python 2.6+\n- now uses `pyitect.imports` for import time plugin loading\n- version postfixes are replaced with component subtypes\n- Uses SemVer processing via `python-semanticversion <https://github.com/rbarrois/python-semanticversion>`_ project\n- module overlap is prevented with unique model names in `sys.modules`\n- no import modes, uses `imp` module for everything >= 3.3 and `importlib` for 3.4+\n- ability to store global system instance in `pyitect` module\n- support YAML for plugin configuration files\n- Custom Exception classes with exception chain support\n- fully fledge docs\n\n",
+            "v": "<2.0.0"
+        }
+    ],
     "pyjwt": [
         {
             "changelog": "-------------------------------------------------------------------------\n Changed\n- Moved `jwt.api.header` out of the public API. [85][85]\n- Added README details how to extract public / private keys from an x509 certificate. [100][100]\n- Refactor api.py functions into an object (`PyJWT`). [101][101]\n- Added support for PyCrypto and ecdsa when cryptography isn't available. [101][103]\n\n Fixed\n- Fixed a security vulnerability where `alg=None` header could bypass signature verification. [109][109]\n- Fixed a security vulnerability by adding support for a whitelist of allowed `alg` values `jwt.decode(algorithms=[])`. [110][110]\n\n\n[unreleased]: https://github.com/jpadilla/pyjwt/compare/1.3.0...HEAD\n",
