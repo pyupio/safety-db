@@ -4333,6 +4333,12 @@
             "v": "<1.1"
         }
     ],
+    "sipvicious": [
+        {
+            "changelog": "* Feature: svcrash.py has a new option -b which bruteforces the attacker's port\n\n* Feature: svcrack.py now tries the extension as password by default, automatically\n\n* Feature: svcrack.py and svwar.py now support setting of source port\n\n* Feature: new parameter --domain can be passed to all tools which specifies\n           a custom domain in the SIP uri instead of the destination IP\n\n* Feature: new --debug switch which shows the messages received\n\n* Bug fix: Sometimes nonces could not be extracted due to an incorrect regex\n\n* Bug fix: Fixed an unhandled exception when decoding tags\n\n* Bug fix: now using hashlib when available instead of md5\n\n* Bug fix: removed the space after the SIP address in the From header which\n           led to newer version of Asterisk to ignore the SIP messages\n\n* Bug fix: dictionaries with new lines made svcrack.py stop without this fix\n\n* Change: renamed everything to start with sv*\n\n* Bug fix: changed the way shelved files are opened by the fingerprinting module\n\n* Change: fingerprinting disabled by default since it was giving too many problems\n          and very little benefits \n\n",
+            "v": "<0.2.7"
+        }
+    ],
     "soappy": [
         {
             "changelog": "-------------------\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- LOL part\n  [kiorky]\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- XXE part\n  [kiorky]\n- Remove dependency on fpconst.\n- adding maptype  [Sandro Knau\u00df]\n- Support / (and other reserved characters) in the password. [Ionut Turturica]\n- Client.HTTPWithTimeout: fixed constructor's docstring and comments -named the diferences\n  with respect to the overriden method -fixed\n  wrong reference to class in module 'httplib' -added documentation of param 't[German Larrain\n- fixed module docstring location (all imports must be below them)[German Larrain]f\n- fix error \"Bad types (class java.math.BigInteger -> class java.lang.Integer)\" - Clayton Caetano de Sousa]\n\n\n\n",
