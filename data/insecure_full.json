@@ -536,6 +536,10 @@
             "v": "<1.2.7"
         },
         {
+            "changelog": "==========================\nDjango 1.2.7 release notes\n==========================\n\n*September 10, 2011*\n\nWelcome to Django 1.2.7!\n\nThis is the seventh bugfix/security release in the Django 1.2 series. It\nreplaces Django 1.2.6 due to problems with the 1.2.6 release tarball.\nDjango 1.2.7 is a recommended upgrade for all users of any Django release in\nthe 1.2.X series.\n\nFor more information, see the `release advisory`_.\n\n.. _release advisory: https://www.djangoproject.com/weblog/2011/sep/10/127/\n",
+            "v": "<1.2.7"
+        },
+        {
             "cve": "CVE-2012-3442",
             "description": "The (1) django.http.HttpResponseRedirect and (2) django.http.HttpResponsePermanentRedirect classes in Django before 1.3.2 and 1.4.x before 1.4.1 do not validate the scheme of a redirect target, which might allow remote attackers to conduct cross-site scripting (XSS) attacks via a data: URL.",
             "urls": [
