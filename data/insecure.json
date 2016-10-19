@@ -274,6 +274,9 @@
     "easy_install": [
         "<0.7"
     ],
+    "edgegrid-python": [
+        "<1.0.7"
+    ],
     "euphorie": [
         "<6.1"
     ],
