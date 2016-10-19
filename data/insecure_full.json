@@ -198,6 +198,12 @@
             "v": "<0.7.1"
         }
     ],
+    "collective.quickupload": [
+        {
+            "changelog": "-----\n\n- fix jquery.uploadify on MSIE with a temp workaround\n  see ticket : https://dev.plone.org/plone/ticket/10894\n  macadames - 2010/09/02\n\n- using different ids for each uploader methods launchers\n  since we could have different uploaders in a same page\n  example : an images uploader portlet, a video uploader portlet\n  macadames - 2010/09/02\n\n- remove the cookie authentication method\n  with jquery.uploadify (it's not secure to send the cookie in all requests)\n  Just keep the old PloneFlashUpload method (ticket)\n  macadames - 2010/09/02\n\n- many improvements around fileuploader.js (fork) :\n  autoUpload option added\n  onAfterSelect option added\n  refactoristion with these new options\n  macadames - 2010/09/02\n\n- added fileuploader.js jscript launcher\n  macadames - 2010/08/25\n\n- change flashupload jscript launchers\n  to allow multiple uploaders in same page\n  macadames - 2010/08/25\n\n- Add fileuploader.js for XHR or simple hidden iframe uploader\n  macadames - 2010/08/25\n\n- Add quick upload control panel\n  macadames - 2010/08/25\n\n- Initial release :\n  extract upload code from collective.plonefinder\n  to make a separate package\n  macadames - 2010/08/25\n",
+            "v": "<1.0.0"
+        }
+    ],
     "collective.transcode.star": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~\n - provide three different embed sizes [clopy]\n - FIX security errors introduced with Plone Hotfix 20130618 [mgogoulos]\n - Update styling on share popup [clopy]\n - Add dexterity support [Gagaro]\n\n",

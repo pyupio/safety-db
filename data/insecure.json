@@ -78,6 +78,9 @@
     "collective.noticeboard": [
         "<0.7.1"
     ],
+    "collective.quickupload": [
+        "<1.0.0"
+    ],
     "collective.transcode.star": [
         "<0.22"
     ],
