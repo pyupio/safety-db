@@ -1614,6 +1614,12 @@
             "v": "<0.9.2"
         }
     ],
+    "django-allauth": [
+        {
+            "changelog": "*******************\n\nSecurity notice\n---------------\n\n- Previous versions contained a vulnerability allowing an attacker to alter the\n  provider specific settings for ``SCOPE`` and/or ``AUTH_PARAMS`` (part of the\n  larger ``SOCIALACCOUNT_PROVIDERS`` setting). The changes would persist across\n  subsequent requests for all users, provided these settings were explicitly set\n  within your project. These settings translate directly into request\n  parameters, giving the attacker undesirable control over the OAuth(2)\n  handshake. You are not affected if you did not explicitly configure these\n  settings. Thanks to Ryan Kelly for reporting!\n\n\nNote worthy changes\n-------------------\n\n- New providers: Doximity.\n\n- New translations: Korean.\n\n\n",
+            "v": "<0.28.0"
+        }
+    ],
     "django-anonymizer": [
         {
             "changelog": "-----------\n\n* Changed 'Anonymizer.attributes' to require every field to be listed.  This is\n  deal with the common security problem when a model is updated, but the\n  Anonymizer is not updated.\n\n  Fields that should not be anonymized should specify the special value \"SKIP\"\n  as the 'replacer'.\n\n* attributes must now be a list of tuples, not a dictionary.\n\n",
