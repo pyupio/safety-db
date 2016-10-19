@@ -2383,6 +2383,12 @@
             "v": "<0.999999991.0b9"
         }
     ],
+    "htsql": [
+        {
+            "changelog": "------------------\n\n* Added a binary attachment operator (``).\n* Added support for references in locators.\n* Added comment syntax (``).\n* `tweak.shell`: include JQuery and Codemirror to the source\n  and binary distributions.\n* `tweak.filedb`: makes a database from a set of CSV files.\n* `tweak.gateway`: defines gateway to other database servers.\n* `tweak.csrf`: protection against CSRF attacks.\n* `tweak.etl`: insert, merge, update and delete commands\n  (PostgreSQL only, work in progress)\n* `tweak.django`: fixed the introspector missing auto-created\n  many-to-many models, respect Django transaction context.\n* `htsql-ctl shell`: improved output of `describe` command,\n  allow multi-line queries when the input is not TTY.\n* Configuration: added support for `!include` tag.\n* Reduced memory footprint for large database schemas.\n* Improved error reporting.\n* Many other fixes and improvements.\n\n\n",
+            "v": "<2.3.3"
+        }
+    ],
     "httpauth": [
         {
             "changelog": "-----------------\n* SECURITY ISSUE: Invalid username + empty password were being accepted\n* Added ``AlwaysFailingAuthMiddleware``\n\n",
