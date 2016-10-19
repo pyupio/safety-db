@@ -145,6 +145,12 @@
             "v": "<0.5.1"
         }
     ],
+    "bormeparser": [
+        {
+            "changelog": "------------------------\n\n- Eliminado primer argumento \"date\" de BormeXML.get_url_pdfs()\n- Nuevo m\u00e9todo: BormeXML.get_urls_cve()\n- Arregladas algunas incompatibilidades con Python 2\n- Nuevas funciones: get_borme_website(), get_url_seccion_c()\n- Se incorpora parser para BORME C\n- A\u00f1adido el acto \"(Primera inscripcion O.M. 10/6/1.997)\"\n- Renombradas constantes y funciones\n- BormeXML: BORME C\n- script download_borme_pdfs_C.py\n- Mejora parsing de cargos repetidos en el mismo acto (issue 4)\n\n",
+            "v": "<0.2"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
