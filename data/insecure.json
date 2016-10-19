@@ -426,6 +426,9 @@
     "ftw.permissionmanager": [
         "<2.2.2"
     ],
+    "ftw.task": [
+        "<2.4.2"
+    ],
     "gandi.cli": [
         "<0.10"
     ],
