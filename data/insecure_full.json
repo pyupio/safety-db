@@ -4537,6 +4537,12 @@
             "v": "<1.2.18"
         }
     ],
+    "timelog2csv": [
+        {
+            "changelog": "============\n\n* Added `drone.io <https://drone.io/bitbucket.org/keimlink/timelog2csv/latest>`_ continuous integration service\n* Added docs and tests to ``MANIFEST.in``\n* Added `bumpversion <https://pypi.python.org/pypi/bumpversion>`_\n* Added `twine <https://pypi.python.org/pypi/twine>`_ to secure PyPI uploads\n\n",
+            "v": "<0.1.2"
+        }
+    ],
     "tornado": [
         {
             "cve": "CVE-2012-2374",
