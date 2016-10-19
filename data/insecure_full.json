@@ -2316,6 +2316,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "lambda-uploader": [
+        {
+            "changelog": "-----\n- Warn if the lambda package is over the current AWS max size of 50MB\n- Add --extra-file flag for adding arbitrary file(s) outside of the\n  project directory.\n- Add --requirements flag to allow setting a requirements file as a CLI\n  option\n- Updated the Package() object so only the build() method actually needs\n  to be called.\n- Updated the Package() constructor and removed most of the allowed\n  variables in favor of calling setter methods.\n- Add -c shorthand to the --config flag\n- Fixed the ignores to match against paths relative to the source dir\n- Added support for placing your lambda functions in specific VPC \n  subnets and security groups\n\n",
+            "v": "<1.0.0"
+        }
+    ],
     "lambdajson": [
         {
             "changelog": "-- Security fix. Using ast.literal_eval as eval.\n\n",
