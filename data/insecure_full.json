@@ -4333,6 +4333,12 @@
             "v": "<1.1"
         }
     ],
+    "siskin": [
+        {
+            "changelog": "------------------\n\n* secure pypi uploads\n* add .editorconfig\n* update setup.py\n* pubmed: some stats additions\n* ignore generated vm packages\n* docs: add note on vm packaging\n* docs: remove sudo, since privileged is true by default (https://goo.gl/KGrIEs)\n* docs: elag-vm: more RAM, mcrypt fix\n* docs: add elag notes and vm provisioning script\n* taskdeps-dot: render certain tasks with full parameters\n* amsl, crossref: fix imports\n* amsl: stub for filterconf from API\n* amsl: remove obsolete task\n* amsl: use a single AMSLService tasks with API realm and name parameters\n* amsl: filter collection entries for a shard\n* amsl: notes and TODO\n* amsl: err on empty isil set\n* amsl: collect ISILs that appear in the collecions list for a given shard, AMSLCollectionsISILList\n* 85: intermediate schema combined (for blob)\n* amsl: content file api stub\n\n",
+            "v": "<0.0.151"
+        }
+    ],
     "soappy": [
         {
             "changelog": "-------------------\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- LOL part\n  [kiorky]\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- XXE part\n  [kiorky]\n- Remove dependency on fpconst.\n- adding maptype  [Sandro Knau\u00df]\n- Support / (and other reserved characters) in the password. [Ionut Turturica]\n- Client.HTTPWithTimeout: fixed constructor's docstring and comments -named the diferences\n  with respect to the overriden method -fixed\n  wrong reference to class in module 'httplib' -added documentation of param 't[German Larrain\n- fixed module docstring location (all imports must be below them)[German Larrain]f\n- fix error \"Bad types (class java.math.BigInteger -> class java.lang.Integer)\" - Clayton Caetano de Sousa]\n\n\n\n",
