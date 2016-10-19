@@ -336,6 +336,9 @@
     "ftw.mail": [
         "<2.2.3"
     ],
+    "ftw.meeting": [
+        "<1.5.1"
+    ],
     "ftw.permissionmanager": [
         "<2.2.2"
     ],
