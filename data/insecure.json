@@ -88,6 +88,9 @@
         "<0.15.0",
         "<0.6.4"
     ],
+    "cryptography-vectors": [
+        "<1.0.2"
+    ],
     "defusedexpat": [
         "<0.3"
     ],
