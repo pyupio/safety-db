@@ -176,6 +176,10 @@
     ],
     "clam": [
         {
+            "changelog": "- Security upgrades, better protection against possible code injection, added shellsafe function\n- Added simple administrative web-app interface\n\n",
+            "v": "<0.9.10"
+        },
+        {
             "changelog": "- OAuth2 support\n- Enabled Cross-Site Resource Sharing, allowing browser-based CLAM clients on\nother domains\n- Added 'Actions'\n- Security fixes in dispatcher\n\n",
             "v": "<0.9.11"
         }
