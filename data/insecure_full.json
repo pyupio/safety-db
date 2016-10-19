@@ -688,6 +688,10 @@
             "v": "<1.7.6"
         },
         {
+            "changelog": "==========================\nDjango 1.7.6 release notes\n==========================\n\n*March 9, 2015*\n\nDjango 1.7.6 fixes a security issue and several bugs in 1.7.5.\n\nMitigated an XSS attack via properties in ``ModelAdmin.readonly_fields``\n========================================================================\n\nThe :attr:`ModelAdmin.readonly_fields\n<django.contrib.admin.ModelAdmin.readonly_fields>` attribute in the Django\nadmin allows displaying model fields and model attributes. While the former\nwere correctly escaped, the latter were not. Thus untrusted content could be\ninjected into the admin, presenting an exploitation vector for XSS attacks.\n\nIn this vulnerability, every model attribute used in ``readonly_fields`` that\nis not an actual model field (e.g. a :class:`property`) will **fail to be\nescaped** even if that attribute is not marked as safe. In this release,\nautoescaping is now correctly applied.\n\nBugfixes\n========\n\n* Fixed crash when coercing ``ManyRelatedManager`` to a string\n  (:ticket:`24352`).\n\n* Fixed a bug that prevented migrations from adding a foreign key constraint\n  when converting an existing field to a foreign key (:ticket:`24447`).\n",
+            "v": "<1.7.6"
+        },
+        {
             "cve": "CVE-2016-2512",
             "description": "The utils.http.is_safe_url function in Django before 1.8.10 and 1.9.x before 1.9.3 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks or possibly conduct cross-site scripting (XSS) attacks via a URL containing basic authentication, as demonstrated by http://mysite.example.com\\@attacker.com.",
             "urls": [
