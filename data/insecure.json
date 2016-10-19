@@ -75,6 +75,9 @@
     "collective.documentviewer": [
         "<1.5.1"
     ],
+    "collective.geo.mapwidget": [
+        "<1.5"
+    ],
     "collective.noticeboard": [
         "<0.7.1"
     ],
