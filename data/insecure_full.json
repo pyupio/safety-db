@@ -15,6 +15,10 @@
         {
             "changelog": "---------------------\n\n* Django 1.8.10 (security release)\n\n\n",
             "v": "<1.8.10.1"
+        },
+        {
+            "changelog": "--------------------\n\n* use native Django 1.8 alternative to django-secure\n\n\n",
+            "v": "<1.8.8.2"
         }
     ],
     "ansible": [
