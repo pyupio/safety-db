@@ -2598,6 +2598,12 @@
             "v": "<0.10"
         }
     ],
+    "mitmproxy": [
+        {
+            "changelog": "\n    * Completely revised HTTP2 implementation based on hyper-h2 (Thomas Kriechbaumer)\n\n    * Export flows as cURL command, Python code or raw HTTP (Shadab Zafar)\n\n    * Fixed compatibility with the Android Emulator (Will Coster)\n\n    * Script Reloader: Inline scripts are reloaded automatically if modified (Matthew Shao)\n\n    * Inline script hooks for TCP mode (Michael J. Bazzinotti)\n\n    * Add default ciphers to support iOS9 App Transport Security (Jorge Villacorta)\n\n    * Basic Authentication for mitmweb (Guillem Anguera)\n\n    * Exempt connections from interception based on TLS Server Name Indication (David Weinstein)\n\n    * Provide Python Wheels for faster installation\n\n    * Numerous bugfixes and minor improvements\n\n\n",
+            "v": "<0.16"
+        }
+    ],
     "mixminion": [
         {
             "changelog": "   - A real SMTP exit module to relay messages via a local MTA.  Blacklisting\n     is supported by address, by username, by host, by entire domain, and\n     by regular expression.\n   - Integrated directory support for clients.\n   - Automatic path selection, along with a better user interface to specify\n     paths.\n   - You can now enable Cottrell (DynamicPool) and Binomial Dynamic Pool\n     batching, though they are disabled by default to make the system more\n     testable.\n   - Servers resist certain trivial DoS attacks more strongly.  In\n     particular, you should no longer be able to send zlib bombs or flood a\n     server with open connections.\n   - Clean build process under FreeBSD.\n   - Ability to run server as a daemon.\n   - Slightly better documentation and error messages.\n   - Better resistance to newline corruption of server descriptors.\n   - Other bugfixes and performance improvements too numerous to mention.\n\n",
