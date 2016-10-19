@@ -4872,6 +4872,12 @@
             "v": "==1.0.0"
         }
     ],
+    "troposphere": [
+        {
+            "changelog": "- Use subnet group for param, not vpc securitygroup [GH-65]\n- Add support for Equals function and Condition [GH-66]\n- Added ELB access logs and CrossZone test [GH-67]\n- Added support for more condition functions [GH-69]\n- Tweaked a few integer validation messages [GH-71]\n- Fix resource.name backward compatibility regression\n- Fix pep8 errors due to new pep8 1.5.x changes [GH-72]\n- Allow Ref() in VPNGatewayRoutePropagation RouteTableIds list [GH-73]\n- Add OpsWorks Support [GH-74]\n- Add AutoScalingGroup TerminationPolicies [GH-77, GH-87]\n- Add new property MetricsCollection [GH-79]\n- Patching Users class to use basestring or Ref type for Groups [GH-80]\n- Added support for Kinesis [GH-81]\n- Allow autoscaling group to support 'min instances in service' and 'max size' values that are Refs [GH-82]\n- Added support for Redshift [GH-84]\n- Add DestinationSecurityGroupId in ec2.SecurityGroupRule [GH-85]\n- Add CloudFront CacheBehavior [GH-86]\n- Tweak UpdatePolicy properties [GH-88]\n- Tweaks to rds.DNInstance [GH-89]\n- Tweaks to EC2 DeviceIndex property values [GH-90]\n- Fix AutoScalingGroup MinSize MaxSize [ GH-92]\n- Add Encrypted option to AWS::EC2::Volume [GH-96]\n- Add missing config to s3.Bucket [GH-97]\n- Add CloudFront DistributionConfig, CacheBehavior and DefaultCacheBehavior [GH-98]\n- Add EC2 Instance InstanceInitiatedShutdownBehavior [GH-99]\n- Updating the block device options for AutoScalingGroups [GH-100]\n- Added support for AWS::CloudFormation::Init in AutoScalingGroup [GH-101]\n- Added VPCPeering class [GH-102]\n- Opworks CustomJson property expects a JSON object not a string [GH-103]\n- Add support for VersioningConfiguration on S3 buckets [GH-104]\n- Added Logs resource type [GH-105]\n- Add PlacementGroup param to AutoScalingGroup [GH-111]\n- Add VpcPeeringConnectionId parameter to EC2 Route [GH-113]\n- Make RDS DBInstance MasterUsername and MasterPassword optional [GH-116]\n- Add CloudTrail, tweaks to CloudWatch Alarm, and support route53 AliasTarger EvaluateTargetHealth [GH-117]\n- Add LogDeliveryWrite canned ACL for S3 bucket [GH-118]\n\n",
+            "v": "<0.6.0"
+        }
+    ],
     "tryton": [
         {
             "cve": "CVE-2012-0215",
