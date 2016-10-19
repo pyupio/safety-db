@@ -129,6 +129,12 @@
             "v": "<1.4.2"
         }
     ],
+    "blobxfer": [
+        {
+            "changelog": " Added\n- Added ``--disable-urllib-warnings`` option to suppress urllib3 warnings\n  (use with care)\n\n Changed\n- Update script for compatibility with azure-storage 0.30.0 which\n  is now a required dependency\n- Promote encryption to RC status\n- `--blobep` now refers to endpoint suffix rather than blob endpoint\n  (e.g., core.windows.net rather than blob.core.windows.net)\n\n Security\n- Update cryptography requirement to 1.3\n\n",
+            "v": "<0.10.0"
+        }
+    ],
     "bok-choy": [
         {
             "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",
