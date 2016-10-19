@@ -559,6 +559,9 @@
     "plone.app.event": [
         "<3.0"
     ],
+    "plone.app.vocabularies": [
+        "<1.0.3"
+    ],
     "plone.formwidget.contenttree": [
         "<1.0a3"
     ],
