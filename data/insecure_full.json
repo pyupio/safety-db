@@ -2886,6 +2886,12 @@
             "v": "<1.3"
         }
     ],
+    "plomino": [
+        {
+            "changelog": "-----\n\n* Security fix: when a group has PlominoAuthors rights, members of this group are just authors on their own documents\n\n",
+            "v": "<1.5.3"
+        }
+    ],
     "plone": [
         {
             "cve": "CVE-2011-2528",
