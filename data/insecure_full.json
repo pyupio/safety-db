@@ -1616,6 +1616,10 @@
     ],
     "django-allauth": [
         {
+            "changelog": "*******************\n\nNote worthy changes\n-------------------\n\n- Many providers were added: Reddit, Untappd, GitLab, Stripe,\n  Pinterest, Shopify, Draugiem, DigitalOcean, Robinhood,\n  Bitbucket(OAuth2).\n\n- The account connections view is now AJAX aware.\n\n- You can now customize the template extension that is being used to\n  render all HTML templates (``ACCOUNT_TEMPLATE_EXTENSION``)\n\n- In order to be secure by default, users are now blocked from logging\n  in after exceeding a maximum number of failed login attempts (see\n  ``ACCOUNT_LOGIN_ATTEMPTS_LIMIT``,\n  ``ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT``). Set\n  ``ACCOUNT_LOGIN_ATTEMPTS_LIMIT`` to ``None`` to disable this\n  functionality. Important: while this protects the allauth login view, it\n  does not protect Django's admin login from being brute forced.\n\n- New translations: Arabic, Lithuanian\n\n\nBackwards incompatible changes\n------------------------------\n\nNone\n\n\n",
+            "v": "<0.25.0"
+        },
+        {
             "changelog": "*******************\n\nSecurity notice\n---------------\n\n- Previous versions contained a vulnerability allowing an attacker to alter the\n  provider specific settings for ``SCOPE`` and/or ``AUTH_PARAMS`` (part of the\n  larger ``SOCIALACCOUNT_PROVIDERS`` setting). The changes would persist across\n  subsequent requests for all users, provided these settings were explicitly set\n  within your project. These settings translate directly into request\n  parameters, giving the attacker undesirable control over the OAuth(2)\n  handshake. You are not affected if you did not explicitly configure these\n  settings. Thanks to Ryan Kelly for reporting!\n\n\nNote worthy changes\n-------------------\n\n- New providers: Doximity.\n\n- New translations: Korean.\n\n\n",
             "v": "<0.28.0"
         }
