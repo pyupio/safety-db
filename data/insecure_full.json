@@ -3545,6 +3545,12 @@
             "v": "<4.2.2"
         }
     ],
+    "pmr2.oauth": [
+        {
+            "changelog": "------------------\n\n* Security Fix: Correctly apply CSRF protection to all forms.\n* Denying a non-existent token will no longer show a stack trace.\n\nNote: 0.4.1 was aborted due to incomplete fix.\n\n----------------\n",
+            "v": "<0.4.2"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
