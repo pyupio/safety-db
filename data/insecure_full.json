@@ -4548,6 +4548,12 @@
             "v": "<1.2"
         }
     ],
+    "zope.i18n": [
+        {
+            "changelog": "--------------------\n\n- Bug: Fixed dependency on ``zope.component`` to require it with the 'zcml'\n  extra instead of requiring ``zope.security`` directly.\n\n\n",
+            "v": "<3.4.0b5"
+        }
+    ],
     "zope2": [
         {
             "cve": "CVE-2010-3198",
