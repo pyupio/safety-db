@@ -1754,6 +1754,12 @@
             "v": "<0.1.7"
         }
     ],
+    "django-ddp": [
+        {
+            "changelog": "-------------------\n* Correctly handle serving app content from the root path of a domain.\n* Account security tokens are now calculated for each minute allowing for finer grained token expiry.\n* Fix bug in error handling where invalid arguments were being passed to `logging.error()`.\n* Change setting names (and implied meanings):\n    - DDP_PASSWORD_RESET_DAYS_VALID becomes \n      DDP_PASSWORD_RESET_MINUTES_VALID.\n    - DDP_LOGIN_RESUME_DAYS_VALID becomes DDP_LOGIN_RESUME_MINUTES_VALID.\n* Include `created` field in logs collection.\n* Stop depending on `Referrer` HTTP header which is optional.\n* Honour `--verbosity` in `dddp` command, now showing API endpoints in more verbose modes.\n* Updated `dddp.test` to Meteor 1.2 and also showing example of URL config to serve Meteor files from Python.\n\n",
+            "v": "<0.14.0"
+        }
+    ],
     "django-embed-video": [
         {
             "changelog": "---------------------------\n\n- Security fix: faked urls are treated as invalid. See `this page\n  <https://github.com/yetty/django-embed-video/commit/d0d357b767e324a7cc21b5035357fdfbc7c8ce8e>`_\n  for more details.\n\n- Fixes:\n\n  - allow of empty video field.\n\n  - requirements in setup.py\n\n- Added simplier way to embed video in one-line template tag::\n\n    {{ 'http://www.youtube.com/watch?v=guXyvo2FfLs'|embed:'large' }}\n\n- ``backend`` variable in ``video`` template tag.\n\n  Usage::\n\n    {% video item.video as my_video %}\n        Backend: {{ my_video.backend }}\n    {% endvideo %}\n\n\n",
