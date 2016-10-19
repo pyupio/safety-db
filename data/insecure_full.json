@@ -4177,6 +4177,12 @@
             "v": ">=3.5,<3.5.2"
         }
     ],
+    "python-chess": [
+        {
+            "changelog": "--------------\n\nChanges:\n\n* `chess.uci.Score` **no longer has** `upperbound` **and** `lowerbound`\n  **attributes**. Previously these were always *False*.\n\n* Significant improvements of move generation speed, around **2.3x faster\n  PGN parsing**. Removed the following internal attributes and methods of\n  the `Board` class: `attacks_valid`, `attacks_to`, `attacks_from`,\n  `_pinned()`, `attacks_valid_stack`, `attacks_from_stack`, `attacks_to_stack`,\n  `generate_attacks()`.\n\n* UCI: Do not send *isready* directly after *go*. Though allowed by the UCI\n  protocol specification it is just not nescessary and many engines were having\n  trouble with this.\n\n* Polyglot: Use less memory for uniform random choices from big opening books\n  (reservoir sampling).\n\n* Documentation improvements.\n\nBugfixes:\n\n* Allow underscores in PGN header tags. Found and fixed by Bajusz Tam\u00e1s.\n\nNew features:\n\n* Added `Board.chess960_pos()` to identify the Chess960 starting position\n  number of positions.\n\n* Added `chess.BB_BACKRANKS` and `chess.BB_PAWN_ATTACKS`.\n\n",
+            "v": "<0.15.0"
+        }
+    ],
     "python-cjson": [
         {
             "cve": "CVE-2009-4924",
