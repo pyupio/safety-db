@@ -1969,6 +1969,12 @@
             "v": "<2.8"
         }
     ],
+    "droopescan": [
+        {
+            "changelog": "======\n\n* Added --resume flag. Allows the resuming of long-running scans.\n* New Wordpress and Drupal versions added to scanner. Drupal's is a security release.\n\n",
+            "v": "<1.31.0"
+        }
+    ],
     "dulwich": [
         {
             "changelog": "\n SECURITY BUG FIXES\n\n  * Fix buffer overflow in C implementation of pack apply_delta().\n    (CVE-2015-0838)\n\n    Thanks to Ivan Fratric of the Google Security Team for\n    reporting this issue.\n    (Jelmer Vernoo\u0133)\n\n",
