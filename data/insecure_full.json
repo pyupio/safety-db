@@ -4872,6 +4872,12 @@
             "v": "==1.0.0"
         }
     ],
+    "troposphere": [
+        {
+            "changelog": "- Update to 2014-09-29 AWS release [GH-132]\n- Add ElastiCache & Port  Constants [GH-132]\n- Add ELB Tag Support [GH-133]\n- Fix DBSecurityGroupIngress required properties [GH-134]\n\n",
+            "v": "<0.6.2"
+        }
+    ],
     "tryton": [
         {
             "cve": "CVE-2012-0215",
