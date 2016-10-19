@@ -2426,6 +2426,12 @@
             "v": "<2.7.3"
         }
     ],
+    "jira": [
+        {
+            "changelog": "-----------------\n\n- Increaded version to 0.47. [Sorin Sbarnea]\n\n- Implemented worklog tests and fixed worklog and timetracking. [Sorin\n  Sbarnea]\n\n- Now Travis should release only if all jobs do succeed. [Sorin Sbarnea]\n\n- Sorted the decoding of the json response. [Sorin Sbarnea]\n\n- Increased version number to v0.45 but in the future this should be\n  done automatically on each release. [Sorin Sbarnea]\n\n- Minor Travis fix for py3 build. [Sorin Sbarnea]\n\n- Removed the pretest phase as now everyone should be able to run the\n  tests. [Sorin Sbarnea]\n\n- Implemented a prerelease stage that will prevent running the tests on\n  travis for already released versions. This is needed in order to\n  enable future automatic releases. [Sorin Sbarnea]\n\n- Fix for 28 : broken permalinks. [Sorin Sbarnea]\n\n- Removed the secured credentials from Travis because they do not work\n  with pull requests. See http://docs.travis-ci.com/user/pull-requests/\n  From now on everybody should be able to run the tests, lets hope that\n  the OnDemand server will be able to cope with the tests. [Sorin\n  Sbarnea]\n\n- Validated .travis.yml. [Sorin Sbarnea]\n\n- Fix 38 so the code will also work with PyInstaller. [Sorin Sbarnea]\n\n- Workaround for py34 weakref issue from\n  https://github.com/kennethreitz/requests/issues/2303. [Sorin Sbarnea]\n\n- Merge branch 'master' of github.com:pycontribs/jira. [Sorin Sbarnea]\n\n- Fix atlassian header. [bruno-mendes-movile]\n\n- Added Citrix to credits, changed default documentation theme and\n  documented the BountySource usage. [Sorin Sbarnea]\n\n- Bugfix in Travis config file which seems not to fail fast on multiple\n  script commands. [Sorin Sbarnea]\n\n",
+            "v": "<0.47"
+        }
+    ],
     "jose": [
         {
             "changelog": "------------------\n- Fixed critical JWT vulnerability (patch contributed by yuriikonovaliuk)\n\nImportant: Only unencrypted tokens are vulnerable. This fix lead to backward\nincompatible change to `verify` function signature.\n\n",
