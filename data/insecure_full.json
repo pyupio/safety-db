@@ -266,6 +266,12 @@
             "v": "<1.1.1"
         }
     ],
+    "couchdb": [
+        {
+            "changelog": "-------------------------\n\n* Now compatible with Python 2.7, 3.3 and 3.4\n* Added batch processing for the ``couchdb-dump`` tool\n* A very basic API to access the ``_security`` object\n* A way to access the ``update_seq`` value on view results\n\n\n",
+            "v": "<0.10"
+        }
+    ],
     "coveralls": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~~\n* Introduced COVERALLS_REPO_TOKEN environment variable as a fallback for Travis\n* Removed repo_token from verbose output for security reasons\n\n",
