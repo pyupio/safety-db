@@ -3427,6 +3427,12 @@
             "v": "<1.1.2"
         }
     ],
+    "pysap": [
+        {
+            "changelog": "-------------------\n\n- Enabled travis containers for more quick builds.\n- Minor documentation and README improvements.\n- `pysap/SAPRouter.py`: Documented some version numbers from old releases ([\\3](https://github.com/CoreSecurity/pysap/pull/3)). Thanks [invisiblethreat](https://github.com/invisiblethreat)!\n- `pysapcompress/vpa108csulzh.cpp`: Improved the fix for CVE-2015-2278 by properly initializing arrays ([\\4](https://github.com/CoreSecurity/pysap/pull/4)). Thanks [ret5ret](https://github.com/ret5ret)!\n- `examples/diag_render_login_screen.py`: Fail gracefully if `wx` is not found.\n- `examples/router_password_check.py`: Updating the `fau_timer` library in use and failing gracefully if it's not found.\n- `examples/router_fingerprint.py`: New example script for performing fingerprint over SAP Router versions.\n  This is experimental and the database included only contains a few SAP Router versions, but it might work.\n\n\n",
+            "v": "<0.1.8"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
