@@ -1945,6 +1945,12 @@
             "v": "<3.1.1"
         }
     ],
+    "docker-py": [
+        {
+            "changelog": "-----\n\n* **This version introduces breaking changes!**\n* Added `insecure_registry` parameter in `Client.push` and `Client.pull`.\n  *It defaults to False and code pushing to non-HTTPS private registries\n  might break as a result.*\n* Added support for adding and dropping capabilities\n* Added support for restart policy\n* Added support for string values in `Client.create_container`'s `mem_limit`\n* Added support for `.dockerignore` file in `Client.build`\n\n Bugfixes\n\n* Fixed timeout behavior in `Client.stop`\n\n Miscellaneous\n\n* `Client.create_container` provides better validation of the `volumes`\n  parameter\n* Improved integration tests\n\n",
+            "v": "<0.5.0"
+        }
+    ],
     "docker-registry": [
         {
             "changelog": "\n * security fixes (path traversing prevention and token validation)\n\n",
