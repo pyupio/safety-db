@@ -4613,6 +4613,12 @@
             "v": "<2.6.0"
         }
     ],
+    "semantic-version": [
+        {
+            "changelog": "------------------\n\n*Bugfix:*\n\n    `18 <https://github.com/rbarrois/python-semanticversion/issues/18>`_: According to SemVer 2.0.0, build numbers aren't ordered.\n\n    * Remove specs of the ``Spec('<1.1.3+')`` form\n    * Comparing ``Version('0.1.0')`` to ``Version('0.1.0+bcd')`` has new\n      rules::\n\n          >>> Version('0.1.0+1') == Version('0.1.0+bcd')\n          False\n          >>> Version('0.1.0+1') != Version('0.1.0+bcd')\n          True\n          >>> Version('0.1.0+1') < Version('0.1.0+bcd')\n          False\n          >>> Version('0.1.0+1') > Version('0.1.0+bcd')\n          False\n          >>> Version('0.1.0+1') <= Version('0.1.0+bcd')\n          False\n          >>> Version('0.1.0+1') >= Version('0.1.0+bcd')\n          False\n          >>> compare(Version('0.1.0+1'), Version('0.1.0+bcd'))\n          NotImplemented\n\n    * :func:`semantic_version.compare` returns ``NotImplemented`` when its\n      parameters differ only by build metadata\n    * ``Spec('<=1.3.0')`` now matches ``Version('1.3.0+abde24fe883')``\n\n    * `24 <https://github.com/rbarrois/python-semanticversion/issues/24>`_: Fix handling of bumping pre-release versions, thanks to minchinweb.\n    * `30 <https://github.com/rbarrois/python-semanticversion/issues/30>`_: Add support for NPM-style ``^1.2.3`` and ``~2.3.4`` specs, thanks to skwashd\n\n",
+            "v": "<2.5.0"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
