@@ -4907,6 +4907,12 @@
             "v": "<1.5"
         }
     ],
+    "vkontakte2": [
+        {
+            "changelog": "------------------\n\n* syntax sugar for 'secure' methods;\n* make vkontakte.signature public;\n* unicode param names are fixed;\n\n",
+            "v": "<0.9.5"
+        }
+    ],
     "vnccollab.theme": [
         {
             "changelog": "----------------------\n\n- Add calendar widgets to Create Task popup forms.\n  [Vitaliy Podoba]\n\n- Change implementation of get_object_json to be path independent.\n  [Jose Dinuncio]\n\n- Add slim scrolling to Recent Messages portlet.\n  [Vitaliy Podoba]\n\n- Update styles for Users Portlet.\n  [Serhiy Valchuk]\n\n- Activate external editor globally and for new users.\n  [Jose Dinuncio]\n\n- Fix zimbra mail not to break on emails w/o body and subject.\n  [Vitaliy Podoba]\n\n- Refresh Zimbra SOAP API call auth token when expired.\n  [Vitaliy Podoba]\n\n- Fixed TinyMCE popup styles.\n  [Serhiy Valchuk]\n\n- New view GetListOfSearchParameters added.\n  [Jose Dinuncio]\n\n- livesearch_reply_json now accepts dictionaries, becoming an advanced search.\n  [Jose Dinuncio]\n\n- GetTreeJson modified to indicate in which folders the user\n  has permissions to create objects.\n  [Jose Dinuncio]\n\n- Renamed titles in \"Create Task\" window.\n  [Jose Dinuncio]\n\n- Implemented Control Panel for OpenERP actions.\n  [Jose Dinuncio]\n\n- Fixed VNC Zimlet related code security issues.\n  [Jose Dinuncio]\n\n\n",
