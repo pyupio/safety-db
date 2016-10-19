@@ -3373,6 +3373,12 @@
             "v": "<2.0.2"
         }
     ],
+    "poni": [
+        {
+            "changelog": "===========\n:release date: 2012-12-05\n\n* changed license from MIT to Apache 2.0\n* support for ``vsphere`` cloud provider for deploying to vmware clusters\n* various performance improvements\n* added ``--exclude PATTERN`` support for many commands: allows skipping nodes\n  that match a pattern when e.g. running a remote command over multiple nodes\n* optimization: internal cache for loaded plugin modules\n* ``add_file()`` supports ``owner=uid`` and ``group=gid`` optional args\n* AWS security groups can be set via ``cloud.security_group``\n  **(thanks, Lakshmi!)**\n* ``cloud ip`` command for assigning an AWS Elastic IP for a node\n  **(thanks, Lakshmi!)**\n* remote operations support ``pseudo_tty=True`` for allocating a ptty for\n  the operation **(thanks, Lauri!)**\n* control command node logs include the ``BEGIN`` and ``END`` tags\n* render also ``source_path`` as a template\n* bugfix: ``poni script`` handles files with multi-line commands with comments\n  in the middle\n* bugfix: fixed listing settings from a root-level node\n* bugfix: fixed \"poni control\" dependency ops being added multiple times (fixes\n  huge memory usage when running complex operations over tens of servers)\n\n",
+            "v": "<0.6"
+        }
+    ],
     "pplone": [
         {
             "cve": "CVE-2012-5498",
