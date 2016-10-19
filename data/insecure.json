@@ -688,6 +688,9 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "redturtle.sendto-extension": [
+        "<2.0.0b1"
+    ],
     "requests": [
         "<2.3.0",
         "<2.6.0",
