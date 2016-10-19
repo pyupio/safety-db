@@ -2955,6 +2955,12 @@
             "v": "<0.5.6"
         }
     ],
+    "pexpect": [
+        {
+            "changelog": "```````````\n\n* Integration with :mod:`asyncio`: passing ``async=True`` to :meth:`~.spawn.expect`,\n  :meth:`~.spawn.expect_exact` or :meth:`~.spawn.expect_list` will make them return a\n  coroutine. You can get the result using ``yield from``, or wrap it in an\n  :class:`asyncio.Task`. This allows the event loop to do other things while\n  waiting for output that matches a pattern.\n* Experimental support for Windows (with some caveats)\u2014see :ref:`windows`.\n* Enhancement: allow method as callbacks of argument ``events`` for\n  :func:`pexpect.run` (:ghissue:`176`).\n* It is now possible to call :meth:`~.spawn.wait` multiple times, or after a process\n  is already determined to be terminated without raising an exception\n  (:ghpull:`211`).\n* New :class:`pexpect.spawn` keyword argument, ``dimensions=(rows, columns)``\n  allows setting terminal screen dimensions before launching a program\n  (:ghissue:`122`).\n* Fix regression that prevented executable, but unreadable files from\n  being found when not specified by absolute path -- such as\n  /usr/bin/sudo (:ghissue:`104`).\n* Fixed regression when executing pexpect with some prior releases of\n  the multiprocessing module where stdin has been closed (:ghissue:`86`).\n\nBackwards incompatible changes\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n* Deprecated ``pexpect.screen`` and ``pexpect.ANSI``. Please use other packages\n  such as `pyte <https://pypi.python.org/pypi/pyte>`__ to emulate a terminal.\n* Removed the independent top-level modules (``pxssh fdpexpect FSM screen ANSI``)\n  which were installed alongside Pexpect. These were moved into the Pexpect\n  package in 3.0, but the old names were left as aliases.\n* Child processes created by Pexpect no longer ignore SIGHUP by default: the\n  ``ignore_sighup`` parameter of :class:`pexpect.spawn` defaults to False. To\n  get the old behaviour, pass ``ignore_sighup=True``.\n\n",
+            "v": "<4.0"
+        }
+    ],
     "pillow": [
         {
             "changelog": "------------------\n\n- Fixed CVE-2014-3589, a DOS in the IcnsImagePlugin (backport)\n  [Andrew Drake]\n\n\n",
