@@ -280,6 +280,9 @@
         "<1.3.2",
         "<1.3.3"
     ],
+    "django-nested-formset": [
+        "<0.1.4"
+    ],
     "django-ninecms": [
         "<0.4.5b"
     ],
