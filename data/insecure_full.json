@@ -3305,6 +3305,12 @@
             "v": "<3.0"
         }
     ],
+    "plone.app.vocabularies": [
+        {
+            "changelog": "------------------\n\n- Added tests for the catalog, groups and users sources. Fixed three bugs,\n  where a LookupError was not raised.\n  [hannosch]\n\n- Added tests for the special term classes.\n  [hannosch]\n\n- Added tests for the language, security, skins, types and\n  workflow vocabularies.\n  [hannosch]\n\n\n",
+            "v": "<1.0.3"
+        }
+    ],
     "plone.formwidget.contenttree": [
         {
             "changelog": "------------------\n\n* Fix security validator to work properly on add views and other views using\n  namespace traversal (++add++...)\n  [optilude]\n\n",
