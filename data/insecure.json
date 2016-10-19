@@ -723,6 +723,9 @@
     "sevabot": [
         "<1.1"
     ],
+    "slc.mailrouter": [
+        "<0.2"
+    ],
     "soappy": [
         "<0.12.6"
     ],
