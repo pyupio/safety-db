@@ -4263,6 +4263,12 @@
             "v": "<0.30"
         }
     ],
+    "quokka-flask-security": [
+        {
+            "changelog": "-------------\n\nReleased June 18th 2013\n\n- Added `SECURITY_DEFAULT_REMEMBER_ME` configuration value to unify behavior between endpoints\n- Fixed Flask-Login dependency problem\n- Added optional `next` parameter to registration endpoint, similar to that of login\n\n\n",
+            "v": "<1.6.4"
+        }
+    ],
     "reprozip": [
         {
             "changelog": "------------------\n\n(reprozip only)\n\nBugfixes:\n* Files (or links) created with rename, link or symlink then read will no longer be packed.\n* A buffer overflow could happen in the log module, for instance when the experiment passes a very long argument to execve (over 4kB in a single argument) and running in debug mode (-v -v)\n\n\n",

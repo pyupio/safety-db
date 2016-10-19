@@ -700,6 +700,9 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "quokka-flask-security": [
+        "<1.6.4"
+    ],
     "reprozip": [
         "<0.7.1"
     ],
