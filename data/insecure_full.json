@@ -2223,6 +2223,12 @@
             "v": "<2.2.2"
         }
     ],
+    "galileo": [
+        {
+            "changelog": "- Fix a traceback in debug message (part of issue51)\n- Fix issue when the dongle doesn't reports its version (issue53)\n- Fix issue when ConnectionError happens during sync (issue54)\n- Try again a write operation in case of IOError (issue61)\n- Be more strict during discovery (issue66)\n- Handle issue when USB backend does not implement non-mandatory methods\n  (issue75)\n- Recognize one more kind of TimeoutError (issue82)\n\n\ngalileo 0.4 (2014-03-31)\n------------------------\n\nThis is the next feature release of galileo, a free utility to securely\nsynchronize fitbit bluetooth trackers with the fitbit web-service.\n\nThis release introduce a `daemon` mode that synchronize periodically the\navailable trackers, making it easier for integration as a service. As well as\nenhance the configurability by introducing more options, and also allowing\nthem to be read from configuration files. Man pages have also been added.\n\nContributors to this release: Stuart Hickinbottom, and Alexander Voronin.\n\n",
+            "v": "<0.4"
+        }
+    ],
     "gandi.cli": [
         {
             "changelog": "----\n\n* Add new dependency to request library, for certificate\n  validation during xmlrpc calls.\n* New command 'gandi vm kernels' to list available kernels,\n  can also be used to filter by vm to know which kernel is\n  compatible.\n* New parameters --cmdline and --kernels for command\n  'gandi disk update' to enable updating of cmdline\n  and/or kernel.\n* New parameter --size for command 'gandi vm create'\n  to specify disk size during vm creation.\n* Handle max_memory setting in command 'gandi vm update'\n  when updating memory. New parameter --reboot added to\n  accept a VM reboot for non-live update.\n* Update command 'gandi vm images' to also display usable\n  disks as image for vm creation.\n* Security: validate server certificate using request as\n  xmlrpc transport.\n* Security: restrict configuration file rights to owner only.\n* Refactor code of custom parameters, to only query API when\n  needed, improving overall speed of all commands.\n* Fixes bug with sshkey parameter for 'gandi paas create'\n  and 'gandi paas update' commands.\n* When an API call fail, we can call again using dry-run flag\n  to get more explicit errors. Used by 'gandi vhost create'\n  command.\n* Allow Gandi CLI to load custom modules using\n  'GANDICLI_PATH' environment variable, was previously only\n  done by commands.\n\n\n",
