@@ -2112,6 +2112,12 @@
             "v": "<0.7"
         }
     ],
+    "elasticsearch1": [
+        {
+            "changelog": "------------------\n\n * Add support for ``query_cache`` parameter when searching\n * helpers have been made more secure by changing defaults to raise an\n   exception on errors\n * removed deprecated options ``replication`` and the deprecated benchmark api.\n * Added ``AddonClient`` class to allow for extending the client from outside\n\n",
+            "v": "<1.5.0"
+        }
+    ],
     "errbot": [
         {
             "changelog": "-------------------\nBugs:\n\n- Security fix : the plugin directory permissions were too lax. Thx to Pinkbyte (Sergey Popov)\n- Corrected a bug in the exit of test mode, the shelves could loose data\n- Added a userfriendly git command check to notify if it is missing\n\nFeatures:\n\n- Added a version check: plugins can define min_err_version and max_err_version to notify their compatibility\n- Added an online configuration of the plugins. No need to make your plugin users hack the config.py anymore ! just use the command !config\n- Added a minimum Windows support.\n\n",
