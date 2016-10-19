@@ -3282,6 +3282,10 @@
     ],
     "pycapnp": [
         {
+            "changelog": "- Update bundled C++ libcapnp to v0.5.1.1 security release\n- Add bootstrap RPC methods\n- Fix possible segfault when importing multiple schemas\n\n\n",
+            "v": "<0.5.4"
+        },
+        {
             "changelog": "- Update bundled C++ libcapnp to v0.5.1.2 security release\n\n\n",
             "v": "<0.5.5"
         }
