@@ -2598,6 +2598,12 @@
             "v": "<0.10"
         }
     ],
+    "mitmproxy": [
+        {
+            "changelog": "\n    * Simplify repository and release structure. mitmproxy now comes as a single package, including netlib and pathod.\n\n    * Rename the Python package from libmproxy to mitmproxy.\n\n    * New option to add server certs to client chain (CVE-2016-2402, John Kozyrakis)\n\n    * Enable HTTP/2 by default (Thomas Kriechbaumer)\n\n    * Improved HAR extractor (Shadab Zafar)\n\n    * Add icon for OSX and Windows binaries\n\n    * Add content view for query parameters (Will Coster)\n\n    * Initial work on Python 3 compatibility\n\n    * locust.io export (Zohar Lorberbaum)\n\n    * Fix XSS vulnerability in HTTP errors (Will Coster)\n\n    * Numerous bugfixes and minor improvements\n\n\n",
+            "v": "<0.17"
+        }
+    ],
     "mixminion": [
         {
             "changelog": "   - A real SMTP exit module to relay messages via a local MTA.  Blacklisting\n     is supported by address, by username, by host, by entire domain, and\n     by regular expression.\n   - Integrated directory support for clients.\n   - Automatic path selection, along with a better user interface to specify\n     paths.\n   - You can now enable Cottrell (DynamicPool) and Binomial Dynamic Pool\n     batching, though they are disabled by default to make the system more\n     testable.\n   - Servers resist certain trivial DoS attacks more strongly.  In\n     particular, you should no longer be able to send zlib bombs or flood a\n     server with open connections.\n   - Clean build process under FreeBSD.\n   - Ability to run server as a daemon.\n   - Slightly better documentation and error messages.\n   - Better resistance to newline corruption of server descriptors.\n   - Other bugfixes and performance improvements too numerous to mention.\n\n",
