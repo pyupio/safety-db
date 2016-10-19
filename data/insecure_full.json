@@ -180,6 +180,12 @@
             "v": "<0.10.5"
         }
     ],
+    "cloudpayments": [
+        {
+            "changelog": "================\n\n* \u0418\u0441\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u044b \u043e\u0448\u0438\u0431\u043a\u0438, \u0432\u043e\u0437\u043d\u0438\u043a\u0430\u044e\u0449\u0438\u0435, \u043a\u043e\u0433\u0434\u0430 \u043f\u0440\u0438 \u043e\u043f\u043b\u0430\u0442\u0435 \u043f\u043e \u043a\u0440\u0438\u043f\u0442\u043e\u0433\u0440\u0430\u043c\u043c\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f 3-D Secure \u0430\u0443\u0442\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u044f.\n",
+            "v": "<1.1"
+        }
+    ],
     "cmsplugin-filer": [
         {
             "changelog": "------------------\n\n* Pin requirements for Django-Filer to >= 1.0.0\n* Improve test coverage\n* Fix icon_src / remove references of FILER_STATICMEDIA_PREFIX\n* XSS fix\n* Fix path names for storage backends\n* Fix migrations\n* Update README\n\n\n",
