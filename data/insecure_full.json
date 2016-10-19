@@ -4663,6 +4663,12 @@
             "v": "<0.1.14"
         }
     ],
+    "z3c.form": [
+        {
+            "changelog": "------------------\n\n- Feature: Implemented ``ImageButton``, ``ImageAction``, ``ImageWidget``, and\n  ``ImageFieldWidget`` to support imge submit buttons.\n\n- Feature: The ``AttributeField`` data manager now supports adapting\n  the content to the fields interface when the content doesn't implement\n  this interface.\n\n- Feature: Implemented single checkbox widget that can be used for boolean\n  fields. They are not available by default but can be set using the\n  ``widgetFactory`` attribute.\n\n- Bug: More lingual issues have been fixed in the documentation. Thanks to\n  Martijn Faassen for doing this.\n\n- Bug: When an error occurred during processing of the request the\n  widget ended up being security proxied and the system started\n  throwing `TraversalError`-'s trying to access the `label` attribute of\n  the widget. Declared that the widgets require the `zope.Public`\n  permission in order to access these attributes.\n\n- Bug: When rendering a widget the ``style`` attribute was not honored. Thanks\n  to Andreas Reuleaux for reporting.\n\n- Bug: When an error occurred in the sub-form, the status message was not set\n  correctly. Fixed the code and the incorrect test. Thanks to Markus\n  Kemmerling for reporting.\n\n- Bug: Several interfaces had the ``self`` argument in the method\n  signature. Thanks to Markus Kemmerling for reporting.\n\n\n",
+            "v": "<1.7.0"
+        }
+    ],
     "zeep": [
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
