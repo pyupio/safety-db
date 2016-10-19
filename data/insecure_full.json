@@ -15,6 +15,10 @@
         {
             "changelog": "---------------------\n\n* Django 1.8.10 (security release)\n\n\n",
             "v": "<1.8.10.1"
+        },
+        {
+            "changelog": "--------------------\n\n* adds django-secure\n* adds aldryn-sites\n\n\n",
+            "v": "<1.8.8.1"
         }
     ],
     "ansible": [
