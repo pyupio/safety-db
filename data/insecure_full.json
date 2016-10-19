@@ -4872,6 +4872,12 @@
             "v": "==1.0.0"
         }
     ],
+    "troposphere": [
+        {
+            "changelog": "- Do not validate AWSHelperFun's [GH-8] [GH-9]\n- Add missing return in integer\\_range [GH-10]\n- integer\\_range validator for ELB HealthyCheckInt\n- Convert RDS::DBInstance::VPCSecurityGroups to new list type checking\n- VPCSecurityGroups for RDS should be a list, not a basestring \n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "tryton": [
         {
             "cve": "CVE-2012-0215",
