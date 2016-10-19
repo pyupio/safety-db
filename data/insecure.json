@@ -480,6 +480,9 @@
     "ovirt-engine-sdk-python": [
         "<3.1.0.8"
     ],
+    "pandevice": [
+        "<0.3.1"
+    ],
     "pando": [
         "<0.39",
         "<0.42"

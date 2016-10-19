@@ -2643,6 +2643,12 @@
             "v": "<3.1.0.8"
         }
     ],
+    "pandevice": [
+        {
+            "changelog": "-----\n\nReleased: 2016-04-12\n\nStatus: Alpha\n\nNew objects:\n\n* policies.SecurityRule\n* objects.AddressGroup\n\nAPI changes:\n\n* Changed refresh_all to refreshall and apply_all to applyall\n* Added insert() method to PanObject base class\n\nFixes:\n\n* Objects can now be added as children of Panorama which will make them 'shared'\n* Fixes for tracebacks\n* Minor fixes to documentation and docstrings\n\n",
+            "v": "<0.3.1"
+        }
+    ],
     "pando": [
         {
             "changelog": "-------------------------------------------\n\n* fix two security bugs related to CRLF injection\n  https://github.com/gratipay/security-qf35us/issues/1\n\n* remove argv-based configuration; Website now takes kwargs instead (455)\n\n* remove exec-based configuration, i.e., configure-aspen.py (373); use kwargs\n  to Website or environment variables instead\n\n* add a base_url configuration setting and use it in a new algorithm\n  function, redirect_to_base_url (457)\n\n* improve the redirect API: it's now at website.redirect instead of\n  request.redirect; it honors the new website.base_url; and it takes an \n  optional response object (458)\n\n\n",
