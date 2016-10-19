@@ -145,6 +145,12 @@
             "v": "<0.5.1"
         }
     ],
+    "bormeparser": [
+        {
+            "changelog": "--------------------------\n\n- BormeXML: get_url_pdfs, get_cves y get_sizes ahora permiten especificar secci\u00f3n y provincia\n- Nueva constante ALL_PROVINCIAS en bormeparser.provincia\n- Detecci\u00f3n de nuevos tipos de sociedades\n- Scripts: limpieza, uso de argparse en los scripts, unificaci\u00f3n de par\u00e1metros\n- Mejoras menores en la documentaci\u00f3n\n- Nuevos campos \"version\" y \"raw_version\" en el formato JSON de BORME\n\n",
+            "v": "<0.2.4"
+        }
+    ],
     "centrifuge": [
         {
             "changelog": "======\n\nSecurity fix! Please, upgrade to this version or disable access to `/dumps` location.\n\n* auth now required for structure dump handler\n\n",
