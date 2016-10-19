@@ -764,6 +764,9 @@
     "sevabot": [
         "<1.1"
     ],
+    "silva.core.interfaces": [
+        "<3.0c1"
+    ],
     "soappy": [
         "<0.12.6"
     ],
