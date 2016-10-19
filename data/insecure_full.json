@@ -1702,6 +1702,10 @@
     ],
     "django-cms": [
         {
+            "changelog": "\n- Fixed an issue where privileged users could be tricked into performing actions without their knowledge via a CSRF vulnerability\n- Fixed an issue related to \"Empty all\" Placeholder feature\n- Fix issue with causes menu classes to be duplicated in advanced settings\n- Fix issue with breadcrumbs not showing\n- Fix issues with show_menu templatetags\n- Fix plugin sorting in py3\n- Fix search results number and items alignment in page changelist\n- Fix X-Frame-Options on top-level pages\n- Preserve information regarding the current view when applying the CMS decorator\n- Fix render_model template tag doesn't show correct change list\n- Fix language fallback for nested plugins\n- Fix order of which application urls are injected into urlpatterns\n- Fix delete non existing page language\n- Fix Scanning for placeholders fails on include tags with a variable as an argument\n- Minor documentation fixes\n- Pin South version to 1.0.2\n- Pin Html5lib version to 0.999 until a current bug is fixed\n- Fix language chooser template\n\n\n",
+            "v": "<3.0.14"
+        },
+        {
             "changelog": "\n- Addresses security vulnerabilities in the `render_model` template tag that could\n  lead to escalation of privileges or other security issues.\n- Fix ExtensionToolbar when language is removed but titles still exists\u2026\n- Fix PageSelectWidget JS syntax\n- Fix cache settings\n\n\n",
             "v": "<3.0.17"
         },
