@@ -1822,6 +1822,12 @@
             "v": "<3.4.2"
         }
     ],
+    "django-flashpolicies": [
+        {
+            "changelog": "---------------------------------\n\n* Packaged from repository tag 'v1.0'.\n\n* Expanded documentation.\n\n* Added ``serve()`` view, refactored other views to make use of it\n  (r43/7415d2691161).\n\n* Added ``metapolicy()`` view for simple serving of meta-policies\n  (r41/0266d294e00e).\n\n* Expanded unit tests.\n\n* Refactored policy generator, now built around the ``Policy`` class\n  (r37/ef86ab7f9007).\n\n* Added support for non-secure access (r36/53b52bdf8bdb).\n\n* Added support for port ranges in domain access (r35/b0cf688d0eb8).\n\n* Added constants in ``flashpolicies.policies`` enumerating valid\n  meta-policy values (r33/9c7891b88d19).\n\n\n",
+            "v": "<1.0"
+        }
+    ],
     "django-fluent-comments": [
         {
             "changelog": "-------------\n\n* Fix app registry errors in Django 1.7\n* Fix security hash formatting errors on bad requests.\n\n",
