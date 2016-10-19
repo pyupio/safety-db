@@ -625,7 +625,8 @@
         "<3.0"
     ],
     "plone.dexterity": [
-        "<2.3.0"
+        "<2.3.0",
+        "<2.4.2"
     ],
     "plone.formwidget.contenttree": [
         "<1.0a3"
