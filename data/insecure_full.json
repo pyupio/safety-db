@@ -722,6 +722,10 @@
             "v": "<1.8.15"
         },
         {
+            "changelog": "==========================\nDjango 1.9.8 release notes\n==========================\n\n*July 18, 2016*\n\nDjango 1.9.8 fixes a security issue and several bugs in 1.9.7.\n\nXSS in admin's add/change related popup\n=======================================\n\nUnsafe usage of JavaScript's ``Element.innerHTML`` could result in XSS in the\nadmin's add/change related popup. ``Element.textContent`` is now used to\nprevent execution of the data.\n\nThe debug view also used ``innerHTML``. Although a security issue wasn't\nidentified there, out of an abundance of caution it's also updated to use\n``textContent``.\n\nBugfixes\n========\n\n* Fixed missing ``varchar/text_pattern_ops`` index on ``CharField`` and\n  ``TextField`` respectively when using ``AddField`` on PostgreSQL\n  (:ticket:`26889`).\n\n* Fixed ``makemessages`` crash on Python 2 with non-ASCII file names\n  (:ticket:`26897`).\n",
+            "v": "<1.9.8"
+        },
+        {
             "cve": "CVE-2009-3695",
             "description": "Algorithmic complexity vulnerability in the forms library in Django 1.0 before 1.0.4 and 1.1 before 1.1.1 allows remote attackers to cause a denial of service (CPU consumption) via a crafted (1) EmailField (email address) or (2) URLField (URL) that triggers a large amount of backtracking in a regular expression.",
             "urls": [
