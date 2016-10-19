@@ -2200,6 +2200,12 @@
             "v": "<0.6.1"
         }
     ],
+    "flask-cors": [
+        {
+            "changelog": "* Adds support for returning CORS headers with uncaught exceptions in production so 500s will have expected CORS headers set. This will allow clients to better surface the errors, rather than failing due to security. Reported and tested by robertfw -- thanks!\n* Improved conformance of preflight request handling to W3C spec.\n* Code simplification and 100% test coverage :sunglasses:\n\n",
+            "v": "<1.10.0"
+        }
+    ],
     "flask-images": [
         {
             "changelog": "-----\n- Fix 3 security bugs, each of which would allow for reading any image on disk.\n\n",
