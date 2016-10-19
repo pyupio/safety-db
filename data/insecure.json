@@ -437,6 +437,9 @@
     "httpsig-cffi": [
         "<1.0.0"
     ],
+    "humblesetuptools": [
+        "<0.9.5"
+    ],
     "invenio-search": [
         "<0.1.3"
     ],
