@@ -324,6 +324,10 @@
                 "https://bugs.launchpad.net/keystone/+bug/1100279"
             ],
             "v": "<0.4"
+        },
+        {
+            "changelog": "--------------\n\n*Release date: 25-Feb-2013*\n\n- As per http://seclists.org/oss-sec/2013/q1/340 please REJECT\n  CVE-2013-0278, CVE-2013-0279 and CVE-2013-0280 and use CVE-2013-1664,\n  CVE-2013-1665 for OpenStack/etc.\n- Add missing parser_list argument to sax.make_parser(). The argument is\n  ignored, though. (thanks to Florian Apolloner)\n- Add demo exploit for external entity attack on Python's SAX parser, XML-RPC\n  and WebDAV.\n\n\n",
+            "v": "<0.4"
         }
     ],
     "deis": [
