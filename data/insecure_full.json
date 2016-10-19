@@ -3707,6 +3707,12 @@
             "v": "<1.3.6"
         }
     ],
+    "pymongo": [
+        {
+            "changelog": "round of bug fixes and improvements.\n\nSpecial thanks go to Alexey Borzenkov, Dan Crosta, Kostya Rybnikov,\nFlavio Percoco Premoli, Jonas Haag, and Jesse Davis for their contributions\nto this release.\n\nImportant New Features:\n\n- ReplicaSetConnection -\n  :class:`~pymongo.replica_set_connection.ReplicaSetConnection`\n  can be used to distribute reads to secondaries in a replica set. It supports\n  automatic failover handling and periodically checks the state of the\n  replica set to handle issues like primary stepdown or secondaries\n  being removed for backup operations. Read preferences are defined through\n  :class:`~pymongo.read_preferences.ReadPreference`.\n- PyMongo supports the new BSON binary subtype 4 for UUIDs. The default\n  subtype to use can be set through\n  :attr:`~pymongo.collection.Collection.uuid_subtype`\n  The current default remains :attr:`~bson.binary.OLD_UUID_SUBTYPE` but will\n  be changed to :attr:`~bson.binary.UUID_SUBTYPE` in a future release.\n- The getLastError option 'w' can be set to a string, allowing for options\n  like \"majority\" available in newer version of MongoDB.\n- Added support for the MongoDB URI options socketTimeoutMS and connectTimeoutMS.\n- Added support for the ContinueOnError insert flag.\n- Added basic SSL support.\n- Added basic support for Jython.\n- Secondaries can be used for :meth:`~pymongo.cursor.Cursor.count`,\n  :meth:`~pymongo.cursor.Cursor.distinct`, :meth:`~pymongo.collection.Collection.group`,\n  and querying :class:`~gridfs.GridFS`.\n- Added document_class and tz_aware options to\n  :class:`~pymongo.master_slave_connection.MasterSlaveConnection`\n\nIssues Resolved\n...............\n\nSee the `PyMongo 2.1 release notes in JIRA`_ for the list of resolved issues in this release.\n\n.. _PyMongo 2.1 release notes in JIRA: https://jira.mongodb.org/secure/ReleaseNote.jspa?projectId=10004&version=10583\n\n",
+            "v": "<2.1"
+        }
+    ],
     "pypicloud": [
         {
             "changelog": "-----------------\n* Bug fix: Security bug in user auth (:sha:`001e8a5`)\n* Bug fix: Package caching from pypi was slightly broken (:sha:`065f6c5`)\n* Bug fix: ``ppc-migrate`` works when migrating to the same storage type (:sha:`45abcde`)\n\n",
