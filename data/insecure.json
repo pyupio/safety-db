@@ -256,6 +256,9 @@
     "django-filebrowser-no-grappelli-staff": [
         "<3.4.2"
     ],
+    "django-flashpolicies": [
+        "<1.0"
+    ],
     "django-fluent-comments": [
         "<1.0.1"
     ],
