@@ -11,6 +11,12 @@
             "v": "<0.6.0"
         }
     ],
+    "ak-websockify": [
+        {
+            "changelog": "--------------------\n\n * use upstream einaros/ws (>=0.4.27) with websockify.js\n * file_only and no_parent security options for WSRequestHandler\n * Update build of web-socket-js (c0855c6cae)\n * add include/web-socket-js-project submodule to gimite/web-socket-js\n   for DSFG compliance.\n * drop Hixie protocol support\n\n",
+            "v": "<0.5.1"
+        }
+    ],
     "aldryn-django": [
         {
             "changelog": "---------------------\n\n* Django 1.8.10 (security release)\n\n\n",
