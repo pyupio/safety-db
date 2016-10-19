@@ -4531,6 +4531,12 @@
             "v": "<0.8"
         }
     ],
+    "sqlmap": [
+        {
+            "changelog": "\n* complete refactor of entire program;\n* added TODO and THANKS files;\n* added some papers references in README file;\n* moved headers to user-agents.txt, now -f parameter specifies a file (user-agents.txt) and randomize the selection of User-Agent header;\n* strongly improved program plugins (mysqlmap.py and postgres.py), major enhancements: * improved active mysql fingerprint check_dbms(); * improved enumeration functions for both databases; * minor changes in the unescape() functions;\n* replaced old inference algorithm with a new bisection algorithm.\n* reviewed command line parameters, now with -p it's possible to specify the parameter you know it's vulnerable to sql injection, this way the script won't perform the sql injection checks itself; removed the TOKEN parameter;\n* improved Common class, adding support for http proxy and http post method in hash_page;\n* added OptionCheck class in option.py which performs all needed checks on command line parameters and values;\n* added InjectionCheck class in injection.py which performs check on url stability, dynamics of parameters and injection on dynamic url parameters;\n* improved output methods in dump.py;\n* layout enhancement on main program file (sqlmap.py), adapted to call new option/injection classes and improvements on catching of exceptions.\n",
+            "v": "<0.2"
+        }
+    ],
     "stargate": [
         {
             "changelog": "---\n\n- Add support for the HyBi version of WebSockets (specifically version-10). This version was released to solve some previous security concerns and\nwill be the version in Firefox 7/8 and Chrome 14 onwards accoring to Wikipedia.\n- Introduces a dependency on ws4py\n\n- See http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10\n\n",
