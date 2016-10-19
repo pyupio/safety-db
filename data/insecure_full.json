@@ -1754,6 +1754,12 @@
             "v": "<1.1"
         }
     ],
+    "django-hijack": [
+        {
+            "changelog": "- Security update\n\n",
+            "v": "<1.0.7"
+        }
+    ],
     "django-html5-appcache": [
         {
             "changelog": "\n - Templatetag added to display cache status\n - More tests\n - Added security check for sensitive views\n\n",
