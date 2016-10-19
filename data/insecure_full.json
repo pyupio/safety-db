@@ -5050,6 +5050,12 @@
             "v": "<3.9.0"
         }
     ],
+    "zodbbrowser": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~\n\n- IMPORTANT BUGFIX: don't leave old object states lying around in ZODB object\n  cache, which could lead to DATA LOSS (LP487243 strikes again, this time\n  for OrderedContainers).\n\n  I've audited the code and am fairly confident this bug is now dead dead\n  dead.\n\n- Try to discard data modifications when the DB is opened read-only.\n\n- Avoid deprecated zope.testing.doctest.\n\n- Avoid zope.app.securitypolicy; use zope.securitypolicy.\n\n\n",
+            "v": "<0.7.1"
+        }
+    ],
     "zope": [
         {
             "cve": "CVE-2012-6661",
