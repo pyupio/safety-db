@@ -388,6 +388,9 @@
     "errbot": [
         "<1.3.0"
     ],
+    "esdrt.content": [
+        "<1.1"
+    ],
     "euphorie": [
         "<6.1"
     ],
