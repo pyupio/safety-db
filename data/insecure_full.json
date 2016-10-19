@@ -710,6 +710,10 @@
             "v": "<1.8.10"
         },
         {
+            "changelog": "===========================\nDjango 1.8.14 release notes\n===========================\n\n*July 18, 2016*\n\nDjango 1.8.14 fixes a security issue and a bug in 1.8.13.\n\nXSS in admin's add/change related popup\n=======================================\n\nUnsafe usage of JavaScript's ``Element.innerHTML`` could result in XSS in the\nadmin's add/change related popup. ``Element.textContent`` is now used to\nprevent execution of the data.\n\nThe debug view also used ``innerHTML``. Although a security issue wasn't\nidentified there, out of an abundance of caution it's also updated to use\n``textContent``.\n\nBugfixes\n========\n\n* Fixed missing ``varchar/text_pattern_ops`` index on ``CharField`` and\n  ``TextField`` respectively when using ``AddField`` on PostgreSQL\n  (:ticket:`26889`).\n",
+            "v": "<1.8.14"
+        },
+        {
             "cve": "CVE-2016-7401",
             "description": "The cookie parsing code in Django before 1.8.15 and 1.9.x before 1.9.10, when used on a site with Google Analytics, allows remote attackers to bypass an intended CSRF protection mechanism by setting arbitrary cookies.",
             "urls": [
