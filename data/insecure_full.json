@@ -4723,6 +4723,12 @@
             "v": "<4.4.0"
         }
     ],
+    "spake2": [
+        {
+            "changelog": "or later: the session keys will never match.\n\npypy3 support has been dropped, until pypy3 handles python3.3 or later (it\ncurrently implements the equivalent of python3.2).\n\npython-spake2 now depends on the \"hkdf\" package. Tox and py.test are now used\nfor running tests. setup.py has been switched from distutils to setuptools.\n\n\n* Release 0.3 (22-Sep-2015)\n\nUse the faster \"M=N\" blinding factors for SPAKE2_Symmetric, instead of\nrunning two sessions in parallel and combining the results. This gets the\nsame speed and message size as the asymmetric (SPAKE2_A/SPAKE2_B) approach,\nand is probably safe (see README for the security proofs).\n\n\n* Release 0.2 (08-Apr-2015)\n\nUse Ed25519 group/parameters by default (improves speed, security, and\nmessage size). Note that both sides must use the same parameter set for\ncompatibility.\n\n\n* Release 0.1 (13-Feb-2015)\n\nInitial release. Includes SPAKE2_A/SPAKE2_B, and SPAKE2_Symmetric. Provides\nthree integer-group parameter sets (Params1024, Params2048, Params3072).\n",
+            "v": "<0.7"
+        }
+    ],
     "splash": [
         {
             "changelog": "------------------\n\nThis is a bugfix release:\n\n* XSS in HTTP UI is fixed;\n* Splash-Jupyter docker image is fixed.\n\n",
