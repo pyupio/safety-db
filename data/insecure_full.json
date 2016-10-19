@@ -15,6 +15,10 @@
         {
             "changelog": "---------------------\n\n* Django 1.8.10 (security release)\n\n\n",
             "v": "<1.8.10.1"
+        },
+        {
+            "changelog": "---------------------\n\n* Do not redirect https requests to http when `SECURE_SSL_REDIRECT`\n  is not explicitly set to `False`.\n\n\n",
+            "v": "<1.8.14.2"
         }
     ],
     "ansible": [
