@@ -2251,6 +2251,12 @@
             "v": "<0.999999991.0b9"
         }
     ],
+    "html5lib": [
+        {
+            "changelog": "~~~~~~~~~~~~\n\nReleased on April 29, 2015\n\n* Fix 153: Sanitizer fails to treat some attributes as URLs. Despite how\n  this sounds, this has no known security implications.  No known version\n  of IE (5.5 to current), Firefox (3 to current), Safari (6 to current),\n  Chrome (1 to current), or Opera (12 to current) will run any script\n  provided in these attributes.\n\n* Pass error message to the ParseError exception in strict parsing mode.\n\n* Allow data URIs in the sanitizer, with a whitelist of content-types.\n\n* Add support for Python implementations that don't support lone\n  surrogates (read: Jython). Fixes 2.\n\n* Remove localization of error messages. This functionality was totally\n  unused (and untested that everything was localizable), so we may as\n  well follow numerous browsers in not supporting translating technical\n  strings.\n\n* Expose treewalkers.pprint as a public API.\n\n* Add a documentEncoding property to HTML5Parser, fix 121.\n\n\n",
+            "v": "<0.99991.0b5"
+        }
+    ],
     "httpauth": [
         {
             "changelog": "-----------------\n* SECURITY ISSUE: Invalid username + empty password were being accepted\n* Added ``AlwaysFailingAuthMiddleware``\n\n",
