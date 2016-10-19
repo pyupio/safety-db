@@ -198,6 +198,12 @@
             "v": "<0.7.1"
         }
     ],
+    "collective.recaptcha": [
+        {
+            "changelog": "------------------\n\n- Correctly handle comma-delimited values in the HTTP_X_FORWARDED_FOR\n  header.\n  [davisagli]\n\n- Added support for verifying the captcha multiple times within the same request.\n  [davisagli]\n\n- Added security declarations on the view methods so they can be called from\n  restricted Python.\n  [davisagli]\n\n\n",
+            "v": "<1.0b2"
+        }
+    ],
     "collective.solr": [
         {
             "changelog": "-------------------------------\n\n* Fix security issue with `getObject` on Solr flares, which used unrestricted\n  traversal on the entire path, potentially leading to information leaks.\n  Refs http://plone.org/products/collective.solr/issues/27\n  [pilz, witsch]\n\n* Add missing `CreationDate` method to flares.\n  This fixes http://plone.org/products/collective.solr/issues/16\n  [witsch]\n\n* Add logging for slow queries along with the query time as reported by Solr.\n  [witsch]\n\n* Limit number of matches looked up during live search for speedier replies.\n  [witsch]\n\n* Renamed the batch parameters to ``b_start`` and ``b_size`` to avoid\n  conflicts with index names and be consistent with existing template code.\n  [do3cc]\n\n* Added a new config option ``auto-commit`` which is enabled by default. You\n  can disable this, which avoids any explicit commit messages to be sent to\n  the Solr server by the client. You have to configure commit policies on\n  the server side instead.\n  [hannosch]\n\n* Added support for a special query key ``use_solr`` which forces queries to\n  be sent to Solr even though none of the required keys match. This can be\n  used to sent individual catalog queries to Solr.\n  [hannosch]\n\n\n",
