@@ -2530,6 +2530,12 @@
             "v": "<0.1.17pre"
         }
     ],
+    "nodeenv": [
+        {
+            "changelog": "-------------\n- Fixed typo in deactive command. See `pull  20`_\n- Not used \"--insecure\" to download npm. See `pull  21`_\n- Removed \"src\" directory after installation. See `pull  22`_\n- Added option \"--clean-src\"\n- Added integration with python's virtualenv. See `pull  23`_\n\n.. _pull  20: https://github.com/ekalinin/nodeenv/pull/20\n.. _pull  21: https://github.com/ekalinin/nodeenv/pull/21\n.. _pull  22: https://github.com/ekalinin/nodeenv/pull/22\n.. _pull  23: https://github.com/ekalinin/nodeenv/pull/23\n\n",
+            "v": "<0.6.0"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",
