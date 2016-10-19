@@ -3707,6 +3707,12 @@
             "v": "<1.3.6"
         }
     ],
+    "pymongo": [
+        {
+            "changelog": "2.2.\n\nImportant New Features:\n\n- Support for expanded read preferences including directing reads to tagged\n  servers - See :ref:`secondary-reads` for more information.\n- Support for mongos failover.\n- A new :meth:`~pymongo.collection.Collection.aggregate` method to support\n  MongoDB's new `aggregation framework\n  <http://docs.mongodb.org/manual/applications/aggregation/>`_.\n- Support for legacy Java and C byte order when encoding and decoding UUIDs.\n- Support for connecting directly to an arbiter.\n\n.. warning::\n\n    Starting with MongoDB 2.2 the getLastError command requires authentication\n    when the server's `authentication features\n    <http://www.mongodb.org/display/DOCS/Security+and+Authentication>`_ are enabled.\n    Changes to PyMongo were required to support this behavior change. Users of\n    authentication must upgrade to PyMongo 2.3 (or newer) for \"safe\" write operations\n    to function correctly.\n\nIssues Resolved\n...............\n\nSee the `PyMongo 2.3 release notes in JIRA`_ for the list of resolved issues\nin this release.\n\n.. _PyMongo 2.3 release notes in JIRA: https://jira.mongodb.org/browse/PYTHON/fixforversion/11146\n\n",
+            "v": "<2.3"
+        }
+    ],
     "pypicloud": [
         {
             "changelog": "-----------------\n* Bug fix: Security bug in user auth (:sha:`001e8a5`)\n* Bug fix: Package caching from pypi was slightly broken (:sha:`065f6c5`)\n* Bug fix: ``ppc-migrate`` works when migrating to the same storage type (:sha:`45abcde`)\n\n",
