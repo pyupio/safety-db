@@ -4872,6 +4872,12 @@
             "v": "==1.0.0"
         }
     ],
+    "troposphere": [
+        {
+            "changelog": "- Convert fake AWSHelperFns into AWSProperties (478)\n- cfn script: allow update (484)\n- Validate the template against AWS before stack creation (485)\n- Fix capitalization in README (487)\n- Remove duplicate waf FieldToMatch class (fixes 489)\n- Tune validation logic and test cases for S3 bucket names (486)\n- waf XssMatchTuple should be an AWSProperty (Fixes 498)\n- Allow setting a different region for S3 upload (491)\n- fix attribute for ApiKey (Enable -> Enabled) (492)\n- Invoke join correctly (493)\n- EMR: fix EBS configuration (497)\n- EMR: Action on Failure Fix (CONTINUE_AND_WAIT->CANCEL_AND_WAIT) (501)\n- Rewritten the helper to be more flexible (502)\n- Added support for Kinesis Firehose (505)\n- Add support for VPC Flow Logs (507)\n- Syntax highlighting for readme python sample (508)\n- Added Name property to Kinesis streams (510)\n- Availability zones and EC2 instance type (512)\n- Add `AutoScalingReplacingUpdate` to `UpdatePolicy` (513)\n- Removed validation for DBSubnetGroupName when creating a read replica with SourceDBInstanceIdentifier (515)\n- EMR configurations values: also allow AWS helper functions (516)\n- Fix AssociationParameters Value type to list of strings (518)\n- Add DependsOn to Deployment and remove Enabled from StageKey (519)\n- Update fields in apigateway StageDescription (521)\n- Fix rename pep8->pycodestyle and bump to fixed pyflakes (522)\n- Allows MultiAZ=false with AvailabilityZone in rds (524)\n- Do not require Status as a param in iam.AccessKey (525)\n- Fix badges in README\n\n",
+            "v": "<1.7.0"
+        }
+    ],
     "tryton": [
         {
             "cve": "CVE-2012-0215",
