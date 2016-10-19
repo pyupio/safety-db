@@ -397,6 +397,9 @@
     "ftw.permissionmanager": [
         "<2.2.2"
     ],
+    "galileo": [
+        "<0.4.4"
+    ],
     "gandi.cli": [
         "<0.10"
     ],
