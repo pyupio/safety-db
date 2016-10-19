@@ -242,6 +242,9 @@
     "django-hijack": [
         "<1.0.7"
     ],
+    "django-hosts": [
+        "<1.2"
+    ],
     "django-html5-appcache": [
         "<0.3.0"
     ],

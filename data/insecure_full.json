@@ -1778,6 +1778,12 @@
             "v": "<1.0.7"
         }
     ],
+    "django-hosts": [
+        {
+            "changelog": "----------------\n\n- **BACKWARD-INCOMPATIBLE** Dropped support for Django 1.6 as it doesn't\n  receive any security releases anymore.\n\n- **BACKWARD-INCOMPATIBLE** Removed deprecated ``django_hosts.reverse``\n  module as it incorrectly shadowed the :func:`django_hosts.resolvers.reverse`\n  function that was added in version 1.0. This is a earlier deprecation than\n  planned, apologies for the inconvenience.\n\n- Added support for Django 1.8.\n\n",
+            "v": "<1.2"
+        }
+    ],
     "django-html5-appcache": [
         {
             "changelog": "\n - Templatetag added to display cache status\n - More tests\n - Added security check for sensitive views\n\n",
