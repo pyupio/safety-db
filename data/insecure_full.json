@@ -17,6 +17,12 @@
             "v": "<1.8.10.1"
         }
     ],
+    "annotator": [
+        {
+            "changelog": "=============\n\nFeatures\n--------\n\n- The ``authz``, ``identity``, and ``notification`` modules are now\n  exposed as public API on the ``annotator`` page global.\n\n- The ``notifier``, ``identityPolicy`` and ``authorizationPolicy`` are now\n  retrieved from component registry. It should now be possible to register\n  alternative implementations.\n\n- Performance of the highlighter should be slightly improved.\n\n- Showing the viewer with a mouse hover should be much faster when there are\n  many overlapping highlights. (520)\n\n- The ``getGlobal()`` function of the ``util`` module has been removed and\n  Annotator should now work with Content Security Policy rules that prevent\n  ``eval`` of code.\n\n- The ``markdown`` extension has been upgraded to require and support version\n  1.0 or greater of the Showdown library.\n\nBug Fixes\n---------\n\n- Fix a bug in the ``ui.filter`` extension so that the ``filters`` option\n  now works as specified.\n\n- Make the highlighter work even when the global ``document`` symbol is not\n  ``window.document``.\n\n- Fix an issue with the editor where adding custom fields could result in\n  fields appearing more than once. (533)\n\n- With the ``autoViewHighlights`` options of the ``viewer``, don't show the\n  viewer while the primary mouse button is pressed. Before, this prevention\n  applied to every button except the primary button, which was not the intended\n  behavior.\n\nDocumentation\n-------------\n\n- Fix some broken links.\n\n- Fix some example syntax.\n\n- Add example markup in the documentation for the ``document`` extension.\n\n",
+            "v": "<2.0.0alpha.3"
+        }
+    ],
     "ansible": [
         {
             "changelog": "\n* Local security fixes for predictable file locations for ControlPersist and retry file paths on shared machines\non operating systems without kernel symlink/hardlink protections.\n\n",
