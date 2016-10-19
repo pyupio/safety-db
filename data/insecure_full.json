@@ -218,6 +218,12 @@
             "v": "<4.1.1"
         }
     ],
+    "collective.lineage": [
+        {
+            "changelog": "------------------\n\n- used z3c.autoinclude and removed the zcml slug in buildout.cfg\n  [tbesluau]\n\n- update the security settings at the end of the migration so\n  that the workflow is applied correctly on the new migrated\n  folders, fixes 20\n  [lucielejard]\n\n- updated the migration so it keeps the layout on the folder\n  fixes 18\n  [lucielejard]\n\n\n",
+            "v": "<0.6"
+        }
+    ],
     "collective.noticeboard": [
         {
             "changelog": "------------------\n\n- Fix security issue, anonymous users could modify notes positions.\n  Fixes 6\n  [do3cc]\n\n\n",
