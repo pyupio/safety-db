@@ -4773,6 +4773,12 @@
             "v": "<0.8"
         }
     ],
+    "stacker-blueprints": [
+        {
+            "changelog": "\nThis is the first release to include blueprints with the new Blueprint Variables\nconcept introduced in stacker 0.8.\n\n- output EmpireMinionRole [GH-18]\n- allow users & groups for firehose [GH-19]\n- KMS integration for firehose [GH-20]\n- Update empire stacks to use Empire Daemon [GH-22]\n- Add test helper for empire stacks [GH-26]\n- Allow use of existing security group with RDS [GH-29]\n- Move to compatible release versions for all dependencies [GH-30]\n- Add SNS, SQS, DynamoDB Blueprints [GH-43]\n\n",
+            "v": "<0.7.0"
+        }
+    ],
     "stargate": [
         {
             "changelog": "---\n\n- Add support for the HyBi version of WebSockets (specifically version-10). This version was released to solve some previous security concerns and\nwill be the version in Firefox 7/8 and Chrome 14 onwards accoring to Wikipedia.\n- Introduces a dependency on ws4py\n\n- See http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10\n\n",
