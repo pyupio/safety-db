@@ -438,6 +438,9 @@
     "gns3-gui": [
         "<1.5.1"
     ],
+    "gocept.autocomplete": [
+        "<0.1"
+    ],
     "google-appengine": [
         "<1.5.4"
     ],
