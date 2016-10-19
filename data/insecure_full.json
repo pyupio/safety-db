@@ -4119,6 +4119,12 @@
             "v": "<0.30"
         }
     ],
+    "redi": [
+        {
+            "changelog": "\n * Revised configuration architecture\n * Updated code to better conform to our Logging Guidelines\n * Added PyCap-based import-export tool\n * Moved temporary files to dynamically-generated, secure temporary folder\n * Added tests for REDCap connection and alerts when it fails\n * Added check for data freshness\n * Added example configuration content\n * Improved Python packaging\n * Cleaned up code to PEP-8 standards\n * Added configuration file documentation\n * Added dry-run functionality\n * Added default configuration values where appropriate\n\n",
+            "v": "<0.10.0"
+        }
+    ],
     "requests": [
         {
             "changelog": "++++++++++++++++++\n\n**API Changes**\n\n- New ``Response`` property ``is_redirect``, which is true when the\n  library could have processed this response as a redirection (whether\n  or not it actually did).\n- The ``timeout`` parameter now affects requests with both ``stream=True`` and\n  ``stream=False`` equally.\n- The change in v2.0.0 to mandate explicit proxy schemes has been reverted.\n  Proxy schemes now default to ``http://``.\n- The ``CaseInsensitiveDict`` used for HTTP headers now behaves like a normal\n  dictionary when references as string or viewed in the interpreter.\n\n**Bugfixes**\n\n- No longer expose Authorization or Proxy-Authorization headers on redirect.\n  Fix CVE-2014-1829 and CVE-2014-1830 respectively.\n- Authorization is re-evaluated each redirect.\n- On redirect, pass url as native strings.\n- Fall-back to autodetected encoding for JSON when Unicode detection fails.\n- Headers set to ``None`` on the ``Session`` are now correctly not sent.\n- Correctly honor ``decode_unicode`` even if it wasn't used earlier in the same\n  response.\n- Stop advertising ``compress`` as a supported Content-Encoding.\n- The ``Response.history`` parameter is now always a list.\n- Many, many ``urllib3`` bugfixes.\n\n",
