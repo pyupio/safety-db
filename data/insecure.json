@@ -386,6 +386,9 @@
     "flask-async": [
         "<0.6.1"
     ],
+    "flask-cors": [
+        "<1.10.0"
+    ],
     "flask-images": [
         "<1.1.3"
     ],
