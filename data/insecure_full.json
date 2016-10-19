@@ -3447,6 +3447,12 @@
             "v": "<1.0.01.0.0"
         }
     ],
+    "pykafka": [
+        {
+            "changelog": "\n.. _Compare 2.4.0: https://github.com/Parsely/pykafka/compare/2.3.1...2.4.0\n\nMinor Version Features\n**********************\n\n* Added support for connecting to Kafka brokers using a secure TLS connection\n* Removed the fallback in `Cluster` that treated `hosts` as a ZooKeeper\n  connection string\n* Removed the `block_on_queue_full` kwarg from the rdkafka producer\n* Added the `max_request_size` kwarg to the rdkafka producer\n\nBug Fixes\n*********\n\n* Performed permissive parameter validation in consumers and producer to avoid\n  cryptic errors on threads\n* Allowed more consumers than partitions in a balanced consumer group\n* Fixed python 3 compatibility in `kafka_tools.py`\n* Fixed a bug causing nuisance errors on interpreter shutdown\n* Removed some uses of deprecated functions in the rdkafka C extension\n* Fixed a bug causing crashes when kafka returns an invalid partition ID in\n  partition requests\n\nMiscellaneous\n*************\n\n* Added utilities for testing TLS support to the test suite\n* Made the gevent version requirement slightly more inclusive\n\n\n",
+            "v": "<2.4.0"
+        }
+    ],
     "pymemcache": [
         {
             "changelog": "--------------------\n* Fix flake8 and cleanup tox building\n* Fix security vulnerability by sanitizing key input\n\n",
