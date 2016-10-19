@@ -605,6 +605,9 @@
     "products.cmfcontentpanels": [
         "<V1.4.1"
     ],
+    "products.eventregistration": [
+        "<1.0.0"
+    ],
     "products.ldapuserfolder": [
         "<2.19"
     ],
