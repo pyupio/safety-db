@@ -147,6 +147,12 @@
             "v": "<2.4.0"
         }
     ],
+    "check-paloalto": [
+        {
+            "changelog": "------------------\n\n* Disabled warnings for insecure requests to support older installations:\n  https://urllib3.readthedocs.org/en/latest/security.html\n\n\n",
+            "v": "<0.1.3"
+        }
+    ],
     "cherrymusic": [
         {
             "changelog": " - FIXED: *Security* CVE-2015-8309 Download of arbitrary files by logged in users (thanks \nfeedersec)\n - FIXED: *Security* CVE-2015-8310 XSS attack by logged-in users (thanks feedersec)\n - FIXED: OGA files are now correctly recognized as ogg-audio files\n - FIXED: Sorting tracks by track number correctly\n - FIXED: Cannot load playlists containing single quotes\n - FEATURE: allow reverse-sorting of playlists (thanks pando85)\n - FEATURE: Enabled support of ffmpeg to decode ALAC files\n - FEATURE: Added optional support for Pillow as Image Library\n - IMPROVEMENT: disabled confirm-to-quit message for playlist downloads\n - IMPROVEMENT: Updated TinyTag to version 0.10.1 (much faster ID3 parsing)\n - IMPROVEMENT: Predictable selection of album-art images (thanks lzh9102)\n - FIXED: Removed restrictions for passwords created in CLI\n\n",
