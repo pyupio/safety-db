@@ -459,6 +459,9 @@
     "maxminddb": [
         "<1.1.2"
     ],
+    "metadataproxy": [
+        "<1.1.1"
+    ],
     "mgp2pdf": [
         "<0.10"
     ],
