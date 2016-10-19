@@ -758,6 +758,9 @@
     "pyramid-odesk": [
         "<1.1.2"
     ],
+    "pyramid-weblayer": [
+        "<0.10.1"
+    ],
     "pyshop": [
         "<0.7.1"
     ],
