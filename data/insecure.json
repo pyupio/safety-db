@@ -193,6 +193,9 @@
     "django-guts": [
         "<0.1.1"
     ],
+    "django-haystack": [
+        "<1.1"
+    ],
     "django-html5-appcache": [
         "<0.3.0"
     ],
