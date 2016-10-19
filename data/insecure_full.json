@@ -129,6 +129,12 @@
             "v": "<1.4.2"
         }
     ],
+    "blobxfer": [
+        {
+            "changelog": " Changed\n- Update all dependencies to latest versions\n- Add flag for block/page level md5 computation which is now disabled by\n  default\n\n Fixed\n- Update against breaking changes from azure-storage 0.32.0\n\n Removed\n- Remove RC designation from encryption/decryption functionality\n\n Security\n- Update cryptography requirement to 1.4\n\n",
+            "v": "<0.10.1"
+        }
+    ],
     "bok-choy": [
         {
             "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",
