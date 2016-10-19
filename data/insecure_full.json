@@ -216,6 +216,12 @@
             "v": "<0.3.1"
         }
     ],
+    "confidant": [
+        {
+            "changelog": "\n* Security fix: While preparing for the 1.1 stable release Lyft found a KMS\n  authentication vulnerability in the unreleased 1.1 branch while performing an\n  audit of the code. The vulnerability was introduced while adding the scoped auth\n  key feature (for limiting authentication keys and services to specific AWS\n  accounts), where the key was not properly checked after decryption. This check is\n  an additional verification to add additional safety on-top of the IAM policy of\n  your KMS keys. If IAM policy allows users to use KMS keys without limits on\n  encryption context, a KMS key that wasn't intended to be used for auth, could be\n  used for auth.\n\n",
+            "v": "<1.1.14"
+        }
+    ],
     "conn-check": [
         {
             "changelog": "-------------------\n\n - Ensure pyOpenSSL is always used instead of the ssl modules,\n   see https://urllib3.readthedocs.org/en/latest/security.htmlpyopenssl.\n\n",
