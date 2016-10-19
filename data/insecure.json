@@ -290,6 +290,9 @@
     "django-session-security": [
         "<2.4.0"
     ],
+    "django-social-auth": [
+        "<0.7.2"
+    ],
     "django-sql-explorer": [
         "<0.4"
     ],
