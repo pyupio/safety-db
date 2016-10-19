@@ -3547,6 +3547,12 @@
             "v": "<1.1.7"
         }
     ],
+    "pyrad": [
+        {
+            "changelog": "---\n\n* packet.VerifyReply() had a syntax error when not called with a raw packet.\n\n* Add bind() method to the Client class.\n\n* [SECURITY] Fix handling of timeouts in client module: when a bad\n  packet was received pyrad immediately started the next retry instead of\n  discarding it and waiting for a timeout. This could be exploited by\n  sending a number of bogus responses before a correct reply to make pyrad\n  not see the real response.\n\n* correctly set Acct-Delay-Time when resending accounting requests packets.\n\n* verify account request packages as well (from Farshad Khoshkhui).\n\n* protect against packets with bogus lengths (from Farshad Khoshkhui).\n\n\n",
+            "v": "<0.6"
+        }
+    ],
     "pyramid-odesk": [
         {
             "changelog": "-----\n- Login and Logout actions are performed via POST and has protection\n  against CSRF attacks\n\n",
