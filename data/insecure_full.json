@@ -3379,6 +3379,12 @@
             "v": "<3.0"
         }
     ],
+    "plone.app.tiles": [
+        {
+            "changelog": "------------------\n\n- Remove base tag, which is removed in Plone 5\n  [robgietema]\n- Change tile delete API to match add and edit APIs\n  [simahawk]\n- Change add traversal tile type parameter from tiletype to justa type\n  [bloodbare]\n- Add Italian translation\n  [gborelli]\n- Add nextURL as function for AddForm and DefaultEditForm\n  for better overriding support\n  [datakurre]\n- Add to send out events after status message created\n  [vangheem]\n- Add imagescaling\n  [ableeb, simahawk]\n- Add tile editing to trigger object modified event\n  [ableeb]\n- Add AddTile-permission\n  [tisto]\n- Add support for deferred security checking for traversal (fixes 3)\n  [cewing]\n- Add tile wrapper template for reusable common tile structure\n  [garbas]\n- Fix to not crash when plone.app.tiles-registry contains missing tiles\n  [datakurre]\n- Fix issue with wrong doctype for reponses with inline javascript\n  [jpgimenez]\n- Fix issues with changed plone overlay API\n  [garbas]\n- PEP8, coverage, packaging and test fixes\n  [garbas, gforcada, hvelarde, jfroche, tisto]\n- Remove custom classes (klass) option from tile base schema\n  [vangheem]\n\n",
+            "v": "<2.0.0"
+        }
+    ],
     "plone.formwidget.contenttree": [
         {
             "changelog": "------------------\n\n* Fix security validator to work properly on add views and other views using\n  namespace traversal (++add++...)\n  [optilude]\n\n",

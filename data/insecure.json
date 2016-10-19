@@ -593,6 +593,9 @@
     "plone.app.event": [
         "<3.0"
     ],
+    "plone.app.tiles": [
+        "<2.0.0"
+    ],
     "plone.formwidget.contenttree": [
         "<1.0a3"
     ],
