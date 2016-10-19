@@ -2562,6 +2562,12 @@
             "v": "<0.10"
         }
     ],
+    "minpower": [
+        {
+            "changelog": "===============================\n\nd790ec1218\tfix deterministic solve mode (forcast was getting overwritten with observed). add test (Adam Greenhall)\neae524fe15\tadd another user config override in the working directory (Adam Greenhall)\n401d200ff7\tadd initial_dispatch script to find a starting state for unit commitments\" (Adam Greenhall)\necb3c47866\tadd wind error multiplier to on-load data modifiers (Adam Greenhall)\n2e62bd73e6\tdont scale pmin above pmax (Adam Greenhall)\n694bc238cb\tadd load adder to the on-load data modifiers (Adam Greenhall)\n\n\n",
+            "v": "<4.2.7"
+        }
+    ],
     "mixminion": [
         {
             "changelog": "   - A real SMTP exit module to relay messages via a local MTA.  Blacklisting\n     is supported by address, by username, by host, by entire domain, and\n     by regular expression.\n   - Integrated directory support for clients.\n   - Automatic path selection, along with a better user interface to specify\n     paths.\n   - You can now enable Cottrell (DynamicPool) and Binomial Dynamic Pool\n     batching, though they are disabled by default to make the system more\n     testable.\n   - Servers resist certain trivial DoS attacks more strongly.  In\n     particular, you should no longer be able to send zlib bombs or flood a\n     server with open connections.\n   - Clean build process under FreeBSD.\n   - Ability to run server as a daemon.\n   - Slightly better documentation and error messages.\n   - Better resistance to newline corruption of server descriptors.\n   - Other bugfixes and performance improvements too numerous to mention.\n\n",
