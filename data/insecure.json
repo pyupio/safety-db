@@ -203,6 +203,9 @@
     "django-autocomplete-light": [
         "<2.3.0"
     ],
+    "django-cms": [
+        "<3.2.4"
+    ],
     "django-countries": [
         "<3.4"
     ],
