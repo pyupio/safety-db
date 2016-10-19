@@ -3789,6 +3789,12 @@
             "v": "<0.6"
         }
     ],
+    "pyramid-hsts": [
+        {
+            "changelog": "\nAlso secure ``request.host_url``.\n\n",
+            "v": "<1.1.2"
+        }
+    ],
     "pyramid-odesk": [
         {
             "changelog": "-----\n- Login and Logout actions are performed via POST and has protection\n  against CSRF attacks\n\n",
