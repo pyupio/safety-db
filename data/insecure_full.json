@@ -4657,6 +4657,12 @@
             "v": "<2.6.0"
         }
     ],
+    "sc.social.like": [
+        {
+            "changelog": "^^^^^^^^^^^^^^^^^^^^\n\n- Use View permission on viewlets to avoid security failures into viewlet\n  if anonymous try to display non public parts of site.\n  [thomasdesvenain]\n\n- Fix package dependencies.\n  [hvelarde]\n\n\n",
+            "v": "<2.0b1"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
