@@ -2095,6 +2095,12 @@
             "v": "<2.2.3"
         }
     ],
+    "ftw.meeting": [
+        {
+            "changelog": "------------------\n\n- Fix save_as_pdf view. _parent seems to be an existing method with security declaration.\n  [mathias.leimgruber]\n\n- Add special preview View for ftw.workspace preview.\n  [tschanzt]\n\n- Don't allow file upload.\n  [tschanzt]\n\n\n",
+            "v": "<1.5.1"
+        }
+    ],
     "ftw.permissionmanager": [
         {
             "changelog": "------------------\n\n- No longer allow users with view permission to access the advanced\n  security features. Since it's possible to search for all users, which\n  exposes all usernames and email addresses to anyone with view permission.\n  [mathias.leimgruber]\n\n\n",
