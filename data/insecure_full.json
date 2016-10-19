@@ -3419,6 +3419,12 @@
             "v": "<3.0"
         }
     ],
+    "plone.formwidget.autocomplete": [
+        {
+            "changelog": "------------------\n\n* Fix security validator to work properly on add views and other views using\n  namespace traversal (++add++...)\n  [optilude]\n\n",
+            "v": "<1.0b3"
+        }
+    ],
     "plone.formwidget.contenttree": [
         {
             "changelog": "------------------\n\n* Fix security validator to work properly on add views and other views using\n  namespace traversal (++add++...)\n  [optilude]\n\n",
