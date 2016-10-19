@@ -99,6 +99,12 @@
             "v": "<0.6.4"
         }
     ],
+    "awslimitchecker": [
+        {
+            "changelog": "------------------\n\n* `PR 184 <https://github.com/jantman/awslimitchecker/pull/184>`_ Fix default VPC/Security groups per VPC limit from 100 to 500, per `VPC limits documentation <http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Appendix_Limits.htmlvpc-limits-security-groups>`_ (this limit was increased at some point recently). Thanks to `Travis Thieman <https://github.com/thieman>`_ for this contribution.\n\n",
+            "v": "<0.4.3"
+        }
+    ],
     "bbcode": [
         {
             "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
