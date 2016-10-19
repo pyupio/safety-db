@@ -760,6 +760,7 @@
         "<0.20.0"
     ],
     "pywebsite": [
+        "<0.1.14pre",
         "<0.1.9pre"
     ],
     "qi.jabberhelpdesk": [

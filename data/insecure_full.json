@@ -4401,6 +4401,10 @@
     ],
     "pywebsite": [
         {
+            "changelog": "----------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* signed_url (more) immune VS timing attacks.\n\n\n",
+            "v": "<0.1.14pre"
+        },
+        {
             "changelog": "---------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* hash_url fixes for length extension attack, and value equivalence attacks.\n\n\n",
             "v": "<0.1.9pre"
         }
