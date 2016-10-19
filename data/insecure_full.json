@@ -4433,6 +4433,12 @@
             "v": "<0.30"
         }
     ],
+    "represent-boundaries": [
+        {
+            "changelog": "\n* Allow `$` and `.` in JSONP callback. The callback validation can be [further improved](http://tav.espians.com/sanitising-jsonp-callback-identifiers-for-security.html).\n\n",
+            "v": "<0.7.5"
+        }
+    ],
     "reprozip": [
         {
             "changelog": "------------------\n\n(reprozip only)\n\nBugfixes:\n* Files (or links) created with rename, link or symlink then read will no longer be packed.\n* A buffer overflow could happen in the log module, for instance when the experiment passes a very long argument to execve (over 4kB in a single argument) and running in debug mode (-v -v)\n\n\n",
