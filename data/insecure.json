@@ -435,6 +435,9 @@
     "geventhttpclient": [
         "<1.2.0"
     ],
+    "git-deploy": [
+        "<0.3"
+    ],
     "gns3-gui": [
         "<1.5.1"
     ],
