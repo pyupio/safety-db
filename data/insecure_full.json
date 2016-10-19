@@ -3823,6 +3823,10 @@
         {
             "changelog": "\nBreaking change: update CSRF machinery to also protect AJAX requests, as per\n[this security advice][].\n\nPreviously, requests with an `X-Requested-With` header value of `XMLHttpRequest`\nwere not validated against a CSRF token. Now, they are. This will break existing\napplications that rely on the previous behaviour: they will see `403 Forbidden`\nresponses to XHR requests that were previously working -- when those requests\nuse methods that can have side effects, i.e.: `POST`, `PUT` and `DELETE`.\n\nThe new CSRF validator for `XMLHttpRequest`s first looks for a `_csrf` token in\nthe request params (as per normal requests). If this is not found, it looks for\na token in the `X-CSRFToken` header.\n\nIf you use jQuery (or Zepto, etc.) and server side templating through Pyramid,\nyou can use the [pyramid_layout][] panel provided to add this header to all\nappropriate AJAX requests. Add it to your base template, e.g. just below your\njQuery / Zepto script:\n\n    <script src=\"your/jquery.js\"></script>\n    ${panel('csrf-ajax-setup')}\n\nThis adds a script element with code along these lines:\n\n    $.ajaxSetup({\n      'beforeSend': function(xhr, s) {\n        if (can_have_side_effects && is_relative_or_same_origin) {\n          xhr.setRequestHeader('X-CSRFToken', '<csrf token>');\n        }\n      }\n    });\n\n[this security advice]: https://www.djangoproject.com/weblog/2011/feb/08/security/\n[pyramid_layout]: http://docs.pylonsproject.org/projects/pyramid_layout/en/latest/\n\n",
             "v": "<0.12"
+        },
+        {
+            "changelog": "\nOverride ``request.route_url`` to force urls to use a secure protocol when\nforce https is enabled.\n\n",
+            "v": "<0.8.2"
         }
     ],
     "pyshop": [
