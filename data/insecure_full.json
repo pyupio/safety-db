@@ -2311,6 +2311,10 @@
                 "https://bugs.launchpad.net/ubuntu/+source/python-keyring/+bug/1004845"
             ],
             "v": "<0.9.1"
+        },
+        {
+            "changelog": "---\n\n* Issue 217: Once again, the OS X backend uses the\n  Framework API for invoking the Keychain service.\n  As a result, applications utilizing this API will be\n  authorized per application, rather than relying on the\n  authorization of the 'security' application. Consequently,\n  users will be prompted to authorize the system Python\n  executable and also new Python executables, such as\n  those created by virtualenv.\n\n",
+            "v": "<9.0"
         }
     ],
     "keystonemiddleware": [
