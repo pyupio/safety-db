@@ -786,6 +786,9 @@
     "requests-kerberos": [
         "<0.6"
     ],
+    "robotframework-imaplibrary": [
+        "<0.2.4"
+    ],
     "roundup": [
         "<1.4.20"
     ],
