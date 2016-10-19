@@ -462,6 +462,9 @@
     "ipython": [
         "<3.2.2"
     ],
+    "ipython-beautifulsoup": [
+        "<0.2"
+    ],
     "irc3": [
         "<0.4.4"
     ],
