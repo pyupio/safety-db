@@ -83,6 +83,12 @@
             "v": "<0.3.1"
         }
     ],
+    "atx": [
+        {
+            "changelog": "-----\n\n* add it inorder to pass\n* add WatchItem\n* update changelog\n* resolution add assert check\n* update documentation\n* add update generate\n* record test\n* support save workspace\n* add atx auto code converter\n* update args ... match sphinx\n* mock win32 modules\n* update doc\n* add feature title\n* fix chinese encode error on webide\n* merge wxx\n* fix image in chinese path\n* add search_path to DeviceMixin, change SyntaxError to TypeError\n* fix merge error & relocate windows device\n* merge from ssx\n* move all platform device to directory device\n* fix closure error\n* add dummy device for test\n* update todo for tomorrow\n* add windows device support\n* show images on the left\n* remove adb code, add python -matx apkparse support\n* add click doc\n* add region support\n* use screen if no window_name nor exe_file given\n* update doc\n* remove useless code\n* move android code outof device.py\n* fix rename error\n* fix import error & change error name\n* add image list in the left\n* split android_code from atx.device.py\n* move touch to base class\n* add windows device api\n* add adb forward, add blockly to tornado web\n* use bootstrap to make atx webide beautiful\n* add google analytics code\n* update requirements\n* add python -matx webide\n* opencv install add win amd64 easy install method\n* add resolution for Pattern, close 3\n* depreciated sleep, use delay instead\n* move all cli command to direcotry cmds\n* fix instance bug\n* watch object add func:do\n* fix 1\n* update secure of travis\n\n",
+            "v": "<1.0.7"
+        }
+    ],
     "authbwc": [
         {
             "changelog": "=========================\n\n* (SECURITY FIX) fixed an issue with the way the HTTP session user permissions\n  were loaded.  This vulnerability made it possible for a user to gain the\n  permissions of the user logged in previously.  The user would have had\n  to be sharing the same http session for this access to have been\n  gained.\n\n",
