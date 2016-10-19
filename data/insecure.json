@@ -230,6 +230,9 @@
     "django-haystack": [
         "<1.1"
     ],
+    "django-hijack": [
+        "<1.0.7"
+    ],
     "django-html5-appcache": [
         "<0.3.0"
     ],
