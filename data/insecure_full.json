@@ -3158,7 +3158,7 @@
                 "https://bugzilla.redhat.com/show_bug.cgi?id=718824",
                 "https://mail.zope.org/pipermail/zope-announce/2011-June/002260.html"
             ],
-            "v": "3.3.5,3.3.4,3.3.3,3.3.2"
+            "v": "==3.3.5,==3.3.4,==3.3.3,==3.3.2"
         },
         {
             "cve": "CVE-2011-1340",
