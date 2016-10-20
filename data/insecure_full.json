@@ -426,7 +426,41 @@
                 "https://github.com/django/django/commit/f68e5a99164867ab0e071a936470958ed867479d",
                 "https://www.djangoproject.com/weblog/2016/jul/18/security-releases/"
             ],
-            "v": "1.8.14"
+            "v": "==1.8.14"
+        },
+        {
+            "cve": "CVE-2016-6186",
+            "description": "Cross-site scripting (XSS) vulnerability in the dismissChang$
+            "urls": [
+                "http://packetstormsecurity.com/files/137965/Django-3.3.0-Script-Inserti$
+                "http://seclists.org/fulldisclosure/2016/Jul/53",
+                "http://www.debian.org/security/2016/dsa-3622",
+                "http://www.securityfocus.com/archive/1/archive/1/538947/100/0/threaded",
+                "http://www.securitytracker.com/id/1036338",
+                "http://www.ubuntu.com/usn/USN-3039-1",
+                "http://www.vulnerability-lab.com/get_content.php?id=1869",
+                "https://github.com/django/django/commit/d03bf6fe4e9bf5b07de62c1a271c4b4$
+                "https://github.com/django/django/commit/f68e5a99164867ab0e071a936470958$
+                "https://www.djangoproject.com/weblog/2016/jul/18/security-releases/"
+            ],
+            "v": ">=1.9,<1.9.8"
+        },
+	{
+            "cve": "CVE-2016-6186",
+            "description": "Cross-site scripting (XSS) vulnerability in the dismissChang$
+            "urls": [
+                "http://packetstormsecurity.com/files/137965/Django-3.3.0-Script-Inserti$
+                "http://seclists.org/fulldisclosure/2016/Jul/53",
+                "http://www.debian.org/security/2016/dsa-3622",
+                "http://www.securityfocus.com/archive/1/archive/1/538947/100/0/threaded",
+                "http://www.securitytracker.com/id/1036338",
+                "http://www.ubuntu.com/usn/USN-3039-1",
+                "http://www.vulnerability-lab.com/get_content.php?id=1869",
+                "https://github.com/django/django/commit/d03bf6fe4e9bf5b07de62c1a271c4b4$
+                "https://github.com/django/django/commit/f68e5a99164867ab0e071a936470958$
+                "https://www.djangoproject.com/weblog/2016/jul/18/security-releases/"
+            ],
+            "v": ">=1.10,<1.10rc1"
         },
         {
             "cve": "CVE-2009-2659",
