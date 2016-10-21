@@ -2,3 +2,12 @@ install: pip install -r requirements.txt
 language: python
 python: 3.5
 script: python tests.py
+deploy:
+  provider: s3
+  access_key_id: AKIAJW3SMGMJMWAUIIQQ
+  secret_access_key:
+    secure: S6/S0xlC48CKVcc2uRFdqebjPkZzxZ8SxRJrL235PnpmXibz86ulkoNtoPKFuS5twolTo6M6OL6NWdRbGVbU+smxSiqUOmZTiYTyYSCla7lYeg86IptN7ny0IheLz0jYTRPOryy5p0pMYONmzIY0Fi3Hgndnje7yzWHUgOyuiwsUkyOuUsIArSrBg59CRzbDU/8RfCD0hQNlLjFpWO+reoU/0LN70w4ZHjoHaCpOcd1toiLiMtGhLdf0eT9ziTz3aGhQY3SXmtfU9RusKbX6/gZXEnhG+Wx7gVza3JbmSKxE0qzmrCqUUYc1rvW2MasNoqTtM8DHIs4KrYTpJ79y7a0wctBEsRgexTwZX25iZzBroXHY15F6Oeo6r/696tWCB8Z8KHFLpnbq5cfIa5vF5Z8FVY3i7IKuEp6a5doGjrzaBeSlN/ISiH0iRJ2g8V0D3Fml8x2NqEBABnPyBZAb3QanXEkI+4fcFPZUxR3Aub6GfYP9Z1pOiSRfWzrH8WoNH4CqGbahV9mqUkQcTaeC5SksuFItoT+HwIvHBaUyV3QsQZzhz3FIsAlT5JSpyI+/Zs6l1+LsWtBq0D5a28RnC5ih0dqgwOzIPXU5OHSJl3yOYBY23t/DNddCAF+sN72Z58FHuipdhb3dh8qs5fVrQ+sD90sz/ZKlIJkhtOkPQII=
+  bucket: safety-db-mirror-1
+  acl: public_read
+  on:
+    repo: pyupio/safety-db
