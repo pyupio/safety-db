@@ -3146,6 +3146,10 @@
     ],
     "plomino": [
         {
+            "changelog": "-------------------\n* (for Plone 4 only) use MailHost.send instead of secureSend\n* fix document portal indexation behaviour\n* fix permission issues with Document id formula\n* fix Mandatory field checking with File attachments fields\n\n",
+            "v": "<1.10.4"
+        },
+        {
             "changelog": "-----------------\n* support for labels associated to fields\n* disabled formula editing for PlominoDesigner (so we can allow a user to change\n  form layouts without breaking the formulas)\n* fix a major vulnerability in open_url (now, targeted sources must be declared\n  safe from an local package)\n* allow to load specific CSS and JS in a PlominoForm\n* GenericSetup import/export for Plomino db marked as templates\n* allow to inject HTML attributes on fields\n* extended translation support for views\n\n",
             "v": "<1.18"
         },
