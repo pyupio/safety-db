@@ -445,7 +445,7 @@
             ],
             "v": ">=1.9,<1.9.8"
         },
-	{
+        {
             "cve": "CVE-2016-6186",
             "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
             "urls": [
@@ -2820,6 +2820,12 @@
                 "http://osvdb.org/48876"
             ],
             "v": "<1.6.1"
+        }
+    ],
+    "molo.profiles": [
+        {
+            "changelog": "-----\n- Return random subset of security questions for password recovery\n\n",
+            "v": "<1.3.2"
         }
     ],
     "mosql": [
