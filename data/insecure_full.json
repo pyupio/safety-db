@@ -445,7 +445,7 @@
             ],
             "v": ">=1.9,<1.9.8"
         },
-	{
+        {
             "cve": "CVE-2016-6186",
             "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
             "urls": [
@@ -3064,6 +3064,10 @@
                 "https://github.com/python-pillow/Pillow/commit/4e0d9b0b9740d258ade40cce248c93777362ac1e",
                 "https://github.com/python-pillow/Pillow/pull/1714"
             ],
+            "v": "<3.1.1"
+        },
+        {
+            "changelog": "------------------\n\n- Fixed an integer overflow in Resample.c causing writes in the Python heap.\n  [nedwill]\n\n- Fixed a buffer overflow in PcdDecode.c causing a segfault when opening PhotoCD files. CVE-2016-2533\n  [wiredfool]\n\n- Fixed a buffer overflow in FliDecode.c causing a segfault when opening FLI files. CVE-2016-0775\n  [wiredfool]\n\n- Fixed a buffer overflow in TiffDecode.c causing an arbitrary amount of memory to be overwritten when opening a specially crafted invalid TIFF file. CVE-2016-0740\n  [wiredfool]\n\n\n",
             "v": "<3.1.1"
         }
     ],
