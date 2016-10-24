@@ -445,7 +445,7 @@
             ],
             "v": ">=1.9,<1.9.8"
         },
-	{
+        {
             "cve": "CVE-2016-6186",
             "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
             "urls": [
@@ -2546,6 +2546,10 @@
         {
             "changelog": "-------------\n(bugfix release, released on January 10th 2014)\n\n- Prefix loader was not forwarding the locals properly to\n  inner loaders.  This is now fixed.\n- Security issue: Changed the default folder for the filesystem cache to be\n  user specific and read and write protected on UNIX systems.  See `Debian bug\n  734747`_ for more information.\n\n.. _Debian bug 734747: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734747\n\n",
             "v": "<2.7.2"
+        },
+        {
+            "changelog": "-------------\n(bugfix release, released on June 6th 2014)\n\n- Security issue: Corrected the security fix for the cache folder.  This\n  fix was provided by RedHat.\n\n",
+            "v": "<2.7.3"
         }
     ],
     "jinja2": [
