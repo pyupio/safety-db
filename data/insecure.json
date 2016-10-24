@@ -562,6 +562,9 @@
     "mitmproxy": [
         "<0.17"
     ],
+    "mitmproxy-httpolice": [
+        "<0.18"
+    ],
     "mixminion": [
         "<0.0.2"
     ],
