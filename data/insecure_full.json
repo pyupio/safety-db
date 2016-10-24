@@ -445,7 +445,7 @@
             ],
             "v": ">=1.9,<1.9.8"
         },
-	{
+        {
             "cve": "CVE-2016-6186",
             "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
             "urls": [
@@ -1866,6 +1866,12 @@
         {
             "changelog": "-------------\n\n* Fix app registry errors in Django 1.7\n* Fix security hash formatting errors on bad requests.\n\n",
             "v": "<1.0.1"
+        }
+    ],
+    "django-fobi": [
+        {
+            "changelog": "-----\n2016-10-20\n\n- Add `range_select` and `slider` form field plugins.\n- Fixed custom CSS classes not appearing in the rendered HTML of the field\n  plugin/widget.\n- Fixed issue with undefined file storage for form wizards. From now on\n  the `FileSystemStorage` storage is used for wizard uploads.\n- Fixed too much of extreme data view/export security of the `db_store`\n  plugin.\n- Backwards compatibility fixes for Django < 1.7.\n\n",
+            "v": "<0.8.5"
         }
     ],
     "django-friendship": [
