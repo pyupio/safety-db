@@ -445,7 +445,7 @@
             ],
             "v": ">=1.9,<1.9.8"
         },
-	{
+        {
             "cve": "CVE-2016-6186",
             "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
             "urls": [
@@ -1939,6 +1939,12 @@
         {
             "changelog": "=====================\n    - Add test for issue fixed in last release: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0846\n      Further documented here: https://www.djangoproject.com/weblog/2015/apr/21/docutils-security-advisory/\n\n",
             "v": "<1.3.3"
+        }
+    ],
+    "django-material": [
+        {
+            "changelog": "-----------------------\n\n- Forms - Add Formset and Inlines Form fields (PRO)\n- Forms - Add input[type=range] support\n- Forms - Fix initial label position for datetime field with value\n- Forms - Fix initial label position for number field with zero as inital value\n- Forms - Fix CSS vulnerability in input fields.\n- Forms - Fix CSS inclusion default template\n- Frontend - Fix module delete\n- Frontend - Add CRUD views and viewset\n- Frontend - Remove LOGIN_REDIRECT_URL override on frontend autoregister\n- Admin - User `user.get_username` instead of `user.username`\n- Admin - Django 1.9/1.10 compatibility\n- Admin - Readonly field support in inlines\n- Admin - Use `AdminSite.site_url` as back link\n\n",
+            "v": "<0.9.0"
         }
     ],
     "django-ninecms": [
