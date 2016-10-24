@@ -5138,6 +5138,12 @@
             "v": "<2.13.19"
         }
     ],
+    "zope.globalrequest": [
+        {
+            "changelog": "----------------\n\n- Fix test setup regarding `zope.securitypolicy`.\n  [ldr]\n\n\n",
+            "v": "<1.0"
+        }
+    ],
     "zope.html": [
         {
             "cve": "CVE-2009-2265",

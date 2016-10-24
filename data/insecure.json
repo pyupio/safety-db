@@ -994,6 +994,9 @@
     "zope": [
         "<2.13.19"
     ],
+    "zope.globalrequest": [
+        "<1.0"
+    ],
     "zope.html": [
         "<1.2"
     ],
