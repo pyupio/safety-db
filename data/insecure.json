@@ -264,6 +264,9 @@
     "django-fluent-comments": [
         "<1.0.1"
     ],
+    "django-fobi": [
+        "<0.8.5"
+    ],
     "django-friendship": [
         "<1.2.0"
     ],
