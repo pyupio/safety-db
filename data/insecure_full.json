@@ -4633,6 +4633,12 @@
             "v": "<0.30"
         }
     ],
+    "quality-report": [
+        {
+            "changelog": "\n  * Add a metric for the number of open security bugs from static security analysis listed in Jira. To use it,\n    define a filter in Jira that lists the number of open static security analysis bugs and pass it to Jira:\n    `myJira = metric_source.Jira('http://jira/', 'username', 'password', open_static_security_analysis_bug_query_id=567)`\n    The `metric.OpenStaticSecurityAnalysisBugs` will be added to the project provided the project has the\n    `requirement.TrackBugs`.\n \n  \n",
+            "v": "<1.65.0"
+        }
+    ],
     "rauth": [
         {
             "changelog": "------------------------\n  * Made OAuth1 nonces more secure via SystemRandom\n  * Exposed authentication responses\n  * Allowed Requests versions >= 1.2.3\n  * Fixed OAuth1 unicode encoding issues\n\n",

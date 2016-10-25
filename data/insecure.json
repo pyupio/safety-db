@@ -847,6 +847,9 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "quality-report": [
+        "<1.65.0"
+    ],
     "rauth": [
         "<0.7.0"
     ],
