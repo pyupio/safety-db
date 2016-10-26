@@ -2274,6 +2274,12 @@
             "v": "<1.1.3"
         }
     ],
+    "flask-login": [
+        {
+            "changelog": "-------------\n\nReleased on TBD.\n\n- Fixes OPTIONS exemption from login. 244\n- Fixes use of MD5 by replacing with SHA512. 264\n- BREAKING: The `login_manager.token_handler` function, `get_auth_token` method\n  on the User class, and the `utils.make_secure_token` utility function have\n  been removed to prevent users from creating insecure auth implementations.\n  Use the `Alternative Tokens` example from the docs instead. 291\n  \n\n",
+            "v": "<0.4.0"
+        }
+    ],
     "flask-micropub": [
         {
             "changelog": " Changed\n- Fix vulnerability; re-discover the authorization_endpoint and\n  token_endpoint at each stage in the flow. Prevents a buggy or\n  malicious authorization_endpoint from giving you credentials for\n  another user's domain name.\n\n",
