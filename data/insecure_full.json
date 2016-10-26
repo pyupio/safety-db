@@ -2367,6 +2367,12 @@
             "v": "<1.2.0"
         }
     ],
+    "github-backup": [
+        {
+            "changelog": "-------------------\n\n- Support --token file:///home/user/token.txt (fixes gh-51) [Bj\u00f6rn\n  Dahlgren]\n\n- Fix some linting. [Albert Wang]\n\n- Fix byte/string conversion for python 3. [Albert Wang]\n\n- Support python 3. [Albert Wang]\n\n- Encode special characters in password. [Remi Rampin]\n\n- Don't pretend program name is \"Github Backup\" [Remi Rampin]\n\n- Don't install over insecure connection. [Remi Rampin]\n\n  The git:// protocol is unauthenticated and unencrypted, and no longer advertised by GitHub. Using HTTPS shouldn't impact performance.\n\n",
+            "v": "<0.11.0"
+        }
+    ],
     "gns3-gui": [
         {
             "changelog": "\n* Try to fix a crash when reseting interface label\n* Fix a crash with broken file system\n* Fix EtherSwitch default name format\n* Fix crash when you have utf-8 char in the README\n* Fix rare crash when creating a link\n* Stop node before hot unlink\n* Prevent a crash due to issue in Qt\n* Add another security to prevent client to send empty hostname\n* Fix rare crash when deleting interface from the cloud\n* Fix rare crash in topology summary view\n* Ask user to send explanation if they cross a rare error\n* Fix rare crash when deleting a node\n* Hotlink support for Docker\n* Fix typo in the a warning dialog\n* Fix Remote GNS3 VM requires local server\n* Fix AttributeError: 'NoneType' object has no attribute '_server'\n* No timeout when importing a .gns3project\n\n",
