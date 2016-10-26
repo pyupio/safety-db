@@ -407,6 +407,9 @@
     "flask-images": [
         "<1.1.3"
     ],
+    "flask-login": [
+        "<0.4.0"
+    ],
     "flask-micropub": [
         "<0.2.2"
     ],
