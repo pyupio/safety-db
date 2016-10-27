@@ -794,6 +794,9 @@
     "pytest-verbose-parametrize": [
         "<1.1.0"
     ],
+    "pytest-webdriver": [
+        "<1.1.0"
+    ],
     "python": [
         "<2.5.2",
         "<2.5.6c1",
