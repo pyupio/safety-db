@@ -785,6 +785,9 @@
     "pytest-profiling": [
         "<1.1.0"
     ],
+    "pytest-pyramid-server": [
+        "<1.1.0"
+    ],
     "pytest-server-fixtures": [
         "<1.1.0"
     ],
