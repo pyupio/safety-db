@@ -1,4 +1,4 @@
-*Note: This database is currently in it's early stages. Don't use it for now.*
+*Note: This database is currently in it's early stages. It's possible that there are false positives and missing packages.*
 
 # Support
 
