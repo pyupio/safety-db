@@ -21,6 +21,12 @@ Check out the `data` directory:
 
 The database is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). This allows you to use the data in any non commercial project as long as you link back to this repo. If you need a license for a commercial project, please get in touch.
 
+## Tools
+
+- [safety](https://github.com/pyupio/safety) checks your installed dependencies for known security vulnerabilities. To use it, install it in the virtualenv you want to check with `pip install safety` and then run `safety check`.
+- [pyup.io](https://pyup.io) *coming soon*
+- *your tool?*
+
 ## Support this project
 
 If you find this useful, please consider getting a paid [pyup.io](https://pyup.io) account. This is what makes projects like this possible.
