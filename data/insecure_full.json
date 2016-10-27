@@ -2117,6 +2117,12 @@
             "v": "<3.1.1"
         }
     ],
+    "docker-compose": [
+        {
+            "changelog": "------------------\n\n - Added an `--allow-insecure-ssl` option to allow `fig up`, `fig run` and `fig pull` to pull from insecure registries.\n - Fixed `fig run` not showing output in Jenkins.\n - Fixed a bug where Fig couldn't build Dockerfiles with ADD statements pointing at URLs.\n\n",
+            "v": "<1.0.1"
+        }
+    ],
     "docker-registry": [
         {
             "changelog": "\n * security fixes (path traversing prevention and token validation)\n\n",
