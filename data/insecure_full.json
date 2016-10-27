@@ -1,10 +1,4 @@
 {
-    "a2svm": [
-        {
-            "changelog": "*******************\n\n* make command is now doing more security check (macro existence, arguments number, servername duplication...)\n\n\n",
-            "v": "<0.0.4"
-        }
-    ],
     "aiocouchdb": [
         {
             "changelog": "------------------\n\n- Adopt test suite to run against real CouchDB instance\n- Database, documents and attachments now provides access to their name/id\n- Remove redundant longnamed constructors\n- Construct Database/Document/Attachment instances through __getitem__ protocol\n- Add Document.rev method to get current document`s revision\n- Add helpers to work with authentication database (_users)\n- Add optional limitation of feeds buffer\n- All remove(...) methods are renamed to delete(...) ones\n- Add support for config option existence check\n- Correctly set members for database security\n- Fix requests with Accept-Ranges header against attachments\n- Fix views requests when startkey/endkey should be null\n- Allow to pass custom query parameters and request headers onto changes feed\n  request\n- Handle correctly HTTP 416 error response\n- Minor code fixes and cleanup\n\n",
