@@ -3019,6 +3019,10 @@
     ],
     "pillow": [
         {
+            "changelog": "------------------\n\n- Fix insecure use of tempfile.mktemp (CVE-2014-1932 CVE-2014-1933)\n  [wiredfool]\n\n",
+            "v": "<2.3.1"
+        },
+        {
             "changelog": "------------------\n\n- Fixed CVE-2014-3589, a DOS in the IcnsImagePlugin (backport)\n  [Andrew Drake]\n\n\n",
             "v": "<2.5.2"
         },
