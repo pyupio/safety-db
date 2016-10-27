@@ -66,7 +66,7 @@
     <script type="text/javascript">
       $( document ).ready(function() {
           function bootstrap(){
-            $.getJSON( "https://raw.githubusercontent.com/pyupio/safety-db/master/data/insecure_full.json", function( data ) {
+            $.getJSON( "https://s3-us-west-2.amazonaws.com/safety-db-mirror-2/data/insecure_full.json", function( data ) {
               var items = [];
               $.each( data, function( key, val ) {
                 var affected = [];
