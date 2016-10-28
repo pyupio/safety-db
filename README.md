@@ -6,6 +6,10 @@ This is an effort to collect all known security vulnerabilities in Python packag
 
 The data is collected by filtering CVEs and changelogs for certain keywords and then manually reviewing them. Take a look at [previous pull requests](https://github.com/pyupio/safety-db/pulls) to see how that looks like.
 
+## What is this not?
+
+This is not a hall of shame, or a list of packages to avoid. The package maintainers show a great responsibility by documenting and fixing security issues in such a way that they can be listed here. That's extremely valuable when considering using a package in production.
+
 ## Using this data
 
 For humans:
