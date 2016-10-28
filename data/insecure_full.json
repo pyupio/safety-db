@@ -2296,6 +2296,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-security-fork": [
+        {
+            "changelog": "-------------\n\nReleased October 28th 2016\n\n- Replaced token loader with request loader.\n- Changed trackable behavior of `login_user` when IP can not be detected from a request from 'untrackable' to `None` value.\n- Use ProxyFix instead of inspecting X-Forwarded-For header.\n- Fix identical problem with app as with datastore.\n- Removed always-failing assertion.\n- Fixed failure of init_app to set self.datastore.\n- Changed to new style flask imports.\n- Added proper error code when returning JSON response.\n- Changed obsolette Required validator from WTForms to DataRequired. Bumped Flask-WTF to 0.13.\n- Fixed missing `SECURITY_SUBDOMAIN` in config docs.\n- Added cascade delete in PeeweeDatastore.\n- Added notes to docs about `SECURITY_USER_IDENTITY_ATTRIBUTES`.\n- Inspect value of `SECURITY_UNAUTHORIZED_VIEW`.\n- Send password reset instructions if an attempt has expired.\n- Added \"Forgot password?\" link to LoginForm description.\n- Upgraded passlib, and removed bcrypt version restriction.\n- Removed a duplicate line ('retype_password': 'Retype Password') in forms.py.\n- Various documentation improvement.\n\nFlask-Security Changelog\n========================\n\nHere you can see the full list of changes between each Flask-Security release.\n\n",
+            "v": "<1.8.0"
+        }
+    ],
     "formbar": [
         {
             "changelog": "===\n- Set autocomplete=\"off\" for password fields.\n- Added serialisation of dates.\n- Security fix: Fixed potential code injection issue by removing the rule\n  parsing out of formbar and use brabbel library for rule parsing and\n  evaluation.\n\n",
