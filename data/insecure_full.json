@@ -2296,6 +2296,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-security-fork": [
+        {
+            "changelog": "-------------\n\nReleased June 18th 2013\n\n- Added `SECURITY_DEFAULT_REMEMBER_ME` configuration value to unify behavior between endpoints\n- Fixed Flask-Login dependency problem\n- Added optional `next` parameter to registration endpoint, similar to that of login\n\n\n",
+            "v": "<1.6.4"
+        }
+    ],
     "formbar": [
         {
             "changelog": "===\n- Set autocomplete=\"off\" for password fields.\n- Added serialisation of dates.\n- Security fix: Fixed potential code injection issue by removing the rule\n  parsing out of formbar and use brabbel library for rule parsing and\n  evaluation.\n\n",
