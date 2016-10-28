@@ -1,4 +1,4 @@
-*Note: This database is currently in it's early stages. It's possible that there are false positives and missing packages.*
+*Note: This database is currently in its early stages. It's possible that there are false positives and missing packages.*
 
 ## What is this?
 
