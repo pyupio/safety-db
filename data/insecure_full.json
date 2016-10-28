@@ -2296,6 +2296,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-security-fork": [
+        {
+            "changelog": "-------------\n\nReleased December 11th 2012\n\n- Fix a small bug in `flask_security.utils.login_user` method\n\n",
+            "v": "<1.5.2"
+        }
+    ],
     "formbar": [
         {
             "changelog": "===\n- Set autocomplete=\"off\" for password fields.\n- Added serialisation of dates.\n- Security fix: Fixed potential code injection issue by removing the rule\n  parsing out of formbar and use brabbel library for rule parsing and\n  evaluation.\n\n",
