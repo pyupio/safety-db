@@ -416,6 +416,9 @@
     "flask-oidc": [
         "<0.1.2"
     ],
+    "flask-security-fork": [
+        "<1.7.5"
+    ],
     "formbar": [
         "<0.9"
     ],
