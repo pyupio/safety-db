@@ -28,6 +28,7 @@ The database is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/lic
 ## Tools
 
 - [safety](https://github.com/pyupio/safety) checks your installed dependencies for known security vulnerabilities. To use it, install it in the virtualenv you want to check with `pip install safety` and then run `safety check`.
+- [safety-django](https://github.com/pyupio/safety-django) warns you in the admin area if you have insecure dependencies installed.
 - [pyup.io](https://pyup.io) *coming soon*
 - *your tool?*
 
