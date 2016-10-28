@@ -2296,6 +2296,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-security-fork": [
+        {
+            "changelog": "-------------\n\nReleased June 10th 2014\n\n- Fixed a bug where redirection to `SECURITY_POST_LOGIN_VIEW` was not respected\n- Fixed string encoding in various places to be friendly to unicode\n- Now using `werkzeug.security.safe_str_cmp` to check tokens\n- Removed user information from JSON output on `/reset` responses\n- Added Python 3.4 support\n\n\n",
+            "v": "<1.7.3"
+        }
+    ],
     "formbar": [
         {
             "changelog": "===\n- Set autocomplete=\"off\" for password fields.\n- Added serialisation of dates.\n- Security fix: Fixed potential code injection issue by removing the rule\n  parsing out of formbar and use brabbel library for rule parsing and\n  evaluation.\n\n",
