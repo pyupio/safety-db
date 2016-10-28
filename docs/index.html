@@ -76,8 +76,8 @@
                     }else if("cve" in value){
                       data = value["description"]
                     }
-                    var info = "<pre style='display:none;' class='info'>" + data + "</pre>";
-                    affected.push("<div><h5 class='version'>" + value["v"] + "</h3>" + info + "</div>")
+                    var info = $("<div>").text(data).html();
+                    affected.push("<div><h5 class='version'>" + value["v"] + "</h3> <pre style='display:none;' class='info'>" + info +"</pre></div>")
                 });
                 items.push( "<div><h4 class='pkg'>" + key + "<span class='label'>"+ val.length +"</span></h2><hr></hr><div class='affected' style='display:none;'>" + affected.join("") + "</div></div>" );
               });
