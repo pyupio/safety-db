@@ -480,6 +480,9 @@
     "insecure-package": [
         "<0.2.0"
     ],
+    "invenio-accounts": [
+        "<1.0.0a16"
+    ],
     "invenio-search": [
         "<0.1.3"
     ],
