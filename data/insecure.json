@@ -783,6 +783,9 @@
     "pyramid-weblayer": [
         "<0.12"
     ],
+    "pysandbox": [
+        "<1.6"
+    ],
     "pyshop": [
         "<0.7.1"
     ],
