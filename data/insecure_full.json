@@ -3057,6 +3057,10 @@
     ],
     "pillow": [
         {
+            "changelog": "------------------\n\n- Fixed CVE-2014-3589, a DOS in the IcnsImagePlugin (backport)\n  [Andrew Drake]\n\n",
+            "v": "<2.3.2"
+        },
+        {
             "changelog": "------------------\n\n- Fixed CVE-2014-3589, a DOS in the IcnsImagePlugin (backport)\n  [Andrew Drake]\n\n\n",
             "v": "<2.5.2"
         },
