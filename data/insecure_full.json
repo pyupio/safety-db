@@ -412,57 +412,6 @@
     ],
     "django": [
         {
-            "cve": "CVE-2016-6186",
-            "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
-            "urls": [
-                "http://packetstormsecurity.com/files/137965/Django-3.3.0-Script-Insertion.html",
-                "http://seclists.org/fulldisclosure/2016/Jul/53",
-                "http://www.debian.org/security/2016/dsa-3622",
-                "http://www.securityfocus.com/archive/1/archive/1/538947/100/0/threaded",
-                "http://www.securitytracker.com/id/1036338",
-                "http://www.ubuntu.com/usn/USN-3039-1",
-                "http://www.vulnerability-lab.com/get_content.php?id=1869",
-                "https://github.com/django/django/commit/d03bf6fe4e9bf5b07de62c1a271c4b41a7d3d158",
-                "https://github.com/django/django/commit/f68e5a99164867ab0e071a936470958ed867479d",
-                "https://www.djangoproject.com/weblog/2016/jul/18/security-releases/"
-            ],
-            "v": "==1.8.14"
-        },
-        {
-            "cve": "CVE-2016-6186",
-            "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
-            "urls": [
-                "http://packetstormsecurity.com/files/137965/Django-3.3.0-Script-Insertion.html",
-                "http://seclists.org/fulldisclosure/2016/Jul/53",
-                "http://www.debian.org/security/2016/dsa-3622",
-                "http://www.securityfocus.com/archive/1/archive/1/538947/100/0/threaded",
-                "http://www.securitytracker.com/id/1036338",
-                "http://www.ubuntu.com/usn/USN-3039-1",
-                "http://www.vulnerability-lab.com/get_content.php?id=1869",
-                "https://github.com/django/django/commit/d03bf6fe4e9bf5b07de62c1a271c4b41a7d3d158",
-                "https://github.com/django/django/commit/f68e5a99164867ab0e071a936470958ed867479d",
-                "https://www.djangoproject.com/weblog/2016/jul/18/security-releases/"
-            ],
-            "v": ">=1.9,<1.9.8"
-        },
-        {
-            "cve": "CVE-2016-6186",
-            "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
-            "urls": [
-                "http://packetstormsecurity.com/files/137965/Django-3.3.0-Script-Insertion.html",
-                "http://seclists.org/fulldisclosure/2016/Jul/53",
-                "http://www.debian.org/security/2016/dsa-3622",
-                "http://www.securityfocus.com/archive/1/archive/1/538947/100/0/threaded",
-                "http://www.securitytracker.com/id/1036338",
-                "http://www.ubuntu.com/usn/USN-3039-1",
-                "http://www.vulnerability-lab.com/get_content.php?id=1869",
-                "https://github.com/django/django/commit/d03bf6fe4e9bf5b07de62c1a271c4b41a7d3d158",
-                "https://github.com/django/django/commit/f68e5a99164867ab0e071a936470958ed867479d",
-                "https://www.djangoproject.com/weblog/2016/jul/18/security-releases/"
-            ],
-            "v": ">=1.10,<1.10rc1"
-        },
-        {
             "cve": "CVE-2009-2659",
             "description": "The Admin media handler in core/servers/basehttp.py in Django 1.0 and 0.96 does not properly map URL requests to expected \"static media files,\" which allows remote attackers to conduct directory traversal attacks and read arbitrary files via a crafted URL.",
             "urls": [
@@ -862,6 +811,23 @@
             "v": "<1.8.15"
         },
         {
+            "cve": "CVE-2016-6186",
+            "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
+            "urls": [
+                "http://packetstormsecurity.com/files/137965/Django-3.3.0-Script-Insertion.html",
+                "http://seclists.org/fulldisclosure/2016/Jul/53",
+                "http://www.debian.org/security/2016/dsa-3622",
+                "http://www.securityfocus.com/archive/1/archive/1/538947/100/0/threaded",
+                "http://www.securitytracker.com/id/1036338",
+                "http://www.ubuntu.com/usn/USN-3039-1",
+                "http://www.vulnerability-lab.com/get_content.php?id=1869",
+                "https://github.com/django/django/commit/d03bf6fe4e9bf5b07de62c1a271c4b41a7d3d158",
+                "https://github.com/django/django/commit/f68e5a99164867ab0e071a936470958ed867479d",
+                "https://www.djangoproject.com/weblog/2016/jul/18/security-releases/"
+            ],
+            "v": "==1.8.14"
+        },
+        {
             "cve": "CVE-2009-3695",
             "description": "Algorithmic complexity vulnerability in the forms library in Django 1.0 before 1.0.4 and 1.1 before 1.1.1 allows remote attackers to cause a denial of service (CPU consumption) via a crafted (1) EmailField (email address) or (2) URLField (URL) that triggers a large amount of backtracking in a regular expression.",
             "urls": [
@@ -877,6 +843,23 @@
                 "http://xforce.iss.net/xforce/xfdb/53727"
             ],
             "v": ">=1.1,<1.1.1"
+        },
+        {
+            "cve": "CVE-2016-6186",
+            "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
+            "urls": [
+                "http://packetstormsecurity.com/files/137965/Django-3.3.0-Script-Insertion.html",
+                "http://seclists.org/fulldisclosure/2016/Jul/53",
+                "http://www.debian.org/security/2016/dsa-3622",
+                "http://www.securityfocus.com/archive/1/archive/1/538947/100/0/threaded",
+                "http://www.securitytracker.com/id/1036338",
+                "http://www.ubuntu.com/usn/USN-3039-1",
+                "http://www.vulnerability-lab.com/get_content.php?id=1869",
+                "https://github.com/django/django/commit/d03bf6fe4e9bf5b07de62c1a271c4b41a7d3d158",
+                "https://github.com/django/django/commit/f68e5a99164867ab0e071a936470958ed867479d",
+                "https://www.djangoproject.com/weblog/2016/jul/18/security-releases/"
+            ],
+            "v": ">=1.10,<1.10rc1"
         },
         {
             "cve": "CVE-2016-6186",
@@ -1714,6 +1697,27 @@
                 "https://www.djangoproject.com/weblog/2016/jul/18/security-releases/"
             ],
             "v": ">=1.9,<1.9.8"
+        },
+        {
+            "cve": "CVE-2016-6186",
+            "description": "Cross-site scripting (XSS) vulnerability in the dismissChangeRelatedObjectPopup function in contrib/admin/static/admin/js/admin/RelatedObjectLookups.js in Django before 1.8.14, 1.9.x before 1.9.8, and 1.10.x before 1.10rc1 allows remote attackers to inject arbitrary web script or HTML via vectors involving unsafe usage of Element.innerHTML.",
+            "urls": [
+                "http://packetstormsecurity.com/files/137965/Django-3.3.0-Script-Insertion.html",
+                "http://seclists.org/fulldisclosure/2016/Jul/53",
+                "http://www.debian.org/security/2016/dsa-3622",
+                "http://www.securityfocus.com/archive/1/archive/1/538947/100/0/threaded",
+                "http://www.securitytracker.com/id/1036338",
+                "http://www.ubuntu.com/usn/USN-3039-1",
+                "http://www.vulnerability-lab.com/get_content.php?id=1869",
+                "https://github.com/django/django/commit/d03bf6fe4e9bf5b07de62c1a271c4b41a7d3d158",
+                "https://github.com/django/django/commit/f68e5a99164867ab0e071a936470958ed867479d",
+                "https://www.djangoproject.com/weblog/2016/jul/18/security-releases/"
+            ],
+            "v": ">=1.9,<1.9.8"
+        },
+        {
+            "changelog": "===========================\nDjango 1.9.11 release notes\n===========================\n\n*November 1, 2016*\n\nDjango 1.9.11 fixes two security issues in 1.9.10.\n\nUser with hardcoded password created when running tests on Oracle\n=================================================================\n\nWhen running tests with an Oracle database, Django creates a temporary database\nuser. In older versions, if a password isn't manually specified in the database\nsettings ``TEST`` dictionary, a hardcoded password is used. This could allow\nan attacker with network access to the database server to connect.\n\nThis user is usually dropped after the test suite completes, but not when using\nthe ``manage.py test --keepdb`` option or if the user has an active session\n(such as an attacker's connection).\n\nA randomly generated password is now used for each test run.\n\nDNS rebinding vulnerability when ``DEBUG=True``\n===============================================\n\nOlder versions of Django don't validate the ``Host`` header against\n``settings.ALLOWED_HOSTS`` when ``settings.DEBUG=True``. This makes them\nvulnerable to a `DNS rebinding attack\n<http://benmmurphy.github.io/blog/2016/07/11/rails-webconsole-dns-rebinding/>`_.\n\nWhile Django doesn't ship a module that allows remote code execution, this is\nat least a cross-site scripting vector, which could be quite serious if\ndevelopers load a copy of the production database in development or connect to\nsome production services for which there's no development instance, for\nexample. If a project uses a package like the ``django-debug-toolbar``, then\nthe attacker could execute arbitrary SQL, which could be especially bad if the\ndevelopers connect to the database with a superuser account.\n\n``settings.ALLOWED_HOSTS`` is now validated regardless of ``DEBUG``. For\nconvenience, if ``ALLOWED_HOSTS`` is empty and ``DEBUG=True``, the following\nvariations of localhost are allowed ``['localhost', '127.0.0.1', '::1']``. If\nyour local settings file has your production ``ALLOWED_HOSTS`` value, you must\nnow omit it to get those fallback values.\n",
+            "v": ">=1.9,<1.9.11"
         },
         {
             "cve": "CVE-2015-8213",
@@ -2861,24 +2865,24 @@
         }
     ],
     "mysql-connector": [
-      {
-          "cve": "CVE-2016-5598",
-          "description": "Unspecified vulnerability in the MySQL Connector component 2.1.3 and earlier and 2.0.4 and earlier in Oracle MySQL allows remote attackers to affect confidentiality, integrity, and availability via vectors related to Connector/Python.",
-          "urls": [
-              "http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html"
-          ],
-          "v": "<2.1.3"
-      }
+        {
+            "cve": "CVE-2016-5598",
+            "description": "Unspecified vulnerability in the MySQL Connector component 2.1.3 and earlier and 2.0.4 and earlier in Oracle MySQL allows remote attackers to affect confidentiality, integrity, and availability via vectors related to Connector/Python.",
+            "urls": [
+                "http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html"
+            ],
+            "v": "<2.1.3"
+        }
     ],
     "mysql-connector-python": [
-      {
-          "cve": "CVE-2016-5598",
-          "description": "Unspecified vulnerability in the MySQL Connector component 2.1.3 and earlier and 2.0.4 and earlier in Oracle MySQL allows remote attackers to affect confidentiality, integrity, and availability via vectors related to Connector/Python.",
-          "urls": [
-              "http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html"
-          ],
-          "v": "<2.0.4"
-      }
+        {
+            "cve": "CVE-2016-5598",
+            "description": "Unspecified vulnerability in the MySQL Connector component 2.1.3 and earlier and 2.0.4 and earlier in Oracle MySQL allows remote attackers to affect confidentiality, integrity, and availability via vectors related to Connector/Python.",
+            "urls": [
+                "http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html"
+            ],
+            "v": "<2.0.4"
+        }
     ],
     "newsletter": [
         {
