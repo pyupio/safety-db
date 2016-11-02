@@ -134,6 +134,9 @@
     "cssutils": [
         "<0.9.6a2"
     ],
+    "dateable.chronos": [
+        "<0.8"
+    ],
     "defusedexpat": [
         "<0.3"
     ],
