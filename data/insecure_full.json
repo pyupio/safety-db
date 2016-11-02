@@ -2860,6 +2860,26 @@
             "v": ">=2.0,<2.0.1"
         }
     ],
+    "mysql-connector": [
+      {
+          "cve": "CVE-2016-5598",
+          "description": "Unspecified vulnerability in the MySQL Connector component 2.1.3 and earlier and 2.0.4 and earlier in Oracle MySQL allows remote attackers to affect confidentiality, integrity, and availability via vectors related to Connector/Python.",
+          "urls": [
+              "http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html"
+          ],
+          "v": "<2.1.3"
+      }
+    ],
+    "mysql-connector-python": [
+      {
+          "cve": "CVE-2016-5598",
+          "description": "Unspecified vulnerability in the MySQL Connector component 2.1.3 and earlier and 2.0.4 and earlier in Oracle MySQL allows remote attackers to affect confidentiality, integrity, and availability via vectors related to Connector/Python.",
+          "urls": [
+              "http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html"
+          ],
+          "v": "<2.0.4"
+      }
+    ],
     "newsletter": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~~~~~~\n\n* newsletterapp more secure by default.  Does not setup default users for admin section.\n* fixed some test failures.\n* removed single new line at end of template files, that is put there by editors like vim.\n\n* newsletterapp can be used for contact forms through send_message config items in the config file.\n\n\n\n\n\n\n",
