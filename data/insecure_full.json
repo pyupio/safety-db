@@ -4663,6 +4663,12 @@
             "v": "<2.1.9"
         }
     ],
+    "python3-ldap": [
+        {
+            "changelog": "0.9.5.4 2014.09.22\n    - Fixed security issue in lazy connections (thanks Moritz)\n    - Added ldap3.utils.dn with parse_dn(dn) to verify dn compliance with RFC4514\n    - Added safe_dn(dn) to properly escape dn (if possible)\n    - Added ldap3.utils.uri with parse_uri(uri) to verify uri compliance with RFC4516\n    - Check for trailing slashes in hostname (thanks Dylan)\n    - Timeout for socket connect operation. Server.connect_timeout = seconds_to_wait_for_establishing_connection (thanks Florian)\n    - Closing socket error doesn't raise exception anymore\n    - ServerPool can be implicity defined with a list of server names (even when defining a connection)",
+            "v": "<0.9.5.4"
+        }
+    ],
     "python3-saml": [
         {
             "changelog": "* Change the decrypt assertion process.\n* Add 2 extra validations to prevent Signature wrapping attacks.\n\n",
