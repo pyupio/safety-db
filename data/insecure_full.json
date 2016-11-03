@@ -4947,6 +4947,12 @@
             "v": "<1.1"
         }
     ],
+    "sftp-cloudfs": [
+        {
+            "changelog": "\n  - New configuration token 'auth-timeout' to make auth time limit\n    configurable (defaults to 60 seconds).\n  - Added optional SSH negotiation time limit, exposed via 'negotiation-timeout'\n    configuration token.\n  - Clarification in sftpcloudfs.conf.example (re: quotes in string tokens).\n\n  New timeout configuration can improve server's behaviour vs SSH brute-force\n  attacks.\n\n2014-04-10 Juan Martinez <juanmemset.com>\n\n",
+            "v": "<0.14"
+        }
+    ],
     "soappy": [
         {
             "changelog": "-------------------\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- LOL part\n  [kiorky]\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- XXE part\n  [kiorky]\n- Remove dependency on fpconst.\n- adding maptype  [Sandro Knau\u00df]\n- Support / (and other reserved characters) in the password. [Ionut Turturica]\n- Client.HTTPWithTimeout: fixed constructor's docstring and comments -named the diferences\n  with respect to the overriden method -fixed\n  wrong reference to class in module 'httplib' -added documentation of param 't[German Larrain\n- fixed module docstring location (all imports must be below them)[German Larrain]f\n- fix error \"Bad types (class java.math.BigInteger -> class java.lang.Integer)\" - Clayton Caetano de Sousa]\n\n\n\n",
