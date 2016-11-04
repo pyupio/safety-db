@@ -5127,6 +5127,12 @@
             "v": "<3.5.0"
         }
     ],
+    "urllib3": [
+        {
+            "changelog": "-------------------\n\n* CVE-2016-9015. Users who are using urllib3 version 1.17 or 1.18 along with\n  PyOpenSSL injection and OpenSSL 1.1.0 *must* upgrade to this version. This\n  release fixes a vulnerability whereby urllib3 in the above configuration\n  would silently fail to validate TLS certificates due to erroneously setting\n  invalid flags in OpenSSL's ``SSL_CTX_set_verify`` function. These erroneous\n  flags do not cause a problem in OpenSSL versions before 1.1.0, which\n  interprets the presence of any flag as requesting certificate validation.\n\n  There is no PR for this patch, as it was prepared for simultaneous disclosure\n  and release. The master branch received the same fix in PR 1010.\n\n\n",
+            "v": "<1.18.1"
+        }
+    ],
     "virtualenv": [
         {
             "changelog": "-----------------\n\n* **BACKWARDS INCOMPATIBLE** Dropped support for Python 2.5. The minimum\n  supported Python version is now Python 2.6.\n\n* **BACKWARDS INCOMPATIBLE** Using ``virtualenv.py`` as an isolated script\n  (i.e. without an associated ``virtualenv_support`` directory) is no longer\n  supported for security reasons and will fail with an error.\n\n  Along with this, ``--never-download`` is now always pinned to ``True``, and\n  is only being maintained in the short term for backward compatibility\n  (Pull 412).\n\n* **IMPORTANT** Switched to the new setuptools (v0.9.7) which has been merged\n  with Distribute_ again and works for Python 2 and 3 with one codebase.\n  The ``--distribute`` and ``--setuptools`` options are now no-op.\n\n* Updated to pip 1.4.\n\n* Added support for PyPy3k\n\n* Added the option to use a version number with the ``-p`` option to get the\n  system copy of that Python version (Windows only)\n\n* Removed embedded ``ez_setup.py``, ``distribute_setup.py`` and\n  ``distribute_from_egg.py`` files as part of switching to merged setuptools.\n\n* Fixed ``--relocatable`` to work better on Windows.\n\n* Fixed issue with readline on Windows.\n\n.. _Distribute: https://pypi.python.org/pypi/distribute\n\n",
