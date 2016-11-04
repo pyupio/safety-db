@@ -4959,6 +4959,12 @@
             "v": "<1.1"
         }
     ],
+    "sftp-cloudfs": [
+        {
+            "changelog": "\n  - ftp-cloudfs version bumped to 0.25.2.\n\n  0.25.2 fixes an information leak vulnerability in sftp-cloudfs when the\n  shared cache (memcache) is used. Under certain conditions the SFTP server\n  could serve the cached directory listing of a different user.\n  \n  Upgrading ftp-cloudfs is highly recommended.\n\n2013-11-15 Juan Martinez <juanmemset.com>\n\n",
+            "v": "<0.12.1"
+        }
+    ],
     "soappy": [
         {
             "changelog": "-------------------\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- LOL part\n  [kiorky]\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- XXE part\n  [kiorky]\n- Remove dependency on fpconst.\n- adding maptype  [Sandro Knau\u00df]\n- Support / (and other reserved characters) in the password. [Ionut Turturica]\n- Client.HTTPWithTimeout: fixed constructor's docstring and comments -named the diferences\n  with respect to the overriden method -fixed\n  wrong reference to class in module 'httplib' -added documentation of param 't[German Larrain\n- fixed module docstring location (all imports must be below them)[German Larrain]f\n- fix error \"Bad types (class java.math.BigInteger -> class java.lang.Integer)\" - Clayton Caetano de Sousa]\n\n\n\n",
