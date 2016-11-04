@@ -4267,6 +4267,16 @@
             "v": "<2.7.12"
         },
         {
+            "cve": "CVE-2016-9190",
+            "description": "Pillow before 3.3.2 allows context-dependent attackers to execute arbitrary code by using the \"crafted image file\" approach, related to an \"Insecure Sign Extension\" issue affecting the ImagingNew in Storage.c component.",
+            "urls": [
+                "http://pillow.readthedocs.io/en/3.4.x/releasenotes/3.3.2.html",
+                "https://github.com/python-pillow/Pillow/issues/2105",
+                "https://github.com/python-pillow/Pillow/pull/2146/commits/5d8a0be45aad78c5a22c8d099118ee26ef8144af"
+            ],
+            "v": "<X.Y"
+        },
+        {
             "cve": "CVE-2011-4940",
             "description": "The list_directory function in Lib/SimpleHTTPServer.py in SimpleHTTPServer in Python before 2.5.6c1, 2.6.x before 2.6.7 rc2, and 2.7.x before 2.7.2 does not place a charset parameter in the Content-Type HTTP header, which makes it easier for remote attackers to conduct cross-site scripting (XSS) attacks against Internet Explorer 7 via UTF-7 encoding.",
             "urls": [
