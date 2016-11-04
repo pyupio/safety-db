@@ -618,6 +618,9 @@
     "ooniprobe": [
         "<1.0.2"
     ],
+    "openstack": [
+        "<X.Y"
+    ],
     "otpauth": [
         "<1.0.1"
     ],
