@@ -3687,6 +3687,30 @@
                 "http://www.securityfocus.com/bid/50287"
             ],
             "v": ">=4.1,<4.2a2"
+        },
+        {
+            "cve": "CVE-2012-5498",
+            "description": "queryCatalog.py in Plone before 4.2.3 and 4.3 before beta 1 allows remote attackers to bypass caching and cause a denial of service via a crafted request to a collection.",
+            "urls": [
+                "http://rhn.redhat.com/errata/RHSA-2014-1194.html",
+                "http://www.openwall.com/lists/oss-security/2012/11/09/7",
+                "http://www.openwall.com/lists/oss-security/2012/11/10/1",
+                "https://github.com/plone/Products.CMFPlone/blob/4.2.3/docs/CHANGES.txt",
+                "https://plone.org/products/plone-hotfix/releases/20121106",
+                "https://plone.org/products/plone/security/advisories/20121106/14"
+            ],
+            "v": "<4.2.3"
+        },
+        {
+            "cve": "CVE-2012-5503",
+            "description": "ftp.py in Plone before 4.2.3 and 4.3 before beta 1 allows remote attackers to read hidden folder contents via unspecified vectors.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2012/11/10/1",
+                "https://github.com/plone/Products.CMFPlone/blob/4.2.3/docs/CHANGES.txt",
+                "https://plone.org/products/plone-hotfix/releases/20121106",
+                "https://plone.org/products/plone/security/advisories/20121106/19"
+            ],
+            "v": "<4.2.3"
         }
     ],
     "plone.app.contentmenu": [
@@ -3749,32 +3773,6 @@
         {
             "changelog": "------------------\n\n* Security Fix: Correctly apply CSRF protection to all forms.\n* Denying a non-existent token will no longer show a stack trace.\n\nNote: 0.4.1 was aborted due to incomplete fix.\n\n----------------\n",
             "v": "<0.4.2"
-        }
-    ],
-    "pplone": [
-        {
-            "cve": "CVE-2012-5498",
-            "description": "queryCatalog.py in Plone before 4.2.3 and 4.3 before beta 1 allows remote attackers to bypass caching and cause a denial of service via a crafted request to a collection.",
-            "urls": [
-                "http://rhn.redhat.com/errata/RHSA-2014-1194.html",
-                "http://www.openwall.com/lists/oss-security/2012/11/09/7",
-                "http://www.openwall.com/lists/oss-security/2012/11/10/1",
-                "https://github.com/plone/Products.CMFPlone/blob/4.2.3/docs/CHANGES.txt",
-                "https://plone.org/products/plone-hotfix/releases/20121106",
-                "https://plone.org/products/plone/security/advisories/20121106/14"
-            ],
-            "v": "<4.2.3"
-        },
-        {
-            "cve": "CVE-2012-5503",
-            "description": "ftp.py in Plone before 4.2.3 and 4.3 before beta 1 allows remote attackers to read hidden folder contents via unspecified vectors.",
-            "urls": [
-                "http://www.openwall.com/lists/oss-security/2012/11/10/1",
-                "https://github.com/plone/Products.CMFPlone/blob/4.2.3/docs/CHANGES.txt",
-                "https://plone.org/products/plone-hotfix/releases/20121106",
-                "https://plone.org/products/plone/security/advisories/20121106/19"
-            ],
-            "v": "<4.2.3"
         }
     ],
     "pretaweb.healthcheck": [
