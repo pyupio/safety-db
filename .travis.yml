@@ -33,3 +33,5 @@ deploy:
     on:
       repo: pyupio/safety-db
       branch: master
+after_deploy:
+  - curl https://pyup.io/safety/db/hook/?token=${PYUPIO_TOKEN}
