@@ -3161,6 +3161,16 @@
                 "http://pillow.readthedocs.io/en/3.4.x/releasenotes/3.3.2.html",
                 "https://github.com/python-pillow/Pillow/issues/2105",
                 "https://github.com/python-pillow/Pillow/pull/2146/commits/5d8a0be45aad78c5a22c8d099118ee26ef8144af"
+              ],
+            "v": "<3.3.2"
+        },
+        {
+            "cve": "CVE-2016-9189",
+            "description": "Pillow before 3.3.2 allows context-dependent attackers to obtain sensitive information by using the \"crafted image file\" approach, related to an \"Integer Overflow\" issue affecting the Image.core.map_buffer in map.c component.",
+            "urls": [
+                "http://pillow.readthedocs.io/en/3.4.x/releasenotes/3.3.2.html",
+                "https://github.com/python-pillow/Pillow/issues/2105",
+                "https://github.com/python-pillow/Pillow/pull/2146/commits/c50ebe6459a131a1ea8ca531f10da616d3ceaa0f"
             ],
             "v": "<3.3.2"
         }
