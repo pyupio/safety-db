@@ -31,6 +31,7 @@ The database is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/lic
 - [safety-django](https://github.com/pyupio/safety-django) warns you in the admin area if you have insecure dependencies installed.
 - [pyup.io](https://pyup.io) *coming soon*
 - A [Twitter Bot](https://twitter.com/python_safety) that tweets about what's added to the DB.
+- A [pre-commit hook](https://github.com/Lucas-C/pre-commit-hooks-safety) by Lucas Cimon.
 - *your tool?*
 
 ## Support this project
