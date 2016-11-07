@@ -3153,6 +3153,16 @@
         {
             "changelog": "------------------\n\n- Fixed an integer overflow in Jpeg2KEncode.c causing a buffer overflow. CVE-2016-3076\n  [wiredfool]\n\n",
             "v": "<3.1.2"
+        },
+        {
+            "cve": "CVE-2016-9190",
+            "description": "Pillow before 3.3.2 allows context-dependent attackers to execute arbitrary code by using the \"crafted image file\" approach, related to an \"Insecure Sign Extension\" issue affecting the ImagingNew in Storage.c component.",
+            "urls": [
+                "http://pillow.readthedocs.io/en/3.4.x/releasenotes/3.3.2.html",
+                "https://github.com/python-pillow/Pillow/issues/2105",
+                "https://github.com/python-pillow/Pillow/pull/2146/commits/5d8a0be45aad78c5a22c8d099118ee26ef8144af"
+            ],
+            "v": "<3.3.2"
         }
     ],
     "pillow-simd": [
