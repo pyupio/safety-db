@@ -3161,7 +3161,7 @@
                 "http://pillow.readthedocs.io/en/3.4.x/releasenotes/3.3.2.html",
                 "https://github.com/python-pillow/Pillow/issues/2105",
                 "https://github.com/python-pillow/Pillow/pull/2146/commits/5d8a0be45aad78c5a22c8d099118ee26ef8144af"
-              ],
+            ],
             "v": "<3.3.2"
         },
         {
@@ -3843,6 +3843,10 @@
                 "http://www.securityfocus.com/bid/34664",
                 "http://xforce.iss.net/xforce/xfdb/50061"
             ],
+            "v": "<3.9"
+        },
+        {
+            "changelog": "----------------\n\n- Fix the cookie plugin's login handler to not trust the username\n  from the request. Instead we use the login name of the currently\n  authenticated user. This fixes CVE-2009-0662 (see\n  http://plone.org/products/plone/security/advisories/cve-2009-0662\n  for more information).\n  [wichert]\n\n\n",
             "v": "<3.9"
         }
     ],
