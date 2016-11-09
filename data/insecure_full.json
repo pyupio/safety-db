@@ -3161,7 +3161,7 @@
                 "http://pillow.readthedocs.io/en/3.4.x/releasenotes/3.3.2.html",
                 "https://github.com/python-pillow/Pillow/issues/2105",
                 "https://github.com/python-pillow/Pillow/pull/2146/commits/5d8a0be45aad78c5a22c8d099118ee26ef8144af"
-              ],
+            ],
             "v": "<3.3.2"
         },
         {
@@ -3833,6 +3833,10 @@
         }
     ],
     "products.plonepas": [
+        {
+            "changelog": "----------------\n\n- Optomise the local roles plugin for the common case where\n  local_roles is empty\n  [dreamcatcher]\n\n- the plone user was assuming a one to one mapping between property plugin\n  and user property sheet, and stripping away additional ones as part of\n  the retrieval of ordered sheets, instead, it now stores all\n  propertysheets in an ordered dictionary, so this assumption is not needed\n  [k_vertigo]\n\n- More postonly security changes\n  [alecm, ramon]\n\n\n",
+            "v": "<2.4"
+        },
         {
             "cve": "CVE-2009-0662",
             "description": "The PlonePAS product 3.x before 3.9 and 3.2.x before 3.2.2, a product for Plone, does not properly handle the login form, which allows remote authenticated users to acquire the identity of an arbitrary user via unspecified vectors.",
