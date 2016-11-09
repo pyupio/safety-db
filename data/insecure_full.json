@@ -3161,7 +3161,7 @@
                 "http://pillow.readthedocs.io/en/3.4.x/releasenotes/3.3.2.html",
                 "https://github.com/python-pillow/Pillow/issues/2105",
                 "https://github.com/python-pillow/Pillow/pull/2146/commits/5d8a0be45aad78c5a22c8d099118ee26ef8144af"
-              ],
+            ],
             "v": "<3.3.2"
         },
         {
@@ -3833,6 +3833,10 @@
         }
     ],
     "products.plonepas": [
+        {
+            "changelog": "----------------\n\n- Use a local postonly decorator so PlonePAS can be used with Plone\n  2.5, 2.5.1 and 2.5.2.\n  [wichert]\n\n- Protect the tools with postonly security modifiers.\n  [mj]\n\n- Update GRUF compatibility functions to use the same security checks\n  as GRUF itself uses.\n  [mj]\n\n- Fix migration to handle properties of selection or multiple selection\n  types.\n  [reinout]\n\n- Correct creation of groups wich default group managers.\n  [dreamcatcher]\n\n- Fix migration from GRUF sites: also include the member properties in the\n  migration.\n  [tesdal]\n\n- Correct the test for creation of groups with the same id as users: search\n  for the exact id, not substrings.\n  [tesdal]\n\n- Fix bad form action which made it impossible to add a plone user factory\n  plugin through the ZMI. Backported from trunk.\n  [wichert]\n",
+            "v": "<2.3"
+        },
         {
             "cve": "CVE-2009-0662",
             "description": "The PlonePAS product 3.x before 3.9 and 3.2.x before 3.2.2, a product for Plone, does not properly handle the login form, which allows remote authenticated users to acquire the identity of an arbitrary user via unspecified vectors.",
