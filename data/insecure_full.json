@@ -3844,6 +3844,10 @@
                 "http://xforce.iss.net/xforce/xfdb/50061"
             ],
             "v": "<3.9"
+        },
+        {
+            "changelog": "------------------\n\n- Fix a bug in setSecurityProfile where the login name was passed\n  instead of the user id.\n  [davisagli]\n\n- Added empty updateUser and updateEveryLoginName methods in\n  ZODBMutablePropertyProvider to fulfill the new standards of the\n  IUserEnumerationPlugin.\n  [maurits]\n\n\n",
+            "v": "<4.1.1"
         }
     ],
     "ptah": [
