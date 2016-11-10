@@ -3844,6 +3844,10 @@
                 "http://xforce.iss.net/xforce/xfdb/50061"
             ],
             "v": "<3.9"
+        },
+        {
+            "changelog": "------------------\n\n- Fix missing and broken security declarations.\n  [davisagli]\n\n",
+            "v": "<4.0.6"
         }
     ],
     "ptah": [
