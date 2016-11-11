@@ -459,6 +459,9 @@
     "google-appengine": [
         "<1.5.4"
     ],
+    "google-auth": [
+        "<0.3.0"
+    ],
     "holocron": [
         "<0.2.0"
     ],
