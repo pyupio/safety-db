@@ -2320,6 +2320,12 @@
             "v": "<0.1.2"
         }
     ],
+    "flask-security-fork": [
+        {
+            "changelog": "-------------\n\nReleased November 15th 2016\n\n- Fixed a security bug when validating a confirmation token, also checks\n  if the email that the token was created with matches the user's current email.\n\n",
+            "v": "<1.8.1"
+        }
+    ],
     "formbar": [
         {
             "changelog": "===\n- Set autocomplete=\"off\" for password fields.\n- Added serialisation of dates.\n- Security fix: Fixed potential code injection issue by removing the rule\n  parsing out of formbar and use brabbel library for rule parsing and\n  evaluation.\n\n",
