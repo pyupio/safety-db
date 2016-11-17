@@ -746,6 +746,9 @@
     "products.cmfcontentpanels": [
         "<V1.4.1"
     ],
+    "products.cmfeditions": [
+        "<1.0alpha3"
+    ],
     "products.ldapuserfolder": [
         "<2.19"
     ],
