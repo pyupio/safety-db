@@ -4797,6 +4797,12 @@
             "v": "<0.30"
         }
     ],
+    "qtop": [
+        {
+            "changelog": "  - added support for queuename display for OAR and PBS (SGE already there!)\n  - overspill feature (aka oversubscribe/overcommitment) for SGE systems\n  - strict checking cmdline var (will compare reported nr. of jobs against displayed/found jobs)\n  - id column is now more readable (put in brackets)\n  - fixed long-standing bug that would report incorrectly the queues of jobs in a node, in some cases\n  - restored deprecated document file deletion\n  - huge refactoring of the codebase\n\n",
+            "v": "<0.8.7"
+        }
+    ],
     "rauth": [
         {
             "changelog": "------------------------\n  * Made OAuth1 nonces more secure via SystemRandom\n  * Exposed authentication responses\n  * Allowed Requests versions >= 1.2.3\n  * Fixed OAuth1 unicode encoding issues\n\n",
