@@ -2481,8 +2481,8 @@
     ],
     "httplib2": [
         {
-          "changelog": "SSL certificate hostname mismatch is checked only once: https://github.com/httplib2/httplib2/issues/5",
-          "v": "<=0.9.2"
+            "changelog": "SSL certificate hostname mismatch is checked only once: https://github.com/httplib2/httplib2/issues/5",
+            "v": "<=0.9.2"
         }
     ],
     "httpsig": [
@@ -3850,6 +3850,12 @@
                 "http://www.openwall.com/lists/oss-security/2010/08/19/7"
             ],
             "v": "<2.19"
+        }
+    ],
+    "products.ploneformgen": [
+        {
+            "changelog": "------------------\n\n- Fixed showing translations of help text.  Since security release\n  1.8.1, help text was showing up with only the message id, for\n  example ``help_placeholder``.\n  Fixes `issue 178 <https://github.com/smcmahon/Products.PloneFormGen/issues/178>`_.\n  [maurits]\n\n- Use formActionOverride action in embedded view.  [fRiSi]\n\n- Add option to download data from saveDataAdapter in excel format\n  Excel download depends on the availability of the 'xlwt' python package.\n  [tmog]\n\n\n",
+            "v": "<1.8.2"
         }
     ],
     "products.plonepas": [
