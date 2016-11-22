@@ -312,6 +312,10 @@
         {
             "changelog": "~~~~~~~~~~~~~~~~~~\n* **SECURITY ISSUE**: The OpenSSL backend prior to 1.0.2 made extensive use\n  of assertions to check response codes where our tests could not trigger a\n  failure.  However, when Python is run with ``-O`` these asserts are optimized\n  away.  If a user ran Python with this flag and got an invalid response code\n  this could result in undefined behavior or worse. Accordingly, all response\n  checks from the OpenSSL backend have been converted from ``assert``\n  to a true function call. Credit **Emilia K\u00e4sper (Google Security Team)**\n  for the report.\n\n",
             "v": "<1.0.2"
+        },
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~\n\n* **SECURITY ISSUE**: Fixed a bug where ``HKDF`` would return an empty\n  byte-string if used with a ``length`` less than ``algorithm.digest_size``.\n  Credit to **Markus D\u00f6ring** for reporting the issue. *CVE-2016-9243*\n\n",
+            "v": "<1.5.3"
         }
     ],
     "cssutils": [
