@@ -754,6 +754,9 @@
     "products.ldapuserfolder": [
         "<2.19"
     ],
+    "products.ploneformgen": [
+        "<1.8.1"
+    ],
     "products.plonepas": [
         "<3.9"
     ],
