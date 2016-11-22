@@ -2481,8 +2481,8 @@
     ],
     "httplib2": [
         {
-          "changelog": "SSL certificate hostname mismatch is checked only once: https://github.com/httplib2/httplib2/issues/5",
-          "v": "<=0.9.2"
+            "changelog": "SSL certificate hostname mismatch is checked only once: https://github.com/httplib2/httplib2/issues/5",
+            "v": "<=0.9.2"
         }
     ],
     "httpsig": [
@@ -3850,6 +3850,12 @@
                 "http://www.openwall.com/lists/oss-security/2010/08/19/7"
             ],
             "v": "<2.19"
+        }
+    ],
+    "products.ploneformgen": [
+        {
+            "changelog": "------------------\n\n- CGI escape field help (description); prevent method call.\n  Eliminates XSS vulnerability that could be exploited by users with the ability\n  to create forms.\n  [smcmahon]\n\n\n",
+            "v": "<1.8.1"
         }
     ],
     "products.plonepas": [
