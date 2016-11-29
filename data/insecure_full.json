@@ -5049,6 +5049,12 @@
             "v": "<0.8"
         }
     ],
+    "stacker-blueprints": [
+        {
+            "changelog": "\n- Add low-level security group rule blueprint [GH-56]\n- Relax troposphere dependency [GH-64]\n\n",
+            "v": "<0.7.3"
+        }
+    ],
     "stargate": [
         {
             "changelog": "---\n\n- Add support for the HyBi version of WebSockets (specifically version-10). This version was released to solve some previous security concerns and\nwill be the version in Firefox 7/8 and Chrome 14 onwards accoring to Wikipedia.\n- Introduces a dependency on ws4py\n\n- See http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10\n\n",
