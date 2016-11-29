@@ -974,6 +974,9 @@
     "spud": [
         "<0.8"
     ],
+    "stacker-blueprints": [
+        "<0.7.3"
+    ],
     "stargate": [
         "<0.4"
     ],
