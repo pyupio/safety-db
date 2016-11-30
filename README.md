@@ -10,6 +10,15 @@ The data is collected by filtering CVEs and changelogs for certain keywords and 
 
 This is not a hall of shame, or a list of packages to avoid. The package maintainers show a great responsibility by documenting and fixing security issues in such a way that they can be listed here. That's extremely valuable when considering using a package in production.
 
+## Tools
+
+- [pyup.io](https://pyup.io) shows installed packages with known security vulnerabilities.
+- [safety](https://github.com/pyupio/safety) checks your installed dependencies for known security vulnerabilities.
+- [safety-django](https://github.com/pyupio/safety-django) warns you in the admin area if you have insecure dependencies installed.
+- A [Twitter Bot](https://twitter.com/python_safety) that tweets about what's added to the DB.
+- A [pre-commit hook](https://github.com/Lucas-C/pre-commit-hooks-safety) by Lucas Cimon.
+- *your tool?*
+
 ## Using this data
 
 For humans:
@@ -23,16 +32,7 @@ Check out the `data` directory:
 - [insecure.json](https://github.com/pyupio/safety-db/blob/master/data/insecure.json) contains just the package name and all insecure releases as a plain list.
 - [insecure_full.json](https://github.com/pyupio/safety-db/blob/master/data/insecure_full.json) additionally contains the CVE description and URLs, or the relevant part of the changelog.
 
-The database is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). This allows you to use the data in any non commercial project as long as you link back to this repo. If you need a license for a commercial project, please get in touch.
-
-## Tools
-
-- [safety](https://github.com/pyupio/safety) checks your installed dependencies for known security vulnerabilities. To use it, install it in the virtualenv you want to check with `pip install safety` and then run `safety check`.
-- [safety-django](https://github.com/pyupio/safety-django) warns you in the admin area if you have insecure dependencies installed.
-- [pyup.io](https://pyup.io) *coming soon*
-- A [Twitter Bot](https://twitter.com/python_safety) that tweets about what's added to the DB.
-- A [pre-commit hook](https://github.com/Lucas-C/pre-commit-hooks-safety) by Lucas Cimon.
-- *your tool?*
+The database is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). This allows you to use the data in any non commercial project as long as you link back to this repo. If you need a license for a commercial project, please contact support@pyup.io.
 
 ## Support this project
 
