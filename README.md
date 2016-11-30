@@ -12,7 +12,7 @@ This is not a hall of shame, or a list of packages to avoid. The package maintai
 
 ## Tools
 
-- [pyup.io](https://pyup.io) shows installed packages with known security vulnerabilities.
+- [pyup.io](https://pyup.io) shows installed packages and can send you pull requests if one of your dependencies receives a security fix.
 - [safety](https://github.com/pyupio/safety) checks your installed dependencies for known security vulnerabilities.
 - [safety-django](https://github.com/pyupio/safety-django) warns you in the admin area if you have insecure dependencies installed.
 - A [Twitter Bot](https://twitter.com/python_safety) that tweets about what's added to the DB.
