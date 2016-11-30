@@ -2208,6 +2208,12 @@
             "v": "<6.1"
         }
     ],
+    "experimental.publishtraverse": [
+        {
+            "changelog": "----------------\n\nNew features:\n\n- Publish objects when their containers are only accessible for admins.\n  You do that with ``security.declareObjectProtected(ManagePortal)``.\n  This fixes setting permissions for a workflow state.\n  You can turn this off by setting the new option\n  ``EXPERIMENTAL_PUBLISH_TRAVERSE_ACCEPT_IF_ONLY_FOR_ADMINS``\n  to false.\n  [maurits]\n\nBug fixes:\n\n- Added ``test`` extra and improved code quality of package,\n  with help of plone.app.codeanalysis.\n  [maurits]\n\n\n",
+            "v": "<1.1"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
