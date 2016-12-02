@@ -2461,6 +2461,12 @@
             "v": "<1.5.4"
         }
     ],
+    "google-auth": [
+        {
+            "changelog": "------\n\n- ``transports.grpc.secure_authorized_channel`` now passes ``kwargs`` to ``grpc.secure_channel``. (90)\n- Added new property ``credentials.Singing.signer_email`` which can be used to identify the signer of a message. (89)\n- (google_auth_httplib2) Added a proxy to ``httplib2.Http.connections``.\n\n",
+            "v": "<0.4.0"
+        }
+    ],
     "holocron": [
         {
             "changelog": "==================\n\n- Added reStructuredText converter.\n- Added ``holocron.ext.abc.Extension`` interface.\n- Added Python 3.5 support.\n- Added Twitter Cards support.\n- Fixed Markdown title parser for documents with multiple <h1> titles..\n- Fixed security issue when content author may steal private data through\n  content's meta header.\n- Fixed YAML header parser for documents with multiple ``---`` signs.\n- Fixed rebuilding of HTML produced by Tags and Feed extensions.\n- Default theme is more responsive for smartphones & tablets now.\n\n\n",
