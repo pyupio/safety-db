@@ -2888,6 +2888,12 @@
             "v": "<0.10"
         }
     ],
+    "mss": [
+        {
+            "changelog": "      - change license to MIT\n      - new contributor: Jochen 'cycomanic' Schroeder\n      - add type hints\n      - add documentation (fix 10)\n      - add tests and use Travis CI (fix 9)\n      - remove unused code (reported by Vulture)\n      - Linux: remove MSS library\n      - Linux: insanely fast using only ctypes\n      - Linux: skip unused monitors\n      - Linux: use errcheck instead of deprecated restype with callable (fix 11)\n      - Linux: fix security issue (reported by Bandit)\n\n",
+            "v": "<2.0.18"
+        }
+    ],
     "murano-dashboard": [
         {
             "cve": "CVE-2016-4972",
