@@ -530,6 +530,9 @@
     "jottalib": [
         "<0.3"
     ],
+    "jsonrpc-pyclient": [
+        "<0.4"
+    ],
     "keyring": [
         "<0.9.1"
     ],
