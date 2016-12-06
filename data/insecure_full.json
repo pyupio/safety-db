@@ -2630,6 +2630,12 @@
             "v": "<0.3"
         }
     ],
+    "jsonrpc-pyclient": [
+        {
+            "changelog": "---------------\n- Memory leak fixes\n- Switched Http Server to libmicrohttpd\n- Added full WIN32 build support\n- Improved test coverage (100% line coverage)\n- Added JavaScript client stub support\n- Removed TCP Client/Server implementation due to security and codestyle problems.\n- Finally removed dirty pointer stuff in bindAndAddX() methods.\n- Using call by value in generated stubs for primitive data types.\n\n",
+            "v": "<0.4"
+        }
+    ],
     "keyring": [
         {
             "cve": "CVE-2012-4571",
