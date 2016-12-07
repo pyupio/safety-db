@@ -2630,6 +2630,12 @@
             "v": "<0.3"
         }
     ],
+    "jsonrpc-pyclient": [
+        {
+            "changelog": "-----------------\n- Change: Requiring C++11 support (gcc >= 4.8)\n- Fix: armhf compatibility\n- Fix: Invalid client id field handling (removed int only check)\n- Fix: Security issues in unixdomainsocket connectors\n- Fix: Missing CURL include directive\n- Fix: Parallel build which failed due to failing CATCH dependency\n- Fix: Handling 64-bit ids\n- Fix: Invalid parameter check\n- Fix: Invalid pointer handling in HTTP-Server\n- NEW: HttpServer can now be configured to listen localhost only\n- NEW: TCP Server + Client connectors\n\n",
+            "v": "<0.7.0"
+        }
+    ],
     "keyring": [
         {
             "cve": "CVE-2012-4571",
