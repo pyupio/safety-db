@@ -2346,6 +2346,12 @@
             "v": "<1.8.1"
         }
     ],
+    "foolscap": [
+        {
+            "changelog": "\n** Minor Changes\n\nThe unreliable 'extras_require' property in setup.py, which allowed other\npython programs to declare a dependency on foolscap's \"secure_connections\"\nfeature, was removed. See README.packagers for alternate instructions. (174)\n\n'flogtool' log-dumping commands (dump, tail, web-viewer) now accept a\nconsistent --timestamps= argument to control how event times are displayed\n(UTC, local, seconds-since-epoch, etc). (192, 193)\n\nCertain invalid \"location\" strings (accepted by Tub.setLocation and put into\nFURLs) are rejected earlier, and with better error messages. The error\nmessage produced when 'flogtool dump' is given a FURL-file (instead of an\nevent log file) has been improved.\n\nThe Incident Gatherer will tolerate incident-file errors better, fetching\nremaining incidents instead of halting. (190)\n\nThe git-over-foolscap tools were cleaned up, and the documentation was\nbrought into line with the implementation. (197)\n\nOther minor bugs were fixed: 179, 191, 194, 195, 196\n\n\n",
+            "v": "<0.6.4"
+        }
+    ],
     "formbar": [
         {
             "changelog": "===\n- Set autocomplete=\"off\" for password fields.\n- Added serialisation of dates.\n- Security fix: Fixed potential code injection issue by removing the rule\n  parsing out of formbar and use brabbel library for rule parsing and\n  evaluation.\n\n",
