@@ -434,6 +434,9 @@
     "flask-security-fork": [
         "<1.8.1"
     ],
+    "foolscap": [
+        "<0.1.7"
+    ],
     "formbar": [
         "<0.9"
     ],
