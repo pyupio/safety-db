@@ -27,7 +27,7 @@ class TestData(unittest.TestCase):
         for pkg in self.db:
             db_versions = set(sorted(self.db[pkg]))
             db_full_versions = set(sorted(item["v"] for item in self.db_full[pkg]))
-            self.assertEquals(
+            self.assertEqual(
                 db_versions,
                 db_full_versions,
                 "Versions for {} not matching\n{}\n{}".format(pkg, db_versions, db_full_versions)
