@@ -139,6 +139,12 @@
             "v": "<0.5.1"
         }
     ],
+    "bravado-core": [
+        {
+            "changelog": "------------------\n- Security Requirement validation (for ApiKey) - PR 124\n- Allow self as name for model property, adds new \"create\" alternate model constructor - Issue 125, PR 126.\n- Allow overriding of security specs - PR 121\n- Adds minimal support for responses with text/* content_type.\n\n",
+            "v": "<4.6.0"
+        }
+    ],
     "cairosvg": [
         {
             "changelog": "======================================\n\n**WARNING:** this is a security update.\n\nCairoSVG was vulnerable to XML eXternal Entity (XXE) attacks, this release\nfixes this vulnerability by not resolving the XML entities anymore.\n\nThe ``--unsafe`` option has been added to force the resolution of XML\nentities. Obviously, this option is not safe and should only be used with\ntrusted SVG files.\n\n\n",
