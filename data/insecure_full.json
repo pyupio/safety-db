@@ -2346,6 +2346,12 @@
             "v": "<1.8.1"
         }
     ],
+    "foolscap": [
+        {
+            "changelog": "\n** UnauthenticatedTub is gone\n\nAs announced in the previous release, UnauthenticatedTub has been removed.\nAll Tubs are fully authenticated now.\n\n** Security Improvements\n\nFoolscap now generates better TLS certificates, with 2048-bit RSA keys and\nSHA256 digests. Previous versions used OpenSSL's defaults, which typically\nmeant 1024-bit MD5.\n\nTo benefit from the new certificates, you must regenerate your Tubs, which\nmeans creating new FURLs (with new TubIDs). Previously-created Tubs will\ncontinue to work normally: only new Tubs will be different.\n\n** Packaging/Dependency Changes\n\nsetup.py now requires setuptools\n\nFoolscap now requires pyOpenSSL unconditionally, because all Tubs are\nauthenticated.\n\nWe now recommend \"pip install .\" to install Foolscap and all its\ndependencies, instead of \"python setup.py install\". See 231 for details.\n\n\n",
+            "v": "<0.8.0"
+        }
+    ],
     "formbar": [
         {
             "changelog": "===\n- Set autocomplete=\"off\" for password fields.\n- Added serialisation of dates.\n- Security fix: Fixed potential code injection issue by removing the rule\n  parsing out of formbar and use brabbel library for rule parsing and\n  evaluation.\n\n",
