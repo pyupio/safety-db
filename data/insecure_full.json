@@ -139,6 +139,12 @@
             "v": "<0.5.1"
         }
     ],
+    "botocore": [
+        {
+            "changelog": "======\n\n* feature:cloudfront: Add lambda function associations to cache behaviors.\n* feature:rds: Add cluster create data to DBCluster APIs.\n* feature:waf-regional: With this new feature, customers can use AWS WAF directly on Application Load Balancers in a VPC within available regions to protect their websites and web services from malicious attacks such as SQL injection, Cross Site Scripting, bad bots, etc.\n\n\n",
+            "v": "<1.4.85"
+        }
+    ],
     "cairosvg": [
         {
             "changelog": "======================================\n\n**WARNING:** this is a security update.\n\nCairoSVG was vulnerable to XML eXternal Entity (XXE) attacks, this release\nfixes this vulnerability by not resolving the XML entities anymore.\n\nThe ``--unsafe`` option has been added to force the resolution of XML\nentities. Obviously, this option is not safe and should only be used with\ntrusted SVG files.\n\n\n",
