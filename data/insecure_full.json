@@ -2214,6 +2214,12 @@
             "v": "<6.1"
         }
     ],
+    "fallixy": [
+        {
+            "changelog": "\n    * mitmproxy console: Significant revamp of the UI. The major changes are\n      listed below, and in addition almost every aspect of the UI has\n      been tweaked, and performance has improved significantly.\n\n    * mitmproxy console: A new options screen has been created (\"o\" shortcut),\n      and many options that were previously manipulated directly via a\n      keybinding have been moved there.\n\n    * mitmproxy console: Big improvement in palettes. This includes improvements\n      to all colour schemes. Palettes now set the terminal background colour by\n      default, and a new --palette-transparent option has been added to disable\n      this.\n\n    * mitmproxy console: g/G shortcuts throughout mitmproxy console to jump\n      to the beginning/end of the current view.\n\n    * mitmproxy console: switch  palettes on the fly from the options screen.\n\n    * mitmproxy console: A cookie editor has been added for mitmproxy console\n      at long last.\n\n    * mitmproxy console: Various components of requests and responses can be\n      copied to the clipboard from mitmproxy - thanks to marceloglezer.\n\n    * Support for creating new requests from scratch in mitmproxy console (marceloglezer).\n\n    * SSLKEYLOGFILE environment variable to specify a logging location for TLS\n      master keys. This can be used with tools like Wireshark to allow TLS\n      decoding.\n\n    * Server facing SSL cipher suite specification (thanks to Jim Shaver).\n\n    * Official support for transparent proxying on FreeBSD - thanks to Mike C\n      (http://github.com/mike-pt).\n\n    * Many other small bugfixes and improvemenets throughout the project.\n\n\n",
+            "v": "<0.12"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
