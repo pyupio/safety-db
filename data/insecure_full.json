@@ -2214,6 +2214,12 @@
             "v": "<6.1"
         }
     ],
+    "fallixy": [
+        {
+            "changelog": "\n    * Completely revised HTTP2 implementation based on hyper-h2 (Thomas Kriechbaumer)\n\n    * Export flows as cURL command, Python code or raw HTTP (Shadab Zafar)\n\n    * Fixed compatibility with the Android Emulator (Will Coster)\n\n    * Script Reloader: Inline scripts are reloaded automatically if modified (Matthew Shao)\n\n    * Inline script hooks for TCP mode (Michael J. Bazzinotti)\n\n    * Add default ciphers to support iOS9 App Transport Security (Jorge Villacorta)\n\n    * Basic Authentication for mitmweb (Guillem Anguera)\n\n    * Exempt connections from interception based on TLS Server Name Indication (David Weinstein)\n\n    * Provide Python Wheels for faster installation\n\n    * Numerous bugfixes and minor improvements\n\n\n",
+            "v": "<0.16"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
