@@ -2214,6 +2214,12 @@
             "v": "<6.1"
         }
     ],
+    "fallixy": [
+        {
+            "changelog": "\n    * Use \"correct\" case for Content-Type headers added by mitmproxy.\n\n    * Make UTF environment detection more robust.\n\n    * Improved MIME-type detection for viewers.\n\n    * Always read files in binary mode (Windows compatibility fix).\n\n    * Some developer documentation.\n\n\n",
+            "v": "<0.9.1"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
