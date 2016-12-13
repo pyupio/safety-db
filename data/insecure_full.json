@@ -2214,6 +2214,12 @@
             "v": "<6.1"
         }
     ],
+    "fallixy": [
+        {
+            "changelog": "\n    * Support for loading and converting older dumpfile formats (0.13 and up)\n\n    * Content views for inline script (chrisczub)\n\n    * Better handling of empty header values (Benjamin Lee/bltb)\n\n    * Fix a gnarly memory leak in mitmdump\n\n    * A number of bugfixes and small improvements\n\n\n",
+            "v": "<0.15"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
