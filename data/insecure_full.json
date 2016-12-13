@@ -2214,6 +2214,12 @@
             "v": "<6.1"
         }
     ],
+    "fallixy": [
+        {
+            "changelog": "\n    * Full serialization of HTTP conversations\n\n    * Client and server replay\n\n    * On-the-fly generation of dummy SSL certificates\n\n    * mitmdump has \"grown up\" into a powerful tcpdump-like tool for HTTP/S\n\n    * Dozens of improvements to the mitmproxy console interface\n\n    * Python scripting hooks for programmatic modification of traffic\n\n\n",
+            "v": "<0.4"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
