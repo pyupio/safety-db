@@ -999,6 +999,9 @@
     "superset-hand": [
         "<0.11.0"
     ],
+    "superset-tddv": [
+        "<0.11.0"
+    ],
     "swauth": [
         "<1.1.0"
     ],
