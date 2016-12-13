@@ -635,6 +635,9 @@
     "oauthlib": [
         "<0.7.0"
     ],
+    "offlineimap": [
+        "<2.29"
+    ],
     "onixcheck": [
         "<0.8.0"
     ],
