@@ -2214,6 +2214,12 @@
             "v": "<6.1"
         }
     ],
+    "fallixy": [
+        {
+            "changelog": "\n    * Upstream certificate validation. See the --verify-upstream-cert,\n      --upstream-trusted-cadir and --upstream-trusted-ca parameters. Thanks to\n      Kyle Morton (github.com/kyle-m) for his work on this.\n\n    * Add HTTP transparent proxy mode. This uses the host headers from HTTP\n      traffic (rather than SNI and IP address information from the OS) to\n      implement perform transparent proxying. Thanks to github.com/ijiro123 for\n      this feature.\n\n    * Add ~src and ~dst REGEX filters, allowing matching on source and\n      destination addresses in the form of <IP>:<Port>\n\n    * mitmproxy console: change g/G keyboard shortcuts to match less. Thanks to\n      Jose Luis Honorato (github.com/jlhonora).\n\n    * mitmproxy console: Flow marking and unmarking. Marked flows are not\n      deleted when the flow list is cleared. Thanks to Jake Drahos\n      (github.com/drahosj).\n\n    * mitmproxy console: add marking of flows\n\n    * Remove the certforward feature. It was added to allow exploitation of\n      gotofail, which is no longer a common vulnerability. Permitting this\n      hugely increased the complexity of packaging and distributing mitmproxy.\n\n\n\n\n",
+            "v": "<0.13"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
