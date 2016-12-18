@@ -2189,6 +2189,12 @@
             "v": "<3.1.1"
         }
     ],
+    "djangosaml2": [
+        {
+            "changelog": "-------------------\n- Python 3.5 support. Thanks to timheap.\n- Added support for callable user attributes. Thanks to andy-miracl and joetsoi.\n- Security improvement: \"next\" URL is now checked. thanks to flupzor.\n- Improved testability. Thanks to flupzor.\n- Other bugfixes and minor improvements. Thanks to jamaalscarlett, ws0w, jaywink and liquidpele.\n\n",
+            "v": "<0.15.0"
+        }
+    ],
     "docker-registry": [
         {
             "changelog": "\n * security fixes (path traversing prevention and token validation)\n\n",
