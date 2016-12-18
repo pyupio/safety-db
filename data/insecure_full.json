@@ -2962,6 +2962,12 @@
             "v": ">=2.0,<2.0.1"
         }
     ],
+    "mysmile": [
+        {
+            "changelog": "  - Added IMAGE_AUTOSCALE preference to admin panel\n  - Protected admin login page from brute-force attack\n  - Added \"view on site\" button to admin panel\n  - Removed database from repository\n  - Updated docs\n\n",
+            "v": "<0.7.1"
+        }
+    ],
     "mysql-connector": [
         {
             "cve": "CVE-2016-5598",
