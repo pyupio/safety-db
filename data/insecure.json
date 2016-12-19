@@ -823,6 +823,9 @@
     "pypicloud": [
         "<0.2.2"
     ],
+    "pypicontents": [
+        "<0.1.0"
+    ],
     "pypiserver": [
         "<1.1.7"
     ],
