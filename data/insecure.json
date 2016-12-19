@@ -504,6 +504,9 @@
     "insecure-package": [
         "<0.2.0"
     ],
+    "invenio": [
+        "<0.99.9"
+    ],
     "invenio-search": [
         "<0.1.3"
     ],
