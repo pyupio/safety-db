@@ -139,6 +139,17 @@
             "v": "<0.5.1"
         }
     ],
+    "bottle": [
+        {
+            "cve": "CVE-2016-9964",
+            "description": "redirect() in bottle.py in bottle 0.12.10 doesn't filter a \"\\r\\n\" sequence, which leads to a CRLF attack, as demonstrated by a redirect(\"233\\r\\nSet-Cookie: name=salt\") call.",
+            "urls": [
+                "https://github.com/bottlepy/bottle/issues/913",
+                "https://github.com/bottlepy/bottle/commit/6d7e13da0f998820800ecb3fe9ccee4189aefb54"
+            ],
+            "v": "<0.12.10"
+        }
+    ],
     "cairosvg": [
         {
             "changelog": "======================================\n\n**WARNING:** this is a security update.\n\nCairoSVG was vulnerable to XML eXternal Entity (XXE) attacks, this release\nfixes this vulnerability by not resolving the XML entities anymore.\n\nThe ``--unsafe`` option has been added to force the resolution of XML\nentities. Obviously, this option is not safe and should only be used with\ntrusted SVG files.\n\n\n",
