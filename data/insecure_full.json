@@ -147,7 +147,7 @@
                 "https://github.com/bottlepy/bottle/issues/913",
                 "https://github.com/bottlepy/bottle/commit/6d7e13da0f998820800ecb3fe9ccee4189aefb54"
             ],
-            "v": "<X.Y"
+            "v": "<0.12.10"
         }
     ],
     "cairosvg": [
