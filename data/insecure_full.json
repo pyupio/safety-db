@@ -4398,6 +4398,16 @@
             "v": "<2.7.12"
         },
         {
+            "cve": "CVE-2016-9949",
+            "description": "An issue was discovered in Apport before 2.20.4. In apport/ui.py, Apport reads the CrashDB field and it then evaluates the field as Python code if it begins with a \"{\". This allows remote attackers to execute arbitrary Python code.",
+            "urls": [
+                "https://donncha.is/2016/12/compromising-ubuntu-desktop/",
+                "https://bugs.launchpad.net/apport/+bug/1648806",
+                "https://github.com/DonnchaC/ubuntu-apport-exploitation"
+            ],
+            "v": "<X.Y"
+        },
+        {
             "cve": "CVE-2011-4940",
             "description": "The list_directory function in Lib/SimpleHTTPServer.py in SimpleHTTPServer in Python before 2.5.6c1, 2.6.x before 2.6.7 rc2, and 2.7.x before 2.7.2 does not place a charset parameter in the Content-Type HTTP header, which makes it easier for remote attackers to conduct cross-site scripting (XSS) attacks against Internet Explorer 7 via UTF-7 encoding.",
             "urls": [
