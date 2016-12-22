@@ -2253,6 +2253,12 @@
             "v": "<6.1"
         }
     ],
+    "fallixy": [
+        {
+            "changelog": "\n    * Big speed and responsiveness improvements, thanks to Thomas Roth\n\n    * Support urwid 0.9.9\n\n    * Terminal beeping based on filter expressions\n\n    * Filter expressions for terminal beeps, limits, interceptions and sticky\n      cookies can now be passed on the command line.\n\n    * Save requests and responses to file\n\n    * Split off non-interactive dump functionality into a new tool called\n      mitmdump\n\n    * \"A\" will now accept all intercepted connections\n\n    * Lots of bugfixes\n",
+            "v": "<0.2"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
