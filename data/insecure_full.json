@@ -2253,6 +2253,12 @@
             "v": "<6.1"
         }
     ],
+    "fallixy": [
+        {
+            "changelog": "\n    * New built-in key/value editor. This lets you interactively edit URL query\n      strings, headers and URL-encoded form data.\n\n    * Extend script API to allow duplication and replay of flows.\n\n    * API for easy manipulation of URL-encoded forms and query strings.\n\n    * Add \"D\" shortcut in mitmproxy to duplicate a flow.\n\n    * Reverse proxy mode. In this mode mitmproxy acts as an HTTP server,\n      forwarding all traffic to a specified upstream server.\n\n    * UI improvements - use unicode characters to make GUI more compact,\n      improve spacing and layout throughout.\n\n    * Add support for filtering by HTTP method.\n\n    * Add the ability to specify an HTTP body size limit.\n\n    * Move to typed netstrings for serialization format - this makes 0.7\n      backwards-incompatible with serialized data from 0.6!\n\n    * Significant improvements in speed and responsiveness of UI.\n\n    * Many minor bugfixes and improvements.\n\n\n",
+            "v": "<0.7"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
