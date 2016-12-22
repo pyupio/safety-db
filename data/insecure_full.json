@@ -2253,6 +2253,12 @@
             "v": "<6.1"
         }
     ],
+    "fallixy": [
+        {
+            "changelog": "\n    * mitmproxy console: mouse interaction - scroll in the flow list, click on\n      flow to view, click to switch between tabs.\n\n    * Update our crypto defaults: SHA256, 2048 bit RSA, 4096 bit DH parameters.\n\n    * BUGFIX: crash under some circumstances when copying to clipboard.\n\n    * BUGFIX: occasional crash when deleting flows.\n\n\n",
+            "v": "<0.12.1"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
