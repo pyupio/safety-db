@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5654,6 +5654,12 @@
         {
             "changelog": "-------------------------\n\n* Make the Plone 3 buildout default to Plone 3.2.1, and pick up\n  ${versions:zope2-url} for Plone > 3.1\n  [MatthewWilkes]\n\n* added a version requirement for Cheetah (>1.0)\n  [tarek]\n\n* fix zopeskel/docs/localcommands.txt\n  [yboussard]\n\n* Modify zopeskel/templates/plone/+namespace_package+/+package+/tests.py_tmpl\n  to init egg as product if it is a Zope2 product.\n  [yboussard]\n\n* Modify plone3_buildout template to ask for a Plone version. If the version\n  is 3.0 or 3.1 it uses the plone install recipe, otherwise it uses the Plone\n  egg from the cheeseshop.\n  [MatthewWilkes]\n\n* Link to appropriate PyPI pages for recipes used.\n  [MatthewWilkes]\n\n* Add a Zope 2 without Plone buildout template.\n  [evilbungle]\n\n* Reconciling HISTORY.txt to mirror what can be found at the following:\n  http://pypi.python.org/pypi/ZopeSkel/2.10. Release of 2.10 was clobbered\n  due to what looks like a merge at r74790.\n  [andrewb]\n\n* Update plone2.5_template's buildout.cfg_tmpl to use Zope 2.9.10. This\n  release incorporates Hotfix-2008-08-12. Defaulting to a known insecure\n  Zope seems unwise for people that may be updating legacy environments into\n  buildout, since they're likely to forget to include the hotfix. Url to\n  2.9.10 hard-coded (as opposed to the more elegantly self-aware\n  plone.recipe.plone approach) per the practice of a plone.recipe.distros\n  plone part.\n  [andrewb]\n\n* Nearly at the end of the creation of a ZopeSkel template, the local\n  commands available for that template are displayed.\n  [jaraco, markvl]\n\n* The Plone template now has local commands. (Basically moved them\n  from the archetype templates to plone templates and made them\n  available for both.\n  [markvl]\n\n* Added base test setup to the archetype template. Added wiring code that\n  runs README.txt as a doctest.\n  [esartor]\n\n* Added tests to the addcontent contenttype command. These ammend the\n  README.txt file for each content type providing basic tests for creating,\n  editing and removing instances of the added content type.\n  [esartor]\n\n\n",
             "v": "<2.11"
+        }
+    ],
+    "zwiki": [
+        {
+            "changelog": "=======================\n\nImproved rating form, a file -> wiki page import tool, chinese &\nhungarian translation updates, bug fixes.\n\n**Page hierarchy**\n\n  * make updateWikiOutline redirect to the updated contents view, and\n    provide an easier alias: updatecontents\n\n  * don't log a traceback when deleting a page with out-of-date outline cache\n\n**Editing**\n\n  * avoid creating both pages when you rename during page creation\n    drop the leaveplaceholder and updatebacklinks arguments from\n    create().  Changing the page name in the create form now always\n    updatesbacklinks, never leaves a placeholder.\n\n**Rating**\n\n  * new compact rating form at top right. Unrated pages now have\n    rating 1 by default.\n\n  * rating could fail when there was only one vote\n\n  * make rating's average a little more accurate\n\n**Mail**\n\n  * workaround for clumsy mailhost lookup (983)\n\n  * mailin: don't log incoming message text or traceback for missing text part\n\n  * make mailout logging less verbose\n\n  * fix a bug preventing subscribe link from appearing when\n    mailhost's id is not 'MailHost'\n\n**Issue tracking**\n\n  * don't match xml/html character entities as hash number issue links (Stefan Rank)\n\n**General - i18n**\n\n  * zh-TW and zh-CN translation updates (T.C. Chou)\n\n  * add missing metadata to finnish po files\n\n  * hungarian translation updates (Jaroli J\u00f3zsef)\n\n  * po file typo (T.C. Chou)\n\n**General - skins**\n\n  * close a cross-site scripting vulnerability in standard error message (SSA-20041122-12, 925, ChrisW)\n\n  * Hide web only elements when printing from plone (Michael Twomey)\n    When printing from plone certain elements are visible on the\n    printed page, especially the access links. With the default\n    plone print style\n    (plonePrint.css) all links get expanded to full URLs which\n    results in a lot of useless junk at the top of the screen. This\n    patch adds a few plone related CSS classes to certain sections\n    of the page which in turn ensures they aren't visible when\n    printed.  This has no effect on browsers which aren't aware of\n    the print style sheet. The access keys still work fine in\n    FireFox 1.0.\n\n  * fix html title in plone sites\n\n  * rearrange/reword wiki actions in cmf/plone, drop filter issues action\n\n  * tweak page management help in cmf/plone\n\n  * display site_header in standard skin header, if present\n\n  * use canonicaIdFrom to help link user names in recent changes\n\n  * change RecentChanges ZCatalog query-style to avoid deprecation warning (Stefan Rank)\n\n**General**\n\n  * add tools folder and a basic import-files-to-wiki utility\n\n\n",
+            "v": "<0.37"
         }
     ]
 }
