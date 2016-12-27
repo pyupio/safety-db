@@ -749,6 +749,9 @@
     "plone.app.event": [
         "<3.0"
     ],
+    "plone.app.linkintegrity": [
+        "<1.0.2"
+    ],
     "plone.dexterity": [
         "<2.3.0"
     ],
