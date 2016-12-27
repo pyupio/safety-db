@@ -847,6 +847,9 @@
     "pyramid-weblayer": [
         "<0.12"
     ],
+    "pyrseas": [
+        "<0.3.0"
+    ],
     "pysandbox": [
         "<1.0.2",
         "<1.0.3",
