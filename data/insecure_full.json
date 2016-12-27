@@ -2030,6 +2030,12 @@
             "v": "<0.4.5b"
         }
     ],
+    "django-openid-provider": [
+        {
+            "changelog": "----\nReleased 2013-12-23.\n\n* Security enchancement:\n  `OpenID Authentication 2.0 9.2.1 <http://openid.net/specs/openid-authentication-2_0.htmlrfc.section.9.2.1>`_\n  was implemented, fixes :issue:`4`.\n* Fixed landing page view to handle redirect URL GET params correctly.\n* Added OPENID_PROVIDER_SREG_DATA_CALLBACK setting for custom SREG callback\n  functions.\n* Added AX support, new OPENID_PROVIDER_AX_DATA_CALLBACK callback.\n* Added Django 1.5 support.\n* Added Django 1.5 custom user model support.\n* Fixed response page javascript to submit the correct form when there is more than one.\n\n",
+            "v": "<0.5"
+        }
+    ],
     "django-piston": [
         {
             "cve": "CVE-2011-4103",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
