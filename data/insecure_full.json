@@ -3168,6 +3168,12 @@
             "v": "<0.0.2"
         }
     ],
+    "peepdf": [
+        {
+            "changelog": "-----------------------------------------------\n\n    * New features:\n\n\t\t- Added descriptive titles for the vulns found\n\t\t- Added detection of CVE-2013-2729 (Adobe Reader BMP/RLE heap corruption)\n\t\t- Added support for more than one script block in objects containing Javascript (e.g. XFA objects)\n\t\t- Updated colorama to version 3.1 (2014-04-19)\n\t\t- Added detection of CVE-2013-3346 (ToolButton Use-After-Free)\n\t\t- Added command \"js_vars\" to show the variables defined in the Javascript context and their content\n\t\t- Added command \"js_jjdecode\" to decode Javascript code using the jjencode algorithm (Thanks to Nahuel Riva crackinglandia)\n\t\t- Added static detection for CVE-2010-0188\n\t\t- Added detection for CoolType.dll SING uniqueName vulnerability (CVE-2010-2883). Better late than never ;p\n\t\t- Added new command \"vtcheck\" to check for detection on VirusTotal (API key included)\n\t\t- Added option to avoid automatic Javascript analysis (useful with endless loops)\n\t\t- Added PyV8 as Javascript engine and removed Spidermonkey (Windows issues).\n\n    * Fixes:\n\n\t\t- Fixed bug when encrypting/decrypting hexadecimal objects (Thanks to Timo Hirvonen for the feedback)\n\t\t- Fixed silly bug related to abbreviated PDF Filters\n\t\t- Fixed bug related to the GNU readline function not handling correctly colorized prompts\n\t\t- Fixed log_output function, it was storing the previous command output instead of the current one\n\t\t- Fixed bug in PDFStream to show the stream content when the stream dictionary is empty (Thanks to Nahuel Riva)\n\t\t- Fixed Issue 12, related to bad JS code parsing due to HTML entities in the XFA form (Thanks to robomotic)\n\t\t- Fixed Issue 10 related to bad error handling in the PDFFile.decrypt() method\n\t\t- Fixed Issue 9, related to an uncaught exception when PyV8 is not installed\n\t\t- Fixed bug in do_metadata() when objects contain /Metadata but they are not really Metadata objects\n\n\t* Others\n\t\n\t\t- Removed the old redirection method using the \"set\" command, it is useless now with the shell-like redirection (>, >>, $>, $>>)\n\n\t* Known issues\n\t\n\t\t- It exists a problem related to the readline module in Mac OS X (it uses editline instead of GNU readline), not handling correctly colorized prompts.\n\n-----------------------------------------------\npeepdf Black Hat Vegas (0.2 r156), 2012-07-25\n-----------------------------------------------\n\n    * New features:\n\n        - Added \"grinch mode\" execution to avoid colorized output\n        - Added more colors in the interactive console output: warning, errors, important information...\n        - Changed sctest command, now it's implemented with pylibemu\n        - Added decrypt command to parse password protected documents\n        - Modified analyseJS() to extract JS code from XDP packets and unescape HTML entities\n        - Added function unescapeHTMLEntities() to unescape HTML entities\n        - Added AES decryption support (128 and 256 bits).\n        - Added hashes in objects information (info $object_id)\n        - Added support for decoding CCITTFaxDecode filters (Thanks to binjo)\n\n    * Fixes:\n\n        - Fix to show decrypt errors\n        - Fixed silly bug with /EncryptMetadata element\n        - Added missing binary file operations\n        - Fixed Issue 5: Resolved false positives when monitoring some elements like actions, events, etc. (Thanks to hiddenillusion)\n        - Bug in PDFStream.decode and PDFStream.encode, dealing with an array of filter parameters (Thanks to binjo)\n\n\n-----------------------------------------------\npeepdf Black Hat Arsenal (0.1 r92), 2012-03-16\n-----------------------------------------------\n\n    * New features:\n\n        - Added support for more parameters in Flate/LZW decode (stream filters)\n        - Encryption algorithm now showing in document information\n        - Added XML output and SHA hash to file information    \n        - Improved unescape function to support mixed escaped formats (eg. \"%u6734%34%u8790\")\n        - Added xor and xor_search commands\n        - Added easy way of redirect console output (>, >>, $>, $>>)\n        - Added xor function by Evan Fosmark\n        - Added detection of CVE-2011-4369 (/PRC)\n        - Added hash command (Thanks to binjo for code and comments)\n        - Added js_beautify command\n        - Update function added\n        - Added new vulns and showing information related to non JS vulns\n        - Added escape sequence in the limited output\n        - Added ascii85 decode from pdfminer to improve code and avoid bugs (Thanks to Brandon Dixon!)\n        - Added lzwdecode from pdfminer to improve code and avoid bugs\n\n    * Fixes:\n\n        - Update process rewritten, now based on hashing of files\n        - Silly bug in computeUserPass function (Thanks to Christian Martorella!)\n        - Added binary mode in files operations\n        - Recursion bug in update function\n        - Minor bug in do_embed function\n        - Bug to support encoding following PDF specifications (Issue 3 by czchen)\n        - Bug to handle negative numbers in P element\n        - Bug in the xref table when creating a new PDF (Issue 2)\n        - Silly bug when parsing filter parameters\n        - Bug related to updating objects and statistics of PDF files\n        - Some bugs related to offsets calculation\n        - Fixed \"replace\" function in PDFObjectStream\n        - Fix in asciiHexDecode filter function\n\n\n-----------------------------------------------\n",
+            "v": "<0.3"
+        }
+    ],
     "peppercorn": [
         {
             "changelog": "----------------\n\n- Switch to an iterative parser rather than a recursive parser to avoid\n  DoS attacks.\n\n- Add the ``ignore`` operation. The subsequent data elements in the stream\n  will be ignored until the corresponding ``__end__`` marker.  This feature\n  is useful for form elements designed for client-side scripting, such as a\n  \"select all\" checkbox in the middle of a list of other kinds of fields.\n\n- Add support for Python 3.3.\n\n- Drop support for Python 2.5 / Jython.\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
