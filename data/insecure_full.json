@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4839,6 +4839,12 @@
                 "https://wiki.openstack.org/wiki/OSSN/OSSN-0062"
             ],
             "v": ">=2.0,<2.3.3"
+        }
+    ],
+    "python-libtorrent": [
+        {
+            "changelog": "\n\t* connect candidate calculation fix\n\t* tightened up disk cache memory usage\n\t* fixed magnet link parser to accept hex-encoded info-hashes\n\t* fixed inverted logic when picking which peers to connect to\n\t  (should mean a slight performance improvement)\n\t* fixed a bug where a failed rename_file() would leave the storage\n\t  in an error state which would pause the torrent\n\t* fixed case when move_storage() would fail. Added a new alert\n\t  to be posted when it does\n\t* fixed crash bug when shutting down while checking a torrent\n\t* fixed handling of web seed urls that didn't end with a\n\t  slash for multi-file torrents\n\t* lowered the default connection speed to 10 connection attempts\n\t  per second\n\t* optimized memory usage when checking files fails\n\t* fixed bug when checking a torrent twice\n\t* improved handling of out-of-memory conditions in disk I/O thread\n\t* fixed bug when force-checking a torrent with partial pieces\n\t* fixed memory leak in disk cache\n\t* fixed torrent file path vulnerability\n\t* fixed upnp\n\t* fixed bug when dealing with clients that drop requests (i.e. BitComet)\n\t  fixes assert as well\n\n",
+            "v": "<0.14.4"
         }
     ],
     "python-muranoclient": [
