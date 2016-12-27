@@ -4398,17 +4398,6 @@
             "v": "<2.7.12"
         },
         {
-            "cve": "CVE-2016-5851",
-            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-            "urls": [
-                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-                "http://www.securityfocus.com/bid/91485"
-            ],
-            "v": "<X.Y"
-        },
-        {
             "cve": "CVE-2011-4940",
             "description": "The list_directory function in Lib/SimpleHTTPServer.py in SimpleHTTPServer in Python before 2.5.6c1, 2.6.x before 2.6.7 rc2, and 2.7.x before 2.7.2 does not place a charset parameter in the Content-Type HTTP header, which makes it easier for remote attackers to conduct cross-site scripting (XSS) attacks against Internet Explorer 7 via UTF-7 encoding.",
             "urls": [
@@ -4791,6 +4780,19 @@
             "changelog": "-------------------\n - SECURITY FIX: When loading a template from an arbitrary file through the\n   AddTemplate() D-Bus method call or DBusTestCase.spawn_server_template()\n   Python method, don't create or use Python's *.pyc cached files. By tricking\n   a user into loading a template from a world-writable directory like /tmp, an\n   attacker could run arbitrary code with the user's privileges by putting a\n   crafted .pyc file into that directory. Note that this is highly unlikely to\n   actually appear in practice as custom dbusmock templates are usually shipped\n   in project directories, not directly in world-writable directories.\n   Thanks to Simon McVittie for discovering this!\n   (LP: 1453815, CVE-2015-1326)\n\n",
             "v": "<0.15.1"
         }
+    ],
+    "python-docx": [
+      {
+          "cve": "CVE-2016-5851",
+          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+          "urls": [
+              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+              "http://www.securityfocus.com/bid/91485"
+          ],
+          "v": "<0.8.6"
+      }
     ],
     "python-keystoneclient": [
         {
