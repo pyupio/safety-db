@@ -769,6 +769,9 @@
     "pmr2.oauth": [
         "<0.4.2"
     ],
+    "poorwsgi": [
+        "<1.0.2"
+    ],
     "pretaweb.healthcheck": [
         "<1.0"
     ],
