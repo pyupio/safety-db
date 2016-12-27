@@ -749,6 +749,9 @@
     "plone.app.event": [
         "<3.0"
     ],
+    "plone.app.z3cform": [
+        "<0.5.4"
+    ],
     "plone.dexterity": [
         "<2.3.0"
     ],
