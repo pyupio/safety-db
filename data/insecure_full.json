@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5237,6 +5237,12 @@
                 "http://www.tornadoweb.org/documentation/releases/v2.2.1.html"
             ],
             "v": "<2.2.1"
+        }
+    ],
+    "tracauthopenid": [
+        {
+            "changelog": "========================\n\nConfiguration Changes\n---------------------\n\n- The default for ``[trac] check_auth_ip`` is now ``False``.  **This\n  has security implications**.  If you want authorization to be tied\n  to the clients IP address *you must now explicitly set* this option\n  to ``True``.\n\n  Prior to this change, if ``check_auth_ip`` was not explicitly set, we\n  ignored the global trac default (``False``) for the setting and behaved\n  as if it were set to ``True``.\n\n  This change is being made for the sake of backwards compatibility\n  with trac 0.11 whose ``Configuration.has_option`` method does not\n  support the optional ``defaults`` argument added in 0.12.  Without\n  that there seems to be no clean way to determine whether a setting\n  is explicitly set in the ``.ini`` file.\n\n\nNew Features\n------------\n\n- We will now use the json_ package if your python version includes it\n  (python >= 2.6).   For older pythons, the simplejson_ package is now\n  required.\n\n\n- A minor hack has been made which allows at least basic functionality\n  under the development branch, trac-1.0 (formerly know as trac-0.13).\n  Note that only very basic tests under trac-1.0 have not been\n  performed.  (The code in this plugin still does not adhere to\n  the modern `trac db API`_ usage recommendations.)\n\n.. _json: http://docs.python.org/library/json.html\n.. _simplejson: https://github.com/simplejson/simplejson\n.. _trac db API: http://trac.edgewall.org/wiki/TracDev/DatabaseApi\n\n",
+            "v": "<0.4"
         }
     ],
     "tripleo-heat-templates": [
