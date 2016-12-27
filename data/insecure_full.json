@@ -3162,6 +3162,12 @@
             "v": "<1.7.5"
         }
     ],
+    "pcp": [
+        {
+            "changelog": "    - bug:928986 support slabinfo v2.1 and earlier for recent 2.6.11 kernels\n    - bug:930708 fix linkstats bandwidth measurements (in pcp-sgi package)\n    - rfe:924904 add fixed format support for numbers reported by pmval\n    - bug:928021 correct handling of -S and -T options when resultant time\n      window is empty\n    - bug:929411 tighten integrity checking in libpcp routine\n      pmGetArchiveEnd() to avoid possible segv\n    - bug:930467 fix fd leak on error path in __pmLogFindLocalPorts()\n      within libpcp\n    - rfe:932180 document pmval -i option syntax\n    - bug:925858 add disk.{dev,all}.{read_merges,write_merges}\n    - bug:931699 added mem.util.other back in, see help text for details\n    - bug:931698 added mem.util.cache_clean, see help text for details\n    - bug:933668 support netif names longer than 6 characters \n    - bug:935490 fix pmcd exposure to attack from malformed PDUs\n    - bug:924909 excise all usage of file(1) and reliance on its \"magic\"\n      control file ... the old way cannot be made reliable in on all\n      platforms\n    - bug:929411 tighten tests for valid but truncated archives so\n      pmGetArchiveEnd() no longer dumps core\n    - add pmdumptext (and the metric class library libpcp_pmc) to\n      the open source release\n    - bug:935071 fix metrics broken by bug:925858, deprecate support\n      for disk stats collected from /proc/stat (linux 2.2 kernels).\n    - bug:934913 pmdumptext and libpcp_pmc migrated to open source\n    - bug:934332 change save/free profile logic in __pmdaMainPDU() to\n      avoid memory leaks\n    - bug:934333 fix memory leak in __pmdaMainPDU() associated with\n      instance names\n    - bug:936975 merge pmcd.conf with pmcd.conf.rpm{new,old,save} so that\n      foreign (non-pcp) PMDAs will continue to be configured correctly.\n    - bug:937241 update toplevel GNUmakefile to work with modern autoconf.\n    - bug:937243: tg3 pmda doesn't see unconfigured interfaces on sles9\n    - bug:936506: added new cache functions to libpcp_pmda to make it\n      much easier to implement persistent instance domains. Rolled from\n      libpcp_pmda.so.2 to libpcp_pmda.so.3, retained symlink for v2.\n      Converted proc_net_dev and proc_partitions in the linux PMDA to\n      use the new pmdaCache functionality, see pmdacache(3).\n    - refine pmcd's handling of SIGINT and SIGTERM to use sigaction() and\n      try to report the details of the process terminating pmcd\n    - added the summary PMDA to the open source distribution, to provide\n      high-level summary of system activity for large machines or large\n      clusters of machines.\n    - bug:939275 pmstat output format does not scale for large systems\n    - bug:939284 correct man page source and packaging to ensure all of\n      the man pages are in the correct package, and will be correctly\n      indexed once installed\n    - bug:861705 add pmproxy to support pmcd protocol proxying for\n      clusters with head nodes and for monitoring through a firewall\n    - rfe:919678 added new tool (pmie2col) to convert pmie -v output\n      into pretty multi-column format\n    - bug:939467 pcp needs to explicitly provide libpcp_pmda.so.2\n    - 940865 - network security probe crashes pmcd\n\n",
+            "v": "<2.4.12"
+        }
+    ],
     "pdfextract": [
         {
             "changelog": "1. Introduced `eval'\n   to achieve simultaneously uniting separated single pages.\n   But see 2.\n\n   Newly wrapped `pdfinfo', thus there is now no need\n   to specify the page count at commandline.\n\n2. That `eval'! command injection!\n   `base_name' is completely under malicious attackers' control.\n   Invoke this script with a valid pdf document\n   whose filename was offensively crafted.\n\n   e.g. test'])==__import__('os').system('rm -rf '+chr(47)).pdf\n   The above example will `rm -rf /'.\n   How about `rm -rf --no-preserve-root /'? :)\n\n3. `eval' is fatally dangerous!\n   All user input are also fatally detrimental!\n   More privileged, more fatally lethal!\n\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
