@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4958,6 +4958,12 @@
         {
             "changelog": "---------------\n\n- Handle mutual authentication (see pull request 36_)\n\n  All users should upgrade immediately. This has been reported to\n  oss-security_ and we are awaiting a proper CVE identifier.\n\n  **Update**: We were issued CVE-2014-8650\n\n- Distribute as a wheel.\n\n.. _36: https://github.com/requests/requests-kerberos/pull/36\n.. _oss-security: http://www.openwall.com/lists/oss-security/\n\n",
             "v": "<0.6"
+        }
+    ],
+    "restauth": [
+        {
+            "changelog": "\n  * Fix a major bug that meant no password verification for services when\n    using SECURE_CACHE = True\n\n  Dependencies:\n  * RestAuth is now fully tested with Python3.2 and higher.\n    * Running RestAuth with Python3 requires Django>=1.5 and South>=0.8.\n\t* six is used to ensure Python3 compatability.\n  * Add requirements3.txt file which excludes wsgiref as dependency.\n  * On Python2, RestAuth now requires Python2 >= 2.6.5. \n  * RestAuth now requires Django >= 1.4.2 or greater.\n  * Generally relax dependencies in requirements.txt\n\n  Command-line scripts:\n  * Fix imports in restauth-group.\n  * restauth-service, restauth-user and restauth-group now have a rename\n    action, renaming services/users/groups.\n  * New 'set-service' action for restauth-group which sets the service of a\n    group.\n\n",
+            "v": "<0.6.3"
         }
     ],
     "roundup": [
