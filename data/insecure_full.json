@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5154,6 +5154,12 @@
             "changelog": "-------------\n\n**Released on April 16, 2015.**\n\n- Updating the pyjwt dependency to fix JWT security issues.\n- Adding support for Mirror Directories and Agents (*this lets users manage\n  Active Directory and LDAP systems*).\n\n\n",
             "v": "<2.0.5"
         },
+        {
+            "changelog": "-------------\n\n**Released December 12, 2016.**\n\n- Fixing broken tests.\n- Adding support for `Account.password_modified_at` property.\n- Adding support for `Error.request_id` property.\n- Simplifying Travis build scripts for speed.\n- Re-arranging private SSH key files for builds.\n- Cleaning up Facebook Graph API test accounts after each test run to prevent\n  errors.\n- Adding support for `PasswordStrength.prevent_reuse` setting which allows\n  developers to control password reuse settings for their Directories.\n- Adding support for `AccountSchema` and `Field` resources.\n- Adding tests for new `AccountSchema` and `Field` resources.\n- Supporting MFA, and all new MFA resources.\n- Adding tests for all new MFA functionality.\n- Supporting `use_subdomain` option for IDSite redirect logic.\n- Supporting `ApiKey.name` and `ApiKey.description` resources fields.\n- Fixing broken MFA tests after accidentally messing them up.\n- Updating tox testing tool stuff. It now works in more environments, and more\n  better-er =)\n- Fixing security issue / performance issue regarding local JWT validation. We\n  now do this properly in a faster, more efficient manner.\n- Supporting manual account linking. This now includes the new resources and\n  tests.\n- Supporting email blacklist / whitelist policies for Directories.\n\n\n",
+            "v": "<2.5.0"
+        }
+    ],
+    "stormpath-sdk": [
         {
             "changelog": "-------------\n\n**Released December 12, 2016.**\n\n- Fixing broken tests.\n- Adding support for `Account.password_modified_at` property.\n- Adding support for `Error.request_id` property.\n- Simplifying Travis build scripts for speed.\n- Re-arranging private SSH key files for builds.\n- Cleaning up Facebook Graph API test accounts after each test run to prevent\n  errors.\n- Adding support for `PasswordStrength.prevent_reuse` setting which allows\n  developers to control password reuse settings for their Directories.\n- Adding support for `AccountSchema` and `Field` resources.\n- Adding tests for new `AccountSchema` and `Field` resources.\n- Supporting MFA, and all new MFA resources.\n- Adding tests for all new MFA functionality.\n- Supporting `use_subdomain` option for IDSite redirect logic.\n- Supporting `ApiKey.name` and `ApiKey.description` resources fields.\n- Fixing broken MFA tests after accidentally messing them up.\n- Updating tox testing tool stuff. It now works in more environments, and more\n  better-er =)\n- Fixing security issue / performance issue regarding local JWT validation. We\n  now do this properly in a faster, more efficient manner.\n- Supporting manual account linking. This now includes the new resources and\n  tests.\n- Supporting email blacklist / whitelist policies for Directories.\n\n\n",
             "v": "<2.5.0"
