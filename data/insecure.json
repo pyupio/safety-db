@@ -43,6 +43,9 @@
     "bepasty": [
         "<0.3.0"
     ],
+    "bioblend": [
+        "<0.6.1"
+    ],
     "birdhousebuilder.recipe.nginx": [
         "<0.1.5"
     ],
