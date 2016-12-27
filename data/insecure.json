@@ -92,6 +92,9 @@
     "collective.documentviewer": [
         "<1.5.1"
     ],
+    "collective.fbshare": [
+        "<0.3.0"
+    ],
     "collective.js.datatables": [
         "<4.1.1"
     ],
