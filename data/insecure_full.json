@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4899,6 +4899,12 @@
         {
             "changelog": " Renamed to PyUpdater\n\nUpdated\n\n  - Client\n\n    - Better error handling\n\n  - PyUpdater\n\n    - Using json to store config data\n    - Less IO during execution\n    - Header performance improvements - upstream\n    - Central db object\n\nFixed\n\n  - Client\n\n    - Handling of download with corresponding hash\n\n  - PyUpdater\n\n    - session fixation attacks and potentially cookie stealing - upstream\n    - Not writing config file when cleaning repo\n\nRemoved\n\n  - PyUpdater\n\n    - RC4 from default cipher list - upstream\n    - Old migration code\n    - Removed old json version file\n    - Download progress to stdout\n    - Unused imports\n\n\n",
             "v": "<0.20.0"
+        }
+    ],
+    "pywb": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~~~~\n\n* s3 loading: support ``s3://`` scheme in block loader, allowing for loading index and archive files from s3. ``boto`` library must be installed seperately\n  via ``pip install boto``. Attempt default boto auth path, and if that fails, attempt anonymous s3 connection.\n  \n* Wombat/Client-Side Rewrite Customizations: New ``rewrite_opts.client`` settings from ``config.yaml`` are passed directly to wombat as json. \n  \n  Allows for customizing wombat as needed. Currently supported options are: ``no_rewrite_prefixes`` for ignoring rewrite\n  on certain domains, and ``skip_dom``, ``skip_setAttribute`` and ``skip_postmessage`` options for disabling \n  those overrides. Example usage in config:\n  \n  ::\n\n    rewrite_opts:\n        ...\n        client:\n            no_rewrite_prefixes: ['http://dont-rewrite-this.example.com/']\n  \n            skip_setAttribute: true\n            skip_dom: true\n            skip_postmessage: true\n  \n  \n* Revamp template setup: All templates now use shared env, which is created on first use or can be explicitly set (if embedding)\n  via ``J2TemplateView.init_shared_env()`` call. Support for specifiying a base env, as well as custom template lookup paths also provided\n  \n* Template lookup paths can also be set via config options ``templates_dirs``. The default list is: ``templates``, ``.``, ``/`` in that order.\n\n* Embedding improvements: move custom env (``REL_REQUEST_URI`` setup) into routers, should be able to call router created by ``create_wb_router()`` \n  directly with WSGI enviorn and receive a callable response.\n\n* Embedding improvements: If set, the contents of ``environ['pywb.template_params']`` dictionary are added directly to Jinja context, allowing for custom template\n  params to be passed to pywb jinja templates.\n\n* Root collection support: Can specify a route with `''` which will be the root collection. Fix routing paths to ensure root collection is checked last.\n\n* Customization: support custom route_class for cdx server and pass wbrequest to ``not_found_html``  error handlers.\n\n* Manager: Validate collection names to start with word char and contain alphanum or dash only.\n\n* CLI refactor: easier to create custom cli apps and pass params, inherit shared params. ``live-rewrite-server`` uses new system cli system,\n  defaults to framed inverse mode. Also runs on ``/live/`` path by default. See ``live-rewrite-server -h`` for a list of current options.\n\n* Add ``cookie_scope: removeall`` cookie rewriter, which will, remove all cookies from replay headers.\n\n* Security: disable file:// altogether for live rewrite path.\n\n* Fuzzy match: better support for custom replace string >1 character: leave string, and strip remainder before fuzzy query.\n\n* Urlrewriter and wburl fixes for various corner cases.\n\n* Rangecache: use url as key if digest not present.\n\n* Framed replay: attempt to mitigate chrome OS X scrolling issue by disabling ``-webkit-transform: none`` in framed mode. \n  Improves scrolling on many pages but not always consistent (a chrome bug).\n\n\n",
+            "v": "<0.9.5"
         }
     ],
     "pywebsite": [
