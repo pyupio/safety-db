@@ -926,6 +926,9 @@
     "pyupdater": [
         "<0.20.0"
     ],
+    "pyvisa": [
+        "<0.9"
+    ],
     "pywebsite": [
         "<0.1.14pre",
         "<0.1.9pre"
