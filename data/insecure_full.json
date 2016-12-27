@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5355,6 +5355,12 @@
         {
             "changelog": "------------------\n\nBugfixes\n~~~~~~~~\n\n- Removed `AI_ADDRCONFIG` from the call to `getaddrinfo`, this resolves an\n  issue whereby `getaddrinfo` wouldn't return any addresses to `bind` to on\n  hosts where there is no internet connection but localhost is requested to be\n  bound to. See https://github.com/Pylons/waitress/issues/131 for more\n  information.\n\nDeprecations\n~~~~~~~~~~~~\n\n- Python 2.6 is no longer supported.\n\nFeatures\n~~~~~~~~\n\n- IPv6 support\n\n- Waitress is now able to listen on multiple sockets, including IPv4 and IPv6.\n  Instead of passing in a host/port combination you now provide waitress with a\n  space delineated list, and it will create as many sockets as required.\n\n  .. code-block:: python\n\n\tfrom waitress import serve\n\tserve(wsgiapp, listen='0.0.0.0:8080 [::]:9090 *:6543')\n\nSecurity\n~~~~~~~~\n\n- Waitress will now drop HTTP headers that contain an underscore in the key\n  when received from a client. This is to stop any possible underscore/dash\n  conflation that may lead to security issues. See\n  https://github.com/Pylons/waitress/pull/80 and\n  https://www.djangoproject.com/weblog/2015/jan/13/security/\n",
             "v": "<1.0.0"
+        }
+    ],
+    "werkzeug": [
+        {
+            "changelog": "-----------\n\nReleased on April 24th, codename Schlagbohrer.\n\n- requires Python 2.4 now\n- fixed a bug in :class:`~contrib.IterIO`\n- added :class:`MIMEAccept` and :class:`CharsetAccept` that work like the\n  regular :class:`Accept` but have extra special normalization for mimetypes\n  and charsets and extra convenience methods.\n- switched the serving system from wsgiref to something homebrew.\n- the :class:`Client` now supports cookies.\n- added the :mod:`~werkzeug.contrib.fixers` module with various\n  fixes for webserver bugs and hosting setup side-effects.\n- added :mod:`werkzeug.contrib.wrappers`\n- added :func:`is_hop_by_hop_header`\n- added :func:`is_entity_header`\n- added :func:`remove_hop_by_hop_headers`\n- added :func:`pop_path_info`\n- added :func:`peek_path_info`\n- added :func:`wrap_file` and :class:`FileWrapper`\n- moved `LimitedStream` from the contrib package into the regular\n  werkzeug one and changed the default behavior to raise exceptions\n  rather than stopping without warning.  The old class will stick in\n  the module until 0.6.\n- implemented experimental multipart parser that replaces the old CGI hack.\n- added :func:`dump_options_header` and :func:`parse_options_header`\n- added :func:`quote_header_value` and :func:`unquote_header_value`\n- :func:`url_encode` and :func:`url_decode` now accept a separator\n  argument to switch between `&` and `;` as pair separator.  The magic\n  switch is no longer in place.\n- all form data parsing functions as well as the :class:`BaseRequest`\n  object have parameters (or attributes) to limit the number of\n  incoming bytes (either totally or per field).\n- added :class:`LanguageAccept`\n- request objects are now enforced to be read only for all collections.\n- added many new collection classes, refactored collections in general.\n- test support was refactored, semi-undocumented `werkzeug.test.File`\n  was replaced by :class:`werkzeug.FileStorage`.\n- :class:`EnvironBuilder` was added and unifies the previous distinct\n  :func:`create_environ`, :class:`Client` and\n  :meth:`BaseRequest.from_values`.  They all work the same now which\n  is less confusing.\n- officially documented imports from the internal modules as undefined\n  behavior.  These modules were never exposed as public interfaces.\n- removed `FileStorage.__len__` which previously made the object\n  falsy for browsers not sending the content length which all browsers\n  do.\n- :class:`SharedDataMiddleware` uses `wrap_file` now and has a\n  configurable cache timeout.\n- added :class:`CommonRequestDescriptorsMixin`\n- added :attr:`CommonResponseDescriptorsMixin.mimetype_params`\n- added :mod:`werkzeug.contrib.lint`\n- added `passthrough_errors` to `run_simple`.\n- added `secure_filename`\n- added :func:`make_line_iter`\n- :class:`MultiDict` copies now instead of revealing internal\n  lists to the caller for `getlist` and iteration functions that\n  return lists.\n- added :attr:`follow_redirect` to the :func:`open` of :class:`Client`.\n- added support for `extra_files` in\n  :func:`~werkzeug.script.make_runserver`\n\n",
+            "v": "<0.5"
         }
     ],
     "wpull": [
