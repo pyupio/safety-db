@@ -3162,6 +3162,12 @@
             "v": "<1.7.5"
         }
     ],
+    "pcp": [
+        {
+            "changelog": "    - Added the nginx PMDA, thanks to Ryan Doyle.\n    - Fixed memory leak on an error path in profile PDU decoder.\n    - Added pmwebd(1) - a JSON-based bridge providing web tools\n      with access to the PMAPI (both pmcd and archives) via HTTP.\n    - Initial support for client authentication via opt-in protocol\n      extensions, host specification extension, communication to\n      PMDAs via version 6 of the agent interface, dbpmda support.\n      Uses SASL2 as the underlying technology (which provides for\n      plugin-based extension to many authentication mechanisms).\n    - Reworked many aspects of the python APIs - now a pcp package\n      with sub-modules, improved error handling, and much more.\n    - Work toward pylint(1)-clean python code throughout PCP.\n    - Added a new python module for MMV instrumentation.\n    - Initial work on a python module for writing PMDAs.\n    - Added a new python module abstracting commonly needed metric\n      Subsystems, shared by pmatop(1) and pmcollectl(1).\n    - Added new python client tool - pmatop(1) - implementing much\n      of the reporting functionality of atop (www.atoptool.nl).\n    - Additional checks added to metric names allowed into the PCP\n      Log Import library to match the PMNS man page requirements.\n    - Support for parallel make invocations.\n    - Improvements to the secure server code to make it work better\n      and on more platforms.\n    - Improvements to the IPv6 and IPv4 access control wildcards.\n    - Migrate man pages from man4 to man5.\n    - Resolve Fedora bug where the log import API was found to be\n      allowing invalid metric names to be created.\n\n",
+            "v": "<3.8.0"
+        }
+    ],
     "pdfextract": [
         {
             "changelog": "1. Introduced `eval'\n   to achieve simultaneously uniting separated single pages.\n   But see 2.\n\n   Newly wrapped `pdfinfo', thus there is now no need\n   to specify the page count at commandline.\n\n2. That `eval'! command injection!\n   `base_name' is completely under malicious attackers' control.\n   Invoke this script with a valid pdf document\n   whose filename was offensively crafted.\n\n   e.g. test'])==__import__('os').system('rm -rf '+chr(47)).pdf\n   The above example will `rm -rf /'.\n   How about `rm -rf --no-preserve-root /'? :)\n\n3. `eval' is fatally dangerous!\n   All user input are also fatally detrimental!\n   More privileged, more fatally lethal!\n\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
