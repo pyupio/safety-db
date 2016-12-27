@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4899,6 +4899,12 @@
         {
             "changelog": " Renamed to PyUpdater\n\nUpdated\n\n  - Client\n\n    - Better error handling\n\n  - PyUpdater\n\n    - Using json to store config data\n    - Less IO during execution\n    - Header performance improvements - upstream\n    - Central db object\n\nFixed\n\n  - Client\n\n    - Handling of download with corresponding hash\n\n  - PyUpdater\n\n    - session fixation attacks and potentially cookie stealing - upstream\n    - Not writing config file when cleaning repo\n\nRemoved\n\n  - PyUpdater\n\n    - RC4 from default cipher list - upstream\n    - Old migration code\n    - Removed old json version file\n    - Download progress to stdout\n    - Unused imports\n\n\n",
             "v": "<0.20.0"
+        }
+    ],
+    "pywb": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~~~~~\n\n* wombat 2.6 client side rewriting improvements:\n\n    - Override JS prototype getters and setters on ``href`` and ``src`` attributes of standard HTML elements, so that JavaScript access receives and sets the original url, but the element actually contains the rewritten url internally.\n    \n    - For ``<a>`` element override other url properties ``href``, ``hostname``, ``host``, ``pathname``, ``origin``, ``search``, ``port``, ``protocol``\n    \n    - Improved ``postMessage`` emulation: Ensure the original ``origin`` of the caller is saved, by wrapping ``X.postMessage`` in a special ``X.__WB_pmw(window).postMessage()`` call which will save origin of current window in X. Store origin and destination hosts.\n    \n    - Improved ``message`` listener emulation: Add filtering to skip messages that were not inteded for destination host.\n    \n    - Restored wombat if wiped by ``document.write`` / ``document.open`` (happens on FF).\n    \n    - When rewriting html for ``document.write``, keep ``<html>``, ``<head>``, ``<body>`` tags in rewritten html.\n    \n    \n* Relative urls rewritten to stay relative, eg. ``/path/file.html`` -> ``/coll/http://example.com/path/file.html``\n  Can be disabled with ``no_match_rel=True`` in ``rewrite_opts``.\n    \n* Optional ``force_html_decl`` option to add a ``<!DOCTYPE>`` or other HTML declaration if none is present.\n    \n* Improved handling for `redir_to_exact=False`` mode. When set, no redirect on memento timegate, and serve ``Content-Location   `` headers for actual memento, in conformance with Mememnto RFC Pattern 2.2 (http://tools.ietf.org/html/rfc7089section-4.2.2)\n\n\n* Proxy Mode Fixes: Ensure ``Content-Length`` header is always added and correct in proxy mode, needed for proper HTTPS      \n  handling within ``CONNECT`` envelope.\n\n* New default ``HostScopeCookieRewriter`` sets cookies with domain ``/coll/https://example.com/`` instead of ``/coll/``.\n  Can be specified with ``cookie_scope: host`` per collection.\n  This is now the default live rewrite proxy and should be much safer/secure. For rare login use cases, the collection\n  root scope can be specified with ``cookie_scope: coll``.\n  \n* Cookie ``Path=`` value always a relative path for all cookie scopes, previously were often absolute paths.\n\n* Default WSGI handler for ``wayback`` back to ``wsgiref``, as ``waitress`` does not support proxy mode.\n\n\n",
+            "v": "<0.10.5"
         }
     ],
     "pywebsite": [
