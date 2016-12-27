@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5031,6 +5031,12 @@
         {
             "changelog": "++++++++++++++++++\n\n**Bugfixes**\n\n- CVE-2015-2296: Fix handling of cookies on redirect. Previously a cookie\n  without a host value set would use the hostname for the redirected URL\n  exposing requests users to session fixation attacks and potentially cookie\n  stealing. This was disclosed privately by Matthew Daley of\n  `BugFuzz <https://bugfuzz.com>`_. This affects all versions of requests from\n  v2.1.0 to v2.5.3 (inclusive on both ends).\n\n- Fix error when requests is an ``install_requires`` dependency and ``python\n  setup.py test`` is run. (2462)\n\n- Fix error when urllib3 is unbundled and requests continues to use the\n  vendored import location.\n\n- Include fixes to ``urllib3``'s header handling.\n\n- Requests' handling of unvendored dependencies is now more restrictive.\n\n**Features and Improvements**\n\n- Support bytearrays when passed as parameters in the ``files`` argument.\n  (2468)\n\n- Avoid data duplication when creating a request with ``str``, ``bytes``, or\n  ``bytearray`` input to the ``files`` argument.\n\n",
             "v": "<2.6.0"
+        }
+    ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 286 - bunjiboys - Added Seoul region AWS Account IDs to import scripts\n- PR 291 - sbasgall - Corrected ignore_list.py variable names and help strings\n- PR 284 - mikegrima - Fixed cross-account root reporting for ES service (Issue 283)\n- PR 293 - mikegrima - Updated quickstart documentation to remove permission wildcards (Issue 287)\n- PR 301 - monkeysecurity - iamrole watcher can now handle many more roles (1000+) and no longer times out.\n- PR 316 - DenverJ - Handle database exceptions by cleaning up session.\n- PR 289 - delikat - Persist custom role names on account creation\n- PR 321 - monkeysecurity - Item List and Item View will no longer display disabled issues.\n- PR 322 (PR 308) - llange - Ability to add AWS owned managed policies to ignore list by ARN (Issue 148)\n- PR 323 - snixon - Breaks check_securitygroup_any into ingress and egress (Issue 239)\n- PR 309 - DenverJ -  Significant database query optimizations by tuning itemrevision retrievals\n- PR 324 - mikegrima - Handling invalid ARNs more consistently between watchers (Issue 248)\n- PR 317 - ollytheninja - Add Role Based Access Control\n- PR 327 - monkeysecurity - Added Flask-Security's SECURITY_TRACKABLE to backend and UI\n- PR 328 - monkeysecurity - Added ability to parse AWS service \"ARNs\" like events.amazonaws.com as well as ARNS that use * for the account number like `arn:aws:s3:\u200b*:*\u200b:some-s3-bucket`\n- PR 314 - pdbogen - Update Logging to have the ability to log to stdout, useful for dockerizing.\n\nHotfixes:\n\n- s3_acl_compare_lowercase: AWS now returns S3 ACLs with a lowercased owner.  security_monkey now does a case insensitive compare\n- longer_resource_ids. Updating DB to handle longer AWS resource IDs: https://aws.amazon.com/blogs/aws/theyre-here-longer-ec2-resource-ids-now-available/\n- Removed requests from requirements.txt/setup.py as it was pinned to a very old version and not directly required (Issue 312)\n- arn_condition_awssourcearn_can_be_list. Updated security_monkey to be able to handle a list of ARNS in a policy condition.\n- ignore_list_fails_on_empty_string: security_monkey now properly handles an ignorelist entry containing a prefix string of length 0.\n- protocol_sslv2_deprecation: AWS stopped returning whether an ELB listener supported SSLv2.  Fixed security_monkey to handle the new format correctly.\n\nImportant Notes:\n\n- security_monkey IAM roles now require a new permission: `iam:listattachedrolepolicies`\n- Your security_monkey config file should contain a new flag: `SECURITY_TRACKABLE = True`\n- You'll need to rerun `python setup.py install` to obtain the new dependencies.\n\nContributors:\n\n- bunjiboys\n- sbasgall\n- mikegrima\n- DenverJ\n- delikat\n- snixon\n- ollytheninja\n- pdbogen\n- monkeysecurity\n\n\n",
+            "v": "<0.5.0"
         }
     ],
     "sentry": [
