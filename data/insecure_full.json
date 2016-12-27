@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4899,6 +4899,12 @@
         {
             "changelog": " Renamed to PyUpdater\n\nUpdated\n\n  - Client\n\n    - Better error handling\n\n  - PyUpdater\n\n    - Using json to store config data\n    - Less IO during execution\n    - Header performance improvements - upstream\n    - Central db object\n\nFixed\n\n  - Client\n\n    - Handling of download with corresponding hash\n\n  - PyUpdater\n\n    - session fixation attacks and potentially cookie stealing - upstream\n    - Not writing config file when cleaning repo\n\nRemoved\n\n  - PyUpdater\n\n    - RC4 from default cipher list - upstream\n    - Old migration code\n    - Removed old json version file\n    - Download progress to stdout\n    - Unused imports\n\n\n",
             "v": "<0.20.0"
+        }
+    ],
+    "pywb": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~~~~~\n\n* Support for Python 3.3+ in addition to Python 2.6+\n\n* statusheaders: ``to_str()`` and ``to_bytes()`` to reconstruct status line and headers, with option to exclude certain headers\n\n* cdxobject improvements:\n   - ``conv_to_json()`` for serializing to json, with optional list of fields\n   - ``to_json()`` and ``to_cdxj()``\n   - Default JSON serialization includes all fields, except starting with ``_``\n   - Default CDXJ serialization includes all fields, except urlkey and timestamp\n   - Comparison operators for cdxobject\n   - Reading cdxline as byte buffer, individual fields as strings (python 3)\n  \n* redis: full testing of ``zrangebylex`` with new fakeredis\n\n* timeutils: add ``datetime_to_iso_date``\n  \n* cdx indexing refactor: rename ``DefaultRecordIter`` -> ``DefaultRecordParser``, a callable which creates an iterator\n\n* warcrecord loader fully read streams with no content-length, don't force 204\n\n* cookie improvements:\n   - use httplib cookie pairs directly to avoid concatenated headers (eg. for ``Set-Cookie``)\n   - don't remove ``max-age`` and ``expires`` when in live rewriting mode\n   - convert `` UTC`` -> `` GMT`` in expires to avoid Python parsing issues\n   - remove ``secure`` only if not serving from https\n   - support custom cookie rewriter\n   \n* wombat/client side improvements:\n   - rewrite ``frameElement`` -> ``WB_wombat_frameElement``, set to null for top replay frame\n   - Allow changing of ``document.domain``\n   - Rewrite ``<form action>`` and <input value>`` in ``rewrite_elem``\n \n* Tests: improved tests, replaced doctests of dict output to regular tests for improved compatibility with different python implementations\n  \n  \n\n\n\n",
+            "v": "<0.30.0"
         }
     ],
     "pywebsite": [
