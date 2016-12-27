@@ -4104,6 +4104,12 @@
             "v": "<1.3.6"
         }
     ],
+    "pyopenssl": [
+        {
+            "changelog": "-------------------\n\nThis is the first release under full stewardship of PyCA.\nWe have made *many* changes to make local development more pleasing.\nThe test suite now passes both on Linux and OS X with OpenSSL 0.9.8, 1.0.1, and 1.0.2.\nIt has been moved to `pytest <https://pytest.org/>`_, all CI test runs are part of `tox <https://testrun.org/tox/>`_ and the source code has been made fully `flake8 <https://flake8.readthedocs.io/>`_ compliant.\n\nWe hope to have lowered the barrier for contributions significantly but are open to hear about any remaining frustrations.\n\n\nBackward-incompatible changes:\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n- Python 3.2 support has been dropped.\n  It never had significant real world usage and has been dropped by our main dependency ``cryptography``.\n  Affected users should upgrade to Python 3.3 or later.\n\n\nDeprecations:\n^^^^^^^^^^^^^\n\n- The support for EGD has been removed.\n  The only affected function ``OpenSSL.rand.egd()`` now uses ``os.urandom()`` to seed the internal PRNG instead.\n  Please see `pyca/cryptography1636 <https://github.com/pyca/cryptography/pull/1636>`_ for more background information on this decision.\n  In accordance with our backward compatibility policy ``OpenSSL.rand.egd()`` will be *removed* no sooner than a year from the release of 16.0.0.\n\n  Please note that you should `use urandom <https://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers/>`_ for all your secure random number needs.\n- Python 2.6 support has been deprecated.\n  Our main dependency ``cryptography`` deprecated 2.6 in version 0.9 (2015-05-14) with no time table for actually dropping it.\n  pyOpenSSL will drop Python 2.6 support once ``cryptography`` does.\n\n\nChanges:\n^^^^^^^^\n\n- Fixed ``OpenSSL.SSL.Context.set_session_id``, ``OpenSSL.SSL.Connection.renegotiate``, ``OpenSSL.SSL.Connection.renegotiate_pending``, and ``OpenSSL.SSL.Context.load_client_ca``.\n  They were lacking an implementation since 0.14.\n  `422 <https://github.com/pyca/pyopenssl/pull/422>`_\n- Fixed segmentation fault when using keys larger than 4096-bit to sign data.\n  `428 <https://github.com/pyca/pyopenssl/pull/428>`_\n- Fixed ``AttributeError`` when ``OpenSSL.SSL.Connection.get_app_data()`` was called before setting any app data.\n  `304 <https://github.com/pyca/pyopenssl/pull/304>`_\n- Added ``OpenSSL.crypto.dump_publickey()`` to dump ``OpenSSL.crypto.PKey`` objects that represent public keys, and ``OpenSSL.crypto.load_publickey()`` to load such objects from serialized representations.\n  `382 <https://github.com/pyca/pyopenssl/pull/382>`_\n- Added ``OpenSSL.crypto.dump_crl()`` to dump a certificate revocation list out to a string buffer.\n  `368 <https://github.com/pyca/pyopenssl/pull/368>`_\n- Added ``OpenSSL.SSL.Connection.get_state_string()`` using the OpenSSL binding ``state_string_long``.\n  `358 <https://github.com/pyca/pyopenssl/pull/358>`_\n- Added support for the ``socket.MSG_PEEK`` flag to ``OpenSSL.SSL.Connection.recv()`` and ``OpenSSL.SSL.Connection.recv_into()``.\n  `294 <https://github.com/pyca/pyopenssl/pull/294>`_\n- Added ``OpenSSL.SSL.Connection.get_protocol_version()`` and ``OpenSSL.SSL.Connection.get_protocol_version_name()``.\n  `244 <https://github.com/pyca/pyopenssl/pull/244>`_\n- Switched to ``utf8string`` mask by default.\n  OpenSSL formerly defaulted to a ``T61String`` if there were UTF-8 characters present.\n  This was changed to default to ``UTF8String`` in the config around 2005, but the actual code didn't change it until late last year.\n  This will default us to the setting that actually works.\n  To revert this you can call ``OpenSSL.crypto._lib.ASN1_STRING_set_default_mask_asc(b\"default\")``.\n  `234 <https://github.com/pyca/pyopenssl/pull/234>`_\n\n\n----\n\n\nOlder Changelog Entries\n-----------------------\n\nThe changes from before release 16.0.0 are preserved in the `repository <https://github.com/pyca/pyopenssl/blob/master/doc/ChangeLog_old.txt>`_.\n",
+            "v": "<16.0.0"
+        }
+    ],
     "pypicloud": [
         {
             "changelog": "-----------------\n* Bug fix: Security bug in user auth (:sha:`001e8a5`)\n* Bug fix: Package caching from pypi was slightly broken (:sha:`065f6c5`)\n* Bug fix: ``ppc-migrate`` works when migrating to the same storage type (:sha:`45abcde`)\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
