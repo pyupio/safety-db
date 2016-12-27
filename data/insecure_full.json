@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5205,6 +5205,12 @@
         {
             "changelog": "''''''''''''''''''''''''''\n\nSecurity-related Bugfix\n-----------------------\n\n- Fix flaw that would allow servers to cause undetected corruption when\n  retrieving the contents of mutable files (both SDMF and MDMF). (`1654`_)\n\n.. _`1654`: https://tahoe-lafs.org/trac/tahoe-lafs/ticket/1654\n\n\n",
             "v": "<1.9.1"
+        }
+    ],
+    "telemeta": [
+        {
+            "changelog": "\n    * Added python-xml parser dependency :\n      xml tag files are now exported to user default directory and in dir_in.\n    * Added par2 dependency : creates secure recovery key file with the \"par2\" method\n    * Added python-mutagen dependency : new tagging functions\n    * Cleaned : audio functions\n    * Fixed : help page\n    * Debianized\n\n -- Guillaume Pellerin <pellerinparisson.com>  Tue, 01 Nov 2006 00:25:46 +0100\n\n",
+            "v": "<0.2.31"
         }
     ],
     "textract": [
