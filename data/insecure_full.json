@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5031,6 +5031,12 @@
         {
             "changelog": "++++++++++++++++++\n\n**Bugfixes**\n\n- CVE-2015-2296: Fix handling of cookies on redirect. Previously a cookie\n  without a host value set would use the hostname for the redirected URL\n  exposing requests users to session fixation attacks and potentially cookie\n  stealing. This was disclosed privately by Matthew Daley of\n  `BugFuzz <https://bugfuzz.com>`_. This affects all versions of requests from\n  v2.1.0 to v2.5.3 (inclusive on both ends).\n\n- Fix error when requests is an ``install_requires`` dependency and ``python\n  setup.py test`` is run. (2462)\n\n- Fix error when urllib3 is unbundled and requests continues to use the\n  vendored import location.\n\n- Include fixes to ``urllib3``'s header handling.\n\n- Requests' handling of unvendored dependencies is now more restrictive.\n\n**Features and Improvements**\n\n- Support bytearrays when passed as parameters in the ``files`` argument.\n  (2468)\n\n- Avoid data duplication when creating a request with ``str``, ``bytes``, or\n  ``bytearray`` input to the ``files`` argument.\n\n",
             "v": "<2.6.0"
+        }
+    ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 410/405 - zollman - Custom Watcher/Auditor Support. (Dynamic Loading)\n- PR 412 - llange - Google SSO Fixes\n- PR 409 - kyelberry - Fixed Report URLs in UI.\n- PR 413 - markofu - Better handle IAM SSL certificates that we cannot parse.\n- PR 411 - zollman - Many, many new watchers and auditors.\n\n\nNew Watchers:\n\n    * CloudTrail\n    * AWSConfig\n    * AWSConfigRecorder\n    * DirectConnect::Connection\n    * EC2::EbsSnapshot\n    * EC2::EbsVolume\n    * EC2::Image\n    * EC2::Instance\n    * ENI\n    * KMS::Grant\n    * KMS::Key\n    * Lambda\n    * RDS::ClusterSnapshot\n    * RDS::DBCluster\n    * RDS::DBInstace\n    * RDS::Snapshot\n    * RDS::SubnetGroup\n    * Route53\n    * Route53Domains\n    * TrustedAdvisor\n    * VPC::DHCP\n    * VPC::Endpoint\n    * VPC::FlowLog\n    * VPC::NatGateway\n    * VPC::NetworkACL\n    * VPC::Peering\n\nImportant Notes:\n\n- New permissions required:\n    - cloudtrail:describetrails\n    - config:describeconfigrules\n    - config:describeconfigurationrecorders\n    - directconnect:describeconnections\n    - ec2:describeflowlogs\n    - ec2:describeimages\n    - ec2:describenatgateways\n    - ec2:describenetworkacls\n    - ec2:describenetworkinterfaces\n    - ec2:describesnapshots\n    - ec2:describevolumes\n    - ec2:describevpcendpoints\n    - ec2:describevpcpeeringconnections,\n    - iam:getaccesskeylastused\n    - iam:listattachedgrouppolicies\n    - iam:listattacheduserpolicies\n    - lambda:listfunctions\n    - rds:describedbclusters\n    - rds:describedbclustersnapshots\n    - rds:describedbinstances\n    - rds:describedbsnapshots\n    - rds:describedbsubnetgroups\n    - redshift:describeclusters\n    - route53domains:listdomains\n\nContributors:\n\n- zollman\n- kyleberry\n- llange\n- markofu\n- monkeysecurity\n\n",
+            "v": "<0.7.0"
         }
     ],
     "sentry": [
