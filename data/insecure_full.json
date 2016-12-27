@@ -3067,6 +3067,12 @@
             "v": "<0.7.0"
         }
     ],
+    "onegov.form": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~~\n\n- HTML escapes labels in the dynamic formbuilder for security.\n  [href]\n\n",
+            "v": "<0.16.1"
+        }
+    ],
     "onixcheck": [
         {
             "changelog": "------------------\n\n* Added CLI-support for fast directory traversal validation\n* Secured XML-Parsing via defusedxml\n* Catch basic XML syntax errors\n* Windows standalone binary builds\n\n",
