@@ -1797,6 +1797,12 @@
             "v": ">=1.9,<1.9rc2"
         }
     ],
+    "django-absoluteuri": [
+        {
+            "changelog": "------------------\n\n- First release on PyPI.\n\n\nRelease Process\n===============\n\ndjango-absoluteuri uses `zest.releaser`_ to manage releases. For a fuller\nunderstanding of the release process, please read zest.releaser's\ndocumentation, this document is more of a cheat sheet.\n\nGetting Setup\n-------------\n\nYou will need to install zest.releaser::\n\n    $ pip install zest.releaser\n\nYou will also need to configure your ``.pypirc`` file to have the PyPI\ncredentials. Ask one of the other Fusionbox Programmers how to do that.\n\nReleases\n--------\n\nThe process for releases is the same regardless of whether it's a patch, minor,\nor major release. It is as follows.\n\n1. Add the changes to ``CHANGES.rst``. Don't commit.\n2. Run the ``longtest`` command to make sure that the ``README.rst`` and\n   ``CHANGES.rst`` files are valid.\n3. Commit changes with a commit message like \"CHANGES for 1.1.0\".\n4. Run the ``fullrelease`` command.\n\n\nEditing the Changelog\n---------------------\n\nEditing the changelog is very important. It is where we write down all of our\nrelease notes and upgrade instructions. Please spend time when editing the\nchangelog.\n\nOne way to help getting the changes for new versions is to run the following\ncommands::\n\n    $ git tag | sort -rn  figure out the latest tag (imagine it's 1.0.0)\n    1.0.0\n    $ git log HEAD ^1.0.0\n\nThis will show all the commits that are in HEAD that weren't in the last\nrelease.\n\nIf possible, it's nice to add a credit line with the author's name and the\nissue number of GitHub.\n\nDeciding on a Version Number\n----------------------------\n\nHere are some nominal guidelines for deciding on version numbers when cutting\nreleases. If you feel the need to deviate from them, go ahead. If you find\nyourself deviating every time, please update this document.\n\nThis is not semver, but it's similar.\n\nPatch Release (1.0.x)\n^^^^^^^^^^^^^^^^^^^^^\n\nBug fixes, documentation, and general project maintenance.\n\nAvoid backwards incompatible changes like the plague.\n\nMinor Release (1.x.0)\n^^^^^^^^^^^^^^^^^^^^^\n\nNew features, and anything in patch releases.\n\nTry to avoid backwards incompatible changes, but if you feel like you need\n(especially for security), it's acceptable.\n\nMajor Release (x.0.0)\n^^^^^^^^^^^^^^^^^^^^^\n\nReally Cool New Features, and anything that you include in a minor release.\n\nBackwards incompatibility is more acceptable here, although still frowned upon.\n\n\nAdditional Reading\n------------------\n\n- `zest.releaser Version handling <http://zestreleaser.readthedocs.org/en/latest/versions.html>`_\n- `PEP 396 - Module Version Numbers <https://www.python.org/dev/peps/pep-0396/>`_\n- `PEP 440 - Version Identification and Dependency Specification <https://www.python.org/dev/peps/pep-0396/>`_\n\n.. _zest.releaser: http://zestreleaser.readthedocs.org/\n",
+            "v": "<1.0.0"
+        }
+    ],
     "django-access-tokens": [
         {
             "changelog": "------------------\n\n**SECURITY UPDATE:** Fixing scoping of permissions where the token provides a\nsmaller subset of the required permissions. As an extreme case, an access token\ngranting no permissions could be used to access any permissions on the site.\n\n**AFFECTED SITES:** Since a token cannot be generated without knowledge of the\nsecret key, attackers **cannot** access arbitrary resources using this exploit. However,\nan access token that proves *some*, but not all of the required permissions for a\nresource can be used to access that resource. If the access token provides additional\npermissions not required by the resource, then authorization will still fail.\n\nIn essence, the security was back-to-front. Rather than tokens being required to be a\n*superset* of the required permissions, tokens were, in fact, required to be a *subset*\nof the required permissions.\n\nSites that provide access tokens for the exact set of required permissions are unaffected\nby this exploit.\n\n**RESOLUTION:** The logic for validating an access token has been updated to correctly\nvalidate that a received access token is a *superset* of the required permissions.\n\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
