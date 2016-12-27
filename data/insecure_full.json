@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5355,6 +5355,12 @@
         {
             "changelog": "------------------\n\nBugfixes\n~~~~~~~~\n\n- Removed `AI_ADDRCONFIG` from the call to `getaddrinfo`, this resolves an\n  issue whereby `getaddrinfo` wouldn't return any addresses to `bind` to on\n  hosts where there is no internet connection but localhost is requested to be\n  bound to. See https://github.com/Pylons/waitress/issues/131 for more\n  information.\n\nDeprecations\n~~~~~~~~~~~~\n\n- Python 2.6 is no longer supported.\n\nFeatures\n~~~~~~~~\n\n- IPv6 support\n\n- Waitress is now able to listen on multiple sockets, including IPv4 and IPv6.\n  Instead of passing in a host/port combination you now provide waitress with a\n  space delineated list, and it will create as many sockets as required.\n\n  .. code-block:: python\n\n\tfrom waitress import serve\n\tserve(wsgiapp, listen='0.0.0.0:8080 [::]:9090 *:6543')\n\nSecurity\n~~~~~~~~\n\n- Waitress will now drop HTTP headers that contain an underscore in the key\n  when received from a client. This is to stop any possible underscore/dash\n  conflation that may lead to security issues. See\n  https://github.com/Pylons/waitress/pull/80 and\n  https://www.djangoproject.com/weblog/2015/jan/13/security/\n",
             "v": "<1.0.0"
+        }
+    ],
+    "web.py": [
+        {
+            "changelog": "\n* fix: for web.background gotcha ([133079](http://bugs.launchpad.net/webpy/+bug/133079))\n* fix: for postgres unicode bug ([177265](http://bugs.launchpad.net/webpy/+bug/177265))\n* fix: web.profile behavior in python 2.5 ([133080](http://bugs.launchpad.net/webpy/+bug/133080))\n* fix: only uppercase HTTP methods are allowed. ([176415](http://bugs.launchpad.net/webpy/+bug/176415))\n* fix: transaction error in with statement ([125118](http://bugs.launchpad.net/webpy/+bug/125118))\n* fix: fix in web.reparam ([162085](http://bugs.launchpad.net/webpy/+bug/162085))\n* fix: various unicode issues ([137042](http://bugs.launchpad.net/webpy/+bug/137042), [180510](http://bugs.launchpad.net/webpy/+bug/180510), [180549](http://bugs.launchpad.net/webpy/+bug/180549), [180653](http://bugs.launchpad.net/webpy/+bug/180653))\n* new: support for https\n* new: support for secure cookies\n* new: sendmail\n* new: htmlunquote\n\n\n",
+            "v": "<0.23"
         }
     ],
     "wpull": [
