@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5117,6 +5117,12 @@
         {
             "changelog": "\n  - ftp-cloudfs version bumped to 0.26.1 as it fixes a security bug.\n\n2014-03-20 Juan Martinez <juanmemset.com>\n\n",
             "v": "<0.13.1"
+        }
+    ],
+    "soapfish": [
+        {
+            "changelog": "------------------\n\nProject has been renamed to `soapfish` to distinguish it from the legacy\n`soapbox` project and allow for publishing the project on PyPI. Note that the\nrename effectively makes it backwards incompatible with previous releases due\nto API breakage.\n\nDue to lack of time to maintain the original `soapbox` project, `soapbox` been\nretired by Flight Data Services who now contribute to and recommend the use of\nthe `soapfish` fork.\n\n- **Security:**\n  - Fixed potential security issue - pattern restrictions were not applied correctly\n- **Features:**\n  - Add support for xsd.date (date range currently limited by datetime.date)\n  - Add support relative schema paths (49)\n  - Add support to string restrictions length, minLength, maxLength, whiteSpace (67)\n  - Add support for choice indicator in ComplexTypes (39)\n    - Fixes validation of matching XML documents - previously sequences were always assumed - and code generation from WSDL/XSD.\n    - _Patch contributed by Martin Mrose, tests written by Felix Schwarz_\n  - Implemented a dispatcher for Flask (53)\n  - Implement service.route function to avoid changes to generated code (68)\n  - Changed to use `requests` instead of `httplib2`.\n  - Added support for multiple inline schema imports and includes.\n  - Added support for import of other WSDL documents.\n  - Support for reordering of schema imports and includes and handle circular imports.\n- **Bug Fixes:**\n  - Make xsd.Decimal field accept Python Decimal (52)\n  - Schema validation now also uses imported schemas correctly\n  - Various fixes for `wsdl2py` and `xsd2py` when using Python 3\n  - Fix exception in `SOAPDispatcher` when a handler does not return a `SOAPResponse`\n  - Fix bad WSDL generation due to unresolved type references\n  - Correctly apply pattern restrictions for simple types\n  - Pattern restriction was not correctly serialized when generating schemas\n  - Omit `minOccurs=1` and `maxOccurs=1` in `xsd2py` as these are the default.\n    (The latter produces invalid code because `xsd.Element` doesn't support it.)\n  - Restored ability to validate parsed XML using a soapfish schema in `ComplexType`\n  - Fixed WSDL classes to more closely match the WSDL specifications.\n  - Fixed WSDL classes to correctly define SOAP extensibility elements.\n  - Removed reverse references from WSDL classes.\n  - Fixed query string handling in dispatch to be more robust.\n  - Support importing documents over HTTPS.\n  - Fixed detection of XML schema namespaces.\n  - Attempts to fix handling of remote vs local imports.\n- **Miscellaneous:**\n  - Renamed `SoapboxRequest` and `SoapboxResponse` to `SOAPRequest` and `SOAPResponse` respectively.\n  - Improved testing against different versions of Python, Django & Flask.\n  - Improved entry points for generation scripts - additional flags, etc.\n  - Dropped support for Django < 1.6\n  - Moved to using an external dependency for `iso8601`\n\n",
+            "v": "<0.6.0"
         }
     ],
     "soappy": [
