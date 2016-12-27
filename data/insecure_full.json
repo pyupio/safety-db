@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5141,6 +5141,12 @@
         {
             "changelog": "=========================\n\n  * Fix permission checks. Security issue, anybody could edit photos.\n  * Fix broken XHTML.\n  * Make timezones more flexible. Can specify UTC+nn or UTC-nn for imports.\n  * Improve photo editor, have links to most popular items.\n  * Fix problems with add person and set person logic.\n  * Limit width of photo summary in css.\n  * Optimize how search string is generated.\n  * Don't use CSRF protection for post requests that don't have side effects.\n\n",
             "v": "<0.8"
+        }
+    ],
+    "starcluster": [
+        {
+            "changelog": "version is *not* compatible with clusters started with older versions of\nStarCluster. Please terminate all clusters before upgrading to 0.95.1.\n\n.. _v0951-fixes:\n\nBug Fixes\n---------\n* cluster: fix max length error when applying cluster tags (348)\n* start: fix default value for ``--no-public-ips`` option (366)\n* cluster: fix for custom security group permissions (356)\n\n.. _version-0.95:\n\n",
+            "v": "<0.95.1"
         }
     ],
     "stargate": [
