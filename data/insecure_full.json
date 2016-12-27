@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4915,6 +4915,12 @@
         {
             "changelog": "  - Security fixes, some vulnerable xml-rpc calls fixed. [ggozad]\n\n",
             "v": "<0.30"
+        }
+    ],
+    "radicale": [
+        {
+            "changelog": "===================\n\nOne feature in this release is **not backward compatible**:\n\n* Use the first matching section for rights (inspired from daald)\n\nNow, the first section matching the path and current user in your custom rights\nfile is used. In the previous versions, the most permissive rights of all the\nmatching sections were applied. This new behaviour gives a simple way to make\nspecific rules at the top of the file independant from the generic ones.\n\nMany **improvements in this release are related to security**, you should\nupgrade Radicale as soon as possible:\n\n* Improve the regex used for well-known URIs (by Unrud)\n* Prevent regex injection in rights management (by Unrud)\n* Prevent crafted HTTP request from calling arbitrary functions (by Unrud)\n* Improve URI sanitation and conversion to filesystem path (by Unrud)\n* Decouple the daemon from its parent environment (by Unrud)\n\nSome bugs have been fixed and little enhancements have been added:\n\n* Assign new items to corret key (by Unrud)\n* Avoid race condition in PID file creation (by Unrud)\n* Improve the docker version (by cdpb)\n* Encode message and commiter for git commits\n* Test with Python 3.5\n\n\n",
+            "v": "<1.1"
         }
     ],
     "rauth": [
