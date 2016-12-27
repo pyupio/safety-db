@@ -832,6 +832,9 @@
     "pymemcache": [
         "<1.3.6"
     ],
+    "pyndn": [
+        "<2.0beta4"
+    ],
     "pypicloud": [
         "<0.2.2"
     ],
