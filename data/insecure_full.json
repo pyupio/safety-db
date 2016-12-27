@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5141,6 +5141,12 @@
         {
             "changelog": "=========================\n\n  * Fix permission checks. Security issue, anybody could edit photos.\n  * Fix broken XHTML.\n  * Make timezones more flexible. Can specify UTC+nn or UTC-nn for imports.\n  * Improve photo editor, have links to most popular items.\n  * Fix problems with add person and set person logic.\n  * Limit width of photo summary in css.\n  * Optimize how search string is generated.\n  * Don't use CSRF protection for post requests that don't have side effects.\n\n",
             "v": "<0.8"
+        }
+    ],
+    "starcluster": [
+        {
+            "changelog": "assigns public IPs for non-default VPC clusters by default now because of the\nfollowing issues:\n\n1. It opens up the VPC to the internet by default which is a security risk\n2. It requires a special VPC configuration (internet gateway attached to the\n   VPC and a route to the gateway with dest CIDR block 0.0.0.0/0 associated\n   with the VPC subnet).  Configuring this automatically (which does not happen\n   currently) would be a security risk and without this configuration\n   StarCluster cannot connect to the VPC nodes even though they've been\n   assigned a public IP.  See :ref:`connect-vpc` for more details.\n\nUsers can still enable public IPs for their non-default VPC clusters via the\n``PUBLIC_IPS`` config setting or the new ``--public-ips`` option to the\n``start`` command assuming they've properly configured their VPC to use public\nIPs. If the VPC hasn't been properly configured for public IPs an error will be\nraised during validation. The ``--no-public-ips`` option has been preserved so\nthat users can disable the config setting (``PUBLIC_IPS``) from the ``start``\ncommand. Please see :ref:`using-vpc` and :ref:`connect-vpc` for more details.\n\nPlease note that this version is *not* compatible with clusters started with\nolder versions of StarCluster. Please terminate all clusters before upgrading\nto 0.95.3.\n\nFeatures\n--------\n* start: add -Q, -p, and --no-spot-master options\n* cluster: update 'Creating cluster' log msg to indicate VPC\n\n.. _v0953-fixes:\n\nBug Fixes\n---------\n* users: pass -n to echo to avoid trailing newlines (375)\n* cluster: do not use public IPs with VPC by default (372)\n* cluster: fix VPC public IPs validation\n\n.. _version-0.95.2:\n\n",
+            "v": "<0.95.3"
         }
     ],
     "stargate": [
