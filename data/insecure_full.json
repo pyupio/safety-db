@@ -2212,6 +2212,12 @@
             "v": "<0.8.1"
         }
     ],
+    "dolfin": [
+        {
+            "changelog": "------------------\n- Add support for solving singular problems with Krylov solvers (PETSc\n  only)\n- Add new typedef dolfin::la_index for consistent indexing with linear\n  algebra backends.\n- Change default unsigned integer type to std::size_t\n- Add support to attaching operator null space to preconditioner\n  (required for smoothed aggregation AMG)\n- Add basic interface to the PETSc AMG preconditioner\n- Make SCOTCH default graph partitioner (GNU-compatible free license,\n  unlike ParMETIS)\n- Add scalable construction of mesh dual graph for mesh partitioning\n- Improve performance of mesh building in parallel\n- Add mesh output to SVG\n- Add support for Facet and cell markers to mesh converted from\n  Diffpack\n- Add support for Facet and cell markers/attributes to mesh converted\n  from Triangle\n- Change interface for auto-adaptive solvers: these now take the goal\n  functional as a constructor argument\n- Add memory usage monitor: monitor_memory_usage()\n- Compare mesh hash in interpolate_vertex_values\n- Add hash() for Mesh and MeshTopology\n- Expose GenericVector::operator{+=,-=,+,-}(double) to Python\n- Add function Function::compute_vertex_values not needing a mesh\n  argument\n- Add support for XDMF and HDF5\n- Add new interface LinearOperator for matrix-free linear systems\n- Remove MTL4 linear algebra backend\n- Rename down_cast --> as_type in C++ / as_backend_type in Python\n- Remove KrylovMatrix interface\n- Remove quadrature classes\n- JIT compiled C++ code can now include a dolfin namespace\n- Expression string parsing now understand C++ namespace such as\n  std::cosh\n- Fix bug in Expression so one can pass min, max\n- Fix bug in SystemAssembler, where mesh.init(D-1, D) was not called\n  before assemble\n- Fix bug where the reference count of Py_None was not increased\n- Fix bug in reading TimeSeries of size smaller than 3\n- Improve code design for Mesh FooIterators to avoid dubious down cast\n- Bug fix in destruction of PETSc user preconditioners\n- Add CellVolume(mesh) convenience wrapper to Python interface for UFL\n  function\n- Fix bug in producing outward pointing normals of BoundaryMesh\n- Fix bug introduced by SWIG 2.0.5, where typemaps of templated\n  typedefs are not handled correctly\n- Fix bug introduced by SWIG 2.0.5, which treated uint as Python long\n- Add check that sample points for TimeSeries are monotone\n- Fix handling of parameter \"report\" in Krylov solvers\n- Add new linear algebra backend \"PETScCusp\" for GPU-accelerated\n  linear algebra\n- Add sparray method in the Python interface of GenericMatrix,\n  requires scipy.sparse\n- Make methods that return a view of contiguous c-arrays, via a NumPy\n  array, keep a reference from the object so it wont get out of scope\n- Add parameter: \"use_petsc_signal_handler\", which enables/disable\n  PETSc system signals\n- Avoid unnecessary resize of result vector for A*b\n- MPI functionality for distributing values between neighbours\n- SystemAssembler now works in parallel with topological/geometric\n  boundary search\n- New symmetric assembler with ability for stand-alone RHS assemble\n- Major speed-up of DirichletBC computation and mesh marking\n- Major speed-up of assembly of functions and expressions\n- Major speed-up of mesh topology computation\n- Add simple 2D and 3D mesh generation (via CGAL)\n- Add creation of mesh from triangulations of points (via CGAL)\n- Split the SWIG interface into six combined modules instead of one\n- Add has_foo to easy check what solver and preconditioners are\n  available\n- Add convenience functions for listing available\n  linear_algebra_backends\n- Change naming convention for cpp unit tests test.cpp -> Foo.cpp\n- Added cpp unit test for GenericVector::operator{-,+,*,/}= for all la\n  backends\n- Add functionality for rotating meshes\n- Add mesh generation based on NETGEN constructive solid geometry\n- Generalize SparsityPattern and STLMatrix to support column-wise\n  storage\n- Add interfaces to wrap PaStiX and MUMPS direct solvers\n- Add CoordinateMatrix class\n- Make STLMatrix work in parallel\n- Remove all tr1::tuple and use boost::tuple\n- Fix wrong link in Python quick reference.\n\n",
+            "v": "<1.1.0"
+        }
+    ],
     "dpaste": [
         {
             "changelog": "----------------\n\n* The API create view has a new argument 'filename' which is used to determine\n  the lexer out of a given filename.\n* Fixed a XSS bug where HTML tags were not properly escaped with the simple\n  ``code`` lexer.\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
