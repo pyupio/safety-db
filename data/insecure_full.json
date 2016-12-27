@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4909,6 +4909,12 @@
         {
             "changelog": "---------------------\n\nBugs fixed\n~~~~~~~~~~\n\n* hash_url fixes for length extension attack, and value equivalence attacks.\n\n\n",
             "v": "<0.1.9pre"
+        }
+    ],
+    "pyxmlsecurity": [
+        {
+            "changelog": "---\n\n*Release date: Mon Jun 24 11:24:20 CEST 2013*\n\n* Bugfixes\n* Protection against wrapping attacks (new API!)\n\n",
+            "v": "<0.9"
         }
     ],
     "qi.jabberhelpdesk": [
