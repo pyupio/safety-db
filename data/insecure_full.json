@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5031,6 +5031,12 @@
         {
             "changelog": "++++++++++++++++++\n\n**Bugfixes**\n\n- CVE-2015-2296: Fix handling of cookies on redirect. Previously a cookie\n  without a host value set would use the hostname for the redirected URL\n  exposing requests users to session fixation attacks and potentially cookie\n  stealing. This was disclosed privately by Matthew Daley of\n  `BugFuzz <https://bugfuzz.com>`_. This affects all versions of requests from\n  v2.1.0 to v2.5.3 (inclusive on both ends).\n\n- Fix error when requests is an ``install_requires`` dependency and ``python\n  setup.py test`` is run. (2462)\n\n- Fix error when urllib3 is unbundled and requests continues to use the\n  vendored import location.\n\n- Include fixes to ``urllib3``'s header handling.\n\n- Requests' handling of unvendored dependencies is now more restrictive.\n\n**Features and Improvements**\n\n- Support bytearrays when passed as parameters in the ``files`` argument.\n  (2468)\n\n- Avoid data duplication when creating a request with ``str``, ``bytes``, or\n  ``bytearray`` input to the ``files`` argument.\n\n",
             "v": "<2.6.0"
+        }
+    ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 228 - jeremy-h - IAM check misses '*' when found within a list. (Issue 223)\n- PR 230 - markofu - New error and echo functions to simplify code for scripts/secmonkey_auto_install.sh\n- PR 233 - mikegrima - Write tests for security_monkey.common.ARN (Issue 222)\n- PR 238 - monkeysecurity - Refactoring _check_rfc_1918 and improving VPC ELB Internet Accessible Check\n- PR 241 - bunjiboys - Seed Amazon owned AWS accounts (Issue 169)\n- PR 243 - mikegrima - Fix for underscores not being detected in SNS watcher. (Issue 240)\n- PR 244 - mikegrima - Setup TravisCI (Issue 227)\n- PR 250 - OllyTheNinja-Xero - upgrade deprecated botocore calls in ELB watcher (Issue 249)\n- PR 256 - mikegrima - Latest Boto3/botocore versions (Issue 254)\n- PR 261 - bunjiboys - Add ec2:DescribeInstances to quickstart role documentation (Issue 260)\n- PR 263 - monkeysecurity - Updating docs/scripts to pin to dart 1.12.2-1 (Issue 259)\n- PR 265 - monkeysecurity - Remove ratelimiting max attempts, wrap ELB watcher with try/except/continue\n\nHotfixes:\n\n- Issue 235 - OllyTheNinja-Xero - SNS Auditor - local variable 'entry' referenced before assignment\n\nContributors:\n\n- jeremy-h\n- mark-fu\n- mikegrima\n- bunjiboys\n- OllyTheNinja-Xero\n- monkeysecurity\n\n\n",
+            "v": "<0.4.0"
         }
     ],
     "sentry": [
