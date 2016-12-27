@@ -2212,6 +2212,12 @@
             "v": "<0.8.1"
         }
     ],
+    "dolfin": [
+        {
+            "changelog": "------------------\n- Add global parameter \"ffc_representation\" for form representation in\n  FFC JIT compiler\n- Make norm() function handle both vectors and functions in Python\n- Speedup periodic boundary conditions and make work for mixed\n  (vector-valued) elements\n- Add possibilities to use any number numpy array when assigning\n  matrices and vectors\n- Add possibilities to use any integer numpy array for indices in\n  matrices and vectors\n- Fix for int typemaps in PyDOLFIN\n- Split mult into mult and transpmult\n- Filter out PETSc argument when parsing command-line parameters\n- Extend comments to SWIG interface files\n- Add copyright statements to SWIG interface files (not finished yet)\n- Add typemaps for misc std::vector<types> in PyDOLFIN\n- Remove dependencies on std_vector.i reducing SWIG wrapper code size\n- Use relative %includes in dolfin.i\n- Changed names on SWIG interface files dolfin_foo.i -> foo.i\n- Add function interpolate() in Python interface\n- Fix typmaps for uint in python 2.6\n- Use TypeError instead of ValueError in typechecks in typmaps.i\n- Add in/out shared_ptr<Epetra_FEFoo> typemaps for PyDOLFIN\n- Fix JIT compiling in parallel\n- Add a compile_extension_module function in PyDOLFIN\n- Fix bug in Python vector assignment\n- Add support for compressed base64 encoded VTK files (using zlib)\n- Add support for base64 encoded VTK files\n- Experimental support for parallel assembly and solve\n- Bug fix in project() function, update to UFL syntax\n- Remove disp() functions and replace by info(foo, true)\n- Add fem unit test (Python)\n- Clean up SystemAssembler\n- Enable assemble_system through PyDOLFIN\n- Add 'norm' to GenericMatrix\n- Efficiency improvements in NewtonSolver\n- Rename NewtonSolver::get_iteration() to NewtonSolver::iteration()\n- Improvements to EpetraKrylovSolver::solve\n- Add constructor Vector::Vector(const GenericVector& x)\n- Remove SCons deprecation warnings\n- Memory leak fix in PETScKrylovSolver\n- Rename dolfin_assert -> assert and use C++ version\n- Fix debug/optimise flags\n- Remove AvgMeshSize, InvMeshSize, InvFacetArea from SpecialFunctions\n- Rename MeshSize -> CellSize\n- Rewrite parameter system with improved support for command-line\n  parsing, localization of parameters (per class) and usability from\n  Python\n- Remove OutflowFacet from SpecialFunctions\n- Rename interpolate(double*) --> interpolate_vertex_values(double*)\n- Add Python version of Cahn-Hilliard demo\n- Fix bug in assemble.py\n- Permit interpolation of functions between non-matching meshes\n- Remove Function::Function(std::string filename)\n- Transition to new XML io\n- Remove GenericSparsityPattern::sort\n- Require sorted/unsorted parameter in SparsityPattern constructor\n- Improve performance of SparsityPattern::insert\n- Replace enums with strings for linear algebra and built-in meshes\n- Allow direct access to Constant value\n- Initialize entities in MeshEntity constructor automatically and\n  check range\n- Add unit tests to the memorycheck\n- Add call to clean up libxml2 parser at exit\n- Remove unecessary arguments in DofMap member functions\n- Remove reference constructors from DofMap, FiniteElement and\n  FunctionSpace\n- Use a shared_ptr to store the mesh in DofMap objects\n- Interface change for wrapper code: PoissonBilinearForm -->\n  Poisson::BilinearForm\n- Add function info_underline() for writing underlined messages\n- Rename message() --> info() for \"compatibility\" with Python logging\n  module\n- Add elementwise multiplication in GeneriVector interface\n- GenericVector interface in PyDOLFIN now support the sequence\n  protocol\n- Rename of camelCaps functions names: fooBar --> foo_bar Note:\n  mesh.numVertices() --> mesh.num_vertices(), mesh.numCells() -->\n  mesh.num_cells()\n- Add slicing capabilities for GenericMatrix interface in PyDOLFIN\n  (only getitem)\n- Add slicing capabilities for GenericVector interface in PyDOLFIN\n- Add sum to GenericVector interface\n\n",
+            "v": "<0.9.3"
+        }
+    ],
     "dpaste": [
         {
             "changelog": "----------------\n\n* The API create view has a new argument 'filename' which is used to determine\n  the lexer out of a given filename.\n* Fixed a XSS bug where HTML tags were not properly escaped with the simple\n  ``code`` lexer.\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
