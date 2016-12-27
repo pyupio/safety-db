@@ -740,6 +740,9 @@
         ">=4.1,<4.2a2",
         "<4.2.3"
     ],
+    "plone.app.content": [
+        "<3.3.1"
+    ],
     "plone.app.contentmenu": [
         "<1.1.7"
     ],
