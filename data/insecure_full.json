@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5654,6 +5654,12 @@
         {
             "changelog": "-------------------------\n\n* Make the Plone 3 buildout default to Plone 3.2.1, and pick up\n  ${versions:zope2-url} for Plone > 3.1\n  [MatthewWilkes]\n\n* added a version requirement for Cheetah (>1.0)\n  [tarek]\n\n* fix zopeskel/docs/localcommands.txt\n  [yboussard]\n\n* Modify zopeskel/templates/plone/+namespace_package+/+package+/tests.py_tmpl\n  to init egg as product if it is a Zope2 product.\n  [yboussard]\n\n* Modify plone3_buildout template to ask for a Plone version. If the version\n  is 3.0 or 3.1 it uses the plone install recipe, otherwise it uses the Plone\n  egg from the cheeseshop.\n  [MatthewWilkes]\n\n* Link to appropriate PyPI pages for recipes used.\n  [MatthewWilkes]\n\n* Add a Zope 2 without Plone buildout template.\n  [evilbungle]\n\n* Reconciling HISTORY.txt to mirror what can be found at the following:\n  http://pypi.python.org/pypi/ZopeSkel/2.10. Release of 2.10 was clobbered\n  due to what looks like a merge at r74790.\n  [andrewb]\n\n* Update plone2.5_template's buildout.cfg_tmpl to use Zope 2.9.10. This\n  release incorporates Hotfix-2008-08-12. Defaulting to a known insecure\n  Zope seems unwise for people that may be updating legacy environments into\n  buildout, since they're likely to forget to include the hotfix. Url to\n  2.9.10 hard-coded (as opposed to the more elegantly self-aware\n  plone.recipe.plone approach) per the practice of a plone.recipe.distros\n  plone part.\n  [andrewb]\n\n* Nearly at the end of the creation of a ZopeSkel template, the local\n  commands available for that template are displayed.\n  [jaraco, markvl]\n\n* The Plone template now has local commands. (Basically moved them\n  from the archetype templates to plone templates and made them\n  available for both.\n  [markvl]\n\n* Added base test setup to the archetype template. Added wiring code that\n  runs README.txt as a doctest.\n  [esartor]\n\n* Added tests to the addcontent contenttype command. These ammend the\n  README.txt file for each content type providing basic tests for creating,\n  editing and removing instances of the added content type.\n  [esartor]\n\n\n",
             "v": "<2.11"
+        }
+    ],
+    "zwiki": [
+        {
+            "changelog": "=======================\n\nMuch i18n progress including a number of new translations; tracker\ncleanups and usability improvements; permissions fixes; tests, code\ncleanups, bugfixes.\n\n**Upgrade notes**\n\n  Similar to 0.30. changeIssueProperties() \"title\" argument is now \"name\".\n\n**General**\n\n  * always update links by default when renaming (page\n    management form was not)\n\n  * don't show a .svn subdirectory in add wiki form (Lele Gaifax)\n\n  * make image and file links sensitive to page type (IssueNo0737, peterq)\n\n  * fix some missing security declarations in 0.30 (IssueNo0796)\n\n  * make page rating not require python 2.3 (IssueNo0794)\n\n  * better comment formatting on reST pages (Lele Gaifax)\n\n  * support reST in Zope 2.7.1 (Lele Gaifax)\n\n  * cmf/plone: forcing a sole page's name field to FrontPage was unhelpful, remove\n\n  * link banning: edits containing urls in the banned_links property\n    will fail (for spam prevention)\n\n  * make summary() smarter, include only the first paragraph by default\n\n  * create() can now also set parents\n\n**I18n**\n\n  * plone editform: don't show duplicate pages types due to i18n\n    problem (IssueNo0823)\n\n  * standard and plone skin i18n (foenyx, simon)\n\n  * french translation updates (foenyx)\n\n  * italian translation (Lele Gaifax)\n\n  * portuguese-brazilian translation (Jean Rodrigo Ferri)\n\n  * traditional and simplified chinese translations (T.C. Chou)\n\n  * always send the HTTP header to help character encoding negotiation\n\n  * renamed LocalizerSupport to I18nSupport; we now try to use\n    PlacelessTranslationService first\n\n  * PTS-based i18n support for python code and DTML\n\n  * fully automate pot extraction\n\n**Skins and content**\n\n  * show current page in contents by default again\n    This is much more convenient for a human user. The drawback is\n    more hits to contents (one for each page) from robots which treat\n    ref as a separate url.\n\n  * defaultPage() and the wiki navigation links were ignoring a\n    default_page folder property\n\n  * standard wikipage.pt: add a left/right layout table around ratingform\n\n  * make plone action urls point to customized pages if present (IssueNo0786)\n\n  * use grey background for pre and code sections by default\n\n  * include zwiki.org percentage styles\n\n  * make in-reply-to indicator more discreet\n\n  * explicitly set foreground and background color, for people with dark backgrounds\n\n  * simplify ratingform template\n\n  * rename zmi forms and move to skins/zmi/\n\n**Mail and comments**\n\n  * make comment subjects appear in recent changes again (IssueNo0821)\n\n  * don't discard mail to TestPage page subscribers (IssueNo0672)\n\n  * make emailAddressFrom() smarter; handle non-cmf-members who have\n    an email address pref; highlight problem users in the recipient\n    list instead of quietly dropping them\n\n**Tracker**\n\n  * usability & page layout improvements; highlight current sort &\n    filter options\n\n  * always parent new issues either under IssueTracker or at the top\n    level (not all over the wiki)\n\n  * protect issue properties with zwiki edit permission (IssueNo0278)\n\n  * don't require rename permission to change other issue properties\n\n  * change issue \"description\" to \"name\"\n\n  * new issuepropertiesform skin method & template\n\n  * simplify and clean up issue tracker & filter issues DTML\n\n  * tracker code refactoring; move tracker setup code to Tracker.py;\n    new methods issueNumber(), issueName()\n\n  * support for issue page names beginning with a number or number\n    (commented out)\n\n  * removed support for custom 'isIssue' python script\n\n  * add missing tracker unit tests file\n\n\n",
+            "v": "<0.31"
         }
     ]
 }
