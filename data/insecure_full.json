@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5141,6 +5141,12 @@
         {
             "changelog": "=========================\n\n  * Fix permission checks. Security issue, anybody could edit photos.\n  * Fix broken XHTML.\n  * Make timezones more flexible. Can specify UTC+nn or UTC-nn for imports.\n  * Improve photo editor, have links to most popular items.\n  * Fix problems with add person and set person logic.\n  * Limit width of photo summary in css.\n  * Optimize how search string is generated.\n  * Don't use CSRF protection for post requests that don't have side effects.\n\n",
             "v": "<0.8"
+        }
+    ],
+    "starcluster": [
+        {
+            "changelog": "fixes. This release has support for Amazon's `Virtual Private Cloud (VPC)\n<http://aws.amazon.com/vpc/>`_. See :ref:`using-vpc` for details on using\nStarCluster with VPC. This release comes with new Ubuntu 13.04 AMIs for 32bit\nand 64bit platforms as well as an HVM AMI that comes with drivers for GPU and\nenhanced networking. The HVM AMI also comes with the CUDA toolkit, PyCuda,\nMAGMA, and OGS GPU sensor. These new AMIs are available in all AWS regions.\nPlease use the **listpublic** command to find them::\n\n    $ starcluster listpublic\n\nThe sections below list the full set of features, enhancements, and bug fixes\nfor this release. Please note that this version is *not* compatible with\nclusters started with older versions of StarCluster. Please terminate all\nclusters before upgrading to 0.95.\n\n.. _v095-features:\n\nFeatures\n--------\n* **Add Virtual Private Cloud (VPC) support**\n* **Update base StarCluster AMI ids to 13.04**\n* Add support for new C3 instance types\n* Add support for new GRID GPU g2.2xlarge (non-GPGPU) instance type\n* Add support for m3.{medium,large} instance types\n* Add support for new I2 instance family\n* start: add ``--subnet`` (``-N``) and ``--no-public-ips option`` (VPC-only)\n* start: add ``--dns-prefix`` (``-P``) option to prefix hostnames with the\n  cluster tag\n* removenode: added ``--force`` (``-f``) option to removenode\n* removenode: prompt for confirmation and add ``--confirm`` (``-c``) option\n* sshmaster, sshnode: add ``--pseudo-tty`` (``-t``) option\n* createkey: add ``--import-key`` (``-i``) option\n* cluster: validate imported keypair fingerprints\n* spothistory: add ``--vpc`` and ``--classic`` options\n* spothistory: use classic or vpc prices based on default vpc\n* hadoop: tune number of map/reduce tasks to number of CPUs\n* hadoop: document all advanced settings\n* listclusters, listinstances: show vpc and subnet ids\n\n.. _v095-enhancements:\n\nEnhancements\n------------\n* removenode: update usage to mimic addnode (ie added ``-n`` and ``-a``\n  options similar to addnode) - old usage works but is deprecated\n* Removed internal scp module in favor of jbardin's scp module\n* awsutils: wait for placement and security group deletion propagation in\n  ec2.delete_group\n* node: don't force NFSv3 - use OS default (NFSv4 on recent AMIs)\n* ebsimage: reduce rsync output by switching -v to -q (s3->ebs)\n* ebsimage: log the ebs volume formatting step\n* volume: log the exception when volume creation fails\n* loadbalance: set UTC tzinfo in all datetime objects\n* utils: use UTC timezone for all datetime objects\n* cluster: deprecated all get_node_by* calls in favor of cluster.get_node\n* awsutils: raise exc in EasyEC2.wait_for_propagation after max_retries\n* Use pytest to run tests\n\n.. _v095-fixes:\n\nBug Fixes\n---------\n* node: fix stale NFS entries from force-terminated spot nodes\n* node: remove 'user' setting from NFS mount options\n* node: add work-around for bug in debian nfs-kernel-server init script in\n  Ubuntu 13.04+\n* node: use apt-get instead of apt in package_provider property\n* node: run apt-get update before install in apt_install\n* cluster: always use master's zone if not specified\n* cluster: store availability_zone in core cluster settings tag\n* cluster: raise error if MOUNT_PATH=/\n* cluster: retry deleting placement group until successful\n* cluster: check for master in remove_nodes prior to removing any nodes\n* loadbalance: add nodes when below minimum\n* loadbalance: raise an exception if min_nodes > max_nodes in loadbalancer\n* loadbalance: fix crash in get_all_stats() when arr is empty\n* ebsimage: set fs label = / on root vol when converting s3->ebs\n* ebsimage: fix for bmap when converting s3->ebs\n* ebsimage: only set 1 ephemeral drive when converting s3->ebs\n* volume: only detach if vol != available in _delete_new_volume\n* volume: remove duplicates from volume hosts list\n* spothistory: improve accuracy by not using a possibly out-of-sync local time\n  stamp for the end date as long as -e is not specified\n* spothistory: set UTC tzinfo on all datetime objects\n* awsutils: raise exception if keypair exists in create_keypair\n* awsutils: use instance store bmap for 32bit m1.small\n* awsutils: dont specify ephemeral drives w/ t1.micro\n* cli: raise parser error if tag is incorrectly specified\n* condor: fetch & create condor dirs from config\n* condor: set SCHEDD_NAME on each host\n* condor: improve dedicated scheduler config\n\n.. _version-0.94.3:\n\n",
+            "v": "<0.95"
         }
     ],
     "stargate": [
