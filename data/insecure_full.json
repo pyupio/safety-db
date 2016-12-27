@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4958,6 +4958,12 @@
         {
             "changelog": "---------------\n\n- Handle mutual authentication (see pull request 36_)\n\n  All users should upgrade immediately. This has been reported to\n  oss-security_ and we are awaiting a proper CVE identifier.\n\n  **Update**: We were issued CVE-2014-8650\n\n- Distribute as a wheel.\n\n.. _36: https://github.com/requests/requests-kerberos/pull/36\n.. _oss-security: http://www.openwall.com/lists/oss-security/\n\n",
             "v": "<0.6"
+        }
+    ],
+    "resource-api": [
+        {
+            "changelog": "\n    [Anton Berezin <anton.berezinf-secure.com>]\n        * PATCH: updated README file\n        * PATCH: enabled PyPi uploads via Travis CI\n\n",
+            "v": "<3.0.1"
         }
     ],
     "roundup": [
