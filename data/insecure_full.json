@@ -271,6 +271,12 @@
             "v": "<0.3.1"
         }
     ],
+    "comet": [
+        {
+            "changelog": "    - Disable XML entity expansion for documents received from the network.\n      This eliminates a class of potential resource exhaustion attacks.\n\n    - Update documentation to request citation of the `paper`_ in published\n      work which makes use of Comet.\n\n",
+            "v": "<1.2.2"
+        }
+    ],
     "confidant": [
         {
             "changelog": "\n* Security fix: While preparing for the 1.1 stable release Lyft found a KMS\n  authentication vulnerability in the unreleased 1.1 branch while performing an\n  audit of the code. The vulnerability was introduced while adding the scoped auth\n  key feature (for limiting authentication keys and services to specific AWS\n  accounts), where the key was not properly checked after decryption. This check is\n  an additional verification to add additional safety on-top of the IAM policy of\n  your KMS keys. If IAM policy allows users to use KMS keys without limits on\n  encryption context, a KMS key that wasn't intended to be used for auth, could be\n  used for auth.\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
