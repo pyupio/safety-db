@@ -73,6 +73,9 @@
     "chanjo-report": [
         "<2.4.0"
     ],
+    "charm-crypto": [
+        "<0.43"
+    ],
     "cherrymusic": [
         "<0.36.0"
     ],
