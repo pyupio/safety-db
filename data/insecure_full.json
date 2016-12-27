@@ -2339,6 +2339,12 @@
             "v": "<5.1.2"
         }
     ],
+    "file-magic": [
+        {
+            "changelog": "\n2014-11-27  18:40  Christos Zoulas <christoszoulas.com>\n\n\t* Allow setting more parameters from the command line.\n\t* Split name/use and indirect magic recursion limits.\n\n2014-11-27  11:12  Christos Zoulas <christoszoulas.com>\n\n\t* Adjust ELF parameters and the default recursion\n\t  level.\n\t* Allow setting the recursion level dynamically.\n\n2014-11-24   8:55  Christos Zoulas <christoszoulas.com>\n\n\t* The following fixes resulted from Thomas Jarosch's fuzzing\n\t  tests that revealed severe performance issues on pathological\n\t  input:\n\t    - limit number of elf program and sections processing\n\t    - abort elf note processing quickly\n\t    - reduce the number of recursion levels from 20 to 10\n\t    - preserve error messages in indirect magic handling\n\n\tThis is tracked as CVE-2014-8116 and CVE-2014-8117\n\n2014-11-12  10:30  Christos Zoulas <christoszoulas.com>\n\n\t* fix bogus free in the user buffer case.\n\n2014-11-11  12:35  Christos Zoulas <christoszoulas.com>\n\n\t* fix out of bounds read for pascal strings\n\t* fix memory leak (not freeing the head of each mlist)\n\n2014-11-07  10:25  Christos Zoulas <christoszoulas.com>\n\n\t* When printing strings from a file, convert them to printable\n\t  on a byte by byte basis, so that we don't get issues with\n\t  locale's trying to interpret random byte streams as UTF-8 and\n\t  having printf error out with EILSEQ.\n\t  \n2014-10-17  11:48  Christos Zoulas <christoszoulas.com>\n\n\t* fix bounds in note reading (Francisco Alonso / Red Hat)\n\n2014-10-11  15:02  Christos Zoulas <christoszoulas.com>\n\n\t* fix autoconf glue for setlocale and locale_t; some OS's\n\t  have locale_t in xlocale.h\n\n2014-10-10  15:01  Christos Zoulas <christoszoulas.com>\n\n",
+            "v": "<5.21"
+        }
+    ],
     "flask": [
         {
             "changelog": "-------------\n\nBugfix release, released on December 31st 2010\n\n- Fixed an issue where the default ``OPTIONS`` response was\n  not exposing all valid methods in the ``Allow`` header.\n- Jinja2 template loading syntax now allows \"./\" in front of\n  a template load path.  Previously this caused issues with\n  module setups.\n- Fixed an issue where the subdomain setting for modules was\n  ignored for the static folder.\n- Fixed a security problem that allowed clients to download arbitrary files\n  if the host server was a windows based operating system and the client\n  uses backslashes to escape the directory the files where exposed from.\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
