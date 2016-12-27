@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5123,6 +5123,12 @@
         {
             "changelog": "-------------------\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- LOL part\n  [kiorky]\n- fix cve CVE Request ---- SOAPpy 0.12.5 Multiple Vulnerabilities -- XXE part\n  [kiorky]\n- Remove dependency on fpconst.\n- adding maptype  [Sandro Knau\u00df]\n- Support / (and other reserved characters) in the password. [Ionut Turturica]\n- Client.HTTPWithTimeout: fixed constructor's docstring and comments -named the diferences\n  with respect to the overriden method -fixed\n  wrong reference to class in module 'httplib' -added documentation of param 't[German Larrain\n- fixed module docstring location (all imports must be below them)[German Larrain]f\n- fix error \"Bad types (class java.math.BigInteger -> class java.lang.Integer)\" - Clayton Caetano de Sousa]\n\n\n\n",
             "v": "<0.12.6"
+        }
+    ],
+    "solgema.fullcalendar": [
+        {
+            "changelog": "----------------\n\n- The ui-lightness skin for jqueryui has been removed. You can add your own\n  jqueryui skin if you want to.\n  [fmoret]\n\n- Added the possibility to choose short day name format\n  (short: 2 characters or abbreviated: 3 characters).\n  [fmoret]\n\n- Fixed: week-view didn't translate saturday.\n  [pbauer]\n\n- Upgrade to fullcalendar-1.5.1. Remove unused js-files/\n  [pbauer]\n\n- Add german translation and german date-formats\n  [pbauer]\n\n- Show reccurring events if plone.event is available.\n  [vincentfretin]\n\n- Security: use 'Change portal topics' permission\n  to manage access to Calendar properties.\n  [thomasdesvenain]\n\n- Security: check 'Add portal content' permission on target folder\n  instead of 'Modify portal' content on calendar\n  to allow adding an event on the calendar.\n  [thomasdesvenain]\n\n- Fixed: disallow caching ajax action views,\n  to avoid issues behind cache proxies.\n  [thomasdesvenain]\n\n- Fixed: event popup is translated.\n  [thomasdesvenain]\n\n- Fixed: adding 'all day' event add an event from 00:00 to 23:55.\n  [fmoret]\n\n- Fixed: remove duplicated scroll in popup.\n  [thomasdesvenain]\n\n- Fixed: closing popups after an event has been added works.\n  [fmoret]\n\n- Internationalization: translation files generation with i18ndude.\n  [thomasdesvenain]\n\n- Internationalization: fixed event popup translation.\n  [thomasdesvenain]\n\n- Internationalization: calendar parameters tab\n  and calendar display layout are internationalized and french translated.\n  [thomasdesvenain]\n\n- Infrastructure : timezones forward compatibility.\n  [vincentfretin, thomasdesvenain]\n\n- Infrastructure : plone.app.event forward compatibility :\n  event view uses event_view macros by default,\n  never use direct access to startDate and endDate attributes for timezones compatibility.\n  [vincentfretin]\n\n- Infrastucture: use Generic setup to install some dependencies.\n  [thomasdesvenain]\n\n- Infrastucture: hide upgrade profiles on Plone site creation form.\n  Upgrade profiles don't appear in root profiles.\n  [thomasdesvenain]\n\n- Pep8 & pyflakes.\n  [thomasdesvenain]\n\n- Plone 4.1 compatibility.\n  [thomasdesvenain]\n\n- Imported Solgema.fullcalendar in collective.\n  [fmoret, thomasdesvenain]\n\n\n",
+            "v": "<1.9"
         }
     ],
     "sopel": [
