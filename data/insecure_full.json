@@ -2462,6 +2462,12 @@
             "v": "<1.2.0"
         }
     ],
+    "glastopf": [
+        {
+            "changelog": "    * Fixed surf cert IDS logger (Issue 140).\n    * Syslog logger now outputs sensor host/port instead of the attacker supplied HOST header.\n    * Added STIX/TAXII logger.\n    * Detection of SQLi attempts are now done using Libinjection from CLient9.\n    * Various minor improvements and bugfixes.\n    * Attack surface now customizable.\n    * Not backwards compatible with Glastopf 3.0.8\n\n",
+            "v": "<3.1.1"
+        }
+    ],
     "gns3-gui": [
         {
             "changelog": "\n* Try to fix a crash when reseting interface label\n* Fix a crash with broken file system\n* Fix EtherSwitch default name format\n* Fix crash when you have utf-8 char in the README\n* Fix rare crash when creating a link\n* Stop node before hot unlink\n* Prevent a crash due to issue in Qt\n* Add another security to prevent client to send empty hostname\n* Fix rare crash when deleting interface from the cloud\n* Fix rare crash in topology summary view\n* Ask user to send explanation if they cross a rare error\n* Fix rare crash when deleting a node\n* Hotlink support for Docker\n* Fix typo in the a warning dialog\n* Fix Remote GNS3 VM requires local server\n* Fix AttributeError: 'NoneType' object has no attribute '_server'\n* No timeout when importing a .gns3project\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
