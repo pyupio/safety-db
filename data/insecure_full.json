@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5205,6 +5205,12 @@
         {
             "changelog": "''''''''''''''''''''''''''\n\nSecurity-related Bugfix\n-----------------------\n\n- Fix flaw that would allow servers to cause undetected corruption when\n  retrieving the contents of mutable files (both SDMF and MDMF). (`1654`_)\n\n.. _`1654`: https://tahoe-lafs.org/trac/tahoe-lafs/ticket/1654\n\n\n",
             "v": "<1.9.1"
+        }
+    ],
+    "telemeta": [
+        {
+            "changelog": "\n * add solr-thumbnail for automatic thumbnail handling of all related media images (please install)\n * add static media handling for solr and all various telemeta public files\n * fix some wrong user properties\n * SECURITY: you need to move your TELEMETA_EXPORT_CACHE_DIR from TELEMETA_CACHE_DIR cache (see example/sandbox_sqlite/settings.py)\n * EXPERIMENTAL: WebM and MP4 video handling for items, NO transcode but decode, add a nice video.js player\n * RECOMMEND: install django-extensions\n * transitional package to 1.5 (maybe 1.4.4 *soon*)\n\n",
+            "v": "<1.4.31"
         }
     ],
     "textract": [
