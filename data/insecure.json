@@ -1041,6 +1041,9 @@
     "tiddlyweb": [
         "<1.2.18"
     ],
+    "tinydb-smartcache": [
+        "<2.0.0"
+    ],
     "tornado": [
         "<2.2.1"
     ],
