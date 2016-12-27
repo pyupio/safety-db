@@ -1004,6 +1004,9 @@
     "spud": [
         "<0.8"
     ],
+    "starcluster-openstack": [
+        "<0.92rc1"
+    ],
     "stargate": [
         "<0.4"
     ],
