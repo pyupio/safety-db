@@ -2574,6 +2574,10 @@
         {
             "changelog": "Invenio v1.0.2 -- released 2012-10-19\n-------------------------------------\n\n  - BibConvert: fix for static files in admin guide\n\n  - BibEdit: regression test case fix\n\n  - BibFormat: fix call to bfe_primary_report_number; revert fix for\n    format validation report\n\n  - BibHarvest: OAI harvesting via HTTP proxy\n\n  - BibRank: begin_date initialisation in del_recids(); INSERT DELAYED\n    INTO rnkPAGEVIEWS; user-friendlier message for similar docs\n\n  - BibUpload: clarify correct/replace mode help\n\n  - WebJournal: catch ValueError when reading cache; use\n    CFG_TMPSHAREDDIR in admin UI\n\n  - WebSearch: allow webcoll to query hidden tags; external collection\n    search fix; external search XSS vulnerability fix; fix for\n    parentheses inside quotes; get_collection_reclist() fix; more uses\n    of `rg` configurable default; 'verbose' mode available to admins\n    only; XSS and verbose improvements\n\n  - WebSession: fix possibly undefined variables; prevent nickname\n    modification\n\n  - WebStyle: workaround IE bug with cache and HTTPS\n\n  - WebSubmit: configurable Document File Manager; fix JS check for\n    mandatory fields; unoconv calling fix\n\n  - bibdocfile: guess_format_from_url() improvement;\n    guess_format_from_url() improvements; INSERT DELAYED INTO\n    rnkDOWNLOADS\n\n  - global: removal of psyco\n\n  - I18N: Spanish and Catalan updates to Search Tips; updates to\n    German translation\n\n  - installation: fix for jQuery UI custom; fix md5sum example\n    arguments; new index on session.session_expiry\n\n  - intbitset: fix memory leak\n\n  - inveniogc: tmp directory removal improvements\n\n  - urlutils: MS Office redirection workaround",
             "v": "<1.0.2"
+        },
+        {
+            "changelog": "-------------------------------------\n\nSecurity fixes\n~~~~~~~~~~~~~~\n\n+ WebStyle:\n\n  - Adds back the `HttpOnly` cookie attribute in order to better\n    protect against potential XSS vulnerabilities.  (3064)\n\nImproved features\n~~~~~~~~~~~~~~~~~\n\n+ installation:\n\n  - Apache virtual environments are now created with appropriate\n    `WSGIDaemonProcess` user value, taken from the configuration\n    variable `CFG_BIBSCHED_PROCESS_USER`, provided it is set.  This\n    change makes it easier to run Invenio under non-Apache user\n    identity.\n\n  - Apache virtual environments are now created with appropriate\n    `WSGIPythonHome` directive so that it would be easier to run\n    Invenio from within Python virtual environments.\n\nBug fixes\n~~~~~~~~~\n\n+ global:\n\n  - Replaces `invenio-demo.cern.ch` by `demo.invenio-software.org`\n    which is the new canonical URL of the demo site.  (2867)\n\n+ testutils:\n\n  - Switches off SSL verification when running the test suite.  Useful\n    for Python-2.7.9 where self-signed SSL certificates (that are\n    usually used on development installations) would cause apparent\n    test failures.  (2868)\n\n",
+            "v": "<1.1.6"
         }
     ],
     "invenio-search": [
@@ -4794,17 +4798,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
