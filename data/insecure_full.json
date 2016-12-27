@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4921,6 +4921,12 @@
         {
             "changelog": "------------------------\n  * Made OAuth1 nonces more secure via SystemRandom\n  * Exposed authentication responses\n  * Allowed Requests versions >= 1.2.3\n  * Fixed OAuth1 unicode encoding issues\n\n",
             "v": "<0.7.0"
+        }
+    ],
+    "reprounzip": [
+        {
+            "changelog": "----------------\n\nBehavior change:\n* No longer accept passing `-v` after the subcommand; use `reprozip -v testrun ...`, not `reprozip testrun -v`.\n* Rely on `PTHREAD_EVENT_EXEC` to handle `execve()`. Makes tracing more reliable, and enable it to behave correctly on weird kernels (like UML).\n* Rely on `PTRACE_EVENT_FORK` to handle `fork`/`vfork`/`clone`. Fixes vfork() deadlocking under trace.\n* Completely changed the structure of input and output files (old packs will still be loaded, but new packs are not retro-compatible).\n* Using one of the `run` commands without specifying a number will no longer default to running all of them; it will error out if there are multiple runs.\n\nBugfixes:\n* Fix insertion speed in SQLite3 database\n\nFeatures:\n* Makes VMs (Vagrant or Docker)  more resilient to massive breakage of system libraries (obliterating /lib or /usr, when using very different operating systems) by putting busybox in / and using [rpzsudo](https://github.com/remram44/static-sudo).\n* No longer use `dpkg -S` to identify packages, do a single pass over internal dpkg database (this is considerably faster).\n\n",
+            "v": "<0.7"
         }
     ],
     "reprozip": [
