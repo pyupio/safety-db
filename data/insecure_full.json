@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5379,6 +5379,12 @@
         {
             "changelog": "------------------\n - Add defusedxml module for XML security issues\n - Add support for choice elements\n - Fix documentation example for complex types (Falk Schuetzenmeister)\n\n\n",
             "v": "<0.4.0"
+        }
+    ],
+    "zeo": [
+        {
+            "changelog": "--------------------\n\n- Added the ability to pass credentials when creating client storages.\n\n  This is experimental in that passing credentials will cause\n  connections to an ordinary ZEO server to fail, but it facilitates\n  experimentation with custom ZEO servers. Doing this with custom ZEO\n  clients would have been awkward due to the many levels of\n  composition involved.\n\n  In the future, we expect to support server security plugins that\n  consume credentials for authentication (typically over SSL).\n\n  Note that credentials are opaque to ZEO. They can be any object with\n  a true value.  The client mearly passes them to the server, which\n  will someday pass them to a plugin.\n\n",
+            "v": "<5.0.0a2"
         }
     ],
     "ziirish": [
