@@ -761,6 +761,9 @@
     "plone.openid": [
         "<2.0.2"
     ],
+    "plonetheme.sunburst": [
+        "<1.0.6"
+    ],
     "plumi.app": [
         "<4.2",
         "<4.2.1",
