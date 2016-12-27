@@ -473,6 +473,9 @@
     "geventhttpclient": [
         "<1.2.0"
     ],
+    "glastopf": [
+        "<3.1.1"
+    ],
     "gns3-gui": [
         "<1.5.1"
     ],
