@@ -133,6 +133,12 @@
             "v": "<1.4.2"
         }
     ],
+    "blackhole": [
+        {
+            "changelog": "=====\n\n- Added HELP verb that lists all available SMTP verbs. Sending\n  ``HELP <COMMAND>`` will return the syntax for the specified command.\n\n.. code-block:: none\n\n    C: HELP\n    S: 250 Supported commands: DATA EHLO ETRN HELO...\n    C: HELP HELO\n    S: 250 Syntax: HELO domain.tld\n    C: HELP INVALID\n    S: 501 Supported commands: DATA EHLO ETRN HELO...\n\n- TLS settings changed based on format taken from\n  `<https://docs.python.org/3/library/ssl.htmlssl-security>`_.\n- TLS 'modern' ciphers enforced, ciphers taken from\n  `<https://wiki.mozilla.org/Security/Server_Side_TLS>`_.\n\n  .. code-block:: none\n\n      0xC0,0x2C  -  ECDHE-ECDSA-AES256-GCM-SHA384  TLSv1.2  Kx=ECDH  Au=ECDSA  Enc=AESGCM(256)    Mac=AEAD\n      0xC0,0x30  -  ECDHE-RSA-AES256-GCM-SHA384    TLSv1.2  Kx=ECDH  Au=RSA    Enc=AESGCM(256)    Mac=AEAD\n      0xCC,0x14  -  ECDHE-ECDSA-CHACHA20-POLY1305  TLSv1.2  Kx=ECDH  Au=ECDSA  Enc=ChaCha20(256)  Mac=AEAD\n      0xCC,0x13  -  ECDHE-RSA-CHACHA20-POLY1305    TLSv1.2  Kx=ECDH  Au=RSA    Enc=ChaCha20(256)  Mac=AEAD\n      0xC0,0x2B  -  ECDHE-ECDSA-AES128-GCM-SHA256  TLSv1.2  Kx=ECDH  Au=ECDSA  Enc=AESGCM(128)    Mac=AEAD\n      0xC0,0x2F  -  ECDHE-RSA-AES128-GCM-SHA256    TLSv1.2  Kx=ECDH  Au=RSA    Enc=AESGCM(128)    Mac=AEAD\n      0xC0,0x24  -  ECDHE-ECDSA-AES256-SHA384      TLSv1.2  Kx=ECDH  Au=ECDSA  Enc=AES(256)       Mac=SHA384\n      0xC0,0x28  -  ECDHE-RSA-AES256-SHA384        TLSv1.2  Kx=ECDH  Au=RSA    Enc=AES(256)       Mac=SHA384\n      0xC0,0x23  -  ECDHE-ECDSA-AES128-SHA256      TLSv1.2  Kx=ECDH  Au=ECDSA  Enc=AES(128)       Mac=SHA256\n      0xC0,0x27  -  ECDHE-RSA-AES128-SHA256        TLSv1.2  Kx=ECDH  Au=RSA    Enc=AES(128)       Mac=SHA256\n\n",
+            "v": "<2.0.2"
+        }
+    ],
     "bok-choy": [
         {
             "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
