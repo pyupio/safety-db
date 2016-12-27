@@ -2574,6 +2574,10 @@
         {
             "changelog": "Invenio v1.0.2 -- released 2012-10-19\n-------------------------------------\n\n  - BibConvert: fix for static files in admin guide\n\n  - BibEdit: regression test case fix\n\n  - BibFormat: fix call to bfe_primary_report_number; revert fix for\n    format validation report\n\n  - BibHarvest: OAI harvesting via HTTP proxy\n\n  - BibRank: begin_date initialisation in del_recids(); INSERT DELAYED\n    INTO rnkPAGEVIEWS; user-friendlier message for similar docs\n\n  - BibUpload: clarify correct/replace mode help\n\n  - WebJournal: catch ValueError when reading cache; use\n    CFG_TMPSHAREDDIR in admin UI\n\n  - WebSearch: allow webcoll to query hidden tags; external collection\n    search fix; external search XSS vulnerability fix; fix for\n    parentheses inside quotes; get_collection_reclist() fix; more uses\n    of `rg` configurable default; 'verbose' mode available to admins\n    only; XSS and verbose improvements\n\n  - WebSession: fix possibly undefined variables; prevent nickname\n    modification\n\n  - WebStyle: workaround IE bug with cache and HTTPS\n\n  - WebSubmit: configurable Document File Manager; fix JS check for\n    mandatory fields; unoconv calling fix\n\n  - bibdocfile: guess_format_from_url() improvement;\n    guess_format_from_url() improvements; INSERT DELAYED INTO\n    rnkDOWNLOADS\n\n  - global: removal of psyco\n\n  - I18N: Spanish and Catalan updates to Search Tips; updates to\n    German translation\n\n  - installation: fix for jQuery UI custom; fix md5sum example\n    arguments; new index on session.session_expiry\n\n  - intbitset: fix memory leak\n\n  - inveniogc: tmp directory removal improvements\n\n  - urlutils: MS Office redirection workaround",
             "v": "<1.0.2"
+        },
+        {
+            "changelog": "-------------------------------------\n\nSecurity fixes\n~~~~~~~~~~~~~~\n\n+ script:\n\n  - Switches from insecure standard random number generator to secure\n    OS-driven entropy source (/dev/urandom on linux) for secret key\n    generation.\n\nNew features\n~~~~~~~~~~~~\n\n+ formatter:\n\n  - Adds html_class and link_label attributes to bfe_edit_record.\n    (3020)\n\n+ script:\n\n  - Adds `SERVER_BIND_ADDRESS` and `SERVER_BIND_PORT` to overwrite\n    bind address and port independently from the public URL. This\n    gives control over the used network interface as well as the\n    ability to bind Invenio to a protected port and use a reverse\n    proxy for access. Priority of the config is (1) runserver command\n    arguments, (2) `SERVER_BIND_ADDRESS` and `SERVER_BIND_PORT`\n    configuration, (3) data from `CFG_SITE_URL`, (4) defaults\n    (`127.0.0.1:80`).\n\nImproved features\n~~~~~~~~~~~~~~~~~\n\n+ docker:\n\n  - Slims down docker image by building on top of less bloated base\n    image and only install what is really required. Also purges\n    unneeded packages, flushes caches and clean temporary files. All\n    these parts should not be in a production image and are also not\n    required by developers. You can still install components when\n    extending the Invenio base image.\n\n+ docs:\n\n  - Adds missing 'libffi' library and howto start redis server.\n    Causing an exception when running `pip install --process-\n    dependency-links -e .[development]`: 'ffi.h' file not found and\n    'sudo: service: command not found' when starting redis server (OS\n    X Yosemite, 10.10).\n\n  - Adds a step describing how to install MySQL on CentOS 7 because it\n    does not have 'mysql-server' package by default.\n\nBug fixes\n~~~~~~~~~\n\n+ email:\n\n  - Fixes 'send_email' to expect an 'EmailMessage' object from the\n    'forge_email' method rather than a string-like object. (3076)\n\n  - Fixes reference to CFG_SITE_ADMIN_EMAIL (not a global).\n\n+ legacy:\n\n  - Makes lazy loading of `stopwords_kb` variable to avoid file\n    parsing during script loading.  (1462)\n\n+ logging:\n\n  - Fixes Sentry proxy definition pointing to a wrong application\n    attribute.\n\n+ matcher:\n\n  - Fixes Unicode conversion required to use the levenshtein_distance\n    function. (3047)\n\n",
+            "v": "<2.0.3"
         }
     ],
     "invenio-search": [
@@ -4794,17 +4798,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
