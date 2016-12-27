@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4915,6 +4915,12 @@
         {
             "changelog": "  - Security fixes, some vulnerable xml-rpc calls fixed. [ggozad]\n\n",
             "v": "<0.30"
+        }
+    ],
+    "quokka-flask-admin": [
+        {
+            "changelog": "-----\n\n* Updated and reworked documentation\n* FileAdmin went through minor refactoring and now supports remote file systems. Comes with the new, optional, AWS S3 file management interface\n* Configurable CSV export for model views\n* Added overridable URL generation logic. Allows using custom URLs with parameters for administrative views\n* Added column_display_actions to ModelView control visibility of the action column without overriding the template\n* Added support for the latest MongoEngine\n* New SecureForm base class for easier CSRF validation\n* Lots of translation-related fixes and updated translations\n* Bug fixes\n\n",
+            "v": "<1.4.0"
         }
     ],
     "rauth": [
