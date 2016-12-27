@@ -4164,6 +4164,12 @@
             "v": "<0.7.1"
         }
     ],
+    "pysmb": [
+        {
+            "changelog": "========================\n\n- Fix a bug in storeFile() method when the destination file is not overwritten if\n  it exists in SMB1 communication\n- Fix a SMB1 authentication problem when extended negotation is not carried out\n  because the remote server has specified its support for extended security in the\n  payload, instead of in the message flags2.\n\n",
+            "v": "<1.1.8"
+        }
+    ],
     "pytest-devpi-server": [
         {
             "changelog": " \n * New plugin: devpi server fixture\n * pytest-profiling improvement: overly-long .prof files are saved as the short hash of the test name (Thanks to Vladimir Lagunov for PR)\n * Changed default behavior of workspace.run() to not use a subshell for security reasons\n * Corrected virtualenv.run() method to handle arguments the same as the parent method workspace.run()\n * Removed deprecated '--distribute' from virtualenv args\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
