@@ -180,6 +180,12 @@
             "v": "<2.4.0"
         }
     ],
+    "cheetah": [
+        {
+            "changelog": "  This simple bug fix release resolves some issues introduced by\n  under-the-hood changes in release 0.9.16a1.\n\n  - removed the use of temp files for handling imports with dynamic\n    compilation. This removes a whole slew of issues, including a temp file\n    security issue reported on the email list by Brian Bird. [TR]\n  - fixed bug with handling of the searchList with dynamic inheritance, as\n    reported by  Brian Bird. [TR]\n\n",
+            "v": "<0.9.17rc1"
+        }
+    ],
     "cherrymusic": [
         {
             "changelog": " - FIXED: *Security* CVE-2015-8309 Download of arbitrary files by logged in users (thanks \nfeedersec)\n - FIXED: *Security* CVE-2015-8310 XSS attack by logged-in users (thanks feedersec)\n - FIXED: OGA files are now correctly recognized as ogg-audio files\n - FIXED: Sorting tracks by track number correctly\n - FIXED: Cannot load playlists containing single quotes\n - FEATURE: allow reverse-sorting of playlists (thanks pando85)\n - FEATURE: Enabled support of ffmpeg to decode ALAC files\n - FEATURE: Added optional support for Pillow as Image Library\n - IMPROVEMENT: disabled confirm-to-quit message for playlist downloads\n - IMPROVEMENT: Updated TinyTag to version 0.10.1 (much faster ID3 parsing)\n - IMPROVEMENT: Predictable selection of album-art images (thanks lzh9102)\n - FIXED: Removed restrictions for passwords created in CLI\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
