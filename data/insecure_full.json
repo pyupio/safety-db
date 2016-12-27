@@ -3073,6 +3073,12 @@
             "v": "<0.7.0"
         }
     ],
+    "offlineimap": [
+        {
+            "changelog": "\n Notes\n\nI think it's time for a new release candidate. Our release cycles are long\nenough and users are asked to use the current TIP of the next branch to test\nour recent patches.\n\nThe current version makes better support for environment variable expansion and\nimproves OS portability. Gmail should be better supported: we are still\nexpecting feedbacks. Embedded library imaplib2 is updated to v2.37.\nDebugging messages are added and polished.\n\nThere's some code cleanups and refactoring, also.\n\n\n Features\n\n* Expand environment variables in the following\n  configuration items:\n  - general.pythonfile;\n  - general.metadata;\n  - mbnames.filename;\n  - Repository.localfolders.\n  - Repository.sslcacertfile.\n  Make tilde and environment variable expansion in the following\n  configuration items:\n  - Repository.sslclientcert;\n  - Repository.sslclientkey.\n* Support default CA bundle locations for a couple of\n  known Unix systems (Michael Vogt, GutHub pull 19)\n* Added default CA bundle location for OpenBSD\n  (GitHub pull 120) and DragonFlyBSD.\n\n Fixes\n\n* Fix unbounded recursion during flag update (Josh Berry).\n* Do not ignore gmail labels if header appears multiple times\n* Delete gmail labels header before adding a new one\n* Fix improper header separator for X-OfflineIMAP header\n* Match header names case-insensitively\n* Create SQLite database directory if it doesn't exist\n  yet; warn if path is not a directory (Nick Farrell,\n  GutHub pull 102)\n* Properly manipulate contents of messagelist for folder\n* Fix label processing in GmailMaildir\n* Properly capitalize OpenSSL\n* Fix warning-level message processing by MachineUI\n  (GitHub pull 64, GitHub pull 118).\n* Properly generate tarball from \"sdist\" command (GitHub 137)\n* Fix Markdown formatting\n* Fix typo in apply_xforms invocation\n* Merge pull request 136 from aroig/gh/label-fix\n* Fix mangled message headers for servers without UIDPLUS:\n  X-OfflineIMAP was added with preceeding '\\n' instead of\n  '\\r\\n' just before message was uploaded to the IMAP server.\n* Add missing version bump for 6.5.6 (it was released with\n  6.5.5 in setup.py and other places).\n\n Changes\n\n* Warn about a tricky piece of code in addmessageheader\n* Rename addmessageheader()'s crlf parameter to linebreak\n* addmessageheader: fix case 2 and flesh out docstring\n* addmessageheader(): add debug for header insertion\n* Add version qualifier to differentiate releases and development ones\n* More clearly show results of folder name translation\n* IMAP: provide message-id in error messages\n* Trade recursion by plain old cycle\n* Avoid copying array every time, just slice it\n* Added OpenSSL exception clause to our main GPL to allow\n  people to link with OpenSSL in run-time.  It is needed\n  at least for Debian, see\n    https://lists.debian.org/debian-legal/2002/10/msg00113.html\n  for details.\n* Brought CustomConfig.py into more proper shape\n* Updated bundled imaplib2 to 2.37:\n  - add missing idle_lock in _handler()\n* Imaplib2: trade backticks to repr()\n* Introduce CustomConfig method that applies set of transforms\n* imaplibutil.py: remove unused imports\n* CustomConfig.py: remove unused imports\n* init.py: remove unused import\n* repository/Base.py: remove unused import\n* repository/GmailMaildir.py: remove unused import\n* repository/LocalStatus.py: remove unused import\n* ui/Curses.py: remove unused import\n* ui/UIBase.py: remove unused import\n* localeval: comment on security issues\n* docs: remove obsolete comment about SubmittingPatches.rst\n* utils/const.py: fix ident\n* ui/UIBase: folderlist(): avoid built-in list() redefinition\n* more consistent style\n\n\n\n",
+            "v": "<6.5.7rc1"
+        }
+    ],
     "onegov.form": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~~~\n\n- HTML escapes labels in the dynamic formbuilder for security.\n  [href]\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
