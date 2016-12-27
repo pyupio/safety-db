@@ -1,4 +1,7 @@
 {
+    "accesscontrol": [
+        "<3.0.8"
+    ],
     "aiocouchdb": [
         "<0.6.0"
     ],
