@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5031,6 +5031,12 @@
         {
             "changelog": "++++++++++++++++++\n\n**Bugfixes**\n\n- CVE-2015-2296: Fix handling of cookies on redirect. Previously a cookie\n  without a host value set would use the hostname for the redirected URL\n  exposing requests users to session fixation attacks and potentially cookie\n  stealing. This was disclosed privately by Matthew Daley of\n  `BugFuzz <https://bugfuzz.com>`_. This affects all versions of requests from\n  v2.1.0 to v2.5.3 (inclusive on both ends).\n\n- Fix error when requests is an ``install_requires`` dependency and ``python\n  setup.py test`` is run. (2462)\n\n- Fix error when urllib3 is unbundled and requests continues to use the\n  vendored import location.\n\n- Include fixes to ``urllib3``'s header handling.\n\n- Requests' handling of unvendored dependencies is now more restrictive.\n\n**Features and Improvements**\n\n- Support bytearrays when passed as parameters in the ``files`` argument.\n  (2468)\n\n- Avoid data duplication when creating a request with ``str``, ``bytes``, or\n  ``bytearray`` input to the ``files`` argument.\n\n",
             "v": "<2.6.0"
+        }
+    ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- Add localhost to CORS for development.\n- Big refactor adding monitors.  Adding new watchers/auditors is now much simpler.\n- Return to the current URL after authenticating.\n- Added SES_REGION config.  Now you can send email out of regions other than us-east-1.\n- Changing default log location to /var/log/security_monkey.\n- Docs now have cleaner nginx.conf.\n- Add M2Crypto to get a number of new iamssl fields.\n- Added favicon.\n\nnew watchers:\n\n- eip\n- redshift\n- ses\n\nenhanced watchers:\n\n- iamssl - new fields from m2crypto\n- elb - new listener policies from botocore\n- sns - added sns subscriptions\n- s3 - now tracks lifecycle rules\n\nnew auditors:\n\n- redshift - checks for non-vpc deployment.\n- ses - checks for verified identities\n\nenhanced auditors:\n\n- iamssl - cert size, signature hashing algorithm, upcoming expiration, heartbleed\n- elb - check reference policy and certain custom policy fields\n\nhotfixes:\n\n- Fixed issue 12 - Deleting account results in foreign key constraint.\n- Added missing alembic script for the ignorelist.\n- Various minor documentation updates.\n- API server now respects --bind parameter. (Required for the docker image).\n- SES connection in utils.py is now surrounded in a try/except.\n- FlaskSecurity upgraded to latest.\n\nContributers:\n\n- ivanlei\n- lucab\n- yograterol\n- monkeysecurity\n\n",
+            "v": "<0.3.0"
         }
     ],
     "sentry": [
