@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5355,6 +5355,12 @@
         {
             "changelog": "------------------\n\nBugfixes\n~~~~~~~~\n\n- Removed `AI_ADDRCONFIG` from the call to `getaddrinfo`, this resolves an\n  issue whereby `getaddrinfo` wouldn't return any addresses to `bind` to on\n  hosts where there is no internet connection but localhost is requested to be\n  bound to. See https://github.com/Pylons/waitress/issues/131 for more\n  information.\n\nDeprecations\n~~~~~~~~~~~~\n\n- Python 2.6 is no longer supported.\n\nFeatures\n~~~~~~~~\n\n- IPv6 support\n\n- Waitress is now able to listen on multiple sockets, including IPv4 and IPv6.\n  Instead of passing in a host/port combination you now provide waitress with a\n  space delineated list, and it will create as many sockets as required.\n\n  .. code-block:: python\n\n\tfrom waitress import serve\n\tserve(wsgiapp, listen='0.0.0.0:8080 [::]:9090 *:6543')\n\nSecurity\n~~~~~~~~\n\n- Waitress will now drop HTTP headers that contain an underscore in the key\n  when received from a client. This is to stop any possible underscore/dash\n  conflation that may lead to security issues. See\n  https://github.com/Pylons/waitress/pull/80 and\n  https://www.djangoproject.com/weblog/2015/jan/13/security/\n",
             "v": "<1.0.0"
+        }
+    ],
+    "werkzeug": [
+        {
+            "changelog": "-----------\n\nReleased on November 23rd 2008, codename Schraubenzieher.\n\n- `Client` supports an empty `data` argument now.\n- fixed a bug in `Response.application` that made it impossible to use it\n  as method decorator.\n- the session system should work on appengine now\n- the secure cookie works properly in load balanced environments with\n  different cpu architectures now.\n- `CacheControl.no_cache` and `CacheControl.private` behavior changed to\n  reflect the possibilities of the HTTP RFC.  Setting these attributes to\n  `None` or `True` now sets the value to \"the empty value\".\n  More details in the documentation.\n- fixed `werkzeug.contrib.atom.AtomFeed.__call__`. (338)\n- `BaseResponse.make_conditional` now always returns `self`.  Previously\n  it didn't for post requests and such.\n- fixed a bug in boolean attribute handling of `html` and `xhtml`.\n- added graceful error handling to the debugger pastebin feature.\n- added a more list like interface to `Headers` (slicing and indexing\n  works now)\n- fixed a bug with the `__setitem__` method of `Headers` that didn't\n  properly remove all keys on replacing.\n- added `remove_entity_headers` which removes all entity headers from\n  a list of headers (or a `Headers` object)\n- the responses now automatically call `remove_entity_headers` if the\n  status code is 304.\n- fixed a bug with `Href` query parameter handling.  Previously the last\n  item of a call to `Href` was not handled properly if it was a dict.\n- headers now support a `pop` operation to better work with environ\n  properties.\n\n\n",
+            "v": "<0.4"
         }
     ],
     "wpull": [
