@@ -995,6 +995,9 @@
     "soappy": [
         "<0.12.6"
     ],
+    "solgema.fullcalendar": [
+        "<1.9"
+    ],
     "sopel": [
         "<4.4.0"
     ],
