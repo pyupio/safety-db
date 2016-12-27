@@ -355,6 +355,10 @@
         {
             "changelog": "dateable.chronos 0.7.2.2 (2012-07-10)\n=====================================\n\n- include also doc/ with distribution (added in MANIFEST.in)\n  [iElectric]\n\ndateable.chronos 0.7.2.1 (2012-07-10)\n=====================================\n\n- include version.txt with distribution (added MANIFEST.in)\n  [iElectric]\n\ndateable.chronos 0.7.2 (2012-06-26)\n===================================\n\n- fix AttributeError in base_view.py\n  [iElectric]\n\n- Do not (silently) depent on p4a.common, but have the required timezone code bit locally\n  [miohtama]\n\n- make views subclass Products.Five.browser.BrowserView so that their templates\n  can be customized through portal_view_customizations\n  [swampmonkey]\n\n- Fixed a XSS vulnerability in the get_view_day method\n  [keul]",
             "v": "<0.7.2"
+        },
+        {
+            "changelog": "===================================\n\n- fix AttributeError in base_view.py\n  [iElectric]\n\n- Do not (silently) depent on p4a.common, but have the required timezone code bit locally\n  [miohtama]\n\n- make views subclass Products.Five.browser.BrowserView so that their templates\n  can be customized through portal_view_customizations\n  [swampmonkey]\n\n- Fixed a XSS vulnerability in the get_view_day method\n  [keul]\n\n",
+            "v": "<0.7.2"
         }
     ],
     "defusedexpat": [
@@ -4794,17 +4798,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
