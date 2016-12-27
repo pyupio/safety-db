@@ -2909,6 +2909,12 @@
             "v": "<1.1.1"
         }
     ],
+    "mezzanine": [
+        {
+            "changelog": "----------------------------\n\n  * Don't restrict image width in default css since it's now responsive - Stephen McDonald\n  * Updated ``templates_for_host`` to insert default templates after the associated custom template, rather than putting all defaults at the end - Josh Cartmell\n  * Updated ``templates_for_device`` to insert default templates after the associated custom template, rather than putting all defaults after all custom templates - Josh Cartmell\n  * Disable nav in popups. Closes 152 - Stephen McDonald\n  * Refactored model graph building in docs - call management command natively, and handle all the error conditions - Stephen McDonald\n  * Internal refactoring of abstract models in ``mezzanine.core``. Move ``admin_link`` from Displayable to Slugged, since it is more closely related to URLs. Move ``description_from_content`` from Slugged to MetaData, since it is more related to description on MetaData. Don't rely on title in ``description_from_content``, just use string version of an instance, which is title anyway via Slugged - Stephen McDonald\n  * Added handling for having 'save' and 'save and continue' in SingletonAdmin - Stephen McDonald\n  * Make pillow an optional dependency, only used when PIL isn't installed - Stephen McDonald\n  * Added bootstrap's collapsible navbar, upgraded jQuery to 1.7, and added a setting ``JQUERY_FILENAME`` so that the jQuery file/version is stored in one place - Stephen McDonald\n  * Fix cyclic import in Django 1.4 - Stephen McDonald\n  * Don't abort on graph generation in docs build, since we can use the repo version of it - Stephen McDonald\n  * Pin exact versions in dependencies - Stephen McDonald\n  * Fix form export encoding - Stephen McDonald\n  * Updated database settings to use prefixed format. unprefixed format removed from django 1.4. Added ``django.db.backends``. to. ``settings.py`` and ``local_settings.py`` templates - Patrick Taylor\n  * Clean up db settings and remove helpers from ``mezzanine.utils.conf`` - Stephen McDonald\n  * Added more info and examples of different homepage patterns in ``project_template/urls.py`` - Stephen McDonald\n  * Added FAQs section to docs - Stephen McDonald\n  * Skinned the docs to be in line with the Mezzanine project's homepage styling - Stephen McDonald\n  * Added storage API to thumbnail template tag, and zip upload for galleries - Stephen McDonald\n  * Fix use of with statement for Python 2.5 - Stephen McDonald\n  * Use django's conf at the module level in ``mezzanine.core.fields``, so that fields can be loaded prior to ``mezzanine.conf`` being loaded - Stephen McDonald\n  * Exclude static dir from package - Stephen McDonald\n  * Added the collecttemplates management command, for copying all (or app specific) templates to a project - Stephen McDonald\n  * Added secure arg and default expiry seconds to ``mezzanine.utils.views.set_cookie`` - Stephen McDonald\n  * Added ``mezzanine.utils.email.send_mail_template`` for sending templated email, and integrated with ``mezzanine.forms``. Closes 165 - Stephen McDonald\n  * Fixed weird double-click bug in admin page tree - Stephen McDonald\n  * Fixed regression in orderable inlines from upgrading to latest jQuery - Stephen McDonald\n  * Fixed regression in keywords field from upgrading to latest jQuery - Stephen McDonald\n  * Fixed signature change in Django 1.4's admin ``change_view`` - Stephen McDonald\n  * Fixed admin login redirect for non-login view URLs - Stephen McDonald\n  * Fixed removed ``project_template`` setup in mezzanine-project. Closes 167 - Stephen McDonald\n  * Use operating system separator - Chris Trengove\n\n",
+            "v": "<1.0.3"
+        }
+    ],
     "mgp2pdf": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~\n\n- ``%filter`` is disabled by default for being a security risk.  Use\n  ``--unsafe`` to enable.\n\n- ``-o DIRECTORY`` is now supported.\n\n- Interpret image paths relative to the location of the mgp file.\n\n- Support Python 3.3 and up in addition to 2.6 and 2.7.\n\n- More accurate text positioning (mgp2pdf no longer truncates the\n  corrdinates to integral point values).\n\n- More color names are now recognized: white, red, green, blue, yellow.\n\n- Better font name recognition (requires ``fc-match`` from fontconfig).\n\n- Improved error handling and reporting.\n\n- Support ``%%`` comment syntax.\n\n- Corrected handling of ``%default``, ``%tab``, ``%deffont``.\n\n- Implemented ``%include``.\n\n- Implemented ``%newimage -raise`` (also discovered that mgp itself ignores\n  ``-raise``).\n\n- 100% test coverage.\n\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
