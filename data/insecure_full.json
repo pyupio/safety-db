@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5355,6 +5355,12 @@
         {
             "changelog": "------------------\n\nBugfixes\n~~~~~~~~\n\n- Removed `AI_ADDRCONFIG` from the call to `getaddrinfo`, this resolves an\n  issue whereby `getaddrinfo` wouldn't return any addresses to `bind` to on\n  hosts where there is no internet connection but localhost is requested to be\n  bound to. See https://github.com/Pylons/waitress/issues/131 for more\n  information.\n\nDeprecations\n~~~~~~~~~~~~\n\n- Python 2.6 is no longer supported.\n\nFeatures\n~~~~~~~~\n\n- IPv6 support\n\n- Waitress is now able to listen on multiple sockets, including IPv4 and IPv6.\n  Instead of passing in a host/port combination you now provide waitress with a\n  space delineated list, and it will create as many sockets as required.\n\n  .. code-block:: python\n\n\tfrom waitress import serve\n\tserve(wsgiapp, listen='0.0.0.0:8080 [::]:9090 *:6543')\n\nSecurity\n~~~~~~~~\n\n- Waitress will now drop HTTP headers that contain an underscore in the key\n  when received from a client. This is to stop any possible underscore/dash\n  conflation that may lead to security issues. See\n  https://github.com/Pylons/waitress/pull/80 and\n  https://www.djangoproject.com/weblog/2015/jan/13/security/\n",
             "v": "<1.0.0"
+        }
+    ],
+    "webob": [
+        {
+            "changelog": "------------------\n\nCompatibility\n~~~~~~~~~~~~~\n\n- Python 3.2 is no longer supported by WebOb\n\nBugfix\n~~~~~~\n\n- Request.decode attempted to read from the an already consumed stream, it has\n  now been redirected to another stream to read from. See\n  https://github.com/Pylons/webob/pull/183\n\n- The application/json media type does not allow for a charset as discovery of\n  the encoding is done at the JSON layer. Upon initialization of a Response\n  WebOb will no longer add a charset if the content-type is set to JSON. See\n  https://github.com/Pylons/webob/pull/197 and\n  https://github.com/Pylons/pyramid/issues/1611\n\nFeatures\n~~~~~~~~\n\n- Lazily HTML escapes environment keys in HTTP Exceptions so that those keys in\n  the environ that are not used in the output of the page don't raise an\n  exception due to inability to be properly escaped. See\n  https://github.com/Pylons/webob/pull/139\n\n- MIMEAccept now accepts comparisons against wildcards, this allows one to\n  match on just the media type or sub-type, without having to explicitly match\n  on both the media type and sub-type at the same time. See\n  https://github.com/Pylons/webob/pull/185\n\n- Add the ability to return a JSON body from an exception. Using the Accept\n  information in the request, the exceptions will now automatically return a\n  JSON version of the exception instead of just HTML or text. See\n  https://github.com/Pylons/webob/pull/230 and\n  https://github.com/Pylons/webob/issues/209\n\nSecurity\n~~~~~~~~\n\n- exc._HTTPMove and any subclasses will now raise a ValueError if the location\n  field contains a line feed or carriage return. These values may lead to\n  possible HTTP Response Splitting. The header_getter descriptor has also been\n  modified to no longer accept headers with a line feed or carriage return.\n  See: https://github.com/Pylons/webob/pull/229 and\n  https://github.com/Pylons/webob/issues/217\n\n\n",
+            "v": "<1.6.0"
         }
     ],
     "wpull": [
