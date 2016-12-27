@@ -746,6 +746,9 @@
     "plone.app.contenttypes": [
         "<1.2.15"
     ],
+    "plone.app.controlpanel": [
+        "<3.0.4"
+    ],
     "plone.app.event": [
         "<3.0"
     ],
