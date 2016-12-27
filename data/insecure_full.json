@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5031,6 +5031,12 @@
         {
             "changelog": "++++++++++++++++++\n\n**Bugfixes**\n\n- CVE-2015-2296: Fix handling of cookies on redirect. Previously a cookie\n  without a host value set would use the hostname for the redirected URL\n  exposing requests users to session fixation attacks and potentially cookie\n  stealing. This was disclosed privately by Matthew Daley of\n  `BugFuzz <https://bugfuzz.com>`_. This affects all versions of requests from\n  v2.1.0 to v2.5.3 (inclusive on both ends).\n\n- Fix error when requests is an ``install_requires`` dependency and ``python\n  setup.py test`` is run. (2462)\n\n- Fix error when urllib3 is unbundled and requests continues to use the\n  vendored import location.\n\n- Include fixes to ``urllib3``'s header handling.\n\n- Requests' handling of unvendored dependencies is now more restrictive.\n\n**Features and Improvements**\n\n- Support bytearrays when passed as parameters in the ``files`` argument.\n  (2468)\n\n- Avoid data duplication when creating a request with ``str``, ``bytes``, or\n  ``bytearray`` input to the ``files`` argument.\n\n",
             "v": "<2.6.0"
+        }
+    ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 165 - echiu64 - S3 watcher now tracking S3 Logging Configuration.\n- None - monkeysecurity - Certs with an invalid issuer now flagged.\n- PR 177 - DenverJ -Added new SQS Auditor.\n- PR 188 - kevgliss - Removed dependency on M2Crypto/Swig and replaced with Cryptography.\n- PR 164 - Qmando - URL encoding issue with certain searches containing spaces corrected.\n- None - monkeysecurity - Fixed issue where corrected issues were not removed.\n- PR 198 - monkeysecurity - Adding ability to select up to four items or revisions to be compared.\n- PR 194 195 - bunjiboys - SECURITY_TEAM_EMAIL should accept not only a list, but also a string or tuple.\n- PR 180 181 190 191 192 193 - cbarrac - A number of udpates and fixes for the bash installer. (scripts/secmonkey_auto_installer.sh)\n- PR 176 178 - mikegrima - Updated documentation for contributors on OS X and Ubuntu to use Webstorm instead of the Dart Editor.\n\n\nContributors:\n\n- Qmando\n- echiu64\n- DenverJ\n- cbarrac\n- kevgliss\n- mikegrima\n- monkeysecurity\n\n\n",
+            "v": "<0.3.8"
         }
     ],
     "sentry": [
