@@ -1014,6 +1014,9 @@
     "superset-tddv": [
         "<0.11.0"
     ],
+    "surveymonty": [
+        "<0.3.0"
+    ],
     "swauth": [
         "<1.1.0"
     ],
