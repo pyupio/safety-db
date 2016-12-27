@@ -781,6 +781,9 @@
     "products.cmfcontentpanels": [
         "<V1.4.1"
     ],
+    "products.cmfdynamicviewfti": [
+        "<4.1.3"
+    ],
     "products.ldapuserfolder": [
         "<2.19"
     ],
