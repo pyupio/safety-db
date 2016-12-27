@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4986,6 +4986,12 @@
                 "https://pypi.python.org/pypi/roundup/1.4.20"
             ],
             "v": "<1.4.20"
+        }
+    ],
+    "rqlite": [
+        {
+            "changelog": "- [PR 230](https://github.com/rqlite/rqlite/pull/230): Move Chinook test data to idiomatic testdata directory.\n- [PR 232](https://github.com/rqlite/rqlite/pull/232), [PR 233](https://github.com/rqlite/rqlite/pull/233): rqlite CLI now supports accessing secured rqlited nodes. Thanks tych0\n- [PR 235](https://github.com/rqlite/rqlite/pull/235): Return correct error, if one occurs, during backup. Thanks tych0\n- [PR 237](https://github.com/rqlite/rqlite/pull/237), [PR 238](https://github.com/rqlite/rqlite/pull/238): Support observing Raft changes. Thanks tych0\n\n",
+            "v": "<3.8.0"
         }
     ],
     "rsa": [
