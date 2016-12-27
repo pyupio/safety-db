@@ -592,6 +592,9 @@
     "maxminddb": [
         "<1.1.2"
     ],
+    "mayavi": [
+        "<3.2.0"
+    ],
     "metadataproxy": [
         "<1.1.1"
     ],
