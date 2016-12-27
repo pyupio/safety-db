@@ -479,6 +479,9 @@
     "google-appengine": [
         "<1.5.4"
     ],
+    "gumbo": [
+        "<0.9.1"
+    ],
     "holocron": [
         "<0.2.0"
     ],
