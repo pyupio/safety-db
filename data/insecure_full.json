@@ -2574,6 +2574,10 @@
         {
             "changelog": "Invenio v1.0.2 -- released 2012-10-19\n-------------------------------------\n\n  - BibConvert: fix for static files in admin guide\n\n  - BibEdit: regression test case fix\n\n  - BibFormat: fix call to bfe_primary_report_number; revert fix for\n    format validation report\n\n  - BibHarvest: OAI harvesting via HTTP proxy\n\n  - BibRank: begin_date initialisation in del_recids(); INSERT DELAYED\n    INTO rnkPAGEVIEWS; user-friendlier message for similar docs\n\n  - BibUpload: clarify correct/replace mode help\n\n  - WebJournal: catch ValueError when reading cache; use\n    CFG_TMPSHAREDDIR in admin UI\n\n  - WebSearch: allow webcoll to query hidden tags; external collection\n    search fix; external search XSS vulnerability fix; fix for\n    parentheses inside quotes; get_collection_reclist() fix; more uses\n    of `rg` configurable default; 'verbose' mode available to admins\n    only; XSS and verbose improvements\n\n  - WebSession: fix possibly undefined variables; prevent nickname\n    modification\n\n  - WebStyle: workaround IE bug with cache and HTTPS\n\n  - WebSubmit: configurable Document File Manager; fix JS check for\n    mandatory fields; unoconv calling fix\n\n  - bibdocfile: guess_format_from_url() improvement;\n    guess_format_from_url() improvements; INSERT DELAYED INTO\n    rnkDOWNLOADS\n\n  - global: removal of psyco\n\n  - I18N: Spanish and Catalan updates to Search Tips; updates to\n    German translation\n\n  - installation: fix for jQuery UI custom; fix md5sum example\n    arguments; new index on session.session_expiry\n\n  - intbitset: fix memory leak\n\n  - inveniogc: tmp directory removal improvements\n\n  - urlutils: MS Office redirection workaround",
             "v": "<1.0.2"
+        },
+        {
+            "changelog": "-------------------------------------\n\n  - BibAuthorID: fix in name comparisons (1313 1314); improvements\n    and fixes; improvements, fixes and optimizations; UI and backend\n    improvements\n\n  - BibCatalog: removal of print statement (1337)\n\n  - BibClassify: escape keywords in tag cloud and MARCXML\n\n  - BibDocFile: better JS washing in web UI; display file upload\n    progress (1020 1021); display \"Restricted\" label correctly\n    (1299); fix check-md5 with bibdocfsinfo cache (1249); fix\n    check-md5 with bibdocfsinfo cache (1249); fix error in calling\n    register_download (1311); handling of exceptions in Md5Folder\n    (1060); revert md5 property patch (1249); support new magic\n    library (1207)\n\n  - BibEncode: minor fix in process_batch_job()\n\n  - BibFormat: additional fulltext file display in HB (1219); checks\n    for bibformat bin; fix CLI call to old PHP-based formatter; fixes\n    unit tests (1320); fix for fulltext file format; fix snippets for\n    phrase queries (1201); format_element initialisation fix; passing\n    of user_info for Excel format; replacement of CDS Invenio by\n    Invenio; setUp/tearDown in unit tests (1319); skip hidden icons\n    in OpenGraph image tag\n\n  - BibIndex: better wording for stemming in admin UI; replacement of\n    CDS Invenio by Invenio; synonym indexing speed up (1484); use\n    human friendly index name (1329)\n\n  - BibKnowledge: /kb/export 500 error fix; optional memoisation of\n    KBR lookups (1484)\n\n  - BibMerge: delete cache file on submit\n\n  - BibSched: bibupload max_priority check; bugfix for high-priority\n    monotasks; increases size of monitor columns;\n    parse_runtime_limit() fix (1432); parse_runtime_limit() tests fix\n    (1432)\n\n  - BibUpload: FMT regression test case fix (1152); indicators in\n    strong tags (939)\n\n  - CKEditor: updated to version 3.6.6\n\n  - dateutils: strftime improvement (1065); strptime for Python-2.4\n    compatibility\n\n  - errorlib: hiding bibcatalog info in exception body\n\n  - global: test suite nosification\n\n  - htmlutils: fix single quote escaping; improve js string escaping;\n    MathJax 2.1 (1050)\n\n  - I18N: updates to Catalan and Spanish translations\n\n  - installation: fix collectiondetailedrecordpagetabs (1496); fix\n    for jQuery hotkeys add-on URL (1507); fix for MathJax OS X\n    install issue (1455); support for Apache-2.4 (1552)\n\n  - inveniocfg: tests runner file closure fix (1327)\n\n  - InvenioConnector: fix for CDS authentication; mechanize dependency\n\n  - inveniogc: consider journal cache subdirs\n\n  - memoiseutils: initial release\n\n  - OAIHarvest: fix path for temporary authorlists; holding-pen UI\n    bugfixes (1401)\n\n  - OAIRepository: CFG_OAI_REPOSITORY_MARCXML_SIZE; no bibupload -n\n\n  - RefExtract: replacement of CDS Invenio by Invenio\n\n  - WebAccess: fix variable parsing in robot auth (1456); IP-based\n    rules and offline user fix (1233); replacement of CDS Invenio by\n    InveniO\n\n  - WebApiKey: renames unit tests to regression tests (1324)\n\n  - WebAuthorProfile: fix XSS vulnerability\n\n  - WebComment: escape review \"title\"; escape review \"title\"\n\n  - WebSearch: 410 HTTP code for deleted records; advanced search\n    notification if no hits; better cleaning of word patterns; fix\n    infinite synonym lookup cases (804); handles \"find feb 12\"\n    (948); nicer browsing of fuzzy indexes (1348); respect default\n    `rg` in Advanced Search; SPIRES date math search fixes (431\n    948); SPIRES invalid date search fix (1467); tweaks SPIRES\n    two-digit search; unit test disabling for CFG_CERN_SITE; unit test\n    update (1326)\n\n  - WebSession: fix for list of admin activities (1444); login_method\n    changes; unit vs regression test suite cleanup\n\n  - WebStat: use CFG_JOURNAL_TAG instead of 773/909C4 (546)\n\n  - WebSubmit: new websubmitadmin CLI (1334); replacement of CDS\n\n",
+            "v": "<1.1.2"
         }
     ],
     "invenio-search": [
@@ -4794,17 +4798,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
