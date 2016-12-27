@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5141,6 +5141,12 @@
         {
             "changelog": "=========================\n\n  * Fix permission checks. Security issue, anybody could edit photos.\n  * Fix broken XHTML.\n  * Make timezones more flexible. Can specify UTC+nn or UTC-nn for imports.\n  * Improve photo editor, have links to most popular items.\n  * Fix problems with add person and set person logic.\n  * Limit width of photo summary in css.\n  * Optimize how search string is generated.\n  * Don't use CSRF protection for post requests that don't have side effects.\n\n",
             "v": "<0.8"
+        }
+    ],
+    "ssh": [
+        {
+            "changelog": "----------------------\n  * (bug 137219) catch EINTR and handle correctly\n  * (bug 157205) fix select() to trigger on stderr for a channel too\n  * added SSHClient.get_transport()\n  * added Channel.send_ready()\n  * added direct-tcpip forwarding [patch from david guerizec]\n  * fixed the PRNG to be more secure on windows and in cases where fork() is\n    called [patch from dwayne litzenberger]\n\n",
+            "v": "<1.7.2"
         }
     ],
     "stargate": [
