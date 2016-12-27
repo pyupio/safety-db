@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4915,6 +4915,12 @@
         {
             "changelog": "  - Security fixes, some vulnerable xml-rpc calls fixed. [ggozad]\n\n",
             "v": "<0.30"
+        }
+    ],
+    "rapidsms-twilio": [
+        {
+            "changelog": "----------------------------\n\nThis is a minor release following up on the previous security release to turn the\nrequest validation on by default.\n\n\nBackwards Incompatible Changes\n______________________________\n\n* Twilio validation is now enforced by default. To turn this off you can set ``validate`` to ``False`` in your backend configuration. This is not recommended.\n\n\n",
+            "v": "<0.3.0"
         }
     ],
     "rauth": [
