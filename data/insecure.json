@@ -408,6 +408,9 @@
     "edrnsite.policy": [
         "<1.0.5"
     ],
+    "eke.biomarker": [
+        "<1.1.22"
+    ],
     "errbot": [
         "<1.3.0"
     ],
