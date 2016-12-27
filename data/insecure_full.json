@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4958,6 +4958,12 @@
         {
             "changelog": "---------------\n\n- Handle mutual authentication (see pull request 36_)\n\n  All users should upgrade immediately. This has been reported to\n  oss-security_ and we are awaiting a proper CVE identifier.\n\n  **Update**: We were issued CVE-2014-8650\n\n- Distribute as a wheel.\n\n.. _36: https://github.com/requests/requests-kerberos/pull/36\n.. _oss-security: http://www.openwall.com/lists/oss-security/\n\n",
             "v": "<0.6"
+        }
+    ],
+    "restauth": [
+        {
+            "changelog": "\n  General:\n  * Removed the migration directory, as the scripts there are now maintained in\n    a dedicated git repository:\n        https://github.com/RestAuth/migration\n  * Add a test fixture that can be used by the manage.py testserver. setup.py\n    now includes a 'testserver' command that automatically loads that fixture.\n    Libraries that require a testserver for testing should run 'setup.py\n    testserver' instead of the now deprecated test.sh script.\n  * The WSGI script now passes the RESTAUTH_HOST environment variable.\n    doc/config/multiple-instances.rst suggests using this variable, but WSGI\n    applications never receive this variable otherwise. Likewise, the\n    DJANGO_SETTINGS_MODULE is passed through if set.\n  * Generated passwords no longer contain whitespace, a backslash, single or\n    double quotes.\n  * Fix a bug that broke Service passwords with a colon (':')\n  * Most of the code now adheres to python coding standards.\n  * restauth-service now has set-hosts, add-hosts and rm-hosts, which is in line\n    with the new permission system. The 'add' command can no longer add hosts in\n    one step, since the command would be too overloaded.\n  \n  Django 1.4.0 compatibility fixes:\n  * 'setup.py testserver' now works different for 1.4.0, because 'manage.py\n    testserver' is broken in 1.4.0. See: \n        https://code.djangoproject.com/ticket/18019\n  \n  Permissions:\n  * RestAuth now offers a brand-new permission system. Services can only perform\n    the operations they are explicitly configured for. This improves security,\n    because leaked service credentials limit the potential damage an attacker\n    can do.\n  * The permissions are managed with restauth-service. The new commands are\n    set-permissions, add-permissions and rm-permissions.\n  * The available permissions are documented in the man-page for\n    restauth-service and here:\n        https://server.restauth.net/restauth-service.html\n  \n  build-related:\n  * The 'debian' branch now includes a ready-to-use debian package. Several\n    distro-specific branches include packages for older distributions.\n  * The new command 'prepare_debian_changelog' updates debian/changelog to the\n    newest version\n  * scripts found in bin/ are now automatically installed.\n  * manage.py gets an automatic symlink in $PREFIX/bin\n\n  Passwords:\n  * Support empty salts (some legacy systems to not use a salt)\n  * You can now implement support for a custom hash and add it to RestAuth using\n    the HASH_FUNCTIONS setting\n  * Support two new algorithms:\n    * 'crypt': Store passwords using the systems 'crypt' routine\n    * 'apr1': Store passwords using the apache modified version of MD5\n      commonly used in .htpasswd files\n  * Added test-functions for custom hashing algorithms\n\n  Validators:\n  * Massively rewrote the validator system. It is now way faster and more\n    powerul:\n    * deprecated SKIP_VALIDATORS setting\n    * introduced the new VALIDATORS setting (essentially the inverse to the\n      former)\n    * validators are now classes instead of functions\n    * rewritten and optimized the validation function\n  * new 'drupal' validator that actually uncovers a bug in Drupal (see\n    documentation). This validator is much more restrictive than drupal at this\n    moment.\n\n  Groups:\n  * Speed up group creation\n  * some code-cleanup (remove one-line functions, etc.)\n  * Improve speed of getting groups of a user\n\n  Documentation:\n  * Improved documentation in lots of places\n  * Add upgrade notes\n  * setup.py includes the new target build_html\n  * Add minimal manpage for restauth-manage\n  * Add developer/testserver documenting how to run a testserver for library\n    testing\n  * Add installation instructions for RHEL and Fedora\n  * Add installation instructions for ArchLinux\n\n",
+            "v": "<0.5.3"
         }
     ],
     "roundup": [
