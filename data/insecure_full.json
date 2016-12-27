@@ -3902,6 +3902,12 @@
             "v": "<0.4.2"
         }
     ],
+    "poorwsgi": [
+        {
+            "changelog": "    * auto striping option keys and values\n    * HTTP_FORBIDDEN bug fix (missing const)\n    * Security update:\n      * using sha512 in session hidden function\n      * more uknown generic secret key\n      * secret key is moved from debug-info html page to log where this page is\n        shown\n    * EmptyForm return default value\n\n",
+            "v": "<1.0.2"
+        }
+    ],
     "pretaweb.healthcheck": [
         {
             "changelog": "----------------\n\n- Removed force=yes option to prevent DoS attacks \n- Output now to instance stderr\n\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
