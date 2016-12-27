@@ -464,6 +464,9 @@
     "ftw.permissionmanager": [
         "<2.2.2"
     ],
+    "fuel-plugin-builder": [
+        "<2.0.0"
+    ],
     "gandi.cli": [
         "<0.10"
     ],
