@@ -157,6 +157,9 @@
     "deis": [
         "<1.3.1"
     ],
+    "dexterity.localrolesfield": [
+        "<1.1"
+    ],
     "djangae": [
         "<0.9.4"
     ],
