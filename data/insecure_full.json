@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5031,6 +5031,12 @@
         {
             "changelog": "++++++++++++++++++\n\n**Bugfixes**\n\n- CVE-2015-2296: Fix handling of cookies on redirect. Previously a cookie\n  without a host value set would use the hostname for the redirected URL\n  exposing requests users to session fixation attacks and potentially cookie\n  stealing. This was disclosed privately by Matthew Daley of\n  `BugFuzz <https://bugfuzz.com>`_. This affects all versions of requests from\n  v2.1.0 to v2.5.3 (inclusive on both ends).\n\n- Fix error when requests is an ``install_requires`` dependency and ``python\n  setup.py test`` is run. (2462)\n\n- Fix error when urllib3 is unbundled and requests continues to use the\n  vendored import location.\n\n- Include fixes to ``urllib3``'s header handling.\n\n- Requests' handling of unvendored dependencies is now more restrictive.\n\n**Features and Improvements**\n\n- Support bytearrays when passed as parameters in the ``files`` argument.\n  (2468)\n\n- Avoid data duplication when creating a request with ``str``, ``bytes``, or\n  ``bytearray`` input to the ``files`` argument.\n\n",
             "v": "<2.6.0"
+        }
+    ],
+    "security-monkey": [
+        {
+            "changelog": "==================\n- Merged in a new AuditorSettings tab created by Qmando at Yelp enabling you to disable audit checks with per-account granularity.\n- security_monkey is now CSP compliant.\n- security_monkey has removed all shadow-DOM components.  Also removed webcomponents.js and dart_support.js, as they were not CSP compliant.\n- security_monkey now advises users to enable standard security headers following headers:\n\n.. code-block:: python\n\n    X-Content-Type-Options \"nosniff\";\n    X-XSS-Protection \"1; mode=block\";\n    X-Frame-Options \"SAMEORIGIN\";\n    Strict-Transport-Security \"max-age=631138519\";\n    Content-Security-Policy \"default-src 'self'; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://ajax.googleapis.com; style-src 'self' https://fonts.googleapis.com;\"\n\n\n- security_monkey now has XSRF protection against all DELETE, POST, PUT, and PATCH calls.\n- Updated the ELB Auditor to be aware of the ELBSecurityPolicy-2015-02 reference policy.\n\n\nContributers:\n\n- Qmando\n- monkeysecurity\n\n\n",
+            "v": "<0.3.4"
         }
     ],
     "sentry": [
