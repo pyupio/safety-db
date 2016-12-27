@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5237,6 +5237,12 @@
                 "http://www.tornadoweb.org/documentation/releases/v2.2.1.html"
             ],
             "v": "<2.2.1"
+        }
+    ],
+    "tracauthopenid": [
+        {
+            "changelog": "==========================\n\nNew Features\n------------\n\n- (Contributed by Patrick Uiterwijk) Users can be added to trac groups\n  according to group membership provided via the OpenIDTeams_\n  extension.  Only groups listed in the new ``groups_to_request``\n  config option will be considered for possible membership.  To use\n  this feature you must install the python-openid-teams_ package.\n\n.. _OpenIDTeams: https://dev.launchpad.net/OpenIDTeams\n.. _python-openid-teams: https://pypi.python.org/pypi/python-openid-teams\n\nBug/Security Fixes\n------------------\n\n- Previously, if no email address was returned via AX or SREG, the\n  ``email_white_list`` config option was being ignored.  Now if\n  ``email_white_list`` is set and no email address can be determined,\n  authorization will be denied.\n\n- Do not create new users with a username which already has trac permissions\n  assigned to it.  (E.g. this might be the name of a trac group.)\n\nDocumentation\n-------------\n\n- Updated the example config in the README__ so that it more closely\n  matches current reality.  (Baby steps...)\n\n__ https://github.com/trac-hacks/authopenid-pluginoptions\n\n",
+            "v": "<0.4.4"
         }
     ],
     "tripleo-heat-templates": [
