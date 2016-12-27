@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5031,6 +5031,12 @@
         {
             "changelog": "++++++++++++++++++\n\n**Bugfixes**\n\n- CVE-2015-2296: Fix handling of cookies on redirect. Previously a cookie\n  without a host value set would use the hostname for the redirected URL\n  exposing requests users to session fixation attacks and potentially cookie\n  stealing. This was disclosed privately by Matthew Daley of\n  `BugFuzz <https://bugfuzz.com>`_. This affects all versions of requests from\n  v2.1.0 to v2.5.3 (inclusive on both ends).\n\n- Fix error when requests is an ``install_requires`` dependency and ``python\n  setup.py test`` is run. (2462)\n\n- Fix error when urllib3 is unbundled and requests continues to use the\n  vendored import location.\n\n- Include fixes to ``urllib3``'s header handling.\n\n- Requests' handling of unvendored dependencies is now more restrictive.\n\n**Features and Improvements**\n\n- Support bytearrays when passed as parameters in the ``files`` argument.\n  (2468)\n\n- Avoid data duplication when creating a request with ``str``, ``bytes``, or\n  ``bytearray`` input to the ``files`` argument.\n\n",
             "v": "<2.6.0"
+        }
+    ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 212 - bunjiboys - Make email failures warnings instead of debug messages\n- PR 203 - markofu - Added license to secmonkey_auto_install.sh.\n- PR 207 - cbarrac - Updated dependencies and dart installation for secmonkey_auto_install.sh\n- PR 209 - mikegrima - Make SNS Ignorelist use name instead of ARN.\n- PR 213 - Qmando - Added more exception handling to the S3 watcher.\n- PR 215 - Dklotz-Circle - Added egress rules to the security group watcher.\n- monkeysecurity - Updated quickstart.rst IAM policy to remove wildcards and include redshift permissions.\n- PR 218 - monkeysecurity - Added exception handling to the S3 bucket.get_location API call.\n- PR 221 - Qmando - Retry on AWS API error when slurping ELBs.\n- monkeysecurity - Updated cryptography package from 1.0 to 1.0.2 for easier installation under OS X El Capitan.\n\nHotfixes:\n\n- Updated quickstart.rst and secmonkey_auto_install.sh to remove swig/python-m2crypto and add libffi-dev\n- Issue 220 - SQS Auditor not correctly parsing ARNs, halting security_monkey. Fixed by abstracting ARN parsing into a new class (security_monkey.common.arn).  Updated the SNS Auditor to also use this new class.\n\nContributors:\n\n- bunjiboys\n- markofu\n- cbarrac\n- mikegrima\n- Qmando\n- Dklotz-Circle\n- monkeysecurity\n\n\n",
+            "v": "<0.3.9"
         }
     ],
     "sentry": [
