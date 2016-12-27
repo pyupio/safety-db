@@ -3091,6 +3091,12 @@
             "v": "<1.0.2"
         }
     ],
+    "openrem": [
+        {
+            "changelog": "------------------\n\n* `119`_  Fixed issue where Celery didn't work on Windows. Django project folder is now called openremproject instead of openrem\n* `117`_  Added Windows line endings to patient size import logs\n* `113`_  Fixed units spelling error in patient size import logs\n* `112`_  File system errors during imports and exports are now handled properly with tasks listed in error states on the summary pages\n* `111`_  Added abort function to patient size imports and study exports\n* `110`_  Converted exports to use the FileField handling for storage and access, plus modified folder structure.\n* `109`_  Added example ``MEDIA_ROOT`` path for Windows to the install docs\n* `108`_  Documented ownership issues between the webserver and Celery\n* `107`_  Documented process for upgrading to 0.4.2 before 0.4.3 for versions 0.3.9 or earlier\n* `106`_  Added the duration of export time to the exports table. Also added template formatting tag to convert seconds to natural time\n* `105`_  Fixed bug in Philips CT import where :py:class:`decimal.Decimal` was not imported before being used in the age calculation\n* `104`_  Added documentation for the additional study export functions as a result of using Celery tasks in task `19`_ as well as documentation for the code\n* `103`_  Added documentation for using the web import of patient size information as well as the new code\n* `102`_  Improved handling of attempts to process patient size files that have been deleted for when users go back in the browser after the process is finished\n* `101`_  Set the security of the new patient size imports to prevent users below admin level from using it\n* `100`_  Logging information for patient size imports was being written to the database - changed to write to file\n* `99`_   Method for importing remapp from scripts and for setting the `DJANGO_SETTINGS_MODULE` made more robust so that it should work out of the box on Windows, debian derivatives and virtualenvs\n* `98`_   Versions 0.4.0 to 0.4.2 had a settings.py.new file to avoid overwriting settings files on upgrades; renaming this file was missing from the installation documentation for new installs\n* `97`_   Changed the name of the export views file from ajaxviews as ajax wasn't used in the end\n* `96`_   Changed mammo and fluoro filters to use named fields to avoid needing to use the full database path\n* `93`_   Set the security of the new exports to prevent users below export level from creating or downloading exports\n* `92`_   Add `NHSBSP specific mammography csv export`_ from Jonathan Cole - with Celery\n* `91`_   Added documentation for Celery and RabbitMQ\n* `90`_   Added delete function for exports\n* `89`_   Added the Exports navigation item to all templates, limited to export or admin users\n* `88`_   Converted fluoroscopy objects to using the Celery task manager after starting with CT for `19`_\n* `87`_   Converted mammography objects to using the Celery task manager after starting with CT for `19`_\n* `86`_   Digital Breast Tomosynthesis systems have a projections object that for Hologic contains required dosimetry information\n* `85`_   Fix for bug introduced in `75`_ where adaption of ptsize import for procedure import broke ptsize imports\n* `74`_   'Time since last study' is now correct when daylight saving time kicks in\n* `39`_   Debug mode now defaults to False\n* `21`_   Height and weight data can now be imported through forms in the web interface\n* `19`_   Exports are now sent to a task manager instead of locking up the web interface\n\nReopened issue\n``````````````\n\n* `9`_    Issue tracking import using \\*.dcm style wildcards reopened as Windows ``cmd.exe`` shell doesn't do wildcard expansion, so this will need to be handled by OpenREM in a future version\n\n",
+            "v": "<0.4.3"
+        }
+    ],
     "otpauth": [
         {
             "changelog": "~~~~~~~~~~~~~\n\nReleased on May 26, 2015\n\nUse ``compare_digest`` to avoid timing attack.\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
