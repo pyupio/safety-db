@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4867,6 +4867,12 @@
         {
             "changelog": "------------------------\n\n  * Reset OTRProtocol public attributes when encryption ends\n  * Don't allow restarting the protocol to prevent man-in-the-middle attacks\n  * Made OTRSession properties thread-safe\n  * Added OTRSession.id property\n  * Allow specifying the supported protocol versions with OTRSession\n  * Do not allow unsolicited DHCommit messages to restart the AKE\n\n",
             "v": "<1.1.0"
+        }
+    ],
+    "python-ptrace": [
+        {
+            "changelog": "--------------------------------\n\n* BUGFIX: Fix typo in gdb.py (commands => command_str), it wasn't possible to\n  write more than one command...\n* BUGFIX: Fix typo in SignalInfo class (remove \"self.\"). When a process\n  received a signal SIGCHLD (because of a fork), the debugger exited because\n  of this bug.\n* BUGFIX: Debugger._wait() return abnormal process exit as a normal event,\n  the event is not raised as an exception\n* PtraceSignal: don't clear preformatted arguments (e.g. arguments of execve)\n\n",
+            "v": "<0.4.2"
         }
     ],
     "python-saml": [
