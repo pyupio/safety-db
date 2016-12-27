@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5488,6 +5488,12 @@
                 "https://www.redhat.com/archives/fedora-package-announce/2009-July/msg00750.html"
             ],
             "v": "<1.2"
+        }
+    ],
+    "zope.proxy": [
+        {
+            "changelog": "------------------\n\n- Add support for PyPy.\n\n  N.B.:  the C extension is *not* built under PyPy.\n\n- Add a pure-Python reference / fallback implementations of\n  ``zope.proxy.ProxyBase`` and the proxy module API functions.\n\n  N.B.:  the pure-Python proxy implements all regular features of\n  ``ProxyBase``;  however, it does not exclude access to the wrapped object\n  in the same way that the C version does.  If you need that information\n  hiding (e.g., to implement security sandboxing), you still need to use\n  the C version.\n\n- Add support for continuous integration using ``tox`` and ``jenkins``.\n\n- 100% unit test coverage.\n\n- Add Sphinx documentation:  moved doctest examples to API reference.\n\n- Add 'setup.py docs' alias (installs ``Sphinx`` and dependencies).\n\n- Add 'setup.py dev' alias (runs ``setup.py develop`` plus installs\n  ``nose`` and ``coverage``).\n\n- Replace deprecated ``zope.interface.implements`` usage with equivalent\n  ``zope.interface.implementer`` decorator.\n\n- Drop support for Python 2.4 and 2.5.\n\n- Add Python 3.2 support.\n\n",
+            "v": "<4.0.0"
         }
     ],
     "zope2": [
