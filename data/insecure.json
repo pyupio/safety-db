@@ -749,6 +749,9 @@
     "plone.app.event": [
         "<3.0"
     ],
+    "plone.app.users": [
+        "<1.1.1"
+    ],
     "plone.dexterity": [
         "<2.3.0"
     ],
