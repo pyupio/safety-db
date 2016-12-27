@@ -2253,6 +2253,12 @@
             "v": "<6.1"
         }
     ],
+    "eve": [
+        {
+            "changelog": "~~~~~~~~~~~\n- New: ``OPTIMIZE_PAGINATION_FOR_SPEED``. Set this to ``True`` to improve\n  pagination performance. When optimization is active no count operation, which\n  can be slow on large collections, is performed on the database. This does\n  have a few consequences. Firstly, no document count is returned. Secondly,\n  ``HATEOAS`` is less accurate: no last page link is available, and next page\n  link is always included, even on last page. On big collections, switching\n  this feature on can greatly improve performance. Defaults to ``False``\n  (slower performance; document count included; accurate ``HATEOAS``). Closes\n  944 and 853.\n \n\n- New: ``Location`` header is returned on ``201 Created`` POST responses. If\n  will contain the URI to the created document. If bulk inserts are enabled,\n  only the first document URI is returned. Closes 795.\n\n- New: Pretty printing.You can pretty print the response by specifying a query\n  parameter named ``?pretty`` (Hasan Pekdemir).\n\n- New: ``AUTO_COLLAPSE_MULTI_KEYS``. If set to ``True``, multiple values sent\n  with the same key, submitted using the ``application/x-www-form-urlencoded``\n  or ``multipart/form-data`` content types, will automatically be converted to\n  a list of values. When using this together with ``AUTO_CREATE_LISTS`` it\n  becomes possible to use lists of media fields. Defaults to ``False``. Closes\n  932 (Conrad Burchert).\n\n- New: ``AUTO_CREATE_LISTS``. When submitting a non ``list`` type value for\n  a field with type ``list``, automatically create a one element list before\n  running the validators. Defaults to ``False`` (Conrad Burchert).\n\n- New: Flask-PyMongo compatibility for for ``MONGO_CONNECT`` config setting\n  (Massimo Scamarcia).\n\n- New: Add Python 3.5 as a supported interpreter (Mattias Lundberg).\n\n- New: ``MONGO_OPTIONS`` allows MongoDB arguments to be passed to the\n  MongoClient object. Defaults to ``{}`` (Massimo Scamarcia).\n\n- New: Regexes are allowed when setting ``X_DOMAINS`` values. This allows CORS\n  to support websites with dynamic ranges of subdomains. Closes 660.\n\n- New: If ``ENFORCE_IF_MATCH`` option is active, then all requests are expected\n  to include the ``If-Match`` or they will be rejected (same as old behavior).\n  However, if ``ENFORCE_IF_MATCH`` is disabled, then client determines whether\n  request is conditional. When ``If-Match`` is included, then request is\n  conditional, otherwise the request is processed with no conditional checks.\n  Closes 657 (Arthur Burkart).\n\n- New: Allow old document versions to be cache validated using ETags (Nick\n  Park).\n\n- New: Support weak ETags, commonly applied by servers transmitting gzipped\n  content (Nick Park).\n\n- New: ``on_oplog_push`` event is fired when OPLOG is about to be updated.\n  Callbacks receive two arguments: ``resource`` (resource name) and ``entries``\n  (list of oplog entries which are about to be written).\n\n- New: optional ``extra`` field is available for OPLOG entries. Can be updated\n  by callbacks hooked to the new ``on_oplog_push`` event.\n\n- New: OPLOG audit now include the username or token when available. Closes\n  846.\n\n- New ``get_internal`` and ``getitem_internal`` functions can be used for\n  internal GET calls. These methods are not rate limited, authentication is not\n  checked and pre-request events are not raised.\n\n- New: Add support for MongoDB ``DBRef`` fields (Roman Gavrilov).\n\n- New: ``MULTIPART_FORM_FIELDS_AS_JSON``. In case you are submitting your\n  resource as ``multipart/form-data`` all form data fields will be submitted as\n  strings, breaking any validation rules you might have on the resource fields.\n  If you want to treat all submitted form data as JSON strings you will have to\n  activate this setting. Closes 806 (Stratos Gerakakis).\n\n- New: Support for MongoDB Aggregation Framework. Endpoints can respond with\n  aggregation results. Clients can optionally influence aggregation\n  results by using the new ``aggregate`` option: ``aggregate={\"$year\": 2015}``.\n\n- New: Flask views (``app.route``) can now set ``mongo_prefix`` via Flask's\n  ``g`` object: ``g.mongo_prefix = 'MONGO2'`` (Gustavo Vargas).\n\n- New: Query parameters not recognised by Eve are now returned in HATEOAS URLs\n  (Mugur Rus).\n\n- New: ``OPLOG_CHANGE_METHODS`` is a list of HTTP methods which operations will\n  include changes into the OpLog (mmizotin).\n\n- Change: Return ``428 Precondition Required`` instead of a generic ``403\n  Forbidden`` when the ``If-Match`` request header is missing (Arnau Orriols).\n\n- Change: ETag response header now conforms to RFC 7232/2.3 and is surrounded\n  by double quotes. Closes 794.\n\n- Fix: fix crash when attempting to modify a document ``_id`` on MongoDB 3.4\n  (Giorgos Margaritis)\n\n- Fix: improve serialization of boolean values. Closes 947 (NotSpecial).\n\n- Fix: fix intermittently failing test. Closes 934 (Conrad Burchert).\n\n- Fix: Multiple, fast (within a 1 second window) and neutral (no actual changes)\n  PATCH requests should not raise ``412 Precondition Failed``. Closes 920.\n\n- Fix: Resource titles are not properly escaped during the XML rendering of the\n  root document (Kris Lambrechts).\n\n- Fix: ETag request headers which conform to RFC 7232/2.3 (double quoted value)\n  are now properly processed. Addresses 794.\n\n- Fix: Deprecation warning from Flask. Closes 898 (George Lestaris).\n\n- Fix: add Support serialization on lists using anyof, oneof, allof, noneof.\n  Closes 876 (Carles Bruguera).\n\n- Fix: update security example snippets to match with current API (Stanislav\n  Filin).\n\n- Fix: ``notifications.py`` example snippet crashes due to lack of ``DOMAIN``\n  setting (Stanislav Filin).\n\n- Docs: remove the deprecated ``--ditribute`` virtualenv option (Eugene\n  Prikazchikov).\n- Docs: add date and subdocument fields filtering examples. Closes 924.\n- Docs: add Eve-Neo4j to the extensions page (Rodrigo Rodriguez).\n- Docs: stress that alternate backends are supported via community extensions.\n- Docs: clarify that Redis is an optional dependency (Mateusz \u0141oskot).\n\n- Update: Flask 0.11.1 is now supported. Closes 945 and 904.\n\nStable\n------\n\n",
+            "v": "<0.7"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
