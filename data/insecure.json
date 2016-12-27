@@ -947,6 +947,9 @@
     "requests-kerberos": [
         "<0.6"
     ],
+    "rg.prenotazioni": [
+        "<2.0"
+    ],
     "roundup": [
         "<1.4.20"
     ],

@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4958,6 +4958,12 @@
         {
             "changelog": "---------------\n\n- Handle mutual authentication (see pull request 36_)\n\n  All users should upgrade immediately. This has been reported to\n  oss-security_ and we are awaiting a proper CVE identifier.\n\n  **Update**: We were issued CVE-2014-8650\n\n- Distribute as a wheel.\n\n.. _36: https://github.com/requests/requests-kerberos/pull/36\n.. _oss-security: http://www.openwall.com/lists/oss-security/\n\n",
             "v": "<0.6"
+        }
+    ],
+    "rg.prenotazioni": [
+        {
+            "changelog": "================\n\n- Plone 4 support added [cekk]\n- Added Site Administrator role in rolemap and workflows [cekk]\n- Fixed translation for month in folder view [cekk]\n- Fixed mailhost send method (removed securesend) [cekk]\n- Created new event raised when a booking is rescheduled [cekk]\n- Added new contentrule that notify an user when his booking has re-scheduled [cekk]\n- Added locales support [cekk]\n- Fixed layout styles and accessibility [keul]\n- Do not show reservation object in navigation [keul]\n- Removed useless portal_skins elements [keul]\n- Removed bad ploneCustom.css css, moved to a dedicated CSS [keul]\n- Content types are now in english and translated [keul]\n- PrenotazioniFolder end date is not required anymore\n  (folder can now never expire) [keul]\n- Can't booking in past slots anymore [keul]\n- Addable types filtered [keul]\n- Removed use of the SESSION object for saving booking date [keul]\n- Removed workflow for ``PrenotazioniFolder``; use default ones [keul]\n- removed hard-coded content rules, now we have a dependency on\n  `collective.contentrules.mailfromfield`__ [keul]\n- Removed the need of an additional date index: now we use ``Date`` [keul]\n- Removed totally useless viewlets [keul]\n- On Plone 3, switched to LargePloneFolder. **Warning**: this change\n  will totally brake old 1.x installation on Plone 3.\n- Added ``futureDays`` field and feature [keul]\n- Changes to *prenotazioni_workflow*: removed useless permissions [keul]\n\n__ http://plone.org/products/collective.contentrules.mailfromfield\n\n",
+            "v": "<2.0"
         }
     ],
     "roundup": [
