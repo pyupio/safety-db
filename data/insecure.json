@@ -947,6 +947,9 @@
     "requests-kerberos": [
         "<0.6"
     ],
+    "robotframework": [
+        "<0.8"
+    ],
     "roundup": [
         "<1.4.20"
     ],
