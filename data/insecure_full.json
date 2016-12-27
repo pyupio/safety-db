@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5355,6 +5355,12 @@
         {
             "changelog": "------------------\n\nBugfixes\n~~~~~~~~\n\n- Removed `AI_ADDRCONFIG` from the call to `getaddrinfo`, this resolves an\n  issue whereby `getaddrinfo` wouldn't return any addresses to `bind` to on\n  hosts where there is no internet connection but localhost is requested to be\n  bound to. See https://github.com/Pylons/waitress/issues/131 for more\n  information.\n\nDeprecations\n~~~~~~~~~~~~\n\n- Python 2.6 is no longer supported.\n\nFeatures\n~~~~~~~~\n\n- IPv6 support\n\n- Waitress is now able to listen on multiple sockets, including IPv4 and IPv6.\n  Instead of passing in a host/port combination you now provide waitress with a\n  space delineated list, and it will create as many sockets as required.\n\n  .. code-block:: python\n\n\tfrom waitress import serve\n\tserve(wsgiapp, listen='0.0.0.0:8080 [::]:9090 *:6543')\n\nSecurity\n~~~~~~~~\n\n- Waitress will now drop HTTP headers that contain an underscore in the key\n  when received from a client. This is to stop any possible underscore/dash\n  conflation that may lead to security issues. See\n  https://github.com/Pylons/waitress/pull/80 and\n  https://www.djangoproject.com/weblog/2015/jan/13/security/\n",
             "v": "<1.0.0"
+        }
+    ],
+    "werkzeug": [
+        {
+            "changelog": "-----------\n\nReleased on July 24th 2011, codename Schraubschl\u00fcssel\n\n- Add support for python-libmemcached to the Werkzeug cache abstraction\n  layer.\n- Improved :func:`url_decode` and :func:`url_encode` performance.\n- Fixed an issue where the SharedDataMiddleware could cause an\n  internal server error on weird paths when loading via pkg_resources.\n- Fixed an URL generation bug that caused URLs to be invalid if a\n  generated component contains a colon.\n- :func:`werkzeug.import_string` now works with partially set up\n  packages properly.\n- Disabled automatic socket switching for IPv6 on the development\n  server due to problems it caused.\n- Werkzeug no longer overrides the Date header when creating a\n  conditional HTTP response.\n- The routing system provides a method to retrieve the matching\n  methods for a given path.\n- The routing system now accepts a parameter to change the encoding\n  error behaviour.\n- The local manager can now accept custom ident functions in the\n  constructor that are forwarded to the wrapped local objects.\n- url_unquote_plus now accepts unicode strings again.\n- Fixed an issue with the filesystem session support's prune\n  function and concurrent usage.\n- Fixed a problem with external URL generation discarding the port.\n- Added support for pylibmc to the Werkzeug cache abstraction layer.\n- Fixed an issue with the new multipart parser that happened when\n  a linebreak happened to be on the chunk limit.\n- Cookies are now set properly if ports are in use.  A runtime error\n  is raised if one tries to set a cookie for a domain without a dot.\n- Fixed an issue with Template.from_file not working for file\n  descriptors.\n- Reloader can now use inotify to track reloads.  This requires the\n  pyinotify library to be installed.\n- Werkzeug debugger can now submit to custom lodgeit installations.\n- redirect function's status code assertion now allows 201 to be used\n  as redirection code.  While it's not a real redirect, it shares\n  enough with redirects for the function to still be useful.\n- Fixed securecookie for pypy.\n- Fixed `ValueErrors` being raised on calls to `best_match` on\n  `MIMEAccept` objects when invalid user data was supplied.\n- Deprecated `werkzeug.contrib.kickstart` and `werkzeug.contrib.testtools`\n- URL routing now can be passed the URL arguments to keep them for\n  redirects.  In the future matching on URL arguments might also be\n  possible.\n- Header encoding changed from utf-8 to latin1 to support a port to\n  Python 3.  Bytestrings passed to the object stay untouched which\n  makes it possible to have utf-8 cookies.  This is a part where\n  the Python 3 version will later change in that it will always\n  operate on latin1 values.\n- Fixed a bug in the form parser that caused the last character to\n  be dropped off if certain values in multipart data are used.\n- Multipart parser now looks at the part-individual content type\n  header to override the global charset.\n- Introduced mimetype and mimetype_params attribute for the file\n  storage object.\n- Changed FileStorage filename fallback logic to skip special filenames\n  that Python uses for marking special files like stdin.\n- Introduced more HTTP exception classes.\n- `call_on_close` now can be used as a decorator.\n- Support for redis as cache backend.\n- Added `BaseRequest.scheme`.\n- Support for the RFC 5789 PATCH method.\n- New custom routing parser and better ordering.\n- Removed support for `is_behind_proxy`.  Use a WSGI middleware\n  instead that rewrites the `REMOTE_ADDR` according to your setup.\n  Also see the :class:`werkzeug.contrib.fixers.ProxyFix` for\n  a drop-in replacement.\n- Added cookie forging support to the test client.\n- Added support for host based matching in the routing system.\n- Switched from the default 'ignore' to the better 'replace'\n  unicode error handling mode.\n- The builtin server now adds a function named 'werkzeug.server.shutdown'\n  into the WSGI env to initiate a shutdown.  This currently only works\n  in Python 2.6 and later.\n- Headers are now assumed to be latin1 for better compatibility with\n  Python 3 once we have support.\n- Added :func:`werkzeug.security.safe_join`.\n- Added `accept_json` property analogous to `accept_html` on the\n  :class:`werkzeug.datastructures.MIMEAccept`.\n- :func:`werkzeug.utils.import_string` now fails with much better\n  error messages that pinpoint to the problem.\n- Added support for parsing of the `If-Range` header\n  (:func:`werkzeug.http.parse_if_range_header` and\n  :class:`werkzeug.datastructures.IfRange`).\n- Added support for parsing of the `Range` header\n  (:func:`werkzeug.http.parse_range_header` and\n  :class:`werkzeug.datastructures.Range`).\n- Added support for parsing of the `Content-Range` header of responses\n  and provided an accessor object for it\n  (:func:`werkzeug.http.parse_content_range_header` and\n  :class:`werkzeug.datastructures.ContentRange`).\n\n",
+            "v": "<0.7"
         }
     ],
     "wpull": [
