@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -4915,6 +4915,12 @@
         {
             "changelog": "  - Security fixes, some vulnerable xml-rpc calls fixed. [ggozad]\n\n",
             "v": "<0.30"
+        }
+    ],
+    "quintagroup.seoptimizer": [
+        {
+            "changelog": "------------------\n\n* Added overrides.zcml for BBB http://plone.org/products/plone-seo/issues/19,\n  http://plone.org/products/plone-seo/issues/23 [mylan]\n* Prevent view breakage for context, which canonical url can't be calculated for\n  http://plone.org/products/plone-seo/issues/22 [mylan]\n* Fixed security issue for SEO Property action and view\n  http://plone.org/products/plone-seo/issues/24\n  [crchemist, mylan]\n\n\n",
+            "v": "<3.0.4"
         }
     ],
     "rauth": [
