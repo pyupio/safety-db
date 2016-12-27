@@ -264,6 +264,9 @@
     "django-envelope": [
         "<0.4.1"
     ],
+    "django-fabfile": [
+        "<2011.09.21.1"
+    ],
     "django-fernet-fields": [
         "<2015.05.29"
     ],
