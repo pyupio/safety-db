@@ -781,6 +781,9 @@
     "products.cmfcontentpanels": [
         "<V1.4.1"
     ],
+    "products.cmfquickinstallertool": [
+        "<2.1.1"
+    ],
     "products.ldapuserfolder": [
         "<2.19"
     ],
