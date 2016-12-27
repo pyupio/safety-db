@@ -647,6 +647,9 @@
     "oauthlib": [
         "<0.7.0"
     ],
+    "offlineimap": [
+        "<6.6.0rc2"
+    ],
     "onegov.form": [
         "<0.16.1"
     ],
