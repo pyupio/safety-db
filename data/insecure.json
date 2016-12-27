@@ -680,6 +680,9 @@
     "pdfextract": [
         "<0.0.2"
     ],
+    "peepdf": [
+        "<0.3"
+    ],
     "peppercorn": [
         "<0.5"
     ],
