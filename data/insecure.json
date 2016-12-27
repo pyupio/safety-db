@@ -677,6 +677,9 @@
     "pastescript": [
         "<1.7.5"
     ],
+    "pcaspy": [
+        "<0.4"
+    ],
     "pdfextract": [
         "<0.0.2"
     ],
