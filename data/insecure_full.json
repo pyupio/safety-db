@@ -2574,6 +2574,10 @@
         {
             "changelog": "Invenio v1.0.2 -- released 2012-10-19\n-------------------------------------\n\n  - BibConvert: fix for static files in admin guide\n\n  - BibEdit: regression test case fix\n\n  - BibFormat: fix call to bfe_primary_report_number; revert fix for\n    format validation report\n\n  - BibHarvest: OAI harvesting via HTTP proxy\n\n  - BibRank: begin_date initialisation in del_recids(); INSERT DELAYED\n    INTO rnkPAGEVIEWS; user-friendlier message for similar docs\n\n  - BibUpload: clarify correct/replace mode help\n\n  - WebJournal: catch ValueError when reading cache; use\n    CFG_TMPSHAREDDIR in admin UI\n\n  - WebSearch: allow webcoll to query hidden tags; external collection\n    search fix; external search XSS vulnerability fix; fix for\n    parentheses inside quotes; get_collection_reclist() fix; more uses\n    of `rg` configurable default; 'verbose' mode available to admins\n    only; XSS and verbose improvements\n\n  - WebSession: fix possibly undefined variables; prevent nickname\n    modification\n\n  - WebStyle: workaround IE bug with cache and HTTPS\n\n  - WebSubmit: configurable Document File Manager; fix JS check for\n    mandatory fields; unoconv calling fix\n\n  - bibdocfile: guess_format_from_url() improvement;\n    guess_format_from_url() improvements; INSERT DELAYED INTO\n    rnkDOWNLOADS\n\n  - global: removal of psyco\n\n  - I18N: Spanish and Catalan updates to Search Tips; updates to\n    German translation\n\n  - installation: fix for jQuery UI custom; fix md5sum example\n    arguments; new index on session.session_expiry\n\n  - intbitset: fix memory leak\n\n  - inveniogc: tmp directory removal improvements\n\n  - urlutils: MS Office redirection workaround",
             "v": "<1.0.2"
+        },
+        {
+            "changelog": "-------------------------------------\n\nSecurity fixes\n--------------\n\n+ docker:\n\n  - Disables debug mode when using standard Docker image. Uses docker\n    compose to set the variable instead.\n\nImproved features\n-----------------\n\n+ deposit:\n\n  - Improves handling of large files in deposit.\n\n+ docker:\n\n  - Improves Docker documentation notably related to how to work with\n    Invenio site overlays.\n\n  - Changes port number exposed by docker to non-reserved ones to\n    avoid conflicts with local installations. Webport is now 28080,\n    Redis 26379 and MySQL is 23306, which is a simple +20000 shift\n    from the standard ports.\n\n  - Integrates docker boot script into docker image.\n\n  - Changes docker boot script to use `exec`. This ensure signal\n    forwarding and reduces the overhead by one process. As a result\n    container shutdown is faster now.\n\n  - Changes manual master/slave configuration of Docker devboot script\n    to automatic solution using file locks.\n\n+ jasmine:\n\n  - Allows using variables from application config for building asset\n    bundles.\n\nBug fixes\n---------\n\n+ deposit:\n\n  - Fixes issue with PLUpload chunking not being enabled.\n\n+ encoder:\n\n  - Corrects the `compose_file` function call in `process_batch_job`\n    to produce `<directory>/content.<extension>` instead of\n    `<directory>/content.content;<extension>`. (3354)\n\n+ global:\n\n  - Fixes the way configuration variables are parsed from ENV. It now\n    uses the same method we are using in `inveniomanage config set`.\n    This fixes the problem that `False` is not parsed correctly.\n\n+ installation:\n\n  - Fixes capitalization of package names.\n\n+ legacy:\n\n  - Fixes inveniogc crash when mysql is NOT used to store sessions.\n    (3205)\n\n+ login:\n\n  - Provides flash message to indicate that an email with password\n    recovery could not be sent. (3309)\n\nNotes\n-----\n\n+ global:\n\n  - Backports Flask-IIIF extension from original commit\n    213b6f1144734c9ecf425a1bc7b78e56ee5e4e3e. The extension is not\n    enabled by default in order to avoid feature addition to existing\n    minor release.\n\n",
+            "v": "<2.0.5"
         }
     ],
     "invenio-search": [
@@ -4794,17 +4798,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
