@@ -856,6 +856,9 @@
     "pyshop": [
         "<0.7.1"
     ],
+    "pysmb": [
+        "<1.1.9"
+    ],
     "pytest-devpi-server": [
         "<1.1.0"
     ],
