@@ -150,6 +150,12 @@
             "v": "<0.12.10"
         }
     ],
+    "bpython": [
+        {
+            "changelog": "----\n\nThis release contains new features and plenty of bug fixes.\n\nNew features:\n\n* 425: Added curtsies 0.2.x support.\n* 528: Hide private attribute from initial autocompletion suggestions.\n  Thanks to Jeppe Toustrup.\n* 538: Multi-line banners are allowed.\n* 229: inspect.getsource works on interactively defined functions.\n  Thanks to Michael Mulley.\n* Attribute completion works on literals and some expressions containing\n  builtin objects.\n* Ctrl-e can be used to autocomplete current fish-style suggestion.\n  Thanks to Amjith Ramanujam.\n\nFixes:\n\n* 484: Switch `bpython.embed` to the curtsies frontend.\n* 548 Fix transpose character bug.\n  Thanks to Wes E. Vial.\n* 527 -q disables version banner.\n* 544 Fix Jedi completion error.\n* 536 Fix completion on old-style classes with custom __getattr__.\n* 480 Fix old-style class autocompletion.\n  Thanks to Joe Jevnik.\n* 506 In python -i mod.py sys.modules[__name__] refers to module dict.\n* 590 Fix \"None\" not being displayed.\n* 546 Paste detection uses events instead of bytes returned in a single\n  os.read call.\n* Exceptions in autocompletion are now logged instead of crashing bpython.\n* Fix reload in Python 3.\n  Thanks to sharow.\n* Fix keyword argument parameter name completion.\n\nChanges to dependencies:\n\n* requests[security] has been changed to pyOpenSSL, pyasn1, and ndg-httpsclient.\n  These dependencies are required before Python 2.7.7.\n\n",
+            "v": "<0.15"
+        }
+    ],
     "cairosvg": [
         {
             "changelog": "======================================\n\n**WARNING:** this is a security update.\n\nCairoSVG was vulnerable to XML eXternal Entity (XXE) attacks, this release\nfixes this vulnerability by not resolving the XML entities anymore.\n\nThe ``--unsafe`` option has been added to force the resolution of XML\nentities. Obviously, this option is not safe and should only be used with\ntrusted SVG files.\n\n\n",
@@ -4794,17 +4800,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
