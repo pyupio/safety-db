@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5031,6 +5031,12 @@
         {
             "changelog": "++++++++++++++++++\n\n**Bugfixes**\n\n- CVE-2015-2296: Fix handling of cookies on redirect. Previously a cookie\n  without a host value set would use the hostname for the redirected URL\n  exposing requests users to session fixation attacks and potentially cookie\n  stealing. This was disclosed privately by Matthew Daley of\n  `BugFuzz <https://bugfuzz.com>`_. This affects all versions of requests from\n  v2.1.0 to v2.5.3 (inclusive on both ends).\n\n- Fix error when requests is an ``install_requires`` dependency and ``python\n  setup.py test`` is run. (2462)\n\n- Fix error when urllib3 is unbundled and requests continues to use the\n  vendored import location.\n\n- Include fixes to ``urllib3``'s header handling.\n\n- Requests' handling of unvendored dependencies is now more restrictive.\n\n**Features and Improvements**\n\n- Support bytearrays when passed as parameters in the ``files`` argument.\n  (2468)\n\n- Avoid data duplication when creating a request with ``str``, ``bytes``, or\n  ``bytearray`` input to the ``files`` argument.\n\n",
             "v": "<2.6.0"
+        }
+    ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 425 - crruthe - Fixed a few report hyperlinks.\n- PR 428 - nagwww - Documentation fix. Renamed `module: security_monkey.auditors.elb` to `module: security_monkey.auditors.elasticsearch_service`\n- PR 424 - mikegrima - OS X Install doc updates for El Capitan and higher.\n- PR 426 - mikegrima - Added \"route53domains:getdomaindetail\" to permissions doc.\n- PR 427 - mikegrima - Fix for ARN parsing of cloudfront ARNs.\n- PR 431 - mikegrima - Removed s3 ARN check for ElasticSearch Service.\n- PR 448 - zollman - Fix exception logging in store_exception.\n- PR 444 - zollman - Adds exception logging listener for appscheduler.\n- PR 454 - mikegrima - Updated S3 Permissions to reflect latest changes to cloudaux.\n- PR 455 - zollman - Add Dashboard.\n- PR 456 - zollman - Increase issue note size.\n- PR 420 - crruthe - Added support for SSO OneLogin.\n- PR 432 - robertoriv - Add pagination for whitelist and ignore list.\n- PR 438 - AngeloCiffa - Pin moto==0.4.25. (TODO: Bump Jinja2 version.)\n- PR 433 - jnbnyc - Added Docker/Docker Compose support for local dev.\n- PR 408 - zollman - Add support for custom account metadata. (An important step that will allow us to support multiple cloud providers in the future.)\n- PR 439 - monkeysecurity - Replace botor lib with Netflix CloudAux.\n- PR 441 - monkeysecurity - Auditor ChangeItems now receive ARN.\n- PR 446 - zollman - Fix item 'first_seen' query .\n- PR 447 - zollman - Refactor rdsdbcluster array params.\n- PR 445 - zollman - Make misfire grace time and reporter start time configurable.\n- PR 451 - monkeysecurity - Add coverage with Coveralls.io.\n- PR 452 - monkeysecurity - Refactor & add tests for the PolicyDiff module.\n- PR 449 - monkeysecurity - Refactoring s3 watcher to use Netflix CloudAux.\n- PR 453 - monkeysecurity - Fixing two policy diff cases.\n- PR 442 - monkeysecurity - Adding index to region. Dropping unused item.cloud.\n- PR 450 - monkeysecurity - Moved test & onelogin requirements to the setup.py extras_require section.\n- PR 407 - zollman - Link together issues by enabling auditor dependencies.\n- PR 419 - monkeysecurity - Auditor will now fix any issues that are not attached to an AuditorSetting. \n- PR NONE - monkeysecurity - Item View no longer returns revision configuration bodies.  Should improve UI for items with many revisions.\n- PR NONE - monkeysecurity - Fixing bug where SSO arguments weren't passed along for branded sso. (Where the name is not google or ping or onelogin)\n\nImportant Notes:\n\n- New permissions required:\n    - s3:getaccelerateconfiguration\n    - s3:getbucketcors\n    - s3:getbucketnotification\n    - s3:getbucketwebsite\n    - s3:getreplicationconfiguration\n    - s3:getanalyticsconfiguration\n    - s3:getmetricsconfiguration\n    - s3:getinventoryconfiguration\n    - route53domains:getdomaindetail\n    - cloudtrail:gettrailstatus\n\nContributors:\n\n- zollman\n- robertoriv\n- AngeloCiffa\n- jnbnyc\n- crruthe\n- nagwww\n- mikegrima\n- monkeysecurity\n\n",
+            "v": "<0.8.0"
         }
     ],
     "sentry": [
