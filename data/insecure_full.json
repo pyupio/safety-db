@@ -4794,17 +4794,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
@@ -5031,6 +5031,12 @@
         {
             "changelog": "++++++++++++++++++\n\n**Bugfixes**\n\n- CVE-2015-2296: Fix handling of cookies on redirect. Previously a cookie\n  without a host value set would use the hostname for the redirected URL\n  exposing requests users to session fixation attacks and potentially cookie\n  stealing. This was disclosed privately by Matthew Daley of\n  `BugFuzz <https://bugfuzz.com>`_. This affects all versions of requests from\n  v2.1.0 to v2.5.3 (inclusive on both ends).\n\n- Fix error when requests is an ``install_requires`` dependency and ``python\n  setup.py test`` is run. (2462)\n\n- Fix error when urllib3 is unbundled and requests continues to use the\n  vendored import location.\n\n- Include fixes to ``urllib3``'s header handling.\n\n- Requests' handling of unvendored dependencies is now more restrictive.\n\n**Features and Improvements**\n\n- Support bytearrays when passed as parameters in the ``files`` argument.\n  (2468)\n\n- Avoid data duplication when creating a request with ``str``, ``bytes``, or\n  ``bytearray`` input to the ``files`` argument.\n\n",
             "v": "<2.6.0"
+        }
+    ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 122 - Qmando - Jira Sync.  Quentin from Yelp added Jira Integration.\n- PR 147 - echiu64 - Added colors to audit emails and added missing justifications back into emails.\n- PR 150 - echiu64 - Fixed a missing comma from setup.py\n- PR 155 - echiu64 - Fixed a previous merge issue where _audit_changes() was looking for a Monitor instance instead of an list of Auditors.\n- Issue 154 - monkeysecurity - Added support for ELB Reference Policy 2015-05.\n- None - monkeysecurity - Added db.session.refresh(...) where appropriate in a few API views to replace some very ugly code.\n- Issue 133 - lucab - Upgraded Flask-RESTful from v0.2.5 to v0.3.3 to fix an issue where request arguments were being persisted as the string \"None\" when they should have remained the javascript literal null.\n- PR 120 - lucab - Add custom role_name field for each account to replace the previously hardcoded 'SecurityMonkey' role name.\n- PR 120 - gene1wood - Add support for the custom role_name into manage.py.\n- PR 161 - Asbjorn Kjaer - Increase s3_name from 32 characters to 64 characters to avoid errors or truncation where s3_name is longer.\n- None - monkeysecurity - Set the 'defer' (lazy-load) attribute for the JSON config column on the ItemRevision table.  This speeds up the web API in a number of places.\n\n\nHotfixes:\n\n- Issue 149 - Python scoping issue where managed policies attached to more than one entity would cause an error.\n- Issue 152 - SNS topics were being saved by ARN instead of by name, causing exceptions for very long names.\n- Issue 141 - Setup cascading deletes on the Account table to prevent the error which occured when trying to delete an account with items and users attached.\n\n\nContributors:\n\n- Qmando\n- echiu64\n- lucab\n- gene1wood\n- Asbjorn Kjaer (akjaer)\n- monkeysecurity\n\n\n",
+            "v": "<0.3.7"
         }
     ],
     "sentry": [
