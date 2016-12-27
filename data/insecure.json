@@ -947,6 +947,9 @@
     "requests-kerberos": [
         "<0.6"
     ],
+    "resource-api": [
+        "<3.1.1"
+    ],
     "roundup": [
         "<1.4.20"
     ],
