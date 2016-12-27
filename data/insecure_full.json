@@ -2574,6 +2574,10 @@
         {
             "changelog": "Invenio v1.0.2 -- released 2012-10-19\n-------------------------------------\n\n  - BibConvert: fix for static files in admin guide\n\n  - BibEdit: regression test case fix\n\n  - BibFormat: fix call to bfe_primary_report_number; revert fix for\n    format validation report\n\n  - BibHarvest: OAI harvesting via HTTP proxy\n\n  - BibRank: begin_date initialisation in del_recids(); INSERT DELAYED\n    INTO rnkPAGEVIEWS; user-friendlier message for similar docs\n\n  - BibUpload: clarify correct/replace mode help\n\n  - WebJournal: catch ValueError when reading cache; use\n    CFG_TMPSHAREDDIR in admin UI\n\n  - WebSearch: allow webcoll to query hidden tags; external collection\n    search fix; external search XSS vulnerability fix; fix for\n    parentheses inside quotes; get_collection_reclist() fix; more uses\n    of `rg` configurable default; 'verbose' mode available to admins\n    only; XSS and verbose improvements\n\n  - WebSession: fix possibly undefined variables; prevent nickname\n    modification\n\n  - WebStyle: workaround IE bug with cache and HTTPS\n\n  - WebSubmit: configurable Document File Manager; fix JS check for\n    mandatory fields; unoconv calling fix\n\n  - bibdocfile: guess_format_from_url() improvement;\n    guess_format_from_url() improvements; INSERT DELAYED INTO\n    rnkDOWNLOADS\n\n  - global: removal of psyco\n\n  - I18N: Spanish and Catalan updates to Search Tips; updates to\n    German translation\n\n  - installation: fix for jQuery UI custom; fix md5sum example\n    arguments; new index on session.session_expiry\n\n  - intbitset: fix memory leak\n\n  - inveniogc: tmp directory removal improvements\n\n  - urlutils: MS Office redirection workaround",
             "v": "<1.0.2"
+        },
+        {
+            "changelog": "-------------------------------------\n\nSecurity fixes\n~~~~~~~~~~~~~~\n\n+ global\n\n  - Fixes potential XSS issues by changing main flash messages\n    template so that they are not displayed as safe HTML by default.\n\n+ search\n\n  - Fixes potential XSS issues by changing search flash messages\n    template so that they are not displayed as safe HTML by default.\n\nIncompatible changes\n~~~~~~~~~~~~~~~~~~~~\n\n+ access\n\n  - Removes configuration option CFG_SUPERADMINROLE_ID.\n  - Replaces all zero values with NULL in the table\n    accROLE_accACTION_accARGUMENT. The usage of NULL value in\n    substitution of zero value was introduced in the commit 7974188\n    because Foreign Key does not support it.\n\nImproved features\n~~~~~~~~~~~~~~~~~\n\n+ I18N\n\n  - Completes Italian translation.\n  - Completes French translation.\n\n+ accounts\n\n  - Uses the localized site name when sending email to users. (3273)\n\n+ docker\n\n  - Improves Docker documentation notably related to how to work with\n    Invenio site overlays.\n\n+ global\n\n  - Adds super(SmartDict, self).__init__ call in the __init__ method\n    in SmartDict to be able to make multiple inheritance in Record\n    class in invenio-records and be able to call both parent's\n    __init__.\n\n+ jasmine\n\n  - Allows using variables from application config for building asset\n    bundles.\n\n+ legacy\n\n  - Improves exception handling of integrity errors raised by MySQLdb\n    library.\n\nBug fixes\n~~~~~~~~~\n\n+ OAIHarvest\n\n  - Fixes the parsing of resumptiontoken in incoming OAI-PMH XML which\n    could fail when the resumptiontoken was empty.\n\n+ access\n\n  - Sets superadmin role ID included in roles list returned from\n    acc_find_possible_roles to the correct, current value. (3390)\n    (3392)\n  - Fixes the authorization delete query to consider NULL value on\n    id_accARGUMENT authorization column. The usage of NULL value in\n    substitution of zero value was introduced in the commit 7974188\n    because Foreign Key does not support it.\n  - Fixes property id_accARGUMENT of AccAuthorization model.\n\n+ encoder\n\n  - Corrects the `compose_file` function call in `process_batch_job`\n    to produce `<directory>/content.<extension>` instead of\n    `<directory>/content.content;<extension>`. (3354)\n\n+ global\n\n  - Fixes the way configuration variables are parsed from ENV. It now\n    uses the same method we are using in `inveniomanage config set`.\n    This fixes the problem that `False` is not parsed correctly.\n\n+ i18n\n\n  - Updates PO message catalogues and cleans them of duplicated\n    messages.  (3455)\n\n+ indexer\n\n  - Adds missing `get_nearest_terms_in_idxphrase_with_collection`\n    import. Fixes the name of field argument, and returns an empty\n    list when no model is passed.  (3271)\n\n+ installation\n\n  - Fixes database creation and upgrading by limiting Alembic version\n    to <0.7.\n\n+ legacy\n\n  - Addresses an issue with calling six urllib.parse in a wrong way,\n    making users unable to harvest manually from the command line.\n\n+ login\n\n  - Provides flash message to indicate that an email with password\n    recovery could not be sent. (3309)\n\n+ search\n\n  - Enforces query string to be unicode to overcome pypeg2 parsing\n    issues.  (3296)\n  - Fixes admin interface for managing facets.  (3333)\n\nNotes\n~~~~~\n\n+ global\n\n  - Displaying HTML safe flash messages can be done by using one of\n    these flash contexts: '(html_safe)', 'info(html_safe)',\n    'danger(html_safe)', 'error(html_safe)', 'warning(html_safe)',\n    'success(html_safe)' instead of the standard ones (which are the\n    same without '(html safe)' at the end).\n  - Backports Flask-IIIF extension from original commit\n    213b6f1144734c9ecf425a1bc7b78e56ee5e4e3e. The extension is not\n    enabled by default in order to avoid feature addition to existing\n    minor release.\n\n+ search\n\n  - Displaying HTML safe flash messages can be done by using one of\n    these flash contexts: 'search-results-after(html_safe)',\n    'websearch-after-search-form(html_safe)' instead of the standard\n    ones (which are the same without '(html safe)' at the end).\n\n",
+            "v": "<2.1.1"
         }
     ],
     "invenio-search": [
@@ -4794,17 +4798,17 @@
         }
     ],
     "python-docx": [
-      {
-          "cve": "CVE-2016-5851",
-          "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
-          "urls": [
-              "http://www.openwall.com/lists/oss-security/2016/06/28/7",
-              "http://www.openwall.com/lists/oss-security/2016/06/28/8",
-              "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
-              "http://www.securityfocus.com/bid/91485"
-          ],
-          "v": "<0.8.6"
-      }
+        {
+            "cve": "CVE-2016-5851",
+            "description": "python-docx before 0.8.6 allows context-dependent attackers to conduct XML External Entity (XXE) attacks via a crafted document.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/06/28/7",
+                "http://www.openwall.com/lists/oss-security/2016/06/28/8",
+                "https://github.com/python-openxml/python-docx/blob/v0.8.6/HISTORY.rst",
+                "http://www.securityfocus.com/bid/91485"
+            ],
+            "v": "<0.8.6"
+        }
     ],
     "python-keystoneclient": [
         {
