@@ -677,6 +677,9 @@
     "pastescript": [
         "<1.7.5"
     ],
+    "patroni": [
+        "<0.90"
+    ],
     "pdfextract": [
         "<0.0.2"
     ],
