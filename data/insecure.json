@@ -1112,6 +1112,9 @@
     "thorn": [
         "<1.1.0"
     ],
+    "thumbor-png-optimizers": [
+        "<4.0.2"
+    ],
     "tiddlyweb": [
         "<1.2.18"
     ],
