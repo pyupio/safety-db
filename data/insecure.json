@@ -102,6 +102,9 @@
     "clearsilver": [
         "<0.10.5"
     ],
+    "cloudinary": [
+        "<1.0.19"
+    ],
     "cmsplugin-filer": [
         "<1.0.0"
     ],
