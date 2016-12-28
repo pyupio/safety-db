@@ -3876,6 +3876,12 @@
             "v": "<3.0"
         }
     ],
+    "plone.app.z3cform": [
+        {
+            "changelog": "------------------\n\n- Customize templates for multi and object widgets for more consistent styling.\n  [elro]\n\n- Remove dependency on zope.app.component.\n  [davisagli]\n\n- Add MANIFEST.in.\n  [WouterVH]\n\n- Raise LookupError when terms are not found (e.g. they are no longer visible due to security)\n  [lentinj]\n\n\n",
+            "v": "<0.5.4"
+        }
+    ],
     "plone.dexterity": [
         {
             "changelog": "------------------\n\n- Use attribute for DefaultAddForm and DefaultEditForm success message so it can\n  be easily customized.\n  [cedricmessiant]\n\n- Big major overhaul to use everywhere the same way to fetch the main schema,\n  behavior schemata and its markers. This was very scrmabled: sometimes\n  behaviors weren't taken into account, or only FTI based behaviors but not\n  those returned by the IBehaviorAssignable adapter. Also the caching was\n  cleaned up. The tests are now better readable (at least I hope so).  In order\n  to avoid circular imports some methods where moved fro ``utils.py`` to\n  ``schema.py``.  Deprecations are in place.\n  [jensens]\n\n- Fix (security): Attribute access to schema fields can be protected. This\n  worked for direct schemas, but was not implemented for permissions coming\n  from behaviors.\n  [jensens]\n\n",
