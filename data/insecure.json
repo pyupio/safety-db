@@ -104,6 +104,9 @@
     "collective.solr": [
         "<1.0b24"
     ],
+    "collective.tablepage": [
+        "<0.3"
+    ],
     "collective.transcode.star": [
         "<0.22"
     ],

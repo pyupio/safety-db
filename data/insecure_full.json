@@ -259,6 +259,12 @@
             "v": "<1.0b24"
         }
     ],
+    "collective.tablepage": [
+        {
+            "changelog": "----------------\n\n- Different versioning message when a row is changed\n  or modified [keul]\n- Added missing versioning attempt when using CSV upload\n  [keul]\n- Fixed a performance/security problem: data inside text cells\n  were transformed to HTML without any check (and this was also\n  *really* slow)\n  [keul]\n- Can now delete multiple (or all) rows\n  [keul]\n- CSV import is not importing anymore inside wrong colum when an\n  unknow header is found\n  [keul]\n\n",
+            "v": "<0.3"
+        }
+    ],
     "collective.transcode.star": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~\n - provide three different embed sizes [clopy]\n - FIX security errors introduced with Plone Hotfix 20130618 [mgogoulos]\n - Update styling on share popup [clopy]\n - Add dexterity support [Gagaro]\n\n",
