@@ -4004,6 +4004,12 @@
             "v": "<1.20.922.99"
         }
     ],
+    "privacyidea": [
+        {
+            "changelog": "\n  Features\n  * New token type: Security questions or questionnaire token.\n  * New token type: Paper token. OTP values printed on a piece of paper.\n  * Yubico Validation API: The yubikey tokens can authenticate via\n    /ttype/yubikey which follows the Yubico Validation Protocol.\n\n  Enhancements\n  * Add Web UI view to display the active challenges.\n  * The issuer for the Google Authenticator app can be configured.\n  * The LDAP machine resolver uses an LDAP server pool.\n  * The LDAP user resolver returns a list of mobile numbers.\n\n  Fixes\n  * The test email for the email token now has a sent date.\n  * Fix problem when using encrypted encryption key.\n  * Fix upper case problem when logging in to web UI\n    with REMOTE_USER.\n  * Fix allow set an empty PIN in the web UI.\n  * Fix import of token file in Web UI.\n\n",
+            "v": "<2.9"
+        }
+    ],
     "products.btreefolder2": [
         {
             "changelog": "-------------------\n\n- Provide security declaration for `BTreeFolder2Base.hasObject` method.\n\n- Add some tests for correct `getattr` behavior.\n\n- Minor `__getattr__` and `_getOb` optimizations.\n\n",
