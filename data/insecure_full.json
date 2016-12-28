@@ -5429,6 +5429,12 @@
             "v": "<1.9.1"
         }
     ],
+    "telemeta": [
+        {
+            "changelog": "\n    * Added python-xml parser dependency :\n      xml tag files are now exported to user default directory and in dir_in.\n    * Added par2 dependency : creates secure recovery key file with the \"par2\" method\n    * Added python-mutagen dependency : new tagging functions\n    * Cleaned : audio functions\n    * Fixed : help page\n    * Debianized\n\n -- Guillaume Pellerin <pellerinparisson.com>  Tue, 01 Nov 2006 00:25:46 +0100\n\n",
+            "v": "<0.2.31"
+        }
+    ],
     "textract": [
         {
             "changelog": "-----\n\n* Added python 3 support, including pdfminer (`104`_ by `sirex`_ via `126`_)\n\n* Python 3 support for ``pdfminer`` using ``pdfminer.six`` (`116`_ by\n  `jaraco`_ via `126`_)\n\n* fixed security vulnerability by properly using subprocess.call (`114`_ by\n  `pierre-ernst`_)\n\n* updating to ``tesseract`` 3.03 (`127`_)\n\n* adding a ``.tif`` synonym for ``.tiff`` files (`113`_ by `onionradish`_)\n\n* improved ``.docx`` support using ``docx2txt`` (`100`_ by `ankushshah89`_)\n\n* several bug fixes, including:\n\n  * including all requirements for ``Pillow`` (`119`_ by `akoumjian`_)\n\n",
