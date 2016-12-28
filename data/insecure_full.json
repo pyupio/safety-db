@@ -3972,6 +3972,12 @@
             "v": "<V1.4.1"
         }
     ],
+    "products.cmfquickinstallertool": [
+        {
+            "changelog": "-------------------\n\n- Cleanup: PEP8, decorators for security+zca, et al.\n  [jensens]\n\n\n",
+            "v": "<3.0.10"
+        }
+    ],
     "products.ldapuserfolder": [
         {
             "cve": "CVE-2010-2944",
