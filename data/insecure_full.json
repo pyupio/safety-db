@@ -2652,6 +2652,12 @@
             "v": "<1.3"
         }
     ],
+    "ilrt.formalworkflow": [
+        {
+            "changelog": "\n    - Added a subclass of the iterate info viewlet to redeclare the security so that \n      editors can see it and find existing checkouts.\n\n    [Dave Mote, Washtenaw County Government]\n\n",
+            "v": "<0.5"
+        }
+    ],
     "insecure-package": [
         {
             "changelog": "This is an insecure package with lots of exploitable security vulnerabilities. \n\nYou really shouldn't use it.",
