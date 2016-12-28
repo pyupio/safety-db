@@ -903,6 +903,9 @@
     "pyramid-odesk": [
         "<1.1.2"
     ],
+    "pyramid-rpc": [
+        "<0.4.1"
+    ],
     "pyramid-weblayer": [
         "<0.12"
     ],
