@@ -1025,6 +1025,9 @@
         "<0.1.14pre",
         "<0.1.9pre"
     ],
+    "pyxmlsecurity": [
+        "<0.9"
+    ],
     "qi.jabberhelpdesk": [
         "<0.30"
     ],

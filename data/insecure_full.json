@@ -5121,6 +5121,12 @@
             "v": "<0.1.9pre"
         }
     ],
+    "pyxmlsecurity": [
+        {
+            "changelog": "---\n\n*Release date: Mon Jun 24 11:24:20 CEST 2013*\n\n* Bugfixes\n* Protection against wrapping attacks (new API!)\n\n",
+            "v": "<0.9"
+        }
+    ],
     "qi.jabberhelpdesk": [
         {
             "changelog": "  - Security fixes, some vulnerable xml-rpc calls fixed. [ggozad]\n\n",
