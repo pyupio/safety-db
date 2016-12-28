@@ -4216,6 +4216,12 @@
             "v": "<1.6"
         }
     ],
+    "pysftp": [
+        {
+            "changelog": "\n  * added ``ciphers`` parameter to :class:`.Connection` object (D. Reilly)\n  * added :attr:`.active_ciphers` to return local and remote cipher in use\n  * added :attr:`.security_options`, where you can get available ciphers, among other information\n  * enhanced logging, and added documentation and tests\n\n",
+            "v": "<0.2.5"
+        }
+    ],
     "pyshop": [
         {
             "cve": "CVE-2013-1630",
