@@ -5655,6 +5655,10 @@
     ],
     "zodb": [
         {
+            "changelog": "==========================\nRelease date: 11-Sep-2003\n\nA new feature to allow removal of connection pools for versions was\nported from Zope 2.6.  This feature is needed by Zope to avoid denial\nof service attacks that allow a client to create an arbitrary number\nof version pools.\n\nA pair of new scripts from Jim Fulton can be used to synthesize\nworkloads and measure ZEO performance:  see zodbload.py and\nzeoserverlog.py in the Tools directory.  Note that these require\nZope.\n\nTools/checkbtrees.py was strengthened in two ways:\n\n- In addition to running the _check() method on each BTree B found,\n  BTrees.check.check(B) is also run.  The check() function was written\n  after checkbtrees.py, and identifies kinds of damage B._check()\n  cannot find.\n\n- Cycles in the object graph no longer lead to unbounded output.\n  Note that preventing this requires remembering the oid of each\n  persistent object found, which increases the memory needed by the\n  script.\n\n",
+            "v": "<3.1.4"
+        },
+        {
             "cve": "CVE-2010-3495",
             "description": "Race condition in ZEO/StorageServer.py in Zope Object Database (ZODB) before 3.10.0 allows remote attackers to cause a denial of service (daemon outage) by establishing and then immediately closing a TCP connection, leading to the accept function having an unexpected return value of None, an unexpected value of None for the address, or an ECONNABORTED, EAGAIN, or EWOULDBLOCK error, a related issue to CVE-2010-3492.",
             "urls": [
