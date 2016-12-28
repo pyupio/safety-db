@@ -5305,6 +5305,12 @@
             "v": "<4.4.0"
         }
     ],
+    "spake2": [
+        {
+            "changelog": "\nUse Ed25519 group/parameters by default (improves speed, security, and\nmessage size). Note that both sides must use the same parameter set for\ncompatibility.\n\n\n",
+            "v": "<0.2"
+        }
+    ],
     "splash": [
         {
             "changelog": "------------------\n\nThis is a bugfix release:\n\n* XSS in HTTP UI is fixed;\n* Splash-Jupyter docker image is fixed.\n\n",
