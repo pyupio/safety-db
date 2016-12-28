@@ -4914,6 +4914,12 @@
             "v": ">=3.5,<3.5.2"
         }
     ],
+    "python-augeas": [
+        {
+            "changelog": "  - new API call aug_setm to set/create multiple nodes simultaneously\n  - record expression used in a defvar underneath /augeas/variables\n  - Lens changes/additions\n    * Group: add test for disabled account (Raphael Pinson)\n    * Grub: handle comments within a boot stanza\n    * Iptables: also look for /etc/iptables-save (Nicolas Valcarcel)\n    * Modules_conf: new lens for /etc/modules.conf (Matt Booth)\n    * Securetty: added handling of emtpy lines/comments (Frederik Wagner)\n    * Shellvars: added SuSE sysconfig puppet files (Frederik Wagner),\n      process /etc/environment (seph)\n    * Shellvars_list: Shellvars-like lens that treats strings of\n      space-separated words as lists (Frederik Wagner)\n\n",
+            "v": "<0.7.2"
+        }
+    ],
     "python-cjson": [
         {
             "cve": "CVE-2009-4924",
