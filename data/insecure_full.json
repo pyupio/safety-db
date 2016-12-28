@@ -3081,6 +3081,12 @@
             "v": "<0.1.17pre"
         }
     ],
+    "nikola": [
+        {
+            "changelog": "=============\n\nFeatures\n--------\n\n* Added support for fancy dates via moment.js (Issue 1256)\n* Updates: jQuery v1.11.1, Bootstrap v3.3.0\n* Allow presets usage with ``nikola deploy`` \u2014 ``DEPLOY_COMMANDS`` is\n  now a dict of {preset: commands} (Issue 1452)\n* New ``GLOBAL_CONTEXT_FILLER`` setting, functions listed there will\n  be called with the local context and the template name before\n  template rendering. (Issue 1451)\n* New ``USE_CDN_WARNING`` setting to block warnings about potential\n  ``USE_CDN`` misuse (defaults to True)\n* ``nikola check -l`` will warn about mixed-security (HTTP on HTTPS)\n* New ``ConfigPlugin`` category (without any specific behavior by default)\n* New meta property \u201cpreviewimage\u201d for use with Open Graph (Issue 1421)\n* Expose publishing date, tags, and more in Open Graph\n* XSL Transform RSS into pretty and helpful webpages when opened in browsers (Issue 1411)\n\nBugfixes\n--------\n\n* Don\u2019t pull by default in ``github_deploy`` (Issue 1464)\n* disabled hyphenation for paragraphs with inline math (Issue 1461)\n* Support filters for all tasks (Issue 1459)\n* Don\u2019t check cache/ in ``nikola check -l`` (Issue 1447)\n* Fix new_post for pandoc format (Issue 1445)\n* Fix STORY_INDEX generation (Issue 1444)\n* Fix bootswatch creation version check (Issue 1441)\n* Never rebase while pulling in ``github_deploy``\n* Handle better ``new_post --format=pandoc`` when pandoc is not defined (Issue 1422)\n* Open Graph properly uses latest RDFa in HTML \u2013 fixes validation\n* Fix sitemap generation (Issue 1397 via 1032)\n* Use destination folder names as titles for titleless listings\n* Fixed problems with installation from .tar.gz under Windows (Issue 1417)\n* Fixed encoding problems in WordPress urlmap writer (Issue 1416)\n* Added back atom:link in RSS feeds\n* Fixed Nikola-based page redirects in Python 2 (Issue 1414)\n* Fixed files/\\*.php (skip post/story-specific filters) (Issue 1403)\n* Warn about missing / in BASE_URL differently (explicit request to\n  fix the config file)\n* Fix broken ``auto -b`` option (Issue 1437)\n\n",
+            "v": "<7.2.0"
+        }
+    ],
     "notebook": [
         {
             "cve": "CVE-2015-7337",
