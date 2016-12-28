@@ -5121,6 +5121,12 @@
             "v": "<0.1.9pre"
         }
     ],
+    "pyxmlsecurity": [
+        {
+            "changelog": "---\n\n*Release date: UNRELEASED*\n\n* This is the first unreleased version of the code\n* http://github.com/leifj/pyXMLSecurity\n\n",
+            "v": "<0.1"
+        }
+    ],
     "qi.jabberhelpdesk": [
         {
             "changelog": "  - Security fixes, some vulnerable xml-rpc calls fixed. [ggozad]\n\n",
