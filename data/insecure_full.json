@@ -4210,6 +4210,12 @@
             "v": "<0.7.1"
         }
     ],
+    "pysmb": [
+        {
+            "changelog": "=======================\n\n- Add support for domains in smb:// URLs\n- Fix a bug which fails to test for the correct GSS security provider OID values\n\n",
+            "v": "<1.1.9"
+        }
+    ],
     "pytest-devpi-server": [
         {
             "changelog": " \n * New plugin: devpi server fixture\n * pytest-profiling improvement: overly-long .prof files are saved as the short hash of the test name (Thanks to Vladimir Lagunov for PR)\n * Changed default behavior of workspace.run() to not use a subshell for security reasons\n * Corrected virtualenv.run() method to handle arguments the same as the parent method workspace.run()\n * Removed deprecated '--distribute' from virtualenv args\n\n",
