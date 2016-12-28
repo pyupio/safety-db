@@ -115,6 +115,12 @@
             "v": "<0.3.0"
         }
     ],
+    "bioblend": [
+        {
+            "changelog": "\n* BioBlend.objects: renamed ``ObjDatasetClient`` abstract class to\n  ``ObjDatasetContainerClient``.\n\n* BioBlend.objects: added ``ABCMeta`` metaclass and ``list()`` method to\n  ``ObjClient``.\n\n* BioBlend.objects: added ``io_details`` and ``link_details`` parameters to\n  ``ObjToolClient.get()`` method.\n\n* Open port 8800 when launching cloud instances for use by NodeJS proxy for\n  Galaxy IPython Interactive Environments.\n\n* When launching cloud instances, propagate error messages back to the called.\n  The return types for methods ``create_cm_security_group``, ``create_key_pair``\n  in ``CloudManLauncher`` class have changed as a result of this.\n\n",
+            "v": "<0.6.1"
+        }
+    ],
     "birdhousebuilder.recipe.nginx": [
         {
             "changelog": "==================\n\n* disabled SSLv3 (poodle attack)\n\n",
