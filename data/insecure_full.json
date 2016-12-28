@@ -413,6 +413,10 @@
         {
             "changelog": "dateable.chronos 0.7.2.2 (2012-07-10)\n=====================================\n\n- include also doc/ with distribution (added in MANIFEST.in)\n  [iElectric]\n\ndateable.chronos 0.7.2.1 (2012-07-10)\n=====================================\n\n- include version.txt with distribution (added MANIFEST.in)\n  [iElectric]\n\ndateable.chronos 0.7.2 (2012-06-26)\n===================================\n\n- fix AttributeError in base_view.py\n  [iElectric]\n\n- Do not (silently) depent on p4a.common, but have the required timezone code bit locally\n  [miohtama]\n\n- make views subclass Products.Five.browser.BrowserView so that their templates\n  can be customized through portal_view_customizations\n  [swampmonkey]\n\n- Fixed a XSS vulnerability in the get_view_day method\n  [keul]",
             "v": "<0.7.2"
+        },
+        {
+            "changelog": "===================================\n\n- fix AttributeError in base_view.py\n  [iElectric]\n\n- Do not (silently) depent on p4a.common, but have the required timezone code bit locally\n  [miohtama]\n\n- make views subclass Products.Five.browser.BrowserView so that their templates\n  can be customized through portal_view_customizations\n  [swampmonkey]\n\n- Fixed a XSS vulnerability in the get_view_day method\n  [keul]\n\n",
+            "v": "<0.7.2"
         }
     ],
     "defusedexpat": [
