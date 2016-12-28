@@ -2323,6 +2323,12 @@
             "v": "<6.1"
         }
     ],
+    "featureserver": [
+        {
+            "changelog": " * OSM Service should not export null columns. Patch from Stephan Holl. \n * Make PostGIS ds more resilient to the use of special characters in\n   tablenames. Patch from Stephan Holl.\n * Add atom-pub style links to KML\n * Fix BDB lockfile issue.\n * Update FeatureServer to support not allowing JSON callbacks (security)\n * OGR error reporting in WFS.py\n * Add SQLite datasource from Brent Pederson.\n\n",
+            "v": "<1.06"
+        }
+    ],
     "feedparser": [
         {
             "cve": "CVE-2009-5065",

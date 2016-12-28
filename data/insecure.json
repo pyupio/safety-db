@@ -448,6 +448,9 @@
     "euphorie": [
         "<6.1"
     ],
+    "featureserver": [
+        "<1.06"
+    ],
     "feedparser": [
         "<5.0",
         "<5.0.1",
