@@ -2264,6 +2264,12 @@
             "v": "<0.8.1"
         }
     ],
+    "dolfin": [
+        {
+            "changelog": "-------------------\n- Updates for UFC 2.0.0\n- Handle TimeSeries stored backward in time (automatic reversal)\n- Automatic storage of hierarchy during refinement\n- Remove directory/library 'main', merged into 'common'\n- dolfin_init --> init, dolfin_set_precision --> set_precision\n- Remove need for mesh argument to functional assembly when possible\n- Add function set_output_stream\n- Add operator () for evaluation at points for Function/Expression in\n  C++\n- Add abs() to GenericVector interface\n- Fix bug for local refinement of manifolds\n- Interface change: VariationalProblem now takes: a, L or F, (dF)\n- Map linear algebra objects to processes consistently with mesh\n  partition\n- Lots of improvemenst to parallel assembly, dof maps and linear\n  algebra\n- Add lists supported_elements and supported_elements_for_plotting in\n  Python\n- Add script dolfin-plot for plotting meshes and elements from the\n  command-line\n- Add support for plotting elements from Python\n- Add experimental OpenMP assembler\n- Thread-safe fixed in Function class\n- Make GenericFunction::eval thread-safe (Data class removed)\n- Optimize and speedup topology computation (mesh.init())\n- Add function Mesh::clean() for cleaning out auxilliary topology data\n- Improve speed and accuracy of timers\n- Fix bug in 3D uniform mesh refinement\n- Add built-in meshes UnitTriangle and UnitTetrahedron\n- Only create output directories when they don't exist\n- Make it impossible to set the linear algebra backend to something\n  illegal\n- Overload value_shape instead of dim for userdefined Python\n  Expressions\n- Permit unset parameters\n- Search only for BLAS library (not cblas.h)\n\n",
+            "v": "<0.9.10"
+        }
+    ],
     "dpaste": [
         {
             "changelog": "----------------\n\n* The API create view has a new argument 'filename' which is used to determine\n  the lexer out of a given filename.\n* Fixed a XSS bug where HTML tags were not properly escaped with the simple\n  ``code`` lexer.\n\n",
