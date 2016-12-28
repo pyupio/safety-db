@@ -986,6 +986,9 @@
     "rauth": [
         "<0.7.0"
     ],
+    "reprounzip-vagrant": [
+        "<0.3"
+    ],
     "reprozip": [
         "<0.7.1"
     ],
