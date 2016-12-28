@@ -162,6 +162,12 @@
             "v": "<0.12.10"
         }
     ],
+    "braintree": [
+        {
+            "changelog": "* Add 3D Secure transaction fields\n* Add ability to create nonce from vaulted payment methods\n\n",
+            "v": "<3.10.0"
+        }
+    ],
     "cairosvg": [
         {
             "changelog": "======================================\n\n**WARNING:** this is a security update.\n\nCairoSVG was vulnerable to XML eXternal Entity (XXE) attacks, this release\nfixes this vulnerability by not resolving the XML entities anymore.\n\nThe ``--unsafe`` option has been added to force the resolution of XML\nentities. Obviously, this option is not safe and should only be used with\ntrusted SVG files.\n\n\n",
