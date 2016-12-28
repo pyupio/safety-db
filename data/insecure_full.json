@@ -5752,6 +5752,12 @@
             "v": "<1.2"
         }
     ],
+    "zope.pagetemplate": [
+        {
+            "changelog": "------------------\n\n- Migrate from ``zope.security.untrustedpython`` to ``zope.untrustedpython``.\n\n- Make ``zope.untrustedpython`` an extra dependency.  Without it, python\n  expressions are not protected, even though path expressions are still\n  security wrapped.\n\n- Add support for Python 3.3.\n\n",
+            "v": "<4.0.2"
+        }
+    ],
     "zope2": [
         {
             "cve": "CVE-2010-3198",
