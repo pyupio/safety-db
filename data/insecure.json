@@ -510,6 +510,9 @@
     "google-appengine": [
         "<1.5.4"
     ],
+    "hemlock": [
+        "<0.1.0"
+    ],
     "holocron": [
         "<0.2.0"
     ],
