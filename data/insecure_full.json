@@ -3439,6 +3439,10 @@
         {
             "changelog": "--------------------------------------------------------\n\n- security fix; force cwd to something controlled for ebuild env.  This\n  blocks an attack detailed in glsa 200810-02; namely that an ebuild invoking\n  python -c (which looks in cwd for modules to load) allows for an attacker\n  to slip something in.",
             "v": "<0.4.7.12"
+        },
+        {
+            "changelog": "--------------------------------------------------------\n\n- security fix; force cwd to something controlled for ebuild env.  This\n  blocks an attack detailed in glsa 200810-02; namely that an ebuild invoking\n  python -c (which looks in cwd for modules to load) allows for an attacker\n  to slip something in.\n\n\n-----------------------------\n",
+            "v": "<0.4.7.12"
         }
     ],
     "plomino": [
