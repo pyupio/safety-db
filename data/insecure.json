@@ -828,6 +828,9 @@
     "pretaweb.healthcheck": [
         "<1.0"
     ],
+    "priority": [
+        "<1.2.0"
+    ],
     "pritunl": [
         "<1.20.922.99"
     ],
