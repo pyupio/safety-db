@@ -4914,6 +4914,12 @@
             "v": ">=3.5,<3.5.2"
         }
     ],
+    "python-augeas": [
+        {
+            "changelog": "  - aug_load: only reparse files that have actually changed; greatly speeds\n    up reloading\n  - record all variables in /augeas/variables, regardless of whether they\n    were defined with aug_defvar or aug_defnode; make sure\n    /augeas/variables always exists\n  - redefine all variables (by reevaluating their corresponding\n    expressions) after a aug_load. This makes variables 'sticky' across\n    loads\n  - fix behavior of aug_defnode to not fail when the expression evaluates\n    to a nonempty node set\n  - make gnulib a git submodule so that we record the gnulib commit off\n    which we are based\n  - allow 'let rec' with non-recursive RHS\n  - fix memory corruption when reloading a tree into which a variable\n    defined by defnode points (BZ 613967)\n  - plug a few small memory leaks, and some segfaults\n  - Lens changes/additions\n    * Device_map: new lens for grub's device.map (Matt Booth)\n    * Limits: also look for files in /etc/security/limits.d\n    * Mysql: new lens (Tim Stoop)\n    * Shellvars: read /etc/sysconfig/suseconfig (Frederik Wagner)\n    * Sudoers: allow escaped spaces in user/group names (Raphael Pinson)\n    * Sysconfig: lens for the shell subdialect used in /etc/sysconfig; lens\n      strips quotes automatically\n\n",
+            "v": "<0.7.3"
+        }
+    ],
     "python-cjson": [
         {
             "cve": "CVE-2009-4924",
