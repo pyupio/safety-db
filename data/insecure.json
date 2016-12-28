@@ -107,6 +107,9 @@
     "collective.portlet.twitter": [
         "<1.0b3"
     ],
+    "collective.signupsheet": [
+        "<0.2.0"
+    ],
     "collective.solr": [
         "<1.0b24"
     ],
