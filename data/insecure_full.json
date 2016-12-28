@@ -2681,6 +2681,12 @@
             "v": "<2.7.3"
         }
     ],
+    "jobtastic": [
+        {
+            "changelog": "-----\n\n* Dropped support for Django 1.3.\n  It's no longer getting security updates.\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "jose": [
         {
             "changelog": "------------------\n- Fixed critical JWT vulnerability (patch contributed by yuriikonovaliuk)\n\nImportant: Only unencrypted tokens are vulnerable. This fix lead to backward\nincompatible change to `verify` function signature.\n\n",
