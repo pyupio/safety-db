@@ -76,6 +76,9 @@
     "chanjo-report": [
         "<2.4.0"
     ],
+    "cheetah": [
+        "<0.9.17rc1"
+    ],
     "cherrymusic": [
         "<0.36.0"
     ],
