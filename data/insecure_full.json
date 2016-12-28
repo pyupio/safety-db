@@ -5139,6 +5139,12 @@
             "v": "<0.7.0"
         }
     ],
+    "reprounzip-qt": [
+        {
+            "changelog": "----------------\n\nBugfixes:\n* Handles Linux changing thread id to thread leader's on `execve()`\n* Correctly handles processes dying from signals (e.g. SEGV)\n* Fixes case of rt_sigreturn\n\nFeatures:\n* Database stores `is_directory` field\n* Handles `mkdir()`, `symlink()`\n* Forces pack to have a `.rpz` extension\n* Displays a warning when the process uses `connect()` or `accept()`\n* Improved logging\n* Handles i386 compatibility mode on x86_64\n* Handles *at() variants of system calls with AT_FDCWD\n\n",
+            "v": "<0.3"
+        }
+    ],
     "reprozip": [
         {
             "changelog": "------------------\n\n(reprozip only)\n\nBugfixes:\n* Files (or links) created with rename, link or symlink then read will no longer be packed.\n* A buffer overflow could happen in the log module, for instance when the experiment passes a very long argument to execve (over 4kB in a single argument) and running in debug mode (-v -v)\n\n\n",
