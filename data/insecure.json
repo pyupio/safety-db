@@ -768,6 +768,9 @@
     "plone.app.event": [
         "<3.0"
     ],
+    "plone.app.layout": [
+        "<2.6.1"
+    ],
     "plone.dexterity": [
         "<2.3.0"
     ],
