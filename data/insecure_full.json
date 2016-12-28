@@ -5630,6 +5630,12 @@
             "v": "<1.2"
         }
     ],
+    "zope.proxy": [
+        {
+            "changelog": "------------------\n\n- Correctly strip ``zope.security`` proxies in ``removeAllProxies``.\n\n- Avoid poisoning the user's global wheel cache when testing ``PURE_PYTHON``\n  environments under ``tox``,\n\n- Drop support for Python 2.6 and 3.2.\n\n- Add support for Python 3.5.\n\n",
+            "v": "<4.2.0"
+        }
+    ],
     "zope2": [
         {
             "cve": "CVE-2010-3198",
