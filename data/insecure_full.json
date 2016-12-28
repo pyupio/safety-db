@@ -281,6 +281,12 @@
             "v": "<0.7.1"
         }
     ],
+    "collective.portaltabs": [
+        {
+            "changelog": "------------------\n\n* updated to Plone 4.1+ security and new \"Site Administrator\" role [keul]\n* support for query expression starting with ``/``, that generate links to\n  internal section of the site [keul]\n* tabs settings panel is now protected with a specific permission [keul]\n* protected the use of ``tal:``, ``python:`` and ``$`` with a proper permission\n  [keul]\n* removed the usage of CMF properties. General configuration migrated to\n  Plone registry\n  [keul]\n* Added tests\n  [keul]\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "collective.portlet.twitter": [
         {
             "changelog": "^^^^^^^^^^^^^^^^^^\n\n- Fix package distribution; we are not including anymore the screenshots used\n  in the documentation reducing significatively the egg size.\n  [hvelarde]\n\n- Fix potential XSS (arbitrary injection) issue by escaping and quoting all\n  attributes being set on the rendered portlet.\n  [davidjb]\n\n\n",

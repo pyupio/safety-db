@@ -114,6 +114,9 @@
     "collective.noticeboard": [
         "<0.7.1"
     ],
+    "collective.portaltabs": [
+        "<0.3.0"
+    ],
     "collective.portlet.twitter": [
         "<1.0b3"
     ],
