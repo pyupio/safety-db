@@ -1,4 +1,7 @@
 {
+    "accesscontrol": [
+        "<3.0.12"
+    ],
     "aiocouchdb": [
         "<0.6.0"
     ],
@@ -104,6 +107,9 @@
     "collective.solr": [
         "<1.0b24"
     ],
+    "collective.tablepage": [
+        "<0.3"
+    ],
     "collective.transcode.star": [
         "<0.22"
     ],
@@ -121,6 +127,9 @@
     ],
     "coveralls": [
         "<0.1.1"
+    ],
+    "cplay-ng": [
+        "<1.50"
     ],
     "creavel": [
         "<0.11.0"
@@ -677,6 +686,9 @@
     "pastescript": [
         "<1.7.5"
     ],
+    "pcp": [
+        "<2.1.911"
+    ],
     "pdfextract": [
         "<0.0.2"
     ],
@@ -747,7 +759,8 @@
         "<1.2.15"
     ],
     "plone.app.discussion": [
-        "<2.4.14"
+        "<2.4.14",
+        "<2.4.18"
     ],
     "plone.app.event": [
         "<3.0"
@@ -771,6 +784,9 @@
     ],
     "pmr2.oauth": [
         "<0.4.2"
+    ],
+    "poorwsgi": [
+        "<1.0.2"
     ],
     "pretaweb.healthcheck": [
         "<1.0"
@@ -868,6 +884,9 @@
     "pytest-profiling": [
         "<1.1.0"
     ],
+    "pytest-qt-app": [
+        "<1.1.0"
+    ],
     "pytest-server-fixtures": [
         "<1.1.0"
     ],
@@ -928,6 +947,9 @@
     ],
     "pyupdater": [
         "<0.20.0"
+    ],
+    "pyvisa": [
+        "<0.9"
     ],
     "pywebsite": [
         "<0.1.14pre",
@@ -998,6 +1020,9 @@
     "soappy": [
         "<0.12.6"
     ],
+    "soappy-py3": [
+        "<0.12.6"
+    ],
     "sopel": [
         "<4.4.0"
     ],
@@ -1006,6 +1031,9 @@
     ],
     "spud": [
         "<0.8"
+    ],
+    "starcluster": [
+        "<0.95.3"
     ],
     "stargate": [
         "<0.4"
