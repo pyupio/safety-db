@@ -5429,6 +5429,12 @@
             "v": "<1.9.1"
         }
     ],
+    "telemeta": [
+        {
+            "changelog": "\n * add solr-thumbnail for automatic thumbnail handling of all related media images (please install)\n * add static media handling for solr and all various telemeta public files\n * fix some wrong user properties\n * SECURITY: you need to move your TELEMETA_EXPORT_CACHE_DIR from TELEMETA_CACHE_DIR cache (see example/sandbox_sqlite/settings.py)\n * EXPERIMENTAL: WebM and MP4 video handling for items, NO transcode but decode, add a nice video.js player\n * RECOMMEND: install django-extensions\n * transitional package to 1.5 (maybe 1.4.4 *soon*)\n\n",
+            "v": "<1.4.31"
+        }
+    ],
     "textract": [
         {
             "changelog": "-----\n\n* Added python 3 support, including pdfminer (`104`_ by `sirex`_ via `126`_)\n\n* Python 3 support for ``pdfminer`` using ``pdfminer.six`` (`116`_ by\n  `jaraco`_ via `126`_)\n\n* fixed security vulnerability by properly using subprocess.call (`114`_ by\n  `pierre-ernst`_)\n\n* updating to ``tesseract`` 3.03 (`127`_)\n\n* adding a ``.tif`` synonym for ``.tiff`` files (`113`_ by `onionradish`_)\n\n* improved ``.docx`` support using ``docx2txt`` (`100`_ by `ankushshah89`_)\n\n* several bug fixes, including:\n\n  * including all requirements for ``Pillow`` (`119`_ by `akoumjian`_)\n\n",
