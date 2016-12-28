@@ -257,6 +257,12 @@
             "v": "<0.10.5"
         }
     ],
+    "cloudinary": [
+        {
+            "changelog": "==================\n\n  * Increment version to v1.0.9: Support raw data URI, Change secure urls to use *res.cloudinary.com.\n  * Fix cloudinary-a.akamaihd.net links in README\n  * Change secure urls to use *res.cloudinary.com\n  * Support raw data URI\n  * Fixing issues link\n  * Adding links to Django documentation and getting started guide\n\n",
+            "v": "<1.0.9"
+        }
+    ],
     "cmsplugin-filer": [
         {
             "changelog": "------------------\n\n* Pin requirements for Django-Filer to >= 1.0.0\n* Improve test coverage\n* Fix icon_src / remove references of FILER_STATICMEDIA_PREFIX\n* XSS fix\n* Fix path names for storage backends\n* Fix migrations\n* Update README\n\n\n",
