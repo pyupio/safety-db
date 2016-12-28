@@ -5018,6 +5018,12 @@
             "v": "<0.6"
         }
     ],
+    "restauth": [
+        {
+            "changelog": "\n  General:\n  * This project now lives on GitHub: https://github.com/RestAuth/server\n  * RestAuth now requires Django 1.6 or newer and uses the app-layout introduced in Django 1.5.\n  * The source code no longer includes a localsettings.py file but an example-file instead. This\n    file is included in the pip-packages and eases configuration for installations via pip.\n  * The restauth import data format now just has a raw 'hash' key which contains a raw hash as\n\tstored by the application (plus the \"hash\" key identifying the type of hash).\n  * The backend interface function set_password_hash now only understands the \"algorithm\" and\n\t\"hash\" keyword arguments, where \"hash\" is the raw password hash.\n  * More consistently lowercase input and output names of users and groups.\n  * Improve documentation in many small ways.\n  * django backend now verifies that the hash is supported when importing hashes.\n\n  Settings:\n  * SECURE_CACHE is now True by default, since the default cache is an in-memory cache anyway.\n\n  Command-line scripts:\n  * Fix listing of subgroups for \"restauth-groups view\".\n  * Usernames of users created via \"restauth-user add\" are now subject to the same limitations as\n    via the RestAuth interface.\n  * Fixed restauth-user view --service=...\n  * restauth-import now correctly sets the 'date joined' property for users it created.\n\n  Testsuite:\n  * The testsuite fully tests all command-line scripts.\n  * The testsuite features 100% test coverage.\n  * Fix tests in some python2.6 versions.\n\n  Development:\n  * Code now (partially) uses a line-width of 99 characters.\n  * All files use unicode literals and declare a utf-8 source code encoding.\n  * Move development dependencies to requirements-dev.txt\n\n",
+            "v": "<0.6.4"
+        }
+    ],
     "roundup": [
         {
             "cve": "CVE-2012-6130",
