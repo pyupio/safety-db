@@ -3966,6 +3966,12 @@
             "v": "<2.0.2"
         }
     ],
+    "plone.protect": [
+        {
+            "changelog": "------------------\n\n- Use constant time comparison to verify the authenticator. This is part of the\n  fix for https://plone.org/products/plone/security/advisories/20121106/23\n  [davisagli]\n\n- Add MANIFEST.in.\n  [WouterVH]\n\n- Add ability to customize the token created.\n  [vangheem]\n\n\n",
+            "v": "<2.0.2"
+        }
+    ],
     "plumi.app": [
         {
             "changelog": "===========================\n\n - file ownership tweaks for production buildouts [dimo, clopy]\n - add security hotfix, update LinguaPlone & plone.app.discussion [dimo]\n - plonesite recipe tweaks [dimo]\n\n\n",
