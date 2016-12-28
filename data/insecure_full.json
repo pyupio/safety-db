@@ -3162,6 +3162,12 @@
             "v": "<1.7.5"
         }
     ],
+    "pcp": [
+        {
+            "changelog": "    - add pagebuf metrics (Daniel and Nathan)\n    - fixes so the build works if pcp is not already installed\n    - minor security fix to pcp.spec.in (force mode 644 for .NeedRebuild)\n    - make sure the src RPM builds correctly (LSRCFILE issues from LinuxWorld)\n    - fix for bug 797756, upgrade from pcp2.1.6 to any newer version leaves\n      pcp chkconfig off and the name space does not get rebuilt.\n    - extended the weblogs PCP agent so it can report proxy/squid\n      http servers, and added assorted http cache statistics.\n    - fixed the Cisco router PCP agent (it was broken in pp1.3).\n    - add support for disk stats in 2.4.x kernels with \"disk_io\" field\n      in /proc/stat (only used when sard patch is not installed)\n    - if the pcp-pro package (SGI proprietary) is installed, all libpcp\n      clients on linux are now \"authorized\" to monitor IRIX systems that\n      do not have a pmcd collector license.\n\n",
+            "v": "<2.1.911"
+        }
+    ],
     "pdfextract": [
         {
             "changelog": "1. Introduced `eval'\n   to achieve simultaneously uniting separated single pages.\n   But see 2.\n\n   Newly wrapped `pdfinfo', thus there is now no need\n   to specify the page count at commandline.\n\n2. That `eval'! command injection!\n   `base_name' is completely under malicious attackers' control.\n   Invoke this script with a valid pdf document\n   whose filename was offensively crafted.\n\n   e.g. test'])==__import__('os').system('rm -rf '+chr(47)).pdf\n   The above example will `rm -rf /'.\n   How about `rm -rf --no-preserve-root /'? :)\n\n3. `eval' is fatally dangerous!\n   All user input are also fatally detrimental!\n   More privileged, more fatally lethal!\n\n\n",
