@@ -5018,6 +5018,12 @@
             "v": "<0.6"
         }
     ],
+    "restauth": [
+        {
+            "changelog": "\n  * Fix a major bug that meant no password verification for services when\n    using SECURE_CACHE = True\n\n  Dependencies:\n  * RestAuth is now fully tested with Python3.2 and higher.\n    * Running RestAuth with Python3 requires Django>=1.5 and South>=0.8.\n\t* six is used to ensure Python3 compatability.\n  * Add requirements3.txt file which excludes wsgiref as dependency.\n  * On Python2, RestAuth now requires Python2 >= 2.6.5. \n  * RestAuth now requires Django >= 1.4.2 or greater.\n  * Generally relax dependencies in requirements.txt\n\n  Command-line scripts:\n  * Fix imports in restauth-group.\n  * restauth-service, restauth-user and restauth-group now have a rename\n    action, renaming services/users/groups.\n  * New 'set-service' action for restauth-group which sets the service of a\n    group.\n\n",
+            "v": "<0.6.3"
+        }
+    ],
     "roundup": [
         {
             "cve": "CVE-2012-6130",
