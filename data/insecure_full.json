@@ -5630,6 +5630,12 @@
             "v": "<1.2"
         }
     ],
+    "zope.proxy": [
+        {
+            "changelog": "------------------\n\n- Make ``PyProxyBase.__iter__()`` return the result of\n  ``PyProxyBase._wrapped.__iter__`` if available, otherwise falling back to\n  Python internals. The previous implementation always created a generator.\n\n- In ``PyProxyBase.__setattr__()``, allow setting of properties on the\n  proxy itself. This is needed to properly allow proxy extensions as was\n  evidenced int he ``zope.security.decorator`` module.\n\n",
+            "v": "<4.1.2"
+        }
+    ],
     "zope2": [
         {
             "cve": "CVE-2010-3198",
