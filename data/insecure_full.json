@@ -151,6 +151,12 @@
             "v": "<1.4.2"
         }
     ],
+    "blackhole": [
+        {
+            "changelog": "=====\n\n- Added failsafe checks for IPv6 functionality. -- If you specify an IPv6\n  listener but Python or the kernel have not been compiled with IPv6 support,\n  an error will be returned.\n- Moved out functionality for creating sockets and TLS contexts to separate\n  control functions.\n- Added warning for TLS being used with no Diffie Hellman ephemeral parameters\n  being configured. --\n  `<https://blackhole.io/configuration-options.htmltls-dhparams>`_\n- Added further security to TSL. The following options are now enforced.\n  :any:`ssl.OP_NO_COMPRESSION`, :any:`ssl.OP_SINGLE_DH_USE`,\n  :any:`ssl.OP_SINGLE_ECDH_USE` and :any:`ssl.OP_CIPHER_SERVER_PREFERENCE`.\n  `See the Python documentation for more information on the flags\n  <https://docs.python.org/3/library/ssl.htmlssl.OP_CIPHER_SERVER_PREFERENCE>`_.\n\n",
+            "v": "<2.0.9"
+        }
+    ],
     "bok-choy": [
         {
             "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",
