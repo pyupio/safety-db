@@ -995,6 +995,9 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "rapidsms-twilio": [
+        "<0.3.0"
+    ],
     "rauth": [
         "<0.7.0"
     ],

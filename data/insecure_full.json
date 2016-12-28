@@ -5061,6 +5061,12 @@
             "v": "<0.30"
         }
     ],
+    "rapidsms-twilio": [
+        {
+            "changelog": "----------------------------\n\nThis is a minor release following up on the previous security release to turn the\nrequest validation on by default.\n\n\nBackwards Incompatible Changes\n______________________________\n\n* Twilio validation is now enforced by default. To turn this off you can set ``validate`` to ``False`` in your backend configuration. This is not recommended.\n\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "rauth": [
         {
             "changelog": "------------------------\n  * Made OAuth1 nonces more secure via SystemRandom\n  * Exposed authentication responses\n  * Allowed Requests versions >= 1.2.3\n  * Fixed OAuth1 unicode encoding issues\n\n",
