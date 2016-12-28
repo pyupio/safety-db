@@ -5039,6 +5039,12 @@
             "v": "<0.7.0"
         }
     ],
+    "reprounzip-vagrant": [
+        {
+            "changelog": "------------------\n\nBugfixes:\n* 'pack' no longer stop if a file is missing\n* Do not attempt to pack files from /proc or /dev\n* Stops vagrant without --use-chroot from overwriting files\n* Downloads busybox instead of using the host's /bin/sh\n* Correctly packs the dynamic linkers from the original machine\n* The tracer no longer considers `execve()` to always happen before other accesses\n* Fixes pytracer forking the Python process if the executable cannot be found\n* Improves signal handling (but bugs might still exist with `SIGSTOP`)\n* Fixes a bug if a process resumed before its creator (race condition)\n\nFeatures:\n* -v flag also controls C tracer's verbosity\n* Detects (but doesn't handle yet) i386 compatibility and x32 mode on x86_64\n* Stores working directories and exit codes of all processes in database\n* Added `reprozip reset [-d dir]` to reset the configuration file from the database\n\n",
+            "v": "<0.2.1"
+        }
+    ],
     "reprozip": [
         {
             "changelog": "------------------\n\n(reprozip only)\n\nBugfixes:\n* Files (or links) created with rename, link or symlink then read will no longer be packed.\n* A buffer overflow could happen in the log module, for instance when the experiment passes a very long argument to execve (over 4kB in a single argument) and running in debug mode (-v -v)\n\n\n",
