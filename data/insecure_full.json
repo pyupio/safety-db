@@ -4961,6 +4961,12 @@
             "v": ">=2.0,<2.3.3"
         }
     ],
+    "python-libtorrent": [
+        {
+            "changelog": "\n\t* fix bug where loading settings via load_state() would not trigger all\n\t  appropriate actions\n\t* fix bug where 32 bit builds could use more disk cache than the virtual\n\t  address space (when set to automatic)\n\t* fix support for torrents with > 500'000 pieces\n\t* fix ip filter bug when banning peers\n\t* fix IPv6 IP address resolution in URLs\n\t* introduce run-time check for torrent info-sections beeing too large\n\t* fix web seed bug when using proxy and proxy-peer-connections=false\n\t* fix bug in magnet link parser\n\t* introduce add_torrent_params flags to merge web seeds with resume data\n\t  (similar to trackers)\n\t* fix bug where dont_count_slow_torrents could not be disabled\n\t* fix fallocate hack on linux (fixes corruption on some architectures)\n\t* fix auto-manage bug with announce to tracker/lsd/dht limits\n\t* improve DHT routing table to not create an unbalanced tree\n\t* fix bug in uTP that would cause any connection taking more than one second\n\t  to connect be timed out (introduced in the vulnerability path)\n\t* fixed falling back to sending UDP packets direct when socks proxy fails\n\t* fixed total_wanted bug (when setting file priorities in add_torrent_params)\n\t* fix python3 compatibility with sha1_hash\n\n",
+            "v": "<1.0.7"
+        }
+    ],
     "python-muranoclient": [
         {
             "cve": "CVE-2016-4972",
