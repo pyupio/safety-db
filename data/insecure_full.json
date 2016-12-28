@@ -5156,6 +5156,12 @@
             "v": "<1.4.20"
         }
     ],
+    "rpc4django": [
+        {
+            "changelog": "\n- Python3 compatibility!\n- Code cleanup and code quality (flake8!)\n- **[security]** Fixed billion laughs denial of service issue (`20`_)\n\n.. _20: https://github.com/davidfischer/rpc4django/issues/20\n\n\n",
+            "v": "<0.2.3"
+        }
+    ],
     "rsa": [
         {
             "changelog": "----------------------------------------\n\n- Security improvements by Barry Mead.\n",
