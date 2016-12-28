@@ -11,6 +11,12 @@
             "v": "<0.6.0"
         }
     ],
+    "aiohttp": [
+        {
+            "changelog": "-------------------\n\n- Fix StaticRoute vulnerability to directory traversal attacks 380\n\n\n",
+            "v": "<0.16.3"
+        }
+    ],
     "aldryn-django": [
         {
             "changelog": "---------------------\n\n* Django 1.8.10 (security release)\n\n\n",
