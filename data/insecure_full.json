@@ -4067,6 +4067,10 @@
     "products.cmfcontentpanels": [
         {
             "changelog": "------------------\n\n - fixed two security declare bug, thanks Sasha Vincic\n\n",
+            "v": "<1.4.1"
+        },
+        {
+            "changelog": "------------------\n\n - fixed two security declare bug, thanks Sasha Vincic\n\n",
             "v": "<V1.4.1"
         }
     ],
