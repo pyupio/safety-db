@@ -995,6 +995,9 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "radicale": [
+        "<1.1"
+    ],
     "rauth": [
         "<0.7.0"
     ],
