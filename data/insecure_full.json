@@ -3143,6 +3143,12 @@
             "v": "<0.7.0"
         }
     ],
+    "ocrodjvu": [
+        {
+            "changelog": "\n  * Improve detection of Tesseract.\n  * Correctly handle unrecognized and non-ASCII characters in Ocrad ORF output.\n    Thanks to Heinrich Schwietering for the bug report.\n  * Correctly handle text that is closer than 100 pixels from the left edge in\n    Ocrad ORF output.\n    Thanks to Heinrich Schwietering for the test case.\n  * Fix crash on hOCR with image elements.\n    https://bugs.debian.org/598139\n    Thanks to Alexey Shipunov for the bug report.\n  * Fix insecure use of temporary files when using Cuneiform.\n    https://bugs.debian.org/598134\n    CVE-2010-4338\n\n -- Jakub Wilk <jwilkjwilk.net>  Sun, 26 Sep 2010 15:01:51 +0200\n\n",
+            "v": "<0.6.1"
+        }
+    ],
     "onegov.form": [
         {
             "changelog": "~~~~~~~~~~~~~~~~~~~\n\n- HTML escapes labels in the dynamic formbuilder for security.\n  [href]\n\n",
