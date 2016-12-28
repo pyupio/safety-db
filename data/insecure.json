@@ -105,6 +105,9 @@
     "cmsplugin-filer": [
         "<1.0.0"
     ],
+    "collective.contact.core": [
+        "<1.10"
+    ],
     "collective.documentviewer": [
         "<1.5.1"
     ],

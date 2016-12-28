@@ -263,6 +263,12 @@
             "v": "<1.0.0"
         }
     ],
+    "collective.contact.core": [
+        {
+            "changelog": "-----------------\n\n- Fix AddContact form problem with security hotfix 20160830\n  [ebrehault]\n\n\n",
+            "v": "<1.10"
+        }
+    ],
     "collective.documentviewer": [
         {
             "changelog": "------------------\n\n- fix security on file resources\n\n\n",
