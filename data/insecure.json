@@ -762,6 +762,7 @@
         "<1.2.15"
     ],
     "plone.app.discussion": [
+        "<2.4.14",
         "<2.4.18"
     ],
     "plone.app.event": [

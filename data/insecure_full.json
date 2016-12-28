@@ -3884,6 +3884,10 @@
     ],
     "plone.app.discussion": [
         {
+            "changelog": "-------------------\n\nNew features:\n\n- Make tests work with lxml safe html cleaner\n\nBug fixes:\n\n- Fixed possible cross site scripting (XSS) attack on moderate comments page.  [maurits]\n\n\n\n",
+            "v": "<2.4.14"
+        },
+        {
             "changelog": "-------------------\n\nBug fixes:\n\n- Apply security hotfix 20160830 for redirects.  [maurits]\n\n- Update Traditional Chinese translation.\n  [l34marr]\n\n\n",
             "v": "<2.4.18"
         }
