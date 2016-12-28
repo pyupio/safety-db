@@ -5459,6 +5459,12 @@
             "v": "<1.1.0"
         }
     ],
+    "thumbor-plugins": [
+        {
+            "changelog": "* Fixed issue with WebP request path by [Frank Du](https://github.com/frankdu);\n* Fixed issue with Upstart Script Log Level by [Matt Robenolt](https://github.com/mattrobenolt);\n* Fixed issue with folder not existing before storing security details by [C\u00edcero Verneck Corr\u00eaa](https://github.com/cicerocomp);\n* Fixed 272 - Thumbor works properly with newer tornado.\n\n",
+            "v": "<4.0.2"
+        }
+    ],
     "tiddlyweb": [
         {
             "changelog": "\n  * SECURITY: Ensure that a password which exists but is the empty\n    string cannot auth.\n  * Make it so a tiddler with title ' ' is clickable in the HTML\n    serialization.\n\n",
