@@ -5411,6 +5411,12 @@
             "v": "<1.0.0"
         }
     ],
+    "webhelpers2": [
+        {
+            "changelog": "------------------\n\n- Import code and docs from WebHelpers 1.3. Source:\n  https://bitbucket.org/bbangert/webhelpers/changeset/979fc4537c87c54eed933e5a84d43df51be88ff2\n- Rename top-level package to ``webhelpers2``.\n- Delete submodules: \n\n  * feedgenerator\n  * html.grid\n  * html.grid_demo\n  * markdown\n  * mimehelper\n  * paginate\n  * pylonslib (flash, grid, minify, secure_form)\n  * textile\n  * util\n\n- webhelpers2.containers:\n  \n  * Delete Accumulator: use ``collections.defaultdict(list)`` in stdlib or \n    WebOb's '`MultiDict``. \n  * Delete UniqueAccumulator: use ``collections.defaultdict(set)`` in stdlib.\n\n- webhelpers2.html.tags:\n\n  * Delete Doctype: use simply \"<!DOCTYPE html>\" for HTML 5.\n  * Rename sample stylesheet to 'webhelpers2/static/stylesheets/webhelpers2.css'.\n\n- webhelpers2.misc:\n\n  * Rename 'subclasses_only' to 'subclasses_of'.\n  * Delete DeclarativeException and OverwriteError.\n\n- Bugfix in leap year algorithm contributed by \"rejoc\" on GitHub.\n  (``webhelpers2.date._is_leap_year()``)\n- Moved 'update_params()' to the unfinished directory pending a new home; it\n  was in the deleted util module.\n",
+            "v": "<2.0b1"
+        }
+    ],
     "wpull": [
         {
             "changelog": "=====================\n\n* Security: Fixed ``Referer`` HTTP header field leaking from HTTPS to HTTP.\n* Fixed ``AttributeError`` in proxy when using PhantomJS and ``pre_response`` scripting hook.\n* Fixed early program end when server returns error fetching robots.txt.\n* Fixed uninteresting errors outputted if program is forcefully closed.\n* Fixed ``--referer`` option not applied to subsequent requests.\n\n\n",
