@@ -151,6 +151,12 @@
             "v": "<1.4.2"
         }
     ],
+    "blackhole": [
+        {
+            "changelog": "=====\n\nThe 2.1.5 release is actually a tiny bug fix release that I'm combining with\nthe large 2.1.4 release.\n\n- Bugfix for :any:`socket.SO_REUSEPORT`.\n- Squashed bugs related to :any:`socket.socket` failing in child processes.\n  These squashed bugs fix IPv6 which had a tendency of not working as expected.\n- Added communication between supervisor and children, allow children to be\n  restarted if they fail to communicate to the supervisor.\n- Added ``mode=`` and ``delay=`` optionals to the :ref:`listen` and\n  :ref:`tls_listen` directives. Allowing listeners to spawn on specific ports\n  and act in different ways.\n\n  When ``mode`` and ``delay`` are configured in a listener directive, that\n  listener will ignore the global mode and delay options for that listener.\n  Setting :ref:`mode` and :ref:`delay` on a listener will also disable\n  :ref:`dynamic-switches` for that listener, automatically.\n- Internal module loading changes\n- Added test utilities to the test suite.\n- The blackhole environment will be reset for each test.\n- Added a lot of testing to supervisor, worker and child functionality.\n- Added a ``--quiet`` mode to suppress warnings when using\n  ``-ls/--less-secure``, running as the root user or not using the\n  :ref:`tls_dhparams` option.\n- Added a warning when running the server as the root user without specifing\n  a reduced privilege :ref:`user` and :ref:`group`.\n- Improved shutdown procedure, now does a much better job of disconnecting\n  clients and closing everything before exiting.\n- Added an internal counter of invalid SMTP commands. Mitigate DoS attacks,\n  maximum failed commands per connection is 10. Clients that violate this rule\n  get disconnected.\n\n",
+            "v": "<2.1.5"
+        }
+    ],
     "bok-choy": [
         {
             "changelog": "* Bug fix to XSS vulnerability auditing feature\n\n",
