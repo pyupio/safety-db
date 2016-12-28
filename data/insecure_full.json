@@ -4186,6 +4186,10 @@
             "v": "<1.0.2"
         },
         {
+            "changelog": "--------------------------\n\n    * SECURITY FIX: Deny access to all dict methods able to modify a dict to\n      protect __builtins__: block clear, pop, popitem, setdefault and update\n      methods (__delitem__ and __setitem__ were already blocked).\n\n",
+            "v": "<1.0.2"
+        },
+        {
             "changelog": "* SECURITY FIX: Deny access to dict.__init__() to protect __builtins__.\n\n",
             "v": "<1.0.3"
         },
