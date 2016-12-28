@@ -1075,6 +1075,9 @@
     "tiddlyweb": [
         "<1.2.18"
     ],
+    "tinydb-serialization": [
+        "<2.0.0"
+    ],
     "tornado": [
         "<2.2.1"
     ],

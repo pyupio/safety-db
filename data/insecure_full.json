@@ -5295,6 +5295,12 @@
             "v": "<1.2.18"
         }
     ],
+    "tinydb-serialization": [
+        {
+            "changelog": "^^^^^^^^^^^^^^^^^^^^^^^\n\n:ref:`Upgrade Notes <upgrade_v2_0>`\n\n.. warning:: TinyDB changed the way data is stored. You may need to migrate\n             your databases to the new scheme. Check out the\n             :ref:`Upgrade Notes <upgrade_v2_0>` for details.\n\n- The syntax ``query in db`` has been removed, use ``db.contains`` instead.\n- The ``ConcurrencyMiddleware`` has been removed due to a insecure implementation\n  (see `issue 18 <https://github.com/msiemens/tinydb/issues/18>`_).  Consider\n  :ref:`tinyrecord` instead.\n\n- Better support for working with :ref:`Element IDs <element_ids>`.\n- Added support for `nested comparisons <http://tinydb.readthedocs.io/en/v2.0.0/usage.htmlnested-queries>`_.\n- Added ``all`` and ``any`` `comparisons on lists <http://tinydb.readthedocs.io/en/v2.0.0/usage.htmlnested-queries>`_.\n- Added optional :<http://tinydb.readthedocs.io/en/v2.0.0/usage.htmlsmart-query-cache>`_.\n- The query cache is now a :ref:`fixed size LRU cache <query_caching>`.\n\n",
+            "v": "<2.0.0"
+        }
+    ],
     "tornado": [
         {
             "cve": "CVE-2012-2374",
