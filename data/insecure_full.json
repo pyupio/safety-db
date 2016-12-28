@@ -3920,6 +3920,12 @@
             "v": "<4.2.3"
         }
     ],
+    "plone.app.content": [
+        {
+            "changelog": "------------------\n\nBug fixes:\n\n- Apply security hotfix 20160830 for folder factories redirection.  [maurits]\n- Fix UnicodeDecodeError on full review list view\n  [datakurre]\n\n\n",
+            "v": "<3.3.1"
+        }
+    ],
     "plone.app.contentmenu": [
         {
             "changelog": "------------------\n\n- Made a test independent of an internal sort order.\n  [hannosch]\n\n- Escape the title of the defaultpage in the DisplayMenu. This fixes a potential\n  xss attack and http://dev.plone.org/plone/ticket/8377.\n  [csenger]\n\n- Added the prefix \"folder-\" to the CSS id of the folder part of the view\n  contentmenu. This closes http://dev.plone.org/plone/ticket/8375.\n  [realefab]\n\n\n",
