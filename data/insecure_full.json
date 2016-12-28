@@ -5049,6 +5049,12 @@
             "v": "<0.7.0"
         }
     ],
+    "relstorage": [
+        {
+            "changelog": "====================\n\n- History-preserving storages now replace objects on restore instead of\n  just inserting them.  This should solve problems people were\n  having with the zodbconvert utility.\n\n- Oracle: call the DBMS_LOCK.REQUEST function directly instead of using\n  a small package named ``relstorage_util``. The ``relstorage_util``\n  package was designed as a secure way to access the DBMS_LOCK package,\n  but the package turned out to be confusing to DBAs and provided no\n  real security advantage.  People who have already deployed\n  RelStorage 1.4.x on Oracle need to do the following:\n\n      GRANT EXECUTE ON DBMS_LOCK TO <zodb_user>;\n\n  You can also drop the ``relstorage_util`` package.  Keep the\n  ``relstorage_op`` package.\n\n- Made compatible with ZODB 3.10.\n\n- MySQL: specify the transaction isolation mode for every connection,\n  since the default is apparently not necessarily \"read committed\"\n  anymore.\n\n\n",
+            "v": "<1.4.0c1"
+        }
+    ],
     "reprozip": [
         {
             "changelog": "------------------\n\n(reprozip only)\n\nBugfixes:\n* Files (or links) created with rename, link or symlink then read will no longer be packed.\n* A buffer overflow could happen in the log module, for instance when the experiment passes a very long argument to execve (over 4kB in a single argument) and running in debug mode (-v -v)\n\n\n",
