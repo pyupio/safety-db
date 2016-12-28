@@ -351,6 +351,9 @@
     "django-ninecms": [
         "<0.4.5b"
     ],
+    "django-openid-provider": [
+        "<0.5"
+    ],
     "django-piston": [
         "<0.2.3"
     ],

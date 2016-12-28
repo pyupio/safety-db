@@ -2094,6 +2094,12 @@
             "v": "<0.4.5b"
         }
     ],
+    "django-openid-provider": [
+        {
+            "changelog": "----\nReleased 2013-12-23.\n\n* Security enchancement:\n  `OpenID Authentication 2.0 9.2.1 <http://openid.net/specs/openid-authentication-2_0.htmlrfc.section.9.2.1>`_\n  was implemented, fixes :issue:`4`.\n* Fixed landing page view to handle redirect URL GET params correctly.\n* Added OPENID_PROVIDER_SREG_DATA_CALLBACK setting for custom SREG callback\n  functions.\n* Added AX support, new OPENID_PROVIDER_AX_DATA_CALLBACK callback.\n* Added Django 1.5 support.\n* Added Django 1.5 custom user model support.\n* Fixed response page javascript to submit the correct form when there is more than one.\n\n",
+            "v": "<0.5"
+        }
+    ],
     "django-piston": [
         {
             "cve": "CVE-2011-4103",
