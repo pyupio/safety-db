@@ -1967,6 +1967,12 @@
             "v": "<0.4.1"
         }
     ],
+    "django-fabfile": [
+        {
+            "changelog": "--------------------\n\nAccept ``security_groups`` argument only formatted as string separated\nwith semicolons ';'.\n\n",
+            "v": "<2011.09.15.1"
+        }
+    ],
     "django-fernet-fields": [
         {
             "changelog": "----------------\n\n* Remove DualField and HashField. The only cases where they are useful, they\n  aren't secure.\n\n\n",
