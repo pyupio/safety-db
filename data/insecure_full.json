@@ -111,6 +111,12 @@
             "v": "<0.6.4"
         }
     ],
+    "basexclient": [
+        {
+            "changelog": "\n XQUERY\n - Support for XQuery 3.1 (nearly complete)\n - New default serialization (\"adaptive\")\n - MIXUPDATES option: update items and return results at the same time\n - Improved index rewritings, more precise cost estimations\n - New modules: Array and User Module\n - New annotations: %basex:inline, %basex:lazy\n - 13 of our modules were updated and extended\n\n STORAGE\n - Existing documents will be overwritten in-place whenever possible\n - Updatable index structures now take much less space\n - Faster document index (storing paths to all XML documents)\n - AUTOOPTIMIZE option: optimize after each update\n - XINCLUDE option: resolve or ignore XInclude tags\n\n SECURITY\n - Revised user management; users are stored as XML\n - Digest authentication, Salted SHA256\n - Language bindings updated\n\n WEB APPLICATIONS\n - Integrated application: DBA, Database Administration\n - AUTHMETHOD option: Basic vs. Digest authentication\n - RESTXQ: regular expressions in paths, quality factor support\n\n GUI\n - Better code completions\n\n",
+            "v": "<8.0"
+        }
+    ],
     "bbcode": [
         {
             "changelog": "\n* Escape quotes correctly to prevent XSS (see 4).\n\n",
