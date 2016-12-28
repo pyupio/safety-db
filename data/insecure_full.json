@@ -4284,6 +4284,12 @@
             "v": "<0.12"
         }
     ],
+    "pyrseas": [
+        {
+            "changelog": "\n  * Added support for:\n\n    - AGGREGATE functions\n    - DOMAINs\n    - ENUMerated TYPEs\n    - Functions returning table row types\n    - INDEXes on expressions (issue 3)\n    - Rewrite RULEs\n    - SECURITY DEFINER functions\n    - TRIGGERs\n\n * Enhanced host/port defaults to use sockets, resulting in noticeable\n   performance improvement.\n\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "pysandbox": [
         {
             "changelog": "* SECURITY FIX: Deny access to all dict methods able to modify a dict to\n      protect __builtins__: block clear, pop, popitem, setdefault and update\n      methods (__delitem__ and __setitem__ were already blocked).",
