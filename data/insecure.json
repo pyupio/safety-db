@@ -812,6 +812,9 @@
     "products.plonepas": [
         "<3.9"
     ],
+    "products.remember": [
+        "<1.9b1"
+    ],
     "ptah": [
         "<0.3.3"
     ],
