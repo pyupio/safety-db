@@ -3115,6 +3115,12 @@
             "v": "<1.0.2"
         }
     ],
+    "openvas-lib": [
+        {
+            "changelog": "=============\n\nAPI changes\n-----------\n\n  * Reorganized files structure\n  * Simplified API\n  * Properties names and types changed:\n    - cve -> cves (str -> list).\n    - bid -> bids (str -> list).\n    - bugtraq -> bugtraqs (str -> list)\n    - description -> raw description\n    - cvss: str -> float\n\nOther changes\n-------------\n\n  * A lot of bug was fixed.\n  * Improved stability\n  * Added 4 new properties for NVT:\n    - impact\n    - summary\n    - affected_software\n    - solution\n    - vulnerability_insight\n    - cvss_base_vector\n  * Now, report texts are cleaned for \\n, \\r, \\t characters. Texts are so reusable a have good readability.\n  * Added many unit test.\n  * Added 2 .xml report for testing.\n  * Now you can use only the parser as stand alone mode with function \"report_parser\".\n\n",
+            "v": "<0.1.0"
+        }
+    ],
     "otpauth": [
         {
             "changelog": "~~~~~~~~~~~~~\n\nReleased on May 26, 2015\n\nUse ``compare_digest`` to avoid timing attack.\n\n",
