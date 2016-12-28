@@ -421,6 +421,9 @@
     "docker-registry-core": [
         "<0.8.1"
     ],
+    "dolfin": [
+        "<0.8.1"
+    ],
     "dpaste": [
         "<2.8"
     ],

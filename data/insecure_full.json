@@ -2264,6 +2264,12 @@
             "v": "<0.8.1"
         }
     ],
+    "dolfin": [
+        {
+            "changelog": "------------------\n- Add option to use ML multigrid preconditioner through PETSc\n- Interface change for ODE solvers: uBLASVector --> double*\n- Remove homotopy solver\n- Remove typedef real, now using plain double instead\n- Add various operators -=, += to GenericMatrix\n- Don't use -Werror when compiling SWIG generated code\n- Remove init(n) and init(m, n) from GenericVector/Matrix. Use resize\n  and zero instead\n- Add new function is_combatible() for checking compatibility of\n  boundary conditions\n- Use x as initial guess in Krylov solvers (PETSc, uBLAS, ITL)\n- Add new function errornorm()\n- Add harmonic ALE mesh smoothing\n- Refinements of Graph class\n- Add CholmodCholeskySlover (direct solver for symmetric matrices)\n- Implement application of Dirichlet boundary conditions within\n  assembly loop\n- Improve efficiency of SparsityPattern\n- Allow a variable number of smoothings\n- Add class Table for pretty-printing of tables\n- Add experimental MTL4 linear algebra backend\n- Add OutflowFacet to SpecialFunctions for DG transport problems\n- Remove unmaintained OpenDX file format\n- Fix problem with mesh smoothing near nonconvex corners\n- Simple projection of functions in Python\n- Add file format: XYZ for use with Xd3d\n- Add built-in meshes: UnitCircle, Box, Rectangle, UnitSphere\n\n",
+            "v": "<0.8.1"
+        }
+    ],
     "dpaste": [
         {
             "changelog": "----------------\n\n* The API create view has a new argument 'filename' which is used to determine\n  the lexer out of a given filename.\n* Fixed a XSS bug where HTML tags were not properly escaped with the simple\n  ``code`` lexer.\n\n",
