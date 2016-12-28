@@ -3201,6 +3201,12 @@
             "v": "<1.0.2"
         }
     ],
+    "opps": [
+        {
+            "changelog": "=====\n* Improves Django 1.6 integration\n* Uses Grappelli 2.5.3\n* Remove OPPS_CORE_APPS\n* Used opps.core.manager on Container\n* * Extend Polymorphic Manager\n* Used channel_id on container unique_together\n* Upgrade Django version to 1.5.9 (Security releases issued https://www.djangoproject.com/weblog/2014/aug/20/security/)\n\n\n",
+            "v": "<0.2.6"
+        }
+    ],
     "otpauth": [
         {
             "changelog": "~~~~~~~~~~~~~\n\nReleased on May 26, 2015\n\nUse ``compare_digest`` to avoid timing attack.\n\n",
