@@ -5173,6 +5173,12 @@
             "v": "<0.8"
         }
     ],
+    "starcluster": [
+        {
+            "changelog": "version is *not* compatible with clusters started with older versions of\nStarCluster. Please terminate all clusters before upgrading to 0.95.1.\n\n.. _v0951-fixes:\n\nBug Fixes\n---------\n* cluster: fix max length error when applying cluster tags (348)\n* start: fix default value for ``--no-public-ips`` option (366)\n* cluster: fix for custom security group permissions (356)\n\n.. _version-0.95:\n\n",
+            "v": "<0.95.1"
+        }
+    ],
     "stargate": [
         {
             "changelog": "---\n\n- Add support for the HyBi version of WebSockets (specifically version-10). This version was released to solve some previous security concerns and\nwill be the version in Firefox 7/8 and Chrome 14 onwards accoring to Wikipedia.\n- Introduces a dependency on ws4py\n\n- See http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10\n\n",
