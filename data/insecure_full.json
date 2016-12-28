@@ -5045,6 +5045,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 228 - jeremy-h - IAM check misses '*' when found within a list. (Issue 223)\n- PR 230 - markofu - New error and echo functions to simplify code for scripts/secmonkey_auto_install.sh\n- PR 233 - mikegrima - Write tests for security_monkey.common.ARN (Issue 222)\n- PR 238 - monkeysecurity - Refactoring _check_rfc_1918 and improving VPC ELB Internet Accessible Check\n- PR 241 - bunjiboys - Seed Amazon owned AWS accounts (Issue 169)\n- PR 243 - mikegrima - Fix for underscores not being detected in SNS watcher. (Issue 240)\n- PR 244 - mikegrima - Setup TravisCI (Issue 227)\n- PR 250 - OllyTheNinja-Xero - upgrade deprecated botocore calls in ELB watcher (Issue 249)\n- PR 256 - mikegrima - Latest Boto3/botocore versions (Issue 254)\n- PR 261 - bunjiboys - Add ec2:DescribeInstances to quickstart role documentation (Issue 260)\n- PR 263 - monkeysecurity - Updating docs/scripts to pin to dart 1.12.2-1 (Issue 259)\n- PR 265 - monkeysecurity - Remove ratelimiting max attempts, wrap ELB watcher with try/except/continue\n\nHotfixes:\n\n- Issue 235 - OllyTheNinja-Xero - SNS Auditor - local variable 'entry' referenced before assignment\n\nContributors:\n\n- jeremy-h\n- mark-fu\n- mikegrima\n- bunjiboys\n- OllyTheNinja-Xero\n- monkeysecurity\n\n\n",
+            "v": "<0.4.0"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
