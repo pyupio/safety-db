@@ -852,6 +852,9 @@
     "products.plonepas": [
         "<3.9"
     ],
+    "products.poi": [
+        "<2.2.3"
+    ],
     "ptah": [
         "<0.3.3"
     ],
