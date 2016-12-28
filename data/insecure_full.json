@@ -5024,6 +5024,12 @@
             "v": "<1.4.20"
         }
     ],
+    "rqlite": [
+        {
+            "changelog": "- [PR 230](https://github.com/rqlite/rqlite/pull/230): Move Chinook test data to idiomatic testdata directory.\n- [PR 232](https://github.com/rqlite/rqlite/pull/232), [PR 233](https://github.com/rqlite/rqlite/pull/233): rqlite CLI now supports accessing secured rqlited nodes. Thanks tych0\n- [PR 235](https://github.com/rqlite/rqlite/pull/235): Return correct error, if one occurs, during backup. Thanks tych0\n- [PR 237](https://github.com/rqlite/rqlite/pull/237), [PR 238](https://github.com/rqlite/rqlite/pull/238): Support observing Raft changes. Thanks tych0\n\n",
+            "v": "<3.8.0"
+        }
+    ],
     "rsa": [
         {
             "changelog": "----------------------------------------\n\n- Security improvements by Barry Mead.\n",
