@@ -5045,6 +5045,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- Changes to issue score in code will now cause all existing issues to be re-scored in the database.\n- A new configuration parameter called SECURITYGROUP_INSTANCE_DETAIL can now be set to:\n    - \"FULL\": Security Groups will display each instances, and all instance tags, that are associated with the security group.\n    - \"SUMMARY\": Security Groups will display the number of instances attached to the security group.\n    - \"NONE\": Security Groups will not retrieve any data about instances attached to a security group.\n    - If SECURITY_GROUP_INSTANCE_DETAIL is set to \"FULL\" or \"SUMMARY\", empty security groups audit issues will have their score set to zero.\n    - For accounts with many thousands of instances, it is advised to set this to \"NONE\" as the AWS API's do not respond in a timely manner with that many instances.\n- Each watcher can be set to run at a different interval in code.  We will want to move this to be a UI setting.\n- Watchers may specify a list of ephemeral paths.  Security_monkey will not send out change alerts for items in the ephemeral section.  This is a good place for metadata that is often changing like the number of instances attached to a security_group or the number of remaining IP addresses in a VPC subnet.\n\nContributors:\n\n- lucab\n- monkeysecurity\n\n",
+            "v": "<0.3.6"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
