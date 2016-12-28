@@ -803,6 +803,9 @@
     "products.cmfcontentpanels": [
         "<V1.4.1"
     ],
+    "products.cmfplone": [
+        "<5.1b1"
+    ],
     "products.ldapuserfolder": [
         "<2.19"
     ],
