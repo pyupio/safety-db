@@ -4284,6 +4284,12 @@
             "v": "<0.6"
         }
     ],
+    "pyramid-debugtoolbar": [
+        {
+            "changelog": "----------------\n\n- The toolbar is now a completely standalone application running inside the\n  tween. There are several minor incompatibilities and improvements related\n  to this extra isolation:\n\n  1. ``pyramid_mako`` and the ``.dbtmako`` renderer are no longer included\n     in the parent application (your app).\n  2. Panels must be extra careful now that they only render templates inside\n     of the ``render_vars`` and ``render_content`` functions. These are the\n     only functions in which the ``request`` object is for rendering the\n     toolbar panel.\n  3. The toolbar will not be affected by any global security policies your\n     application may put in place other than via\n     ``config.set_debugtoolbar_request_authorization``.\n     **never run the toolbar in production**\n\n  See https://github.com/Pylons/pyramid_debugtoolbar/pull/253\n\n- Updated Bootstrap to v3.3.6, refactored static assets and dropped require.js.\n  Each page now depends on what it needs without extra dependencies included\n  in the debugger pages.\n  See https://github.com/Pylons/pyramid_debugtoolbar/pull/259\n\n- Enabled interactive tablesorting on table columns.\n  See https://github.com/Pylons/pyramid_debugtoolbar/pull/256\n\n- setuptools-git is now required to install the codebase in non-editable mode.\n\n",
+            "v": "<3.0"
+        }
+    ],
     "pyramid-odesk": [
         {
             "changelog": "-----\n- Login and Logout actions are performed via POST and has protection\n  against CSRF attacks\n\n",
