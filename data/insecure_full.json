@@ -1967,6 +1967,12 @@
             "v": "<0.4.1"
         }
     ],
+    "django-fabfile": [
+        {
+            "changelog": "--------------------\n\nAdded security groups synchronization\n:func:`django_fabfile.security_groups.sync_rules` and corresponding\nFabric task :func:`django_fabfile.security_groups.sync_rules_by_id`.\n\n",
+            "v": "<2011.09.21.1"
+        }
+    ],
     "django-fernet-fields": [
         {
             "changelog": "----------------\n\n* Remove DualField and HashField. The only cases where they are useful, they\n  aren't secure.\n\n\n",
