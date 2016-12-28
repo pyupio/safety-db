@@ -257,6 +257,12 @@
             "v": "<0.10.5"
         }
     ],
+    "cloudinary": [
+        {
+            "changelog": "===================\n\n  * Increment version to v1.0.18: Support for density pixel ratio (dpr) transformation parameter. Support auto width, auto dpr and responsive width. Support for background_removal parameter in upload and update. Upgrade jQuery plugin to v1.0.18. Support timeouts in API requests. Fix return_error mode when calling api. Allow user to override secure setting. Replace Exception with ValueError. Support auto-securing URLs if django request is enabled and the current page is being served over HTTPS.\n  * Fix tests to reflect prefix + direction=desc is not supported\n  * Support for background_removal parameter in upload and update\n  * Support width auto, dpr auto and responsive width\n  * Fix return_error mode when calling api\n  * Merge pull request 35 from ndparker/master\n  * Merge pull request 34 from MatthiasEgli/master\n  * add the possibility to add timeouts to api requests\n  * added transformation option DPR\n  * Merge pull request 33 from Tekco/master\n  * Allow user to override secure setting.\n  * Added support for auto-securing URLs if django.core.context_processors.request is enabled and the current page is being served over HTTPS according to request.is_secure().\n  * Issue 32 - Replace Exception with ValueError\n\n",
+            "v": "<1.0.18"
+        }
+    ],
     "cmsplugin-filer": [
         {
             "changelog": "------------------\n\n* Pin requirements for Django-Filer to >= 1.0.0\n* Improve test coverage\n* Fix icon_src / remove references of FILER_STATICMEDIA_PREFIX\n* XSS fix\n* Fix path names for storage backends\n* Fix migrations\n* Update README\n\n\n",
