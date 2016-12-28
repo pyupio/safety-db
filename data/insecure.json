@@ -1109,6 +1109,9 @@
     "tornado": [
         "<2.2.1"
     ],
+    "tracauthopenid": [
+        "<0.4.2"
+    ],
     "tripleo-heat-templates": [
         "<0.8.10",
         "<0.8.7",

@@ -5389,6 +5389,12 @@
             "v": "<2.2.1"
         }
     ],
+    "tracauthopenid": [
+        {
+            "changelog": "==========================\n\nNew Features\n------------\n\nThese features were contributed by Patrick Uiterwijk.\n\n- New config option ``use_nickname_as_authname``.  If set, the OpenID\n  nickname will be used for the authname (or trac username).\n\n- New config option ``trust_authname``.  If set, trust the\n  OpenID-derived authname to be unique.  **Security warning**: do not\n  set this unless you know what you are doing.\n\n\n",
+            "v": "<0.4.2"
+        }
+    ],
     "tripleo-heat-templates": [
         {
             "cve": "CVE-2015-5303",
