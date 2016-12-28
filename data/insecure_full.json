@@ -4004,6 +4004,12 @@
             "v": "<1.20.922.99"
         }
     ],
+    "privacyidea": [
+        {
+            "changelog": "\n  Features\n  * Event Handler Framework 360\n  * local CA connector can enroll certificates\n    for users. Users can download PKCS12 file. 383\n  * Add and edit users in LDAP resolvers 372\n  * Hardware Security Module support via PKCS11\n  * Time dependent policies 358\n\n  Enhancements\n  * Policy for web UI enrollment wizard 402\n  * Realm dropdown box at login screen 400\n  * Apply user policy settings 390\n  * Improve QR Code for TOTP token enrollment 384\n  * Add documentation for enrollment wizard 381\n  * Improve pi-manage backup to use pymysql 375\n  * Use X-Forwarded-For HTTP header as client IP 356\n  * Add meta-package privacyidea-mysql 376\n\n  Fixes\n  * Adduser honors resolver setting in policy 403\n  * Add documentation for SPASS token 399\n  * Hide enrollment link (WebUI) is user can not enroll 398\n  * Fix getSerial for TOTP tokens 393\n  * Fix system config checkboxes 378\n  * Allow a realm to be remove from a token 363\n  * Improve the date handling in emails 352\n  * Sending test emails 350\n  * Authentication with active token not possible if\n    the user has a disabled token 339\n\n \n",
+            "v": "<2.12"
+        }
+    ],
     "products.btreefolder2": [
         {
             "changelog": "-------------------\n\n- Provide security declaration for `BTreeFolder2Base.hasObject` method.\n\n- Add some tests for correct `getattr` behavior.\n\n- Minor `__getattr__` and `_getOb` optimizations.\n\n",

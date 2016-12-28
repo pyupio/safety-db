@@ -816,6 +816,9 @@
     "pritunl": [
         "<1.20.922.99"
     ],
+    "privacyidea": [
+        "<2.12"
+    ],
     "products.btreefolder2": [
         "<2.13.4"
     ],
