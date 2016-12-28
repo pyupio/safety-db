@@ -3920,6 +3920,12 @@
             "v": "<0.4.2"
         }
     ],
+    "poorwsgi": [
+        {
+            "changelog": "    * auto striping option keys and values\n    * HTTP_FORBIDDEN bug fix (missing const)\n    * Security update:\n      * using sha512 in session hidden function\n      * more uknown generic secret key\n      * secret key is moved from debug-info html page to log where this page is\n        shown\n    * EmptyForm return default value\n\n",
+            "v": "<1.0.2"
+        }
+    ],
     "pretaweb.healthcheck": [
         {
             "changelog": "----------------\n\n- Removed force=yes option to prevent DoS attacks \n- Output now to instance stderr\n\n\n",
