@@ -3439,6 +3439,10 @@
         {
             "changelog": "--------------------------------------------------------\n\n- security fix; force cwd to something controlled for ebuild env.  This\n  blocks an attack detailed in glsa 200810-02; namely that an ebuild invoking\n  python -c (which looks in cwd for modules to load) allows for an attacker\n  to slip something in.",
             "v": "<0.4.7.12"
+        },
+        {
+            "changelog": "----------------------------\n\n- fix sandbox complaint when PORT_LOGDIR is enabled- sandbox requires abspath\n  for any SANDBOX_WRITE exemptions, if PORT_LOGDIR path includes symlinks,\n  force a `readlink -f` of the sandbox exemption.\n  http://forums.gentoo.org/viewtopic-p-5176414.html\n\n- ticket 213; if stricter is in FEATURES, fail out if insecure rpath is\n  detected- otherwise, correct the entries.\n\n- ticket 207; drop the attempted known_keys/cache optimizations, instead\n  defer to parent's iterkeys always.  This eliminates the concurrency issue,\n  and simplifies staleness detection.  Also kills off a tb for --newuse .\n\n- ticket 201; pquery --restrict-revdep-pkgs wasn't behaving properly for\n  slot/repository/user atoms, now does.\n\n- Correct potential segfaults in cpython version of PackageRestriction and\n  StrExactMatch's __(eq|ne)__ implementations.\n\n\n----------------------------\n",
+            "v": "<0.4.7.6"
         }
     ],
     "plomino": [
