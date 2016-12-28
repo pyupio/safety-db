@@ -3143,6 +3143,12 @@
             "v": "<1.0.2"
         }
     ],
+    "opencoweb": [
+        {
+            "changelog": "~~~~~~~~~~~\n\n* :py:meth:`org.coweb.CowebSecurityPolicy.canSubscribeToSession` method changed parameters and meaning.\n\n",
+            "v": "<0.3"
+        }
+    ],
     "otpauth": [
         {
             "changelog": "~~~~~~~~~~~~~\n\nReleased on May 26, 2015\n\nUse ``compare_digest`` to avoid timing attack.\n\n",
