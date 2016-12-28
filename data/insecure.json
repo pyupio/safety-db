@@ -471,6 +471,9 @@
     "formencode": [
         "<1.0"
     ],
+    "formish": [
+        "<0.8"
+    ],
     "ftw.dashboard.dragndrop": [
         "<1.5.1"
     ],
