@@ -5061,6 +5061,12 @@
             "v": "<0.30"
         }
     ],
+    "quintagroup.seoptimizer": [
+        {
+            "changelog": "------------------\n\n* Added overrides.zcml for BBB http://plone.org/products/plone-seo/issues/19,\n  http://plone.org/products/plone-seo/issues/23 [mylan]\n* Prevent view breakage for context, which canonical url can't be calculated for\n  http://plone.org/products/plone-seo/issues/22 [mylan]\n* Fixed security issue for SEO Property action and view\n  http://plone.org/products/plone-seo/issues/24\n  [crchemist, mylan]\n\n\n",
+            "v": "<3.0.4"
+        }
+    ],
     "rauth": [
         {
             "changelog": "------------------------\n  * Made OAuth1 nonces more secure via SystemRandom\n  * Exposed authentication responses\n  * Allowed Requests versions >= 1.2.3\n  * Fixed OAuth1 unicode encoding issues\n\n",
