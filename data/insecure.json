@@ -828,6 +828,9 @@
     "pritunl": [
         "<1.20.922.99"
     ],
+    "products.archetypes": [
+        "<1.10.0"
+    ],
     "products.btreefolder2": [
         "<2.13.4"
     ],
