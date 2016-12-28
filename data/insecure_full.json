@@ -168,6 +168,12 @@
             "v": "<0.12.10"
         }
     ],
+    "btrees": [
+        {
+            "changelog": "------------------\n\n- Emulate the (private) iterators used by the C extension modules from\n  pure Python.  This change is \"cosmetic\" only:  it prevents the ZCML\n  ``zope.app.security:permission.zcml`` from failing.  The emulated\n  classes are **not** functional, and should be considered implementation\n  details.\n\n- Accomodate buildout to the fact that we no longer bundle a copy\n  of 'persistent.h'.\n\n- Fix test failures on Windows:  no longer rely on overflows from\n  ``sys.maxint``.\n\n\n",
+            "v": "<4.0.4"
+        }
+    ],
     "cairosvg": [
         {
             "changelog": "======================================\n\n**WARNING:** this is a security update.\n\nCairoSVG was vulnerable to XML eXternal Entity (XXE) attacks, this release\nfixes this vulnerability by not resolving the XML entities anymore.\n\nThe ``--unsafe`` option has been added to force the resolution of XML\nentities. Obviously, this option is not safe and should only be used with\ntrusted SVG files.\n\n\n",
