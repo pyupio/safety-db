@@ -263,6 +263,12 @@
             "v": "<1.5.1"
         }
     ],
+    "collective.fbshare": [
+        {
+            "changelog": "------------------\n\n- Dexterity content type support [keul]\n- Display also the modified time if security site say so [keul]\n- Coexistence with *sc.social.like* [keul]\n- Properly handle ``article:tag`` as array [keul]\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "collective.js.datatables": [
         {
             "changelog": "------------------\n\n- Added Chinese Simplified translation. [jianaijun]\n- Update Datatables to 1.10.11, due to a XSS vulnerability in 1.10.4 (cve-2015-6384) [gemnasium]\n\n\n",
