@@ -4065,6 +4065,12 @@
             "v": "<3.9"
         }
     ],
+    "products.resourceregistries": [
+        {
+            "changelog": "------------------\n\n- Fixed traversal of security restricted resources.\n  [jenner, alecm, fschulze]\n\n- Added javascript \"full\" compression, which achieves higher compression ratios\n  by doing variable name packing based on the rules from Dean Edwards packer:\n  http://dean.edwards.name/packer/usage/\n  [fschulze]\n\n- Added keyword encoding for javascript. This greatly reduces the file size of\n  javascript files, but adds a small performance hit on the client for the\n  decoding.\n  [fschulze]\n\n\n",
+            "v": "<1.2.1"
+        }
+    ],
     "ptah": [
         {
             "changelog": "==================\n\nFeatures\n--------\n\n- Added `ptah.enable_modules` setting, list of enabled\n  management modules.\n\n- Require alembic 0.1.1\n\n\nBug fixes\n---------\n\n- Encode `content-type` header for blob `data` rest action\n\n- Do not use `request` for application factories in\n  `applications` rest action. It brakes security for current root object.\n\n\n",
