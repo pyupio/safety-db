@@ -5061,6 +5061,12 @@
             "v": "<0.30"
         }
     ],
+    "rapidsms-twilio": [
+        {
+            "changelog": "----------------------------\n\nSecurity release to add support for validating incoming requests from Twilio. For\nbackwards compatibility this is not enabled by default. You should update your backend\nconfiguration to include the new ``validate`` configuration. See the quick-start for\nan example configuration.\n\n* Improved ``tox`` testing support for RapidSMS and Django version combinations.\n* Relaxed ``twilio`` requirement.\n* Added Twilio request signature validation.\n\n\n",
+            "v": "<0.2.1"
+        }
+    ],
     "rauth": [
         {
             "changelog": "------------------------\n  * Made OAuth1 nonces more secure via SystemRandom\n  * Exposed authentication responses\n  * Allowed Requests versions >= 1.2.3\n  * Fixed OAuth1 unicode encoding issues\n\n",
