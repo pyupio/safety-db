@@ -4893,6 +4893,12 @@
             "v": "<1.1.0"
         }
     ],
+    "python-ptrace": [
+        {
+            "changelog": "--------------------------------\n\nVisible changes:\n\n* Rename the project to \"python-ptrace\" (old name was \"Ptrace)\n* strace.py: create --ignore-regex option\n* PtraceSignal: support SIGBUS, display the related registers and\n  the instruction\n* Support execve() syscall tracing\n\nDeveloper changes:\n\n* New API is incompatible with 0.3.2\n* PtraceProcess.waitProcessEvent() accepts optional blocking=False argument\n* PtraceProcess.getreg()/setreg() are able to read/write i386 and x86-64\n  \"sub-registers\" like al or bx\n* Remove iterProc() function, replaced by openProc() with explicit\n  call to .close() to make sure that files are closed\n* Create searchProcessesByName()\n* Replace CPU_PPC constant by CPU_POWERPC and create CPU_PPC32 and CPU_PPC64\n* Create MemoryMapping object, used by readMappings() and findStack() methods\n  of PtraceProcess\n* Always define all PtraceProcess methods but raise an error if the function\n  is not implemented\n",
+            "v": "<0.4.0"
+        }
+    ],
     "python-saml": [
         {
             "changelog": "* Prevent signature wrapping attack!!\n* [111](https://github.com/onelogin/python-saml/pull/111) Add support for nested `NameID` children inside `AttributeValue`s\n* ALOWED Misspell\n* Improve how we obtain the settings path.\n* Update docs adding reference to test depencence installation\n* Fix Organization element on SP metadata.\n* [100](https://github.com/onelogin/python-saml/pull/100) Support Responses that don't have AttributeStatements.\n\n",
