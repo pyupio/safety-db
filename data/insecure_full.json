@@ -1967,6 +1967,12 @@
             "v": "<0.4.1"
         }
     ],
+    "django-fabfile": [
+        {
+            "changelog": "--------------------\n\n* Updated default architecture (for newly created instances) from x86_64\n  to i386 for economy reasons - them could be upgraded to less expensive\n  types.\n* Added per-instance security groups. List of instance's security groups\n  will be kept in tag \"Security Groups\" and copied into snapshot during\n  backup.\n* Added :func:`django_fabfile.utils.cleanup_security_groups` Fabric task\n  for deleting unused Security Groups.\n\n",
+            "v": "<2011.09.14.1"
+        }
+    ],
     "django-fernet-fields": [
         {
             "changelog": "----------------\n\n* Remove DualField and HashField. The only cases where they are useful, they\n  aren't secure.\n\n\n",
