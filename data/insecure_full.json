@@ -4914,6 +4914,12 @@
             "v": ">=3.5,<3.5.2"
         }
     ],
+    "python-augeas": [
+        {
+            "changelog": "  - add new 'square' lens combinator\n  - add new aug_span API function\n  - augtool: short options for --nostdinc, --noload, and --noautoload\n  - augtool: read commands from tty after executing file with --interactive\n  - augtool: add --autosave option\n  - augtool: add --span option to load nodes' span\n  - augtool: add span command to get the node's span according to the input\n    file\n  - augtool: really be quiet when we shouldn't be echoing\n  - fix segfault in get.c with L_MAYBE lens; bug 180\n  - fix segfault when a path expression called regexp() with an invalid\n    regexp; bug 168\n  - improved vim syntax file\n  - replace augtest by test-augtool.sh to obviate the need for Ruby to run\n    tests\n  - use sys_wait module from gnulib; bug 164\n  - Lens changes/additions\n    * Access: new lens for /etc/security/access.conf (Lorenzo Dalrio)\n    * Crypttab: new lens for /etc/crypttab (Frederic Lespez)\n    * Dhcpd: new lens\n    * Exports: accept hostnames with dashes; bug 169 (Sergio Ballestrero)\n    * Grub: add various Solaris extensions (Dominic Cleal); support \"map\"\n      entries, bug 148\n    * Httpd: new lens for Apache config\n    * Inifile: new lens indented_title_label\n    * Interfaces: allow indentation for \"iface\" entries; bug 182\n    * Mysql: change default comment delimiter from ';' to ''; bug 181\n    * Nsswitch: accept various add'l databases; bug 171\n    * PuppetFileserver: new lens for Puppet's fileserver.conf (Frederic Lespez)\n    * REsolv: allow comments starting with ';'; bug 173 (erinn)\n    * Shellvars: autoload various snmpd config files; bug 170 (erinn)\n    * Solaris_system: new lens for /etc/system on Solaris (Dominic Cleal)\n    * Util (comment_c_style, empty_generic, empty_c_style): new lenses\n    * Xml: generic lens to process XML files\n    * Xorg: make \"position\" in \"screen\" optional; allow \"Extensions\"\n      section; bug 175 (omzkk)\n\n",
+            "v": "<0.8.0"
+        }
+    ],
     "python-cjson": [
         {
             "cve": "CVE-2009-4924",
