@@ -5752,6 +5752,12 @@
             "v": "<1.2"
         }
     ],
+    "zope.pagetemplate": [
+        {
+            "changelog": "------------------\n\n- Remove use of ``zope.testing.doctestunit`` in favor of stdlib's doctest.\n\n- Add dependency on \"zope.security [untrustedpython]\" because the ``engine``\n  module uses it.\n\n",
+            "v": "<3.5.1"
+        }
+    ],
     "zope2": [
         {
             "cve": "CVE-2010-3198",
