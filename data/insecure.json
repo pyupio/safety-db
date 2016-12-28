@@ -809,6 +809,9 @@
     "products.cmfcontentpanels": [
         "<V1.4.1"
     ],
+    "products.cmfquickinstallertool": [
+        "<3.0.14"
+    ],
     "products.cmfplone": [
         "<5.1b1"
     ],
