@@ -3972,6 +3972,12 @@
             "v": "<V1.4.1"
         }
     ],
+    "products.cmfquickinstallertool": [
+        {
+            "changelog": "------------------\n\n- Added getProductDescription method to expose the description from an\n  extension profile.\n  [hannosch]\n\n- Added new listInstallableProfiles method, to include products without a\n  Zope2 control panel entry in the listings.\n  [hannosch]\n\n- Tighten some security settings.\n  [hannosch]\n\n- Fixed actions re/uninstall for products installed prior to CMF 2.1.\n  This closes http://dev.plone.org/plone/ticket/6974.\n  [hannosch]\n\n- Restored code which got accidentally removed in c38815.\n  [hannosch]\n\n\n",
+            "v": "<2.1.1"
+        }
+    ],
     "products.ldapuserfolder": [
         {
             "cve": "CVE-2010-2944",
