@@ -2486,6 +2486,12 @@
             "v": "<1.5.1"
         }
     ],
+    "golismero": [
+        {
+            "changelog": "------------\n\n- Complete rewrite since version 1.6.3.\n- Integration with OpenVAS and Nikto.\n- Shown at OWASP Open Source Security Showcase in AppSec 2013: https://appsec.eu/program/open-source-security-showcase/\n",
+            "v": "<2.0"
+        }
+    ],
     "google-appengine": [
         {
             "cve": "CVE-2011-1364",

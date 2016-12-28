@@ -485,6 +485,9 @@
     "gns3-gui": [
         "<1.5.1"
     ],
+    "golismero": [
+        "<2.0"
+    ],
     "google-appengine": [
         "<1.5.4"
     ],
