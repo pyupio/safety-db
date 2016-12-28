@@ -1,9 +1,18 @@
 {
+    "accesscontrol": [
+        "<3.0.12"
+    ],
     "aiocouchdb": [
         "<0.6.0"
     ],
+    "aiohttp": [
+        "<0.16.3"
+    ],
     "aldryn-django": [
         "<1.8.10.1"
+    ],
+    "annotator": [
+        "<0.11.2"
     ],
     "ansible": [
         "<1.2.3",
@@ -62,7 +71,8 @@
         "<1.0.21"
     ],
     "caravel": [
-        "<0.11.0"
+        "<0.11.0",
+        "<0.14.0"
     ],
     "celery": [
         ">=4.0,<4.0.1"
@@ -72,6 +82,9 @@
     ],
     "chanjo-report": [
         "<2.4.0"
+    ],
+    "cheetah": [
+        "<0.9.17rc1"
     ],
     "cherrymusic": [
         "<0.36.0"
@@ -101,14 +114,23 @@
     "collective.portlet.twitter": [
         "<1.0b3"
     ],
+    "collective.signupsheet": [
+        "<0.2.0"
+    ],
     "collective.solr": [
         "<1.0b24"
+    ],
+    "collective.tablepage": [
+        "<0.3"
     ],
     "collective.transcode.star": [
         "<0.22"
     ],
     "collective.xmpp.chat": [
         "<0.3.1"
+    ],
+    "collins-client": [
+        "<2.1.0"
     ],
     "confidant": [
         "<1.1.14"
@@ -121,6 +143,9 @@
     ],
     "coveralls": [
         "<0.1.1"
+    ],
+    "cplay-ng": [
+        "<1.50"
     ],
     "creavel": [
         "<0.11.0"
@@ -613,6 +638,9 @@
     "moin": [
         "<1.6.1"
     ],
+    "morepath": [
+        "<0.14"
+    ],
     "mosql": [
         "<0.10"
     ],
@@ -676,6 +704,9 @@
     ],
     "pastescript": [
         "<1.7.5"
+    ],
+    "pcp": [
+        "<2.1.911"
     ],
     "pdfextract": [
         "<0.0.2"
@@ -746,8 +777,15 @@
     "plone.app.contenttypes": [
         "<1.2.15"
     ],
+    "plone.app.discussion": [
+        "<2.4.14",
+        "<2.4.18"
+    ],
     "plone.app.event": [
         "<3.0"
+    ],
+    "plone.app.linkintegrity": [
+        "<1.0.2"
     ],
     "plone.dexterity": [
         "<2.3.0"
@@ -769,6 +807,9 @@
     "pmr2.oauth": [
         "<0.4.2"
     ],
+    "poorwsgi": [
+        "<1.0.2"
+    ],
     "pretaweb.healthcheck": [
         "<1.0"
     ],
@@ -780,6 +821,12 @@
     ],
     "products.cmfcontentpanels": [
         "<V1.4.1"
+    ],
+    "products.cmfquickinstallertool": [
+        "<3.0.14"
+    ],
+    "products.cmfplone": [
+        "<5.1b1"
     ],
     "products.ldapuserfolder": [
         "<2.19"
@@ -865,6 +912,9 @@
     "pytest-profiling": [
         "<1.1.0"
     ],
+    "pytest-qt-app": [
+        "<1.1.0"
+    ],
     "pytest-server-fixtures": [
         "<1.1.0"
     ],
@@ -926,6 +976,9 @@
     "pyupdater": [
         "<0.20.0"
     ],
+    "pyvisa": [
+        "<0.9"
+    ],
     "pywebsite": [
         "<0.1.14pre",
         "<0.1.9pre"
@@ -946,6 +999,9 @@
     ],
     "requests-kerberos": [
         "<0.6"
+    ],
+    "restauth": [
+        "<0.6.3"
     ],
     "roundup": [
         "<1.4.20"
@@ -995,6 +1051,9 @@
     "soappy": [
         "<0.12.6"
     ],
+    "soappy-py3": [
+        "<0.12.6"
+    ],
     "sopel": [
         "<4.4.0"
     ],
@@ -1003,6 +1062,9 @@
     ],
     "spud": [
         "<0.8"
+    ],
+    "starcluster": [
+        "<0.95.3"
     ],
     "stargate": [
         "<0.4"
@@ -1040,6 +1102,9 @@
     ],
     "tiddlyweb": [
         "<1.2.18"
+    ],
+    "tinydb-serialization": [
+        "<2.0.0"
     ],
     "tornado": [
         "<2.2.1"
@@ -1122,6 +1187,7 @@
         "<2.11"
     ],
     "zwiki": [
-        "<0.37"
+        "<0.37",
+        "<0.59"
     ]
 }
