@@ -3143,6 +3143,12 @@
             "v": "<1.0.2"
         }
     ],
+    "opencoweb": [
+        {
+            "changelog": "~~~~~~~~~~~\n* Moderator's onSync now takes a ServerSession argument representing the client\n  who generated the sync event.\n* All Java moderator functions have been changed to take as an argument the\n  client's unique ID instead of the ServerSession object.\n* The Message object is also removed from Java moderator methods; instead, a Map\n  holds relevant information.\n* An operation engine runs for each coweb session in the Python server.\n* The Python server now has the concept of the moderator.\n* The Python server uses Tornado 2.4 and Python 3.2.\n* Removed CowebSecurityPolicy.\n\n",
+            "v": "<1.0"
+        }
+    ],
     "otpauth": [
         {
             "changelog": "~~~~~~~~~~~~~\n\nReleased on May 26, 2015\n\nUse ``compare_digest`` to avoid timing attack.\n\n",
