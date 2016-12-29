@@ -680,6 +680,9 @@
     "mysql-connector-python": [
         "<2.0.4"
     ],
+    "nevow": [
+        "<0.6.0"
+    ],
     "newsletter": [
         "<0.1.17pre"
     ],
