@@ -177,6 +177,9 @@
     "cssutils": [
         "<0.9.6a2"
     ],
+    "datasift": [
+        "<2.8.0"
+    ],
     "dateable.chronos": [
         "<0.7.2"
     ],
