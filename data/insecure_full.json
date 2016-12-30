@@ -4308,6 +4308,12 @@
             "v": "<1.3.6"
         }
     ],
+    "pymux": [
+        {
+            "changelog": "----------------\n\nFixes:\n- After closing a pane, go to the previous pane.\n- Write crash reports to a secure temp file.\n- Added 'ls' as alias for list-sessions.\n\nBetter performance:\n- Using a coroutine for the vt100 parser. (Much faster.)\n- Give priority to panes that have the focus.\n- Never postpone the rendering in case of high CPU. (Fix in prompt_toolkit.)\n\n\n",
+            "v": "<0.4"
+        }
+    ],
     "pypicloud": [
         {
             "changelog": "-----------------\n* Bug fix: Security bug in user auth (:sha:`001e8a5`)\n* Bug fix: Package caching from pypi was slightly broken (:sha:`065f6c5`)\n* Bug fix: ``ppc-migrate`` works when migrating to the same storage type (:sha:`45abcde`)\n\n",
