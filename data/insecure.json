@@ -640,6 +640,9 @@
     "metadataproxy": [
         "<1.1.1"
     ],
+    "mezzanine": [
+        "<3.0.0"
+    ],
     "mgp2pdf": [
         "<0.10"
     ],
