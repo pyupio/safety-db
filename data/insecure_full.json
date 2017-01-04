@@ -2077,6 +2077,12 @@
             "v": "<0.6.9"
         }
     ],
+    "django-localflavor": [
+        {
+            "changelog": "------------------\n\nNew flavors:\n\n- Added local flavor for Bulgaria\n  (`gh-191 <https://github.com/django/django-localflavor/pull/191>`_)\n- Added local flavor for Tunisia\n  (`gh-141 <https://github.com/django/django-localflavor/pull/141>`_)\n- Added local flavor for Hungary\n  (`gh-213 <https://github.com/django/django-localflavor/pull/213>`_)\n\nNew fields for existing flavors:\n\n- Added ARCBUField form field.\n  (`gh-151 <https://github.com/django/django-localflavor/pull/151>`_).\n- Added NLZipCodeField, NLProvinceField, NLSoFiNumberField, NLPhoneNumberField model fields.\n  (`gh-152 <https://github.com/django/django-localflavor/pull/152>`_).\n- Added AUBusinessNumberField model and form fields.\n  (`gh-63 <https://github.com/django/django-localflavor/pull/63>`_)\n\nModifications to existing flavors:\n\n- Moved Dutch validators from localflavor.nl.forms to localflavor.nl.validators\n  (`gh-152 <https://github.com/django/django-localflavor/pull/152>`_).\n- Fix check for promotional social security numbers in USSocialSecurityNumberField\n  (`gh-157 <https://github.com/django/django-localflavor/pull/157>`_).\n- Updated IBANField to support the latest additions to the IBAN Registry (version 64 / March 2016).\n- Fix bug with MXRFCField where some incorrect values would validate correctly.\n  (`gh-204 <https://github.com/django/django-localflavor/issues/204>`_).\n- Fixed bug with IBANFormField validation.\n  (`gh-215 <https://github.com/django/django-localflavor/pull/215>`_).\n- Update regex in DEZipCodeField to prohibit invalid postal codes.\n  (`gh-216 <https://github.com/django/django-localflavor/pull/216>`_).\n- Added deconstructor methods to validators.\n  (`gh-220 <https://github.com/django/django-localflavor/pull/220>`_).\n- Fix bug in ESIdentityCardNumberField where some valid values for NIE numbers were not\n  validating.\n  (`gh-217 <https://github.com/django/django-localflavor/pull/217>`_)\n- Add deconstruct method to all model fields\n  (`gh-162 <https://github.com/django/django-localflavor/pull/162>`_\n  `gh-224 <https://github.com/django/django-localflavor/pull/224>`_).\n\nOther changes:\n\n- Drop support for Django 1.5, Django 1.6 and Python 2.6\n  (`gh-170 <https://github.com/django/django-localflavor/pull/170>`_).\n\n",
+            "v": "<1.3"
+        }
+    ],
     "django-markupfield": [
         {
             "cve": "CVE-2015-0846",
