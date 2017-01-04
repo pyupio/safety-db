@@ -5119,6 +5119,12 @@
             "v": "<2.1.9"
         }
     ],
+    "python-stdnum": [
+        {
+            "changelog": "-----------------------\n\n* add modules for the following number formats:\n  - Austrian Company Register Numbers\n  - CNPJ (Cadastro Nacional da Pessoa Jur\u00eddica, Brazillian company identifier)\n  - UID (Unternehmens-Identifikationsnummer, Swiss business identifier)\n  - VAT, MWST, TVA, IVA, TPV (Mehrwertsteuernummer, the Swiss VAT number)\n  - CUSIP number (financial security identification number)\n  - Wertpapierkennnummer (German securities identification code)\n  - Isikukood (Estonian Personcal ID number)\n  - Finnish Association Identifier\n  - Y-tunnus (Finnish business identifier)\n  - SEDOL number (Stock Exchange Daily Official List number)\n  - IMO number (International Maritime Organization number)\n  - ISIN (International Securities Identification Number)\n  - RFC (Registro Federal de Contribuyentes, Mexican tax number)\n  - PESEL (Polish national identification number)\n  - REGON (Rejestr Gospodarki Narodowej, Polish register of economic units)\n  - \u0418\u041d\u041d (\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u043d\u0430\u043b\u043e\u0433\u043e\u043f\u043b\u0430\u0442\u0435\u043b\u044c\u0449\u0438\u043a\u0430, Russian tax identifier)\n* add an alternate VIES check (check_vies_approx()) that includes a proof\n  (certificate) that the check was performed\n* fall back to pysimplesoap if suds is unavailable\n* test and code quality improvements\n\n\n",
+            "v": "<1.2"
+        }
+    ],
     "python3-ldap": [
         {
             "changelog": "0.9.5.4 2014.09.22\n    - Fixed security issue in lazy connections (thanks Moritz)\n    - Added ldap3.utils.dn with parse_dn(dn) to verify dn compliance with RFC4514\n    - Added safe_dn(dn) to properly escape dn (if possible)\n    - Added ldap3.utils.uri with parse_uri(uri) to verify uri compliance with RFC4516\n    - Check for trailing slashes in hostname (thanks Dylan)\n    - Timeout for socket connect operation. Server.connect_timeout = seconds_to_wait_for_establishing_connection (thanks Florian)\n    - Closing socket error doesn't raise exception anymore\n    - ServerPool can be implicity defined with a list of server names (even when defining a connection)",
