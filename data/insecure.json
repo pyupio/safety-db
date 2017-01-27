@@ -936,6 +936,9 @@
     "pyrad": [
         "<0.6"
     ],
+    "pyramid-debugtoolbar": [
+        "<2.5"
+    ],
     "pyramid-odesk": [
         "<1.1.2"
     ],
