@@ -5413,6 +5413,12 @@
             "v": "<4.4.0"
         }
     ],
+    "spake2": [
+        {
+            "changelog": "\nUse the faster \"M=N\" blinding factors for SPAKE2_Symmetric, instead of\nrunning two sessions in parallel and combining the results. This gets the\nsame speed and message size as the asymmetric (SPAKE2_A/SPAKE2_B) approach,\nand is probably safe (see README for the security proofs).\n\n\n",
+            "v": "<0.3"
+        }
+    ],
     "splash": [
         {
             "changelog": "------------------\n\nThis is a bugfix release:\n\n* XSS in HTTP UI is fixed;\n* Splash-Jupyter docker image is fixed.\n\n",
