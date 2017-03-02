@@ -180,6 +180,9 @@
     "dateable.chronos": [
         "<0.7.2"
     ],
+    "debops": [
+        "<0.1.0"
+    ],
     "defusedexpat": [
         "<0.3"
     ],
