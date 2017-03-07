@@ -5303,6 +5303,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "=====================\n\nInitial release of Security Monkey!\n",
+            "v": "<0.1.1"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
