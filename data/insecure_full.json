@@ -5303,6 +5303,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n\nChanges in the Web UI:\n\n- Dart: Removed Shadow DOM dependency and set version bounds in pubspec.yaml.\n- Dart: Replaced package:js with dart:js.\n- Dart: Added the Angular Pub Transformer.\n\nChanges in the core product:\n\n- Added AWS Rate Limiting Protection with exponential backoff code.\n- Added instructions to get a local development environment setup for contributing to security_monkey.\n- Added support for boto's new ELB pagination.  The pull request to boto and to security_monkey came from Kevin Glisson.\n- Bug fix: Security Group Audit Issues now include the port the issue was reported on.\n\n\nThese were already in master, but weren't tied to a new release:\n\n- Bug fix: Supervisor script now sets SECURITY_MONKEY_SETTINGS envvar for the API server whereas it only previously set the envvar for the scheduler. This came from a pull request from parabolic.\n- Bug fix: Audit reports will only be sent if there are issues to report on.\n- Bug fix: Daily Audit Email setting (ALL/NONE/ISSUES) is now respected.\n- Bug fix: Command Line Auditor Command Arguments are now coerced into being booleans.\n- Quickstart Guide now instructs user to setup the web UI on SSL.\n- Various Smaller Bug Fixes.\n\n",
+            "v": "<0.1.2"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
