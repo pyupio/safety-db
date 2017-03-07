@@ -5303,6 +5303,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 122 - Qmando - Jira Sync.  Quentin from Yelp added Jira Integration.\n- PR 147 - echiu64 - Added colors to audit emails and added missing justifications back into emails.\n- PR 150 - echiu64 - Fixed a missing comma from setup.py\n- PR 155 - echiu64 - Fixed a previous merge issue where _audit_changes() was looking for a Monitor instance instead of an list of Auditors.\n- Issue 154 - monkeysecurity - Added support for ELB Reference Policy 2015-05.\n- None - monkeysecurity - Added db.session.refresh(...) where appropriate in a few API views to replace some very ugly code.\n- Issue 133 - lucab - Upgraded Flask-RESTful from v0.2.5 to v0.3.3 to fix an issue where request arguments were being persisted as the string \"None\" when they should have remained the javascript literal null.\n- PR 120 - lucab - Add custom role_name field for each account to replace the previously hardcoded 'SecurityMonkey' role name.\n- PR 120 - gene1wood - Add support for the custom role_name into manage.py.\n- PR 161 - Asbjorn Kjaer - Increase s3_name from 32 characters to 64 characters to avoid errors or truncation where s3_name is longer.\n- None - monkeysecurity - Set the 'defer' (lazy-load) attribute for the JSON config column on the ItemRevision table.  This speeds up the web API in a number of places.\n\n\nHotfixes:\n\n- Issue 149 - Python scoping issue where managed policies attached to more than one entity would cause an error.\n- Issue 152 - SNS topics were being saved by ARN instead of by name, causing exceptions for very long names.\n- Issue 141 - Setup cascading deletes on the Account table to prevent the error which occured when trying to delete an account with items and users attached.\n\n\nContributors:\n\n- Qmando\n- echiu64\n- lucab\n- gene1wood\n- Asbjorn Kjaer (akjaer)\n- monkeysecurity\n\n\n",
+            "v": "<0.3.7"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
