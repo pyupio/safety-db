@@ -5303,6 +5303,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 165 - echiu64 - S3 watcher now tracking S3 Logging Configuration.\n- None - monkeysecurity - Certs with an invalid issuer now flagged.\n- PR 177 - DenverJ -Added new SQS Auditor.\n- PR 188 - kevgliss - Removed dependency on M2Crypto/Swig and replaced with Cryptography.\n- PR 164 - Qmando - URL encoding issue with certain searches containing spaces corrected.\n- None - monkeysecurity - Fixed issue where corrected issues were not removed.\n- PR 198 - monkeysecurity - Adding ability to select up to four items or revisions to be compared.\n- PR 194 195 - bunjiboys - SECURITY_TEAM_EMAIL should accept not only a list, but also a string or tuple.\n- PR 180 181 190 191 192 193 - cbarrac - A number of udpates and fixes for the bash installer. (scripts/secmonkey_auto_installer.sh)\n- PR 176 178 - mikegrima - Updated documentation for contributors on OS X and Ubuntu to use Webstorm instead of the Dart Editor.\n\n\nContributors:\n\n- Qmando\n- echiu64\n- DenverJ\n- cbarrac\n- kevgliss\n- mikegrima\n- monkeysecurity\n\n\n",
+            "v": "<0.3.8"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
