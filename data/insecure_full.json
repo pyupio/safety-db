@@ -5303,6 +5303,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 410/405 - zollman - Custom Watcher/Auditor Support. (Dynamic Loading)\n- PR 412 - llange - Google SSO Fixes\n- PR 409 - kyelberry - Fixed Report URLs in UI.\n- PR 413 - markofu - Better handle IAM SSL certificates that we cannot parse.\n- PR 411 - zollman - Many, many new watchers and auditors.\n\n\nNew Watchers:\n\n    * CloudTrail\n    * AWSConfig\n    * AWSConfigRecorder\n    * DirectConnect::Connection\n    * EC2::EbsSnapshot\n    * EC2::EbsVolume\n    * EC2::Image\n    * EC2::Instance\n    * ENI\n    * KMS::Grant\n    * KMS::Key\n    * Lambda\n    * RDS::ClusterSnapshot\n    * RDS::DBCluster\n    * RDS::DBInstace\n    * RDS::Snapshot\n    * RDS::SubnetGroup\n    * Route53\n    * Route53Domains\n    * TrustedAdvisor\n    * VPC::DHCP\n    * VPC::Endpoint\n    * VPC::FlowLog\n    * VPC::NatGateway\n    * VPC::NetworkACL\n    * VPC::Peering\n\nImportant Notes:\n\n- New permissions required:\n    - cloudtrail:describetrails\n    - config:describeconfigrules\n    - config:describeconfigurationrecorders\n    - directconnect:describeconnections\n    - ec2:describeflowlogs\n    - ec2:describeimages\n    - ec2:describenatgateways\n    - ec2:describenetworkacls\n    - ec2:describenetworkinterfaces\n    - ec2:describesnapshots\n    - ec2:describevolumes\n    - ec2:describevpcendpoints\n    - ec2:describevpcpeeringconnections,\n    - iam:getaccesskeylastused\n    - iam:listattachedgrouppolicies\n    - iam:listattacheduserpolicies\n    - lambda:listfunctions\n    - rds:describedbclusters\n    - rds:describedbclustersnapshots\n    - rds:describedbinstances\n    - rds:describedbsnapshots\n    - rds:describedbsubnetgroups\n    - redshift:describeclusters\n    - route53domains:listdomains\n\nContributors:\n\n- zollman\n- kyleberry\n- llange\n- markofu\n- monkeysecurity\n\n",
+            "v": "<0.7.0"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
