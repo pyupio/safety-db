@@ -5303,6 +5303,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- Add localhost to CORS for development.\n- Big refactor adding monitors.  Adding new watchers/auditors is now much simpler.\n- Return to the current URL after authenticating.\n- Added SES_REGION config.  Now you can send email out of regions other than us-east-1.\n- Changing default log location to /var/log/security_monkey.\n- Docs now have cleaner nginx.conf.\n- Add M2Crypto to get a number of new iamssl fields.\n- Added favicon.\n\nnew watchers:\n\n- eip\n- redshift\n- ses\n\nenhanced watchers:\n\n- iamssl - new fields from m2crypto\n- elb - new listener policies from botocore\n- sns - added sns subscriptions\n- s3 - now tracks lifecycle rules\n\nnew auditors:\n\n- redshift - checks for non-vpc deployment.\n- ses - checks for verified identities\n\nenhanced auditors:\n\n- iamssl - cert size, signature hashing algorithm, upcoming expiration, heartbleed\n- elb - check reference policy and certain custom policy fields\n\nhotfixes:\n\n- Fixed issue 12 - Deleting account results in foreign key constraint.\n- Added missing alembic script for the ignorelist.\n- Various minor documentation updates.\n- API server now respects --bind parameter. (Required for the docker image).\n- SES connection in utils.py is now surrounded in a try/except.\n- FlaskSecurity upgraded to latest.\n\nContributers:\n\n- ivanlei\n- lucab\n- yograterol\n- monkeysecurity\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
