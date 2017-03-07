@@ -5303,6 +5303,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 212 - bunjiboys - Make email failures warnings instead of debug messages\n- PR 203 - markofu - Added license to secmonkey_auto_install.sh.\n- PR 207 - cbarrac - Updated dependencies and dart installation for secmonkey_auto_install.sh\n- PR 209 - mikegrima - Make SNS Ignorelist use name instead of ARN.\n- PR 213 - Qmando - Added more exception handling to the S3 watcher.\n- PR 215 - Dklotz-Circle - Added egress rules to the security group watcher.\n- monkeysecurity - Updated quickstart.rst IAM policy to remove wildcards and include redshift permissions.\n- PR 218 - monkeysecurity - Added exception handling to the S3 bucket.get_location API call.\n- PR 221 - Qmando - Retry on AWS API error when slurping ELBs.\n- monkeysecurity - Updated cryptography package from 1.0 to 1.0.2 for easier installation under OS X El Capitan.\n\nHotfixes:\n\n- Updated quickstart.rst and secmonkey_auto_install.sh to remove swig/python-m2crypto and add libffi-dev\n- Issue 220 - SQS Auditor not correctly parsing ARNs, halting security_monkey. Fixed by abstracting ARN parsing into a new class (security_monkey.common.arn).  Updated the SNS Auditor to also use this new class.\n\nContributors:\n\n- bunjiboys\n- markofu\n- cbarrac\n- mikegrima\n- Qmando\n- Dklotz-Circle\n- monkeysecurity\n\n\n",
+            "v": "<0.3.9"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
