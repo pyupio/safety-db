@@ -5303,6 +5303,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "==================\n- Merged in a new AuditorSettings tab created by Qmando at Yelp enabling you to disable audit checks with per-account granularity.\n- security_monkey is now CSP compliant.\n- security_monkey has removed all shadow-DOM components.  Also removed webcomponents.js and dart_support.js, as they were not CSP compliant.\n- security_monkey now advises users to enable standard security headers following headers:\n\n.. code-block:: python\n\n    X-Content-Type-Options \"nosniff\";\n    X-XSS-Protection \"1; mode=block\";\n    X-Frame-Options \"SAMEORIGIN\";\n    Strict-Transport-Security \"max-age=631138519\";\n    Content-Security-Policy \"default-src 'self'; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://ajax.googleapis.com; style-src 'self' https://fonts.googleapis.com;\"\n\n\n- security_monkey now has XSRF protection against all DELETE, POST, PUT, and PATCH calls.\n- Updated the ELB Auditor to be aware of the ELBSecurityPolicy-2015-02 reference policy.\n\n\nContributers:\n\n- Qmando\n- monkeysecurity\n\n\n",
+            "v": "<0.3.4"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
