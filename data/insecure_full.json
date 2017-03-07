@@ -4052,6 +4052,12 @@
             "v": "<2.0.2"
         }
     ],
+    "plonetheme.sunburst": [
+        {
+            "changelog": "------------------\n\n- Adjust the new setuphandler introduced in 1.0.5 to avoid using copy/paste,\n  which introduced unwanted additional security checks.\n  [hannosch]\n\n- Tightened selector for error fields to avoid z3cform inner div.error.\n  [elro]\n\n- Added styling for z3cform title and description fields.\n  [elro]\n\n\n",
+            "v": "<1.0.6"
+        }
+    ],
     "plumi.app": [
         {
             "changelog": "===========================\n\n - file ownership tweaks for production buildouts [dimo, clopy]\n - add security hotfix, update LinguaPlone & plone.app.discussion [dimo]\n - plonesite recipe tweaks [dimo]\n\n\n",
