@@ -5383,6 +5383,12 @@
             "v": "<1.1"
         }
     ],
+    "sfchat": [
+        {
+            "changelog": "==================\n* Modified: moved chat token from parameter to header for API authorization\n* Modified: Content Security Policy is turned off for API\n* Added: connecting TravisCI with Coveralls\n* Added: unitTests for views\n* Fixed: CSRF token verification\n* Fixed: message date issue in Safari browser\n* Fixed: chat was not working in Opera browser\n* Fixed: message date is show local time now\n\n",
+            "v": "<0.10.0"
+        }
+    ],
     "sftp-cloudfs": [
         {
             "changelog": "\n  - ftp-cloudfs version bumped to 0.26.1 as it fixes a security bug.\n\n2014-03-20 Juan Martinez <juanmemset.com>\n\n",
