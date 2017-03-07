@@ -5303,6 +5303,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- Adding policy minimizer & expander to the revision component\n- Adding tracking of instance profiles attached to a role\n- Adding marker/pagination code to redshift.describe_clusters()\n- Adding pagination to IAM User get_all_user_policies, get_all_access_keys, get_all_mfa_devices, get_all_signing_certs\n- Typo & minor corrections on postgres commands\n- CLI command to save your current configurations to a JSON file for backup\n- added a VPC watcher\n- Adding DHCP Options and Internet Gateways to the VPC Watcher\n- Adding a subnet watcher. Fixing the VPC watcher with deep_dict\n- Adding the vpc route_table watcher\n- Removing subnet remaining IP field until ephemeral section is merged in\n- Adding IAM Managed Policies\n- Typo & minor corrections on postgres commands in documentation\n- Adds ELBSecurityPolicy-2015-03. Moves export grade ciphers to their own section and alerts on FREAK vuln.\n- Provides context on refpol 2015-03 vs 2015-02.\n- Adding a Managed Policies Auditor\n- Added Manged Policy tracking to the IAM users, groups, and roles\n\n\nSummary of new watchers:\n\n- vpc\n    - DHCP Options\n    - Internet Gateways\n- subnet\n- routetable\n- managed policies\n\n\nSummary of new Auditors or audit checks:\n\n- managed policies\n- New reference policy 2015-03 for ELB listeners.\n- New alerts for FREAK vulnerable ciphers.\n\n\nContributors:\n\n- markofu\n- monkeysecurity\n\n",
+            "v": "<0.3.5"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
