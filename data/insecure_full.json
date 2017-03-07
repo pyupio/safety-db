@@ -4052,6 +4052,12 @@
             "v": "<2.0.2"
         }
     ],
+    "plone.recipe.zope2instance": [
+        {
+            "changelog": "----------------\n\n- The instance run command was vulnerable to spaces in pathnames, and\n  needed some extra quoting for win32.\n  [smcmahon]\n\n- Check for existence of windows scripts before patching them. Some\n  Linux distributions of Zope2 don't have these files.\n  [smcmahon]\n\n- Delegate commands to ``win32serviceutil.HandleCommand()`` on win32,\n  instead of starting the interpreter through ``os.system()``. Should\n  shave off a couple seconds from overall time taken to process those\n  commands.\n  [sidnei]\n\n- Compute ``serviceClassString`` ourselves, since we are calling this\n  as a module and not directly as ``__main__``, otherwise the service\n  won't be installed correctly.\n  [sidnei]\n\n",
+            "v": "<2.9"
+        }
+    ],
     "plumi.app": [
         {
             "changelog": "===========================\n\n - file ownership tweaks for production buildouts [dimo, clopy]\n - add security hotfix, update LinguaPlone & plone.app.discussion [dimo]\n - plonesite recipe tweaks [dimo]\n\n\n",
