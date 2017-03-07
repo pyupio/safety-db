@@ -5303,6 +5303,12 @@
             "v": "<2.6.0"
         }
     ],
+    "security-monkey": [
+        {
+            "changelog": "===================\n- PR 269 - mikegrima - TravisCI now ensures that dart builds.\n- PR 270 - monkeysecurity - Refactored sts_connect to dynamically import boto resources.\n- PR 271 - OllyTheNinja-Xero - Fixed indentation mistake in auditor.py\n- PR 275 - AlexCline - Added elb logging to ELB watcher and auditor.\n- PR 279 - mikegrima - Added ElasticSearch Watcher and Auditor (with tests).\n- PR 280 - monkeysecurity - PolicyDiff better handling of changes to primitives (like ints) in dictionay values and added explicit escaping instead of relying on Angular.\n- PR 282 - mikegrima - Documentation Fixes to configuration.rst and quickstart.rst adding es: permissions and other fixes.\n\nHotfixes:\n\n- Added OSSMETADATA file to master/develop for internal Netflix tracking.\n\nContributors:\n\n- mikegrima\n- monkeysecurity\n- OllyTheNinja-Xero\n- AlexCline\n\n",
+            "v": "<0.4.1"
+        }
+    ],
     "sentry": [
         {
             "changelog": "--------------------------------\n\nSentry 6.1.1 is a security release which patches a remote code execution exploit.\n\nThis only affects servers hosted public clients (e.g. raven.js).\n\nThe following commit demonstrates the exploit, as well as the patch:\n\nhttps://github.com/getsentry/sentry/commit/5793c6cac19aeb7d2e19f9a09f4421b771af4306\n\n",
