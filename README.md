@@ -1,4 +1,4 @@
-*Note: This database is currently in its early stages. It's possible that there are false positives and missing packages.*
+[![safety](https://raw.githubusercontent.com/pyupio/safety/master/safety.png)](https://pyup.io/safety/)
 
 ## What is this?
 
