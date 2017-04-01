@@ -4687,6 +4687,17 @@
             "v": "<0.7.3,>=0.8,<0.8.5"
         }
     ],
+    "python-openflow": [
+        {
+            "advisory": "python-openflow 2016.1.a1 fixes a undisclosed security vulnerability.",
+            "cve": null,
+            "id": "pyup.io-33282",
+            "specs": [
+                "<2016.1.a1"
+            ],
+            "v": "<2016.1.a1"
+        }
+    ],
     "python-otr": [
         {
             "advisory": "python-otr before 1.1.0 is vulnerable to man-in-the-middle attacks as it allows to restart the protocol.",
