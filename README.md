@@ -13,6 +13,20 @@ Safety DB is a database of known security vulnerabilities in Python packages. Th
 - A [pre-commit hook](https://github.com/Lucas-C/pre-commit-hooks-safety) by Lucas Cimon.
 - *your tool?*
 
+## Installation
+
+```sh
+
+pip install safety-db
+```
+
+## Usage
+
+```python
+
+from safety_db import INSECURE, INSECURE_FULL
+```
+
 ## What is this not?
 
 This is not a hall of shame, or a list of packages to avoid. The package maintainers show a great responsibility by documenting and fixing security issues in such a way that they can be listed here. That's extremely valuable when considering using a package in production.
