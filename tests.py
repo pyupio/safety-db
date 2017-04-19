@@ -2,6 +2,8 @@ import unittest
 import json
 from packaging.specifiers import SpecifierSet, InvalidSpecifier
 
+from safety_db import INSECURE, INSECURE_FULL
+
 
 class TestData(unittest.TestCase):
 
@@ -23,6 +25,11 @@ class TestData(unittest.TestCase):
         for specifiers in self.db.values():
             for specifier in specifiers:
                 test_spec(specifier, "insecure.json")
+
+    def test_main_module(self):
+        self.assertTrue(len(INSECURE) > 0)
+        self.assertTrue(len(INSECURE_FULL) > 0)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,0 +1,12 @@
+*.py[cod]
+.gitignore~
+.tox/
+.travis.yml~
+.cache/
+.coverage
+/htmlcov/
+*.py,cover
+MANIFEST.in~
+/build/
+/dist/
+/safety_db.egg-info
