@@ -1,7 +1,7 @@
 import json
 
 __title__ = 'safety-db'
-__version__ = '0.1'
+__version__ = '2017.4.19'
 __author__ = 'Jannis Gebauer <support@pyup.io>'
 __copyright__ = '2016-2017 Jannis Gebauer'
 __license__ = 'Attribution-NonCommercial-ShareAlike 4.0 International'
