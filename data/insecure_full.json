@@ -4476,6 +4476,12 @@
             "v": "<1.1.0"
         }
     ],
+    "pytest-webdriver": [
+        {
+            "changelog": " \n * New plugin: devpi server fixture\n * pytest-profiling improvement: overly-long .prof files are saved as the short hash of the test name (Thanks to Vladimir Lagunov for PR)\n * Changed default behavior of workspace.run() to not use a subshell for security reasons\n * Corrected virtualenv.run() method to handle arguments the same as the parent method workspace.run()\n * Removed deprecated '--distribute' from virtualenv args\n\n",
+            "v": "<1.1.0"
+        }
+    ],
     "python": [
         {
             "advisory": "Python 2.5.2 and earlier allows context-dependent attackers to execute arbitrary code via multiple vectors that cause a negative size value to be provided to the PyString_FromStringAndSize function, which allocates less memory than expected when assert() is disabled and triggers a buffer overflow.",
