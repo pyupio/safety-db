@@ -473,6 +473,12 @@
             "v": "<0.10.5"
         }
     ],
+    "cloudant": [
+        {
+            "changelog": "==================\n- [FIXED] Resolved issue where the custom JSON encoder was at times not used when transforming data.\n- [NEW] Added support for managing the database security document through the SecurityDocument class and CouchDatabase convenience method ``get_security_document``.\n- [NEW] Added ``auto_renewal`` option to the client constructor to handle the automatic renewal of an expired session cookie auth.\n\n",
+            "v": "<2.3.0"
+        }
+    ],
     "cmsplugin-filer": [
         {
             "advisory": "",
