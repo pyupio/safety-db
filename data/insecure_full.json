@@ -4204,6 +4204,12 @@
             "v": "<4.0"
         }
     ],
+    "pyhsm": [
+        {
+            "changelog": " ** Match firmware 1.0.4.\n    Firmware adds flag YSM_USER_NONCE to address security problem\n    for some usages where AEADs could be decrypted by an attacker\n    capable of generating new AEADs.\n\n ** New file format for stored AEADs (code loading AEADs is backwards\n ** compatible), including key handle and nonce.\n\n ** AES CCM implementation compatible with YubiHSM in software, for\n ** transparency and to enable willfull decryption of AEADs.\n\n ** Tools to generate YubiKey secrets into AEADs as well as decrypt\n ** them to enable provisioning YubiKeys with the secrets.\n\n",
+            "v": "<1.0.4"
+        }
+    ],
     "pyjwt": [
         {
             "advisory": "pyjwt before 1.0.0  allows to bypass signature verification by setting the alg header to None.",
