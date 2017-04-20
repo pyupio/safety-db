@@ -2960,6 +2960,12 @@
             "v": "<0.17"
         }
     ],
+    "mitmproxy-httpolice": [
+        {
+            "changelog": "(because mitmproxy 0.18 has a new, backward-incompatible API).\nNote that mitmproxy (and thus mitmproxy-HTTPolice) now supports Python 3.5+.\n\n\n",
+            "v": "<0.18"
+        }
+    ],
     "mixminion": [
         {
             "advisory": "mixminion before 0.0.2 is vulnerable to certain trivial DoS attacks. In particular, it's possible to send zlib bombs or flood a server with open connections.",
