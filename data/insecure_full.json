@@ -3230,6 +3230,16 @@
             "v": "<1.0.2"
         }
     ],
+    "openstack": [
+        {
+            "cve": "CVE-2016-9185",
+            "description": "In OpenStack Heat, by launching a new Heat stack with a local URL an authenticated user may conduct network discovery revealing internal network configuration. Affected versions are <=5.0.3, >=6.0.0 <=6.1.0, and ==7.0.0.",
+            "urls": [
+                "https://bugs.launchpad.net/ossa/+bug/1606500"
+            ],
+            "v": "<X.Y"
+        }
+    ],
     "otpauth": [
         {
             "advisory": "otpauth before 1.0.1 is vulnerable to timing attacks.",
