@@ -2400,6 +2400,12 @@
             "v": "<1.2.0"
         }
     ],
+    "github-backup": [
+        {
+            "changelog": "-------------------\n\n- Support --token file:///home/user/token.txt (fixes gh-51) [Bj\u00f6rn\n  Dahlgren]\n\n- Fix some linting. [Albert Wang]\n\n- Fix byte/string conversion for python 3. [Albert Wang]\n\n- Support python 3. [Albert Wang]\n\n- Encode special characters in password. [Remi Rampin]\n\n- Don't pretend program name is \"Github Backup\" [Remi Rampin]\n\n- Don't install over insecure connection. [Remi Rampin]\n\n  The git:// protocol is unauthenticated and unencrypted, and no longer advertised by GitHub. Using HTTPS shouldn't impact performance.\n\n",
+            "v": "<0.11.0"
+        }
+    ],
     "gns3-gui": [
         {
             "advisory": "gns3-gui 1.5.1 fixes a security related bug to prevent client to send empty hostname.",
