@@ -4388,6 +4388,12 @@
             "v": "<1.6"
         }
     ],
+    "pysap": [
+        {
+            "changelog": "--------------------\n\n- Using Scapy version 2.3.3.\n- Minor fixes and code arrangements.\n- Building and testing in OSX with Travis and Windows with Appveyor.\n- `pysap/SAPDiagItems.py`: Added default support bits from SAP GUI 7.40 version.\n- `examples/diag_capturer.py`: Added option to display available capture interfaces.\n- `examples/enqueue_dos_exploit.py`: New example script to check for [CVE-2016-4015](https://erpscan.com/advisories/erpscan-16-019-sap-netweaver-enqueue-server-dos-vulnerability/)\n  DoS vulnerability on Standalone Enqueue Server and fixed at [SAP Note 2258784](https://launchpad.support.sap.com//notes/0002258784)\n  ([\\6](https://github.com/CoreSecurity/pysap/pull/6)). Thanks [vah13](https://github.com/vah13)!\n- `examples/router_fingerprints.json`: Added fingerprints from SAP Router releases 745.\n\n\n",
+            "v": "<0.1.12"
+        }
+    ],
     "pyshop": [
         {
             "advisory": "pyshop before 0.7.1 uses HTTP to retrieve packages from the PyPI repository, and does not perform integrity checks on package contents, which allows man-in-the-middle attackers to execute arbitrary code via a crafted response to a download operation.",
