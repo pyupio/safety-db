@@ -5290,6 +5290,12 @@
             "v": "<2.5.0"
         }
     ],
+    "stripe": [
+        {
+            "changelog": "\n* Add retrieve method for 3-D Secure resources\n\n",
+            "v": "<1.42.0"
+        }
+    ],
     "superset": [
         {
             "advisory": "superset before 0.11.0 is vulnerable to a XSS attack on FAB list views.",
