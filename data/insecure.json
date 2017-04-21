@@ -523,6 +523,9 @@
     "geventhttpclient": [
         "<1.2.0"
     ],
+    "gimmemotifs": [
+        "<0.63"
+    ],
     "gns3-gui": [
         "<1.5.1"
     ],
