@@ -3060,6 +3060,12 @@
             "v": ">=2.0,<2.0.1,<1.0.3"
         }
     ],
+    "mysmile": [
+        {
+            "changelog": "  - Added IMAGE_AUTOSCALE preference to admin panel\n  - Protected admin login page from brute-force attack\n  - Added \"view on site\" button to admin panel\n  - Removed database from repository\n  - Updated docs\n\n",
+            "v": "<0.7.1"
+        }
+    ],
     "mysql-connector": [
         {
             "advisory": "Unspecified vulnerability in the MySQL Connector component 2.1.3 and earlier and 2.0.4 and earlier in Oracle MySQL allows remote attackers to affect confidentiality, integrity, and availability via vectors related to Connector/Python.",
