@@ -5570,6 +5570,12 @@
             "v": "<1.5.2"
         }
     ],
+    "vt": [
+        {
+            "changelog": "* -dds, --detected-downloaded-samples now works correctly\n* -wh, --whois added\n* requests InsecureRequestWarning: Unverified HTTPS request is being made - disabled\n\n\n",
+            "v": "<24.03.2015"
+        }
+    ],
     "waitress": [
         {
             "advisory": "waitress before 1.0.0 doesn't drop HTTP headers containing an underscore, possibly leading to security issues.",
