@@ -2449,6 +2449,12 @@
             "v": "<1.5.4"
         }
     ],
+    "google-auth": [
+        {
+            "changelog": "------\n\n- ``transports.grpc.secure_authorized_channel`` now passes ``kwargs`` to ``grpc.secure_channel``. (90)\n- Added new property ``credentials.Singing.signer_email`` which can be used to identify the signer of a message. (89)\n- (google_auth_httplib2) Added a proxy to ``httplib2.Http.connections``.\n\n",
+            "v": "<0.4.0"
+        }
+    ],
     "holocron": [
         {
             "advisory": "holocron 0.2.0 fixed a security issue when content author may steal private data through content's meta header.",
