@@ -3230,6 +3230,21 @@
             "v": "<1.0.2"
         }
     ],
+    "openstack": [
+        {
+            "cve": "CVE-2016-6829",
+            "description": "The trove service user in (1) Openstack deployment (aka crowbar-openstack) and (2) Trove Barclamp (aka barclamp-trove and crowbar-barclamp-trove) in the Crowbar Framework has a default password, which makes it easier for remote attackers to obtain access via unspecified vectors.",
+            "urls": [
+                "http://www.openwall.com/lists/oss-security/2016/08/16/1",
+                "http://www.openwall.com/lists/oss-security/2016/08/18/9",
+                "https://github.com/crowbar/barclamp-trove/commit/932298f250365fed6963700870e52db3a7a32daa",
+                "https://github.com/crowbar/crowbar-openstack/commit/208230bdfbcb19d062149d083b1a66b429516a69",
+                "https://www.suse.com/security/cve//CVE-2016-6829.html",
+                "http://www.securityfocus.com/bid/92476"
+            ],
+            "v": "<X.Y"
+        }
+    ],
     "otpauth": [
         {
             "advisory": "otpauth before 1.0.1 is vulnerable to timing attacks.",
