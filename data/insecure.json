@@ -262,6 +262,9 @@
     "django-anonymizer-compat": [
         "<0.4"
     ],
+    "django-authlib": [
+        "<0.3"
+    ],
     "django-autocomplete-light": [
         "<2.3.0"
     ],

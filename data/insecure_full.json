@@ -1320,6 +1320,12 @@
             "v": "<0.4"
         }
     ],
+    "django-authlib": [
+        {
+            "changelog": "~~~~~~~~~~~~~~~~~~~\n\n- Fixed the redirect URL generation of the Facebook and Google client.\n- Changed the name of the post login redirect cookie from ``next`` to\n  ``authlib-next`` to hopefully prevent clashes.\n- Authentication providers may also return ``None`` as email address;\n  handle this case gracefully by showing an error message instead of\n  crashing.\n- Pass full URLs, not only paths to the OAuth2 libraries because\n  otherwise, secure redirect URLs aren't recognized as such.\n\n\n",
+            "v": "<0.3"
+        }
+    ],
     "django-autocomplete-light": [
         {
             "advisory": "",
