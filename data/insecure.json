@@ -505,6 +505,9 @@
     "ftw.dashboard.portlets.postit": [
         "<1.3.4"
     ],
+    "ftw.file": [
+        "<1.12.0"
+    ],
     "ftw.mail": [
         "<2.2.3"
     ],
