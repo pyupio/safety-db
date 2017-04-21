@@ -3811,6 +3811,12 @@
             "v": "<3.3.1"
         }
     ],
+    "plone.api": [
+        {
+            "changelog": "------------------\n\nNew:\n\n- `api.portal.get_registry_record` supports an optional `default` parameter\n  [ale-rt]\n\nFixes:\n\n- Fix translation related tests to use the ``plonelocales`` domain instead ``passwordresettool``.\n  Products.PasswordResetTool was removed in Plone 5.1.\n  [thet]\n\n- Allow plone.api.group.get_groups for Anonymous user. Refs 290\n  [jaroel]\n\n- Allow adopting to a Special User. Fixes 320 - checking permissions for Anonymous User.\n  [jaroel]\n\n- Fix an AttributeError in `api.user.revoke_roles`\n  [ale-rt]\n\n- Remove print statements and use security decorators to make\n  code-analysis happy.\n  [ale-rt]\n\n- Typo in the documentation.\n  [ale-rt]\n\n- Fix travis and coveralls.\n  [gforcada]\n\n- Various wording tweaks\n  [tkimnguyen]\n\n- In api.content.move if source **and** target are specified and target is already\n  source parent, skip the operation.\n\n- Fix test\n  [gforcada]\n\n- Fix PRINTINGMAILHOST_ENABLED evaluation to respect Products.PrintingMailHost\n  internal logic\n  [ale-rt]\n\n",
+            "v": "<1.5.1"
+        }
+    ],
     "plone.app.contentmenu": [
         {
             "advisory": "plone.app.contentmenu 1.1.7 fixes a potential xss attack and http://dev.plone.org/plone/ticket/8377.",
