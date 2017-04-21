@@ -2449,6 +2449,12 @@
             "v": "<1.5.4"
         }
     ],
+    "google-auth": [
+        {
+            "changelog": "------\n\n- Added Google ID token verification helpers. (82)\n- Swapped the ``target`` and ``request`` argument order for ``grpc.secure_authorized_channel``. (81)\n- Added a user's guide. (79)\n- Made ``service_account_email`` a public property on several credential classes. (76)\n- Added a ``scope`` argument to ``google.auth.default``. (75)\n- Added support for the ``GCLOUD_PROJECT`` environment variable. (73)\n\n",
+            "v": "<0.3.0"
+        }
+    ],
     "holocron": [
         {
             "advisory": "holocron 0.2.0 fixed a security issue when content author may steal private data through content's meta header.",
