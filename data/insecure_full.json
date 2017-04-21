@@ -638,6 +638,12 @@
             "v": "<1.1.1"
         }
     ],
+    "copycheck": [
+        {
+            "changelog": "-------\n\nAdded\n~~~~~\n- Initial version\n\nChanged\n~~~~~~~\n- No changes\n\nDeprecated\n~~~~~~~~~~\n- No changes\n\nRemoved\n~~~~~~~\n- No changes\n\nFixed\n~~~~~\n- No changes\n\nSecurity\n~~~~~~~~\n- No changes\n\n",
+            "v": "<1.0.0"
+        }
+    ],
     "coveralls": [
         {
             "advisory": "",
