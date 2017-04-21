@@ -237,6 +237,12 @@
             "v": "<0.6.4"
         }
     ],
+    "awscli": [
+        {
+            "changelog": "=======\n\n* feature:cloudfront: Add lambda function associations to cache behaviors.\n* feature:rds: Add cluster create data to DBCluster APIs.\n* bugfix:opsworks: This fixes an issue with opsworks register --local and python3 on some versions of linux.\n* feature:waf-regional: With this new feature, customers can use AWS WAF directly on Application Load Balancers in a VPC within available regions to protect their websites and web services from malicious attacks such as SQL injection, Cross Site Scripting, bad bots, etc.\n\n\n",
+            "v": "<1.11.28"
+        }
+    ],
     "bbcode": [
         {
             "advisory": "",
