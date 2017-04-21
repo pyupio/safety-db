@@ -5647,6 +5647,12 @@
             "v": "<0.4.0"
         }
     ],
+    "ziggurat-foundations": [
+        {
+            "changelog": "* user model gains security date column\n* minor bugfixes\n\n2015-06-07\n----------\n",
+            "v": "<0.5.6"
+        }
+    ],
     "ziirish": [
         {
             "advisory": "ziirish before 0.0.7.1 has some undisclosed security vulnerabilities.",
