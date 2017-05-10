@@ -743,6 +743,9 @@
     "ooniprobe": [
         "<1.0.2"
     ],
+    "osrframework": [
+        "<0.14.5"
+    ],
     "otpauth": [
         "<1.0.1"
     ],
