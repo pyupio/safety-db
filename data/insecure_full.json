@@ -2191,6 +2191,17 @@
             "v": "<0.9.0"
         }
     ],
+    "django-user-accounts": [
+        {
+            "advisory": "django-user-accounts before 2.0.2 has a potentional security issue with leaking password reset tokens through HTTP Referer header.",
+            "cve": null,
+            "id": "pyup.io-34774",
+            "specs": [
+                "<2.0.2"
+            ],
+            "v": "<2.0.2"
+        }
+    ],
     "django-watchman": [
         {
             "advisory": "",
@@ -2267,6 +2278,17 @@
                 "<3.1.1"
             ],
             "v": "<3.1.1"
+        }
+    ],
+    "djangorestframework-simplejwt": [
+        {
+            "advisory": "djangorestframework-simplejwt before 1.5 allowed `__getattr__` access to the underlying JWT through the `rest_framework_simplejwt.module.TokenUser` class.",
+            "cve": null,
+            "id": "pyup.io-34792",
+            "specs": [
+                "<1.5"
+            ],
+            "v": "<1.5"
         }
     ],
     "docker-registry": [
@@ -4355,6 +4377,15 @@
             "v": "<2.8.0rc5"
         },
         {
+            "advisory": "pootle before 2.8.0rc6 has multiple, undisclosed, security vulnerabilites that were found during an audit.",
+            "cve": null,
+            "id": "pyup.io-34790",
+            "specs": [
+                "<2.8.0rc6"
+            ],
+            "v": "<2.8.0rc6"
+        },
+        {
             "advisory": "pootle before 2.7.3 is vulnerable to XSS attacks, so everybody with Pootle 2.7.x needs to upgrade.",
             "cve": null,
             "id": "pyup.io-34201",
@@ -5174,6 +5205,15 @@
                 "<1.2.0"
             ],
             "v": "<1.2.0"
+        },
+        {
+            "advisory": "python3-saml 1.2.6 now uses defusedxml that will prevent XEE and other attacks based on the abuse on XMLs. (CVE-2017-9672)",
+            "cve": null,
+            "id": "pyup.io-34782",
+            "specs": [
+                "<1.2.6"
+            ],
+            "v": "<1.2.6"
         }
     ],
     "pyupdater": [
@@ -5547,6 +5587,17 @@
                 "<0.3.0"
             ],
             "v": "<0.3.0"
+        }
+    ],
+    "setup-tools": [
+        {
+            "advisory": "setup-tools 1.3 addresses a security vulnerability in SSL match_hostname check as reported in Python 17997.",
+            "cve": null,
+            "id": "pyup.io-34761",
+            "specs": [
+                "<1.3"
+            ],
+            "v": "<1.3"
         }
     ],
     "setuptools": [
