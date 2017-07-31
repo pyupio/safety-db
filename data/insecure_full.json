@@ -850,7 +850,7 @@
     ],
     "cryptography": [
         {
-            "advisory": "",
+            "advisory": "Fixed a double free in the OpenSSL backend when using DSA to verify signatures: https://cryptography.io/en/latest/changelog/#id34",
             "cve": null,
             "id": "pyup.io-25678",
             "specs": [
@@ -859,7 +859,7 @@
             "v": "<0.9.1"
         },
         {
-            "advisory": "",
+            "advisory": "Use of assert can lead to undefined behavior: https://cryptography.io/en/latest/changelog/#id29",
             "cve": null,
             "id": "pyup.io-25679",
             "specs": [
@@ -868,8 +868,8 @@
             "v": "<1.0.2"
         },
         {
-            "advisory": "",
-            "cve": null,
+            "advisory": "HKDF would return an empty byte-string if used with a length less than algorithm.digest_siz: https://cryptography.io/en/latest/changelog/#id12",
+            "cve":  "CVE-2016-9243",
             "id": "pyup.io-25680",
             "specs": [
                 "<1.5.3"
