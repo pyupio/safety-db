@@ -868,7 +868,7 @@
             "v": "<1.0.2"
         },
         {
-            "advisory": "HKDF would return an empty byte-string if used with a length less than algorithm.digest_siz: https://cryptography.io/en/latest/changelog/#id12",
+            "advisory": "HKDF would return an empty byte-string if used with a length less than algorithm.digest_size: https://cryptography.io/en/latest/changelog/#id12",
             "cve":  "CVE-2016-9243",
             "id": "pyup.io-25680",
             "specs": [
