@@ -244,6 +244,15 @@
                 "<0.1.4"
             ],
             "v": "<0.1.4"
+        },
+        {
+            "advisory": "authbwc before 0.3.1 has a vulnerability in the password reset process that allowed users to log in when inactive.",
+            "cve": null,
+            "id": "pyup.io-34836",
+            "specs": [
+                "<0.3.1"
+            ],
+            "v": "<0.3.1"
         }
     ],
     "autobahn": [
@@ -5216,6 +5225,17 @@
             "v": "<1.2.6"
         }
     ],
+    "pytsite": [
+        {
+            "advisory": "pytsite before 1.2 has a critical web login security issue.",
+            "cve": null,
+            "id": "pyup.io-34825",
+            "specs": [
+                "<1.2"
+            ],
+            "v": "<1.2"
+        }
+    ],
     "pyupdater": [
         {
             "advisory": "pyupdater before 0.20.0 is vulnerable to session fixation attacks and potentially cookie stealing.",
@@ -5651,6 +5671,17 @@
             "v": "<0.13.1"
         }
     ],
+    "smeagol": [
+        {
+            "advisory": "smeagol 0.1.0 has several known bugs and security issues that need to be addressed before it can be used in production.",
+            "cve": null,
+            "id": "pyup.io-34818",
+            "specs": [
+                "<0.1.0"
+            ],
+            "v": "<0.1.0"
+        }
+    ],
     "soapfish": [
         {
             "advisory": "soapfish before 0.6.0 has a potential security issue - pattern restrictions were not applied correctly.",
@@ -5810,6 +5841,20 @@
                 "<0.11.0"
             ],
             "v": "<0.11.0"
+        }
+    ],
+    "supervisor": [
+        {
+            "advisory": "In supervisor before 3.3.3 (fix backported to 3.2.4, 3.1.4 and 3.0.1) a vulnerability was found where an authenticated client can send a malicious XML-RPC request to ``supervisord`` that will run arbitrary shell commands on the server. The commands will be run as the same user as ``supervisord``.  Depending on how ``supervisord`` has been configured, this may be root.  See https://github.com/Supervisor/supervisor/issues/964 for details.",
+            "cve": null,
+            "id": "pyup.io-34840",
+            "specs": [
+                ">=3.3,<3.3.3",
+                ">=3.2,<3.2.4",
+                ">=3.1,<3.1.4",
+                "<3.0.1"
+            ],
+            "v": ">=3.3,<3.3.3,>=3.2,<3.2.4,>=3.1,<3.1.4,<3.0.1"
         }
     ],
     "swauth": [
