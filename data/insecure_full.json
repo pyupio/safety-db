@@ -10,6 +10,17 @@
             "v": "<3.0.12"
         }
     ],
+    "acqusition": [
+        {
+            "advisory": "acqusition is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
+            "cve": null,
+            "id": "pyup.io-34978",
+            "specs": [
+                ">0,<0"
+            ],
+            "v": ">0,<0"
+        }
+    ],
     "aiocouchdb": [
         {
             "advisory": "",
@@ -191,6 +202,15 @@
                 "<2.2.1"
             ],
             "v": "<2.2.1"
+        },
+        {
+            "advisory": "ansible before 2.3.1 is vulnerable to CVE-2017-7481 - data for lookup plugins used as variables was not being correctly marked as \"unsafe\".",
+            "cve": null,
+            "id": "pyup.io-34941",
+            "specs": [
+                "<2.3.1"
+            ],
+            "v": "<2.3.1"
         }
     ],
     "ansigenome": [
@@ -222,6 +242,17 @@
                 "<0.13.3"
             ],
             "v": "<0.13.3"
+        }
+    ],
+    "apidev-coop": [
+        {
+            "advisory": "apidev-coop is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
+            "cve": null,
+            "id": "pyup.io-34979",
+            "specs": [
+                ">0,<0"
+            ],
+            "v": ">0,<0"
         }
     ],
     "archmage": [
@@ -372,6 +403,17 @@
             "v": "<1.4.2"
         }
     ],
+    "bleach": [
+        {
+            "advisory": "bleach 2.1 converts control characters (backspace particularly) to \"?\" preventing malicious copy-and-paste situations.",
+            "cve": null,
+            "id": "pyup.io-34965",
+            "specs": [
+                "<2.1"
+            ],
+            "v": "<2.1"
+        }
+    ],
     "bodhi": [
         {
             "advisory": "bodhi 2.2.0 addresses CVE-2016-1000008 by disallowing the re-use of solved captchas. Additionally, the captcha is\r\nwarped to make it more difficult to solve through automation.\r\n\r\n- https://github.com/fedora-infra/bodhi/pull/857\r\n- https://github.com/fedora-infra/bodhi/commit/f0122855",
@@ -416,6 +458,17 @@
             "v": "<0.12.10"
         }
     ],
+    "bzip": [
+        {
+            "advisory": "bzip  is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
+            "cve": null,
+            "id": "pyup.io-34980",
+            "specs": [
+                ">0,<0"
+            ],
+            "v": ">0,<0"
+        }
+    ],
     "cairosvg": [
         {
             "advisory": "",
@@ -445,6 +498,17 @@
                 "<0.14.0"
             ],
             "v": "<0.14.0"
+        }
+    ],
+    "cbapi": [
+        {
+            "advisory": "The underlying CbAPI connection class erroneously disabled hostname validation by default. This does *not* affect code that uses CbAPI through the public interfaces documented here; it only affects code that accesses the new  ``CbAPISessionAdapter`` class directly. This class was introduced in version 1.3.3. Regardless, it is strongly recommended that all users currently using 1.3.3 upgrade to 1.3.4.",
+            "cve": null,
+            "id": "pyup.io-34933",
+            "specs": [
+                ">=1.3.3,<1.3.4"
+            ],
+            "v": ">=1.3.3,<1.3.4"
         }
     ],
     "celery": [
@@ -844,6 +908,17 @@
                 "<0.6.4"
             ],
             "v": "<0.6.4"
+        }
+    ],
+    "crypt": [
+        {
+            "advisory": "crypt  is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
+            "cve": null,
+            "id": "pyup.io-34981",
+            "specs": [
+                ">0,<0"
+            ],
+            "v": ">0,<0"
         }
     ],
     "cryptacular": [
@@ -2108,6 +2183,17 @@
                 "<0.5.2"
             ],
             "v": "<0.5.2"
+        }
+    ],
+    "django-server": [
+        {
+            "advisory": "django-server is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
+            "cve": null,
+            "id": "pyup.io-34982",
+            "specs": [
+                ">0,<0"
+            ],
+            "v": ">0,<0"
         }
     ],
     "django-session-security": [
@@ -4552,6 +4638,17 @@
             "v": "<0.3.3"
         }
     ],
+    "pwd": [
+        {
+            "advisory": "pwd  is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
+            "cve": null,
+            "id": "pyup.io-34983",
+            "specs": [
+                ">0,<0"
+            ],
+            "v": ">0,<0"
+        }
+    ],
     "pwman3": [
         {
             "advisory": "pwman3 before 0.4.0 uses cPickle.loads and cPickle.dumps.",
@@ -5638,6 +5735,17 @@
             "v": "<0.3.0"
         }
     ],
+    "setup-tools": [
+        {
+            "advisory": "setup-tools  is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
+            "cve": null,
+            "id": "pyup.io-34984",
+            "specs": [
+                ">0,<0"
+            ],
+            "v": ">0,<0"
+        }
+    ],
     "setuptools": [
         {
             "advisory": "setuptools 0.9.5 fixes a security vulnerability in SSL certificate validation.",
@@ -5946,6 +6054,17 @@
             "v": "<1.4.31"
         }
     ],
+    "telnet": [
+        {
+            "advisory": "telnet is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
+            "cve": null,
+            "id": "pyup.io-34985",
+            "specs": [
+                ">0,<0"
+            ],
+            "v": ">0,<0"
+        }
+    ],
     "textract": [
         {
             "advisory": "textract before 1.5.0 doesn't properly uses subprocess.call.",
@@ -6108,6 +6227,28 @@
                 "<3.5.0"
             ],
             "v": "<3.5.0"
+        }
+    ],
+    "urlib3": [
+        {
+            "advisory": "urlib3 is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
+            "cve": null,
+            "id": "pyup.io-34986",
+            "specs": [
+                ">0,<0"
+            ],
+            "v": ">0,<0"
+        }
+    ],
+    "urllib": [
+        {
+            "advisory": "urllib is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
+            "cve": null,
+            "id": "pyup.io-34987",
+            "specs": [
+                ">0,<0"
+            ],
+            "v": ">0,<0"
         }
     ],
     "urllib3": [
