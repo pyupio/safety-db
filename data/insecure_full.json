@@ -1575,6 +1575,15 @@
                 "<0.28.0"
             ],
             "v": "<0.28.0"
+        },
+        {
+            "advisory": "On django-allauth before 0.34.0 the \"Set Password\" view did not properly check whether or not the user already had a usable password set. This allowed an attacker to set the password without providing the current password, but only in case the attacker already gained control over the victim's session.",
+            "cve": null,
+            "id": "pyup.io-35034",
+            "specs": [
+                "<0.34.0"
+            ],
+            "v": "<0.34.0"
         }
     ],
     "django-anonymizer": [
@@ -2037,6 +2046,17 @@
                 "<0.9.0"
             ],
             "v": "<0.9.0"
+        }
+    ],
+    "django-modern-rpc": [
+        {
+            "advisory": "django-modern-rpc before 0.8.1 isn't correctly checking the authentication backend when executing 'system.multicall()'.",
+            "cve": null,
+            "id": "pyup.io-34991",
+            "specs": [
+                "<0.8.1"
+            ],
+            "v": "<0.8.1"
         }
     ],
     "django-ninecms": [
@@ -2718,6 +2738,18 @@
             "v": "<1.0"
         }
     ],
+    "fresco": [
+        {
+            "advisory": "In fresco after 0.5.5 user supplied data is no longer reflected in error messages raised from ``fresco.routeargs.RequestArg``. This fixes a potential XSS vulnerability affecting versions starting from 0.5.0.",
+            "cve": null,
+            "id": "pyup.io-35028",
+            "specs": [
+                ">=0.5.0",
+                "<0.5.5"
+            ],
+            "v": ">=0.5.0,<0.5.5"
+        }
+    ],
     "ftw.dashboard.dragndrop": [
         {
             "advisory": "ftw.dashboard.dragndrop 1.5.1 includes several undisclosed security fixes.",
@@ -2916,9 +2948,10 @@
             "cve": null,
             "id": "pyup.io-25846",
             "specs": [
-                "<0.99999999"
+                "<0.99999999",
+                ">1.0,<1.0b8"
             ],
-            "v": "<0.99999999"
+            "v": "<0.99999999,>1.0,<1.0b8"
         }
     ],
     "httpauth": [
@@ -4790,6 +4823,15 @@
                 "<1.0.0"
             ],
             "v": "<1.0.0"
+        },
+        {
+            "advisory": "In PyJWT 1.5.0 and below the `invalid_strings` check in `HMACAlgorithm.prepare_key` does not account for all PEM encoded public keys. Specifically, the PKCS1 PEM encoded format would be allowed because it is prefaced with the string `-----BEGIN RSA PUBLIC KEY-----` which is not accounted for. This enables symmetric/asymmetric key confusion attacks against users using the PKCS1 PEM encoded public keys, which would allow an attacker to craft JWTs from scratch.",
+            "cve": null,
+            "id": "pyup.io-35014",
+            "specs": [
+                "<1.5.1"
+            ],
+            "v": "<1.5.1"
         }
     ],
     "pyldap": [
@@ -6326,6 +6368,17 @@
                 "<0.1006.1"
             ],
             "v": "<0.1006.1"
+        }
+    ],
+    "yasha": [
+        {
+            "advisory": "yasha before 4.0 is parsing JSON without using the 'safe_load' function.",
+            "cve": null,
+            "id": "pyup.io-35004",
+            "specs": [
+                "<4.0"
+            ],
+            "v": "<4.0"
         }
     ],
     "yaybu": [
