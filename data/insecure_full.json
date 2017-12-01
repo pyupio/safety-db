@@ -1619,6 +1619,17 @@
             "v": "<2.3.0"
         }
     ],
+    "django-basicauth": [
+        {
+            "advisory": "django-basicauth before 0.4.2 is vulnerable to undisclosed timing attacks.",
+            "cve": null,
+            "id": "pyup.io-35076",
+            "specs": [
+                "<0.4.2"
+            ],
+            "v": "<0.4.2"
+        }
+    ],
     "django-cms": [
         {
             "advisory": "",
