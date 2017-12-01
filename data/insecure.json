@@ -327,6 +327,9 @@
     "django-autocomplete-light": [
         "<2.3.0"
     ],
+    "django-basicauth": [
+        "<0.4.2"
+    ],
     "django-cms": [
         "<2.1.3",
         "<2.1.4",
