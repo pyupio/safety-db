@@ -460,6 +460,17 @@
             "v": "<0.12.10"
         }
     ],
+    "brasil.gov.portal": [
+        {
+            "advisory": "brasil.gov.portal before 1.5.1 uses Plone <4.3.15 which is vulnerable to several XSS and redirect flaws, and a sandbox escape.",
+            "cve": null,
+            "id": "pyup.io-35086",
+            "specs": [
+                "<1.5.1"
+            ],
+            "v": "<1.5.1"
+        }
+    ],
     "bzip": [
         {
             "advisory": "bzip  is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
@@ -3302,6 +3313,15 @@
                 "<0.9.5.4"
             ],
             "v": "<0.9.5.4"
+        },
+        {
+            "advisory": "ldap3 2.4 includes a security fix in the rebind() method of the Connection object.",
+            "cve": null,
+            "id": "pyup.io-35053",
+            "specs": [
+                "<2.4"
+            ],
+            "v": "<2.4"
         }
     ],
     "lemur": [
