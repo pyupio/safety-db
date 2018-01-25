@@ -4792,6 +4792,15 @@
                 "<2.6.1"
             ],
             "v": "<2.6.1"
+        },
+        {
+            "advisory": "Heap-based buffer overflow in the ALGnew function in block_templace.c in Python Cryptography Toolkit (aka pycrypto) allows remote attackers to execute arbitrary code as demonstrated by a crafted iv parameter to cryptmsg.py. ",
+            "cve": "CVE-2013-7459",
+            "id": "pyup.io-33151",
+            "specs": [
+                "<=2.6.1"
+            ],
+            "v": "<=2.6.1"
         }
     ],
     "pydal": [
