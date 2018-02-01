@@ -1281,9 +1281,9 @@
             "v": "<1.4.18,>=1.7,<1.7.3,>=1.6,<1.6.10"
         },
         {
-            "advisory": "The utils.http.is_safe_url function in Django before 1.8.10 and 1.9.x before 1.9.3 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks or possibly conduct cross-site scripting (XSS) attacks via a URL containing basic authentication, as demonstrated by http://mysite.example.com\\@attacker.com.",
-            "cve": "CVE-2016-2512",
-            "id": "pyup.io-33073",
+            "advisory": "The password hasher in contrib/auth/hashers.py in Django before 1.8.10 and 1.9.x before 1.9.3 allows remote attackers to enumerate users via a timing attack involving login requests.",
+            "cve": "CVE-2016-2513",
+            "id": "pyup.io-33074",
             "specs": [
                 "<1.8.10",
                 ">=1.9,<1.9.3"
@@ -1291,9 +1291,9 @@
             "v": "<1.8.10,>=1.9,<1.9.3"
         },
         {
-            "advisory": "The password hasher in contrib/auth/hashers.py in Django before 1.8.10 and 1.9.x before 1.9.3 allows remote attackers to enumerate users via a timing attack involving login requests.",
-            "cve": "CVE-2016-2513",
-            "id": "pyup.io-33074",
+            "advisory": "The utils.http.is_safe_url function in Django before 1.8.10 and 1.9.x before 1.9.3 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks or possibly conduct cross-site scripting (XSS) attacks via a URL containing basic authentication, as demonstrated by http://mysite.example.com\\@attacker.com.",
+            "cve": "CVE-2016-2512",
+            "id": "pyup.io-33073",
             "specs": [
                 "<1.8.10",
                 ">=1.9,<1.9.3"
@@ -3627,6 +3627,17 @@
             "v": ">=2.0,<2.0.1,<1.0.3"
         }
     ],
+    "mxnet": [
+        {
+            "advisory": "In mxnet before 1.0.0, mxnet listens on all available interfaces when running training in distributed mode.",
+            "cve": null,
+            "id": "pyup.io-35115",
+            "specs": [
+                "<1.0.0"
+            ],
+            "v": "<1.0.0"
+        }
+    ],
     "mysql-connector": [
         {
             "advisory": "Unspecified vulnerability in the MySQL Connector component 2.1.3 and earlier and 2.0.4 and earlier in Oracle MySQL allows remote attackers to affect confidentiality, integrity, and availability via vectors related to Connector/Python.",
@@ -3700,6 +3711,17 @@
                 ">=4.0,<4.0.5"
             ],
             "v": ">=4.0,<4.0.5"
+        }
+    ],
+    "notifications-python-client": [
+        {
+            "advisory": "notifications-python-client before 4.7.1 is vulnerable to a not further described security issue in PyJWT.",
+            "cve": null,
+            "id": "pyup.io-35116",
+            "specs": [
+                "<4.7.1"
+            ],
+            "v": "<4.7.1"
         }
     ],
     "nova": [
@@ -4792,15 +4814,6 @@
                 "<2.6.1"
             ],
             "v": "<2.6.1"
-        },
-        {
-            "advisory": "Heap-based buffer overflow in the ALGnew function in block_templace.c in Python Cryptography Toolkit (aka pycrypto) allows remote attackers to execute arbitrary code as demonstrated by a crafted iv parameter to cryptmsg.py. ",
-            "cve": "CVE-2013-7459",
-            "id": "pyup.io-33151",
-            "specs": [
-                "<=2.6.1"
-            ],
-            "v": "<=2.6.1"
         }
     ],
     "pydal": [
@@ -4866,7 +4879,7 @@
         },
         {
             "advisory": "In PyJWT 1.5.0 and below the `invalid_strings` check in `HMACAlgorithm.prepare_key` does not account for all PEM encoded public keys. Specifically, the PKCS1 PEM encoded format would be allowed because it is prefaced with the string `-----BEGIN RSA PUBLIC KEY-----` which is not accounted for. This enables symmetric/asymmetric key confusion attacks against users using the PKCS1 PEM encoded public keys, which would allow an attacker to craft JWTs from scratch.",
-            "cve": "CVE-2017-11424",
+            "cve": null,
             "id": "pyup.io-35014",
             "specs": [
                 "<1.5.1"
@@ -6397,6 +6410,17 @@
                 "<0.8"
             ],
             "v": "<0.8"
+        }
+    ],
+    "will": [
+        {
+            "advisory": "will before 0.5.4 uses a insecure transitive dependency (bottle).",
+            "cve": null,
+            "id": "pyup.io-35046",
+            "specs": [
+                "<0.5.4"
+            ],
+            "v": "<0.5.4"
         }
     ],
     "wpull": [
