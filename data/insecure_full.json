@@ -5847,6 +5847,15 @@
                 "<2.1.9"
             ],
             "v": "<2.1.9"
+        },
+        {
+            "advisory": "Multiple SAML libraries may incorrectly utilize the results of XML DOM traversal and canonicalization APIs in such a way that an attacker may be able to manipulate the SAML data without invalidating the cryptographic signature, allowing the attack to potentially bypass authentication to SAML service providers.",
+            "cve": "CVE-2017-11427",
+            "id": "pyup.io-35779",
+            "specs": [
+                "<2.4.0"
+            ],
+            "v": "<2.4.0"
         }
     ],
     "python3-ldap": [
@@ -5887,6 +5896,15 @@
                 "<1.2.6"
             ],
             "v": "<1.2.6"
+        },
+        {
+            "advisory": "Multiple SAML libraries may incorrectly utilize the results of XML DOM traversal and canonicalization APIs in such a way that an attacker may be able to manipulate the SAML data without invalidating the cryptographic signature, allowing the attack to potentially bypass authentication to SAML service providers.",
+            "cve": "CVE-2017-11427",
+            "id": "pyup.io-35780",
+            "specs": [
+                "<1.4.0"
+            ],
+            "v": "<1.4.0"
         }
     ],
     "pytsite": [
@@ -6924,6 +6942,17 @@
                 "<1.0.0"
             ],
             "v": "<1.0.0"
+        }
+    ],
+    "web.py": [
+        {
+            "advisory": "web.py  0.39 fixes a security issue in the form module and the db module.",
+            "cve": null,
+            "id": "pyup.io-35782",
+            "specs": [
+                "<0.39"
+            ],
+            "v": "<0.39"
         }
     ],
     "werkzeug": [
