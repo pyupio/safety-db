@@ -11,6 +11,7 @@ Safety DB is a database of known security vulnerabilities in Python packages. Th
 - [Safety Django](https://pyup.io/safety/django/) is a package for Django that warns you in the admin area if your installed Django release is insecure.
 - [Safety Bar](https://github.com/pyupio/safety-bar) (alpha) is a macOS menubar application.
 - A [pre-commit hook](https://github.com/Lucas-C/pre-commit-hooks-safety) by Lucas Cimon.
+- [`pipenv check`](https://pipenv.readthedocs.io/en/latest/advanced/#detection-of-security-vulnerabilities) relies on `safety` and Safety-DB to check for known vulnerabilities in locked components
 - *your tool?*
 
 ## Installation
