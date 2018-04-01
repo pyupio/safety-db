@@ -277,6 +277,17 @@
             "v": "<0.3.1"
         }
     ],
+    "astropy": [
+        {
+            "advisory": "astropy 3.0.1 updates the bundled CFITSIO library to 3.430. This is to remedy a critical  security vulnerability that was identified by NASA.",
+            "cve": null,
+            "id": "pyup.io-35810",
+            "specs": [
+                "<3.0.1"
+            ],
+            "v": "<3.0.1"
+        }
+    ],
     "authbwc": [
         {
             "advisory": "authbwc 0.1.4 fixes an issue with the way the HTTP session user permissions were loaded.  This vulnerability made it possible for a user to gain the permissions of the user logged in previously.  The user would have had to be sharing the same http session for this access to have been gained.",
@@ -423,6 +434,15 @@
                 "<2.1"
             ],
             "v": "<2.1"
+        },
+        {
+            "advisory": "bleach  2.1.3 fixes a security issue.  Attributes that have URI values weren't properly sanitized if the values contained character entities. Using character entities, it was possible to construct a URI value with a scheme that was not allowed that would slide through unsanitized.",
+            "cve": null,
+            "id": "pyup.io-35792",
+            "specs": [
+                ">=2.1,<2.1.3"
+            ],
+            "v": ">=2.1,<2.1.3"
         }
     ],
     "bodhi": [
@@ -1023,6 +1043,17 @@
             "v": "<0.7.2"
         }
     ],
+    "ddtrace": [
+        {
+            "advisory": "ddtrace  0.11.0 removes the `sql.query` tag from SQL spans, so that the content is properly obfuscated in the Agent. This security fix is required to prevent wrong data collection of reported SQL queries. This issue impacts only MySQL integrations and NOT `psycopg2` or `sqlalchemy` while using the PostgreSQL driver.",
+            "cve": null,
+            "id": "pyup.io-35790",
+            "specs": [
+                "<0.11.0"
+            ],
+            "v": "<0.11.0"
+        }
+    ],
     "defusedexpat": [
         {
             "advisory": "The XML libraries for Python 3.4, 3.3, 3.2, 3.1, 2.7, and 2.6, as used in OpenStack Keystone Essex, Folsom, and Grizzly; Compute (Nova) Essex and Folsom; Cinder Folsom; Django; and possibly other products allow remote attackers to cause a denial of service (resource consumption and crash) via an XML Entity Expansion (XEE) attack.",
@@ -1457,6 +1488,28 @@
                 ">=1.8,<1.8.18"
             ],
             "v": ">=1.8,<1.8.18"
+        },
+        {
+            "advisory": "The ``django.utils.html.urlize()`` function was extremely slow to evaluate\r\ncertain inputs due to a catastrophic backtracking vulnerability in a regular\r\nexpression. The ``urlize()`` function is used to implement the ``urlize`` and\r\n``urlizetrunc`` template filters, which were thus vulnerable.\r\n\r\nThe problematic regular expression is replaced with parsing logic that behaves\r\nsimilarly.",
+            "cve": "CVE-2018-7536",
+            "id": "pyup.io-35797",
+            "specs": [
+                ">=1.8,<1.8.19",
+                ">=1.11,<1.11.11",
+                ">=2.0,<2.0.3"
+            ],
+            "v": ">=1.8,<1.8.19,>=1.11,<1.11.11,>=2.0,<2.0.3"
+        },
+        {
+            "advisory": "If ``django.utils.text.Truncator``'s ``chars()`` and ``words()`` methods were\r\npassed the ``html=True`` argument, they were extremely slow to evaluate certain\r\ninputs due to a catastrophic backtracking vulnerability in a regular\r\nexpression. The ``chars()`` and ``words()`` methods are used to implement the\r\n``truncatechars_html`` and ``truncatewords_html`` template filters, which were\r\nthus vulnerable.",
+            "cve": "CVE-2018-7537",
+            "id": "pyup.io-35796",
+            "specs": [
+                ">=1.8,<1.8.19",
+                ">=1.11,<1.11.11",
+                ">=2.0,<2.0.3"
+            ],
+            "v": ">=1.8,<1.8.19,>=1.11,<1.11.11,>=2.0,<2.0.3"
         },
         {
             "advisory": "The session.flush function in the cached_db backend in Django 1.8.x before 1.8.2 does not properly flush the session, which allows remote attackers to hijack user sessions via an empty string in the session key.",
@@ -2952,6 +3005,15 @@
                 "<2.2.0"
             ],
             "v": "<2.2.0"
+        },
+        {
+            "advisory": "In girder 2.5.0 the default Girder server now binds to localhost by default instead of 0.0.0.0.",
+            "cve": null,
+            "id": "pyup.io-35831",
+            "specs": [
+                "<2.5.0"
+            ],
+            "v": "<2.5.0"
         }
     ],
     "gns3-gui": [
@@ -3218,6 +3280,17 @@
                 "<1.9.6"
             ],
             "v": "<1.9.6"
+        }
+    ],
+    "indico": [
+        {
+            "advisory": "indico before 2.0.2 uses a insecure transitive dependency (bleach).",
+            "cve": null,
+            "id": "pyup.io-35802",
+            "specs": [
+                "<2.0.2"
+            ],
+            "v": "<2.0.2"
         }
     ],
     "insecure-package": [
@@ -3880,6 +3953,17 @@
                 "<2.0.4"
             ],
             "v": "<2.0.4"
+        }
+    ],
+    "newrelic": [
+        {
+            "advisory": "New Relic agents run explain plans for Slow Transaction Traces and Slow SQL Queries. Previous versions of the agents would run an explain plan on the SQL query by prepending the query with explain. This may cause an issue when there are multiple statements separated by semicolons in a single query. The first statement in the string returns its explain plan, but any subsequent statement after that may execute as a general SQL statement. Depending on the language, library, and database, the agent may return the results of the additional statements to New Relic. It is also possible that the additional statements could execute an additional INSERT or UPDATE command. With this security update, New Relic agents will no longer run explain plans on any query that contains a semicolon as a statement separator.",
+            "cve": null,
+            "id": "pyup.io-35805",
+            "specs": [
+                ">=1.1.0.192,<=2.106.0.87"
+            ],
+            "v": ">=1.1.0.192,<=2.106.0.87"
         }
     ],
     "newsletter": [
@@ -4945,6 +5029,17 @@
                 "<1.4.1"
             ],
             "v": "<1.4.1"
+        }
+    ],
+    "products.cmfcore": [
+        {
+            "advisory": "Cross-site scripting (XSS) vulnerability in Zope 2.10.2 and earlier allows remote attackers to inject arbitrary web script or HTML via unspecified vectors in a HTTP GET request.",
+            "cve": "CVE-2007-0240",
+            "id": "pyup.io-35820",
+            "specs": [
+                "<2.1.0beta2"
+            ],
+            "v": "<2.1.0beta2"
         }
     ],
     "products.cmfplone": [
