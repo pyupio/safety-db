@@ -392,6 +392,17 @@
             "v": "<0.3.0"
         }
     ],
+    "birdhousebuilder-recipe-nginx": [
+        {
+            "advisory": "birdhousebuilder-recipe-nginx  0.1.5 disables the use of SSLv3 (poodle attack).",
+            "cve": null,
+            "id": "pyup.io-36135",
+            "specs": [
+                "<0.1.5"
+            ],
+            "v": "<0.1.5"
+        }
+    ],
     "birdhousebuilder.recipe.nginx": [
         {
             "advisory": "birdhousebuilder.recipe.nginx 0.1.5 disabled SSLv3 due to the poodle attack.",
@@ -2886,6 +2897,17 @@
             "v": ">=0.5.0,<0.5.5"
         }
     ],
+    "ftw-dashboard-portlets-postit": [
+        {
+            "advisory": "ftw-dashboard-portlets-postit  1.3.4 fixes a security error, it was possible to add postit comment on a foreign dashboard if the userid an portlet id was known.",
+            "cve": null,
+            "id": "pyup.io-35933",
+            "specs": [
+                "<1.3.4"
+            ],
+            "v": "<1.3.4"
+        }
+    ],
     "ftw.dashboard.dragndrop": [
         {
             "advisory": "ftw.dashboard.dragndrop 1.5.1 includes several undisclosed security fixes.",
@@ -3450,6 +3472,17 @@
             "v": "<0.3.0"
         }
     ],
+    "js-videojs": [
+        {
+            "advisory": "js-videojs  4.12.5 updates videojs-swf to v4.5.4 to fix a potential security issue ([view](https://github.com/videojs/video.js/pull/1955)",
+            "cve": null,
+            "id": "pyup.io-36130",
+            "specs": [
+                "<4.12.5"
+            ],
+            "v": "<4.12.5"
+        }
+    ],
     "jsonrpc-pyclient": [
         {
             "advisory": "jsonrpc-pyclient 0.7.0 fixes security issues in unixdomainsocket connectors.",
@@ -3513,6 +3546,17 @@
                 "<5.1.0"
             ],
             "v": "<5.1.0"
+        }
+    ],
+    "kinto-dist": [
+        {
+            "advisory": "Since Kinto 8.2.0 the `account` plugin had a security flaw where the password wasn't verified during the session duration. It now validates the account user password even when the session is cached (Kinto/kinto1583).",
+            "cve": null,
+            "id": "pyup.io-36153",
+            "specs": [
+                "<8.2.3"
+            ],
+            "v": "<8.2.3"
         }
     ],
     "lambda-tools": [
@@ -4799,6 +4843,50 @@
             "v": ">=4,<4.2a2"
         }
     ],
+    "plone-app-contenttypes": [
+        {
+            "advisory": "plone-app-contenttypes 1.2.15 fixes a possible cross site scripting (XSS) attack in lead image caption.",
+            "cve": null,
+            "id": "pyup.io-35870",
+            "specs": [
+                "<1.2.15"
+            ],
+            "v": "<1.2.15"
+        }
+    ],
+    "plone-app-event": [
+        {
+            "advisory": "plone-app-event  3.0 fixes a possible cross site scripting (XSS) attack in location field.",
+            "cve": null,
+            "id": "pyup.io-35923",
+            "specs": [
+                "<3.0"
+            ],
+            "v": "<3.0"
+        }
+    ],
+    "plone-app-users": [
+        {
+            "advisory": "plone-app-users before 1.0.5 does not check for permission when editing other users' profiles.\r\n  This fixes http://dev.plone.org/plone/ticket/11842 and\r\n  http://plone.org/products/plone/security/advisories/CVE-2011-1950",
+            "cve": null,
+            "id": "pyup.io-36096",
+            "specs": [
+                "<1.0.5"
+            ],
+            "v": "<1.0.5"
+        }
+    ],
+    "plone-dexterity": [
+        {
+            "advisory": "In plone-dexterity before 2.3.0 Attribute access to schema fields can be protected. This\r\n  worked for direct schemas, but was not implemented for permissions coming\r\n  from behaviors.",
+            "cve": null,
+            "id": "pyup.io-35873",
+            "specs": [
+                "<2.3.0"
+            ],
+            "v": "<2.3.0"
+        }
+    ],
     "plone.app.content": [
         {
             "advisory": "plone.app.content 3.3.1 includes security hotfix 20160830 for folder factories redirection.",
@@ -5018,6 +5106,28 @@
                 "<1.2.0"
             ],
             "v": "<1.2.0"
+        }
+    ],
+    "products-cmfcore": [
+        {
+            "advisory": "products-cmfcore 2.1.0beta2 adds POST-only protections to security critical methods.\r\n  http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0240)",
+            "cve": null,
+            "id": "pyup.io-36125",
+            "specs": [
+                "<2.1.0beta2"
+            ],
+            "v": "<2.1.0beta2"
+        }
+    ],
+    "products-ploneformgen": [
+        {
+            "advisory": "products-ploneformgen before 1.8.1 has a XSS vulnerability that could be exploited by users with the ability\r\n  to create forms.",
+            "cve": null,
+            "id": "pyup.io-35878",
+            "specs": [
+                "<1.8.1"
+            ],
+            "v": "<1.8.1"
         }
     ],
     "products.cmfcontentpanels": [
@@ -6066,6 +6176,17 @@
             "v": "<0.9"
         }
     ],
+    "qi-jabberhelpdesk": [
+        {
+            "advisory": "qi-jabberhelpdesk  0.30 includes unspecified security fixes, some vulnerable xml-rpc calls fixed. [ggozad]",
+            "cve": null,
+            "id": "pyup.io-36052",
+            "specs": [
+                "<0.30"
+            ],
+            "v": "<0.30"
+        }
+    ],
     "qi.jabberhelpdesk": [
         {
             "advisory": "qi.jabberhelpdesk before 0.30 has several undisclosed vulnerabilities in xml-rpc calls.",
@@ -6075,6 +6196,17 @@
                 "<0.30"
             ],
             "v": "<0.30"
+        }
+    ],
+    "quintagroup-seoptimizer": [
+        {
+            "advisory": "quintagroup-seoptimizer  3.0.4 fixes a security issue for SEO Property action and view\r\n  http://plone.org/products/plone-seo/issues/24",
+            "cve": null,
+            "id": "pyup.io-36006",
+            "specs": [
+                "<3.0.4"
+            ],
+            "v": "<3.0.4"
         }
     ],
     "quintagroup.seoptimizer": [
@@ -6192,6 +6324,17 @@
                 "<2.8.1"
             ],
             "v": "<2.8.1"
+        }
+    ],
+    "rope": [
+        {
+            "advisory": "base/oi/doa.py in the Rope library in CPython (aka Python) allows remote attackers to execute arbitrary code by leveraging an unsafe call to pickle.load.",
+            "cve": "CVE-2014-3539",
+            "id": "pyup.io-36155",
+            "specs": [
+                "<0.10"
+            ],
+            "v": "<0.10"
         }
     ],
     "roundup": [
