@@ -735,6 +735,28 @@
             "v": "<1.0.0"
         }
     ],
+    "collective-contact-core": [
+        {
+            "advisory": "collective-contact-core before 1.10",
+            "cve": null,
+            "id": "pyup.io-36089",
+            "specs": [
+                "<1.10"
+            ],
+            "v": "<1.10"
+        }
+    ],
+    "collective-noticeboard": [
+        {
+            "advisory": "collective-noticeboard before 0.7.1 has a security issue, anonymous users could modify notes positions.",
+            "cve": null,
+            "id": "pyup.io-35879",
+            "specs": [
+                "<0.7.1"
+            ],
+            "v": "<0.7.1"
+        }
+    ],
     "collective.contact.core": [
         {
             "advisory": "collective.contact.core 1.10 fixes a security issue related to AddContact.",
@@ -1041,6 +1063,17 @@
                 "<r5238"
             ],
             "v": "<r5238"
+        }
+    ],
+    "dateable-chronos": [
+        {
+            "advisory": "dateable-chronos before 0.7.2 fixed a XSS vulnerability in the get_view_day method.",
+            "cve": null,
+            "id": "pyup.io-35988",
+            "specs": [
+                "<0.7.2"
+            ],
+            "v": "<0.7.2"
         }
     ],
     "dateable.chronos": [
@@ -2587,6 +2620,17 @@
             "v": "<2.8"
         }
     ],
+    "dplib": [
+        {
+            "advisory": "dplib 1.4 fixes some security issues and added support for mapchange and namechange events",
+            "cve": null,
+            "id": "pyup.io-35851",
+            "specs": [
+                "<1.4"
+            ],
+            "v": "<1.4"
+        }
+    ],
     "drf-tracking": [
         {
             "advisory": "drf-tracking before 1.3.0",
@@ -3559,6 +3603,17 @@
             "v": "<8.2.3"
         }
     ],
+    "kotti": [
+        {
+            "advisory": "kotti 1.3.2 fixes a CSRF (Cross Site Request Forgery) security vulnerablity which was reported in 551. You should upgrade your installations ASAP.",
+            "cve": null,
+            "id": "pyup.io-36142",
+            "specs": [
+                "<1.3.2"
+            ],
+            "v": "<1.3.2"
+        }
+    ],
     "lambda-tools": [
         {
             "advisory": "lambda-tools before 0.1.2 used an unsafe way to load untrusted lambda definitions via `yaml.load`.",
@@ -4154,6 +4209,17 @@
                 "<0.7.0"
             ],
             "v": "<0.7.0"
+        }
+    ],
+    "oci-cli": [
+        {
+            "advisory": "Versions of oci-cli prior to 2.4.10 are affected by a security vulnerability. Versions 2.4.11 and later will automatically detect vulnerable installations, and if issues are detected, a warning will be displayed to the user. These issues can be remediated automatically by running the ``oci setup repair-file-permissions`` command.",
+            "cve": null,
+            "id": "pyup.io-36148",
+            "specs": [
+                "<2.4.10"
+            ],
+            "v": "<2.4.10"
         }
     ],
     "onegov.form": [
@@ -4852,6 +4918,17 @@
                 "<1.2.15"
             ],
             "v": "<1.2.15"
+        }
+    ],
+    "plone-app-discussion": [
+        {
+            "advisory": "plone-app-discussion 2.4.14 fixes a possible cross site scripting (XSS) attack on moderate comments page.",
+            "cve": null,
+            "id": "pyup.io-35864",
+            "specs": [
+                "<2.4.14"
+            ],
+            "v": "<2.4.14"
         }
     ],
     "plone-app-event": [
@@ -7180,6 +7257,17 @@
                 "<1.0.0"
             ],
             "v": "<1.0.0"
+        }
+    ],
+    "web-py": [
+        {
+            "advisory": "web-py  0.39 fixes a security issue with the form and db module.",
+            "cve": null,
+            "id": "pyup.io-35893",
+            "specs": [
+                "<0.39"
+            ],
+            "v": "<0.39"
         }
     ],
     "web.py": [
