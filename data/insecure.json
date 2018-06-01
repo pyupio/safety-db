@@ -167,6 +167,12 @@
     "cmsplugin-filer": [
         "<1.0.0"
     ],
+    "collective-contact-core": [
+        "<1.10"
+    ],
+    "collective-noticeboard": [
+        "<0.7.1"
+    ],
     "collective.contact.core": [
         "<1.10"
     ],
@@ -242,6 +248,9 @@
     ],
     "cumin": [
         "<r5238"
+    ],
+    "dateable-chronos": [
+        "<0.7.2"
     ],
     "dateable.chronos": [
         "<0.7.2"
@@ -553,6 +562,9 @@
     "dpaste": [
         "<2.8"
     ],
+    "dplib": [
+        "<1.4"
+    ],
     "drf-tracking": [
         "<1.3.0"
     ],
@@ -778,6 +790,9 @@
     "kinto-dist": [
         "<8.2.3"
     ],
+    "kotti": [
+        "<1.3.2"
+    ],
     "lambda-tools": [
         "<0.1.2"
     ],
@@ -925,6 +940,9 @@
     "oauthlib": [
         "<0.7.0"
     ],
+    "oci-cli": [
+        "<2.4.10"
+    ],
     "onegov.form": [
         "<0.16.1"
     ],
@@ -1048,6 +1066,9 @@
     ],
     "plone-app-contenttypes": [
         "<1.2.15"
+    ],
+    "plone-app-discussion": [
+        "<2.4.14"
     ],
     "plone-app-event": [
         "<3.0"
@@ -1595,6 +1616,9 @@
     ],
     "waitress": [
         "<1.0.0"
+    ],
+    "web-py": [
+        "<0.39"
     ],
     "web.py": [
         "<0.39"
