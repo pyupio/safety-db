@@ -3900,7 +3900,7 @@
         },
         {
             "advisory": "Cross-site scripting (XSS) vulnerability in the _keyify function in mistune.py in Mistune before 0.8.1 allows remote attackers to inject arbitrary web script or HTML by leveraging failure to escape the 'key' argument.",
-            "cve": 'CVE-2017-16876',
+            "cve": "CVE-2017-16876",
             "id": "pyup.io-25890",
             "specs": [
                 "<0.8.1"
