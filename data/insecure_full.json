@@ -3866,6 +3866,17 @@
             "v": "<1.1.1"
         }
     ],
+    "mezzanine": [
+        {
+            "advisory": "mezzanine  4.3.0 fixes a potential security vulnerability in which the password reset url is exposed to untrusted intermediary nodes in the network.",
+            "cve": null,
+            "id": "pyup.io-36270",
+            "specs": [
+                "<4.3.0"
+            ],
+            "v": "<4.3.0"
+        }
+    ],
     "mgp2pdf": [
         {
             "advisory": "In mgp2pdf before 0.10 `%filter`` is enabled by default which is a security risk.",
