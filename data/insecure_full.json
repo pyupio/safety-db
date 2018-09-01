@@ -448,7 +448,7 @@
         },
         {
             "advisory": "bleach  2.1.3 fixes a security issue.  Attributes that have URI values weren't properly sanitized if the values contained character entities. Using character entities, it was possible to construct a URI value with a scheme that was not allowed that would slide through unsanitized.",
-            "cve": null,
+            "cve": "CVE-2018-7753",
             "id": "pyup.io-35792",
             "specs": [
                 ">=2.1,<2.1.3"
@@ -744,6 +744,17 @@
                 "<1.0.0"
             ],
             "v": "<1.0.0"
+        }
+    ],
+    "codalab": [
+        {
+            "advisory": "codalab before 0.2.33 was using a version of gunicorn that had security vulnerabilities.",
+            "cve": null,
+            "id": "pyup.io-36386",
+            "specs": [
+                "<0.2.33"
+            ],
+            "v": "<0.2.33"
         }
     ],
     "coincurve": [
@@ -1051,9 +1062,9 @@
             "cve": "CVE-2018-10903",
             "id": "pyup.io-36351",
             "specs": [
-                "<=2.2.2"
+                ">=1.9.0,<2.3"
             ],
-            "v": "<=2.2.2"
+            "v": ">=1.9.0,<2.3"
         }
     ],
     "cryptography-vectors": [
@@ -1272,6 +1283,15 @@
             "v": "<1.1.4,>=1.2,<1.2.5"
         },
         {
+            "advisory": "django 1.11.15 fixes a phishing security issue in 1.11.14 if the :class:`~django.middleware.common.CommonMiddleware` and the\r\n:setting:`APPEND_SLASH` setting are both enabled, and if the project has a\r\nURL pattern that accepts any path ending in a slash.",
+            "cve": null,
+            "id": "pyup.io-36359",
+            "specs": [
+                "<1.11.15,>1.11.13"
+            ],
+            "v": "<1.11.15,>1.11.13"
+        },
+        {
             "advisory": "Cross-site scripting (XSS) vulnerability in Django 1.2.x before 1.2.2 allows remote attackers to inject arbitrary web script or HTML via a csrfmiddlewaretoken (aka csrf_token) cookie.",
             "cve": "CVE-2010-3082",
             "id": "pyup.io-25701",
@@ -1414,6 +1434,15 @@
             "v": "<1.8.10,>=1.9,<1.9.3"
         },
         {
+            "advisory": "django 2.0.8 fixes a security issue and several bugs in 2.0.7 if the :class:`~django.middleware.common.CommonMiddleware` and the\r\n:setting:`APPEND_SLASH` setting are both enabled, and if the project has a\r\nURL pattern that accepts any path ending in a slash",
+            "cve": null,
+            "id": "pyup.io-36358",
+            "specs": [
+                "<2.0.8,>2.0.6"
+            ],
+            "v": "<2.0.8,>2.0.6"
+        },
+        {
             "advisory": "Django 1.10.3 fixes two security issues and several bugs in 1.10.2.\r\n\r\nUser with hardcoded password created when running tests on Oracle\r\n=================================================================\r\n\r\nWhen running tests with an Oracle database, Django creates a temporary database\r\nuser. In older versions, if a password isn't manually specified in the database\r\nsettings ``TEST`` dictionary, a hardcoded password is used. This could allow\r\nan attacker with network access to the database server to connect.\r\n\r\nThis user is usually dropped after the test suite completes, but not when using\r\nthe ``manage.py test --keepdb`` option or if the user has an active session\r\n(such as an attacker's connection).\r\n\r\nA randomly generated password is now used for each test run.\r\n\r\nDNS rebinding vulnerability when ``DEBUG=True``\r\n===============================================",
             "cve": null,
             "id": "pyup.io-25722",
@@ -1448,6 +1477,16 @@
                 ">=1.11,<1.11.5"
             ],
             "v": ">=1.11,<1.11.5"
+        },
+        {
+            "advisory": "django.middleware.common.CommonMiddleware in Django 1.11.x before 1.11.15 and 2.0.x before 2.0.8 has an Open Redirect. A remote user can redirect the target user's browser to an arbitrary site.",
+            "cve": "CVE-2018-14574",
+            "id": "pyup.io-36368",
+            "specs": [
+                ">=1.11.0, <1.11.15",
+                ">=2.0.0, <2.0.8"
+            ],
+            "v": ">=1.11.0, <1.11.15,>=2.0.0, <2.0.8"
         },
         {
             "advisory": "CVE-2018-6188: Information leakage in ``AuthenticationForm``\r\n============================================================\r\n\r\nA regression in Django 1.11.8 made\r\n:class:`~django.contrib.auth.forms.AuthenticationForm` run its\r\n``confirm_login_allowed()`` method even if an incorrect password is entered.\r\nThis can leak information about a user, depending on what messages\r\n``confirm_login_allowed()`` raises. If ``confirm_login_allowed()`` isn't\r\noverridden, an attacker enter an arbitrary username and see if that user has\r\nbeen set to ``is_active=False``. If ``confirm_login_allowed()`` is overridden,\r\nmore sensitive details could be leaked.\r\n\r\nThis issue is fixed with the caveat that ``AuthenticationForm`` can no longer\r\nraise the \"This account is inactive.\" error if the authentication backend\r\nrejects inactive users (the default authentication backend, ``ModelBackend``,\r\nhas done that since Django 1.10). This issue will be revisited for Django 2.1\r\nas a fix to address the caveat will likely be too invasive for inclusion in\r\nolder versions.",
@@ -1761,6 +1800,17 @@
             "v": "<0.34.0"
         }
     ],
+    "django-allauth-underground": [
+        {
+            "advisory": "django-allauth-underground before 0.28.0 contained a vulnerability allowing an attacker to alter the\r\n  provider specific settings for ``SCOPE`` and/or ``AUTH_PARAMS`` (part of the\r\n  larger ``SOCIALACCOUNT_PROVIDERS`` setting).",
+            "cve": null,
+            "id": "pyup.io-36394",
+            "specs": [
+                "<0.28.0"
+            ],
+            "v": "<0.28.0"
+        }
+    ],
     "django-anonymizer": [
         {
             "advisory": "Changed 'Anonymizer.attributes' to require every field to be listed.  This is deal with the common security problem when a model is updated, but the Anonymizer is not updated.",
@@ -1823,6 +1873,17 @@
                 "<0.4.2"
             ],
             "v": "<0.4.2"
+        }
+    ],
+    "django-ca": [
+        {
+            "advisory": "django-ca before 1.9.0 did not properly escape x509 extensions, allowing for potential injection attacks.",
+            "cve": null,
+            "id": "pyup.io-36405",
+            "specs": [
+                "<1.9.0"
+            ],
+            "v": "<1.9.0"
         }
     ],
     "django-cms": [
@@ -2863,6 +2924,15 @@
     ],
     "flask": [
         {
+            "advisory": "flask version Before 0.12.3 contains a CWE-20: Improper Input Validation vulnerability in flask that can result in Large amount of memory usage possibly leading to denial of service. This attack appear to be exploitable via Attacker provides JSON data in incorrect encoding. This vulnerability appears to have been fixed in 0.12.3.",
+            "cve": "CVE-2018-1000656",
+            "id": "pyup.io-36388",
+            "specs": [
+                "<0.12.3"
+            ],
+            "v": "<0.12.3"
+        },
+        {
             "advisory": "flask 0.6.1 fixes a security problem that allowed clients to download arbitrary files  if the host server was a windows based operating system and the client  uses backslashes to escape the directory the files where exposed from.",
             "cve": null,
             "id": "pyup.io-25820",
@@ -2881,6 +2951,15 @@
                 "<1.3.0"
             ],
             "v": "<1.3.0"
+        },
+        {
+            "advisory": "flask-admin before 1.5.2 had an XSS vulnerability.",
+            "cve": null,
+            "id": "pyup.io-36408",
+            "specs": [
+                "<1.5.2"
+            ],
+            "v": "<1.5.2"
         }
     ],
     "flask-async": [
@@ -4061,6 +4140,24 @@
                 "<0.17"
             ],
             "v": "<0.17"
+        },
+        {
+            "advisory": "mitmproxy before 4.0.3 does not protect mitmweb against DNS rebinding.",
+            "cve": "CVE-2018-14505",
+            "id": "pyup.io-36353",
+            "specs": [
+                "<4.0.3"
+            ],
+            "v": "<4.0.3"
+        },
+        {
+            "advisory": "mitmproxy before 4.0.4 does not protect mitmweb against DNS rebinding.",
+            "cve": "CVE-2018-14505",
+            "id": "pyup.io-36352",
+            "specs": [
+                "<4.0.4"
+            ],
+            "v": "<4.0.4"
         }
     ],
     "mixminion": [
@@ -5639,6 +5736,28 @@
             "v": "<=2.6.1"
         }
     ],
+    "pycryptodome": [
+        {
+            "advisory": "pycryptodome before 3.6.6 has a vulnerability on AESNI ECB with payloads smaller than 16 bytes.",
+            "cve": null,
+            "id": "pyup.io-36384",
+            "specs": [
+                "<3.6.6"
+            ],
+            "v": "<3.6.6"
+        }
+    ],
+    "pycsw": [
+        {
+            "advisory": "A SQL injection vulnerability in pycsw all versions before 2.0.2, 1.10.5 and 1.8.6 that leads to read and extract of any data from any table in the pycsw database that the database user has access to. Also on PostgreSQL (at least) it is possible to perform updates/inserts/deletes and database modifications to any table the database user has access to.",
+            "cve": "CVE-2016-8640",
+            "id": "pyup.io-36365",
+            "specs": [
+                "<2.0.2"
+            ],
+            "v": "<2.0.2"
+        }
+    ],
     "pydal": [
         {
             "advisory": "pydal before 15.02.27 has a security flaw which could lead to db password storing in cache.",
@@ -5887,6 +6006,17 @@
                 "<0.12"
             ],
             "v": "<0.12"
+        }
+    ],
+    "pyro": [
+        {
+            "advisory": "pyro before 3.15 unsafely handles pid files in temporary directory locations and opening the pid file as root. An attacker can use this flaw to overwrite arbitrary files via symlinks.",
+            "cve": "CVE-2011-2765",
+            "id": "pyup.io-36385",
+            "specs": [
+                "<3.15"
+            ],
+            "v": "<3.15"
         }
     ],
     "pyro4": [
@@ -6341,6 +6471,17 @@
             "v": "<1.1.0"
         }
     ],
+    "python-pptx": [
+        {
+            "advisory": "python-pptx before 0.6.12 used a vulnerable version of Pillow.",
+            "cve": null,
+            "id": "pyup.io-36382",
+            "specs": [
+                "<0.6.12"
+            ],
+            "v": "<0.6.12"
+        }
+    ],
     "python-saml": [
         {
             "advisory": "python-saml before 2.1.6 is vulnerable to Signature Wrapping attacks.",
@@ -6746,6 +6887,17 @@
                 "<2.6.0"
             ],
             "v": "<2.6.0"
+        }
+    ],
+    "safety": [
+        {
+            "advisory": "safety before 1.8.4 included the cryptography version <2.3, which had a security vulnerability.",
+            "cve": null,
+            "id": "pyup.io-36367",
+            "specs": [
+                "<1.8.4"
+            ],
+            "v": "<1.8.4"
         }
     ],
     "satosa": [
@@ -7234,6 +7386,17 @@
             "v": ">0,<0"
         }
     ],
+    "tensorflow": [
+        {
+            "advisory": "tensorflow before 1.10.0 uses an insecure grpc dependency.",
+            "cve": null,
+            "id": "pyup.io-36375",
+            "specs": [
+                "<1.10.0"
+            ],
+            "v": "<1.10.0"
+        }
+    ],
     "textract": [
         {
             "advisory": "textract before 1.5.0 doesn't properly uses subprocess.call.",
@@ -7342,6 +7505,17 @@
                 "<0.17.1.14"
             ],
             "v": "<0.17.1.14"
+        }
+    ],
+    "trio-websockets": [
+        {
+            "advisory": "trio-websockets before 5.0 was vulnerable to denial of service by memory exhaustion because it didn't enforce ``max_size`` when decompressing compressed messages.",
+            "cve": null,
+            "id": "pyup.io-36390",
+            "specs": [
+                "<5.0"
+            ],
+            "v": "<5.0"
         }
     ],
     "tripleo-heat-templates": [
