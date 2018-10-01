@@ -80,6 +80,9 @@
     "bepasty": [
         "<0.3.0"
     ],
+    "bigchaindb-driver": [
+        "<0.5.2"
+    ],
     "birdhousebuilder-recipe-nginx": [
         "<0.1.5"
     ],
@@ -205,6 +208,9 @@
     ],
     "collins-client": [
         "<2.1.0"
+    ],
+    "conference-scheduler-cli": [
+        "<=0.10.1"
     ],
     "confidant": [
         "<1.1.14"
@@ -404,6 +410,9 @@
     "django-crispy-forms-ng": [
         "<0.9.0"
     ],
+    "django-crm": [
+        "<=0.2"
+    ],
     "django-dajaxice-me": [
         "<0.1.7"
     ],
@@ -506,6 +515,9 @@
     "django-rated": [
         "<1.1.2"
     ],
+    "django-registration": [
+        "<1.7"
+    ],
     "django-registration-redux": [
         "<1.7"
     ],
@@ -550,6 +562,9 @@
     "django-sticky-uploads": [
         "<0.2.0"
     ],
+    "django-storages": [
+        "<1.7"
+    ],
     "django-tastypie": [
         "<0.9.10"
     ],
@@ -575,6 +590,9 @@
     ],
     "djangorestframework-simplejwt": [
         "<1.5"
+    ],
+    "djangosaml2": [
+        "<0.17.2"
     ],
     "djblets": [
         "<0.8.3"
@@ -612,6 +630,9 @@
     "esptool": [
         "<2.5.0"
     ],
+    "eth-hash": [
+        "<0.1.5"
+    ],
     "euphorie": [
         "<6.1"
     ],
@@ -635,7 +656,8 @@
     ],
     "flask-admin": [
         "<1.3.0",
-        "<1.5.2"
+        "<1.5.2",
+        "<=1.5.2"
     ],
     "flask-async": [
         "<0.6.1"
