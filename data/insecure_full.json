@@ -392,6 +392,17 @@
             "v": "<0.3.0"
         }
     ],
+    "bigchaindb-driver": [
+        {
+            "advisory": "bigchaindb-driver before 0.5.2 used an unsecure version of `cryptoconditions` - CVE-2018-10903",
+            "cve": null,
+            "id": "pyup.io-36427",
+            "specs": [
+                "<0.5.2"
+            ],
+            "v": "<0.5.2"
+        }
+    ],
     "birdhousebuilder-recipe-nginx": [
         {
             "advisory": "birdhousebuilder-recipe-nginx  0.1.5 disables the use of SSLv3 (poodle attack).",
@@ -876,6 +887,17 @@
                 "<2.1.0"
             ],
             "v": "<2.1.0"
+        }
+    ],
+    "conference-scheduler-cli": [
+        {
+            "advisory": "In conference-scheduler-cli, a pickle.load call on imported data allows remote attackers to execute arbitrary code via a crafted .pickle file, as demonstrated by Python code that contains an os.system call.",
+            "cve": "CVE-2018-14572",
+            "id": "pyup.io-36425",
+            "specs": [
+                "<=0.10.1"
+            ],
+            "v": "<=0.10.1"
         }
     ],
     "confidant": [
@@ -1996,6 +2018,17 @@
             "v": "<0.9.0"
         }
     ],
+    "django-crm": [
+        {
+            "advisory": "MicroPyramid Django-CRM 0.2 does not use CSRF token for /users/create/, /users/##/edit/, and /accounts/##/delete/ URIs.",
+            "cve": "CVE-2018-16552",
+            "id": "pyup.io-36440",
+            "specs": [
+                "<=0.2"
+            ],
+            "v": "<=0.2"
+        }
+    ],
     "django-dajaxice-me": [
         {
             "advisory": "django-dajaxice-me  0.1.7 fixes the dajaxice callback model to improve security against XSS attacks.",
@@ -2395,6 +2428,17 @@
             "v": "<1.1.2"
         }
     ],
+    "django-registration": [
+        {
+            "advisory": "django-registration before 1.7 leaked password reset token through the Referer\r\nheader.",
+            "cve": null,
+            "id": "pyup.io-36431",
+            "specs": [
+                "<1.7"
+            ],
+            "v": "<1.7"
+        }
+    ],
     "django-registration-redux": [
         {
             "advisory": "django-registration-redux before 1.7 leaks password reset tokens through the Referer header. For more info, see: https://github.com/macropin/django-registration/pull/268",
@@ -2559,6 +2603,17 @@
             "v": "<0.2.0"
         }
     ],
+    "django-storages": [
+        {
+            "advisory": "django-storages before 1.7 - the ``S3BotoStorage`` and ``S3Boto3Storage`` backends have an insecure\r\n  default ACL of ``public-read``. It is recommended that all current users upgrade to 1.7 and audit their bucket\r\n  permissions.  Support has been added for setting ``AWS_DEFAULT_ACL = None`` and ``AWS_BUCKET_ACL =\r\n  None``. V1.7 will raise a warning if ``AWS_DEFAULT_ACL`` or ``AWS_BUCKET_ACL`` is not explicitly set.",
+            "cve": null,
+            "id": "pyup.io-36434",
+            "specs": [
+                "<1.7"
+            ],
+            "v": "<1.7"
+        }
+    ],
     "django-tastypie": [
         {
             "advisory": "The from_yaml method in serializers.py in Django Tastypie before 0.9.10 does not properly deserialize YAML data, which allows remote attackers to execute arbitrary Python code via vectors related to the yaml.load method.",
@@ -2679,6 +2734,17 @@
                 "<1.5"
             ],
             "v": "<1.5"
+        }
+    ],
+    "djangosaml2": [
+        {
+            "advisory": "djangosaml2 0.17.2 upgrades the pysaml2 dependency to version 4.6.0 which fixes a security issue.",
+            "cve": null,
+            "id": "pyup.io-36423",
+            "specs": [
+                "<0.17.2"
+            ],
+            "v": "<0.17.2"
         }
     ],
     "djblets": [
@@ -2831,6 +2897,17 @@
             "v": "<2.5.0"
         }
     ],
+    "eth-hash": [
+        {
+            "advisory": "eth-hash before 0.1.5 used an unsafe version of `pycryptodome`. 0.1.5 upgrades `pycryptodome` to `>=3.6.6,<4` to fix this recently discovered vulnerability",
+            "cve": null,
+            "id": "pyup.io-36438",
+            "specs": [
+                "<0.1.5"
+            ],
+            "v": "<0.1.5"
+        }
+    ],
     "euphorie": [
         {
             "advisory": "euphorie 6.1 fixes a security issue: modify client to always check if a survey session belongs to the current user.",
@@ -2960,6 +3037,15 @@
                 "<1.5.2"
             ],
             "v": "<1.5.2"
+        },
+        {
+            "advisory": "helpers.py in Flask-Admin 1.5.2 has Reflected XSS via a crafted URL.\r\nsee https://github.com/flask-admin/flask-admin/pull/1699",
+            "cve": "CVE-2018-16516",
+            "id": "pyup.io-36437",
+            "specs": [
+                "<=1.5.2"
+            ],
+            "v": "<=1.5.2"
         }
     ],
     "flask-async": [
