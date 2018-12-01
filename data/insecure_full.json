@@ -86,6 +86,17 @@
             "v": "<0.6.1"
         }
     ],
+    "alt-model-checkpoint": [
+        {
+            "advisory": "alt-model-checkpoint 1.0.1 upgrades dependencies, esp. for requests==2.20.0 security patch",
+            "cve": null,
+            "id": "pyup.io-36628",
+            "specs": [
+                "<1.0.1"
+            ],
+            "v": "<1.0.1"
+        }
+    ],
     "ambient-api": [
         {
             "advisory": "ambient-api 1.5.2 updates requirements.txt to use requests>=2.2.0 due to a security vulnerability.",
@@ -381,6 +392,17 @@
                 "<1.11.83"
             ],
             "v": "<1.11.83"
+        }
+    ],
+    "bakercm": [
+        {
+            "advisory": "bakercm 0.4.4 updates pythoncryptodome after security issue #16",
+            "cve": null,
+            "id": "pyup.io-36651",
+            "specs": [
+                "<0.4.4"
+            ],
+            "v": "<0.4.4"
         }
     ],
     "bbcode": [
@@ -682,6 +704,17 @@
                 "<0.3.8"
             ],
             "v": "<0.3.8"
+        }
+    ],
+    "cffconvert": [
+        {
+            "advisory": "cffconvert 1.0.3 updates requests from 2.18.4 to 2.20.0 (security bugfix)",
+            "cve": null,
+            "id": "pyup.io-36623",
+            "specs": [
+                "<1.0.3"
+            ],
+            "v": "<1.0.3"
         }
     ],
     "cfscrape": [
@@ -1017,6 +1050,17 @@
                 "<1.0.18"
             ],
             "v": "<1.0.18"
+        }
+    ],
+    "contentful": [
+        {
+            "advisory": "contentful 1.11.3 updates `requests` version due to a vulnerability found in versions `2.19` and below",
+            "cve": null,
+            "id": "pyup.io-36633",
+            "specs": [
+                "<1.11.3"
+            ],
+            "v": "<1.11.3"
         }
     ],
     "contentful-management": [
@@ -2488,6 +2532,15 @@
                 "<18.9.1"
             ],
             "v": "<18.9.1"
+        },
+        {
+            "advisory": "django-music-publisher 18.9.3 updates Django to fix a minor security issue.",
+            "cve": null,
+            "id": "pyup.io-36608",
+            "specs": [
+                "<18.9.3"
+            ],
+            "v": "<18.9.3"
         }
     ],
     "django-newsletter": [
@@ -3492,6 +3545,17 @@
             "v": "<2.5.0"
         }
     ],
+    "gitlab-languages": [
+        {
+            "advisory": "gitlab-languages 1.4.1 updates dependencies, because of a security vulnerability in request `<2.20.0`",
+            "cve": null,
+            "id": "pyup.io-36639",
+            "specs": [
+                "<1.4.1"
+            ],
+            "v": "<1.4.1"
+        }
+    ],
     "gns3-gui": [
         {
             "advisory": "gns3-gui 1.5.1 fixes a security related bug to prevent client to send empty hostname.",
@@ -4449,6 +4513,17 @@
             "v": "<0.8"
         }
     ],
+    "misago": [
+        {
+            "advisory": "misago 0.19.4 updates requests to 2.20.0 resolving potential vulnerability in HTTP connections handling.",
+            "cve": null,
+            "id": "pyup.io-36607",
+            "specs": [
+                "<0.19.4"
+            ],
+            "v": "<0.19.4"
+        }
+    ],
     "mistune": [
         {
             "advisory": "mistune before 0.7.2 is vulnerable to an XSS attack. It is possible to bypass the renderer's link security check.",
@@ -4569,6 +4644,17 @@
                 "<1.9.10"
             ],
             "v": "<1.9.10"
+        }
+    ],
+    "mollie-api-python": [
+        {
+            "advisory": "mollie-api-python 2.0.4 updates requests to 2.20.0 because of a moderate severity vulnerability in versions prior to 2.20.0",
+            "cve": null,
+            "id": "pyup.io-36650",
+            "specs": [
+                "<2.0.4"
+            ],
+            "v": "<2.0.4"
         }
     ],
     "morepath": [
@@ -6918,6 +7004,17 @@
             "v": "<2.4.0"
         }
     ],
+    "python-smooch": [
+        {
+            "advisory": "python-smooch 1.0.4 bumps requests gem due to [vulnerability](https://nvd.nist.gov/vuln/detail/CVE-2018-18074).",
+            "cve": null,
+            "id": "pyup.io-36604",
+            "specs": [
+                "<1.0.4"
+            ],
+            "v": "<1.0.4"
+        }
+    ],
     "python-zeep": [
         {
             "advisory": "python-zeep 0.4.0 adds defusedxml module for XML security issues.",
@@ -7121,15 +7218,6 @@
     ],
     "requests": [
         {
-            "advisory": "The Requests package before 2.19.1 sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network.",
-            "cve": "CVE-2018-18074",
-            "id": "pyup.io-36546",
-            "specs": [
-                "<2.19.1"
-            ],
-            "v": "<2.19.1"
-        },
-        {
             "advisory": "requests before 2.3.0 exposes Authorization or Proxy-Authorization headers on redirect.\r\n  Fix CVE-2014-1829 and CVE-2014-1830 respectively",
             "cve": null,
             "id": "pyup.io-26101",
@@ -7146,6 +7234,15 @@
                 "<2.6.0"
             ],
             "v": "<2.6.0"
+        },
+        {
+            "advisory": "The Requests package before 2.19.1 sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network.",
+            "cve": "CVE-2018-18074",
+            "id": "pyup.io-36546",
+            "specs": [
+                "<=2.19.1"
+            ],
+            "v": "<=2.19.1"
         },
         {
             "advisory": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct session fixation attacks via a cookie without a host value in a redirect.",
@@ -7336,6 +7433,17 @@
                 "<0.6.1"
             ],
             "v": "<0.6.1"
+        }
+    ],
+    "seed-stage-based-messaging": [
+        {
+            "advisory": "seed-stage-based-messaging 0.11.0 upgrades requests to fix security vulnerability",
+            "cve": null,
+            "id": "pyup.io-36653",
+            "specs": [
+                "<0.11.0"
+            ],
+            "v": "<0.11.0"
         }
     ],
     "sentry": [
@@ -7544,6 +7652,17 @@
             "v": "<0.1.0"
         }
     ],
+    "snappass": [
+        {
+            "advisory": "snappass 1.4.1 upgrades cryptography to 2.3.1 (for CVE-2018-10903)",
+            "cve": null,
+            "id": "pyup.io-36605",
+            "specs": [
+                "<1.4.1"
+            ],
+            "v": "<1.4.1"
+        }
+    ],
     "soapfish": [
         {
             "advisory": "soapfish before 0.6.0 has a potential security issue - pattern restrictions were not applied correctly.",
@@ -7641,6 +7760,17 @@
             "v": "<0.4"
         }
     ],
+    "stegano": [
+        {
+            "advisory": "stegano 0.8.6 fixes a potential security issue related to CVE-2018-18074.",
+            "cve": null,
+            "id": "pyup.io-36625",
+            "specs": [
+                "<0.8.6"
+            ],
+            "v": "<0.8.6"
+        }
+    ],
     "stormpath": [
         {
             "advisory": "stormpath before 2.0.5 is using an insecure transitive dependency (pyjwt).",
@@ -7670,6 +7800,17 @@
                 "<2.5.0"
             ],
             "v": "<2.5.0"
+        }
+    ],
+    "streamsx-objectstorage": [
+        {
+            "advisory": "streamsx-objectstorage 1.7.2 resolves security vulnerabilities in third-party libs #135",
+            "cve": null,
+            "id": "pyup.io-36618",
+            "specs": [
+                "<1.7.0"
+            ],
+            "v": "<1.7.0"
         }
     ],
     "suds": [
