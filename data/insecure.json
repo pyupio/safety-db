@@ -98,6 +98,9 @@
     "bigchaindb-driver": [
         "<0.5.2"
     ],
+    "bincrafters-envy": [
+        "<0.1.3"
+    ],
     "birdhousebuilder-recipe-nginx": [
         "<0.1.5"
     ],
@@ -118,7 +121,8 @@
         "<0.10.2"
     ],
     "block-io": [
-        "<1.1.7"
+        "<1.1.7",
+        "<1.1.9"
     ],
     "bodhi": [
         "<2.2.0",
@@ -273,6 +277,9 @@
     "creavel": [
         "<0.11.0",
         "<0.14.0"
+    ],
+    "cromwell-tools": [
+        "<1.0.0"
     ],
     "crossbar": [
         "<0.15.0",
@@ -554,6 +561,9 @@
     "django-pluggable-filebrowser": [
         "<3.4.2"
     ],
+    "django-postman": [
+        "<3.6.2"
+    ],
     "django-python3-ldap": [
         "<0.9.5",
         "<0.9.8"
@@ -614,6 +624,9 @@
     "django-tastypie": [
         "<0.9.10"
     ],
+    "django-ucamlookup": [
+        "<1.9"
+    ],
     "django-uni-form": [
         "<0.9.0"
     ],
@@ -647,7 +660,8 @@
         "<0.8.3"
     ],
     "djoser": [
-        "<0.7.0"
+        "<0.7.0",
+        "<1.3.2"
     ],
     "docker-registry": [
         "<0.8.1"
@@ -709,6 +723,7 @@
     "flask-admin": [
         "<1.3.0",
         "<1.5.2",
+        "<1.5.3",
         "<=1.5.2"
     ],
     "flask-async": [
@@ -747,6 +762,9 @@
     "fresco": [
         "<0.5.5",
         ">=0.5.0"
+    ],
+    "friendlyshell": [
+        "<1.0.3"
     ],
     "ftw-dashboard-portlets-postit": [
         "<1.3.4"
@@ -921,6 +939,9 @@
         "<=6.0.2",
         ">=6.0.0"
     ],
+    "kiwitcms": [
+        "<6.0"
+    ],
     "knowledge-repo": [
         "<0.8.0"
     ],
@@ -990,6 +1011,9 @@
         "==3.0.0b7",
         "==3.0.0b8"
     ],
+    "martypy": [
+        "<1.2"
+    ],
     "matthisk-httpsig": [
         "<1.0.0"
     ],
@@ -1051,6 +1075,9 @@
     "mr.migrator": [
         "<1.2"
     ],
+    "msgpack": [
+        "<0.6.0"
+    ],
     "mss": [
         "<2.0.18"
     ],
@@ -1084,6 +1111,9 @@
     ],
     "nfw": [
         "<0.0.7"
+    ],
+    "ngraph-mxnet": [
+        "<1.0.0"
     ],
     "noiseprotocol": [
         "<0.2.1"
@@ -1372,6 +1402,9 @@
     "pycares": [
         "<2.1.1"
     ],
+    "pyconll": [
+        "<1.1.0"
+    ],
     "pycrypto": [
         "<2.6",
         "<2.6.1",
@@ -1426,6 +1459,9 @@
     ],
     "pypiserver": [
         "<1.1.7"
+    ],
+    "pyplanet": [
+        "<0.6.2"
     ],
     "pyrad": [
         "<0.6"
@@ -1590,6 +1626,12 @@
     "qi.jabberhelpdesk": [
         "<0.30"
     ],
+    "quandl-fund-xlsx": [
+        "<0.2.1"
+    ],
+    "quilt": [
+        "<2.9.14"
+    ],
     "quintagroup-seoptimizer": [
         "<3.0.4"
     ],
@@ -1623,6 +1665,9 @@
     "restview": [
         "<2.8.1"
     ],
+    "ricloud": [
+        "<2.3.8"
+    ],
     "rope": [
         "<0.10"
     ],
@@ -1654,6 +1699,9 @@
     ],
     "satosa": [
         "<0.6.1"
+    ],
+    "sbp": [
+        "<2.4.2"
     ],
     "seed-stage-based-messaging": [
         "<0.11.0"
@@ -1692,6 +1740,9 @@
     ],
     "shiftboiler": [
         "<0.6.5"
+    ],
+    "slackeventsapi": [
+        "<2.1.0"
     ],
     "smeagol": [
         "<0.1.0"
@@ -1736,6 +1787,9 @@
     ],
     "streamsx-objectstorage": [
         "<1.7.0"
+    ],
+    "streamsx.messagehub": [
+        "<1.5.1"
     ],
     "suds": [
         "<=0.4"
@@ -1836,6 +1890,9 @@
     "twilio": [
         "<3.5.0"
     ],
+    "unicef-locations": [
+        "<1.4.2"
+    ],
     "unleashclient": [
         "<1.0.2"
     ],
@@ -1848,11 +1905,13 @@
         ">0"
     ],
     "urllib3": [
+        "<1.23",
         "==1.17",
         "==1.18"
     ],
     "vermin": [
-        "<0.4.8"
+        "<0.4.8",
+        "<0.4.9"
     ],
     "virtualenv": [
         "<1.5"
@@ -1887,6 +1946,9 @@
     ],
     "xdg": [
         "<=0.25"
+    ],
+    "yahoo-earnings-calendar": [
+        "<0.4.0"
     ],
     "yasha": [
         "<4.0"
