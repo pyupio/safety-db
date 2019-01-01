@@ -458,6 +458,17 @@
             "v": "<0.5.2"
         }
     ],
+    "bincrafters-envy": [
+        {
+            "advisory": "bincrafters-envy 0.1.3 updates the request module",
+            "cve": null,
+            "id": "pyup.io-36732",
+            "specs": [
+                "<0.1.3"
+            ],
+            "v": "<0.1.3"
+        }
+    ],
     "birdhousebuilder-recipe-nginx": [
         {
             "advisory": "birdhousebuilder-recipe-nginx  0.1.5 disables the use of SSLv3 (poodle attack).",
@@ -542,6 +553,15 @@
                 "<1.1.7"
             ],
             "v": "<1.1.7"
+        },
+        {
+            "advisory": "block-io 1.1.9 includes a Fix for Requests vulnerability: [CVE-2018-18074](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-18074)",
+            "cve": null,
+            "id": "pyup.io-36712",
+            "specs": [
+                "<1.1.9"
+            ],
+            "v": "<1.1.9"
         }
     ],
     "bodhi": [
@@ -1136,6 +1156,17 @@
                 "<0.14.0"
             ],
             "v": "<0.14.0"
+        }
+    ],
+    "cromwell-tools": [
+        {
+            "advisory": "cromwell-tools 1.0.0 updates requests to avoid security issues.",
+            "cve": null,
+            "id": "pyup.io-36659",
+            "specs": [
+                "<1.0.0"
+            ],
+            "v": "<1.0.0"
         }
     ],
     "crossbar": [
@@ -2587,6 +2618,17 @@
             "v": "<3.4.2"
         }
     ],
+    "django-postman": [
+        {
+            "advisory": "django-postman 3.6.2 fixes issue 101, for security concern, ignore the scheme and domain parts in the 'next' query param.",
+            "cve": null,
+            "id": "pyup.io-36667",
+            "specs": [
+                "<3.6.2"
+            ],
+            "v": "<3.6.2"
+        }
+    ],
     "django-python3-ldap": [
         {
             "advisory": "django-python3-ldap 0.9.5 fixes a security vulnerability where username and password could be transmitted in plain text before starting TLS.",
@@ -2815,6 +2857,17 @@
             "v": "<0.9.10"
         }
     ],
+    "django-ucamlookup": [
+        {
+            "advisory": "django-ucamlookup 1.9 fixes XXS vulnerability in template macros",
+            "cve": null,
+            "id": "pyup.io-36744",
+            "specs": [
+                "<1.9"
+            ],
+            "v": "<1.9"
+        }
+    ],
     "django-uni-form": [
         {
             "advisory": "django-uni-form  0.9.0 fixes a XSS security issue. Errors cannot be rendered safe, because field's input can be part of the error message, that would mean XSS.",
@@ -2977,6 +3030,15 @@
                 "<0.7.0"
             ],
             "v": "<0.7.0"
+        },
+        {
+            "advisory": "djoser 1.3.2 fixes vulnerability of user endpoints.",
+            "cve": null,
+            "id": "pyup.io-36711",
+            "specs": [
+                "<1.3.2"
+            ],
+            "v": "<1.3.2"
         }
     ],
     "docker-registry": [
@@ -3251,6 +3313,15 @@
             "v": "<1.5.2"
         },
         {
+            "advisory": "flask-admin 1.5.3 fixes an XSS vulnerability",
+            "cve": null,
+            "id": "pyup.io-36746",
+            "specs": [
+                "<1.5.3"
+            ],
+            "v": "<1.5.3"
+        },
+        {
             "advisory": "helpers.py in Flask-Admin 1.5.2 has Reflected XSS via a crafted URL.\r\nsee https://github.com/flask-admin/flask-admin/pull/1699",
             "cve": "CVE-2018-16516",
             "id": "pyup.io-36437",
@@ -3391,6 +3462,17 @@
                 "<0.5.5"
             ],
             "v": ">=0.5.0,<0.5.5"
+        }
+    ],
+    "friendlyshell": [
+        {
+            "advisory": "friendlyshell 1.0.3 fixes security warnings, and bugs with parsing quoted command parameters.",
+            "cve": null,
+            "id": "pyup.io-36642",
+            "specs": [
+                "<1.0.3"
+            ],
+            "v": "<1.0.3"
         }
     ],
     "ftw-dashboard-portlets-postit": [
@@ -4150,6 +4232,17 @@
             "v": ">=6.0.0,<=6.0.2"
         }
     ],
+    "kiwitcms": [
+        {
+            "advisory": "kiwitcms 6.0 includes a medium severity security update that includes new versions\r\nof Django and Patternfly.",
+            "cve": null,
+            "id": "pyup.io-36649",
+            "specs": [
+                "<6.0"
+            ],
+            "v": "<6.0"
+        }
+    ],
     "knowledge-repo": [
         {
             "advisory": "knowledge-repo 0.8.0 removed two security vulnerabilities associated with arbitrary code execution from code stored in knowledge repositories on both clients and servers via knowledge repository configuration and embedded tooling.",
@@ -4436,6 +4529,17 @@
             "v": "<2.15.1,>3.0.0,<3.0.0b9"
         }
     ],
+    "martypy": [
+        {
+            "advisory": "martypy 1.2 requests security issues in `requests` and `urllib3` dependencies",
+            "cve": null,
+            "id": "pyup.io-36739",
+            "specs": [
+                "<1.2"
+            ],
+            "v": "<1.2"
+        }
+    ],
     "matthisk-httpsig": [
         {
             "advisory": "matthisk-httpsig before 1.0.0 allowed reading keyfiles from disk as this is a huge security hole if this is used in a server framework like drf-httpsig.",
@@ -4690,6 +4794,17 @@
             "v": "<1.2"
         }
     ],
+    "msgpack": [
+        {
+            "advisory": "msgpack 0.6.0 contains some backward incompatible changes for security reason (DoS).",
+            "cve": null,
+            "id": "pyup.io-36700",
+            "specs": [
+                "<0.6.0"
+            ],
+            "v": "<0.6.0"
+        }
+    ],
     "mss": [
         {
             "advisory": "mss before 2.0.18 has a undisclosed security issue.",
@@ -4810,6 +4925,17 @@
                 "<0.0.7"
             ],
             "v": "<0.0.7"
+        }
+    ],
+    "ngraph-mxnet": [
+        {
+            "advisory": "ngraph-mxnet 1.0.0 fixed a security bug that is causing MXNet to listen on all available interfaces when running training in distributed mode.",
+            "cve": null,
+            "id": "pyup.io-36701",
+            "specs": [
+                "<1.0.0"
+            ],
+            "v": "<1.0.0"
         }
     ],
     "noiseprotocol": [
@@ -6162,6 +6288,17 @@
             "v": "<2.1.1"
         }
     ],
+    "pyconll": [
+        {
+            "advisory": "pyconll 1.1.0 updates ``requests`` dependency due to security flaw",
+            "cve": null,
+            "id": "pyup.io-36647",
+            "specs": [
+                "<1.1.0"
+            ],
+            "v": "<1.1.0"
+        }
+    ],
     "pycrypto": [
         {
             "advisory": "In the ElGamal schemes (for both encryption and signatures), g is supposed to be the generator of the entire Z^*_p group.  However, in PyCrypto 2.5 and earlier, g is more simply the generator of a random sub-group of Z^*_p.",
@@ -6433,6 +6570,17 @@
                 "<1.1.7"
             ],
             "v": "<1.1.7"
+        }
+    ],
+    "pyplanet": [
+        {
+            "advisory": "pyplanet 0.6.2 - security: Upgraded library to solve security issues (requests library).",
+            "cve": null,
+            "id": "pyup.io-36666",
+            "specs": [
+                "<0.6.2"
+            ],
+            "v": "<0.6.2"
         }
     ],
     "pyrad": [
@@ -7161,6 +7309,28 @@
             "v": "<0.30"
         }
     ],
+    "quandl-fund-xlsx": [
+        {
+            "advisory": "quandl-fund-xlsx 0.2.1  - Minor security fix, requests version now >=2.20.0",
+            "cve": null,
+            "id": "pyup.io-36655",
+            "specs": [
+                "<0.2.1"
+            ],
+            "v": "<0.2.1"
+        }
+    ],
+    "quilt": [
+        {
+            "advisory": "quilt 2.9.14 updates urllib3 version for security patch",
+            "cve": null,
+            "id": "pyup.io-36749",
+            "specs": [
+                "<2.9.14"
+            ],
+            "v": "<2.9.14"
+        }
+    ],
     "quintagroup-seoptimizer": [
         {
             "advisory": "quintagroup-seoptimizer  3.0.4 fixes a security issue for SEO Property action and view\r\n  http://plone.org/products/plone-seo/issues/24",
@@ -7298,6 +7468,17 @@
             "v": "<2.8.1"
         }
     ],
+    "ricloud": [
+        {
+            "advisory": "ricloud 2.3.8 updates requests in requirements due to vulnerability discovery.",
+            "cve": null,
+            "id": "pyup.io-36723",
+            "specs": [
+                "<2.3.8"
+            ],
+            "v": "<2.3.8"
+        }
+    ],
     "rope": [
         {
             "advisory": "base/oi/doa.py in the Rope library in CPython (aka Python) allows remote attackers to execute arbitrary code by leveraging an unsafe call to pickle.load.",
@@ -7433,6 +7614,17 @@
                 "<0.6.1"
             ],
             "v": "<0.6.1"
+        }
+    ],
+    "sbp": [
+        {
+            "advisory": "sbp 2.4.2 updates mocha away from a security vulnerability in growl [\\575](https://github.com/swift-nav/libsbp/pull/575)",
+            "cve": null,
+            "id": "pyup.io-36695",
+            "specs": [
+                "<2.4.2"
+            ],
+            "v": "<2.4.2"
         }
     ],
     "seed-stage-based-messaging": [
@@ -7641,6 +7833,17 @@
             "v": "<0.6.5"
         }
     ],
+    "slackeventsapi": [
+        {
+            "advisory": "slackeventsapi 2.1.0 updates minimum Flask version to address security vulnerability (45)",
+            "cve": null,
+            "id": "pyup.io-36729",
+            "specs": [
+                "<2.1.0"
+            ],
+            "v": "<2.1.0"
+        }
+    ],
     "smeagol": [
         {
             "advisory": "smeagol 0.1.0 has several known bugs and security issues that need to be addressed before it can be used in production.",
@@ -7811,6 +8014,17 @@
                 "<1.7.0"
             ],
             "v": "<1.7.0"
+        }
+    ],
+    "streamsx.messagehub": [
+        {
+            "advisory": "streamsx.messagehub 1.5.1 resolves security vulnerabilities in third-party libs",
+            "cve": null,
+            "id": "pyup.io-36727",
+            "specs": [
+                "<1.5.1"
+            ],
+            "v": "<1.5.1"
         }
     ],
     "suds": [
@@ -8184,6 +8398,17 @@
             "v": "<3.5.0"
         }
     ],
+    "unicef-locations": [
+        {
+            "advisory": "unicef-locations 1.4.2 updates requirements, django security alert, and moved to psycopg2-binary",
+            "cve": null,
+            "id": "pyup.io-36717",
+            "specs": [
+                "<1.4.2"
+            ],
+            "v": "<1.4.2"
+        }
+    ],
     "unleashclient": [
         {
             "advisory": "unleashclient 1.0.2 updates requests version to address security issue in dependency.",
@@ -8221,6 +8446,15 @@
     ],
     "urllib3": [
         {
+            "advisory": "urllib3 before 1.23 does not remove the Authorization HTTP header when following a cross-origin redirect (i.e., a redirect that differs in host, port, or scheme). This can allow for credentials in the Authorization header to be exposed to unintended hosts or transmitted in cleartext.",
+            "cve": "CVE-2018-20060",
+            "id": "pyup.io-36541",
+            "specs": [
+                "<1.23"
+            ],
+            "v": "<1.23"
+        },
+        {
             "advisory": "Users who are using urllib3 version 1.17 or 1.18 along with PyOpenSSL injection and OpenSSL 1.1.0 *must* upgrade to this version. This release fixes a vulnerability whereby urllib3 in the above configuration would silently fail to validate TLS certificates due to erroneously setting invalid flags in OpenSSL's ``SSL_CTX_set_verify`` function. These erroneous flags do not cause a problem in OpenSSL versions before 1.1.0, which interprets the presence of any flag as requesting certificate validation.",
             "cve": null,
             "id": "pyup.io-26170",
@@ -8240,6 +8474,15 @@
                 "<0.4.8"
             ],
             "v": "<0.4.8"
+        },
+        {
+            "advisory": "vermin 0.4.9 updates a security vulnerability in `urllib3` <1.23. It has been updated to 1.24.1. `requests` has been updates to 2.20.0 in v0.4.8.",
+            "cve": null,
+            "id": "pyup.io-36725",
+            "specs": [
+                "<0.4.9"
+            ],
+            "v": "<0.4.9"
         }
     ],
     "virtualenv": [
@@ -8370,6 +8613,17 @@
                 "<=0.25"
             ],
             "v": "<=0.25"
+        }
+    ],
+    "yahoo-earnings-calendar": [
+        {
+            "advisory": "yahoo-earnings-calendar 0.4.0  - fix(security): upgrade requests (14)",
+            "cve": null,
+            "id": "pyup.io-36697",
+            "specs": [
+                "<0.4.0"
+            ],
+            "v": "<0.4.0"
         }
     ],
     "yasha": [
