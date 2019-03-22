@@ -8008,17 +8008,6 @@
             "v": "<0.7.0"
         }
     ],
-    "rdflib": [
-        {
-            "advisory": "The CLI tools in RDFLib 4.2.2 can load Python modules from the current working directory, allowing code injection, because \"python -m\" looks in this directory, as demonstrated by rdf2dot.",
-            "cve": "CVE-2019-7653",
-            "id": "pyup.io-36882",
-            "specs": [
-                "==4.2.2"
-            ],
-            "v": "==4.2.2"
-        }
-    ],
     "recurly": [
         {
             "advisory": "The Recurly Client Python Library before 2.0.5, 2.1.16, 2.2.22, 2.3.1, 2.4.5, 2.5.1, 2.6.2 is vulnerable to a Server-Side Request Forgery vulnerability in the \"Resource.get\" method that could result in compromise of API keys or other critical resources.",
