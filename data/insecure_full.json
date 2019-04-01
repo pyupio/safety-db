@@ -11,6 +11,17 @@
             "v": ">0,<0"
         }
     ],
+    "aiida-core": [
+        {
+            "advisory": "aiida-core 0.12.3 fixes security vulnerability by upgrading `paramiko` to `2.4.2`",
+            "cve": null,
+            "id": "pyup.io-36956",
+            "specs": [
+                "<0.12.3"
+            ],
+            "v": "<0.12.3"
+        }
+    ],
     "aiocouchdb": [
         {
             "advisory": "aiocouchdb 0.6.0 now correctly set members for database security.",
@@ -256,6 +267,17 @@
                 "<2.3.1"
             ],
             "v": "<2.3.1"
+        }
+    ],
+    "ansible-runner": [
+        {
+            "advisory": "ansible-runner 1.3.1 adds fixes to make default file permissions much more secure, upgrading is recommended.",
+            "cve": null,
+            "id": "pyup.io-36995",
+            "specs": [
+                "<1.3.1"
+            ],
+            "v": "<1.3.1"
         }
     ],
     "ansible-vault": [
@@ -989,6 +1011,17 @@
             "v": "<0.2.33"
         }
     ],
+    "coinbasepro": [
+        {
+            "advisory": "coinbasepro 0.1.0 updates requests version to >=2.20.0 to address security vulnerability.",
+            "cve": null,
+            "id": "pyup.io-36975",
+            "specs": [
+                "<0.1.0"
+            ],
+            "v": "<0.1.0"
+        }
+    ],
     "coincurve": [
         {
             "advisory": "coincurve before 8.0.0 does not support the new GitHub and PyPI security requirements. \r\nBinary wheels on macOS for Python 3.5 now uses Homebrew Python for compilation due to new security requirements.",
@@ -1458,6 +1491,17 @@
                 "<0.11.0"
             ],
             "v": "<0.11.0"
+        }
+    ],
+    "debianized-jupyterhub": [
+        {
+            "advisory": "debianized-jupyterhub 0.9.51 updates to release 0.9.5 + NB 5.7.7 (fix for Open Redirect vulnerability)",
+            "cve": null,
+            "id": "pyup.io-37002",
+            "specs": [
+                "<0.9.51"
+            ],
+            "v": "<0.9.51"
         }
     ],
     "definitions": [
@@ -3296,6 +3340,17 @@
             "v": "<0.8.1"
         }
     ],
+    "donfig": [
+        {
+            "advisory": "An issue was discovered in Donfig 0.3.0. There is a vulnerability in the collect_yaml method in config_obj.py. It can execute arbitrary Python commands, resulting in command execution.",
+            "cve": "CVE-2019-7537",
+            "id": "pyup.io-36976",
+            "specs": [
+                "==0.3.0"
+            ],
+            "v": "==0.3.0"
+        }
+    ],
     "dpaste": [
         {
             "advisory": "dpaste 2.8 fixes a XSS bug where HTML tags were not properly escaped with the simple  ``code`` lexer.",
@@ -3657,6 +3712,17 @@
                 "<1.1.3"
             ],
             "v": "<1.1.3"
+        }
+    ],
+    "flask-ipban": [
+        {
+            "advisory": "flask-ipban 0.2.2 fixes a yaml loading vulnerability.",
+            "cve": null,
+            "id": "pyup.io-36997",
+            "specs": [
+                "<0.2.2"
+            ],
+            "v": "<0.2.2"
         }
     ],
     "flask-logger": [
@@ -4062,6 +4128,17 @@
                 "<1.5.4"
             ],
             "v": "<1.5.4"
+        }
+    ],
+    "guillotina": [
+        {
+            "advisory": "guillotina 4.5.8 fixes memory leak in security policy lookups",
+            "cve": null,
+            "id": "pyup.io-36961",
+            "specs": [
+                "<4.5.8"
+            ],
+            "v": "<4.5.8"
         }
     ],
     "henosis": [
@@ -4684,6 +4761,17 @@
                 "<1.3.2"
             ],
             "v": "<1.3.2"
+        }
+    ],
+    "kuber": [
+        {
+            "advisory": "kuber 9.0.0a1 bumps urllib3 version to pick up security fix for CVE-2018-20060.",
+            "cve": null,
+            "id": "pyup.io-36979",
+            "specs": [
+                "<9.0.0a1"
+            ],
+            "v": "<9.0.0a1"
         }
     ],
     "kubernetes": [
@@ -7635,6 +7723,17 @@
             "v": "<=0.8.0"
         }
     ],
+    "python-gnupg": [
+        {
+            "advisory": "python-gnupg 0.4.3 allows context-dependent attackers to trick gnupg to decrypt other ciphertext than intended. To perform the attack, the passphrase to gnupg must be controlled by the adversary and the ciphertext should be trusted.",
+            "cve": "CVE-2019-6690",
+            "id": "pyup.io-36964",
+            "specs": [
+                "==0.4.3"
+            ],
+            "v": "==0.4.3"
+        }
+    ],
     "python-jose": [
         {
             "advisory": "python-jose before 1.3.2 allows attackers to have unspecified impact by leveraging failure to use a constant time comparison for HMAC keys.",
@@ -8028,6 +8127,26 @@
                 "<=2.6.2"
             ],
             "v": "<=2.6.2"
+        }
+    ],
+    "remme": [
+        {
+            "advisory": "remme 0.2.1alpha reviewed and fixed security issues on token operations.",
+            "cve": null,
+            "id": "pyup.io-36973",
+            "specs": [
+                "<0.2.1alpha"
+            ],
+            "v": "<0.2.1alpha"
+        },
+        {
+            "advisory": "remme 0.5.0alpha upgrades py-cryptography to mitigate CVE-2018-10903.",
+            "cve": null,
+            "id": "pyup.io-36971",
+            "specs": [
+                "<0.5.0-alpha"
+            ],
+            "v": "<0.5.0-alpha"
         }
     ],
     "requests": [
@@ -8607,6 +8726,17 @@
             "v": "<2.3.2"
         }
     ],
+    "splunk-sdk": [
+        {
+            "advisory": "Splunk-SDK-Python before 1.6.6 does not properly verify untrusted TLS server certificates, which could result in man-in-the-middle attacks.",
+            "cve": "CVE-2019-5729",
+            "id": "pyup.io-36969",
+            "specs": [
+                "<1.6.6"
+            ],
+            "v": "<1.6.6"
+        }
+    ],
     "spud": [
         {
             "advisory": "spud before 0.8 doesn't check permissions. Anybody could edit photos.",
@@ -9119,6 +9249,17 @@
             "v": "<1.4.2"
         }
     ],
+    "unicef-rest-export": [
+        {
+            "advisory": "unicef-rest-export 0.5.2 updates django and pyyaml requirements for security patches",
+            "cve": null,
+            "id": "pyup.io-36990",
+            "specs": [
+                "<0.5.2"
+            ],
+            "v": "<0.5.2"
+        }
+    ],
     "unleashclient": [
         {
             "advisory": "unleashclient 1.0.2 updates requests version to address security issue in dependency.",
@@ -9292,6 +9433,17 @@
             "v": "<4.7.0"
         }
     ],
+    "webargs": [
+        {
+            "advisory": "webargs 5.1.3 fixes race condition between parallel requests when the cache is used: `CVE-2019-9710`",
+            "cve": null,
+            "id": "pyup.io-36963",
+            "specs": [
+                "<5.1.3"
+            ],
+            "v": "<5.1.3"
+        }
+    ],
     "websockets": [
         {
             "advisory": "websockets 5.0 fixes a denial of service by memory exhaustion vulnerability.\r\n\r\n**Version 5.0 adds a** ``user_info`` **field to the return value of**\r\n    :func:`~uri.parse_uri` **and** :class:`~uri.WebSocketURI` **.**\r\n\r\n    If you're unpacking :class:`~websockets.WebSocketURI` into four variables,\r\n    adjust your code to account for that fifth field.",
@@ -9387,6 +9539,17 @@
                 "<0.1.14"
             ],
             "v": "<0.1.14"
+        }
+    ],
+    "yorm": [
+        {
+            "advisory": "yorm 1.6.1 updates `PyYAML` to `5.1` for security fixes.",
+            "cve": null,
+            "id": "pyup.io-36983",
+            "specs": [
+                "<1.6.1"
+            ],
+            "v": "<1.6.1"
         }
     ],
     "yubiauth": [
