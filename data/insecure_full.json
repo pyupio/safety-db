@@ -55,6 +55,17 @@
             "v": "<0.2.0"
         }
     ],
+    "aioli": [
+        {
+            "advisory": "aioli 0.16.3 fixes StaticRoute vulnerability to directory traversal attacks.",
+            "cve": null,
+            "id": "pyup.io-37007",
+            "specs": [
+                "<0.16.3"
+            ],
+            "v": "<0.16.3"
+        }
+    ],
     "aldryn-django": [
         {
             "advisory": "aldryn-django 1.8.10.1 uses an insecure Django release, 1.8.9.",
@@ -2346,6 +2357,15 @@
     ],
     "django-ca": [
         {
+            "advisory": "django-ca 1.10.0 stores CA private keys in the more secure PKCS8 format.",
+            "cve": null,
+            "id": "pyup.io-37015",
+            "specs": [
+                "<1.10.0"
+            ],
+            "v": "<1.10.0"
+        },
+        {
             "advisory": "django-ca before 1.9.0 did not properly escape x509 extensions, allowing for potential injection attacks.",
             "cve": null,
             "id": "pyup.io-36405",
@@ -3316,6 +3336,15 @@
                 "<1.3.2"
             ],
             "v": "<1.3.2"
+        },
+        {
+            "advisory": "djoser 1.5.1 fixes a vulnerability of UserViewSet that allowed to create new accounts on wrong endpoint.",
+            "cve": null,
+            "id": "pyup.io-37010",
+            "specs": [
+                "<1.5.1"
+            ],
+            "v": "<1.5.1"
         }
     ],
     "docker": [
