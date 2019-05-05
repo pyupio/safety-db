@@ -32,9 +32,11 @@ setup(
     author='Jannis Gebauer',
     author_email='support@pyup.io',
     url='https://github.com/pyupio/safety-db/',
-    py_modules=['safety_db'],
+    # py_modules=['safety_db'],
     license='Attribution-NonCommercial-ShareAlike 4.0 International',
     install_requires=[],
     tests_require=tests_require,
     include_package_data=True,
+    packages=['safety_db'],
+    package_data={'safety_db': ['data/*.json']}
 )

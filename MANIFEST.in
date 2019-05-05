@@ -4,5 +4,5 @@ include CHANGELOG.rst
 include requirements.txt
 include setup.cfg
 
-recursive-include data *.json
+recursive-include safety_db/data *.json
 recursive-include docs *
