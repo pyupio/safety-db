@@ -8198,7 +8198,7 @@
             "v": "<2.6.0"
         },
         {
-            "advisory": "The Requests package before 2.19.1 sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network.",
+            "advisory": "The Requests package before 2.20.0 sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network.",
             "cve": "CVE-2018-18074",
             "id": "pyup.io-36546",
             "specs": [
