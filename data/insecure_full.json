@@ -797,6 +797,17 @@
             "v": "<1.0.21"
         }
     ],
+    "candig-server": [
+        {
+            "advisory": "candig-server 0.9.2 changes: Jinja2 package has been updated to resolve security vulnerability issues.",
+            "cve": null,
+            "id": "pyup.io-37218",
+            "specs": [
+                "<0.9.2"
+            ],
+            "v": "<0.9.2"
+        }
+    ],
     "cbapi": [
         {
             "advisory": "The underlying CbAPI connection class erroneously disabled hostname validation by default. This does *not* affect code that uses CbAPI through the public interfaces documented here; it only affects code that accesses the new  ``CbAPISessionAdapter`` class directly. This class was introduced in version 1.3.3. Regardless, it is strongly recommended that all users currently using 1.3.3 upgrade to 1.3.4.",
@@ -1009,6 +1020,17 @@
                 "<1.0.0"
             ],
             "v": "<1.0.0"
+        }
+    ],
+    "cockroachdb": [
+        {
+            "advisory": "cockroachdb 0.3.2 updated urllib3 to remove security vulnerability.",
+            "cve": null,
+            "id": "pyup.io-37264",
+            "specs": [
+                "<0.3.2"
+            ],
+            "v": "<0.3.2"
         }
     ],
     "codalab": [
@@ -1577,6 +1599,17 @@
             "v": "<1.3.1"
         }
     ],
+    "destringcare": [
+        {
+            "advisory": "destringcare 0.0.4 change: Removed `pycrypto` due to security issue",
+            "cve": null,
+            "id": "pyup.io-37228",
+            "specs": [
+                "<0.0.4"
+            ],
+            "v": "<0.0.4"
+        }
+    ],
     "discogs-client": [
         {
             "advisory": "discogs-client 2.2.2 updates dependencies to resolve security vulnerabilities",
@@ -1694,6 +1727,26 @@
                 "<1.11.19,>=1.11.0"
             ],
             "v": "<1.11.19,>=1.11.0"
+        },
+        {
+            "advisory": "An issue was discovered in Django 1.11 before 1.11.22, 2.1 before 2.1.10, and 2.2 before 2.2.3. An HTTP request is not redirected to HTTPS when the SECURE_PROXY_SSL_HEADER and SECURE_SSL_REDIRECT settings are used, and the proxy connects to Django via HTTPS. In other words, django.http.HttpRequest.scheme has incorrect behavior when a client uses HTTP.",
+            "cve": "CVE-2019-12781",
+            "id": "pyup.io-37261",
+            "specs": [
+                "<1.11.22,>1.11",
+                "<2.1.10,>2.1",
+                "<2.2.3,>2.2"
+            ],
+            "v": "<1.11.22,>1.11,<2.1.10,>2.1,<2.2.3,>2.2"
+        },
+        {
+            "advisory": "Django 1.11.22 fixes a security issue in 1.11.21.",
+            "cve": null,
+            "id": "pyup.io-37259",
+            "specs": [
+                "<1.11.22,>1.11.21"
+            ],
+            "v": "<1.11.22,>1.11.21"
         },
         {
             "advisory": "Cross-site scripting (XSS) vulnerability in Django 1.2.x before 1.2.2 allows remote attackers to inject arbitrary web script or HTML via a csrfmiddlewaretoken (aka csrf_token) cookie.",
@@ -2681,6 +2734,17 @@
             "v": "<1.0.7"
         }
     ],
+    "django-howl": [
+        {
+            "advisory": "django-howl 1.0.4 updates django version to avoid security warnings.",
+            "cve": null,
+            "id": "pyup.io-37240",
+            "specs": [
+                "<1.0.4"
+            ],
+            "v": "<1.0.4"
+        }
+    ],
     "django-html5-appcache": [
         {
             "advisory": "django-html5-appcache 0.3.0 added a security check for sensitive views.",
@@ -2977,6 +3041,17 @@
                 "<0.3.0"
             ],
             "v": "<0.3.0"
+        }
+    ],
+    "django-rest-registration": [
+        {
+            "advisory": "verification.py in django-rest-registration (aka Django REST Registration library) before 0.5.0 relies on a static string for signatures (i.e., the Django Signing API is misused), which allows remote attackers to spoof the verification process. This occurs because incorrect code refactoring led to calling a security-critical function with an incorrect argument.",
+            "cve": "CVE-2019-13177",
+            "id": "pyup.io-37266",
+            "specs": [
+                "<0.5.0"
+            ],
+            "v": "<0.5.0"
         }
     ],
     "django-revproxy": [
@@ -3455,6 +3530,17 @@
             "v": "<1.0.5"
         }
     ],
+    "eh": [
+        {
+            "advisory": "eh 0.2.8 changes: Fixed pyyaml security issue",
+            "cve": null,
+            "id": "pyup.io-37217",
+            "specs": [
+                "<0.2.8"
+            ],
+            "v": "<0.2.8"
+        }
+    ],
     "electrumx": [
         {
             "advisory": "electrumx before 1.4.1 did not use PROTOCOL_MIN to 1.0; this did not prevent 2.9.x clients from connecting\r\n  and encouraging upgrades to more recent clients without the security hole.",
@@ -3548,6 +3634,17 @@
                 "<6.1"
             ],
             "v": "<6.1"
+        }
+    ],
+    "event-tracking": [
+        {
+            "advisory": "event-tracking 0.2.9 changes: This upgrade will fix the security vulnerability in the old versions of jinja2.",
+            "cve": null,
+            "id": "pyup.io-37232",
+            "specs": [
+                "<0.2.9"
+            ],
+            "v": "<0.2.9"
         }
     ],
     "eyed3": [
@@ -4314,6 +4411,15 @@
                 "<2.0.5"
             ],
             "v": "<2.0.5"
+        },
+        {
+            "advisory": "httprunner 2.1.3 changes: replace eval mechanism with builtins to prevent security vulnerabilities",
+            "cve": null,
+            "id": "pyup.io-37216",
+            "specs": [
+                "<2.1.3"
+            ],
+            "v": "<2.1.3"
         }
     ],
     "httpsig": [
@@ -4527,6 +4633,17 @@
                 "<2.3.0"
             ],
             "v": "<2.3.0"
+        }
+    ],
+    "iso6709": [
+        {
+            "advisory": "iso6709 0.1.4 bumped development versions for security fixes",
+            "cve": null,
+            "id": "pyup.io-37250",
+            "specs": [
+                "<0.1.4"
+            ],
+            "v": "<0.1.4"
         }
     ],
     "isso": [
@@ -4823,6 +4940,28 @@
                 "<8.0.3"
             ],
             "v": "<8.0.3"
+        }
+    ],
+    "kytos": [
+        {
+            "advisory": "kytos 2019.1b3 change: Changed some dependencies versions in order to fix security bugs",
+            "cve": null,
+            "id": "pyup.io-37226",
+            "specs": [
+                "<2019.1b3"
+            ],
+            "v": "<2019.1b3"
+        }
+    ],
+    "kytos-utils": [
+        {
+            "advisory": "kytos-utils 2019.1b3 change: Updated requirements versions in order to fix some security bugs",
+            "cve": null,
+            "id": "pyup.io-37225",
+            "specs": [
+                "<2019.1b3"
+            ],
+            "v": "<2019.1b3"
         }
     ],
     "lambda-tools": [
@@ -6629,6 +6768,17 @@
             "v": "<0.4.2"
         }
     ],
+    "podder-task-base": [
+        {
+            "advisory": "podder-task-base 0.4.0 changes: Update version of SQLAlchemy, Jinja for security reason",
+            "cve": null,
+            "id": "pyup.io-37260",
+            "specs": [
+                "<0.4.0"
+            ],
+            "v": "<0.4.0"
+        }
+    ],
     "pokedex.py": [
         {
             "advisory": "pokedex.py 1.1.2 updates `requests` package to `>=2.20.0,<3.0.0` to fix information exposure vulnerability",
@@ -6638,6 +6788,17 @@
                 "<1.1.2"
             ],
             "v": "<1.1.2"
+        }
+    ],
+    "polemarch": [
+        {
+            "advisory": "polemarch 1.2.1 change: Update `bootstrap` and `moment.js` for security reasons.",
+            "cve": null,
+            "id": "pyup.io-37229",
+            "specs": [
+                "<1.2.1"
+            ],
+            "v": "<1.2.1"
         }
     ],
     "poorwsgi": [
@@ -7218,6 +7379,17 @@
             "v": "<0.4.2"
         }
     ],
+    "pyoes": [
+        {
+            "advisory": "pyoes 0.9.0 change: Libs updaten - security alert",
+            "cve": null,
+            "id": "pyup.io-37254",
+            "specs": [
+                "<0.9.0"
+            ],
+            "v": "<0.9.0"
+        }
+    ],
     "pyopenssl": [
         {
             "advisory": "The X509Extension in pyOpenSSL before 0.13.1 does not properly handle a '\\0' character in a domain name in the Subject Alternative Name field of an X.509 certificate, which allows man-in-the-middle attackers to spoof arbitrary SSL servers via a crafted certificate issued by a legitimate Certification Authority.",
@@ -7484,6 +7656,17 @@
                 "<0.7.1"
             ],
             "v": "<0.7.1"
+        }
+    ],
+    "pytest-aoc": [
+        {
+            "advisory": "pytest-aoc 1.2a6 removes security misfeature: no cookies inside setup.cfg.",
+            "cve": null,
+            "id": "pyup.io-37267",
+            "specs": [
+                "<1.2a6"
+            ],
+            "v": "<1.2a6"
         }
     ],
     "pytest-devpi-server": [
@@ -7838,6 +8021,15 @@
                 "<2016.1.a1"
             ],
             "v": "<2016.1.a1"
+        },
+        {
+            "advisory": "python-openflow 2019.1b3 change: Updated dependencies versions in order to fix security bugs.",
+            "cve": null,
+            "id": "pyup.io-37224",
+            "specs": [
+                "<2019.1b3"
+            ],
+            "v": "<2019.1b3"
         }
     ],
     "python-otr": [
@@ -8280,6 +8472,17 @@
                 "<2.0.5"
             ],
             "v": "<2.0.5"
+        }
+    ],
+    "robotraconteur": [
+        {
+            "advisory": "robotraconteur 0.9.0 changes: The `LocalTransport` file handle locations have been moved for increased security",
+            "cve": null,
+            "id": "pyup.io-37221",
+            "specs": [
+                "<0.9.0"
+            ],
+            "v": "<0.9.0"
         }
     ],
     "rope": [
@@ -9504,6 +9707,17 @@
             "v": "<0.8"
         }
     ],
+    "whitenoise": [
+        {
+            "advisory": "whitenoise 4.1.3 change: Fix potential path traversal attack while running in autorefresh mode on\r\n   Windows",
+            "cve": null,
+            "id": "pyup.io-37275",
+            "specs": [
+                "<4.1.3"
+            ],
+            "v": "<4.1.3"
+        }
+    ],
     "will": [
         {
             "advisory": "will before 0.5.4 uses a insecure transitive dependency (bottle).",
@@ -9535,6 +9749,17 @@
                 "<=0.25"
             ],
             "v": "<=0.25"
+        }
+    ],
+    "xtea3": [
+        {
+            "advisory": "xtea3 1.0.0 change: Removal of CBCMAC (security reasons)",
+            "cve": null,
+            "id": "pyup.io-37222",
+            "specs": [
+                "<1.0.0"
+            ],
+            "v": "<1.0.0"
         }
     ],
     "yahoo-earnings-calendar": [
