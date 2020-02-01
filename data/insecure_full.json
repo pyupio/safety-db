@@ -9762,6 +9762,17 @@
             "v": "<1.0.0"
         }
     ],
+    "xuper": [
+        {
+            "advisory": "xuper 3.2.0 validates autogen tx to avoid fake transaction attack; Fix UTXO with negative frozen heigh could pass transaction check; Check the number of coinbase transactions in a block to avoid byzantine miner;",
+            "cve": null,
+            "id": "pyup.io-37718",
+            "specs": [
+                "<3.2.0"
+            ],
+            "v": "<3.2.0"
+        }
+    ],
     "yahoo-earnings-calendar": [
         {
             "advisory": "yahoo-earnings-calendar 0.4.0  - fix(security): upgrade requests (14)",
