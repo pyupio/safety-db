@@ -8644,6 +8644,17 @@
             "v": "<2.4.2"
         }
     ],
+    "scvae": [
+        {
+            "advisory": "scvae 2.1.1 updates TensorFlow because of a security vulnerability.",
+            "cve": null,
+            "id": "pyup.io-37932",
+            "specs": [
+                "<2.1.1"
+            ],
+            "v": "<2.1.1"
+        }
+    ],
     "seed-stage-based-messaging": [
         {
             "advisory": "seed-stage-based-messaging 0.11.0 upgrades requests to fix security vulnerability",
