@@ -16,15 +16,16 @@ class TestData(unittest.TestCase):
 
     def test_using_valid_specifier_sets(self):
 
-        def test_spec(spec, db):
+        def test_spec(pkg, spec, db):
             try:
                 SpecifierSet(spec)
             except InvalidSpecifier as e:
-                self.fail("Invalid specifier in {db}: {e}".format(db=db, e=e))
+                message = "Invalid specifier in {db} for {pkg}: {e}"
+                self.fail(message.format(db=db, e=e, pkg=pkg))
 
-        for specifiers in self.db.values():
+        for pkg, specifiers in self.db.items():
             for specifier in specifiers:
-                test_spec(specifier, "insecure.json")
+                test_spec(pkg, specifier, "insecure.json")
 
     def test_main_module(self):
         self.assertTrue(len(INSECURE) > 0)
