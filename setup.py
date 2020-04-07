@@ -34,10 +34,9 @@ setup(
     author_email='support@pyup.io',
     url='https://github.com/pyupio/safety-db/',
     package_dir={
-        'safety_db_data': 'data',
+        'safety_db': 'data',
     },
-    packages=['safety_db_data'],
-    py_modules=['safety_db'],
+    packages=['safety_db'],
     license='Attribution-NonCommercial-ShareAlike 4.0 International',
     install_requires=[],
     tests_require=tests_require,
