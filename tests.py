@@ -1,31 +1,31 @@
-import unittest
 import json
-from packaging.specifiers import SpecifierSet, InvalidSpecifier
+import unittest
+
+from packaging.specifiers import InvalidSpecifier, SpecifierSet
+from parameterized import parameterized
 
 from safety_db import INSECURE, INSECURE_FULL
 
 
+def generatePackageSpecifiers():
+    with open("data/insecure.json") as f:
+        database = json.loads(f.read())
+    for pkg, all_specs in database.items():
+        for spec in all_specs:
+            yield pkg, spec
+
+
 class TestData(unittest.TestCase):
 
-    def setUp(self):
-        with open("data/insecure.json") as f:
-            try:
-                self.db = json.loads(f.read())
-            except ValueError as e:
-                self.fail("No valid json in insecure.json: {}".format(e),)
-
-    def test_using_valid_specifier_sets(self):
-
-        def test_spec(pkg, spec, db):
-            try:
-                SpecifierSet(spec)
-            except InvalidSpecifier as e:
-                message = "Invalid specifier in {db} for {pkg}: {e}"
-                self.fail(message.format(db=db, e=e, pkg=pkg))
-
-        for pkg, specifiers in self.db.items():
-            for specifier in specifiers:
-                test_spec(pkg, specifier, "insecure.json")
+    @parameterized.expand(generatePackageSpecifiers)
+    def test_using_valid_specifier_sets(self, pkg, spec):
+        message = f"Bad specifier for {pkg}: {spec!r}"
+        try:
+            specifier_set = SpecifierSet(spec)
+        except InvalidSpecifier:
+            specifier_set = None
+        self.failUnless(specifier_set, msg=message)
+        self.assertIsInstance(specifier_set, SpecifierSet, message)
 
     def test_main_module(self):
         self.assertTrue(len(INSECURE) > 0)

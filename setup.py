@@ -11,6 +11,7 @@ except:
 
 tests_require = [
     'packaging',
+    'parameterized',
 ]
 
 setup(
