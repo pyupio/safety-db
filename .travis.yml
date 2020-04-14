@@ -8,9 +8,11 @@ deploy:
   provider: pypi
   password:
     secure: P0AZzAsxJboZEEwIxpagxhSb6Uary9omVJJV6x1XDTeZ2AZVZ5C+VTWB7vPUDgsLwGwISCihTJzip8qAHFJ1ryi/7Q5cEDkPV+cWbd58JZrgu7ja3froEbPUtQCfvJ5kwQHtK3NhsXFWtOfwo3gPJnhBaP8/cd17YtQGNi+WR4IWsULdKD/xuoFh5EG8ElQ+MAqUgvIiI0uORrYcEBRajkVQ0cqN4TJmaS7eS2F6BEE3jNs3j+qhqvMLtMM5sRoesC+O+l34nqcfEI45ibI/FqZ2yZQPFw0oIu9rEFQBt14hZU8ac99z9bApc8ywjKU6YpFbjJXCZQwpQLjgXWp/RfrOC/Rkki1g56VLtI4laRu2M9edCdRWoTg15KfRqer+xBQR0+ftkBxWYCQiuQ+nfnN1FrwymujAm9A8YdPAz/uGC51e4z0kDDZifid32BSeNkgGQfaw+MOqrsqjCQX4ywSgMz5zNyMTMyONLg45G7jwLP8VPo0eBldHoTbtoPNc3PBnEMB2Tb/nQ5SvwqwJGpbniZX5bwgkDE1G9ICVMfnwyKrbcEH5XL1L8TqzedUa5TrtLU5J3KDl9xKWYcmA9PN0f2b5xCHvF2y7ygrnBCgkvb8Hf0hGORw4JWERXVrFf+qR1aYMe6CkIq8gtD5j2EGK0+jnj2a0nYXQwPFLSR8=
-install: pip install -r requirements.txt
 language: python
 python: 3.6
+install:
+  - pip install -r requirements.txt
+  - pip install .
 script: python tests.py
 notifications:
   email: false

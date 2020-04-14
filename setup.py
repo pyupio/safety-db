@@ -1,13 +1,25 @@
-import os
+import re
+from os import path
 
 from setuptools import setup
 
-from safety_db import __version__ as version
+here = path.abspath(path.dirname(__file__))
 
-try:
-    readme = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
-except:
-    readme = ''
+
+# Get current version
+with open(path.join(here, 'data', '__init__.py')) as fp:
+    main_package = fp.read()
+version_re = r"^__version__\s*=\s*['\"]([^'\"]*)['\"]"
+version_match = re.search(version_re, main_package, re.M)
+if not version_match:
+    raise RuntimeError("Unable to find version string.")
+version = version_match.group(1)
+
+
+# Get the long description from the README file
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 
 tests_require = [
     'packaging',
@@ -18,7 +30,7 @@ setup(
     name='safety-db',
     version=version,
     description="A curated database of insecure Python packages",
-    long_description=readme,
+    long_description=long_description,
     classifiers=[
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3.4",
