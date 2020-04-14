@@ -1765,6 +1765,15 @@
                 "<1.3.0"
             ],
             "v": "<1.3.0"
+        },
+        {
+            "advisory": "Confluent-kafka 1.4.0 includes two security issues in the SASL SCRAM protocol handler:\r\n * The client nonce, which is expected to be a random string, was a static string.\r\n * If `sasl.username` and `sasl.password` contained characters that needed escaping, a buffer overflow and heap corruption would occur. This was protected, but too late, by an assertion.",
+            "cve": null,
+            "id": "pyup.io-38165",
+            "specs": [
+                "<1.4.0"
+            ],
+            "v": "<1.4.0"
         }
     ],
     "conn-check": [
@@ -1840,6 +1849,15 @@
                 "<1.0.3"
             ],
             "v": "<1.0.3"
+        },
+        {
+            "advisory": "Cookie-manager 1.1.0 bumps Bleach to patch a vulnerability.",
+            "cve": null,
+            "id": "pyup.io-38153",
+            "specs": [
+                "<1.1.0"
+            ],
+            "v": "<1.1.0"
         }
     ],
     "cookiecutter": [
@@ -2231,6 +2249,17 @@
                 "<1.0.1"
             ],
             "v": "<1.0.1"
+        }
+    ],
+    "deeposlandia": [
+        {
+            "advisory": "Deeposlandia 0.6 updates its dependencies, especially `Tensorflow`, due to vulnerability issues.",
+            "cve": null,
+            "id": "pyup.io-38133",
+            "specs": [
+                "<0.6"
+            ],
+            "v": "<0.6"
         }
     ],
     "definitions": [
@@ -3402,6 +3431,15 @@
                 "<0.22.2"
             ],
             "v": "<0.22.2"
+        },
+        {
+            "advisory": "Django-awl 1.0 updates the minimum library requirements for django 2.0.2 and 2.1.2 to reflect security updates.",
+            "cve": null,
+            "id": "pyup.io-38139",
+            "specs": [
+                "<1.0"
+            ],
+            "v": "<1.0"
         }
     ],
     "django-basicauth": [
@@ -3812,6 +3850,17 @@
                 "<0.3.0"
             ],
             "v": "<0.3.0"
+        }
+    ],
+    "django-idempotency-key": [
+        {
+            "advisory": "Django-idempotency-key 1.1.0 drops support for Django (1.9, 1.10, 1.11). Django 1.11 was dropped because of security issues and is near to its end of life support. Django-idempotency-key 1.1.0 also updates some packages with security issues: Django (>=2.x), Bleach (>=3.1.4), Urllib3 (>=1.24.2).",
+            "cve": null,
+            "id": "pyup.io-38162",
+            "specs": [
+                "<1.1.0"
+            ],
+            "v": "<1.1.0"
         }
     ],
     "django-initial-avatars": [
@@ -4255,6 +4304,17 @@
                 "<2.4.0"
             ],
             "v": "<2.4.0"
+        }
+    ],
+    "django-smart-lists": [
+        {
+            "advisory": "Django-smart-lists 1.0.26 fixes a XSS vulnerability in the render_function.",
+            "cve": null,
+            "id": "pyup.io-38150",
+            "specs": [
+                "<1.0.26"
+            ],
+            "v": "<1.0.26"
         }
     ],
     "django-smart-selects": [
@@ -4994,15 +5054,6 @@
                 "<0.1"
             ],
             "v": "<0.1"
-        },
-        {
-            "advisory": "Faker 2.1.2: `bundler-audit` has identified that i18 has a security vulnerability, that has been fixed in the 0.8 version.",
-            "cve": null,
-            "id": "pyup.io-37658",
-            "specs": [
-                "<2.1.2"
-            ],
-            "v": "<2.1.2"
         }
     ],
     "fast-curator": [
@@ -5065,6 +5116,26 @@
                 "<0.18.2"
             ],
             "v": "<0.18.2"
+        }
+    ],
+    "fedora": [
+        {
+            "advisory": "Fedora 0.3.10 has some methods to help deal with CSRF, which is a vulnerability that can allow malicious web sites to execute server methods on behalf of an authenticated user.",
+            "cve": null,
+            "id": "pyup.io-38173",
+            "specs": [
+                "<0.3.10"
+            ],
+            "v": "<0.3.10"
+        },
+        {
+            "advisory": "Fedora 0.3.34 fixes the jsglobals.html template to escape usernames and human names to fix a potential XSS flaw. It also makes flask-fas-openid check that the page it is returning the user to after authentication is from within the application.",
+            "cve": null,
+            "id": "pyup.io-38171",
+            "specs": [
+                "<0.3.34"
+            ],
+            "v": "<0.3.34"
         }
     ],
     "feedparser": [
@@ -5159,6 +5230,17 @@
                 "<0.38.0"
             ],
             "v": "<0.38.0"
+        }
+    ],
+    "flambe": [
+        {
+            "advisory": "Flambe 0.4.16 fixes a vulnerability with PyYAML < 5.3.1.",
+            "cve": null,
+            "id": "pyup.io-38138",
+            "specs": [
+                "<0.4.16"
+            ],
+            "v": "<0.4.16"
         }
     ],
     "flashfocus": [
@@ -6178,16 +6260,7 @@
     ],
     "im": [
         {
-            "advisory": "Im 1.5.0 removes the use of non-secure Pickle data.",
-            "cve": null,
-            "id": "pyup.io-37434",
-            "specs": [
-                "1.5.0"
-            ],
-            "v": "1.5.0"
-        },
-        {
-            "advisory": "im before 1.5.0 removes use of insecure Pickle data.",
+            "advisory": "im 1.5.0 removes use of insecure Pickle data.",
             "cve": null,
             "id": "pyup.io-36819",
             "specs": [
@@ -6216,6 +6289,15 @@
                 "<2.0.2"
             ],
             "v": "<2.0.2"
+        },
+        {
+            "advisory": "Indico 2.2.8 updates Bleach to fix a regular expression denial of service vulnerability. It also updates Pillow to fix a buffer overflow vulnerability.",
+            "cve": null,
+            "id": "pyup.io-38163",
+            "specs": [
+                "<2.2.8"
+            ],
+            "v": "<2.2.8"
         },
         {
             "advisory": "Indico 2.0.3 no longer shows contribution information (metadata including title, speakers and a partial description) in the contribution list unless the user has access to a contribution.",
@@ -6513,6 +6595,17 @@
                 "<0.5.1"
             ],
             "v": "<0.5.1"
+        }
+    ],
+    "jetforce": [
+        {
+            "advisory": "For security, unhandled exceptions in jetforce 0.2.0 display a generic error message instead of the plain exception string.",
+            "cve": null,
+            "id": "pyup.io-38130",
+            "specs": [
+                "<0.2.0"
+            ],
+            "v": "<0.2.0"
         }
     ],
     "jinja": [
@@ -7484,6 +7577,17 @@
             "v": "<1.1.1"
         }
     ],
+    "metpx-sarracenia": [
+        {
+            "advisory": "Metpx-sarracenia 2.20.04b2 removes recursion in the connection recovery, which was vulnerable to stack exhaustion on long failures.",
+            "cve": null,
+            "id": "pyup.io-38182",
+            "specs": [
+                "<2.20.04b2"
+            ],
+            "v": "<2.20.04b2"
+        }
+    ],
     "mezzanine": [
         {
             "advisory": "mezzanine  4.3.0 fixes a potential security vulnerability in which the password reset url is exposed to untrusted intermediary nodes in the network.",
@@ -7660,6 +7764,15 @@
                 "<4.0.4"
             ],
             "v": "<4.0.4"
+        },
+        {
+            "advisory": "Mitmproxy 5.0 fixes command injection vulnerabilities when exporting flows as curl/httpie commands. It also does not echo unsanitized user input in HTTP error responses.",
+            "cve": null,
+            "id": "pyup.io-38179",
+            "specs": [
+                "<5.0"
+            ],
+            "v": "<5.0"
         }
     ],
     "mitogen": [
@@ -7764,35 +7877,6 @@
                 "<2.0.4"
             ],
             "v": "<2.0.4"
-        }
-    ],
-    "monero": [
-        {
-            "advisory": "Monero 0.10.0 includes a temporary patch (via a predefined user-agent) for the Cross-Site Request Forgery attack against monero-wallet-cli's RPC API.",
-            "cve": null,
-            "id": "pyup.io-37447",
-            "specs": [
-                "<0.10.0"
-            ],
-            "v": "<0.10.0"
-        },
-        {
-            "advisory": "Monero 0.12.0.0 includes tweaked PoW to block DoS attacks from ASICs, as well as a way to securely erase keys from memory, for most cases, when no longer in use.",
-            "cve": null,
-            "id": "pyup.io-37446",
-            "specs": [
-                "<0.12.0.0"
-            ],
-            "v": "<0.12.0.0"
-        },
-        {
-            "advisory": "Monero 0.9.1 includes a bug fix for the block 913193 attack, plus checkpoints.",
-            "cve": null,
-            "id": "pyup.io-37448",
-            "specs": [
-                "<0.9.1"
-            ],
-            "v": "<0.9.1"
         }
     ],
     "monoshape": [
@@ -7901,6 +7985,17 @@
                 "<1.0.6"
             ],
             "v": "<1.0.6"
+        }
+    ],
+    "muffnn": [
+        {
+            "advisory": "Muffnn 2.3.1 increases the minimum version of tensorflow to v1.15.2 to fix a security vulnerability.",
+            "cve": null,
+            "id": "pyup.io-38154",
+            "specs": [
+                "<2.3.1"
+            ],
+            "v": "<2.3.1"
         }
     ],
     "murano-dashboard": [
@@ -8115,6 +8210,15 @@
                 "<0.1.1"
             ],
             "v": "<0.1.1"
+        },
+        {
+            "advisory": "Normcap 0.1.2 updates the Bleach Package to avoid a potential vulnerability.",
+            "cve": null,
+            "id": "pyup.io-38132",
+            "specs": [
+                "<0.1.2"
+            ],
+            "v": "<0.1.2"
         }
     ],
     "notable": [
@@ -8425,16 +8529,6 @@
     ],
     "openapigenerator": [
         {
-            "advisory": "Openapigenerator 3.2.2 updates vulnerable dependencies (JavaScript, #784).",
-            "cve": null,
-            "id": "pyup.io-37622",
-            "specs": [
-                "",
-                "<3.2.2"
-            ],
-            "v": ",<3.2.2"
-        },
-        {
             "advisory": "Openapigenerator 3.2.1 updates vulnerable dependencies (Javascript, #784).",
             "cve": null,
             "id": "pyup.io-37796",
@@ -8451,6 +8545,15 @@
                 "<3.2.1"
             ],
             "v": "<3.2.1"
+        },
+        {
+            "advisory": "Openapigenerator 3.2.2 updates vulnerable dependencies (JavaScript, #784).",
+            "cve": null,
+            "id": "pyup.io-37622",
+            "specs": [
+                "<3.2.2"
+            ],
+            "v": "<3.2.2"
         },
         {
             "advisory": "Openapigenerator 3.3.2 fixes the Jackson databind security issue (Java, #1259).",
@@ -8867,6 +8970,15 @@
                 "<0.5.6"
             ],
             "v": "<0.5.6"
+        },
+        {
+            "advisory": "Pex 0.8.0 includes a fix to refactor http handling to allow for alternate http implementations.  This adds support  for 'requests' <https://github.com/kennethreitz/requests>, improving both performance and security.  For more information, read the commit notes at <https://github.com/pantsbuild/pex/commit/91c7f324085c18af714d35947b603a5f60aeb682> and <https://rbcommons.com/s/twitter/r/778/>.",
+            "cve": null,
+            "id": "pyup.io-27426",
+            "specs": [
+                "<0.8.0"
+            ],
+            "v": "<0.8.0"
         }
     ],
     "phileo": [
@@ -10197,6 +10309,17 @@
             "v": "<0.5.2"
         }
     ],
+    "py-crypto-hd-wallet": [
+        {
+            "advisory": "Py-crypto-hd-wallet 0.2.0 removes the possibility to load a wallet from file. This did not make a lot of sense because saving a wallet to file in JSON format is only meant for a quick and temporary storing of keys, not as a definitive and secure way to store it. For storing a wallet for future loading, it'd make more sense to just store the mnemonic, seed or extended key (depending how the wallet was generated) instead of the complete key chain by adding some security (e.g. crypting the file). This can be done by the user directly, in the way he prefers, with the APIs that are present now.",
+            "cve": null,
+            "id": "pyup.io-38175",
+            "specs": [
+                "<0.2.0"
+            ],
+            "v": "<0.2.0"
+        }
+    ],
     "py-espeak-ng": [
         {
             "advisory": "py-espeak-ng 1.49.0 fixes many logic and security issues reported by clang scan-build, Coverity and msvc /analyze.",
@@ -10458,6 +10581,17 @@
                 "<1.2.0"
             ],
             "v": "<1.2.0"
+        }
+    ],
+    "pyfda": [
+        {
+            "advisory": "Pyfda 0.3.0 fixes an error when trying to load `*.npz` files: `numpy.load()` requires `allow_pickle = True`  since version 1.16.3 for security reasons.",
+            "cve": null,
+            "id": "pyup.io-38164",
+            "specs": [
+                "<0.3.0"
+            ],
+            "v": "<0.3.0"
         }
     ],
     "pyforce": [
@@ -11471,13 +11605,13 @@
     ],
     "python-nomad": [
         {
-            "advisory": "python-nomad before 2.20.0 made it easier for remote attackers to discover credentials by sniffing the network.",
+            "advisory": "Python-nomad 1.0.1 updates `Requests` to 2.20.0. Earlier versions of `Requests` sent an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network.",
             "cve": null,
             "id": "pyup.io-36602",
             "specs": [
-                "<2.20.0"
+                "<1.0.1"
             ],
-            "v": "<2.20.0"
+            "v": "<1.0.1"
         }
     ],
     "python-openflow": [
@@ -11755,6 +11889,17 @@
             "v": "<1.0.0"
         }
     ],
+    "pywbemtools": [
+        {
+            "advisory": "Pywbemtools 0.6.0 increases the minimum versions of some packages used for development to address security issues: twine, bleach, urllib3.",
+            "cve": null,
+            "id": "pyup.io-38169",
+            "specs": [
+                "<0.6.0"
+            ],
+            "v": "<0.6.0"
+        }
+    ],
     "pywebsite": [
         {
             "advisory": "pywebsite 0.1.14pre's signed_url  method is now (more) immune to VS timing attacks.",
@@ -11773,6 +11918,17 @@
                 "<0.1.9pre"
             ],
             "v": "<0.1.9pre"
+        }
+    ],
+    "pywikibot": [
+        {
+            "advisory": "Pywikibot 3.0.20181203 require requests version 2.20.0 or later for security reasons.",
+            "cve": null,
+            "id": "pyup.io-38151",
+            "specs": [
+                "<3.0.20181203"
+            ],
+            "v": "<3.0.20181203"
         }
     ],
     "pywren-ibm-cloud": [
@@ -13777,13 +13933,13 @@
             "v": "<1.12.2"
         },
         {
-            "advisory": "Tensorflow 2.0 fixes a potential security vulnerability where decoding variant tensors from proto could result in heap out of bounds memory access.",
+            "advisory": "The original changelog reads: \"Tensorflow 2.0 fixes a potential security vulnerability where decoding variant tensors from proto could result in heap out of bounds memory access.\" However, it was later confirmed that the fix was already included in 1.15 and later. See: <https://github.com/tensorflow/tensorflow/issues/37701>.",
             "cve": null,
             "id": "pyup.io-37524",
             "specs": [
-                "<2.0"
+                "<1.15.0"
             ],
-            "v": "<2.0"
+            "v": "<1.15.0"
         },
         {
             "advisory": "Tensorflow 1.15.2 and 2.0.1 update `sqlite3` to `3.30.01` to handle CVE-2019-19646, CVE-2019-19645 and CVE-2019-16168.",
@@ -14193,6 +14349,15 @@
                 "<1.6.16"
             ],
             "v": "<1.6.16"
+        },
+        {
+            "advisory": "Udata 2.0.2 disallow html tags in markdown-it (JS markdown rendering) for security reasons. See: <https://github.com/opendatateam/udata/pull/2465>.",
+            "cve": null,
+            "id": "pyup.io-38161",
+            "specs": [
+                "<2.0.2"
+            ],
+            "v": "<2.0.2"
         }
     ],
     "ugoira": [
@@ -14431,6 +14596,26 @@
                 "<0.6.21"
             ],
             "v": "<0.6.21"
+        }
+    ],
+    "wagtail": [
+        {
+            "advisory": "Wagtail 2.7.2 fixes CVE-2020-11001, which allows a XSS attack via page revision comparison view.",
+            "cve": "CVE-2020-11001",
+            "id": "pyup.io-38184",
+            "specs": [
+                "<2.7.2"
+            ],
+            "v": "<2.7.2"
+        },
+        {
+            "advisory": "Wagtail 2.7.2 fixes CVE-2020-11001, which allows a XSS attack via page revision comparison view.",
+            "cve": null,
+            "id": "pyup.io-38183",
+            "specs": [
+                ">=2.8,<2.8.1"
+            ],
+            "v": ">=2.8,<2.8.1"
         }
     ],
     "wagtail-2fa": [
