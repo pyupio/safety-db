@@ -1,4 +1,5 @@
 deploy:
+  skip_cleanup: true
   user: JayFK
   on:
     repo: pyupio/safety-db
