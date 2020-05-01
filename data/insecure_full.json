@@ -5954,6 +5954,17 @@
             "v": "<2.9"
         }
     ],
+    "graphtransliterator": [
+        {
+            "advisory": "Graphtransliterator 1.1.2 includes security updates. No details were given.",
+            "cve": null,
+            "id": "pyup.io-38234",
+            "specs": [
+                "<1.1.2"
+            ],
+            "v": "<1.1.2"
+        }
+    ],
     "great-components": [
         {
             "advisory": "great-components 25.0.1 updates lodash vulnerability",
@@ -5974,6 +5985,15 @@
                 "<4.5.8"
             ],
             "v": "<4.5.8"
+        },
+        {
+            "advisory": "Guillotina 6.0.0b3 fixes a security policy not taking into account IInheritPermissionMap for principals.",
+            "cve": null,
+            "id": "pyup.io-38203",
+            "specs": [
+                "<6.0.0b3"
+            ],
+            "v": "<6.0.0b3"
         }
     ],
     "gvar": [
@@ -6743,6 +6763,17 @@
             "v": "<0.6.0"
         }
     ],
+    "jupyter-server": [
+        {
+            "advisory": "Jupyter-server 0.2.0 adds a \"secure_write\" to function for cookie/token saves. See: <https://github.com/jupyter/jupyter_server/pull/77>.",
+            "cve": null,
+            "id": "pyup.io-38212",
+            "specs": [
+                "<0.2.0"
+            ],
+            "v": "<0.2.0"
+        }
+    ],
     "jwql": [
         {
             "advisory": "Jwql 0.16.0 updates ``django`` to fix security issues.",
@@ -6910,13 +6941,13 @@
     ],
     "khoros": [
         {
-            "advisory": "Khoros 2.3.1 updates requirements.txt to use Bleach to version 3.1.1 to mitigate a security alert  for a mutation XSS vulnerability. See: https://github.com/mozilla/bleach/security/advisories/GHSA-q65m-pv3f-wr5r",
+            "advisory": "Khoros 2.2.0 includes changes to the :doc:`supporting modules <supporting-modules>`. The ``yaml.load()`` function call got replaced with ``yaml.safe_load()`` in :py:func:`khoros.utils.helper.import_yaml_file` as it is a better security practice.",
             "cve": null,
-            "id": "pyup.io-37961",
+            "id": "pyup.io-38223",
             "specs": [
-                "<2.3.1"
+                "<2.2.0"
             ],
-            "v": "<2.3.1"
+            "v": "<2.2.0"
         }
     ],
     "khorosjx": [
@@ -6928,6 +6959,33 @@
                 "<2.3.1"
             ],
             "v": "<2.3.1"
+        },
+        {
+            "advisory": "Khorosjx 2.3.1 updates requirements.txt to use Bleach to version 3.1.1 to mitigate a security alert  for a mutation XSS vulnerability. See: https://github.com/mozilla/bleach/security/advisories/GHSA-q65m-pv3f-wr5r",
+            "cve": null,
+            "id": "pyup.io-37961",
+            "specs": [
+                "<2.3.1"
+            ],
+            "v": "<2.3.1"
+        },
+        {
+            "advisory": "Khorosjx 2.5.0 bumps the included version of bleach to 3.1.2 to mitigate an identified mutation XSS vulnerability. See: <https://cure53.de/fp170.pdf>.",
+            "cve": null,
+            "id": "pyup.io-38236",
+            "specs": [
+                "<2.5.0"
+            ],
+            "v": "<2.5.0"
+        },
+        {
+            "advisory": "Khorosjx 2.5.1 bumps the included version of bleach to 3.1.4 to include some security fixes.",
+            "cve": null,
+            "id": "pyup.io-38235",
+            "specs": [
+                "<2.5.1"
+            ],
+            "v": "<2.5.1"
         }
     ],
     "kinto": [
@@ -7458,6 +7516,15 @@
                 "<2.3.5"
             ],
             "v": "<2.3.5"
+        },
+        {
+            "advisory": "python-markdown2 through 2.3.8 allows XSS because element names are mishandled unless a \\w+ match succeeds. For example, an attack might use elementname@ or elementname- with an onclick attribute.",
+            "cve": "CVE-2020-11888",
+            "id": "pyup.io-38198",
+            "specs": [
+                "<=2.3.8"
+            ],
+            "v": "<=2.3.8"
         }
     ],
     "marshmallow": [
@@ -7921,6 +7988,17 @@
                 "<0.10"
             ],
             "v": "<0.10"
+        }
+    ],
+    "mpymodcore": [
+        {
+            "advisory": "Mpymodcore 0.0.9 includes hardening of WindUp security and it also secures router with a redirect/bad request response.",
+            "cve": null,
+            "id": "pyup.io-38218",
+            "specs": [
+                "<0.0.9"
+            ],
+            "v": "<0.0.9"
         }
     ],
     "mr.migrator": [
@@ -8895,6 +8973,17 @@
             "v": "<1.7.5"
         }
     ],
+    "pathfinder": [
+        {
+            "advisory": "Pathfinder 0.5.4 includes a fix that addresses a security alert regarding the version of jinja2.",
+            "cve": null,
+            "id": "pyup.io-38220",
+            "specs": [
+                "<0.5.4"
+            ],
+            "v": "<0.5.4"
+        }
+    ],
     "pconf": [
         {
             "advisory": "pconf before 1.3.3 is vulnerable to arbitrary code execution related to [CVE-2017-18342](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18342) because of YAML's `load`. \r\nThis upgrades to use YAML `safe_load` instead of `load`.",
@@ -8959,6 +9048,17 @@
                 "<0.5"
             ],
             "v": "<0.5"
+        }
+    ],
+    "persephone": [
+        {
+            "advisory": "Persephone 0.4.0 updates the nltk dependency to resolve a possible security issue.",
+            "cve": null,
+            "id": "pyup.io-38231",
+            "specs": [
+                "<0.4.0"
+            ],
+            "v": "<0.4.0"
         }
     ],
     "pex": [
@@ -9824,6 +9924,17 @@
             "v": "<6.0.0b1"
         }
     ],
+    "plone.session": [
+        {
+            "advisory": "Plone.session 3.6.2 hardens the default timeout of session. This solves Plone security internal issue 126 (severity low, non-critical). Also, the session timeout is now the same as in mod_auth_tkt: 2h. This follows the recommendation of the German BSI (federal office for security in the information technology) - see <https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Internetsicherheit/isi_web_server_checkliste_Plone.pdf>.  For existing sites this can be adjusted at <https://HOST/acl_users/session/manage_propertiesForm>. The Plone Security Team follows the BSI and recommends administrators to change the setting in their existing Plone sites.",
+            "cve": null,
+            "id": "pyup.io-38207",
+            "specs": [
+                "<3.6.2"
+            ],
+            "v": "<3.6.2"
+        }
+    ],
     "plone.z3cform": [
         {
             "advisory": "Plone.z3cform 0.5.9 fixes a security problem with the ++widget++ namespace [optilude].",
@@ -10605,6 +10716,17 @@
             "v": "<1.8.0"
         }
     ],
+    "pyfrost": [
+        {
+            "advisory": "Pyfrost 0.2.1 updates dependencies with security alerts.",
+            "cve": null,
+            "id": "pyup.io-38192",
+            "specs": [
+                "<0.2.1"
+            ],
+            "v": "<0.2.1"
+        }
+    ],
     "pyftpdlib": [
         {
             "advisory": "pyftpdlib before 0.3.0 has a path traversal vulnerability in case of symbolic links escaping user's home directory.",
@@ -10696,6 +10818,17 @@
                 "<2.0.0pre05"
             ],
             "v": "<2.0.0pre05"
+        }
+    ],
+    "pylint": [
+        {
+            "advisory": "Pylint 2.5.0 no longer allows ``python -m pylint ...`` to import user code. Previously, it added the current working directory as the first element of ``sys.path``. This opened up a potential security hole where ``pylint`` would import user level code as long as that code resided in modules having the same name as stdlib or pylint's own modules.",
+            "cve": null,
+            "id": "pyup.io-38224",
+            "specs": [
+                "<2.5.0"
+            ],
+            "v": "<2.5.0"
         }
     ],
     "pylons": [
@@ -12250,6 +12383,28 @@
             "v": "<0.2.0"
         }
     ],
+    "rasa": [
+        {
+            "advisory": "Rasa 1.10.0 updates the pyyaml dependency to 5.3.1 to fix CVE-2020-1747.",
+            "cve": "CVE-2020-1747",
+            "id": "pyup.io-38230",
+            "specs": [
+                "<1.10.0"
+            ],
+            "v": "<1.10.0"
+        }
+    ],
+    "rasa-sdk": [
+        {
+            "advisory": "Rasa 1.10.0 updates the pyyaml dependency to 5.3.1 to fix CVE-2020-1747.",
+            "cve": null,
+            "id": "pyup.io-38229",
+            "specs": [
+                "<1.10.0"
+            ],
+            "v": "<1.10.0"
+        }
+    ],
     "rauth": [
         {
             "advisory": "rauth before 0.7.0 isn't using a secure random number generator.",
@@ -13208,17 +13363,6 @@
             "v": "<0.6.5"
         }
     ],
-    "simple-salesforce": [
-        {
-            "advisory": "Simple-salesforce 1.0.0 makes the minimum version of requests v2.22.0, which allow removal of requests. This is reported as a security-related update.",
-            "cve": null,
-            "id": "pyup.io-38083",
-            "specs": [
-                "<1.0.0"
-            ],
-            "v": "<1.0.0"
-        }
-    ],
     "simplemonitor": [
         {
             "advisory": "simplemonitor 2.7 changes the remote monitor protocol and uses the JSON format for remote monitor protocol (more secure than pickle)",
@@ -13316,6 +13460,17 @@
                 "<0.12.6"
             ],
             "v": "<0.12.6"
+        }
+    ],
+    "sockjs-tornado": [
+        {
+            "advisory": "Sockjs-tornado 1.0.7 includes a fix for a XSS vulnerability. No details are given. Possibly it's related to the XSS vulnerability that was addressed in 1.0.6, which jeopardized the HTMLFILE transport.",
+            "cve": null,
+            "id": "pyup.io-38215",
+            "specs": [
+                "<1.0.7"
+            ],
+            "v": "<1.0.7"
         }
     ],
     "sopel": [
@@ -13433,6 +13588,17 @@
                 "<2.2.0"
             ],
             "v": "<2.2.0"
+        }
+    ],
+    "sslyze": [
+        {
+            "advisory": "Sslyze 3.0.2 improves the check for HTTP security headers by adding support for HTTP redirections.",
+            "cve": null,
+            "id": "pyup.io-38197",
+            "specs": [
+                "<3.0.2"
+            ],
+            "v": "<3.0.2"
         }
     ],
     "starcluster": [
@@ -14109,6 +14275,17 @@
             "v": "<2.2.1"
         }
     ],
+    "tortoise-orm": [
+        {
+            "advisory": "Tortoise-orm 0.16.6:\r\n- Fixed SQL injection issue in MySQL\r\n- Fixed SQL injection issues in MySQL when using ``contains``, ``starts_with`` or ``ends_with`` filters (and their case-insensitive counterparts)\r\n- Fixed malformed SQL for PostgreSQL and SQLite when using ``contains``, ``starts_with`` or ``ends_with`` filters (and their case-insensitive counterparts)",
+            "cve": null,
+            "id": "pyup.io-38196",
+            "specs": [
+                "<0.16.6"
+            ],
+            "v": "<0.16.6"
+        }
+    ],
     "tqdm": [
         {
             "advisory": "The tqdm._version module in tqdm versions before 4.11.2 allows local users to execute arbitrary code via a crafted repo with a malicious git log in the current working directory.",
@@ -14574,6 +14751,15 @@
                 "<0.0.8"
             ],
             "v": "<0.0.8"
+        },
+        {
+            "advisory": "Virustotal-python 0.0.9 includes updates of some dependencies due to security vulnerabilities.",
+            "cve": null,
+            "id": "pyup.io-38227",
+            "specs": [
+                "<0.0.9"
+            ],
+            "v": "<0.0.9"
         }
     ],
     "vnccollab.theme": [
@@ -14768,6 +14954,15 @@
         }
     ],
     "web3": [
+        {
+            "advisory": "Web3 version 1.2.7 upgrades swarm-js to 0.1.40 to remove an npm vulnerability warning. It also upgrades devDeps to resolve security warnings:\r\n- dtslint 0.4.2 => 3.4.1\r\n- definitelytyped-header-parser 1.0.1 => 3.9.0",
+            "cve": null,
+            "id": "pyup.io-38214",
+            "specs": [
+                "<1.2.7"
+            ],
+            "v": "<1.2.7"
+        },
         {
             "advisory": "web3 4.7.0  upgrades eth-hash to 0.2.0 with pycryptodome 3.6.6 which resolves a vulnerability.",
             "cve": null,
@@ -15459,6 +15654,15 @@
                 "<2.1.2"
             ],
             "v": "<2.1.2"
+        },
+        {
+            "advisory": "Zulip 2.1.3 includes fixes for:\r\n- CVE-2020-9444: Prevent reverse tabnapping attacks.                                                 \r\n- CVE-2020-9445: Remove unused and insecure modal_link feature.                                      \r\n- CVE-2020-10935: Fix XSS vulnerability in local link rewriting.",
+            "cve": "CVE-2020-9444,CVE-2020-10935",
+            "id": "pyup.io-38200",
+            "specs": [
+                "<2.1.3"
+            ],
+            "v": "<2.1.3"
         }
     ],
     "zwiki": [
