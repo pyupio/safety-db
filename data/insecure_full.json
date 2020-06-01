@@ -143,6 +143,26 @@
             "v": "<0.16.3"
         }
     ],
+    "aiootp": [
+        {
+            "advisory": "Aiootp 0.2.0 adds ephemeral salts to the ``AsyncDatabase`` & ``Database`` file encryption procedures. This is a major security fix, as re-encryption of files with the same tag in a database with the same open key would use the same streams of key material each time, breaking encryption if two different versions of a tag file's ciphertext stored to disk were available to an adversary. The database methods ``encrypt``, ``decrypt``,  ``aencrypt`` & ``adecrypt`` will now produce and decipher true one-time pad ciphertext with these ephemeral salts.",
+            "cve": null,
+            "id": "pyup.io-38250",
+            "specs": [
+                "<0.2.0"
+            ],
+            "v": "<0.2.0"
+        },
+        {
+            "advisory": "The ``AsyncDatabase`` & ``Database`` in aiootp version 0.3.0 use the more secure ``afilename`` & ``filename`` methods to derive the hashmap name and encryption streams from a user-defined tag internal to their ``aencrypt`` / ``adecrypt`` /  ``encrypt`` / ``decrypt`` methods, as well as, prior to them getting called. This will break past versions of databases' ability to open their files.",
+            "cve": null,
+            "id": "pyup.io-38256",
+            "specs": [
+                "<0.3.0"
+            ],
+            "v": "<0.3.0"
+        }
+    ],
     "aldryn-django": [
         {
             "advisory": "aldryn-django 1.8.10.1 uses an insecure Django release, 1.8.9.",
@@ -1317,6 +1337,17 @@
             "v": "<2.6.0"
         }
     ],
+    "chartify": [
+        {
+            "advisory": "Chartify 2.7.0 bumps the base Pillow dependency to avoid a version that's not secure.",
+            "cve": null,
+            "id": "pyup.io-38345",
+            "specs": [
+                "<2.7.0"
+            ],
+            "v": "<2.7.0"
+        }
+    ],
     "cheetah": [
         {
             "advisory": "cheetah 0.9.17rc1 removeS the use of temp files for handling imports with dynamic compilation. This removes a whole slew of issues, including a temp file security issue.",
@@ -1816,6 +1847,15 @@
                 "<1.11.3"
             ],
             "v": "<1.11.3"
+        },
+        {
+            "advisory": "Contentful through 2020-05-21 for Python allows reflected XSS, as demonstrated by the api parameter to the-example-app.py.",
+            "cve": "CVE-2020-13258",
+            "id": "pyup.io-38314",
+            "specs": [
+                "<=1.12.3"
+            ],
+            "v": "<=1.12.3"
         }
     ],
     "contentful-management": [
@@ -2260,6 +2300,15 @@
                 "<0.6"
             ],
             "v": "<0.6"
+        },
+        {
+            "advisory": "Deeposlandia 0.6.2 updates pillow to 7.1.1 to fix a moderate-severity vulnerability in pillow <6.2.2.",
+            "cve": null,
+            "id": "pyup.io-38285",
+            "specs": [
+                "<0.6.2"
+            ],
+            "v": "<0.6.2"
         }
     ],
     "definitions": [
@@ -2377,6 +2426,17 @@
                 "<2.2.2"
             ],
             "v": "<2.2.2"
+        }
+    ],
+    "discordpie": [
+        {
+            "advisory": "Discordpie 0.5.1 includes a security patch. No details are given.",
+            "cve": null,
+            "id": "pyup.io-38343",
+            "specs": [
+                "<0.5.1"
+            ],
+            "v": "<0.5.1"
         }
     ],
     "djangae": [
@@ -3095,10 +3155,10 @@
             "id": "pyup.io-25731",
             "specs": [
                 ">=1.7,<1.7.7",
-                ">=1.8,<1.8c1",
-                ">=1.6,<1.6.11"
+                ">=1.6,<1.6.11",
+                ">=1.8a1,<1.8c1"
             ],
-            "v": ">=1.7,<1.7.7,>=1.8,<1.8c1,>=1.6,<1.6.11"
+            "v": ">=1.7,<1.7.7,>=1.6,<1.6.11,>=1.8a1,<1.8c1"
         },
         {
             "advisory": "The session backends in Django before 1.4.21, 1.5.x through 1.6.x, 1.7.x before 1.7.9, and 1.8.x before 1.8.3 allows remote attackers to cause a denial of service (session store consumption) via multiple requests with unique session keys.",
@@ -4102,6 +4162,17 @@
             "v": "<0.1.18"
         }
     ],
+    "django-perms-provisioner": [
+        {
+            "advisory": "Django-perms-provisioner 0.0.4 updates PyYAML to a more secure version.",
+            "cve": null,
+            "id": "pyup.io-38289",
+            "specs": [
+                "<0.0.4"
+            ],
+            "v": "<0.0.4"
+        }
+    ],
     "django-piston": [
         {
             "advisory": "emitters.py in Django Piston before 0.2.3 and 0.2.x before 0.2.2.1 does not properly deserialize YAML data, which allows remote attackers to execute arbitrary Python code via vectors related to the yaml.load method.",
@@ -4667,6 +4738,15 @@
                 "<1.4.0"
             ],
             "v": "<1.4.0"
+        },
+        {
+            "advisory": "ANSI HTML-ifying has been moved to the site in dmoj 2.0.0 in order to prevent judges from potentially executing HTML injection attacks.",
+            "cve": null,
+            "id": "pyup.io-38276",
+            "specs": [
+                "<2.0.0"
+            ],
+            "v": "<2.0.0"
         }
     ],
     "docassemble": [
@@ -4857,6 +4937,28 @@
                 "<1.4.1"
             ],
             "v": "<1.4.1"
+        }
+    ],
+    "emcache": [
+        {
+            "advisory": "Emcache 1.3.6 fixes a security vulnerability by sanitizing key input.",
+            "cve": null,
+            "id": "pyup.io-38331",
+            "specs": [
+                "<1.3.6"
+            ],
+            "v": "<1.3.6"
+        }
+    ],
+    "emitter-io": [
+        {
+            "advisory": "Emitter-io 2.704 fixes a security issue by disallowing pub/sub on extended keys.",
+            "cve": null,
+            "id": "pyup.io-38320",
+            "specs": [
+                "<2.704"
+            ],
+            "v": "<2.704"
         }
     ],
     "engineio-client": [
@@ -5738,6 +5840,17 @@
             "v": "<0.10"
         }
     ],
+    "gdal": [
+        {
+            "advisory": "Gdal 3.1.0 includes multiple security-related fixes. No details are given.",
+            "cve": null,
+            "id": "pyup.io-38264",
+            "specs": [
+                "<3.1.0"
+            ],
+            "v": "<3.1.0"
+        }
+    ],
     "genshi": [
         {
             "advisory": "genshi 0.6.1 includes a security fix to enhance sanitizing of CSS in style attributes. Genshi's `HTMLSanitizer` disallows style attributes by default (this remains unchanged) and warns against such attacks in its documentation, but the provided CSS santizing is now less lacking (see GitHub issue 455).",
@@ -6165,6 +6278,15 @@
     ],
     "httplib2": [
         {
+            "advisory": "Httplib2 0.18.0 is an important security update to patch a CWE-93 CRLF injection vulnerability which forces %xx quote of space, CR, LF characters in uri. See: <https://cwe.mitre.org/data/definitions/93.html>.",
+            "cve": null,
+            "id": "pyup.io-38303",
+            "specs": [
+                "<0.18.0"
+            ],
+            "v": "<0.18.0"
+        },
+        {
             "advisory": "httplib2 before and including 0.9.2 on \"SSL certificate hostname mismatch\" it is checked only once: https://github.com/httplib2/httplib2/issues/5",
             "cve": null,
             "id": "pyup.io-25848",
@@ -6417,6 +6539,17 @@
             "v": "<1.37.1"
         }
     ],
+    "intelmq": [
+        {
+            "advisory": "Intelmq through 2.1.1 is not secure. Its backend incorrectly handles messages given by user-input in the \"send\" functionality of the Inspect-tool of the Monitor component. An attacker with access to the IntelMQ Manager could possibly use this issue to execute arbitrary code with the privileges of the web server.",
+            "cve": null,
+            "id": "pyup.io-38326",
+            "specs": [
+                "<=2.1.1"
+            ],
+            "v": "<=2.1.1"
+        }
+    ],
     "invenio": [
         {
             "advisory": "invenio 1.0.2 includes fixes for several undisclosed XSS vulnerabilities.",
@@ -6575,6 +6708,17 @@
             "v": "<0.1.4"
         }
     ],
+    "isogeo-export-xl": [
+        {
+            "advisory": "Isogeo-export-xl 1.3.0 updates bleach to fix a security alert.",
+            "cve": null,
+            "id": "pyup.io-38286",
+            "specs": [
+                "<1.3.0"
+            ],
+            "v": "<1.3.0"
+        }
+    ],
     "isso": [
         {
             "advisory": "isso 0.6 fixes a cross-site request forgery vulnerability for comment creation, voting, editing and deletion.",
@@ -6626,6 +6770,15 @@
                 "<0.2.0"
             ],
             "v": "<0.2.0"
+        },
+        {
+            "advisory": "Jetforce 0.2.3 fixes a security vulnerability that allowed maliciously crafted URLs to break out of the root server directory.",
+            "cve": null,
+            "id": "pyup.io-38324",
+            "specs": [
+                "<0.2.3"
+            ],
+            "v": "<0.2.3"
         }
     ],
     "jinja": [
@@ -6774,6 +6927,17 @@
             "v": "<0.2.0"
         }
     ],
+    "jw.util": [
+        {
+            "advisory": "An exploitable vulnerability exists in the configuration-loading functionality of the jw.util package before 2.3 for Python. When loading a configuration with FromString or FromStream with YAML, one can execute arbitrary Python code, resulting in OS command execution, because safe_load is not used. See: CVE-2020-13388.",
+            "cve": "CVE-2020-13388",
+            "id": "pyup.io-38315",
+            "specs": [
+                "<2.3"
+            ],
+            "v": "<2.3"
+        }
+    ],
     "jwql": [
         {
             "advisory": "Jwql 0.16.0 updates ``django`` to fix security issues.",
@@ -6838,6 +7002,17 @@
             "v": "<0.11.0"
         }
     ],
+    "katsdptelstate": [
+        {
+            "advisory": "Katsdptelstate 0.9 disable pickles by default for security.",
+            "cve": null,
+            "id": "pyup.io-38321",
+            "specs": [
+                "<0.9"
+            ],
+            "v": "<0.9"
+        }
+    ],
     "kaze-python": [
         {
             "advisory": "kaze-python 0.6.5 fixes vulnerability to RPC invoke functionality that can send node into unclosed loop during 'test' invokes.",
@@ -6887,6 +7062,15 @@
                 "<3.0.0"
             ],
             "v": "<3.0.0"
+        },
+        {
+            "advisory": "Kedro-viz 3.3.0 adds bandit for security scanning as a pre-commit hook.",
+            "cve": null,
+            "id": "pyup.io-38329",
+            "specs": [
+                "<3.3.0"
+            ],
+            "v": "<3.3.0"
         }
     ],
     "keyring": [
@@ -7245,6 +7429,17 @@
             "v": "<6.12.2"
         }
     ],
+    "layeredimage": [
+        {
+            "advisory": "Layeredimage 2020.6.4 updates pyora, which has security benefits.",
+            "cve": null,
+            "id": "pyup.io-38288",
+            "specs": [
+                "<2020.6.4"
+            ],
+            "v": "<2020.6.4"
+        }
+    ],
     "ldap3": [
         {
             "advisory": "ldap3 before 0.9.5.4 has several security issues in lazy connections.",
@@ -7411,6 +7606,17 @@
             "v": "<0.4.1"
         }
     ],
+    "maestrowf": [
+        {
+            "advisory": "Maestrowf 1.1.6 updates PyYAML to a more secure version.",
+            "cve": null,
+            "id": "pyup.io-38297",
+            "specs": [
+                "<1.1.6"
+            ],
+            "v": "<1.1.6"
+        }
+    ],
     "mailman": [
         {
             "advisory": "Multiple cross-site scripting (XSS) vulnerabilities in Cgi/confirm.py in GNU Mailman 2.1.14 and earlier allow remote attackers to inject arbitrary web script or HTML via the (1) full name or (2) username field in a confirmation message.",
@@ -7447,6 +7653,15 @@
                 "<2.1.28"
             ],
             "v": "<2.1.28"
+        },
+        {
+            "advisory": "/options/mailman in GNU Mailman before 2.1.31 allows Arbitrary Content Injection. See CVE-2020-12108.",
+            "cve": "CVE-2020-12108",
+            "id": "pyup.io-38255",
+            "specs": [
+                "<2.1.31"
+            ],
+            "v": "<2.1.31"
         },
         {
             "advisory": "Cross-site scripting vulnerability in Mailman 2.1.26 and earlier allows remote authenticated attackers to inject arbitrary web script or HTML via unspecified vectors.",
@@ -7620,6 +7835,17 @@
                 "<0.9.5alpha"
             ],
             "v": "<0.9.5alpha"
+        }
+    ],
+    "meinheld": [
+        {
+            "advisory": "Meinheld prior to 1.0.2 is vulnerable to HTTP Request Smuggling. HTTP pipelining issues and request smuggling attacks might be possible due to incorrect Content-Length and Transfer encoding header parsing. See: CVE-2020-7658.",
+            "cve": "CVE-2020-7658",
+            "id": "pyup.io-38317",
+            "specs": [
+                "<1.0.2"
+            ],
+            "v": "<1.0.2"
         }
     ],
     "mercurial": [
@@ -7875,6 +8101,17 @@
             "v": "<1.0.0"
         }
     ],
+    "mkdocs-table-reader-plugin": [
+        {
+            "advisory": "Mkdocs-table-reader-plugin 0.2 drops the use of eval() in favor of ast.literal_eval() for security reasons.",
+            "cve": null,
+            "id": "pyup.io-38272",
+            "specs": [
+                "<0.2"
+            ],
+            "v": "<0.2"
+        }
+    ],
     "mlalchemy": [
         {
             "advisory": "An exploitable vulnerability exists in the YAML parsing functionality in the parse_yaml_query method in parser.py in MLAlchemy before 0.2.2. When processing YAML-Based queries for data, a YAML parser can execute arbitrary Python commands resulting in command execution because load is used where safe_load should have been used. An attacker can insert Python into loaded YAML to trigger this vulnerability.",
@@ -7977,6 +8214,17 @@
                 "<0.14"
             ],
             "v": "<0.14"
+        }
+    ],
+    "mortimer": [
+        {
+            "advisory": "Mortimer 0.4.5 further increases the data protection and data security through an improved handling of access to the alfred database from inside experiments.",
+            "cve": null,
+            "id": "pyup.io-38277",
+            "specs": [
+                "<0.4.5"
+            ],
+            "v": "<0.4.5"
         }
     ],
     "mosql": [
@@ -8169,6 +8417,17 @@
             "v": ">=0.3.0,<0.3.1,>=0.2.0,<0.2.9.1"
         }
     ],
+    "natcap.invest": [
+        {
+            "advisory": "Natcap.invest 3.8.1 bumps the psutil dependency requirement to psutil>=5.6.6 to address a double-free vulnerability documented in CVE-2019-18874.",
+            "cve": "CVE-2019-18874",
+            "id": "pyup.io-38271",
+            "specs": [
+                "<3.8.1"
+            ],
+            "v": "<3.8.1"
+        }
+    ],
     "nba-scraper": [
         {
             "advisory": "Nba-scraper 0.2.7 removes a security flaw where it wasn't verifying SSL certificates during testing.",
@@ -8211,6 +8470,17 @@
                 "<0.4.0"
             ],
             "v": "<0.4.0"
+        }
+    ],
+    "netius": [
+        {
+            "advisory": "netius prior to 1.17.58 is vulnerable to HTTP Request Smuggling. HTTP pipelining issues and request smuggling attacks might be possible due to incorrect Transfer encoding header parsing which could allow for CL:TE or TE:TE attacks. See: CVE-2020-7655.",
+            "cve": "CVE-2020-7655",
+            "id": "pyup.io-38316",
+            "specs": [
+                "<1.17.58"
+            ],
+            "v": "<1.17.58"
         }
     ],
     "newrelic": [
@@ -8439,6 +8709,17 @@
                 "<0.7.0"
             ],
             "v": "<0.7.0"
+        }
+    ],
+    "obasparql": [
+        {
+            "advisory": "Obasparql 2.0.1 bumps werkzeug to >= 0.15.3 to address CVE-2019-14806.",
+            "cve": "CVE-2019-14806",
+            "id": "pyup.io-38322",
+            "specs": [
+                "<2.0.1"
+            ],
+            "v": "<2.0.1"
         }
     ],
     "oci": [
@@ -8744,6 +9025,44 @@
             "v": "<2.1"
         }
     ],
+    "openstack-keystone": [
+        {
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. The list of roles provided for an OAuth1 access token is silently ignored. Thus, when an access token is used to request a keystone token, the keystone token contains every role assignment the creator had for the project. This results in the provided keystone token having more role assignments than the creator intended, possibly giving unintended escalated access.",
+            "cve": "CVE-2020-12690",
+            "id": "pyup.io-38258",
+            "specs": [
+                "<15.0.1"
+            ],
+            "v": "<15.0.1"
+        },
+        {
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. The EC2 API doesn't have a signature TTL check for AWS Signature V4. An attacker can sniff the Authorization header, and then use it to reissue an OpenStack token an unlimited number of times.",
+            "cve": "CVE-2020-12692",
+            "id": "pyup.io-38260",
+            "specs": [
+                "<15.0.1"
+            ],
+            "v": "<15.0.1"
+        },
+        {
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any authenticated user can create an EC2 credential for themselves for a project that they have a specified role on, and then perform an update to the credential user and project, allowing them to masquerade as another user. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges.",
+            "cve": "CVE-2020-12691",
+            "id": "pyup.io-38259",
+            "specs": [
+                "<15.0.1"
+            ],
+            "v": "<15.0.1"
+        },
+        {
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any user authenticated within a limited scope (trust/oauth/application credential) can create an EC2 credential with an escalated permission, such as obtaining admin while the user is on a limited viewer role. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges.",
+            "cve": "CVE-2020-12689",
+            "id": "pyup.io-38257",
+            "specs": [
+                "<15.0.1"
+            ],
+            "v": "<15.0.1"
+        }
+    ],
     "opentaxii": [
         {
             "advisory": "opentaxii 0.1.11 requires recent version of `lxml` for security reasons.",
@@ -8840,6 +9159,15 @@
                 "<1.2.2"
             ],
             "v": "<1.2.2"
+        },
+        {
+            "advisory": "Palladium 1.2.3 updates its requirements in order to use newer versions of dependencies. This fixes some potential security vulnerabilities.",
+            "cve": null,
+            "id": "pyup.io-38263",
+            "specs": [
+                "<1.2.3"
+            ],
+            "v": "<1.2.3"
         }
     ],
     "pandevice": [
@@ -9428,6 +9756,17 @@
             "v": "<6.1.0"
         }
     ],
+    "pipenv": [
+        {
+            "advisory": "Pipenv 2020.5.28 includes the --key command to include a personal PyUp API token when running `pipenv check`. This version also updates several dependencies to their latest versions for security and bug fixes.",
+            "cve": null,
+            "id": "pyup.io-38334",
+            "specs": [
+                "<2020.5.28"
+            ],
+            "v": "<2020.5.28"
+        }
+    ],
     "pirate-get": [
         {
             "advisory": "pirate-get before 0.2.8 is not properly validating torrent file names.\r\n\r\n- https://github.com/vikstrous/pirate-get/issues/73",
@@ -9995,6 +10334,17 @@
             "v": "<4.2.2"
         }
     ],
+    "plusminus": [
+        {
+            "advisory": "Plusminus 0.3.0 has been hardened against some possible attacks, using deep expression nesting or formula references.",
+            "cve": null,
+            "id": "pyup.io-38323",
+            "specs": [
+                "<0.3.0"
+            ],
+            "v": "<0.3.0"
+        }
+    ],
     "pmr2.oauth": [
         {
             "advisory": "pmr2.oauth before 0.4.2 is vulnerable to CSRF attacks.",
@@ -10519,6 +10869,17 @@
             "v": "<0.5.6"
         }
     ],
+    "pybeerxml": [
+        {
+            "advisory": "Pybeerxml 1.0.8 bumps some dependency versions for security fixes.",
+            "cve": null,
+            "id": "pyup.io-38251",
+            "specs": [
+                "<1.0.8"
+            ],
+            "v": "<1.0.8"
+        }
+    ],
     "pybible-cli": [
         {
             "advisory": "Version 1.1.2: Bible pickle files have been replaced by JSON files for better performance and security.",
@@ -10829,6 +11190,17 @@
                 "<2.5.0"
             ],
             "v": "<2.5.0"
+        }
+    ],
+    "pylivetrader": [
+        {
+            "advisory": "Pylivetrader 0.2.0 changes the yaml config loading to use the safe loading. This is a security fix.",
+            "cve": null,
+            "id": "pyup.io-38294",
+            "specs": [
+                "<0.2.0"
+            ],
+            "v": "<0.2.0"
         }
     ],
     "pylons": [
@@ -11313,6 +11685,17 @@
                 "<0.7.1"
             ],
             "v": "<0.7.1"
+        }
+    ],
+    "pyspark": [
+        {
+            "advisory": "Prior to Spark 2.3.3, in certain situations Spark would write user data to local disk unencrypted, even if spark.io.encryption.enabled=true. This includes cached blocks that are fetched to disk (controlled by spark.maxRemoteBlockSizeFetchToMem); in SparkR, using parallelize; in Pyspark, using broadcast and parallelize; and use of python udfs. See: CVE-2019-10099.",
+            "cve": "CVE-2019-10099",
+            "id": "pyup.io-37352",
+            "specs": [
+                "<2.3.3"
+            ],
+            "v": "<2.3.3"
         }
     ],
     "pyspf": [
@@ -12232,6 +12615,15 @@
             "v": "<1.10.0"
         },
         {
+            "advisory": "Qutebrowser 1.11.1 includes a fix for CVE-2020-11054:  After a certificate error was overridden by the user, qutebrowser displays the URL as yellow (`colors.statusbar.url.warn.fg`). However, when the affected website was subsequently loaded again, the URL was mistakenly displayed as green (`colors.statusbar.url.success_https`). While the user already has seen a certificate error prompt at this point (or set `content.ssl_strict` to `false` which is not recommended), this could still provide a false sense of security. This is now fixed.",
+            "cve": "CVE-2020-11054",
+            "id": "pyup.io-38266",
+            "specs": [
+                "<1.11.1"
+            ],
+            "v": "<1.11.1"
+        },
+        {
             "advisory": "In qutebrowser 1.3.0, support for JavaScript Shared Web Workers has been disabled on Qt versions older than 5.11 because of security issues in Chromium. You can get the same effect in earlier versions via `:set qt.args ['disable-shared-workers']`. An equivalent workaround is also contained in Qt 5.9.5 and 5.10.1.",
             "cve": null,
             "id": "pyup.io-36929",
@@ -12381,6 +12773,17 @@
                 "<0.2.0"
             ],
             "v": "<0.2.0"
+        }
+    ],
+    "ramlwrap": [
+        {
+            "advisory": "Ramlwrap 2.2.2 updates PyYAML to a more secure version.",
+            "cve": null,
+            "id": "pyup.io-38298",
+            "specs": [
+                "<2.2.2"
+            ],
+            "v": "<2.2.2"
         }
     ],
     "rasa": [
@@ -13504,6 +13907,17 @@
             "v": "<1.0.1"
         }
     ],
+    "sphinx": [
+        {
+            "advisory": "Sphinx 3.0.4 updates jQuery version from 3.4.1 to 3.5.1 for security reasons.",
+            "cve": null,
+            "id": "pyup.io-38330",
+            "specs": [
+                "<3.0.4"
+            ],
+            "v": "<3.0.4"
+        }
+    ],
     "sphinx-paragraph-extractor": [
         {
             "advisory": "Sphinx-paragraph-extractor 1.0.4 updates dependencies for security reasons.",
@@ -13577,6 +13991,17 @@
                 "<0.5.0"
             ],
             "v": "<0.5.0"
+        }
+    ],
+    "sqlfluff": [
+        {
+            "advisory": "Sqlfluff 0.3.2 moves to `SandboxedEnvironment` rather than `Environment` for jinja templating for security.",
+            "cve": null,
+            "id": "pyup.io-38270",
+            "specs": [
+                "<0.3.2"
+            ],
+            "v": "<0.3.2"
         }
     ],
     "ssh-audit": [
@@ -14057,6 +14482,15 @@
                 "<11.2.8"
             ],
             "v": "<11.2.8"
+        },
+        {
+            "advisory": "Tendenci 12.0.5 removes .doc and .xls from the allowed file upload extensions for security reasons. Besides the general threats, determining the mime type for the .doc and .xls files (generated by old MS Word and MS Excel) requires feeding the entire file content due to their format not complying with the standard.",
+            "cve": null,
+            "id": "pyup.io-38274",
+            "specs": [
+                "<12.0.5"
+            ],
+            "v": "<12.0.5"
         },
         {
             "advisory": "Tendenci 7.4.0 disables GZipMiddleware to prevent BREACH attacks and prevents fraudulent simultaneous reuse of PayPal transactions.",
@@ -14795,6 +15229,16 @@
             "v": "<2.7.2"
         },
         {
+            "advisory": "Wagtail 2.7.3 includes a fix for CVE-2020-11037, avoiding a potential timing attack on password-protected private pages.",
+            "cve": "CVE-2020-11037",
+            "id": "pyup.io-38249",
+            "specs": [
+                "<2.7.3",
+                ">=2.8.0,<2.8.2"
+            ],
+            "v": "<2.7.3,>=2.8.0,<2.8.2"
+        },
+        {
             "advisory": "Wagtail 2.7.2 fixes CVE-2020-11001, which allows a XSS attack via page revision comparison view.",
             "cve": null,
             "id": "pyup.io-38183",
@@ -15218,6 +15662,17 @@
                 "<0.9.27"
             ],
             "v": "<0.9.27"
+        }
+    ],
+    "xontrib-output-search": [
+        {
+            "advisory": "Xontrib-output-search 0.0.2 no longer uses `XONSH_STORE_STDOUT`. Now, the output is stored only for last not empty command and in memory. This is a more secure solution.",
+            "cve": null,
+            "id": "pyup.io-38310",
+            "specs": [
+                "<0.0.2"
+            ],
+            "v": "<0.0.2"
         }
     ],
     "xtea3": [
