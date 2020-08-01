@@ -35,6 +35,15 @@
     ],
     "agraph-python": [
         {
+            "advisory": "Agraph-python 101.0.1 updates urllib3 from 1.22 to 1.23 and requests from 2.18.4 to 2.20.0 for security reasons.",
+            "cve": null,
+            "id": "pyup.io-38506",
+            "specs": [
+                "<101.0.1"
+            ],
+            "v": "<101.0.1"
+        },
+        {
             "advisory": "Agraph-python before 101.0.3 updates numpy to 1.16.0 and urllib3 to 1.24.2 for security reasons.",
             "cve": null,
             "id": "pyup.io-37085",
@@ -64,6 +73,17 @@
                 "<0.12.3"
             ],
             "v": "<0.12.3"
+        }
+    ],
+    "aioapns": [
+        {
+            "advisory": "Certificate hostname validation in aioapns version 1.10 was enabled by default for security reasons. It can be turned off by using no_cert_validation option.",
+            "cve": null,
+            "id": "pyup.io-38620",
+            "specs": [
+                "<1.10"
+            ],
+            "v": "<1.10"
         }
     ],
     "aiocoap": [
@@ -132,6 +152,17 @@
             "v": "<1.1.1"
         }
     ],
+    "aiohttp-swagger": [
+        {
+            "advisory": "Aiohttp-swagger before 1.0.15 includes a version of js-yaml that's not secure.",
+            "cve": null,
+            "id": "pyup.io-38483",
+            "specs": [
+                "<1.0.15"
+            ],
+            "v": "<1.0.15"
+        }
+    ],
     "aioli": [
         {
             "advisory": "aioli 0.16.3 fixes StaticRoute vulnerability to directory traversal attacks.",
@@ -144,6 +175,24 @@
         }
     ],
     "aiootp": [
+        {
+            "advisory": "Aiootp 0.10.1 reduces the effectiveness of timing analysis of the modular exponentiation in the `Opake` class' verifiers by making the process return values only after discrete intervals of time. Timing attacks on that part of the protocol may still be viable, but should be significantly reduced.",
+            "cve": null,
+            "id": "pyup.io-38491",
+            "specs": [
+                "<0.10.1"
+            ],
+            "v": "<0.10.1"
+        },
+        {
+            "advisory": "The `Opake.client` & `Opake.client_registration` methods in aiootp version 0.11.0 take an instantiated client database instead of client credentials which  improves security, efficiency & usability. This change reduces the amount of exposure received by user passwords & other credentials. It also  simplifies usage of the protocol by only needing to carry around a  database instead of a slew of credentials, which is also faster, since the credentials are passed through the cpu & memory hard `passcrypt` function every time to open the database.",
+            "cve": null,
+            "id": "pyup.io-38602",
+            "specs": [
+                "<0.11.0"
+            ],
+            "v": "<0.11.0"
+        },
         {
             "advisory": "Aiootp 0.2.0 adds ephemeral salts to the ``AsyncDatabase`` & ``Database`` file encryption procedures. This is a major security fix, as re-encryption of files with the same tag in a database with the same open key would use the same streams of key material each time, breaking encryption if two different versions of a tag file's ciphertext stored to disk were available to an adversary. The database methods ``encrypt``, ``decrypt``,  ``aencrypt`` & ``adecrypt`` will now produce and decipher true one-time pad ciphertext with these ephemeral salts.",
             "cve": null,
@@ -257,6 +306,15 @@
                 "<0.6.1"
             ],
             "v": "<0.6.1"
+        },
+        {
+            "advisory": "Allennlp 0.9.0 includes a fix for hotflip attacks.",
+            "cve": null,
+            "id": "pyup.io-37901",
+            "specs": [
+                "<0.9.0"
+            ],
+            "v": "<0.9.0"
         }
     ],
     "alt-model-checkpoint": [
@@ -282,15 +340,6 @@
         }
     ],
     "ampache": [
-        {
-            "advisory": "ampache 3.6alpha1 fixes persistent XSS vulnerabilities in user self-editing and in AJAX object editing",
-            "cve": null,
-            "id": "pyup.io-37866",
-            "specs": [
-                "<3.6-alpha5"
-            ],
-            "v": "<3.6-alpha5"
-        },
         {
             "advisory": "ampache 3.8 fixes an XSS vulnerability - see CVE-2014-8620",
             "cve": "CVE-2014-8620",
@@ -542,6 +591,28 @@
             "v": "<0.4.1"
         }
     ],
+    "apache-skywalking": [
+        {
+            "advisory": "Apache-skywalking 8.0.0 includes:\r\n* Fix SQL Injection vulnerability in H2/MySQL implementation.\r\n* Upgrade Nacos to avoid the FastJson CVE in high frequency.\r\n* Upgrade jasckson-databind to 2.9.10.",
+            "cve": null,
+            "id": "pyup.io-38630",
+            "specs": [
+                "<8.0.0"
+            ],
+            "v": "<8.0.0"
+        }
+    ],
+    "apache-superset": [
+        {
+            "advisory": "Apache-superset 0.9.1 improved its security: Gamma role sees only its objects, and only owners and Admins can alter objects.",
+            "cve": null,
+            "id": "pyup.io-38193",
+            "specs": [
+                "<0.9.1"
+            ],
+            "v": "<0.9.1"
+        }
+    ],
     "apidev-coop": [
         {
             "advisory": "apidev-coop is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
@@ -605,6 +676,17 @@
                 "<0.4.0"
             ],
             "v": "<0.4.0"
+        }
+    ],
+    "archi": [
+        {
+            "advisory": "Archi 0.2.2 is bundled with libarchive 3.4.2. However, libarchive before version 3.4.3 is known to not be secure. See: <https://github.com/libarchive/libarchive/releases>.",
+            "cve": null,
+            "id": "pyup.io-37702",
+            "specs": [
+                "<=0.2.2"
+            ],
+            "v": "<=0.2.2"
         }
     ],
     "archmage": [
@@ -775,6 +857,17 @@
                 "<0.4.4"
             ],
             "v": "<0.4.4"
+        }
+    ],
+    "barman": [
+        {
+            "advisory": "Barman 2.11 removes the strict superuser requirement for PG 10+. As of PostgreSQL 10 it is possible to execute \r\nbackups without superuser privileges, which is actually the recommended method for security reasons. Non-superuser backups need to grant some privileges to the user used by Barman to connect to PostgreSQL, as documented in the 21-preliminary_steps.en.md section.\r\n\r\nIt also ensures each postgres connection has an empty search_path. This is the only safe option when there is no information about how secure the search path is on the target database. This is done by appending \"options=-csearch_path=\" to any conninfo string.",
+            "cve": null,
+            "id": "pyup.io-38502",
+            "specs": [
+                "<2.11"
+            ],
+            "v": "<2.11"
         }
     ],
     "baseplate": [
@@ -1007,6 +1100,15 @@
             "v": "<2.1"
         },
         {
+            "advisory": "Calls to `bleach.clean` allowing `noscript` and one or more of the raw text tags (`title`, `textarea`, `script`, `style`, `noembed`, `noframes`, `iframe`, and `xmp`) in bleach before version 3.1.1 were vulnerable to a mutation XSS.\r\n\r\nAlso, the `bleach.clean` behavior parsing `noscript` tags in bleach before version 3.1.1 did not match browser behavior.\r\n\r\nThis security issue was confirmed in Bleach versions v2.1.4, v3.0.2, and v3.1.0. Earlier versions are probably affected too.",
+            "cve": null,
+            "id": "pyup.io-38546",
+            "specs": [
+                "<3.1.1"
+            ],
+            "v": "<3.1.1"
+        },
+        {
             "advisory": "The ``bleach.clean`` behavior parsing ``noscript`` tags did not match browser behavior in Bleach versions v2.1.4, v3.0.2, and v3.1.0 (and probably earlier versions too). \r\n\r\nCalls to ``bleach.clean`` allowing ``noscript`` and one or more of the raw text tags (``title``, ``textarea``, ``script``, ``style``, ``noembed``, ``noframes``, ``iframe``, and ``xmp``) were vulnerable to a mutation XSS.\r\n\r\nSee: https://bugzilla.mozilla.org/show_bug.cgi?id=1615315",
             "cve": null,
             "id": "pyup.io-37910",
@@ -1146,6 +1248,15 @@
         }
     ],
     "boss-cli": [
+        {
+            "advisory": "Boss-cli 1.0.0-alpha.20 fixes a CVE-2018-18074 vulnerability due to an issue with the `Requests` package.",
+            "cve": "CVE-2018-18074",
+            "id": "pyup.io-38521",
+            "specs": [
+                "<1.0.0a20"
+            ],
+            "v": "<1.0.0a20"
+        },
         {
             "advisory": "boss-cli 1.0.0alpha.18 fixes CVE-2018-7750 security vulnerability - https://github.com/kabirbaidhya/boss/pull/126",
             "cve": "CVE-2018-7750",
@@ -1374,6 +1485,26 @@
             "v": "<0.3.8"
         }
     ],
+    "certbot": [
+        {
+            "advisory": "Certbot before 0.34.0 does not print warnings when run as root with insecure file system permissions.",
+            "cve": null,
+            "id": "pyup.io-38484",
+            "specs": [
+                "<0.34.0"
+            ],
+            "v": "<0.34.0"
+        },
+        {
+            "advisory": "Certbot through 0.34.0 does not configure the web server so that all requests redirect to secure HTTPS access.",
+            "cve": null,
+            "id": "pyup.io-37112",
+            "specs": [
+                "<=0.34.0"
+            ],
+            "v": "<=0.34.0"
+        }
+    ],
     "cerulean": [
         {
             "advisory": "cerulean 0.3.4 - Directory permissions when using mkdir(). This is a security issue, and you\r\n  should upgrade as soon as possible.",
@@ -1460,6 +1591,17 @@
             "v": "<2.6.0"
         }
     ],
+    "charmhelpers": [
+        {
+            "advisory": "Charmhelpers 0.19.13 updates Keystone expectations to meet security guide (299).",
+            "cve": null,
+            "id": "pyup.io-37032",
+            "specs": [
+                "<0.19.13"
+            ],
+            "v": "<0.19.13"
+        }
+    ],
     "chartify": [
         {
             "advisory": "Chartify 2.7.0 bumps the base Pillow dependency to avoid a version that's not secure.",
@@ -1469,6 +1611,26 @@
                 "<2.7.0"
             ],
             "v": "<2.7.0"
+        }
+    ],
+    "chatbot-ner": [
+        {
+            "advisory": "For security reasons, chatbot-ner 0.5.8 updates requirements and adds a new version of Django upgrade.",
+            "cve": null,
+            "id": "pyup.io-38516",
+            "specs": [
+                "<0.5.8"
+            ],
+            "v": "<0.5.8"
+        },
+        {
+            "advisory": "For security reasons, chatbot-ner 0.6.0 updates requirements and adds a new version of Django upgrade.",
+            "cve": null,
+            "id": "pyup.io-38515",
+            "specs": [
+                "<0.6.0"
+            ],
+            "v": "<0.6.0"
         }
     ],
     "cheetah": [
@@ -1502,6 +1664,26 @@
                 "<0.36.0"
             ],
             "v": "<0.36.0"
+        }
+    ],
+    "chia-blockchain": [
+        {
+            "advisory": "Chia-blockchain 1.0beta8 removes the ability to pass in sk_seed to plotting. This increases security.",
+            "cve": null,
+            "id": "pyup.io-38582",
+            "specs": [
+                "<1.0beta8"
+            ],
+            "v": "<1.0beta8"
+        },
+        {
+            "advisory": "The Windows BLS Signature library in chia-blockchain 1.0beta9 uses libsodium for additional security. Additionally, this version includes various fixes for various node dependency security vulnerabilities.",
+            "cve": null,
+            "id": "pyup.io-38629",
+            "specs": [
+                "<1.0beta9"
+            ],
+            "v": "<1.0beta9"
         }
     ],
     "cinder": [
@@ -1539,7 +1721,7 @@
     ],
     "circup": [
         {
-            "advisory": "circup 0.0.6 includes an unspecified security fix",
+            "advisory": "Circup 0.0.6 includes an unspecified security fix.",
             "cve": null,
             "id": "pyup.io-37936",
             "specs": [
@@ -1621,6 +1803,17 @@
             "v": "<1.0.21"
         }
     ],
+    "cloudmarker": [
+        {
+            "advisory": "Cloudmarker 0.0.5 adds the `FirewallRuleEvent` plugin to detect insecure firewall rules.",
+            "cve": null,
+            "id": "pyup.io-37138",
+            "specs": [
+                "<0.0.5"
+            ],
+            "v": "<0.0.5"
+        }
+    ],
     "cmdlr": [
         {
             "advisory": "cmdlr 4.1.0 resists malicious js attack in `run_in_nodejs`",
@@ -1652,6 +1845,17 @@
                 "<0.17.6"
             ],
             "v": "<0.17.6"
+        }
+    ],
+    "cobbler": [
+        {
+            "advisory": "Cobbler has local privilege escalation via the use of insecure location for PYTHON_EGG_CACHE. No information was provided about fixes or affected versions. See: CVE-2011-4954.",
+            "cve": "CVE-2011-4954",
+            "id": "pyup.io-37739",
+            "specs": [
+                ">0"
+            ],
+            "v": ">0"
         }
     ],
     "cockroachdb": [
@@ -1881,6 +2085,24 @@
             "v": "<1.1.14"
         },
         {
+            "advisory": "Confidant v1.10.0 upgrades gevent and greenlet to address CVE-2016-5180 and gevent/gevent#477.",
+            "cve": null,
+            "id": "pyup.io-38504",
+            "specs": [
+                "<1.10.0"
+            ],
+            "v": "<1.10.0"
+        },
+        {
+            "advisory": "Confidant 1.6.0 updates python-saml to address CVE-2016-1000252.",
+            "cve": null,
+            "id": "pyup.io-38505",
+            "specs": [
+                "<1.6.0"
+            ],
+            "v": "<1.6.0"
+        },
+        {
             "advisory": "In confidant 5.0.0, requirements have been updated to resolve some reported security vulnerabilities in a few of the frozen requirements. A library affecting user sessions was upgraded which will cause users to be logged out after upgrade, which means if you're doing a rolling upgrade, that during the upgrade, you may have users that seemingly randomly get logged out. After a finished upgrade, users should only be logged out once, if they're currently logged in.",
             "cve": null,
             "id": "pyup.io-37471",
@@ -1888,6 +2110,15 @@
                 "<5.0.0"
             ],
             "v": "<5.0.0"
+        },
+        {
+            "advisory": "Confidant 6.3.0 adds support for keeping track of when credentials should be rotated. It therefore adds three new fields to the Credential model, two of which improve the security (`last_decrypted_date` and `last_rotation_date`). The former explicitly stores when someone viewed a credential. Certain credentials can potentially be highly vulnerable and could benefit from being rotated the moment the credential pair is viewed. The latter stores when a credential was last rotated. Some credentials might need to periodically be rotated for security purposes.",
+            "cve": null,
+            "id": "pyup.io-38560",
+            "specs": [
+                "<6.3.0"
+            ],
+            "v": "<6.3.0"
         }
     ],
     "confidence": [
@@ -2396,8 +2627,17 @@
             "v": "<1.2.0"
         },
         {
-            "advisory": "RoundCube in debops 2.0.0 uses the user login and password credentials to authenticate to the SMTP (submission) service before sending e-mail messages. This allows the SMTP server to check the message details, block mail with forged sender address, etc. The default configuration uses encrypted connections to the IMAP and SMTP services to ensure confidentiality and security.",
+            "advisory": "Debops 1.7.0 includes a change in its RoundCube configuration. RoundCube will use the user login and password credentials to authenticate to the SMTP (submission) service before sending e-mail messages. This allows the SMTP server to check the message details, block mail with forged sender address, etc. The default configuration uses encrypted connections to the IMAP and SMTP services to ensure confidentiality and security.",
             "cve": null,
+            "id": "pyup.io-37732",
+            "specs": [
+                "<1.7.0"
+            ],
+            "v": "<1.7.0"
+        },
+        {
+            "advisory": "RoundCube in debops 2.0.0 uses the user login and password credentials to authenticate to the SMTP (submission) service before sending e-mail messages. This allows the SMTP server to check the message details, block mail with forged sender address, etc. The default configuration uses encrypted connections to the IMAP and SMTP services to ensure confidentiality and security.",
+            "cve": "\"\"",
             "id": "pyup.io-26403",
             "specs": [
                 "<2.0.0"
@@ -2560,6 +2800,15 @@
                 "<25.0.1"
             ],
             "v": "<25.0.1"
+        },
+        {
+            "advisory": "The `django_language` and `country` cookies in directory-components 33.0.0 set as secure and http-only.",
+            "cve": null,
+            "id": "pyup.io-37475",
+            "specs": [
+                "<33.0.0"
+            ],
+            "v": "<33.0.0"
         }
     ],
     "discogs-client": [
@@ -2902,7 +3151,7 @@
         },
         {
             "advisory": "Django 1.11.21 fixes a security issue in 1.11.20: CVE-2019-12308 (AdminURLFieldWidget XSS).",
-            "cve": null,
+            "cve": "CVE-2019-12308",
             "id": "pyup.io-37186",
             "specs": [
                 "==1.11.20"
@@ -2928,7 +3177,7 @@
             "v": "==1.11.26"
         },
         {
-            "advisory": "Django 1.11.28 fixes a security issue in 1.11.27. Potential SQL injection via ``StringAgg(delimiter)``. See: CVE-2020-7471.",
+            "advisory": "Django 1.11.28 fixes a security issue in 1.11.27. Potential SQL injection via `StringAgg(delimiter)`. See: CVE-2020-7471.",
             "cve": "CVE-2020-7471",
             "id": "pyup.io-37817",
             "specs": [
@@ -3045,7 +3294,7 @@
             "v": "==2.2.8"
         },
         {
-            "advisory": "Django 2.2.10 fixes a security issue in 2.2.9. Potential SQL injection via ``StringAgg(delimiter)``. See CVE-2020-7471.",
+            "advisory": "Django 2.2.10 fixes a security issue in 2.2.9. Potential SQL injection via `StringAgg(delimiter)`. See CVE-2020-7471.",
             "cve": "CVE-2020-7471",
             "id": "pyup.io-37816",
             "specs": [
@@ -3063,7 +3312,7 @@
             "v": "==3.0"
         },
         {
-            "advisory": "Django 3.0.3 fixes a security issue and several bugs in 3.0.2. Potential SQL injection via ``StringAgg(delimiter)``. See: CVE-2020-7471.",
+            "advisory": "Django 3.0.3 fixes a security issue and several bugs in 3.0.2. Potential SQL injection via `StringAgg(delimiter)`. See: CVE-2020-7471.",
             "cve": "CVE-2020-7471",
             "id": "pyup.io-37815",
             "specs": [
@@ -3859,6 +4108,15 @@
                 "<=0.2"
             ],
             "v": "<=0.2"
+        },
+        {
+            "advisory": "Multiple CSRF issues exist in MicroPyramid Django CRM 0.2.1 via /change-password-by-admin/, /api/settings/add/, /cases/create/, /change-password-by-admin/, /comment/add/, /documents/1/view/, /documents/create/, /opportunities/create/, and /login/. See: CVE-2019-11457.",
+            "cve": "CVE-2019-11457",
+            "id": "pyup.io-37416",
+            "specs": [
+                "==0.2.1"
+            ],
+            "v": "==0.2.1"
         }
     ],
     "django-dajaxice-me": [
@@ -4037,6 +4295,15 @@
     ],
     "django-hashid-field": [
         {
+            "advisory": "Django-hashid-field v1.0.0 \r\n\r\nIf you already specified `salt` in fields, like `id = HashidField(salt=\"something\")` everywhere then you're already set, and can upgrade worry-free.\r\n\r\nIf you instead let the module fallback to `salt=settings.SECRET_KEY` (default behavior) then this upgrade will change all of your existing fields. It has been pointed out that it's possible to discover the salt used when encoding Hashids, and thus it is very dangerous to use settings.SECRET_KEY, as an attacker may be able to get your SECRET_KEY from your HashidFields.\r\n\r\nIf you absolutely MUST maintain backwards-compatibility and continue to support your old hashed values, then you can set `HASHID_FIELD_SALT = SECRET_KEY` in your settings. But this is *VERY DISCOURAGED*.",
+            "cve": null,
+            "id": "pyup.io-38508",
+            "specs": [
+                "<1.0.0"
+            ],
+            "v": "<1.0.0"
+        },
+        {
             "advisory": "Django-hashid-field 3.1.1 fixes a security bug where comparison operators (gt, gte, lt, lte) would allow integer lookups regardless of ALLOW_INT_LOOKUP setting.",
             "cve": null,
             "id": "pyup.io-37680",
@@ -4055,6 +4322,17 @@
                 "<1.1"
             ],
             "v": "<1.1"
+        }
+    ],
+    "django-heartbeat": [
+        {
+            "advisory": "Django-heartbeat 2.0.3 fixes its dependency to an insecure psutil package.",
+            "cve": null,
+            "id": "pyup.io-38604",
+            "specs": [
+                "<2.0.3"
+            ],
+            "v": "<2.0.3"
         }
     ],
     "django-hijack": [
@@ -4139,6 +4417,17 @@
                 "<1.0.4"
             ],
             "v": "<1.0.4"
+        }
+    ],
+    "django-js-reverse": [
+        {
+            "advisory": "django-js-reverse (aka Django JS Reverse) before 0.9.1 has XSS via js_reverse_inline. See: CVE-2019-15486.",
+            "cve": "CVE-2019-15486",
+            "id": "pyup.io-37399",
+            "specs": [
+                "<0.9.1"
+            ],
+            "v": "<0.9.1"
         }
     ],
     "django-lazysignup": [
@@ -4289,6 +4578,17 @@
             "v": "<18.9.3"
         }
     ],
+    "django-nameko-standalone": [
+        {
+            "advisory": "Django-nameko-standalone 1.3.2 updates its Django version to avoid security warnings.",
+            "cve": null,
+            "id": "pyup.io-38565",
+            "specs": [
+                "<1.3.2"
+            ],
+            "v": "<1.3.2"
+        }
+    ],
     "django-newsletter": [
         {
             "advisory": "django-newsletter before 0.7 allowed a user to subscribe others to the newsletter without authorization.",
@@ -4327,6 +4627,17 @@
                 "<0.4.5b"
             ],
             "v": "<0.4.5b"
+        }
+    ],
+    "django-nopassword": [
+        {
+            "advisory": "Django-nopassword before 5.0.0 stores cleartext secrets in the database. See: CVE-2019-10682.",
+            "cve": "CVE-2019-10682",
+            "id": "pyup.io-38080",
+            "specs": [
+                "<5.0.0"
+            ],
+            "v": "<5.0.0"
         }
     ],
     "django-orghierarchy": [
@@ -4663,6 +4974,17 @@
             "v": "<2.0.13"
         }
     ],
+    "django-two-factor-auth": [
+        {
+            "advisory": "Django Two-Factor Authentication before 1.12, stores the user's password in clear text in the user session (base64-encoded). The password is stored in the session when the user submits their username and password, and is removed once they complete authentication by entering a two-factor authentication code. This means that the password is stored in clear text in the session for an arbitrary amount of time, and potentially forever if the user begins the login process by entering their username and password and then leaves before entering their two-factor authentication code. The severity of this issue depends on which type of session storage you have configured: in the worst case, if you're using Django's default database session storage, then users' passwords are stored in clear text in your database. In the best case, if you're using Django's signed cookie session, then users' passwords are only stored in clear text within their browser's cookie store. In the common case of using Django's cache session store, the users' passwords are stored in clear text in whatever cache storage you have configured (typically Memcached or Redis). This has been fixed in 1.12. After upgrading, users should be sure to delete any clear text passwords that have been stored. For example, if you're using the database session backend, you'll likely want to delete any session record from the database and purge that data from any database backups or replicas. In addition, affected organizations who have suffered a database breach while using an affected version should inform their users that their clear text passwords have been compromised. All organizations should encourage users whose passwords were insecurely stored to change these passwords on any sites where they were used. As a workaround, wwitching Django's session storage to use signed cookies instead of the database or cache lessens the impact of this issue, but should not be done without a thorough understanding of the security tradeoffs of using signed cookies rather than a server-side session storage. There is no way to fully mitigate the issue without upgrading. See: CVE-2020-15105.",
+            "cve": "CVE-2020-15105",
+            "id": "pyup.io-38562",
+            "specs": [
+                "<1.12"
+            ],
+            "v": "<1.12"
+        }
+    ],
     "django-ucamlookup": [
         {
             "advisory": "django-ucamlookup 1.9 fixes XXS vulnerability in template macros",
@@ -4705,6 +5027,28 @@
                 "<2.0.2"
             ],
             "v": "<2.0.2"
+        }
+    ],
+    "django-user-management": [
+        {
+            "advisory": "Django-user-management 18.0.0 fixes a Pillow security issue and updates djangorestframework>=3.9.1 for an XSS fix.",
+            "cve": null,
+            "id": "pyup.io-38634",
+            "specs": [
+                "<18.0.0"
+            ],
+            "v": "<18.0.0"
+        }
+    ],
+    "django-user-sessions": [
+        {
+            "advisory": "In Django User Sessions (django-user-sessions) before 1.7.1, the views provided allow users to terminate specific sessions. The session key is used to identify sessions, and thus included in the rendered HTML. In itself this is not a problem. However if the website has an XSS vulnerability, the session key could be extracted by the attacker and a session takeover could happen. See: CVE-2020-5224.",
+            "cve": "CVE-2020-5224",
+            "id": "pyup.io-37777",
+            "specs": [
+                "<1.7.1"
+            ],
+            "v": "<1.7.1"
         }
     ],
     "django-watchman": [
@@ -4980,6 +5324,17 @@
             "v": "<0.8.1"
         }
     ],
+    "dogtag-pki": [
+        {
+            "advisory": "In Dogtag PKI through 10.8.3, the pki.client.PKIConnection class did not enable python-requests certificate validation. Since the verify parameter was hard-coded in all request functions, it was not possible to override the setting. As a result, tools making use of this class, such as the pki-server command, may have been vulnerable to Person-in-the-Middle attacks in certain non-localhost use cases. This is fixed in 10.9.0-b1. See: CVE-2020-15720.",
+            "cve": "CVE-2020-15720",
+            "id": "pyup.io-38574",
+            "specs": [
+                "<=10.8.3"
+            ],
+            "v": "<=10.8.3"
+        }
+    ],
     "donfig": [
         {
             "advisory": "An issue was discovered in Donfig 0.3.0. There is a vulnerability in the collect_yaml method in config_obj.py. It can execute arbitrary Python commands, resulting in command execution.",
@@ -5011,6 +5366,17 @@
                 "<1.4"
             ],
             "v": "<1.4"
+        }
+    ],
+    "drf-jwt": [
+        {
+            "advisory": "An issue was discovered in drf-jwt 1.15.x before 1.15.1. It allows attackers with access to a notionally invalidated token to obtain a new, working token via the refresh endpoint, because the blacklist protection mechanism is incompatible with the token-refresh feature. NOTE: drf-jwt is a fork of jpadilla/django-rest-framework-jwt, which is unmaintained. See: CVE-2020-10594.",
+            "cve": "CVE-2020-10594",
+            "id": "pyup.io-38073",
+            "specs": [
+                ">=1.15.0,<1.15.1"
+            ],
+            "v": ">=1.15.0,<1.15.1"
         }
     ],
     "drf-tracking": [
@@ -5126,6 +5492,17 @@
             "v": "<1.3.0"
         }
     ],
+    "elastic-apm": [
+        {
+            "advisory": "When the Elastic APM agent for Python versions before 5.1.0 is run as a CGI script, there is a variable name clash flaw if a remote attacker can control the proxy header. This could result in an attacker redirecting collected APM data to a proxy of their choosing. See: CVE-2019-7617.",
+            "cve": "CVE-2019-7617",
+            "id": "pyup.io-37398",
+            "specs": [
+                "<5.1.0"
+            ],
+            "v": "<5.1.0"
+        }
+    ],
     "electrumx": [
         {
             "advisory": "electrumx before 1.4.1 did not use PROTOCOL_MIN to 1.0; this did not prevent 2.9.x clients from connecting\r\n  and encouraging upgrades to more recent clients without the security hole.",
@@ -5197,6 +5574,37 @@
                 "<1.3.0"
             ],
             "v": "<1.3.0"
+        }
+    ],
+    "espeakng": [
+        {
+            "advisory": "Espeakng 1.49.0 fixes many security issues. No details were given.",
+            "cve": null,
+            "id": "pyup.io-38581",
+            "specs": [
+                "<1.49.0"
+            ],
+            "v": "<1.49.0"
+        },
+        {
+            "advisory": "Espeakng 1.50 includes the following security fixes:\r\n\r\n*  Fix several crashes in the emoji support.\r\n*  Fix several static analysis issues detected by Coverity Scan.\r\n*  Fix several static analysis issues detected by Microsoft Visual C++ `/analyze`.\r\n*  `oss-fuzz` support for the SSML logic.\r\n*  Fix running `make check` with `-fsanitize=address` (LLVM AddressSanitizer).",
+            "cve": null,
+            "id": "pyup.io-38580",
+            "specs": [
+                "<1.50"
+            ],
+            "v": "<1.50"
+        }
+    ],
+    "esphome": [
+        {
+            "advisory": "Esphome 1.15.0b1 includes a fix for an http_request ESP32 insecure requests that may return the address of local variable. See: <https://github.com/esphome/issues/issues/1175>.",
+            "cve": null,
+            "id": "pyup.io-38623",
+            "specs": [
+                "<1.15.0b1"
+            ],
+            "v": "<1.15.0b1"
         }
     ],
     "esptool": [
@@ -5283,6 +5691,17 @@
                 "<6.1"
             ],
             "v": "<6.1"
+        }
+    ],
+    "eve-alpha": [
+        {
+            "advisory": "Ave-alpha 0.0.7 adds the `MONGO_QUERY_BLACKLIST` option. This allows blacklisting of mongo query operators that should not be allowed in resource queries (``?where=``). Defaults to ['$where', '$regex']. Mongo Javascript operators are disabled by default as they might be used as vectors for injection attacks. Javascript queries also tend to be slow and generally can be easily replaced with the /(very rich) Mongo query dialect.",
+            "cve": null,
+            "id": "pyup.io-37162",
+            "specs": [
+                "<0.0.7"
+            ],
+            "v": "<0.0.7"
         }
     ],
     "event-tracking": [
@@ -5449,6 +5868,17 @@
             "v": "<0.3.34"
         }
     ],
+    "feedgen": [
+        {
+            "advisory": "Feedgen (python feedgen) before 0.9.0 is susceptible to XML Denial of Service attacks. The *feedgen* library allows supplying XML as content for some of the available fields. This XML will be parsed and integrated into the existing XML tree. During this process, feedgen is vulnerable to XML Denial of Service Attacks (e.g. XML Bomb). This becomes a concern in particular if feedgen is used to include content from untrused sources and if XML (including XHTML) is directly included instead of providing plain tex content only. This problem has been fixed in feedgen 0.9.0 which disallows XML entity expansion and external resources. See: CVE-2020-5227.",
+            "cve": "CVE-2020-5227",
+            "id": "pyup.io-37778",
+            "specs": [
+                "<0.9.0"
+            ],
+            "v": "<0.9.0"
+        }
+    ],
     "feedparser": [
         {
             "advisory": "Cross-site scripting (XSS) vulnerability in feedparser.py in Universal Feed Parser (aka feedparser or python-feedparser) before 5.0 allows remote attackers to inject arbitrary web script or HTML via vectors involving nested CDATA stanzas.",
@@ -5516,6 +5946,15 @@
             "v": "<0.28.0"
         },
         {
+            "advisory": "Password reset tokens in fincity-django-allauth 0.33.0 are prevented from being leaked through the password reset URL.",
+            "cve": null,
+            "id": "pyup.io-38514",
+            "specs": [
+                "<0.33.0"
+            ],
+            "v": "<0.33.0"
+        },
+        {
             "advisory": "Before fincity-django-allauth 0.34.0, the \"Set Password\" view did not properly check whether or not the user already had a usable password set. This allowed an attacker to set the password without providing the current password, but only in case the attacker already gained control over the victim's session.",
             "cve": null,
             "id": "pyup.io-37463",
@@ -5532,6 +5971,15 @@
                 "<0.35.0"
             ],
             "v": "<0.35.0"
+        },
+        {
+            "advisory": "The authentication backend in fincity-django-allauth before 0.36.0 did not invoke the `user_can_authenticate()` method, potentially allowing users with `is_active=False` to authenticate when the allauth authentication backend was used in a non allauth context.",
+            "cve": null,
+            "id": "pyup.io-38513",
+            "specs": [
+                "<0.36.0"
+            ],
+            "v": "<0.36.0"
         },
         {
             "advisory": "Before fincity-django-allauth 0.38.0, the ``{% user_display user %}`` tag did not escape properly. Depending on the username validation rules, this could lead to XSS issues.",
@@ -5917,6 +6365,17 @@
             "v": "<1.0"
         }
     ],
+    "freewvs": [
+        {
+            "advisory": "In freewvs before 0.1.1, a directory structure of more than 1000 nested directories can interrupt a freewvs scan due to Python's recursion limit and os.walk(). This can be problematic in a case where an administrator scans the dirs of potentially untrusted users. This has been patched in 0.1.1. See: CVE-2020-15101.",
+            "cve": "CVE-2020-15101",
+            "id": "pyup.io-38575",
+            "specs": [
+                "<0.1.1"
+            ],
+            "v": "<0.1.1"
+        }
+    ],
     "fresco": [
         {
             "advisory": "In fresco after 0.5.5 user supplied data is no longer reflected in error messages raised from ``fresco.routeargs.RequestArg``. This fixes a potential XSS vulnerability affecting versions starting from 0.5.0.",
@@ -6093,13 +6552,33 @@
     ],
     "geonode": [
         {
-            "advisory": "geonode 2.10.30\r\n\r\n== Bumps ==\r\ndjango from 1.11.21 to 1.11.22\r\ntwisted from 18.9.0 to 19.2.1\r\nurllib3 to 1.24.2\r\n\r\n== Also ==\r\nRemoves not useful and potentially blocking calls from signals and login/out calls\r\nGeneral security and encoding updates\r\nSecurity vulnerabilities on deps (PyYAML)\r\nEnforce GeoNode REST service API security",
+            "advisory": "Geonode 2.10.30 updates django from 1.11.21 to 1.11.22, updates twisted from 18.9.0 to 19.2.1, and updates urllib3 to 1.24.2. \r\n\r\nIt also removes not useful and potentially blocking calls from signals and login/out calls, and also enforces GeoNode REST service API security.\r\n\r\nLastly, it addresses  security vulnerabilities in the PyYAML dependency and includes some general security and encoding updates.",
             "cve": null,
             "id": "pyup.io-37877",
             "specs": [
                 "<2.10.3"
             ],
             "v": "<2.10.3"
+        },
+        {
+            "advisory": "Geonode 2.8.1 fix a JavaScript vulnerability and also fixes a vulnerability with the Pillow dependency.",
+            "cve": null,
+            "id": "pyup.io-38558",
+            "specs": [
+                "<2.8.1"
+            ],
+            "v": "<2.8.1"
+        }
+    ],
+    "gerapy": [
+        {
+            "advisory": "CVE-2020-7698 affects the package Gerapy from 0 and before 0.9.3. The input being passed to Popen, via the project_configure endpoint, isn\u2019t being sanitized.",
+            "cve": "CVE-2020-7698",
+            "id": "pyup.io-38636",
+            "specs": [
+                ">=0,<0.9.3"
+            ],
+            "v": ">=0,<0.9.3"
         }
     ],
     "gevent": [
@@ -6122,6 +6601,17 @@
                 "<1.2.0"
             ],
             "v": "<1.2.0"
+        }
+    ],
+    "giosgapps-bindings": [
+        {
+            "advisory": "Giosgapps-bindings 0.0.19 updates Django to get rid of security warnings.",
+            "cve": null,
+            "id": "pyup.io-37906",
+            "specs": [
+                "<0.0.19"
+            ],
+            "v": "<0.0.19"
         }
     ],
     "girder": [
@@ -6287,6 +6777,17 @@
             "v": "<2.9"
         }
     ],
+    "gpmf": [
+        {
+            "advisory": "Gpmf 1.2.2 addresses OOB attacks.",
+            "cve": null,
+            "id": "pyup.io-38566",
+            "specs": [
+                "<1.2.2"
+            ],
+            "v": "<1.2.2"
+        }
+    ],
     "graphrepo": [
         {
             "advisory": "Graphrepo 0.1.8 updates some dependencies in order to avoid security vulnerabilities.",
@@ -6371,6 +6872,17 @@
                 "<0.0.11"
             ],
             "v": "<0.0.11"
+        }
+    ],
+    "hhpy": [
+        {
+            "advisory": "Hhpy 0.1.8 includes an upgrade of bleach for security reasons.",
+            "cve": null,
+            "id": "pyup.io-38480",
+            "specs": [
+                "<0.1.8"
+            ],
+            "v": "<0.1.8"
         }
     ],
     "holocron": [
@@ -6701,7 +7213,7 @@
         },
         {
             "advisory": "Indico 2.1.3\r\n- Only returns timetable entries for the current session when updating a session through the timetable (issue 3474)\r\n- Prevents session managers/coordinators from modifying certain timetable entries or scheduling contributions not assigned to their session\r\n- Restricts access to timetable entry details to users who are authorized to see them",
-            "cve": null,
+            "cve": "\"\"",
             "id": "pyup.io-34153",
             "specs": [
                 ">=2.1.0,<2.1.3"
@@ -6875,6 +7387,17 @@
             "v": "<0.1.3"
         }
     ],
+    "ipsilon": [
+        {
+            "advisory": "The Identity Provider (IdP) server in Ipsilon 0.1.0 before 1.0.1 does not properly escape certain characters in a Python exception-message template, which makes it easier for remote attackers to conduct cross-site scripting (XSS) attacks via an HTTP response. See: CVE-2015-5216.",
+            "cve": "CVE-2015-5216",
+            "id": "pyup.io-37897",
+            "specs": [
+                ">=0.1.0,<1.0.1"
+            ],
+            "v": ">=0.1.0,<1.0.1"
+        }
+    ],
     "ipwb": [
         {
             "advisory": "ipwb 0.2018.08.29.1434 updates Flask use in ipwb replay due to a security vulnerability.",
@@ -6946,6 +7469,19 @@
                 "<2.3.0"
             ],
             "v": "<2.3.0"
+        },
+        {
+            "advisory": "A vulnerability was found in openstack-ironic-inspector all versions excluding 5.0.2, 6.0.3, 7.2.4, 8.0.3 and 8.2.1. A SQL-injection vulnerability was found in openstack-ironic-inspector's node_cache.find_node(). This function makes a SQL query using unfiltered data from a server reporting inspection results (by a POST to the /v1/continue endpoint). Because the API is unauthenticated, the flaw could be exploited by an attacker with access to the network on which ironic-inspector is listening. Because of how ironic-inspector uses the query results, it is unlikely that data could be obtained. However, the attacker could pass malicious data and create a denial of service. See: CVE-2019-10141.",
+            "cve": "CVE-2019-10141",
+            "id": "pyup.io-37319",
+            "specs": [
+                "<5.0.2",
+                ">=6.0,<6.0.3",
+                ">=7.0,<7.2.4",
+                ">=8.0,<8.0.3",
+                ">=8.1,<8.2.1"
+            ],
+            "v": "<5.0.2,>=6.0,<6.0.3,>=7.0,<7.2.4,>=8.0,<8.0.3,>=8.1,<8.2.1"
         }
     ],
     "iso6709": [
@@ -7364,6 +7900,77 @@
             "v": "<=0.10"
         }
     ],
+    "keystone": [
+        {
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. The list of roles provided for an OAuth1 access token is silently ignored. Thus, when an access token is used to request a keystone token, the keystone token contains every role assignment the creator had for the project. This results in the provided keystone token having more role assignments than the creator intended, possibly giving unintended escalated access. See: CVE-2020-12690.",
+            "cve": "CVE-2020-12690",
+            "id": "pyup.io-38583",
+            "specs": [
+                "<15.0.1",
+                "==16.0.0"
+            ],
+            "v": "<15.0.1,==16.0.0"
+        },
+        {
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any user authenticated within a limited scope (trust/oauth/application credential) can create an EC2 credential with an escalated permission, such as obtaining admin while the user is on a limited viewer role. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges. See: CVE-2020-12689.",
+            "cve": "CVE-2020-12689",
+            "id": "pyup.io-38587",
+            "specs": [
+                "<15.0.1",
+                "==16.0.0"
+            ],
+            "v": "<15.0.1,==16.0.0"
+        },
+        {
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. The EC2 API doesn't have a signature TTL check for AWS Signature V4. An attacker can sniff the Authorization header, and then use it to reissue an OpenStack token an unlimited number of times. See: CVE-2020-12692.",
+            "cve": "CVE-2020-12692",
+            "id": "pyup.io-38584",
+            "specs": [
+                "<15.0.1",
+                "==16.0.0"
+            ],
+            "v": "<15.0.1,==16.0.0"
+        },
+        {
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any authenticated user can create an EC2 credential for themselves for a project that they have a specified role on, and then perform an update to the credential user and project, allowing them to masquerade as another user. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges. See: CVE-2020-12691.",
+            "cve": "CVE-2020-12691",
+            "id": "pyup.io-38585",
+            "specs": [
+                "<15.0.1",
+                "==16.0.0"
+            ],
+            "v": "<15.0.1,==16.0.0"
+        },
+        {
+            "advisory": "OpenStack Keystone 15.0.0 and 16.0.0 are affected by Data Leakage in the list credentials API. Any user with a role on a project is able to list any credentials with the /v3/credentials API when enforce_scope is false. Users with a role on a project are able to view any other users' credentials, which could (for example) leak sign-on information for Time-based One Time Passwords (TOTP). Deployments with enforce_scope set to false are affected. (There will be a slight performance impact for the list credentials API once this issue is fixed.) See: CVE-2019-19687.",
+            "cve": "CVE-2019-19687",
+            "id": "pyup.io-37770",
+            "specs": [
+                "==15.0.0",
+                "==16.0.0"
+            ],
+            "v": "==15.0.0,==16.0.0"
+        },
+        {
+            "advisory": "HTTPSConnections in OpenStack Keystone 2013, OpenStack Compute 2013.1, and possibly other OpenStack components, fail to validate server-side SSL certificates. See: CVE-2013-2255.",
+            "cve": "CVE-2013-2255",
+            "id": "pyup.io-38589",
+            "specs": [
+                "==2013"
+            ],
+            "v": "==2013"
+        },
+        {
+            "advisory": "It is possible to remotely trigger a crash in Keystone by sending an extremely long password. When Keystone is validating the password, glibc allocates space on the stack for the entire password. If the password is long enough, stack space can be exhausted, resulting in a crash. This vulnerability is mitigated by a patch to impose a reasonable limit on password length (4 kB). Reportedly, all versions are affected. See also: CVE-2012-1572 and <https://security.openstack.org/ossa/OSSA-2012-002.html>.",
+            "cve": "CVE-2012-1572",
+            "id": "pyup.io-38586",
+            "specs": [
+                ">0",
+                "<0"
+            ],
+            "v": ">0,<0"
+        }
+    ],
     "keystonemiddleware": [
         {
             "advisory": "The identity service in OpenStack Identity (Keystone) before 2015.1.3 (Kilo) and 8.0.x before 8.0.2 (Liberty) and keystonemiddleware (formerly python-keystoneclient) before 1.5.4 (Kilo) and Liberty before 2.3.3 does not properly invalidate authorization tokens when using the PKI or PKIZ token providers, which allows remote authenticated users to bypass intended access restrictions and gain access to cloud resources by manipulating byte fields within a revoked token.",
@@ -7501,9 +8108,27 @@
                 "<0.2.1"
             ],
             "v": "<0.2.1"
+        },
+        {
+            "advisory": "Kiosk-client 0.2.2 update Pillow to >=6.2.0 to address CVE-2019-16865.\r\n\r\nAn issue was discovered in Pillow before 6.2.0. When reading specially crafted invalid image files, the library can either allocate very large amounts of memory or take an extremely long period of time to process the image.",
+            "cve": "CVE-2019-16865",
+            "id": "pyup.io-38601",
+            "specs": [
+                "<0.2.2"
+            ],
+            "v": "<0.2.2"
         }
     ],
     "kiwitcms": [
+        {
+            "advisory": "Kiwi TCMS 4.2:\r\n- Enables testing with Badit, Coverity Scan, pyup.io, andf Snyk\r\n- Uses SHA256 instead of MD5 and SHA1\r\n- Uses the `secrets` module for activation keys\r\n- Removes unnecessary AJAX view that had remote code execution vulnerability\r\n- Doesn't use hardcoded temporary directories\r\n- Upgrades to Patternfly 3.36.0, which fixes vulnerabilities https://snyk.io/vuln/npm:moment:20161019 and https://snyk.io/vuln/npm:moment:20170905",
+            "cve": null,
+            "id": "pyup.io-38543",
+            "specs": [
+                "<4.2"
+            ],
+            "v": "<4.2"
+        },
         {
             "advisory": "Kiwitcms 6.0 updates to Django 2.1.2 (due to a high severity security issue) and to Patternfly 3.54.8.",
             "cve": null,
@@ -7512,6 +8137,87 @@
                 "<6.0"
             ],
             "v": "<6.0"
+        },
+        {
+            "advisory": "Kiwitcms 6.10 updates Django from 2.2.1 to 2.2.2 (see CVE-2019-12308 and CVE-2019-11358). Additionally, it adds missing permission checks for menus in Test run page UI template. Permission check are also added for TestExecution status and comment menu. See <https://github.com/kiwitcms/Kiwi/issues/716>. Lastly, it re-enables static analysis with `bandit` and `Coverity Scan` in Travis CI.",
+            "cve": "CVE-2019-12308,CVE-2019-11358",
+            "id": "pyup.io-38537",
+            "specs": [
+                "<6.10"
+            ],
+            "v": "<6.10"
+        },
+        {
+            "advisory": "Kiwi TCMS 6.11 updates 'Django' from 2.2.2 (which is known to not be secure) to 2.2.4.",
+            "cve": null,
+            "id": "pyup.io-38544",
+            "specs": [
+                "<6.11"
+            ],
+            "v": "<6.11"
+        },
+        {
+            "advisory": "Kiwi TCMS 6.3 resolves a medium severity XSS vulnerability which can be exploited when previewing malicious text in Simple MDE editor. Additionally, it uses `mozilla/bleach` before rendering Markdown to the user as a second layer of protection against the previously mentioned XSS vulnerability.",
+            "cve": null,
+            "id": "pyup.io-38542",
+            "specs": [
+                "<6.3"
+            ],
+            "v": "<6.3"
+        },
+        {
+            "advisory": "Kiwi TCMS 6.4 updates Django from 2.1.4 to 2.1.5, which deals with CVE-2019-3498. It also update Patternfly to version 3.59.0, which deals with an XSS issue in bootstrap (CVE-2018-14041). By default session cookies will expire after 24 hours. This can now be controlled via the ``SESSION_COOKIE_AGE`` setting. See <https://github.com/kiwitcms/Kiwi/issues/556>.",
+            "cve": "CVE-2019-3498,CVE-2018-14041",
+            "id": "pyup.io-38541",
+            "specs": [
+                "<6.4"
+            ],
+            "v": "<6.4"
+        },
+        {
+            "advisory": "Kiwi TCMS 6.5 includes a better override of SimpleMDE markdown rendering to prevent XSS vulnerabilities in SimpleMDE.",
+            "cve": null,
+            "id": "pyup.io-38540",
+            "specs": [
+                "<6.5"
+            ],
+            "v": "<6.5"
+        },
+        {
+            "advisory": "Kiwi TCMS 6.5.3 updates Django from 2.1.5 to 2.1.7 to prevent memory exhaustion in `django.utils.numberformat.format()`. See CVE-2019-6975.",
+            "cve": "CVE-2019-6975",
+            "id": "pyup.io-38539",
+            "specs": [
+                "<6.5.3"
+            ],
+            "v": "<6.5.3"
+        },
+        {
+            "advisory": "Kiwi TCMS 6.6 explicitly requires marked v0.6.1 to fix medium severity ReDoS vulnerability.",
+            "cve": null,
+            "id": "pyup.io-38538",
+            "specs": [
+                "<6.6"
+            ],
+            "v": "<6.6"
+        },
+        {
+            "advisory": "Kiwi TCMS 7.0 removes the API method ``BugSystem.filter()``. It was possible to use this method to steal passwords or keys used for Issue Tracker integration. This vulnerability could be exploited by users logged into Kiwi TCMS and is classified as medium severity.",
+            "cve": null,
+            "id": "pyup.io-38536",
+            "specs": [
+                "<7.0"
+            ],
+            "v": "<7.0"
+        },
+        {
+            "advisory": "Kiwi TCMS 7.3 includes a fix for CVE-2019-19844: potential account hijack via password reset form.",
+            "cve": "CVE-2019-19844",
+            "id": "pyup.io-38535",
+            "specs": [
+                "<7.3"
+            ],
+            "v": "<7.3"
         },
         {
             "advisory": "Kiwi TCMS 8.1 prevents an XSS attack via tags by having the JSON-RPC handler escape all HTML strings. Additionally, it updates Django from 3.0.3 to 3.0.4, which fixes security issue CVE-2020-9402.",
@@ -7689,6 +8395,17 @@
                 "<0.1.15"
             ],
             "v": "<0.1.15"
+        }
+    ],
+    "lando": [
+        {
+            "advisory": "Lando 0.11.3 adds `cluster_api_settings .ssl_ca_cert` config flag to allow secure k8s connections. See <https://github.com/Duke-GCB/lando/pull/209>.",
+            "cve": null,
+            "id": "pyup.io-37414",
+            "specs": [
+                "<0.11.3"
+            ],
+            "v": "<0.11.3"
         }
     ],
     "lapdog": [
@@ -7990,6 +8707,30 @@
             "v": "<0.3.4"
         }
     ],
+    "manifest-tool": [
+        {
+            "advisory": "Manifest-tool 2.0.0 adds an option to sign candidate image using update private key, allowing to implement secure boot on a device side.",
+            "cve": null,
+            "id": "pyup.io-38628",
+            "specs": [
+                "<2.0.0"
+            ],
+            "v": "<2.0.0"
+        }
+    ],
+    "manila": [
+        {
+            "advisory": "OpenStack Manila <7.4.1, >=8.0.0 <8.1.1, and >=9.0.0 <9.1.1 allows attackers to view, update, delete, or share resources that do not belong to them, because of a context-free lookup of a UUID. Attackers may also create resources, such as shared file systems and groups of shares on such share networks. See: CVE-2020-9543.",
+            "cve": "CVE-2020-9543",
+            "id": "pyup.io-38052",
+            "specs": [
+                "<7.4.1",
+                ">=8.0.0,<8.1.1",
+                ">=9.0.0,<9.1.1"
+            ],
+            "v": "<7.4.1,>=8.0.0,<8.1.1,>=9.0.0,<9.1.1"
+        }
+    ],
     "mantissa": [
         {
             "advisory": "mantissa before 0.6.14 in xmantissa.webtheme allows access to arbitrary filesystem contents.",
@@ -8088,6 +8829,17 @@
             "v": "<1.2"
         }
     ],
+    "matrix-sydent": [
+        {
+            "advisory": "util/emailutils.py in Matrix Sydent before 1.0.2 mishandles registration restrictions that are based on e-mail domain, if the allowed_local_3pids option is enabled. This occurs because of potentially unwanted behavior in Python, in which an email.utils.parseaddr call on user@bad.example.net@good.example.com returns the user@bad.example.net substring. See: CVE-2019-11340.",
+            "cve": "CVE-2019-11340",
+            "id": "pyup.io-37073",
+            "specs": [
+                "<1.0.2"
+            ],
+            "v": "<1.0.2"
+        }
+    ],
     "matthisk-httpsig": [
         {
             "advisory": "matthisk-httpsig before 1.0.0 allowed reading keyfiles from disk as this is a huge security hole if this is used in a server framework like drf-httpsig.",
@@ -8141,6 +8893,17 @@
                 "<0.9.1"
             ],
             "v": "<0.9.1"
+        }
+    ],
+    "mega.py": [
+        {
+            "advisory": "Mega.py 3.6.2 includes SMS verification for enhanced security.",
+            "cve": null,
+            "id": "pyup.io-37617",
+            "specs": [
+                "<3.6.2"
+            ],
+            "v": "<3.6.2"
         }
     ],
     "megalib": [
@@ -8231,6 +8994,15 @@
             "v": "<0.1"
         },
         {
+            "advisory": "Mi 0.2 adds ACL-based security.",
+            "cve": null,
+            "id": "pyup.io-37998",
+            "specs": [
+                "<0.2"
+            ],
+            "v": "<0.2"
+        },
+        {
             "advisory": "mi 0.4.2 changes the default paster template generator to use ``Paste#http`` server rather than ``PasteScript#cherrpy`` server.  The cherrypy server has a security risk in it when ``REMOTE_USER`` is trusted by the downstream application.",
             "cve": null,
             "id": "pyup.io-37993",
@@ -8296,6 +9068,17 @@
             "v": "<0.8"
         }
     ],
+    "miniwdl": [
+        {
+            "advisory": "Miniwdl 0.6.0 manipulates ownership/permissions to improve security and user experience:\r\n* as run completes, chown everything in run directory to invoking user and primary group\r\n* run task commands with membership in invoking user's primary group, ensuring access to working directory even if they've dropped privileges (a good docker security practice)\r\n* `--as-me` to force all task commands to run as invoking user (more secure, but blocks commands that assume root e.g. apt-get)\r\n* Revert to always running command in bash (as required by WDL spec) rather than container $SHELL",
+            "cve": null,
+            "id": "pyup.io-37814",
+            "specs": [
+                "<0.6.0"
+            ],
+            "v": "<0.6.0"
+        }
+    ],
     "misago": [
         {
             "advisory": "misago 0.19.4 updates requests to 2.20.0 resolving potential vulnerability in HTTP connections handling.",
@@ -8318,7 +9101,29 @@
             "v": "<0.3b12"
         }
     ],
+    "misp-maltego": [
+        {
+            "advisory": "Misp-maltego 1.4.5 resolves an information disclosure vulnerability when using MISP-maltego as remote transform server. The transform server would cache the MISP credentials of the first user connected, and provide access to that MISP instance for any later user.  See: CVE-2020-12889.",
+            "cve": "CVE-2020-12889",
+            "id": "pyup.io-38487",
+            "specs": [
+                "<1.4.5"
+            ],
+            "v": "<1.4.5"
+        }
+    ],
     "mistral": [
+        {
+            "advisory": "An information-exposure vulnerability was discovered where openstack-mistral's undercloud log files containing clear-text information were made world readable. A malicious system user could exploit this flaw to access sensitive user information. See: CVE-2019-3866 and <https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3866>.",
+            "cve": "CVE-2019-3866",
+            "id": "pyup.io-37774",
+            "specs": [
+                "<7.1.0",
+                ">=8.0,<8.1.0",
+                ">=9.0,<9.0.1"
+            ],
+            "v": "<7.1.0,>=8.0,<8.1.0,>=9.0,<9.0.1"
+        },
         {
             "advisory": "A Denial of Service (DoS) condition is possible in OpenStack Mistral in versions up to and including 7.0.3. Submitting a specially crafted workflow definition YAML file containing nested anchors can lead to resource exhaustion culminating in a denial of service. See: CVE-2018-16848.",
             "cve": "CVE-2018-16848",
@@ -8509,6 +9314,35 @@
                 "<2.0.4"
             ],
             "v": "<2.0.4"
+        }
+    ],
+    "monero": [
+        {
+            "advisory": "Monero 0.10.0 includes a temporary patch (via a predefined user-agent) for the Cross-Site Request Forgery attack against monero-wallet-cli's RPC API.",
+            "cve": null,
+            "id": "pyup.io-37447",
+            "specs": [
+                "<0.10.0"
+            ],
+            "v": "<0.10.0"
+        },
+        {
+            "advisory": "Monero 0.12.0.0 includes tweaked PoW to block DoS attacks from ASICs, as well as a way to securely erase keys from memory, for most cases, when no longer in use.",
+            "cve": null,
+            "id": "pyup.io-37446",
+            "specs": [
+                "<0.12.0.0"
+            ],
+            "v": "<0.12.0.0"
+        },
+        {
+            "advisory": "Monero 0.9.1 includes a bug fix for the block 913193 attack, plus checkpoints.",
+            "cve": null,
+            "id": "pyup.io-37448",
+            "specs": [
+                "<0.9.1"
+            ],
+            "v": "<0.9.1"
         }
     ],
     "monoshape": [
@@ -8831,6 +9665,19 @@
             "v": "<0.2"
         }
     ],
+    "neutron": [
+        {
+            "advisory": "An issue was discovered in OpenStack Neutron 11.x before 11.0.7, 12.x before 12.0.6, and 13.x before 13.0.3. By creating two security groups with separate/overlapping port ranges, an authenticated user may prevent Neutron from being able to configure networks on any compute nodes where those security groups are present, because of an Open vSwitch (OVS) firewall KeyError. All Neutron deployments utilizing neutron-openvswitch-agent are affected. See: CVE-2019-10876.",
+            "cve": "CVE-2019-10876",
+            "id": "pyup.io-37022",
+            "specs": [
+                ">=11.0,<11.0.7",
+                ">=12.0,<12.0.6",
+                ">=13.0,<13.0.3"
+            ],
+            "v": ">=11.0,<11.0.7,>=12.0,<12.0.6,>=13.0,<13.0.3"
+        }
+    ],
     "newrelic": [
         {
             "advisory": "New Relic agents run explain plans for Slow Transaction Traces and Slow SQL Queries. Previous versions of the agents would run an explain plan on the SQL query by prepending the query with explain. This may cause an issue when there are multiple statements separated by semicolons in a single query. The first statement in the string returns its explain plan, but any subsequent statement after that may execute as a general SQL statement. Depending on the language, library, and database, the agent may return the results of the additional statements to New Relic. It is also possible that the additional statements could execute an additional INSERT or UPDATE command. With this security update, New Relic agents will no longer run explain plans on any query that contains a semicolon as a statement separator.",
@@ -8961,6 +9808,17 @@
     ],
     "nova": [
         {
+            "advisory": "An issue was discovered in OpenStack Nova before 18.2.4, 19.x before 19.1.0, and 20.x before 20.1.0. It can leak consoleauth tokens into log files. An attacker with read access to the service's logs may obtain tokens used for console access. All Nova setups using novncproxy are affected. This is related to NovaProxyRequestHandlerBase.new_websocket_client in console/websocketproxy.py. See: CVE-2015-9543.",
+            "cve": "CVE-2015-9543",
+            "id": "pyup.io-37903",
+            "specs": [
+                "<18.2.4",
+                ">=20.0.0.0rc1,<20.1.0",
+                ">=19.0.0.0rc1,<19.1.0"
+            ],
+            "v": "<18.2.4,>=20.0.0.0rc1,<20.1.0,>=19.0.0.0rc1,<19.1.0"
+        },
+        {
             "advisory": "OpenStack Nova before 2012.1 allows someone with access to an EC2_ACCESS_KEY (equivalent to a username) to obtain the EC2_SECRET_KEY (equivalent to a password). Exposing the EC2_ACCESS_KEY via http or tools that allow man-in-the-middle over https could allow an attacker to easily obtain the EC2_SECRET_KEY. An attacker could also presumably brute force values for EC2_ACCESS_KEY. See CVE-2011-4076.",
             "cve": "CVE-2011-4076",
             "id": "pyup.io-37736",
@@ -8986,6 +9844,15 @@
                 "<2013.2.3"
             ],
             "v": "<2013.2.3"
+        },
+        {
+            "advisory": "OpenStack nova base images permissions are world readable. No fixes or affected versions are known. See: CVE-2013-0326.",
+            "cve": "CVE-2013-0326",
+            "id": "pyup.io-37745",
+            "specs": [
+                ">0"
+            ],
+            "v": ">0"
         }
     ],
     "nsupdate": [
@@ -9063,9 +9930,9 @@
             "cve": null,
             "id": "pyup.io-38455",
             "specs": [
-                "<1.15.2"
+                ">=1.0.0,<1.15.2"
             ],
-            "v": "<1.15.2"
+            "v": ">=1.0.0,<1.15.2"
         }
     ],
     "oauth2": [
@@ -9108,6 +9975,17 @@
                 "<2.0.1"
             ],
             "v": "<2.0.1"
+        }
+    ],
+    "obsplus": [
+        {
+            "advisory": "Obsplus 0.0.6 switched from MD5 hashing to SHA256 as the latter is more secure and the computational differences were negligible.",
+            "cve": null,
+            "id": "pyup.io-38088",
+            "specs": [
+                "<0.0.6"
+            ],
+            "v": "<0.0.6"
         }
     ],
     "oci": [
@@ -9274,6 +10152,17 @@
             "v": "<1.0.2"
         }
     ],
+    "openapi-core": [
+        {
+            "advisory": "Openapi-core 0.13.0 includes a fix for CVE-2019-19844. It also introduces security validation with an API Key and support for HTTP security types.",
+            "cve": "CVE-2019-19844",
+            "id": "pyup.io-37894",
+            "specs": [
+                "<0.13.0"
+            ],
+            "v": "<0.13.0"
+        }
+    ],
     "openapigenerator": [
         {
             "advisory": "Openapigenerator 3.2.1 updates vulnerable dependencies (Javascript, #784).",
@@ -9415,40 +10304,72 @@
     ],
     "openstack-keystone": [
         {
-            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. The list of roles provided for an OAuth1 access token is silently ignored. Thus, when an access token is used to request a keystone token, the keystone token contains every role assignment the creator had for the project. This results in the provided keystone token having more role assignments than the creator intended, possibly giving unintended escalated access.",
-            "cve": "CVE-2020-12690",
-            "id": "pyup.io-38258",
-            "specs": [
-                "<15.0.1"
-            ],
-            "v": "<15.0.1"
-        },
-        {
-            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. The EC2 API doesn't have a signature TTL check for AWS Signature V4. An attacker can sniff the Authorization header, and then use it to reissue an OpenStack token an unlimited number of times.",
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. The EC2 API doesn't have a signature TTL check for AWS Signature V4. An attacker can sniff the Authorization header, and then use it to reissue an OpenStack token an unlimited number of times. See: CVE-2020-12692.",
             "cve": "CVE-2020-12692",
             "id": "pyup.io-38260",
             "specs": [
-                "<15.0.1"
+                "<15.0.1",
+                "==16.0.0"
             ],
-            "v": "<15.0.1"
+            "v": "<15.0.1,==16.0.0"
         },
         {
-            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any authenticated user can create an EC2 credential for themselves for a project that they have a specified role on, and then perform an update to the credential user and project, allowing them to masquerade as another user. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges.",
-            "cve": "CVE-2020-12691",
-            "id": "pyup.io-38259",
-            "specs": [
-                "<15.0.1"
-            ],
-            "v": "<15.0.1"
-        },
-        {
-            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any user authenticated within a limited scope (trust/oauth/application credential) can create an EC2 credential with an escalated permission, such as obtaining admin while the user is on a limited viewer role. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges.",
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any user authenticated within a limited scope (trust/oauth/application credential) can create an EC2 credential with an escalated permission, such as obtaining admin while the user is on a limited viewer role. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges. See: CVE-2020-12689.",
             "cve": "CVE-2020-12689",
             "id": "pyup.io-38257",
             "specs": [
-                "<15.0.1"
+                "<15.0.1",
+                "==16.0.0"
             ],
-            "v": "<15.0.1"
+            "v": "<15.0.1,==16.0.0"
+        },
+        {
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any authenticated user can create an EC2 credential for themselves for a project that they have a specified role on, and then perform an update to the credential user and project, allowing them to masquerade as another user. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges. See: CVE-2020-12691.",
+            "cve": "CVE-2020-12691",
+            "id": "pyup.io-38259",
+            "specs": [
+                "<15.0.1",
+                "==16.0.0"
+            ],
+            "v": "<15.0.1,==16.0.0"
+        },
+        {
+            "advisory": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. The list of roles provided for an OAuth1 access token is silently ignored. Thus, when an access token is used to request a keystone token, the keystone token contains every role assignment the creator had for the project. This results in the provided keystone token having more role assignments than the creator intended, possibly giving unintended escalated access. See: CVE-2020-12690.",
+            "cve": "CVE-2020-12690",
+            "id": "pyup.io-38258",
+            "specs": [
+                "<15.0.1",
+                "==16.0.0"
+            ],
+            "v": "<15.0.1,==16.0.0"
+        },
+        {
+            "advisory": "OpenStack Keystone 15.0.0 and 16.0.0 are affected by Data Leakage in the list credentials API. Any user with a role on a project is able to list any credentials with the /v3/credentials API when enforce_scope is false. Users with a role on a project are able to view any other users' credentials, which could (for example) leak sign-on information for Time-based One Time Passwords (TOTP). Deployments with enforce_scope set to false are affected. (There will be a slight performance impact for the list credentials API once this issue is fixed.) See: CVE-2019-19687.",
+            "cve": "CVE-2019-19687",
+            "id": "pyup.io-38588",
+            "specs": [
+                "==15.0.0",
+                "==16.0.0"
+            ],
+            "v": "==15.0.0,==16.0.0"
+        },
+        {
+            "advisory": "HTTPSConnections in OpenStack Keystone 2013, OpenStack Compute 2013.1, and possibly other OpenStack components, fail to validate server-side SSL certificates. See: CVE-2013-2255.",
+            "cve": "CVE-2013-2255",
+            "id": "pyup.io-37620",
+            "specs": [
+                "==2013"
+            ],
+            "v": "==2013"
+        },
+        {
+            "advisory": "It is possible to remotely trigger a crash in Keystone by sending an extremely long password. When Keystone is validating the password, glibc allocates space on the stack for the entire password. If the password is long enough, stack space can be exhausted, resulting in a crash. This vulnerability is mitigated by a patch to impose a reasonable limit on password length (4 kB). Reportedly, all versions are affected. See also: CVE-2012-1572 and <https://security.openstack.org/ossa/OSSA-2012-002.html>.",
+            "cve": "CVE-2012-1572",
+            "id": "pyup.io-37740",
+            "specs": [
+                ">0"
+            ],
+            "v": ">0"
         }
     ],
     "opentaxii": [
@@ -9475,13 +10396,51 @@
     ],
     "ores": [
         {
-            "advisory": "Ores 1.3.1 addresses yaml security issue by bumping dependency version",
+            "advisory": "Ores 1.3.1 addresses yaml security issue by bumping dependency version. It also uses JSON as celery serializer for increased security.",
             "cve": null,
             "id": "pyup.io-37949",
             "specs": [
                 "<1.3.1"
             ],
             "v": "<1.3.1"
+        }
+    ],
+    "osc": [
+        {
+            "advisory": "Osc 0.123 is the first release that performs SSL certificate checks to prevent man-in-the-middle-attacks. Python-m2crypto is needed to make this work. Certificate checks can be turned off per server via 'sslcertck = 0' in .oscrc.",
+            "cve": null,
+            "id": "pyup.io-37874",
+            "specs": [
+                "<0.123"
+            ],
+            "v": "<0.123"
+        },
+        {
+            "advisory": "Osc 0.134 includes a security fix for the buildlog function. Terminal control characters are limited now.",
+            "cve": null,
+            "id": "pyup.io-37873",
+            "specs": [
+                "<0.134"
+            ],
+            "v": "<0.134"
+        },
+        {
+            "advisory": "Osc 0.151 fixes shell command injection via crafted _service files. See: CVE-2015-0778.",
+            "cve": "CVE-2015-0778",
+            "id": "pyup.io-38486",
+            "specs": [
+                "<0.151"
+            ],
+            "v": "<0.151"
+        },
+        {
+            "advisory": "Osc 0.165.3 fixes broken TLS certificate handling. See: CVE-2019-3685.",
+            "cve": "CVE-2019-3685",
+            "id": "pyup.io-38485",
+            "specs": [
+                "<0.165.3"
+            ],
+            "v": "<0.165.3"
         }
     ],
     "otpauth": [
@@ -9569,6 +10528,17 @@
             "v": "<1.2.3"
         }
     ],
+    "pandas-zmq": [
+        {
+            "advisory": "Pandas-zmq 0.0.2 adds a signature to improve security.",
+            "cve": null,
+            "id": "pyup.io-38627",
+            "specs": [
+                "<0.0.2"
+            ],
+            "v": "<0.0.2"
+        }
+    ],
     "pandevice": [
         {
             "advisory": "Pandevice 0.11.0 adds `uuid` params for security and NAT rules.",
@@ -9598,6 +10568,17 @@
                 "<0.42"
             ],
             "v": "<0.42"
+        }
+    ],
+    "panoptes-utils": [
+        {
+            "advisory": "Panoptes-utils 0.2.21 bumps PyYaml to its latest version to suppress a security warning.",
+            "cve": null,
+            "id": "pyup.io-38493",
+            "specs": [
+                "<0.2.21"
+            ],
+            "v": "<0.2.21"
         }
     ],
     "paradrop": [
@@ -10742,6 +11723,15 @@
             "v": "<1.22.0"
         },
         {
+            "advisory": "Plotly 1.5.1 updates insecure dev dependencies `ecstatic` and `uglify-js`.",
+            "cve": null,
+            "id": "pyup.io-38545",
+            "specs": [
+                "<1.5.1"
+            ],
+            "v": "<1.5.1"
+        },
+        {
             "advisory": "Plotly 1.54.4 bumps `ecstatic`, `gl-selet-static`, `gl-plot2d` & `gl-plot3d` and drops `cwise` to simplify build process & address security warnings [4929, 4930, 4934].",
             "cve": null,
             "id": "pyup.io-38454",
@@ -11129,6 +12119,15 @@
     ],
     "psd-tools": [
         {
+            "advisory": "Psd-tools 1.8.31 updates `pillow` dependency to >= 6.2.0 for security reasons.",
+            "cve": null,
+            "id": "pyup.io-38525",
+            "specs": [
+                "<1.8.31"
+            ],
+            "v": "<1.8.31"
+        },
+        {
             "advisory": "Psd-tools 1.9.4 fixes a security issue related to compression in 1.8.37 - 1.9.3.",
             "cve": null,
             "id": "pyup.io-37654",
@@ -11205,6 +12204,17 @@
             "v": "<0.4.0"
         }
     ],
+    "py-bcrypt": [
+        {
+            "advisory": "The py-bcrypt module before 0.3 for Python does not properly handle concurrent memory access, which allows attackers to bypass authentication via multiple authentication requests, which trigger the password hash to be overwritten. See: CVE-2013-1895.",
+            "cve": "CVE-2013-1895",
+            "id": "pyup.io-37747",
+            "specs": [
+                "<0.3"
+            ],
+            "v": "<0.3"
+        }
+    ],
     "py-ci": [
         {
             "advisory": "Py-ci 0.5.2 upgrades versions of requests and jinja2 due to security alerts. See: <https://github.com/iliapolo/pyci/commit/17a5162f0479ebfdf0d1047ab4016cede6b7c211>.",
@@ -11236,6 +12246,28 @@
                 "<1.49.0"
             ],
             "v": "<1.49.0"
+        }
+    ],
+    "py-gfm": [
+        {
+            "advisory": "Py-gfm version 0.28.3.gfm.12 includes various security and bug fixes.",
+            "cve": null,
+            "id": "pyup.io-38621",
+            "specs": [
+                "<0.28.3.gfm.12"
+            ],
+            "v": "<0.28.3.gfm.12"
+        }
+    ],
+    "py-hiverunner": [
+        {
+            "advisory": "Py-hiverunner 5.0.0 updates the default supported Hive version to 2.3.4 because version 2.3.3 has a vulnerability. See: CVE-2018-1314.",
+            "cve": "CVE-2018-1314",
+            "id": "pyup.io-38559",
+            "specs": [
+                "<5.0.0"
+            ],
+            "v": "<5.0.0"
         }
     ],
     "py-ms": [
@@ -11605,6 +12637,17 @@
             "v": "<1.5.1"
         }
     ],
+    "pykarotz": [
+        {
+            "advisory": "Electronic Arts Karotz Smart Rabbit 12.07.19.00 allows Python module hijacking. See: <https://www.exploit-db.com/exploits/27285>.",
+            "cve": "CVE-2013-4867",
+            "id": "pyup.io-37751",
+            "specs": [
+                "==12.07.19.00"
+            ],
+            "v": "==12.07.19.00"
+        }
+    ],
     "pykechain": [
         {
             "advisory": "pykechain 2.5.4 updates security advisory to install requests package later than 2.20.0 (CVE-2018-18074).",
@@ -11716,6 +12759,15 @@
                 "<2.4.106"
             ],
             "v": "<2.4.106"
+        },
+        {
+            "advisory": "Pymisp v2.4.67 includes a security fix: do not try to load any valid path as a MISP Event.\r\n\r\nThe MISP Event loader was trying to open any string passed as parameter if is an existing file path. Anything that isn't a valid MISP event would raise an exception, but I can see it used for malicious purposes.\r\n\r\n`load_file` will do the same, but the user can decide if it is safe to  use.",
+            "cve": null,
+            "id": "pyup.io-38507",
+            "specs": [
+                "<2.4.67"
+            ],
+            "v": "<2.4.67"
         }
     ],
     "pymls": [
@@ -12514,6 +13566,17 @@
             "v": "<1.3.2"
         }
     ],
+    "python-jss": [
+        {
+            "advisory": "Python-jss 2.1.0 updates the `urllib3` dependency to mitigate a vulnerability.",
+            "cve": null,
+            "id": "pyup.io-38564",
+            "specs": [
+                "<2.1.0"
+            ],
+            "v": "<2.1.0"
+        }
+    ],
     "python-keystoneclient": [
         {
             "advisory": "The s3_token middleware in OpenStack keystonemiddleware before 1.6.0 and python-keystoneclient before 1.4.0 disables certification verification when the \"insecure\" option is set in a paste configuration (paste.ini) file regardless of the value, which allows remote attackers to conduct man-in-the-middle attacks via a crafted certificate, a different vulnerability than CVE-2014-7144.",
@@ -12551,6 +13614,17 @@
                 ">=0.2.3,<=0.2.5"
             ],
             "v": ">=0.2.3,<=0.2.5"
+        }
+    ],
+    "python-libnmap": [
+        {
+            "advisory": "libnmap < v0.6.3 is affected by: XML Injection. The impact is: Denial of service (DoS) by consuming resources. The component is: XML Parsing. The attack vector is: Specially crafted XML payload. See: CVE-2019-1010017.",
+            "cve": "CVE-2019-1010017",
+            "id": "pyup.io-37283",
+            "specs": [
+                "<0.6.3"
+            ],
+            "v": "<0.6.3"
         }
     ],
     "python-libtorrent": [
@@ -12696,6 +13770,17 @@
             "v": "<19.8.3"
         }
     ],
+    "python-semantic-release": [
+        {
+            "advisory": "Python-semantic-release 15.13.25 updates the `lodash` dependency to address a security warnings.",
+            "cve": null,
+            "id": "pyup.io-37516",
+            "specs": [
+                "<15.13.25"
+            ],
+            "v": "<15.13.25"
+        }
+    ],
     "python-smooch": [
         {
             "advisory": "python-smooch 1.0.4 bumps requests gem due to [vulnerability](https://nvd.nist.gov/vuln/detail/CVE-2018-18074).",
@@ -12800,6 +13885,17 @@
             "v": "<1.2"
         }
     ],
+    "pyu4v": [
+        {
+            "advisory": "Pyu4v 9.1.2.0 introduced the option to create a secure snapshot by means of `create_storage_group_snapshot`.",
+            "cve": null,
+            "id": "pyup.io-37914",
+            "specs": [
+                "<9.1.2.0"
+            ],
+            "v": "<9.1.2.0"
+        }
+    ],
     "pyupdater": [
         {
             "advisory": "pyupdater before 0.20.0 is vulnerable to session fixation attacks and potentially cookie stealing.",
@@ -12851,6 +13947,24 @@
                 "<0.13.0"
             ],
             "v": "<0.13.0"
+        },
+        {
+            "advisory": "Pywbem 0.14.3 updates the following packages to address security vulnerabilities:\r\n\r\n* requests from 2.19.1 to 2.20.1 (when on Python 2.7 or higher)\r\n* urllib3 from 1.22 to 1.23\r\n* bleach from 2.1.0 to 2.1.4",
+            "cve": null,
+            "id": "pyup.io-38577",
+            "specs": [
+                "<0.14.3"
+            ],
+            "v": "<0.14.3"
+        },
+        {
+            "advisory": "Pywbem 0.17.0 changes the HTTPS support of `pywbem.WBEMListener` from using the deprecated `ssl.wrap_socket()` function to using the `ssl.SSLContext` class that was introduced in Python 2.7.9. This causes more secure SSL settings to be used. On Python versions before 2.7.9, pywbem will continue to use the deprecated `ssl.wrap_socket()` function.",
+            "cve": null,
+            "id": "pyup.io-38576",
+            "specs": [
+                "<0.17.0"
+            ],
+            "v": "<0.17.0"
         },
         {
             "advisory": "Pywbem 1.0.0 increases versions of the following packages to address security vulnerabilities:\r\n* requests from 2.19.1 to 2.20.1\r\n* urllib3 from 1.22 to 1.23\r\n* bleach from 2.1.0 to 2.1.4",
@@ -12973,6 +14087,15 @@
                 "<5.3.1"
             ],
             "v": "<5.3.1"
+        },
+        {
+            "advisory": "CVE-2019-20477: PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342.",
+            "cve": "CVE-2019-20477",
+            "id": "pyup.io-38639",
+            "specs": [
+                ">=5.1,<=5.1.2"
+            ],
+            "v": ">=5.1,<=5.1.2"
         }
     ],
     "qi-jabberhelpdesk": [
@@ -13070,15 +14193,6 @@
                 "<1.1.2"
             ],
             "v": "<1.1.2"
-        },
-        {
-            "advisory": "Qutebrowser 1.10.0 ships with Qt/QtWebEngine 5.14.1 in the macOS and Windows releases, which are based on Chromium 77.0.3865.129 with security fixes up to Chromium 79.0.3945.117.",
-            "cve": null,
-            "id": "pyup.io-37811",
-            "specs": [
-                "<1.10.0"
-            ],
-            "v": "<1.10.0"
         },
         {
             "advisory": "Qutebrowser 1.11.1 includes a fix for CVE-2020-11054:  After a certificate error was overridden by the user, qutebrowser displays the URL as yellow (`colors.statusbar.url.warn.fg`). However, when the affected website was subsequently loaded again, the URL was mistakenly displayed as green (`colors.statusbar.url.success_https`). While the user already has seen a certificate error prompt at this point (or set `content.ssl_strict` to `false` which is not recommended), this could still provide a false sense of security. This is now fixed.",
@@ -13228,6 +14342,15 @@
                 ">=0.100,<0.100.5.dev0"
             ],
             "v": "<0.2.0,>=0.100,<0.100.5.dev0"
+        },
+        {
+            "advisory": "Raiden 0.4.1 prevents DOS attacks and race conditions that caused client crashes.",
+            "cve": null,
+            "id": "pyup.io-38520",
+            "specs": [
+                "<0.4.1"
+            ],
+            "v": "<0.4.1"
         }
     ],
     "raiden-services": [
@@ -13385,7 +14508,27 @@
             "v": "<0.5.0-alpha"
         }
     ],
+    "rendertron": [
+        {
+            "advisory": "Rendertron 3.0.0 fixes a security issue with AppEngine deployments.",
+            "cve": null,
+            "id": "pyup.io-38571",
+            "specs": [
+                "<3.0.0"
+            ],
+            "v": "<3.0.0"
+        }
+    ],
     "renku": [
+        {
+            "advisory": "Renku version 0.4.0 fixes CVE-2017-18342.",
+            "cve": "CVE-2017-18342",
+            "id": "pyup.io-38552",
+            "specs": [
+                "<0.4.0"
+            ],
+            "v": "<0.4.0"
+        },
         {
             "advisory": "Renku 0.6.0 updates the werkzeug package due to security concerns - see https://github.com/SwissDataScienceCenter/renku-python/issues/633",
             "cve": null,
@@ -13398,13 +14541,42 @@
     ],
     "repobee": [
         {
-            "advisory": "Repobee 2.0.2 filters out secure token from `show-config` command output [92aa5cf08cc08d2647a9f22bb6ff120cd5a88360].",
+            "advisory": "Repobee 0.4.0 adds a strict security policy to prevent malicious code from executing.",
+            "cve": null,
+            "id": "pyup.io-38523",
+            "specs": [
+                "<0.4.0"
+            ],
+            "v": "<0.4.0"
+        },
+        {
+            "advisory": "Repobee 1.3.2 uses git pull instead of git clone. This is a security update.",
+            "cve": null,
+            "id": "pyup.io-38522",
+            "specs": [
+                "<1.3.2"
+            ],
+            "v": "<1.3.2"
+        },
+        {
+            "advisory": "Repobee 2.0.2 includes a fix that filters out secure token from `show-config` command output [92aa5cf08cc08d2647a9f22bb6ff120cd5a88360].",
             "cve": null,
             "id": "pyup.io-37383",
             "specs": [
                 "<2.0.2"
             ],
             "v": "<2.0.2"
+        }
+    ],
+    "reportlab": [
+        {
+            "advisory": "ReportLab through 3.5.26 allows remote code execution because of toColor(eval(arg)) in colors.py, as demonstrated by a crafted XML document with '<span color=\"' followed by arbitrary Python code. See: CVE-2019-17626.",
+            "cve": "CVE-2019-17626",
+            "id": "pyup.io-37572",
+            "specs": [
+                "<=3.5.26"
+            ],
+            "v": "<=3.5.26"
         }
     ],
     "requests": [
@@ -13454,6 +14626,15 @@
                 "<0.6"
             ],
             "v": "<0.6"
+        },
+        {
+            "advisory": "Python-requests-Kerberos through 0.5 does not handle mutual authentication. See: CVE-2014-8650 and <https://www.openwall.com/lists/oss-security/2014/11/07/1>.",
+            "cve": "CVE-2014-8650",
+            "id": "pyup.io-37758",
+            "specs": [
+                "<=0.5"
+            ],
+            "v": "<=0.5"
         }
     ],
     "responsibly": [
@@ -13726,6 +14907,17 @@
             "v": "<0.2.2"
         }
     ],
+    "rsconnect-jupyter": [
+        {
+            "advisory": "In addition to disabling TLS checking entirely, users in rsconnect-jupyter 1.3.0 have the option of uploading their own self-signed certificate bundle as a more secure TLS alternative.",
+            "cve": null,
+            "id": "pyup.io-38119",
+            "specs": [
+                "<1.3.0"
+            ],
+            "v": "<1.3.0"
+        }
+    ],
     "rss2email": [
         {
             "advisory": "Rss2email 3.10 fixes SMTP security issues.",
@@ -13805,6 +14997,15 @@
     ],
     "sanic-oauthlib": [
         {
+            "advisory": "Sanic-oauthlib 0.5.0 mentions \"**Security bug** for access token via `#92`\". No other information was provided.",
+            "cve": null,
+            "id": "pyup.io-38524",
+            "specs": [
+                "<0.5.0"
+            ],
+            "v": "<0.5.0"
+        },
+        {
             "advisory": "Sanic-oauthlib 0.9.1 improves security in a not further specified way.",
             "cve": null,
             "id": "pyup.io-37397",
@@ -13872,17 +15073,6 @@
             "v": "<2.8.0"
         }
     ],
-    "scalelite": [
-        {
-            "advisory": "Scalelite 1.0.3 updates on of its dependencies for security reasons.",
-            "cve": null,
-            "id": "pyup.io-38428",
-            "specs": [
-                "<1.0.3"
-            ],
-            "v": "<1.0.3"
-        }
-    ],
     "scapy": [
         {
             "advisory": "Scapy 2.4.0 is affected by: Denial of Service. The impact is: infinite loop, resource consumption and program unresponsive. The component is: _RADIUSAttrPacketListField.getfield(self..). The attack vector is: over the network or in a pcap. both work. See: CVE-2019-1010142.",
@@ -13912,6 +15102,17 @@
                 "<2.3.0"
             ],
             "v": "<2.3.0"
+        }
+    ],
+    "scons": [
+        {
+            "advisory": "Scons 4.0.0 converts the remaining uses of an insecure/deprecated mktemp method.",
+            "cve": null,
+            "id": "pyup.io-38489",
+            "specs": [
+                "<4.0.0"
+            ],
+            "v": "<4.0.0"
         }
     ],
     "scrapydd": [
@@ -14431,6 +15632,17 @@
             "v": "<6.3.0"
         }
     ],
+    "spacepy-x": [
+        {
+            "advisory": "HTTPS has been re-enabled in spacepy-x 1.0.1 for secure API goodness.",
+            "cve": null,
+            "id": "pyup.io-37388",
+            "specs": [
+                "<1.0.1"
+            ],
+            "v": "<1.0.1"
+        }
+    ],
     "sparselandtools": [
         {
             "advisory": "sparselandtools 1.0.1 requires newer versions of third party packages for security reasons in some cases",
@@ -14517,6 +15729,27 @@
             "v": "<0.8"
         }
     ],
+    "sqlalchemy": [
+        {
+            "advisory": "SQLAlchemy through 1.2.17 and 1.3.x through 1.3.0b2 allows SQL Injection via the order_by parameter. See: CVE-2019-7164.",
+            "cve": "CVE-2019-7164",
+            "id": "pyup.io-38497",
+            "specs": [
+                "<=1.2.17",
+                ">=1.3.0b1,<=1.3.0b2"
+            ],
+            "v": "<=1.2.17,>=1.3.0b1,<=1.3.0b2"
+        },
+        {
+            "advisory": "SQLAlchemy 1.2.17 has SQL Injection when the group_by parameter can be controlled. See: CVE-2019-7548.",
+            "cve": "CVE-2019-7548",
+            "id": "pyup.io-38496",
+            "specs": [
+                "==1.2.17"
+            ],
+            "v": "==1.2.17"
+        }
+    ],
     "sqlalchemy-cockroachdb": [
         {
             "advisory": "Sqlalchemy-cockroachdb 0.3.2 updates urllib3 to remove a security vulnerability.",
@@ -14559,6 +15792,17 @@
                 "<2.2.0"
             ],
             "v": "<2.2.0"
+        }
+    ],
+    "ssh-decorate": [
+        {
+            "advisory": "Ssh-decorate version 0.28 through 0.31 is known to contain a backdoor that steals SSH credentials.",
+            "cve": null,
+            "id": "pyup.io-38498",
+            "specs": [
+                ">=0.28,<=0.31"
+            ],
+            "v": ">=0.28,<=0.31"
         }
     ],
     "sslyze": [
@@ -14625,6 +15869,17 @@
                 "<4.1.22"
             ],
             "v": "<4.1.22"
+        }
+    ],
+    "stork": [
+        {
+            "advisory": "Stork 3.0.1 includes re-compiled dependencies to fix a security issue in a pinned dependency.",
+            "cve": null,
+            "id": "pyup.io-38611",
+            "specs": [
+                "<3.0.1"
+            ],
+            "v": "<3.0.1"
         }
     ],
     "stormpath": [
@@ -14834,6 +16089,17 @@
             "v": ">=3.3,<3.3.3,>=3.2,<3.2.4,>=3.1,<3.1.4,<3.0.1"
         }
     ],
+    "svglib": [
+        {
+            "advisory": "The svglib package through 0.9.3 for Python allows XXE attacks via an svg2rlg call. See: CVE-2020-10799.",
+            "cve": "CVE-2020-10799",
+            "id": "pyup.io-38089",
+            "specs": [
+                "<=0.9.3"
+            ],
+            "v": "<=0.9.3"
+        }
+    ],
     "swauth": [
         {
             "advisory": "swauth before 1.1.0 has multiple undisclosed security vulnerabilities.",
@@ -14854,6 +16120,15 @@
                 "<2.6.0"
             ],
             "v": "<2.6.0"
+        },
+        {
+            "advisory": "OpenStack Swift as of 2013-12-15 mishandles PYTHON_EGG_CACHE. See: CVE-2013-7109.\r\n\r\nConcerns about this vulnerability were minor, and the affected versions are not clear. See: <https://bugs.launchpad.net/glance/+bug/1192966>.",
+            "cve": "CVE-2013-7109",
+            "id": "pyup.io-37917",
+            "specs": [
+                ">=1.0.2,<2.15.2"
+            ],
+            "v": ">=1.0.2,<2.15.2"
         }
     ],
     "swifter": [
@@ -14888,6 +16163,24 @@
         }
     ],
     "synse": [
+        {
+            "advisory": "Synse 2.1.2 updates dependencies to fix a security vulnerability. See: <https://github.com/vapor-ware/synse-server/pull/210>.",
+            "cve": null,
+            "id": "pyup.io-38512",
+            "specs": [
+                "<2.1.2"
+            ],
+            "v": "<2.1.2"
+        },
+        {
+            "advisory": "Synse v2.2.4 updates requests dep for CVE-2018-18074. See: <https://github.com/vapor-ware/synse-server/pull/225>.",
+            "cve": null,
+            "id": "pyup.io-38511",
+            "specs": [
+                "<2.2.4"
+            ],
+            "v": "<2.2.4"
+        },
         {
             "advisory": "Synse 2.2.6 updates pyyaml version for CVE-2017-18342. See: <https://github.com/vapor-ware/synse-server/pull/239>.",
             "cve": "CVE-2017-18342",
@@ -14989,6 +16282,17 @@
             "v": "<1.4.31"
         }
     ],
+    "teleserver": [
+        {
+            "advisory": "Teleserver 2.2.0 increases the security by implementing better user verification. Now there are three ways of accessing teleserver: with GUI credentials, with service principal generated from system tab or with temporary token created via /login route of API.",
+            "cve": null,
+            "id": "pyup.io-38021",
+            "specs": [
+                "<2.2.0"
+            ],
+            "v": "<2.2.0"
+        }
+    ],
     "telnet": [
         {
             "advisory": "telnet is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
@@ -15002,6 +16306,15 @@
         }
     ],
     "tendenci": [
+        {
+            "advisory": "Tendenci 11.0.1 patches a security hole in payments that could potentially expose user data.",
+            "cve": null,
+            "id": "pyup.io-38510",
+            "specs": [
+                "<11.0.1"
+            ],
+            "v": "<11.0.1"
+        },
         {
             "advisory": "tendenci 11.1.1 updates Django version to 1.11.20 to patch a security issue in django 1.11.18",
             "cve": null,
@@ -15028,6 +16341,15 @@
                 "<11.2.8"
             ],
             "v": "<11.2.8"
+        },
+        {
+            "advisory": "Tendenci 11.4.7 prevents unauthorized use of renewal URLs.",
+            "cve": null,
+            "id": "pyup.io-38509",
+            "specs": [
+                "<11.4.7"
+            ],
+            "v": "<11.4.7"
         },
         {
             "advisory": "Tendenci 12.0.5 removes .doc and .xls from the allowed file upload extensions for security reasons. Besides the general threats, determining the mime type for the .doc and .xls files (generated by old MS Word and MS Excel) requires feeding the entire file content due to their format not complying with the standard.",
@@ -15127,6 +16449,24 @@
             "v": ">=1.0,<1.15.2,>=2.0.0a0,<2.0.1"
         },
         {
+            "advisory": "Tensorflow 1.15.2 and 2.0.1 fix a security vulnerability to address CVE-2020-5215 where converting a Python string to a `tf.float16` value produces a segmentation fault. \r\n\r\nBoth also update `curl` to `7.66.0` to address CVE-2019-5482 and CVE-2019-5481.\r\n\r\nBoth also update `sqlite3` to `3.30.01` to address CVE-2019-19645, CVE-2019-19646, CVE-2019-16168.",
+            "cve": null,
+            "id": "pyup.io-38549",
+            "specs": [
+                ">=1.0.0,<1.15.2"
+            ],
+            "v": ">=1.0.0,<1.15.2"
+        },
+        {
+            "advisory": "Tensorflow 1.15.2 and 2.0.1 fix a security vulnerability to address CVE-2020-5215 where converting a Python string to a `tf.float16` value produces a segmentation fault. \r\n\r\nBoth also update `curl` to `7.66.0` to address CVE-2019-5482 and CVE-2019-5481.\r\n\r\nBoth also update `sqlite3` to `3.30.01` to address CVE-2019-19645, CVE-2019-19646, CVE-2019-16168.",
+            "cve": null,
+            "id": "pyup.io-38550",
+            "specs": [
+                ">=2.0.0a0,<2.0.1"
+            ],
+            "v": ">=2.0.0a0,<2.0.1"
+        },
+        {
             "advisory": "tensorflow 2.0.2\r\n* Updates `sqlite3` to `3.31.01` to handle CVE-2019-19880, CVE-2019-19244 and CVE-2019-19645\r\n* Updates `curl` to `7.69.1` to handle CVE-2019-15601\r\n* Updates `libjpeg-turbo` to `2.0.4` to handle CVE-2018-19664, CVE-2018-20330 and CVE-2019-13960\r\n* Updates Apache Spark to `2.4.5` to handle CVE-2019-10099, CVE-2018-17190 and CVE-2018-11770",
             "cve": null,
             "id": "pyup.io-38461",
@@ -15149,6 +16489,15 @@
     ],
     "tf-encrypted": [
         {
+            "advisory": "Tf-encrypted 0.4.0 implements a cryptographically secure random numbers feature.",
+            "cve": null,
+            "id": "pyup.io-36687",
+            "specs": [
+                "<0.4.0"
+            ],
+            "v": "<0.4.0"
+        },
+        {
             "advisory": "Tf-encrypted before 0.5.1 did not include  a secure version of `tf.negative`.",
             "cve": null,
             "id": "pyup.io-37058",
@@ -15156,6 +16505,15 @@
                 "<0.5.1"
             ],
             "v": "<0.5.1"
+        },
+        {
+            "advisory": "Tf-encrypted 0.5.6 improves handling for cases where the secure random operation is not available.",
+            "cve": null,
+            "id": "pyup.io-37373",
+            "specs": [
+                "<0.5.6"
+            ],
+            "v": "<0.5.6"
         }
     ],
     "thamos": [
@@ -15229,6 +16587,28 @@
             "v": "<1.2.18"
         }
     ],
+    "tink": [
+        {
+            "advisory": "The AES-CTR-HMAC-AEAD keys and the EncryptThenAuthenticate subtle implementation in tink versions before 1.4.0 may be vulnerable to chosen-ciphertext attacks. An attacker can generate ciphertexts that bypass the HMAC verification if and only if all of the following conditions are true:\r\n\r\n* Tink C++ is used on systems where size_t is a 32-bit integer. This is usually the case on 32-bit machines.\r\n* The attacker can specify long (>= 2^29 bytes ~ 536MB) associated data.",
+            "cve": null,
+            "id": "pyup.io-38579",
+            "specs": [
+                "<1.4.0"
+            ],
+            "v": "<1.4.0"
+        }
+    ],
+    "tiny-gnupg": [
+        {
+            "advisory": "Tiny-gnupg 0.3.0 overhauls the ``gen_key()`` which now creates a different set of default keys. It no longer creates one primary key which does certifying & signing, with one subkey which handles encryption. Instead, tiny-gnupg 0.3.0 creates one certifying primary key, with three subkeys, one each for handling encryption, authentication, & signing. This is a more theoretically secure default key setup, & represents a common best-practice.",
+            "cve": null,
+            "id": "pyup.io-37692",
+            "specs": [
+                "<0.3.0"
+            ],
+            "v": "<0.3.0"
+        }
+    ],
     "tinydb": [
         {
             "advisory": "tinydb-serialization before 2.0.0 has an insecure implementation in ``ConcurrencyMiddleware``.",
@@ -15260,6 +16640,17 @@
                 "<0.3.5"
             ],
             "v": "<0.3.5"
+        }
+    ],
+    "tmt": [
+        {
+            "advisory": "Rmt 0.19 makes the discover step a little bit more secure.",
+            "cve": null,
+            "id": "pyup.io-38635",
+            "specs": [
+                "<0.19"
+            ],
+            "v": "<0.19"
         }
     ],
     "tomtoolkit": [
@@ -15433,15 +16824,6 @@
                 "<0.11.1"
             ],
             "v": "<0.11.1"
-        },
-        {
-            "advisory": "Tuf 1.3 fixes security issues with pip's use of temp build directories.",
-            "cve": null,
-            "id": "pyup.io-26167",
-            "specs": [
-                "<1.3"
-            ],
-            "v": "<1.3"
         }
     ],
     "tweepy": [
@@ -15478,6 +16860,15 @@
         }
     ],
     "twisted": [
+        {
+            "advisory": "Twisted Web 16.4.0 includes the following three security fixes:\r\n- A bug in twisted.web.server.Site.makeSession which may lead to predictable session IDs was fixed.  Session IDs are now generated securely using `os.urandom`.\r\n- twisted.web.server.Request.getSession will now, for a request sent over HTTPS, set a \"Secure\" cookie, preventing the secure session from being sent over plain-text HTTP. \r\n- twisted.web.twcgi.CGIScript will now not pass the \"Proxy\" header to CGI scripts, as a mitigation to CVE-2016-1000111.",
+            "cve": "CVE-2016-1000111",
+            "id": "pyup.io-38551",
+            "specs": [
+                "<16.4.0"
+            ],
+            "v": "<16.4.0"
+        },
         {
             "advisory": "In twisted Core 17.1.0, twisted.internet.ssl.CertificateOptions has the new constructor argument 'raiseMinimumTo', allowing you to increase the minimum TLS version to this version or Twisted's default, whichever is higher. The additional new constructor arguments 'lowerMaximumSecurityTo' and 'insecurelyLowerMinimumTo' allow finer grained control over negotiated versions that don't honour Twisted's defaults, for working around broken peers, at the cost of reducing the security of the TLS it will negotiate. (#6800)",
             "cve": null,
@@ -15544,6 +16935,28 @@
                 "<0.5.1"
             ],
             "v": "<0.5.1"
+        }
+    ],
+    "typed-ast": [
+        {
+            "advisory": "Typed_ast 1.3.0 and 1.3.1 have an ast_for_arguments out-of-bounds read. An attacker with the ability to cause a Python interpreter to parse Python source (but not necessarily execute it) may be able to crash the interpreter process. This could be a concern, for example, in a web-based service that parses (but does not execute) Python code. (This issue also affected certain Python 3.8.0-alpha prereleases.) See: CVE-2019-19275.",
+            "cve": "CVE-2019-19275",
+            "id": "pyup.io-37768",
+            "specs": [
+                "==1.3.0",
+                "==1.3.1"
+            ],
+            "v": "==1.3.0,==1.3.1"
+        },
+        {
+            "advisory": "Typed_ast 1.3.0 and 1.3.1 have a handle_keywordonly_args out-of-bounds read. An attacker with the ability to cause a Python interpreter to parse Python source (but not necessarily execute it) may be able to crash the interpreter process. This could be a concern, for example, in a web-based service that parses (but does not execute) Python code. (This issue also affected certain Python 3.8.0-alpha prereleases.) See: CVE-2019-19274.",
+            "cve": "CVE-2019-19274",
+            "id": "pyup.io-37767",
+            "specs": [
+                "==1.3.0",
+                "==1.3.1"
+            ],
+            "v": "==1.3.0,==1.3.1"
         }
     ],
     "udata": [
@@ -15624,6 +17037,15 @@
     ],
     "urllib": [
         {
+            "advisory": "An issue was discovered in urllib2 in Python 2.x through 2.7.16 and urllib in Python 3.x through 3.7.2. CRLF injection is possible if the attacker controls a url parameter, as demonstrated by the first argument to urllib.request.urlopen with \\r\\n followed by an HTTP header or a Redis command. See: CVE-2019-9740.",
+            "cve": "CVE-2019-9740",
+            "id": "pyup.io-38479",
+            "specs": [
+                "<=3.7.2"
+            ],
+            "v": "<=3.7.2"
+        },
+        {
             "advisory": "urllib is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
             "cve": null,
             "id": "pyup.io-34987",
@@ -15680,6 +17102,37 @@
                 ">=1.25.2,<=1.25.7"
             ],
             "v": ">=1.25.2,<=1.25.7"
+        }
+    ],
+    "uvicorn": [
+        {
+            "advisory": "This affects all versions of package uvicorn. The request logger provided by the package is vulnerable to ASNI escape sequence injection. Whenever any HTTP request is received, the default behaviour of uvicorn is to log its details to either the console or a log file. When attackers request crafted URLs with percent-encoded escape sequences, the logging component will log the URL after it's been processed with urllib.parse.unquote, therefore converting any percent-encoded characters into their single-character equivalent, which can have special meaning in terminal emulators. By requesting URLs with crafted paths, attackers can: * Pollute uvicorn's access logs, therefore jeopardising the integrity of such files. * Use ANSI sequence codes to attempt to interact with the terminal emulator that's displaying the logs (either in real time or from a file). See: CVE-2020-7694.",
+            "cve": "CVE-2020-7694",
+            "id": "pyup.io-38624",
+            "specs": [
+                ">=0"
+            ],
+            "v": ">=0"
+        },
+        {
+            "advisory": "This affects all versions of package uvicorn. Uvicorn's implementation of the HTTP protocol for the httptools parser is vulnerable to HTTP response splitting. CRLF sequences are not escaped in the value of HTTP headers. Attackers can exploit this to add arbitrary headers to HTTP responses, or even return an arbitrary response body, whenever crafted input is used to construct HTTP headers. See: CVE-2020-7695.",
+            "cve": "CVE-2020-7695",
+            "id": "pyup.io-38625",
+            "specs": [
+                ">=0"
+            ],
+            "v": ">=0"
+        }
+    ],
+    "validators": [
+        {
+            "advisory": "The validators package 0.12.2 through 0.12.5 for Python enters an infinite loop when validators.domain is called with a crafted domain string. This is fixed in 0.12.6. See: CVE-2019-19588.",
+            "cve": "CVE-2019-19588",
+            "id": "pyup.io-37769",
+            "specs": [
+                ">=0.12.2,<=0.12.5"
+            ],
+            "v": ">=0.12.2,<=0.12.5"
         }
     ],
     "verifone": [
@@ -15791,9 +17244,20 @@
             "v": "<0.0.9"
         }
     ],
+    "vnccollab-theme": [
+        {
+            "advisory": "Vnccollab-theme before 1.5.2 has an undisclosed vulnerability in VNC Zimlet.",
+            "cve": null,
+            "id": "pyup.io-35976",
+            "specs": [
+                "<1.5.2"
+            ],
+            "v": "<1.5.2"
+        }
+    ],
     "vnccollab.theme": [
         {
-            "advisory": "vnccollab.theme before 1.5.2 has an undisclosed vulnerability in VNC Zimlet.",
+            "advisory": "Vnccollab.theme before 1.5.2 has an undisclosed vulnerability in VNC Zimlet.",
             "cve": null,
             "id": "pyup.io-26173",
             "specs": [
@@ -15841,6 +17305,16 @@
                 ">=2.8,<2.8.1"
             ],
             "v": ">=2.8,<2.8.1"
+        },
+        {
+            "advisory": "In Wagtail before versions 2.7.4 and 2.9.3, when a form page type is made available to Wagtail editors through the `wagtail.contrib.forms` app, and the page template is built using Django's standard form rendering helpers such as form.as_p, any HTML tags used within a form field's help text will be rendered unescaped in the page. Allowing HTML within help text is an intentional design decision by Django; however, as a matter of policy Wagtail does not allow editors to insert arbitrary HTML by default, as this could potentially be used to carry out cross-site scripting attacks, including privilege escalation. This functionality should therefore not have been made available to editor-level users. The vulnerability is not exploitable by an ordinary site visitor without access to the Wagtail admin. Patched versions have been released as Wagtail 2.7.4 (for the LTS 2.7 branch) and Wagtail 2.9.3 (for the current 2.9 branch). In these versions, help text will be escaped to prevent the inclusion of HTML tags. Site owners who wish to re-enable the use of HTML within help text (and are willing to accept the risk of this being exploited by editors) may set WAGTAILFORMS_HELP_TEXT_ALLOW_HTML = True in their configuration settings. Site owners who are unable to upgrade to the new versions can secure their form page templates by rendering forms field-by-field as per Django's documentation, but omitting the |safe filter when outputting the help text. See: CVE-2020-15118.",
+            "cve": "CVE-2020-15118",
+            "id": "pyup.io-38597",
+            "specs": [
+                ">=2.9.0,<2.9.3",
+                ">=2.7.0,<2.7.4"
+            ],
+            "v": ">=2.9.0,<2.9.3,>=2.7.0,<2.7.4"
         }
     ],
     "wagtail-2fa": [
@@ -15937,6 +17411,15 @@
                 "<0.8.0"
             ],
             "v": "<0.8.0"
+        },
+        {
+            "advisory": "Wandb 0.8.2 updates the pyyaml requirement to address a CVE. No CVE number was mentioned, but it is probably CVE-2017-18342.",
+            "cve": "CVE-2017-18342",
+            "id": "pyup.io-38548",
+            "specs": [
+                "<0.8.2"
+            ],
+            "v": "<0.8.2"
         }
     ],
     "wasmer": [
@@ -15963,18 +17446,36 @@
     ],
     "web-py": [
         {
-            "advisory": "web-py  0.39 fixes a security issue with the form and db module.",
+            "advisory": "Web-py 0.21 prevents bad characters in headers. This is a security fix.",
             "cve": null,
-            "id": "pyup.io-35893",
+            "id": "pyup.io-38615",
             "specs": [
-                "<0.39"
+                "<0.21"
             ],
-            "v": "<0.39"
+            "v": "<0.21"
         },
         {
-            "advisory": "Web-py 0.39 fixes a security issue with the form module (tx Orange Tsai) and a security issue with the db module (tx Adri\u00e1n Brav and Orange Tsai).",
+            "advisory": "Web-py before 0.23 did not support secure cookies.",
             "cve": null,
-            "id": "pyup.io-35894",
+            "id": "pyup.io-38614",
+            "specs": [
+                "<0.23"
+            ],
+            "v": "<0.23"
+        },
+        {
+            "advisory": "Web-py 0.36 adds the `secure` option to a session.",
+            "cve": null,
+            "id": "pyup.io-38613",
+            "specs": [
+                "<0.36"
+            ],
+            "v": "<0.36"
+        },
+        {
+            "advisory": "Web-py 0.39 fixes a security issue with the form module. Additionally, it fixes a security issue with the db module.",
+            "cve": null,
+            "id": "pyup.io-38612",
             "specs": [
                 "<0.39"
             ],
@@ -16706,7 +18207,7 @@
             "v": "<2.1.2"
         },
         {
-            "advisory": "Zulip 2.1.3 includes fixes for:\r\n- CVE-2020-9444: Prevent reverse tabnapping attacks.                                                 \r\n- CVE-2020-9445: Remove unused and insecure modal_link feature.                                      \r\n- CVE-2020-10935: Fix XSS vulnerability in local link rewriting.",
+            "advisory": "Zulip Server 2.1.3 includes fixes for:\r\n- CVE-2020-9444: Prevent reverse tabnapping attacks.                                                 \r\n- CVE-2020-9445: Remove unused and insecure modal_link feature.                                      \r\n- CVE-2020-10935: Fix XSS vulnerability in local link rewriting.",
             "cve": "CVE-2020-9444,CVE-2020-10935",
             "id": "pyup.io-38200",
             "specs": [
