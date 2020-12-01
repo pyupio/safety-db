@@ -1,7 +1,7 @@
 {
     "$meta": {
         "advisory": "PyUp.io metadata",
-        "timestamp": 1604210401
+        "timestamp": 1606802401
     },
     "acqusition": [
         {
@@ -290,6 +290,17 @@
             "v": "<1.8.18.1"
         }
     ],
+    "alex-ber-utils": [
+        {
+            "advisory": "Alex-ber-utils 0.6.3 changed the base docker image version to 0.1.0, because it has fix for a potential security risk: Git was changed not to store credential as plain text, but to keep them in memory for 1 hour, see <https://git-scm.com/docs/git-credential-cache>.",
+            "cve": null,
+            "id": "pyup.io-39148",
+            "specs": [
+                "<0.6.3"
+            ],
+            "v": "<0.6.3"
+        }
+    ],
     "alexandra": [
         {
             "advisory": "alexandra 0.4.0 bumps dependency versions to avoid pyOpenSSL vulnerability",
@@ -319,6 +330,17 @@
                 "<0.9.0"
             ],
             "v": "<0.9.0"
+        }
+    ],
+    "allink-core": [
+        {
+            "advisory": "Allink-core 2.0.0 fixes various vulnerabilities.",
+            "cve": null,
+            "id": "pyup.io-39104",
+            "specs": [
+                "<2.0.0"
+            ],
+            "v": "<2.0.0"
         }
     ],
     "alt-model-checkpoint": [
@@ -370,6 +392,17 @@
                 "<4.0.0"
             ],
             "v": "<4.0.0"
+        }
+    ],
+    "amundsen-frontend": [
+        {
+            "advisory": "amundsen-frontend 3.0.0 bumps serialize-javascript to a newer version that is more secure.",
+            "cve": null,
+            "id": "pyup.io-39065",
+            "specs": [
+                "<3.0.0"
+            ],
+            "v": "<3.0.0"
         }
     ],
     "anncolvar": [
@@ -852,6 +885,24 @@
     ],
     "backend.ai": [
         {
+            "advisory": "Backend.ai 19.03.0b1 supports running multiple managers on the same host by randomizing internal IPC socket addresses.  This also improves the security a little.",
+            "cve": null,
+            "id": "pyup.io-39087",
+            "specs": [
+                "<19.03.0b1"
+            ],
+            "v": "<19.03.0b1"
+        },
+        {
+            "advisory": "Backend.ai 19.03.0rc1 supports authentication with etcd and Redis for better security.",
+            "cve": null,
+            "id": "pyup.io-39086",
+            "specs": [
+                "<19.03.0rc1"
+            ],
+            "v": "<19.03.0rc1"
+        },
+        {
             "advisory": "Backend.ai 19.09.0rc4 includes image import. This is implemented on top of batch tasks, with some specialization to prevent security issues due to direct access to agent host's Docker daemon.  Importing as service-port only image support will be added in future releases. Additionally, it includes a privilege escalation fix because domain-admins could run sessions on behalf of super-admins in the same domain.",
             "cve": null,
             "id": "pyup.io-38675",
@@ -1012,6 +1063,15 @@
                 "<0.3.0"
             ],
             "v": "<0.3.0"
+        },
+        {
+            "advisory": "Bepasty 0.6.0 invalidates old client-side cookies if PERMISSIONS in config are changed. This is a security fix.",
+            "cve": null,
+            "id": "pyup.io-39120",
+            "specs": [
+                "<0.6.0"
+            ],
+            "v": "<0.6.0"
         }
     ],
     "berglas": [
@@ -1122,6 +1182,17 @@
                 "<1.4.2"
             ],
             "v": "<1.4.2"
+        }
+    ],
+    "blackduck": [
+        {
+            "advisory": "Synopsys hub-rest-api-python (aka blackduck on PyPI) version 0.0.25 - 0.0.52 does not validate SSL certificates in certain cases. See CVE-2020-27589.",
+            "cve": "CVE-2020-27589",
+            "id": "pyup.io-39070",
+            "specs": [
+                ">=0.0.25,<=0.0.52"
+            ],
+            "v": ">=0.0.25,<=0.0.52"
         }
     ],
     "blask": [
@@ -1480,6 +1551,26 @@
             "v": "<=0.11.7"
         }
     ],
+    "cacophonyapi": [
+        {
+            "advisory": "Cacophonyapi 4.13.0 addresses a security vulnerability. No details were given.",
+            "cve": null,
+            "id": "pyup.io-39127",
+            "specs": [
+                "<4.13.0"
+            ],
+            "v": "<4.13.0"
+        },
+        {
+            "advisory": "Cacophonyapi 4.6.0 addresses a security vulnerability in eslint-utils.",
+            "cve": null,
+            "id": "pyup.io-39128",
+            "specs": [
+                "<4.6.0"
+            ],
+            "v": "<4.6.0"
+        }
+    ],
     "cairosvg": [
         {
             "advisory": "cairosvg 1.0.21 is a security update. CairoSVG was vulnerable to XML eXternal Entity (XXE) attacks, this release fixes this vulnerability by not resolving the XML entities anymore. The ``--unsafe`` option has been added to force the resolution of XML entities. Obviously, this option is not safe and should only be used with trusted SVG files.",
@@ -1529,6 +1620,15 @@
                 "<1.0.2"
             ],
             "v": "<1.0.2"
+        },
+        {
+            "advisory": "Candig-server 1.4.0 includes some upgraded third-party libraries, improving security.",
+            "cve": null,
+            "id": "pyup.io-39169",
+            "specs": [
+                "<1.4.0"
+            ],
+            "v": "<1.4.0"
         }
     ],
     "cbapi": [
@@ -1763,6 +1863,17 @@
                 "<3.2.2"
             ],
             "v": "<3.2.2"
+        }
+    ],
+    "cheroot": [
+        {
+            "advisory": "Cheroot 6.3.2 introduces a HTTP 400 response to a malicious 'Content-Length' in the request headers.",
+            "cve": null,
+            "id": "pyup.io-39125",
+            "specs": [
+                "<6.3.2"
+            ],
+            "v": "<6.3.2"
         }
     ],
     "cherrymusic": [
@@ -2112,6 +2223,17 @@
                 "<1.5.1"
             ],
             "v": "<1.5.1"
+        }
+    ],
+    "collective.easyform": [
+        {
+            "advisory": "The modeleditor in collective.easyform 3.0.5 no longer resolves entities, and it removes processing instructions. This increases the security.",
+            "cve": null,
+            "id": "pyup.io-39144",
+            "specs": [
+                "<3.0.5"
+            ],
+            "v": "<3.0.5"
         }
     ],
     "collective.js.datatables": [
@@ -2689,6 +2811,28 @@
                 "<0.46"
             ],
             "v": "<0.46"
+        }
+    ],
+    "datasette-graphql": [
+        {
+            "advisory": "Satasette-graphql before 1.2 included a plugin that could expose schema details of databases that should not be visible, though not their actual row content. See: <https://github.com/simonw/datasette-graphql/security/advisories/GHSA-74hv-qjjq-h7g5>.",
+            "cve": null,
+            "id": "pyup.io-39174",
+            "specs": [
+                "<1.2"
+            ],
+            "v": "<1.2"
+        }
+    ],
+    "datasette-indieauth": [
+        {
+            "advisory": "Datasette-indieauth before 1.1 trusts the \"me\" field returned by the authorization server without verifying it.",
+            "cve": null,
+            "id": "pyup.io-39164",
+            "specs": [
+                "<1.1"
+            ],
+            "v": "<1.1"
         }
     ],
     "datasette-insert": [
@@ -5374,6 +5518,17 @@
             "v": "<0.10.0"
         }
     ],
+    "django-x509": [
+        {
+            "advisory": "Django-x509 0.9.1 updates the minimum version of 'cryptography' to 3.2 for security reasons.",
+            "cve": null,
+            "id": "pyup.io-39116",
+            "specs": [
+                "<0.9.1"
+            ],
+            "v": "<0.9.1"
+        }
+    ],
     "djangocms-admin-style": [
         {
             "advisory": "djangocms-admin-style 1.2.5 fixes a potential security issue if the ``Site.name`` field contains malicious code.",
@@ -5698,6 +5853,17 @@
             "v": "<1.4"
         }
     ],
+    "drf-api-logger": [
+        {
+            "advisory": "Drf-api-logger 0.0.7 includes the warning that 'allowed hosts protection' is skipped when a RAW_URI value is used for DRF_API_LOGGER_PATH_TYPE. Consequently, an insecure URI may be returned.",
+            "cve": null,
+            "id": "pyup.io-39108",
+            "specs": [
+                "<=0.0.7"
+            ],
+            "v": "<=0.0.7"
+        }
+    ],
     "drf-extra-fields": [
         {
             "advisory": "Drf-extra-fields 2.0.0 upgrades Pillow to 6.2.1 to fix a security vulnerability.",
@@ -5729,6 +5895,17 @@
                 "<1.3.0"
             ],
             "v": "<1.3.0"
+        }
+    ],
+    "droopescan": [
+        {
+            "advisory": "Droopescan 1.33.1 includes an update of Joomla because of an unauthenticated SQL injection vulnerability.",
+            "cve": null,
+            "id": "pyup.io-39049",
+            "specs": [
+                "<1.33.1"
+            ],
+            "v": "<1.33.1"
         }
     ],
     "dtale": [
@@ -5926,6 +6103,17 @@
                 "<3.1.4"
             ],
             "v": "<3.1.4"
+        }
+    ],
+    "epsagon": [
+        {
+            "advisory": "Epsagon 1.5.0 updates several dependencies in package.json due to vulnerabilities.",
+            "cve": null,
+            "id": "pyup.io-39030",
+            "specs": [
+                "<1.5.0"
+            ],
+            "v": "<1.5.0"
         }
     ],
     "errbot": [
@@ -6702,6 +6890,15 @@
     ],
     "flask-sieve": [
         {
+            "advisory": "Flask-sieve 1.0.4 fixes some vulnerabilities by updating the werkzeug package.",
+            "cve": null,
+            "id": "pyup.io-39139",
+            "specs": [
+                "<1.0.4"
+            ],
+            "v": "<1.0.4"
+        },
+        {
             "advisory": "Flask-sieve 1.1.0 updates Pillow (PIL-fork) to fix security vulnerabilities.",
             "cve": null,
             "id": "pyup.io-37632",
@@ -6947,6 +7144,15 @@
             "advisory": "genshi 0.6.1 includes a security fix to enhance sanitizing of CSS in style attributes. Genshi's `HTMLSanitizer` disallows style attributes by default (this remains unchanged) and warns against such attacks in its documentation, but the provided CSS santizing is now less lacking (see GitHub issue 455).",
             "cve": null,
             "id": "pyup.io-34688",
+            "specs": [
+                "<0.6.1"
+            ],
+            "v": "<0.6.1"
+        },
+        {
+            "advisory": "genshi 0.6.1 updates the HTML sanitizer to strip any CSS comments in style attributes, which could previously be used to hide malicious property values. This security fix to enhances sanitizing of CSS in style attributes. Genshi's  `HTMLSanitizer` disallows style attributes by default (this remains unchanged) and warns against such attacks in its documentation.",
+            "cve": null,
+            "id": "pyup.io-39055",
             "specs": [
                 "<0.6.1"
             ],
@@ -7728,6 +7934,17 @@
             "v": ">=2.2.0,<2.2.4"
         }
     ],
+    "infracheck": [
+        {
+            "advisory": "Infracheck 1.7.rc2 adds a `ssh-fingerprint` check, which verifies if any remote host fingerprint matches. This helps detecting man-in-the-middle and server takeover attacks.",
+            "cve": null,
+            "id": "pyup.io-39200",
+            "specs": [
+                "<1.7.rc2"
+            ],
+            "v": "<1.7.rc2"
+        }
+    ],
     "insecure-package": [
         {
             "advisory": "This is an insecure package with lots of exploitable security vulnerabilities.",
@@ -8279,6 +8496,15 @@
                 "<0.2.0"
             ],
             "v": "<0.2.0"
+        },
+        {
+            "advisory": "Jupyter-server 1.0.6 fixes an open redirect vulnerability. See: CVE-2020-26232.",
+            "cve": "CVE-2020-26232",
+            "id": "pyup.io-39167",
+            "specs": [
+                "<1.0.6"
+            ],
+            "v": "<1.0.6"
         }
     ],
     "jupyterhub": [
@@ -8718,6 +8944,24 @@
         }
     ],
     "kiwitcms": [
+        {
+            "advisory": "Kiwitcms 3.36.0 no longer include Regular Expression Denial of Service (ReDoS) vulnerabilities in the included `moment` Javascript library.",
+            "cve": null,
+            "id": "pyup.io-39074",
+            "specs": [
+                "<3.36.0"
+            ],
+            "v": "<3.36.0"
+        },
+        {
+            "advisory": "Kiwitcms 3.8.102 fixes bug 1133912: Script injection in notes field.",
+            "cve": null,
+            "id": "pyup.io-39075",
+            "specs": [
+                "<3.8.102"
+            ],
+            "v": "<3.8.102"
+        },
         {
             "advisory": "Kiwi TCMS 4.2:\r\n- Enables testing with Badit, Coverity Scan, pyup.io, andf Snyk\r\n- Uses SHA256 instead of MD5 and SHA1\r\n- Uses the `secrets` module for activation keys\r\n- Removes unnecessary AJAX view that had remote code execution vulnerability\r\n- Doesn't use hardcoded temporary directories\r\n- Upgrades to Patternfly 3.36.0, which fixes vulnerabilities https://snyk.io/vuln/npm:moment:20161019 and https://snyk.io/vuln/npm:moment:20170905",
             "cve": null,
@@ -9256,6 +9500,15 @@
             "v": "<3.3.5"
         },
         {
+            "advisory": "In lxml before 4.4.0, when writing to file paths that contain the URL escape character '%', the file path could wrongly be mangled by URL unescaping and thus write to a different file or directory.  Code that writes to file paths that are provided by untrusted sources, but that must work with previous versions of lxml, should best either reject paths that contain '%' characters, or otherwise make sure that the path does not contain maliciously injected '%XX' URL hex escapes for paths like '../'.",
+            "cve": null,
+            "id": "pyup.io-39195",
+            "specs": [
+                "<4.4.0"
+            ],
+            "v": "<4.4.0"
+        },
+        {
             "advisory": "Lxml 4.6.1 includes a fix for a vulnerability that was discovered in the HTML Cleaner, which allowed JavaScript to pass through.  The cleaner now removes more sneaky \"style\" content.",
             "cve": null,
             "id": "pyup.io-38892",
@@ -9263,6 +9516,15 @@
                 "<4.6.1"
             ],
             "v": "<4.6.1"
+        },
+        {
+            "advisory": "In lxml before version 4.6.2, a vulnerability was discovered in the HTML Cleaner which allowed JavaScript to pass through.  The cleaner now removes more sneaky \"style\" content.",
+            "cve": "CVE-2020-27783",
+            "id": "pyup.io-39194",
+            "specs": [
+                "<4.6.2"
+            ],
+            "v": "<4.6.2"
         }
     ],
     "mackup": [
@@ -10085,6 +10347,15 @@
                 "<=0.0.17"
             ],
             "v": "<=0.0.17"
+        },
+        {
+            "advisory": "Mpymodcore 0.0.18 includes a note in its list of backlogged tasks to harden the security of WindUp, securing the router with a redirect/bad request response.",
+            "cve": null,
+            "id": "pyup.io-39161",
+            "specs": [
+                "<=0.0.18"
+            ],
+            "v": "<=0.0.18"
         }
     ],
     "mr.migrator": [
@@ -10319,6 +10590,17 @@
                 "<0.4.0"
             ],
             "v": "<0.4.0"
+        }
+    ],
+    "netfoundry": [
+        {
+            "advisory": "Netfoundry 4.19.0 fixes a rake vulnerability in the `.gemspec` file.",
+            "cve": null,
+            "id": "pyup.io-39082",
+            "specs": [
+                "<4.19.0"
+            ],
+            "v": "<4.19.0"
         }
     ],
     "netius": [
@@ -10653,6 +10935,17 @@
                 ">=1.0.0,<1.15.2"
             ],
             "v": ">=1.0.0,<1.15.2"
+        }
+    ],
+    "oauth-pyzure": [
+        {
+            "advisory": "Oauth-pyzure 0.1.4 is based on OSS vulnerability reports.",
+            "cve": null,
+            "id": "pyup.io-39077",
+            "specs": [
+                "<0.1.4"
+            ],
+            "v": "<0.1.4"
         }
     ],
     "oauth2": [
@@ -11505,6 +11798,17 @@
                 "<0.0.2"
             ],
             "v": "<0.0.2"
+        }
+    ],
+    "pdfreader": [
+        {
+            "advisory": "Pdfreader 0.1.6.dev1 bumps Pillow to version >= 7.1.0 to address security issues.",
+            "cve": null,
+            "id": "pyup.io-39118",
+            "specs": [
+                "<0.1.6.dev1"
+            ],
+            "v": "<0.1.6.dev1"
         }
     ],
     "pdkit": [
@@ -12411,6 +12715,17 @@
             "v": "<2.1.6"
         }
     ],
+    "plone.app.dexterity": [
+        {
+            "advisory": "The modeleditor in plone.app.dexterity 2.6.8 no longer resolves entities, and it removes processing instructions. This increases the security.",
+            "cve": null,
+            "id": "pyup.io-39143",
+            "specs": [
+                "<2.6.8"
+            ],
+            "v": "<2.6.8"
+        }
+    ],
     "plone.app.discussion": [
         {
             "advisory": "plone.app.discussion 2.4.14 fixes a possible cross site scripting (XSS) attack on moderate comments page.",
@@ -12440,6 +12755,15 @@
                 "<3.0"
             ],
             "v": "<3.0"
+        },
+        {
+            "advisory": "Plone.app.event 3.2.10 gives a validation error in the ical importer when a 'file://' URL is used (this could be a line of attack for a hacker).",
+            "cve": null,
+            "id": "pyup.io-39140",
+            "specs": [
+                "<3.2.10"
+            ],
+            "v": "<3.2.10"
         }
     ],
     "plone.app.layout": [
@@ -12462,6 +12786,17 @@
                 "<1.0.2"
             ],
             "v": "<1.0.2"
+        }
+    ],
+    "plone.app.theming": [
+        {
+            "advisory": "Plone.app.theming 4.1.6 fails when trying file protocol access in diazo rules.  It also no longer resolves entities, and removes processing instructions. This are security enhancements.",
+            "cve": null,
+            "id": "pyup.io-39142",
+            "specs": [
+                "<4.1.6"
+            ],
+            "v": "<4.1.6"
         }
     ],
     "plone.dexterity": [
@@ -12539,6 +12874,17 @@
                 "<3.6.2"
             ],
             "v": "<3.6.2"
+        }
+    ],
+    "plone.supermodel": [
+        {
+            "advisory": "Plone.supermodel 1.6.3 no longer resolves entities in the xml parser. It also removes processing instructions. These are both security enhancements.",
+            "cve": null,
+            "id": "pyup.io-39141",
+            "specs": [
+                "<1.6.3"
+            ],
+            "v": "<1.6.3"
         }
     ],
     "plone.z3cform": [
@@ -13416,6 +13762,17 @@
             "v": "<0.4.5"
         }
     ],
+    "pycryptex": [
+        {
+            "advisory": "Pycryptex 0.5.0 adds new config keys (***secure-deletion*** and ***secure-deletion-passes***) to set securely deletion of clear files in encryption operations.",
+            "cve": null,
+            "id": "pyup.io-39109",
+            "specs": [
+                "<0.5.0"
+            ],
+            "v": "<0.5.0"
+        }
+    ],
     "pycrypto": [
         {
             "advisory": "In the ElGamal schemes (for both encryption and signatures), g is supposed to be the generator of the entire Z^*_p group.  However, in PyCrypto 2.5 and earlier, g is more simply the generator of a random sub-group of Z^*_p.",
@@ -13580,6 +13937,17 @@
                 "<0.7.0"
             ],
             "v": "<0.7.0"
+        }
+    ],
+    "pyinstaller": [
+        {
+            "advisory": "Pyinstaller 3.5 updates the bundled zlib library to version 1.2.11 to address vulnerabilities.",
+            "cve": null,
+            "id": "pyup.io-39153",
+            "specs": [
+                "<3.5"
+            ],
+            "v": "<3.5"
         }
     ],
     "pyjwt": [
@@ -15778,6 +16146,17 @@
             "v": "<0.10"
         }
     ],
+    "rosdep": [
+        {
+            "advisory": "Rosdep 0.15.2 migrates to yaml.safe_load to avoid yaml.load vulnerabilities.",
+            "cve": null,
+            "id": "pyup.io-39115",
+            "specs": [
+                "<0.15.2"
+            ],
+            "v": "<0.15.2"
+        }
+    ],
     "rotten-tomatoes-cli": [
         {
             "advisory": "Rotten-tomatoes-cli 0.0.2 updates the `pyyaml`, `urllib3`, and `requests` dependencies to avoid security vulnerabilities.",
@@ -15993,6 +16372,17 @@
             "v": "<2.6.0"
         }
     ],
+    "runway": [
+        {
+            "advisory": "Runway 1.16.0 has enhanced security via nonce signing (Static Site AuthEdge).",
+            "cve": null,
+            "id": "pyup.io-39085",
+            "specs": [
+                "<1.16.0"
+            ],
+            "v": "<1.16.0"
+        }
+    ],
     "s4": [
         {
             "advisory": "S4 0.4.2 upgrades boto3 to minimum requirement to fix a vulnerability in a urllib3 dependency.",
@@ -16028,6 +16418,15 @@
     ],
     "salt": [
         {
+            "advisory": "Salt 3000.4 prevents shell injections in netapi SSH client (CVE-2020-16846) and prevents creating world-readable private keys with the TLS execution module (cve-2020-17490).",
+            "cve": "CVE-2020-16846,  CVE-2020-17490",
+            "id": "pyup.io-39159",
+            "specs": [
+                "<3000.4"
+            ],
+            "v": "<3000.4"
+        },
+        {
             "advisory": "Salt 3001.1 updates PyYAML for security reasons. Additionally, psutil was updated due to CVE-2019-18874.",
             "cve": "CVE-2019-18874",
             "id": "pyup.io-38668",
@@ -16035,6 +16434,24 @@
                 "<3001.1"
             ],
             "v": "<3001.1"
+        },
+        {
+            "advisory": "Salt 3001.2 prevents shell injections in netapi SSH client (CVE-2020-16846) and prevents creating world-readable private keys with the TLS execution module (cve-2020-17490).",
+            "cve": "CVE-2020-16846,  CVE-2020-17490",
+            "id": "pyup.io-39158",
+            "specs": [
+                ">=3001,<3001.2"
+            ],
+            "v": ">=3001,<3001.2"
+        },
+        {
+            "advisory": "Salt 3002.1 prevents shell injections in netapi SSH client (CVE-2020-16846) and prevents creating world-readable private keys with the TLS execution module (cve-2020-17490).\r\n\r\nIt also properly validates eauth credentials and tokens along with their ACLs. Prior to this change eauth was not properly validated when calling Salt ssh via the salt-api. Any value for 'eauth' or 'token' would allow a user to bypass authentication and make calls to Salt ssh (CVE-2020-25592).",
+            "cve": "CVE-2020-16846,  CVE-2020-17490, CVE-2020-25592",
+            "id": "pyup.io-39157",
+            "specs": [
+                ">=3002,<3002.1"
+            ],
+            "v": ">=3002,<3002.1"
         }
     ],
     "sanic-oauthlib": [
@@ -16619,6 +17036,17 @@
             "v": "<0.11.0"
         }
     ],
+    "snakemake": [
+        {
+            "advisory": "Snakemake 5.28.0 parses values more securely when using --config.",
+            "cve": null,
+            "id": "pyup.io-39106",
+            "specs": [
+                "<5.28.0"
+            ],
+            "v": "<5.28.0"
+        }
+    ],
     "snappass": [
         {
             "advisory": "Snappass 1.4.1 upgrades cryptography to 2.3.1. See: CVE-2018-10903.",
@@ -16686,6 +17114,15 @@
         }
     ],
     "sopel": [
+        {
+            "advisory": "'web.get' and 'web.post' in sopel 4.1.0 can be told to limit how much they read from a URL, to prevent malicious use.",
+            "cve": null,
+            "id": "pyup.io-39121",
+            "specs": [
+                "<4.1.0"
+            ],
+            "v": "<4.1.0"
+        },
         {
             "advisory": "A security issue involving an improperly named channel logs was fixed in Sopel 4.4.0.",
             "cve": null,
@@ -16800,6 +17237,17 @@
                 "<0.8"
             ],
             "v": "<0.8"
+        }
+    ],
+    "spyder-terminal": [
+        {
+            "advisory": "Spyder-terminal 0.3.1 resolves several vulnerabilities. See: <https://github.com/spyder-ide/spyder-terminal/pull/188>.",
+            "cve": null,
+            "id": "pyup.io-39132",
+            "specs": [
+                "<0.3.1"
+            ],
+            "v": "<0.3.1"
         }
     ],
     "sqlalchemy": [
@@ -18369,6 +18817,15 @@
             "v": "<1.25.9"
         },
         {
+            "advisory": "Urllib3 1.8 improves the default SSL/TLS settings to avoid vulnerabilities.",
+            "cve": null,
+            "id": "pyup.io-39094",
+            "specs": [
+                "<1.8"
+            ],
+            "v": "<1.8"
+        },
+        {
             "advisory": "In the urllib3 library through 1.24.1 for Python, CRLF injection is possible if the attacker controls the request parameter. See: CVE-2019-11236.",
             "cve": "CVE-2019-11236",
             "id": "pyup.io-37055",
@@ -18612,7 +19069,7 @@
         },
         {
             "advisory": "Wagtail 2.7.4 includes a fix for CVE-2020-15118 to prevent HTML injection through the form field help text.",
-            "cve": ">",
+            "cve": "CVE-2020-15118",
             "id": "pyup.io-38922",
             "specs": [
                 "<2.7.4"
@@ -18826,6 +19283,15 @@
             "v": "<1.2.7"
         },
         {
+            "advisory": "Web3 1.3.1 fixes some vulnerable dependencies.",
+            "cve": null,
+            "id": "pyup.io-39123",
+            "specs": [
+                "<1.3.1"
+            ],
+            "v": "<1.3.1"
+        },
+        {
             "advisory": "web3 4.7.0  upgrades eth-hash to 0.2.0 with pycryptodome 3.6.6 which resolves a vulnerability.",
             "cve": null,
             "id": "pyup.io-36480",
@@ -18915,6 +19381,15 @@
                 "<0.11.11"
             ],
             "v": "<0.11.11"
+        },
+        {
+            "advisory": "Werkzeug before 0.11.6 includes an open redirect vulnerability via a double slash in the URL. See CVE-2020-28724.",
+            "cve": "CVE-2020-28724",
+            "id": "pyup.io-39160",
+            "specs": [
+                "<0.11.6"
+            ],
+            "v": "<0.11.6"
         },
         {
             "advisory": "The defaults of ``generate_password_hash`` in werkzeug 0.12 have been changed to more secure ones, see pull request ``#753``.",
