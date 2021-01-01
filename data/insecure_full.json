@@ -1,8 +1,19 @@
 {
     "$meta": {
         "advisory": "PyUp.io metadata",
-        "timestamp": 1606802401
+        "timestamp": 1609480801
     },
+    "abracadabra": [
+        {
+            "advisory": "Abracadabra 0.0.4 updates the notebook dependency to address a security vulnerability.",
+            "cve": null,
+            "id": "pyup.io-39264",
+            "specs": [
+                "<0.0.4"
+            ],
+            "v": "<0.0.4"
+        }
+    ],
     "acqusition": [
         {
             "advisory": "acqusition is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
@@ -597,6 +608,15 @@
                 "<1.10.0"
             ],
             "v": "<1.10.0"
+        },
+        {
+            "advisory": "In Apache Airflow versions prior to 1.10.13, the Charts and Query View of the old (Flask-admin based) UI were vulnerable for SSRF attack. See CVE-2020-17513.",
+            "cve": "CVE-2020-17513",
+            "id": "pyup.io-39282",
+            "specs": [
+                "<1.10.13"
+            ],
+            "v": "<1.10.13"
         }
     ],
     "apache-libcloud": [
@@ -786,6 +806,17 @@
                 "<3.0.1"
             ],
             "v": "<3.0.1"
+        }
+    ],
+    "asyncssh": [
+        {
+            "advisory": "Asyncssh 2.5.0 added a configurable maximum line length when the editor is in use to avoid potential denial-of-service attacks.",
+            "cve": null,
+            "id": "pyup.io-39350",
+            "specs": [
+                "<2.5.0"
+            ],
+            "v": "<2.5.0"
         }
     ],
     "att-iot-gateway": [
@@ -2657,6 +2688,15 @@
                 "<0.6.4"
             ],
             "v": "<0.6.4"
+        },
+        {
+            "advisory": "Crossbar 20.12.3 fixes a dependency on Autobahn v20.12.3, which in turn fixes a potential security issue when enabling the Web status page ('enable_webstatus') on WebSocket-WAMP listening transports.",
+            "cve": null,
+            "id": "pyup.io-39329",
+            "specs": [
+                "<20.12.3"
+            ],
+            "v": "<20.12.3"
         }
     ],
     "crypt": [
@@ -2709,6 +2749,15 @@
                 "<1.5.3"
             ],
             "v": "<1.5.3"
+        },
+        {
+            "advisory": "Cryptography 3.3 no longer allows loading of finite field Diffie-Hellman parameters of less than 512 bits in length. This change is to conform with an upcoming OpenSSL release that no longer supports smaller sizes. These keys were already wildly insecure and should not have been used in any application outside of testing.",
+            "cve": null,
+            "id": "pyup.io-39252",
+            "specs": [
+                "<3.3"
+            ],
+            "v": "<3.3"
         },
         {
             "advisory": "Cryptography 3.2 was released with the warning that its maintainers became aware of a Bleichenbacher vulnerability that they were only partly able to mitigate. See: CVE-2020-25659.",
@@ -2767,6 +2816,17 @@
                 "<0.9.6a2"
             ],
             "v": "<0.9.6a2"
+        }
+    ],
+    "cstar": [
+        {
+            "advisory": "Cstar 0.5.0 fixes a security problem in a dependency (spotify). See: <https://github.com/spotify/cstar/pull/8>.",
+            "cve": null,
+            "id": "pyup.io-39224",
+            "specs": [
+                "<0.5.0"
+            ],
+            "v": "<0.5.0"
         }
     ],
     "cumin": [
@@ -5787,6 +5847,17 @@
             "v": "<0.5.105"
         }
     ],
+    "doccano": [
+        {
+            "advisory": "Doccano 1.0.3updates nginx.conf to enhance security.",
+            "cve": null,
+            "id": "pyup.io-39243",
+            "specs": [
+                "<1.0.3"
+            ],
+            "v": "<1.0.3"
+        }
+    ],
     "docker": [
         {
             "advisory": "docker 3.5.1 bumps version of `pyOpenSSL` in `requirements.txt` and `setup.py` to prevent\r\n  installation of a vulnerable version.",
@@ -5851,6 +5922,17 @@
                 "<1.4"
             ],
             "v": "<1.4"
+        }
+    ],
+    "draft-kings": [
+        {
+            "advisory": "Draft-kings 2.0.3 updates the version of the 'urllib3' library to '1.25.9' to avoid vulnerabilities associated with version '1.24.3'.",
+            "cve": null,
+            "id": "pyup.io-39238",
+            "specs": [
+                "<2.0.3"
+            ],
+            "v": "<2.0.3"
         }
     ],
     "drf-api-logger": [
@@ -6277,6 +6359,17 @@
             "v": "<0.3.13rc1"
         }
     ],
+    "exoskeleton": [
+        {
+            "advisory": "Exoskeleton 1.2.1 requires lxml version >= 4.6.2 (released 2020-11-26) as it fixes a vulnerability.",
+            "cve": null,
+            "id": "pyup.io-39207",
+            "specs": [
+                "<1.2.1"
+            ],
+            "v": "<1.2.1"
+        }
+    ],
     "extensiveautomation-server": [
         {
             "advisory": "Extensiveautomation-server 12.1.0 reactivates SSLv3 cipher to support Linux client in python 2.6, fixes a security issue on folder creation in repository (no more full rights), and fixes a security issue on web services (bad  handle of the level access).",
@@ -6335,6 +6428,17 @@
                 "<0.1"
             ],
             "v": "<0.1"
+        }
+    ],
+    "faraday-agent-dispatcher": [
+        {
+            "advisory": "Faraday-agent-dispatcher 1.2.1 escapes user-controlled executor parameters in order to prevent OS argument injection (not command injection).",
+            "cve": null,
+            "id": "pyup.io-39351",
+            "specs": [
+                "<1.2.1"
+            ],
+            "v": "<1.2.1"
         }
     ],
     "fast-curator": [
@@ -6875,6 +6979,17 @@
                 "<0.1.2"
             ],
             "v": "<0.1.2"
+        }
+    ],
+    "flask-pyoidc": [
+        {
+            "advisory": "Flask-pyoidc before 3.7.0 did not properly validate the ID token according to the OIDC specification. It also still depended on a pyoidc version that is now known to not be secure.",
+            "cve": null,
+            "id": "pyup.io-39225",
+            "specs": [
+                "<3.7.0"
+            ],
+            "v": "<3.7.0"
         }
     ],
     "flask-security-fork": [
@@ -7588,6 +7703,19 @@
             "v": ">=0.98,<0.98.5"
         }
     ],
+    "horizon": [
+        {
+            "advisory": "An issue was discovered in OpenStack Horizon before 15.3.2, 16.x before 16.2.1, 17.x and 18.x before 18.3.3, 18.4.x, and 18.5.x. There is a lack of validation of the \"next\" parameter, which would allow someone to supply a malicious URL in Horizon that can cause an automatic redirect to the provided malicious URL. See CVE-2020-29565.",
+            "cve": "CVE-2020-29565",
+            "id": "pyup.io-39226",
+            "specs": [
+                "<15.3.2",
+                ">=17.0,<18.3.3",
+                ">=16.0.0.0b1,<16.2.1"
+            ],
+            "v": "<15.3.2,>=17.0,<18.3.3,>=16.0.0.0b1,<16.2.1"
+        }
+    ],
     "hotaru": [
         {
             "advisory": "Hotaru 3.2.4 updates tensorflow to >= 2.2.1. Tensorflow versions before 2.2.1 are known to be affected by several CVEs.",
@@ -7771,6 +7899,17 @@
                 "<1.0.0"
             ],
             "v": "<1.0.0"
+        }
+    ],
+    "hub": [
+        {
+            "advisory": "Hub 0.9.0 upgrades urllib3 to urllib3[secure].",
+            "cve": null,
+            "id": "pyup.io-39217",
+            "specs": [
+                "<0.9.0"
+            ],
+            "v": "<0.9.0"
         }
     ],
     "hug": [
@@ -8287,6 +8426,17 @@
             "v": "<0.7"
         }
     ],
+    "jake": [
+        {
+            "advisory": "Jake 0.2.59 resolves vulnerability CVE-2020-27783 in lxml.",
+            "cve": null,
+            "id": "pyup.io-39256",
+            "specs": [
+                "<0.2.59"
+            ],
+            "v": "<0.2.59"
+        }
+    ],
     "jarbas-utils": [
         {
             "advisory": "jarbas-utils 0.5.1 casts encryption key to bytes",
@@ -8443,6 +8593,17 @@
             "v": "<4.12.5"
         }
     ],
+    "jsonpickle": [
+        {
+            "advisory": "Jsonpickle through 1.4.1 allows remote code execution during deserialization of a malicious payload through the decode() function. See CVE-2020-22083.",
+            "cve": "CVE-2020-22083",
+            "id": "pyup.io-39319",
+            "specs": [
+                "<=1.4.1"
+            ],
+            "v": "<=1.4.1"
+        }
+    ],
     "jsonrpc-pyclient": [
         {
             "advisory": "jsonrpc-pyclient 0.7.0 fixes security issues in unixdomainsocket connectors.",
@@ -8505,6 +8666,15 @@
                 "<1.0.6"
             ],
             "v": "<1.0.6"
+        },
+        {
+            "advisory": "Jupyter-server 1.1.0 includes a security advisory fix (pull 345).",
+            "cve": null,
+            "id": "pyup.io-39272",
+            "specs": [
+                "<1.1.0"
+            ],
+            "v": "<1.1.0"
         }
     ],
     "jupyterhub": [
@@ -8516,6 +8686,17 @@
                 "<=0.2"
             ],
             "v": "<=0.2"
+        }
+    ],
+    "jupyterhub-systemdspawner": [
+        {
+            "advisory": "Jupyterhub-systemdspawner before version 0.15 user API tokens issued to single-user servers are specified in the environment of systemd units, which are accessible to all users. In particular, the-littlest-jupyterhub is affected, which uses systemdspawner by default.",
+            "cve": null,
+            "id": "pyup.io-39244",
+            "specs": [
+                "<0.15"
+            ],
+            "v": "<0.15"
         }
     ],
     "jw.util": [
@@ -8684,6 +8865,17 @@
                 "<3.3.0"
             ],
             "v": "<3.3.0"
+        }
+    ],
+    "keplergl": [
+        {
+            "advisory": "Keplergl 2.4.0 fixes several security vulnerabilities (9a13ce68). No details were provided.",
+            "cve": null,
+            "id": "pyup.io-39211",
+            "specs": [
+                "<2.4.0"
+            ],
+            "v": "<2.4.0"
         }
     ],
     "keyring": [
@@ -9749,6 +9941,17 @@
             "v": "<1.2"
         }
     ],
+    "matrix-registration": [
+        {
+            "advisory": "Matrix-registration 0.7.1 updates the waitress dependency because versions below 1.4.2 contain a vulnerability. See CVE-2019-16789.",
+            "cve": "CVE-2019-16789",
+            "id": "pyup.io-39271",
+            "specs": [
+                "<0.7.1"
+            ],
+            "v": "<0.7.1"
+        }
+    ],
     "matrix-sydent": [
         {
             "advisory": "util/emailutils.py in Matrix Sydent before 1.0.2 mishandles registration restrictions that are based on e-mail domain, if the allowed_local_3pids option is enabled. This occurs because of potentially unwanted behavior in Python, in which an email.utils.parseaddr call on user@bad.example.net@good.example.com returns the user@bad.example.net substring. See: CVE-2019-11340.",
@@ -10094,6 +10297,17 @@
             "v": "==0.7.4"
         }
     ],
+    "mitiq": [
+        {
+            "advisory": "Mitiq 0.4.0 updates notebook version in requirements to resolve a vulnerability. No details were provided.",
+            "cve": null,
+            "id": "pyup.io-39241",
+            "specs": [
+                "<0.4.0"
+            ],
+            "v": "<0.4.0"
+        }
+    ],
     "mitmproxy": [
         {
             "advisory": "mitmproxy before 0.17 has a XSS vulnerability in HTTP errors.",
@@ -10356,6 +10570,15 @@
                 "<=0.0.18"
             ],
             "v": "<=0.0.18"
+        },
+        {
+            "advisory": "Mpymodcore 0.0.19 was released with the acknowledgement that WindUp requires security hardening.",
+            "cve": null,
+            "id": "pyup.io-39273",
+            "specs": [
+                "<=0.0.19"
+            ],
+            "v": "<=0.0.19"
         }
     ],
     "mr.migrator": [
@@ -10431,6 +10654,15 @@
                 "<2.3.1"
             ],
             "v": "<2.3.1"
+        },
+        {
+            "advisory": "Muffnn 2.3.2 increases the minimum version of 'tensorflow' to version 1.15.4 to fix the security vulnerability reported in <https://github.com/advisories/GHSA-4g9f-63rx-5cw4>.",
+            "cve": null,
+            "id": "pyup.io-39222",
+            "specs": [
+                "<2.3.2"
+            ],
+            "v": "<2.3.2"
         }
     ],
     "murano-dashboard": [
@@ -11037,6 +11269,15 @@
                 "<2.10.0"
             ],
             "v": "<2.10.0"
+        },
+        {
+            "advisory": "Oci 2.24.1 pins cryptography to version 3.2.1 to address a vulnerability. See: <https://github.com/oracle/oci-python-sdk/pull/299>.",
+            "cve": null,
+            "id": "pyup.io-39212",
+            "specs": [
+                "<2.24.1"
+            ],
+            "v": "<2.24.1"
         }
     ],
     "oci-cli": [
@@ -11108,6 +11349,17 @@
                 "<1.5.2"
             ],
             "v": "<1.5.2"
+        }
+    ],
+    "oic": [
+        {
+            "advisory": "In Python oic before version 1.2.1, there are several related cryptographic issues affecting client implementations that use the library. \r\n\r\nThe issues are: \r\n1) The IdToken signature algorithm was not checked automatically, but only if the expected algorithm was passed in as a kwarg. \r\n2) JWA `none` algorithm was allowed in all flows. \r\n3) oic.consumer.Consumer.parse_authz returns an unverified IdToken. The verification of the token was left to the discretion of the implementator. \r\n4) iat claim was not checked for sanity (i.e. it could be in the future). \r\n\r\nSee CVE-2020-26244.",
+            "cve": "CVE-2020-26244",
+            "id": "pyup.io-39221",
+            "specs": [
+                "<1.2.1"
+            ],
+            "v": "<1.2.1"
         }
     ],
     "onegov.form": [
@@ -11634,6 +11886,17 @@
             "v": "<0.42"
         }
     ],
+    "pangres": [
+        {
+            "advisory": "Pangres 2.1 was released with the claim that it became completely SQL injection safe. Everything is escaped or parameterized including schema, table and column names.",
+            "cve": null,
+            "id": "pyup.io-39284",
+            "specs": [
+                "<2.1"
+            ],
+            "v": "<2.1"
+        }
+    ],
     "panoptes-utils": [
         {
             "advisory": "Panoptes-utils 0.2.21 bumps PyYaml to its latest version to suppress a security warning.",
@@ -11801,6 +12064,15 @@
         }
     ],
     "pdfreader": [
+        {
+            "advisory": "Pdfreader 0.1.6 updates its dependency on pillow to version >= 7.1.0 to address security issues. No details were provided.",
+            "cve": null,
+            "id": "pyup.io-39314",
+            "specs": [
+                "<0.1.6"
+            ],
+            "v": "<0.1.6"
+        },
         {
             "advisory": "Pdfreader 0.1.6.dev1 bumps Pillow to version >= 7.1.0 to address security issues.",
             "cve": null,
@@ -12446,6 +12718,15 @@
                 "<4.3"
             ],
             "v": "<4.3"
+        },
+        {
+            "advisory": "The official plone Docker images before version of 4.3.18-alpine (Alpine specific) contain a blank password for a root user. System using the plone docker container deployed by affected versions of the docker image may allow a remote attacker to achieve root access with a blank password. See CVE-2020-35190.",
+            "cve": "CVE-2020-35190",
+            "id": "pyup.io-39305",
+            "specs": [
+                "<4.3.18"
+            ],
+            "v": "<4.3.18"
         },
         {
             "advisory": "Plone 5.2.2 contains Products.isurlinportal 1.1.0 with a minor security hardening fix.",
@@ -13171,6 +13452,17 @@
             "v": "<1.2.0"
         }
     ],
+    "privacyidea": [
+        {
+            "advisory": "Privacyidea 3.4.1 uses a secure way to compare strings to avoid theoretical side channel attacks.",
+            "cve": null,
+            "id": "pyup.io-39341",
+            "specs": [
+                "<3.4.1"
+            ],
+            "v": "<3.4.1"
+        }
+    ],
     "products-cmfcore": [
         {
             "advisory": "Products-cmfcore 2.1.0beta2 adds POST-only protections to security critical methods. See: CVE-2007-0240.",
@@ -13414,6 +13706,17 @@
             "v": "<1.0.4"
         }
     ],
+    "pupyl": [
+        {
+            "advisory": "Pupyl 0.10.4 includes a security update regarding its dependencies. No details are provided.",
+            "cve": null,
+            "id": "pyup.io-39208",
+            "specs": [
+                "<0.10.4"
+            ],
+            "v": "<0.10.4"
+        }
+    ],
     "pure": [
         {
             "advisory": "pure 1.5.2 prevents double prompt expansion in preprompt (e.g. secure against bad git branch names)",
@@ -13446,6 +13749,28 @@
                 "<0.4.0"
             ],
             "v": "<0.4.0"
+        }
+    ],
+    "pwntools": [
+        {
+            "advisory": "Pwntools 4.3.1 fixes a shellcraft SSTI vulnerability.",
+            "cve": null,
+            "id": "pyup.io-39204",
+            "specs": [
+                "<4.3.1"
+            ],
+            "v": "<4.3.1"
+        }
+    ],
+    "py": [
+        {
+            "advisory": "A denial of service via regular expression in the py.path.svnwc component of py (aka python-py) through 1.9.0 could be used by attackers to cause a compute-time denial of service attack by supplying malicious input to the blame functionality. See CVE-2020-29651.",
+            "cve": "CVE-2020-29651",
+            "id": "pyup.io-39253",
+            "specs": [
+                "<=1.9.0"
+            ],
+            "v": "<=1.9.0"
         }
     ],
     "py-bcrypt": [
@@ -13512,6 +13837,17 @@
                 "<5.0.0"
             ],
             "v": "<5.0.0"
+        }
+    ],
+    "py-mon": [
+        {
+            "advisory": "Py-mon 1.18.7 upgrades pstree to remove a vulnerability. See: <https://github.com/remy/nodemon/commit/21e052e>.",
+            "cve": null,
+            "id": "pyup.io-39345",
+            "specs": [
+                "<1.18.7"
+            ],
+            "v": "<1.18.7"
         }
     ],
     "py-ms": [
@@ -13667,6 +14003,17 @@
                 "<1.1.2"
             ],
             "v": "<1.1.2"
+        }
+    ],
+    "pyca": [
+        {
+            "advisory": "Pyca 3.3 includes a configurable, random delay for ingests to avoid accidental DDoS  attacks.",
+            "cve": null,
+            "id": "pyup.io-39215",
+            "specs": [
+                "<3.3"
+            ],
+            "v": "<3.3"
         }
     ],
     "pycapnp": [
@@ -14178,6 +14525,17 @@
                 "<0.9.0"
             ],
             "v": "<0.9.0"
+        }
+    ],
+    "pyomo": [
+        {
+            "advisory": "Pyomo 5.7.2 fixes a security risk in GitHub Actions workflow (issue 1654).",
+            "cve": null,
+            "id": "pyup.io-39315",
+            "specs": [
+                "<5.7.2"
+            ],
+            "v": "<5.7.2"
         }
     ],
     "pyopenssl": [
@@ -14991,6 +15349,15 @@
                 "<0.6.3"
             ],
             "v": "<0.6.3"
+        },
+        {
+            "advisory": "Python-libnmap 0.7.2 adds unittest for defusedxml to fix billionlaugh and external entities security issues. It also includes a fix for security issue on XXE (XML External Entities). See: CVE-2019-1010017.",
+            "cve": "CVE-2019-1010017",
+            "id": "pyup.io-39304",
+            "specs": [
+                "<0.7.2"
+            ],
+            "v": "<0.7.2"
         }
     ],
     "python-libtorrent": [
@@ -15508,6 +15875,26 @@
             "v": "<0.2.1"
         }
     ],
+    "quart": [
+        {
+            "advisory": "Quart 0.4.0 allows the request to be limited to prevent DOS attacks.",
+            "cve": null,
+            "id": "pyup.io-39235",
+            "specs": [
+                "<0.4.0"
+            ],
+            "v": "<0.4.0"
+        },
+        {
+            "advisory": "Quart 0.5.0 refactors to mitigate DOS attacks.",
+            "cve": null,
+            "id": "pyup.io-39234",
+            "specs": [
+                "<0.5.0"
+            ],
+            "v": "<0.5.0"
+        }
+    ],
     "quilt": [
         {
             "advisory": "quilt 2.9.14 updates urllib3 version for security patch",
@@ -15579,6 +15966,15 @@
                 "<1.11.1"
             ],
             "v": "<1.11.1"
+        },
+        {
+            "advisory": "The Windows and macOS releases of Qutebrowser 1.14.1 ship Qt 5.15.2, which is based on Chromium 83.0.4103.122 with security fixes up to 86.0.4240.183. This includes CVE-2020-15999 in the bundled freetype library, which is known to be exploited in the wild.",
+            "cve": null,
+            "id": "pyup.io-39227",
+            "specs": [
+                "<1.14.1"
+            ],
+            "v": "<1.14.1"
         },
         {
             "advisory": "In qutebrowser 1.3.0, support for JavaScript Shared Web Workers has been disabled on Qt versions older than 5.11 because of security issues in Chromium. You can get the same effect in earlier versions via `:set qt.args ['disable-shared-workers']`. An equivalent workaround is also contained in Qt 5.9.5 and 5.10.1.",
@@ -15761,6 +16157,15 @@
                 "<1.10.0"
             ],
             "v": "<1.10.0"
+        },
+        {
+            "advisory": "The slack connector in rasa 2.1.0 changes the configuration for 'slack_signing_secret' to make the connector more secure (issue 7204). The configuration value needs to be added to your 'credentials.yml' if you are using the slack connector.",
+            "cve": null,
+            "id": "pyup.io-39308",
+            "specs": [
+                "<2.1.0"
+            ],
+            "v": "<2.1.0"
         }
     ],
     "rasa-sdk": [
@@ -16454,6 +16859,17 @@
             "v": ">=3002,<3002.1"
         }
     ],
+    "salted": [
+        {
+            "advisory": "Salted 0.5.4 requires lxml version >= 4.6.2 as it fixes a vulnerability and works with Python 3.9.",
+            "cve": null,
+            "id": "pyup.io-39320",
+            "specs": [
+                "<0.5.4"
+            ],
+            "v": "<0.5.4"
+        }
+    ],
     "sanic-oauthlib": [
         {
             "advisory": "Sanic-oauthlib 0.5.0 mentions \"**Security bug** for access token via `#92`\". No other information was provided.",
@@ -16715,6 +17131,42 @@
     ],
     "seldon-core": [
         {
+            "advisory": "Seldon-core 0.2.4 includes a fix for Github security vulnerabilities in dependencies (issue 259) and a fix for vulnerability warnings with updates to engine and apife pom (issue 263).",
+            "cve": null,
+            "id": "pyup.io-39360",
+            "specs": [
+                "<0.2.4"
+            ],
+            "v": "<0.2.4"
+        },
+        {
+            "advisory": "Seldon-core 0.3.0 includes a fix for old Containers & Security Vulnerabilities (issue 528). It also updates the TF version for security (pull 575), and updates jackson-databind from version 2.8.11.2 to version 2.9.8 to address CVE-2018-12022 and CVE-2018-12023 (pull 547).",
+            "cve": "CVE-2018-12022, CVE-2018-12023",
+            "id": "pyup.io-39359",
+            "specs": [
+                "<0.3.0"
+            ],
+            "v": "<0.3.0"
+        },
+        {
+            "advisory": "Seldon-core 0.4.0 includes a fix for CVE-2018-1000654 in openjdk:8u201-jre-alpine3.",
+            "cve": "CVE-2018-1000654",
+            "id": "pyup.io-39358",
+            "specs": [
+                "<0.4.0"
+            ],
+            "v": "<0.4.0"
+        },
+        {
+            "advisory": "Seldon-core 0.4.2 closes issue 981 which addresses a Java dependencies that is not secure, and also closes issue 893 about a patch to prevent XSS.",
+            "cve": null,
+            "id": "pyup.io-39357",
+            "specs": [
+                "<0.4.2"
+            ],
+            "v": "<0.4.2"
+        },
+        {
             "advisory": "seldon-core 0.5.1 bumps pillow from 6.0.0 to 6.2.0, see: https://github.com/SeldonIO/seldon-core/pull/1062",
             "cve": null,
             "id": "pyup.io-37893",
@@ -16722,6 +17174,33 @@
                 "<0.5.1"
             ],
             "v": "<0.5.1"
+        },
+        {
+            "advisory": "Seldon-core 1.0.0 includes a fix for  CVE-2019-5482 and CVE-2019-18224.",
+            "cve": "CVE-2019-5482, CVE-2019-18224",
+            "id": "pyup.io-39361",
+            "specs": [
+                "<1.0.0"
+            ],
+            "v": "<1.0.0"
+        },
+        {
+            "advisory": "Seldon-core 1.0.2 includes a fix for CVE-2019-18224.",
+            "cve": "CVE-2019-18224",
+            "id": "pyup.io-39356",
+            "specs": [
+                "<1.0.2"
+            ],
+            "v": "<1.0.2"
+        },
+        {
+            "advisory": "Seldon-core 1.2.0 adds XSS patches to executor. It also closes potential security vulnerability issues with Default Engine Java Opts (issue 1597) and Java JMX Server (issue 1595).",
+            "cve": null,
+            "id": "pyup.io-39328",
+            "specs": [
+                "<1.2.0"
+            ],
+            "v": "<1.2.0"
         }
     ],
     "selenium-wire": [
@@ -16744,6 +17223,15 @@
                 "<0.12.2"
             ],
             "v": "<0.12.2"
+        },
+        {
+            "advisory": "Sentry 5.7.0 updates https-proxy-agent to 3.0.0 for security reasons (issue 2262).",
+            "cve": null,
+            "id": "pyup.io-39296",
+            "specs": [
+                "<5.7.0"
+            ],
+            "v": "<5.7.0"
         },
         {
             "advisory": "sentry before 6.1.1 is vulnerable to a remote code execution exploit.",
@@ -17803,6 +18291,17 @@
             "v": "<1.0.8"
         }
     ],
+    "td-ameritrade-python-api": [
+        {
+            "advisory": "Td-ameritrade-python-api 0.3.2 no longer auto-generates 'credentials.json' in the utility folder out of a concern for security. Instead, the user must specify where they would like to cache their refresh token.",
+            "cve": null,
+            "id": "pyup.io-39230",
+            "specs": [
+                "<0.3.2"
+            ],
+            "v": "<0.3.2"
+        }
+    ],
     "telemeta": [
         {
             "advisory": "telemeta before 1.4.31 has a undisclosed security vulnerability in TELEMETA_EXPORT_CACHE_DIR.",
@@ -17996,6 +18495,21 @@
             "v": "<1.15.3"
         },
         {
+            "advisory": "In affected versions of TensorFlow the tf.raw_ops.ImmutableConst operation returns a constant tensor created from a memory mapped file which is assumed immutable. However, if the type of the tensor is not an integral type, the operation crashes the Python interpreter as it tries to write to the memory area. If the file is too small, TensorFlow properly returns an error as the memory area has fewer bytes than what is needed for the tensor it creates. However, as soon as there are enough bytes, the above snippet causes a segmentation fault. This is because the allocator used to return the buffer data is not marked as returning an opaque handle since the needed virtual method is not overridden. This is fixed in versions 1.15.5, 2.0.4, 2.1.3, 2.2.2, 2.3.2, and 2.4.0. See CVE-2020-26268.",
+            "cve": "CVE-2020-26268",
+            "id": "pyup.io-39265",
+            "specs": [
+                "<1.15.5",
+                ">=2.0.0a0,<2.0.4",
+                ">=2.1.0rc0,<2.1.3",
+                ">=2.2.0rc0,<2.2.2",
+                ">=2.3.0rc0,<2.3.2",
+                ">=2.4.0rc0,<2.4.0",
+                ">=2.4.0rc0,<=2.4.0rc4"
+            ],
+            "v": "<1.15.5,>=2.0.0a0,<2.0.4,>=2.1.0rc0,<2.1.3,>=2.2.0rc0,<2.2.2,>=2.3.0rc0,<2.3.2,>=2.4.0rc0,<2.4.0,>=2.4.0rc0,<=2.4.0rc4"
+        },
+        {
             "advisory": "Tensorflow 1.15.2 and 2.0.1 update `sqlite3` to `3.30.01` to handle CVE-2019-19646, CVE-2019-19645 and CVE-2019-16168.",
             "cve": "CVE-2019-19646, CVE-2019-19645, CVE-2019-16168",
             "id": "pyup.io-38038",
@@ -18150,6 +18664,15 @@
             "v": "<1.12.2"
         },
         {
+            "advisory": "Tensorflow-directml 1.12.3 updates 'png_archive' dependency to 1.6.37 to not be affected by CVE-2019-7317, CVE-2018-13785, and CVE-2018-14048. It also updates 'sqlite' dependency to 3.28.0 to not be affected by CVE-2018-20506, CVE-2018-20346, and CVE-2018-20505.",
+            "cve": "CVE-2019-7317, CVE-2018-13785, CVE-2018-14048, CVE-2018-20506, CVE-2018-20346, CVE-2018-20505",
+            "id": "pyup.io-39318",
+            "specs": [
+                "<1.12.3"
+            ],
+            "v": "<1.12.3"
+        },
+        {
             "advisory": "Tensorflow-directml 1.15.2:\r\n* Fixes a security vulnerability where converting a Python string to a tf.float16 value produces a segmentation fault. See CVE-2020-5215.\r\n* Updates curl to 7.66.0 to handle CVE-2019-5482 and CVE-2019-5481.\r\n* Updates sqlite3 to 3.30.01 to handle CVE-2019-19646, CVE-2019-19645 and CVE-2019-16168.",
             "cve": "CVE-2020-5215, CVE-2019-5482, CVE-2019-5481, CVE-2019-19646, CVE-2019-19645, CVE-2019-16168",
             "id": "pyup.io-38779",
@@ -18177,6 +18700,26 @@
                 "<1.5.0"
             ],
             "v": "<1.5.0"
+        }
+    ],
+    "termius": [
+        {
+            "advisory": "Termius 1.2.13 removed storing of passwords and passphrases locally.",
+            "cve": null,
+            "id": "pyup.io-39270",
+            "specs": [
+                "<1.2.13"
+            ],
+            "v": "<1.2.13"
+        },
+        {
+            "advisory": "Termius 1.2.15 fixes its dependency on a cryptography package that's vulnerable to Bleichenbacher timing attacks in the RSA decryption API.",
+            "cve": null,
+            "id": "pyup.io-39250",
+            "specs": [
+                "<1.2.15"
+            ],
+            "v": "<1.2.15"
         }
     ],
     "textract": [
@@ -18332,6 +18875,27 @@
                 "<0.4.9"
             ],
             "v": "<0.4.9"
+        }
+    ],
+    "tlslite-ng": [
+        {
+            "advisory": "Tlslite-ng 0.7.6 includes a workaround for CVE-2020-26263 - Bleichenbacher oracle in RSA decryption. Please note that while the code was fortified, because of peculiarities of python, it's not possible to fully fix it. If you require resistance against side-channel attacks please use a different library.",
+            "cve": "CVE-2020-26263",
+            "id": "pyup.io-39321",
+            "specs": [
+                "<0.7.6"
+            ],
+            "v": "<0.7.6"
+        },
+        {
+            "advisory": "tlslite-ng is an open source python library that implements SSL and TLS cryptographic protocols. In tlslite-ng before versions 0.7.6 and 0.8.0-alpha39, the code that performs decryption and padding check in RSA PKCS#1 v1.5 decryption is data dependent. In particular, the code has multiple ways in which it leaks information about the decrypted ciphertext. It aborts as soon as the plaintext doesn't start with 0x00, 0x02. All TLS servers that enable RSA key exchange as well as applications that use the RSA decryption API directly are vulnerable. This is patched in versions 0.7.6 and 0.8.0-alpha39. Note: the patches depend on Python processing the individual bytes in side-channel free manner, this is known to not the case (see reference). As such, users that require side-channel resistance are recommended to use different TLS implementations, as stated in the security policy of tlslite-ng. See CVE-2020-26263.",
+            "cve": "CVE-2020-26263",
+            "id": "pyup.io-39343",
+            "specs": [
+                "<0.7.6",
+                ">=0.8.0-alpha1,<0.8.0-alpha39"
+            ],
+            "v": "<0.7.6,>=0.8.0-alpha1,<0.8.0-alpha39"
         }
     ],
     "tmc": [
@@ -18578,6 +19142,17 @@
                 "<2.0.0"
             ],
             "v": "<2.0.0"
+        }
+    ],
+    "twirp": [
+        {
+            "advisory": "A security vulnerability was discovered in twirp before 5.5.1 in the 'requirements.txt' file that is used to test Python-generated code, and could be used as sub-dependency checks for Python projects using Twirp.",
+            "cve": null,
+            "id": "pyup.io-39334",
+            "specs": [
+                "<5.5.1"
+            ],
+            "v": "<5.5.1"
         }
     ],
     "twisted": [
@@ -18952,6 +19527,17 @@
             "v": "<0.5.0"
         }
     ],
+    "vineyard": [
+        {
+            "advisory": "Vineyard 0.1.2 includes an update that ensures avoiding being attacked by a invalid client.",
+            "cve": null,
+            "id": "pyup.io-39346",
+            "specs": [
+                "<0.1.2"
+            ],
+            "v": "<0.1.2"
+        }
+    ],
     "vips-hash": [
         {
             "advisory": "Vips-hash 0.2.0 sets `pycryptodomex` version to `>=3.6.6,<4` to fix a vulnerability.",
@@ -19199,6 +19785,17 @@
                 "<0.8.2"
             ],
             "v": "<0.8.2"
+        }
+    ],
+    "warfit-learn": [
+        {
+            "advisory": "Warfit-learn 0.2 includes minor security improvements for dependencies.",
+            "cve": null,
+            "id": "pyup.io-39213",
+            "specs": [
+                "<0.2"
+            ],
+            "v": "<0.2"
         }
     ],
     "wasmer": [
@@ -19716,6 +20313,17 @@
                 "<0.21.0"
             ],
             "v": "<0.21.0"
+        }
+    ],
+    "zigpy-znp": [
+        {
+            "advisory": "CC2531 coordinators running Z-Stack Home 1.2 firmware in zigpy-znp before version 0.3.0 erroneously permit joins on startup, even after being reset. Joins are now explicitly disabled every time the coordinator is started. See: <https://github.com/home-assistant/core/issues/43245>.",
+            "cve": null,
+            "id": "pyup.io-39245",
+            "specs": [
+                "<0.3.0"
+            ],
+            "v": "<0.3.0"
         }
     ],
     "ziirish": [
