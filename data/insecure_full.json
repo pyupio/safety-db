@@ -1,7 +1,7 @@
 {
     "$meta": {
         "advisory": "PyUp.io metadata",
-        "timestamp": 1612159202
+        "timestamp": 1614578401
     },
     "abracadabra": [
         {
@@ -209,6 +209,24 @@
             "v": "<0.11.0"
         },
         {
+            "advisory": "Aiootp 0.13.0 contains a security patch for 'xor' and 'axor' functions which define the one-time-pad cipher (they can leak <1-bit of plaintext).",
+            "cve": null,
+            "id": "pyup.io-39508",
+            "specs": [
+                "<0.13.0"
+            ],
+            "v": "<0.13.0"
+        },
+        {
+            "advisory": "Aiootp 0.17.0 includes a security patch for a critical vulnerability (highly recommended to upgrade). The HMAC verifiers on ciphertexts did not include the 'salt' or 'pid' values when deriving the HMAC. This associated data can therefore be changed to cause a party to decrypt a past ciphertext with a salt or pid of an attacker's choosing.",
+            "cve": null,
+            "id": "pyup.io-39534",
+            "specs": [
+                "<0.17.0"
+            ],
+            "v": "<0.17.0"
+        },
+        {
             "advisory": "Aiootp 0.2.0 adds ephemeral salts to the ``AsyncDatabase`` & ``Database`` file encryption procedures. This is a major security fix, as re-encryption of files with the same tag in a database with the same open key would use the same streams of key material each time, breaking encryption if two different versions of a tag file's ciphertext stored to disk were available to an adversary. The database methods ``encrypt``, ``decrypt``,  ``aencrypt`` & ``adecrypt`` will now produce and decipher true one-time pad ciphertext with these ephemeral salts.",
             "cve": null,
             "id": "pyup.io-38250",
@@ -279,6 +297,17 @@
                 "<0.9.2"
             ],
             "v": "<0.9.2"
+        }
+    ],
+    "airtable": [
+        {
+            "advisory": "Airtable 0.4.4 updates 'request' dependency to 2.79.0 (it removes 'tough-cookie' vulnerability warning).",
+            "cve": null,
+            "id": "pyup.io-39517",
+            "specs": [
+                "<0.4.4"
+            ],
+            "v": "<0.4.4"
         }
     ],
     "aldryn-django": [
@@ -407,9 +436,18 @@
             "v": "<3.8.2"
         },
         {
-            "advisory": "ampache 4.0.0:\r\n* Resolves CVE-2019-12385 for the SQL Injection\r\n* Resolves CVE-2019-12386 for the persistent XSS\r\n* Resolves NS-18-046 Multiple Reflected Cross-site Scripting Vulnerabilities in Ampache 3.9.0",
-            "cve": "CVE-2019-12385",
+            "advisory": "ampache 4.0.0:\r\n* Resolves CVE-2019-12385 for the SQL Injection",
+            "cve": null,
             "id": "pyup.io-37863",
+            "specs": [
+                "<4.0.0"
+            ],
+            "v": "<4.0.0"
+        },
+        {
+            "advisory": "ampache 4.0.0:\r\n* Resolves CVE-2019-12386 for the persistent XSS\r\n* Resolves NS-18-046 Multiple Reflected Cross-site Scripting Vulnerabilities in Ampache 3.9.0",
+            "cve": null,
+            "id": "pyup.io-39602",
             "specs": [
                 "<4.0.0"
             ],
@@ -937,6 +975,17 @@
                 "<0.3.1"
             ],
             "v": "<0.3.1"
+        }
+    ],
+    "asciidoc": [
+        {
+            "advisory": "Asciidoc 8.6.6 removes the use of 'eval()' on untrusted input to disallow malicious code execution.",
+            "cve": null,
+            "id": "pyup.io-39514",
+            "specs": [
+                "<8.6.6"
+            ],
+            "v": "<8.6.6"
         }
     ],
     "asgi-csrf": [
@@ -2008,6 +2057,17 @@
             "v": "<0.4.4"
         }
     ],
+    "cg": [
+        {
+            "advisory": "Cg 18.11.3 upgrades the insecure cryptography dependency.",
+            "cve": null,
+            "id": "pyup.io-39614",
+            "specs": [
+                "<18.11.3"
+            ],
+            "v": "<18.11.3"
+        }
+    ],
     "chanjo-report": [
         {
             "advisory": "chanjo-report 2.4.0 removes a link to the \"index\" page from the report (security).",
@@ -2247,6 +2307,15 @@
                 "<1.8.1"
             ],
             "v": "<1.8.1"
+        },
+        {
+            "advisory": "Ckan 2.6.9 fixes a code injection issue in the autocomplete module. See <https://github.com/ckan/ckan/pull/5064>.",
+            "cve": null,
+            "id": "pyup.io-39613",
+            "specs": [
+                "<2.6.9"
+            ],
+            "v": "<2.6.9"
         }
     ],
     "clam": [
@@ -2888,6 +2957,17 @@
             "v": "<1.50"
         }
     ],
+    "crate-docs-theme": [
+        {
+            "advisory": "Crate-docs-theme 0.13.0 updates/removes Bootstrap and jQuery packages (nine vulnerabilities detected).",
+            "cve": null,
+            "id": "pyup.io-39529",
+            "specs": [
+                "<0.13.0"
+            ],
+            "v": "<0.13.0"
+        }
+    ],
     "creavel": [
         {
             "advisory": "creavel before 0.11.0 has a unspecified security issue and is vulnerable via unknown vectors.",
@@ -3029,6 +3109,15 @@
                 "<3.3"
             ],
             "v": "<3.3"
+        },
+        {
+            "advisory": "In the cryptography package before 3.3.2 for Python, certain sequences of update calls to symmetrically encrypt multi-GB values could result in an integer overflow and buffer overflow, as demonstrated by the Fernet class. See CVE-2020-36242.",
+            "cve": "CVE-2020-36242",
+            "id": "pyup.io-39606",
+            "specs": [
+                "<3.3.2"
+            ],
+            "v": "<3.3.2"
         },
         {
             "advisory": "Cryptography 3.2 was released with the warning that its maintainers became aware of a Bleichenbacher vulnerability that they were only partly able to mitigate. See: CVE-2020-25659.",
@@ -3485,6 +3574,15 @@
                 "<0.12.7"
             ],
             "v": "<0.12.7"
+        },
+        {
+            "advisory": "Determined 0.14.0 updates the 'storybook' dependency to resolve a GitHub security vulnerability for 'highlight.js'.",
+            "cve": null,
+            "id": "pyup.io-39625",
+            "specs": [
+                "<0.14.0"
+            ],
+            "v": "<0.14.0"
         }
     ],
     "directory-client-core": [
@@ -3527,6 +3625,17 @@
                 "<2.2.2"
             ],
             "v": "<2.2.2"
+        }
+    ],
+    "discord-ext-slash": [
+        {
+            "advisory": "For some extra security, Discord-ext-slash 0.2.3 looks up commands by both their name and guild ID if their command ID fails to return any results (it returns a warning with 'SlashWarning' both times, and returns an error if still no command is found.)",
+            "cve": null,
+            "id": "pyup.io-39641",
+            "specs": [
+                "<0.2.3"
+            ],
+            "v": "<0.2.3"
         }
     ],
     "discordpie": [
@@ -3866,8 +3975,35 @@
             "v": "==1.11.20"
         },
         {
-            "advisory": "Django 1.11.23 fixes the following security issues in 1.11.22: CVE-2019-14232, CVE-2019-14233, CVE-2019-14234, and CVE-2019-14235.",
-            "cve": "CVE-2019-14232",
+            "advisory": "Django 1.11.23 fixes CVE-2019-14235 in 1.11.22.",
+            "cve": "CVE-2019-14235",
+            "id": "pyup.io-39599",
+            "specs": [
+                "==1.11.22"
+            ],
+            "v": "==1.11.22"
+        },
+        {
+            "advisory": "Django 1.11.23 fixes CVE-2019-14234 in 1.11.22.",
+            "cve": "CVE-2019-14234",
+            "id": "pyup.io-39600",
+            "specs": [
+                "==1.11.22"
+            ],
+            "v": "==1.11.22"
+        },
+        {
+            "advisory": "Django 1.11.23 fixes CVE-2019-14233 in 1.11.22.",
+            "cve": "CVE-2019-14233",
+            "id": "pyup.io-39601",
+            "specs": [
+                "==1.11.22"
+            ],
+            "v": "==1.11.22"
+        },
+        {
+            "advisory": "Django 1.11.23 fixes the following security issue in 1.11.22: CVE-2019-14232.",
+            "cve": null,
             "id": "pyup.io-37326",
             "specs": [
                 "==1.11.22"
@@ -3911,9 +4047,36 @@
             "v": "==2.0.9"
         },
         {
-            "advisory": "Django 2.1.11 fixes security issues in 2.1.10:\r\n- CVE-2019-14232: Denial-of-service possibility in ``django.utils.text.Truncator``\r\n- CVE-2019-14233: Denial-of-service possibility in ``strip_tags()``\r\n- CVE-2019-14234: SQL injection possibility in key and index lookups for ``JSONField``/``HStoreField``\r\n- CVE-2019-14235: Potential memory exhaustion in ``django.utils.encoding.uri_to_iri()``",
-            "cve": "CVE-2019-14232",
+            "advisory": "Django 2.1.11 fixes a security issue in 2.1.10:\r\n- CVE-2019-14232: Denial-of-service possibility in ``django.utils.text.Truncator``",
+            "cve": null,
             "id": "pyup.io-37325",
+            "specs": [
+                "==2.1.10"
+            ],
+            "v": "==2.1.10"
+        },
+        {
+            "advisory": "Django 2.1.11 fixes security issues in 2.1.10:\r\n- CVE-2019-14233: Denial-of-service possibility in ``strip_tags()``",
+            "cve": "CVE-2019-14233",
+            "id": "pyup.io-39598",
+            "specs": [
+                "==2.1.10"
+            ],
+            "v": "==2.1.10"
+        },
+        {
+            "advisory": "Django 2.1.11 fixes security issues in 2.1.10:\r\n- CVE-2019-14235: Potential memory exhaustion in ``django.utils.encoding.uri_to_iri()``",
+            "cve": "CVE-2019-14235",
+            "id": "pyup.io-39596",
+            "specs": [
+                "==2.1.10"
+            ],
+            "v": "==2.1.10"
+        },
+        {
+            "advisory": "Django 2.1.11 fixes security issues in 2.1.10:\r\n- CVE-2019-14234: SQL injection possibility in key and index lookups for ``JSONField``/``HStoreField``",
+            "cve": "CVE-2019-14234",
+            "id": "pyup.io-39597",
             "specs": [
                 "==2.1.10"
             ],
@@ -3929,8 +4092,17 @@
             "v": "==2.1.14"
         },
         {
-            "advisory": "Django 2.1.9 fixes security issues in 2.1.8: CVE-2019-12308 (AdminURLFieldWidget XSS) and it includes a patched bundled jQuery for CVE-2019-11358 (Prototype pollution).",
-            "cve": "CVE-2019-12308",
+            "advisory": "Django 2.1.9 includes a patched bundled jQuery for CVE-2019-11358 (Prototype pollution).",
+            "cve": "CVE-2019-11358",
+            "id": "pyup.io-39595",
+            "specs": [
+                "==2.1.8"
+            ],
+            "v": "==2.1.8"
+        },
+        {
+            "advisory": "Django 2.1.9 fixes security issues in 2.1.8: CVE-2019-12308 (AdminURLFieldWidget XSS).",
+            "cve": null,
             "id": "pyup.io-37185",
             "specs": [
                 "==2.1.8"
@@ -3947,8 +4119,17 @@
             "v": "==2.1.9"
         },
         {
-            "advisory": "Django 2.2.2 fixes security issues in 2.2.1: CVE-2019-12308 (AdminURLFieldWidget XSS) and it includes a patched bundled jQuery for CVE-2019-11358 (Prototype pollution).",
-            "cve": "CVE-2019-12308",
+            "advisory": "Django 2.2.2 includes a patched bundled jQuery for CVE-2019-11358 (Prototype pollution).",
+            "cve": "CVE-2019-11358",
+            "id": "pyup.io-39594",
+            "specs": [
+                "==2.2.1"
+            ],
+            "v": "==2.2.1"
+        },
+        {
+            "advisory": "Django 2.2.2 fixes security issues in 2.2.1: CVE-2019-12308 (AdminURLFieldWidget XSS).",
+            "cve": null,
             "id": "pyup.io-37184",
             "specs": [
                 "==2.2.1"
@@ -3965,6 +4146,24 @@
             "v": "==2.2.10"
         },
         {
+            "advisory": "Django 2.2.18 fixes a security issue with severity \"low\" in 2.2.17 (CVE-2021-3281).",
+            "cve": null,
+            "id": "pyup.io-39523",
+            "specs": [
+                "==2.2.17"
+            ],
+            "v": "==2.2.17"
+        },
+        {
+            "advisory": "Django 2.2.19 fixes a security issue in 2.2.18 (CVE-2021-23336).",
+            "cve": "CVE-2021-23336",
+            "id": "pyup.io-39646",
+            "specs": [
+                "==2.2.18"
+            ],
+            "v": "==2.2.18"
+        },
+        {
             "advisory": "Django 2.2.3 fixes CVE-2019-12781 in 2.2.2: incorrect HTTP detection with reverse-proxy connecting via HTTPS.",
             "cve": "CVE-2019-12781",
             "id": "pyup.io-37324",
@@ -3974,8 +4173,35 @@
             "v": "==2.2.2"
         },
         {
-            "advisory": "Django 2.2.4 fixes security issues in 2.2.3:\r\n- CVE-2019-14232: Denial-of-service possibility in ``django.utils.text.Truncator``\r\n- CVE-2019-14233: Denial-of-service possibility in ``strip_tags()``\r\n- CVE-2019-14234: SQL injection possibility in key and index lookups for ``JSONField``/``HStoreField``\r\n- CVE-2019-14235: Potential memory exhaustion in ``django.utils.encoding.uri_to_iri()``",
-            "cve": "CVE-2019-14232",
+            "advisory": "Django 2.2.4 fixes security issues in 2.2.3:\r\n- CVE-2019-14233: Denial-of-service possibility in ``strip_tags()``",
+            "cve": null,
+            "id": "pyup.io-39593",
+            "specs": [
+                "==2.2.3"
+            ],
+            "v": "==2.2.3"
+        },
+        {
+            "advisory": "Django 2.2.4 fixes security issues in 2.2.3:\r\n- CVE-2019-14234: SQL injection possibility in key and index lookups for ``JSONField``/``HStoreField``",
+            "cve": null,
+            "id": "pyup.io-39592",
+            "specs": [
+                "==2.2.3"
+            ],
+            "v": "==2.2.3"
+        },
+        {
+            "advisory": "Django 2.2.4 fixes security issues in 2.2.3:\r\n- CVE-2019-14235: Potential memory exhaustion in ``django.utils.encoding.uri_to_iri()``",
+            "cve": null,
+            "id": "pyup.io-39591",
+            "specs": [
+                "==2.2.3"
+            ],
+            "v": "==2.2.3"
+        },
+        {
+            "advisory": "Django 2.2.4 fixes a security issue in 2.2.3:\r\n- CVE-2019-14232: Denial-of-service possibility in ``django.utils.text.Truncator``",
+            "cve": null,
             "id": "pyup.io-37323",
             "specs": [
                 "==2.2.3"
@@ -4019,6 +4245,24 @@
             "v": "==3.0"
         },
         {
+            "advisory": "Django 3.0.12 fixes a security issue with severity \"low\" in 3.0.11 (CVE-2021-3281).",
+            "cve": null,
+            "id": "pyup.io-39522",
+            "specs": [
+                "==3.0.11"
+            ],
+            "v": "==3.0.11"
+        },
+        {
+            "advisory": "Django 3.0.13 fixes a security issue in 3.0.12 (CVE-2021-23336).",
+            "cve": "CVE-2021-23336",
+            "id": "pyup.io-39645",
+            "specs": [
+                "==3.0.12"
+            ],
+            "v": "==3.0.12"
+        },
+        {
             "advisory": "Django 3.0.3 fixes a security issue and several bugs in 3.0.2. Potential SQL injection via `StringAgg(delimiter)`. See: CVE-2020-7471.",
             "cve": "CVE-2020-7471",
             "id": "pyup.io-37815",
@@ -4044,6 +4288,24 @@
                 "==3.0.3"
             ],
             "v": "==3.0.3"
+        },
+        {
+            "advisory": "Django 3.1.6 fixes a security issue with severity \"low\" and a bug in 3.1.5 (CVE-2021-3281).",
+            "cve": null,
+            "id": "pyup.io-39521",
+            "specs": [
+                "==3.1.5"
+            ],
+            "v": "==3.1.5"
+        },
+        {
+            "advisory": "Django 3.1.7 fixes a security issue and a bug in 3.1.6 (CVE-2021-23336).",
+            "cve": "CVE-2021-23336",
+            "id": "pyup.io-39644",
+            "specs": [
+                "==3.1.6"
+            ],
+            "v": "==3.1.6"
         },
         {
             "advisory": "Django 1.10.3 fixes two security issues and several bugs in 1.10.2.\r\n\r\nUser with hardcoded password created when running tests on Oracle\r\n=================================================================\r\n\r\nWhen running tests with an Oracle database, Django creates a temporary database\r\nuser. In older versions, if a password isn't manually specified in the database\r\nsettings ``TEST`` dictionary, a hardcoded password is used. This could allow\r\nan attacker with network access to the database server to connect.\r\n\r\nThis user is usually dropped after the test suite completes, but not when using\r\nthe ``manage.py test --keepdb`` option or if the user has an active session\r\n(such as an attacker's connection).\r\n\r\nA randomly generated password is now used for each test run.\r\n\r\nDNS rebinding vulnerability when ``DEBUG=True``\r\n===============================================",
@@ -4457,6 +4719,17 @@
                 ">=2.2,<2.2.8"
             ],
             "v": ">=2.1,<2.1.15,>=2.2,<2.2.8"
+        },
+        {
+            "advisory": "In Django 2.2 before 2.2.18, 3.0 before 3.0.12, and 3.1 before 3.1.6, the django.utils.archive.extract method (used by \"startapp --template\" and \"startproject --template\") allows directory traversal via an archive with absolute paths or relative paths with dot segments. See CVE-2021-3281.",
+            "cve": null,
+            "id": "pyup.io-39526",
+            "specs": [
+                ">=2.2,<2.2.18",
+                ">=3.1,<3.1.6",
+                ">=3.0,<3.0.12"
+            ],
+            "v": ">=2.2,<2.2.18,>=3.1,<3.1.6,>=3.0,<3.0.12"
         },
         {
             "advisory": "CVE-2020-13596: Possible XSS via admin ForeignKeyRawIdWidget. Query parameters for the admin ForeignKeyRawIdWidget were not properly URL encoded, posing an XSS attack vector. ForeignKeyRawIdWidget now ensures query parameters are correctly URL encoded.\r\n\r\nAdditionally, Django 2.2.13 and 3.0.7 upgrade the version of jQuery used by the admin to 3.5.1 for security reasons.",
@@ -5237,6 +5510,17 @@
             "v": "<1.0.4"
         }
     ],
+    "django-jinja-knockout": [
+        {
+            "advisory": "'TemplateContext' class is used in Django-jinja-knockout 0.9.0 to manage client-side data injection.",
+            "cve": null,
+            "id": "pyup.io-39610",
+            "specs": [
+                "<0.9.0"
+            ],
+            "v": "<0.9.0"
+        }
+    ],
     "django-js-reverse": [
         {
             "advisory": "django-js-reverse (aka Django JS Reverse) before 0.9.1 has XSS via js_reverse_inline. See: CVE-2019-15486.",
@@ -5467,6 +5751,17 @@
                 "<5.0.0"
             ],
             "v": "<5.0.0"
+        }
+    ],
+    "django-oauth-toolkit": [
+        {
+            "advisory": "Django-oauth-toolkit 0.8.0 includes fixes for various vulnerabilities on 'Basic' authentication.",
+            "cve": null,
+            "id": "pyup.io-39609",
+            "specs": [
+                "<0.8.0"
+            ],
+            "v": "<0.8.0"
         }
     ],
     "django-orghierarchy": [
@@ -6040,6 +6335,15 @@
                 "<0.17.2"
             ],
             "v": "<0.17.2"
+        },
+        {
+            "advisory": "Djangosaml2 1.0.1 includes a security update for the PySAML2 dependency.",
+            "cve": null,
+            "id": "pyup.io-39535",
+            "specs": [
+                "<1.0.1"
+            ],
+            "v": "<1.0.1"
         }
     ],
     "djblets": [
@@ -6772,6 +7076,17 @@
                 "<0.1"
             ],
             "v": "<0.1"
+        }
+    ],
+    "fangfrisch": [
+        {
+            "advisory": "Fangfrisch 1.4.0 removes 'url_doppelstern' and 'url_crdfam_clamav' from Sanesecurity's provider section because the related signatures are no longer maintained and/or no longer distributed by Sanesecurity.",
+            "cve": null,
+            "id": "pyup.io-39615",
+            "specs": [
+                "<1.4.0"
+            ],
+            "v": "<1.4.0"
         }
     ],
     "faraday-agent-dispatcher": [
@@ -7747,6 +8062,17 @@
             "v": "<1.2.0"
         }
     ],
+    "gino-quart": [
+        {
+            "advisory": "Gino-quart 0.1.1b2 updates 'cryptography' dependency to fix a security issue.",
+            "cve": null,
+            "id": "pyup.io-39623",
+            "specs": [
+                "<0.1.1b2"
+            ],
+            "v": "<0.1.1b2"
+        }
+    ],
     "giosgapps-bindings": [
         {
             "advisory": "Giosgapps-bindings 0.0.19 updates Django to get rid of security warnings.",
@@ -7776,6 +8102,17 @@
                 "<2.5.0"
             ],
             "v": "<2.5.0"
+        }
+    ],
+    "git-portfolio": [
+        {
+            "advisory": "Git-portfolio 0.10.1 includes various security patches.",
+            "cve": null,
+            "id": "pyup.io-39510",
+            "specs": [
+                "<0.10.1"
+            ],
+            "v": "<0.10.1"
         }
     ],
     "gitlab-languages": [
@@ -8018,6 +8355,17 @@
             "v": "<0.12"
         }
     ],
+    "hashers": [
+        {
+            "advisory": "Hashers 0.2.11 adds protection against time-attacks on string comparisons.",
+            "cve": null,
+            "id": "pyup.io-39643",
+            "specs": [
+                "<0.2.11"
+            ],
+            "v": "<0.2.11"
+        }
+    ],
     "heedy": [
         {
             "advisory": "Heedy 0.3.0a1 reports it its changelog: There might [...] be security issues. Use at your own risk.",
@@ -8258,6 +8606,15 @@
             "v": "<0.18.0"
         },
         {
+            "advisory": "httplib2 is a comprehensive HTTP client library for Python. In httplib2 before version 0.19.0, a malicious server which responds with long series of \"\\xa0\" characters in the \"www-authenticate\" header may cause Denial of Service (CPU burn while parsing header) of the httplib2 client accessing said server. This is fixed in version 0.19.0 which contains a new implementation of auth headers parsing using the pyparsing library. See CVE-2021-21240.",
+            "cve": "CVE-2021-21240",
+            "id": "pyup.io-39608",
+            "specs": [
+                "<0.19.0"
+            ],
+            "v": "<0.19.0"
+        },
+        {
             "advisory": "httplib2 before and including 0.9.2 on \"SSL certificate hostname mismatch\" it is checked only once: https://github.com/httplib2/httplib2/issues/5",
             "cve": null,
             "id": "pyup.io-25848",
@@ -8307,6 +8664,17 @@
                 "<1.0.0"
             ],
             "v": "<1.0.0"
+        }
+    ],
+    "httpx-gssapi": [
+        {
+            "advisory": "Httpx-gssapi 0.6 includes a security patch for CVE-2014-8650.",
+            "cve": "CVE-2014-8650",
+            "id": "pyup.io-39509",
+            "specs": [
+                "<0.6"
+            ],
+            "v": "<0.6"
         }
     ],
     "hub": [
@@ -8534,24 +8902,6 @@
                 "<1.20.2"
             ],
             "v": "<1.20.2"
-        },
-        {
-            "advisory": "Instana 1.36.1 upgrades the `event-loop-lag` to address a security vulnerability. See: <https://nodesecurity.io/advisories/534>.",
-            "cve": null,
-            "id": "pyup.io-37188",
-            "specs": [
-                "<1.36.1"
-            ],
-            "v": "<1.36.1"
-        },
-        {
-            "advisory": "Instana 1.37.1 switches to `@risingstack/v8-profiler` due to security issues in the transitive dependencies of `v8-profiler`.",
-            "cve": null,
-            "id": "pyup.io-37187",
-            "specs": [
-                "<1.37.1"
-            ],
-            "v": "<1.37.1"
         }
     ],
     "intelmq": [
@@ -8959,6 +9309,15 @@
                 "<2.7.3"
             ],
             "v": "<2.7.3"
+        },
+        {
+            "advisory": "This affects the package jinja2 from 0.0.0 and before 2.11.3. The ReDOS vulnerability of the regex is mainly due to the sub-pattern [a-zA-Z0-9._-]+.[a-zA-Z0-9._-]+ This issue can be mitigated by Markdown to format user content instead of the urlize filter, or by implementing request timeouts and limiting process memory. See CVE-2020-28493.",
+            "cve": null,
+            "id": "pyup.io-39525",
+            "specs": [
+                ">=0.0.0,<2.11.3"
+            ],
+            "v": ">=0.0.0,<2.11.3"
         }
     ],
     "jnitrace": [
@@ -9592,8 +9951,17 @@
             "v": "<6.0"
         },
         {
-            "advisory": "Kiwitcms 6.10 updates Django from 2.2.1 to 2.2.2 (see CVE-2019-12308 and CVE-2019-11358). Additionally, it adds missing permission checks for menus in Test run page UI template. Permission check are also added for TestExecution status and comment menu. See <https://github.com/kiwitcms/Kiwi/issues/716>. Lastly, it re-enables static analysis with `bandit` and `Coverity Scan` in Travis CI.",
-            "cve": "CVE-2019-12308",
+            "advisory": "Kiwitcms 6.10 updates Django from 2.2.1 to 2.2.2 (see CVE-2019-11358). Additionally, it adds missing permission checks for menus in Test run page UI template. Permission check are also added for TestExecution status and comment menu. See <https://github.com/kiwitcms/Kiwi/issues/716>. Lastly, it re-enables static analysis with `bandit` and `Coverity Scan` in Travis CI.",
+            "cve": "CVE-2019-11358",
+            "id": "pyup.io-39590",
+            "specs": [
+                "<6.10"
+            ],
+            "v": "<6.10"
+        },
+        {
+            "advisory": "Kiwitcms 6.10 updates Django from 2.2.1 to 2.2.2 (see CVE-2019-12308). Additionally, it adds missing permission checks for menus in Test run page UI template. Permission check are also added for TestExecution status and comment menu. See <https://github.com/kiwitcms/Kiwi/issues/716>. Lastly, it re-enables static analysis with `bandit` and `Coverity Scan` in Travis CI.",
+            "cve": null,
             "id": "pyup.io-38537",
             "specs": [
                 "<6.10"
@@ -9619,8 +9987,17 @@
             "v": "<6.3"
         },
         {
-            "advisory": "Kiwi TCMS 6.4 updates Django from 2.1.4 to 2.1.5, which deals with CVE-2019-3498. It also update Patternfly to version 3.59.0, which deals with an XSS issue in bootstrap (CVE-2018-14041). By default session cookies will expire after 24 hours. This can now be controlled via the ``SESSION_COOKIE_AGE`` setting. See <https://github.com/kiwitcms/Kiwi/issues/556>.",
-            "cve": "CVE-2019-3498",
+            "advisory": "Kiwi TCMS 6.4 updates Patternfly to version 3.59.0, which deals with an XSS issue in bootstrap (CVE-2018-14041). By default session cookies will expire after 24 hours. This can now be controlled via the ``SESSION_COOKIE_AGE`` setting. See <https://github.com/kiwitcms/Kiwi/issues/556>.",
+            "cve": "CVE-2018-14041",
+            "id": "pyup.io-39589",
+            "specs": [
+                "<6.4"
+            ],
+            "v": "<6.4"
+        },
+        {
+            "advisory": "Kiwi TCMS 6.4 updates Django from 2.1.4 to 2.1.5, which deals with CVE-2019-3498.",
+            "cve": null,
             "id": "pyup.io-38541",
             "specs": [
                 "<6.4"
@@ -10902,18 +11279,36 @@
             "v": "<1.6.1"
         },
         {
-            "advisory": "Moin 1.9.10 includes a security fix for CVE-2017-5934, XSS in GUI editor related code.",
-            "cve": "CVE-2017-5934",
-            "id": "pyup.io-36447",
+            "advisory": "Moin 1.9.10 includes a security fix for CVE-2016-9119.",
+            "cve": "CVE-2016-9119",
+            "id": "pyup.io-39587",
             "specs": [
                 "<1.9.10"
             ],
             "v": "<1.9.10"
         },
         {
-            "advisory": "Moin 1.9.10 includes a security fix for CVE-2017-5934, XSS in GUI editor related code, as well as CVE-2016-7146 and CVE-2016-9119.",
-            "cve": "CVE-2017-5934",
+            "advisory": "Moin 1.9.10 includes a security fix for CVE-2016-7146.",
+            "cve": "CVE-2016-7146",
+            "id": "pyup.io-39588",
+            "specs": [
+                "<1.9.10"
+            ],
+            "v": "<1.9.10"
+        },
+        {
+            "advisory": "Moin 1.9.10 includes a security fix for CVE-2017-5934, XSS in GUI editor related code.",
+            "cve": null,
             "id": "pyup.io-36478",
+            "specs": [
+                "<1.9.10"
+            ],
+            "v": "<1.9.10"
+        },
+        {
+            "advisory": "Moin 1.9.10 includes a security fix for CVE-2017-5934, XSS in GUI editor related code.",
+            "cve": "CVE-2017-5934",
+            "id": "pyup.io-36447",
             "specs": [
                 "<1.9.10"
             ],
@@ -11577,6 +11972,17 @@
             "v": "<0.9.1"
         }
     ],
+    "nuitka": [
+        {
+            "advisory": "Nuitka 0.6.12 uses https URLs for downloading dependency walker, for it to be more secure.",
+            "cve": null,
+            "id": "pyup.io-39648",
+            "specs": [
+                "<0.6.12"
+            ],
+            "v": "<0.6.12"
+        }
+    ],
     "nukikata": [
         {
             "advisory": "Nukikata 1.4.0 raises an error if Cookiecutter tries to render a template that contains an undefined variable. Makes generation more robust and secure.",
@@ -11639,8 +12045,53 @@
             "v": "<1.15.3"
         },
         {
-            "advisory": "Nvidia-tensorflow 1.15.2\r\n* Fixes a security vulnerability where converting a Python string to a `tf.float16` value produces a segmentation fault (CVE-2020-5215)\r\n* Updates `curl` to `7.66.0` to handle CVE-2019-5482 and CVE-2019-5481\r\n* Updates `sqlite3` to `3.30.01` to handle CVE-2019-19646, CVE-2019-19645 and CVE-2019-16168",
-            "cve": "CVE-2020-5215",
+            "advisory": "Nvidia-tensorflow 1.15.2 updates `sqlite3` to `3.30.01` to handle CVE-2019-16168.",
+            "cve": "CVE-2019-16168",
+            "id": "pyup.io-39582",
+            "specs": [
+                ">=1.0.0,<1.15.2"
+            ],
+            "v": ">=1.0.0,<1.15.2"
+        },
+        {
+            "advisory": "Nvidia-tensorflow 1.15.2 updates `sqlite3` to `3.30.01` to handle CVE-2019-19645.",
+            "cve": "CVE-2019-19645",
+            "id": "pyup.io-39583",
+            "specs": [
+                ">=1.0.0,<1.15.2"
+            ],
+            "v": ">=1.0.0,<1.15.2"
+        },
+        {
+            "advisory": "Nvidia-tensorflow 1.15.2 updates `sqlite3` to `3.30.01` to handle CVE-2019-19646.",
+            "cve": "CVE-2019-19646",
+            "id": "pyup.io-39584",
+            "specs": [
+                ">=1.0.0,<1.15.2"
+            ],
+            "v": ">=1.0.0,<1.15.2"
+        },
+        {
+            "advisory": "Nvidia-tensorflow 1.15.2 updates `curl` to `7.66.0` to handle CVE-2019-5481.",
+            "cve": "CVE-2019-5481",
+            "id": "pyup.io-39585",
+            "specs": [
+                ">=1.0.0,<1.15.2"
+            ],
+            "v": ">=1.0.0,<1.15.2"
+        },
+        {
+            "advisory": "Nvidia-tensorflow 1.15.2 updates `curl` to `7.66.0` to handle CVE-2019-5482.",
+            "cve": "CVE-2019-5482",
+            "id": "pyup.io-39586",
+            "specs": [
+                ">=1.0.0,<1.15.2"
+            ],
+            "v": ">=1.0.0,<1.15.2"
+        },
+        {
+            "advisory": "Nvidia-tensorflow 1.15.2\r\n* Fixes a security vulnerability where converting a Python string to a `tf.float16` value produces a segmentation fault (CVE-2020-5215)",
+            "cve": null,
             "id": "pyup.io-38455",
             "specs": [
                 ">=1.0.0,<1.15.2"
@@ -11841,6 +12292,17 @@
             "v": "<1.2.1"
         }
     ],
+    "onefuzz": [
+        {
+            "advisory": "Onefuzz 2.5.0 updates multiple third-party Rust libraries.  Addresses potential security issue [RUSTSEC-2021-0023].",
+            "cve": null,
+            "id": "pyup.io-39624",
+            "specs": [
+                "<2.5.0"
+            ],
+            "v": "<2.5.0"
+        }
+    ],
     "onegov.form": [
         {
             "advisory": "onegov.form before 0.16.1 is not escaping HTML labels in the dynamic formbuilder.",
@@ -11920,8 +12382,17 @@
     ],
     "openapi-python-client": [
         {
-            "advisory": "Openapi-python-client 0.5.3 sanitizes all values that become file/directory names to address path traversal vulnerabilities (CVE-2020-15141). Additionally, all values that get placed into python files (everything from enum names, to endpoint descriptions, to default values) are validated and/or sanitized to address arbitrary code execution vulnerabilities (CVE-2020-15142). Lastly, due to security concerns/implementation complexities, default values are temporarily unsupported for any `RefProperty` that doesn't refer to an enum.",
-            "cve": "CVE-2020-15141",
+            "advisory": "In openapi-python-client 0.5.3, all values that get placed into python files (everything from enum names, to endpoint descriptions, to default values) are validated and/or sanitized to address arbitrary code execution vulnerabilities (CVE-2020-15142). Also, due to security concerns/implementation complexities, default values are temporarily unsupported for any `RefProperty` that doesn't refer to an enum.",
+            "cve": "CVE-2020-15142",
+            "id": "pyup.io-39581",
+            "specs": [
+                "<0.5.3"
+            ],
+            "v": "<0.5.3"
+        },
+        {
+            "advisory": "Openapi-python-client 0.5.3 sanitizes all values that become file/directory names to address path traversal vulnerabilities (CVE-2020-15141). Additionally, due to security concerns/implementation complexities, default values are temporarily unsupported for any `RefProperty` that doesn't refer to an enum.",
+            "cve": null,
             "id": "pyup.io-38685",
             "specs": [
                 "<0.5.3"
@@ -12714,8 +13185,17 @@
     ],
     "pillow": [
         {
-            "advisory": "pillow before 2.3.1 makes insecure use of tempfile.mktemp (CVE-2014-1932, CVE-2014-1933).",
-            "cve": "CVE-2014-1932",
+            "advisory": "pillow before 2.3.1 makes insecure use of tempfile.mktemp (CVE-2014-1933).",
+            "cve": "CVE-2014-1933",
+            "id": "pyup.io-39580",
+            "specs": [
+                "<2.3.1"
+            ],
+            "v": "<2.3.1"
+        },
+        {
+            "advisory": "pillow before 2.3.1 makes insecure use of tempfile.mktemp (CVE-2014-1932).",
+            "cve": null,
             "id": "pyup.io-25931",
             "specs": [
                 "<2.3.1"
@@ -12934,8 +13414,17 @@
     ],
     "pillow-simd": [
         {
-            "advisory": "pillow-simd before 2.3.2 is vulnerable to CVE-2014-3598, a DOS in the Jpeg2KImagePlugin and CVE-2014-3589, a DOS in the IcnsImagePlugin.",
-            "cve": "CVE-2014-3598",
+            "advisory": "pillow-simd before 2.3.2 is vulnerable to CVE-2014-3589, a DOS in the IcnsImagePlugin.",
+            "cve": "CVE-2014-3589",
+            "id": "pyup.io-39579",
+            "specs": [
+                "<2.3.2"
+            ],
+            "v": "<2.3.2"
+        },
+        {
+            "advisory": "pillow-simd before 2.3.2 is vulnerable to CVE-2014-3598, a DOS in the Jpeg2KImagePlugin.",
+            "cve": null,
             "id": "pyup.io-25947",
             "specs": [
                 "<2.3.2"
@@ -12943,8 +13432,8 @@
             "v": "<2.3.2"
         },
         {
-            "advisory": "pillow-simd before 2.5.2 is vulnerable to CVE-2014-3598, a DOS in the Jpeg2KImagePlugin and CVE-2014-3589, a DOS in the IcnsImagePlugin.",
-            "cve": "CVE-2014-3598",
+            "advisory": "pillow-simd before 2.5.2 is vulnerable to CVE-2014-3598.",
+            "cve": null,
             "id": "pyup.io-25948",
             "specs": [
                 "<2.5.2"
@@ -12952,8 +13441,17 @@
             "v": "<2.5.2"
         },
         {
-            "advisory": "pillow-simd before 2.5.3 is vulnerable to CVE-2014-3598, a DOS in the Jpeg2KImagePlugin and CVE-2014-3589, a DOS in the IcnsImagePlugin.",
-            "cve": "CVE-2014-3598",
+            "advisory": "pillow-simd before 2.5.2 is vulnerable to CVE-2014-3589, a DOS in the IcnsImagePlugin.",
+            "cve": "CVE-2014-3589",
+            "id": "pyup.io-39578",
+            "specs": [
+                "<2.5.2"
+            ],
+            "v": "<2.5.2"
+        },
+        {
+            "advisory": "Pillow-simd before 2.5.3 is vulnerable to CVE-2014-3598.",
+            "cve": null,
             "id": "pyup.io-25949",
             "specs": [
                 "<2.5.3"
@@ -12961,8 +13459,26 @@
             "v": "<2.5.3"
         },
         {
-            "advisory": "pillow-simd before 2.6.0rc1 is vulnerable to CVE-2014-3598, a DOS in the Jpeg2KImagePlugin and CVE-2014-3589, a DOS in the IcnsImagePlugin.",
-            "cve": "CVE-2014-3598",
+            "advisory": "pillow-simd before 2.5.3 is vulnerable to CVE-2014-3589, a DOS in the IcnsImagePlugin.",
+            "cve": "CVE-2014-3589",
+            "id": "pyup.io-39577",
+            "specs": [
+                "<2.5.3"
+            ],
+            "v": "<2.5.3"
+        },
+        {
+            "advisory": "pillow-simd before 2.6.0rc1 is vulnerable to CVE-2014-3589, a DOS in the IcnsImagePlugin.",
+            "cve": "CVE-2014-3589",
+            "id": "pyup.io-39576",
+            "specs": [
+                "<2.6.0rc1"
+            ],
+            "v": "<2.6.0rc1"
+        },
+        {
+            "advisory": "Pillow-simd before 2.6.0rc1 is vulnerable to CVE-2014-3598.",
+            "cve": null,
             "id": "pyup.io-25950",
             "specs": [
                 "<2.6.0rc1"
@@ -14323,6 +14839,18 @@
             "v": "<1.5.2"
         }
     ],
+    "pushradar": [
+        {
+            "advisory": "Pushradar 3.0.0alpha.2 includes a patch to make the channel authentication more secure.",
+            "cve": null,
+            "id": "pyup.io-39630",
+            "specs": [
+                "<3.0.0alpha.2",
+                "<3.0.0a2"
+            ],
+            "v": "<3.0.0alpha.2,<3.0.0a2"
+        }
+    ],
     "pwd": [
         {
             "advisory": "pwd  is a package affected by pytosquatting: http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/",
@@ -14892,6 +15420,15 @@
     ],
     "pyinaturalist": [
         {
+            "advisory": "Pyinaturalist 0.7 includes minor dependency updates for security reasons.",
+            "cve": null,
+            "id": "pyup.io-39616",
+            "specs": [
+                "<0.7"
+            ],
+            "v": "<0.7"
+        },
+        {
             "advisory": "Pyinaturalist 0.7.0 includes minor dependencies updates for security reasons.",
             "cve": null,
             "id": "pyup.io-37127",
@@ -14994,6 +15531,15 @@
                 "<2.5.0"
             ],
             "v": "<2.5.0"
+        },
+        {
+            "advisory": "Pylint 2.7.0 includes a fix for vulnerable regular expressions in 'pyreverse'.",
+            "cve": null,
+            "id": "pyup.io-39621",
+            "specs": [
+                "<2.7.0"
+            ],
+            "v": "<2.7.0"
         }
     ],
     "pylivetrader": [
@@ -15721,6 +16267,18 @@
                 ">=3.5,<3.5.2"
             ],
             "v": "<2.7.12,>=3.0,<3.4.5,>=3.5,<3.5.2"
+        },
+        {
+            "advisory": "The package python/cpython from 0 and before 3.6.13, from 3.7.0 and before 3.7.10, from 3.8.0 and before 3.8.8, from 3.9.0 and before 3.9.2 are vulnerable to Web Cache Poisoning via urllib.parse.parse_qsl and urllib.parse.parse_qs by using a vector called parameter cloaking. When the attacker can separate query parameters using a semicolon (;), they can cause a difference in the interpretation of the request between the proxy (running with default configuration) and the server. This can result in malicious requests being cached as completely safe ones, as the proxy would usually not see the semicolon as a separator, and therefore would not include it in a cache key of an unkeyed parameter. See CVE-2021-23336.",
+            "cve": "CVE-2021-23336",
+            "id": "pyup.io-39619",
+            "specs": [
+                ">=0.0.0,<3.6.13",
+                ">=3.7.0,<3.7.10",
+                ">=3.8.0,<3.8.8",
+                ">=3.9.0,<3.9.2"
+            ],
+            "v": ">=0.0.0,<3.6.13,>=3.7.0,<3.7.10,>=3.8.0,<3.8.8,>=3.9.0,<3.9.2"
         },
         {
             "advisory": "The list_directory function in Lib/SimpleHTTPServer.py in SimpleHTTPServer in Python before 2.5.6c1, 2.6.x before 2.6.7 rc2, and 2.7.x before 2.7.2 does not place a charset parameter in the Content-Type HTTP header, which makes it easier for remote attackers to conduct cross-site scripting (XSS) attacks against Internet Explorer 7 via UTF-7 encoding.",
@@ -16511,6 +17069,15 @@
             "v": "<5.3.1"
         },
         {
+            "advisory": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747. See CVE-2020-14343.",
+            "cve": "CVE-2020-14343",
+            "id": "pyup.io-39611",
+            "specs": [
+                "<5.4"
+            ],
+            "v": "<5.4"
+        },
+        {
             "advisory": "CVE-2019-20477: PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342.",
             "cve": "CVE-2019-20477",
             "id": "pyup.io-38639",
@@ -16540,6 +17107,17 @@
                 "<0.30"
             ],
             "v": "<0.30"
+        }
+    ],
+    "qlib": [
+        {
+            "advisory": "This affects all versions of package qlib. The workflow function in cli part of qlib was using an unsafe YAML load function. See CVE-2021-23338.",
+            "cve": "CVE-2021-23338",
+            "id": "pyup.io-39620",
+            "specs": [
+                ">=0.0.0"
+            ],
+            "v": ">=0.0.0"
         }
     ],
     "quandl-fund-xlsx": [
@@ -17048,12 +17626,30 @@
                 "<=3.5.26"
             ],
             "v": "<=3.5.26"
+        },
+        {
+            "advisory": "All versions of package reportlab are vulnerable to Server-side Request Forgery (SSRF) via img tags. In order to reduce risk, use trustedSchemes & trustedHosts (see in Reportlab's documentation) Steps to reproduce by Karan Bamal: 1. Download and install the latest package of reportlab 2. Go to demos -> odyssey -> dodyssey 3. In the text file odyssey.txt that needs to be converted to pdf inject <img src=\"http://127.0.0.1:5000\" valign=\"top\"/> 4. Create a nc listener nc -lp 5000 5. Run python3 dodyssey.py 6. You will get a hit on your nc showing we have successfully proceded to send a server side request 7. dodyssey.py will show error since there is no img file on the url, but we are able to do SSRF. See CVE-2020-28463.",
+            "cve": null,
+            "id": "pyup.io-39642",
+            "specs": [
+                ">=0.0"
+            ],
+            "v": ">=0.0"
         }
     ],
     "requests": [
         {
-            "advisory": "requests before 2.3.0 exposes Authorization or Proxy-Authorization headers on redirect.\r\nFix CVE-2014-1829 and CVE-2014-1830 respectively.",
-            "cve": "CVE-2014-1829",
+            "advisory": "Requests before 2.3.0 exposes Authorization or Proxy-Authorization headers on redirect. This fixes CVE-2014-1830.",
+            "cve": "CVE-2014-1830",
+            "id": "pyup.io-39575",
+            "specs": [
+                "<2.3.0"
+            ],
+            "v": "<2.3.0"
+        },
+        {
+            "advisory": "Requests before 2.3.0 exposes Authorization or Proxy-Authorization headers on redirect. See: CVE-2014-1829.",
+            "cve": null,
             "id": "pyup.io-26101",
             "specs": [
                 "<2.3.0"
@@ -17501,8 +18097,17 @@
     ],
     "salt": [
         {
-            "advisory": "Salt 3000.4 prevents shell injections in netapi SSH client (CVE-2020-16846) and prevents creating world-readable private keys with the TLS execution module (cve-2020-17490).",
-            "cve": "CVE-2020-16846",
+            "advisory": "Salt 3000.4 prevents creating world-readable private keys with the TLS execution module (cve-2020-17490).",
+            "cve": "CVE-2020-17490",
+            "id": "pyup.io-39574",
+            "specs": [
+                "<3000.4"
+            ],
+            "v": "<3000.4"
+        },
+        {
+            "advisory": "Salt 3000.4 prevents shell injections in netapi SSH client (CVE-2020-16846).",
+            "cve": null,
             "id": "pyup.io-39159",
             "specs": [
                 "<3000.4"
@@ -17519,8 +18124,17 @@
             "v": "<3001.1"
         },
         {
-            "advisory": "Salt 3001.2 prevents shell injections in netapi SSH client (CVE-2020-16846) and prevents creating world-readable private keys with the TLS execution module (cve-2020-17490).",
-            "cve": "CVE-2020-16846",
+            "advisory": "Salt 3001.2 prevents creating world-readable private keys with the TLS execution module (cve-2020-17490).",
+            "cve": "CVE-2020-17490",
+            "id": "pyup.io-39573",
+            "specs": [
+                ">=3001,<3001.2"
+            ],
+            "v": ">=3001,<3001.2"
+        },
+        {
+            "advisory": "Salt 3001.2 prevents shell injections in netapi SSH client (CVE-2020-16846).",
+            "cve": null,
             "id": "pyup.io-39158",
             "specs": [
                 ">=3001,<3001.2"
@@ -17528,8 +18142,26 @@
             "v": ">=3001,<3001.2"
         },
         {
-            "advisory": "Salt 3002.1 prevents shell injections in netapi SSH client (CVE-2020-16846) and prevents creating world-readable private keys with the TLS execution module (cve-2020-17490).\r\n\r\nIt also properly validates eauth credentials and tokens along with their ACLs. Prior to this change eauth was not properly validated when calling Salt ssh via the salt-api. Any value for 'eauth' or 'token' would allow a user to bypass authentication and make calls to Salt ssh (CVE-2020-25592).",
-            "cve": "CVE-2020-16846",
+            "advisory": "Salt 3002.1 properly validates eauth credentials and tokens along with their ACLs. Prior to this change eauth was not properly validated when calling Salt ssh via the salt-api. Any value for 'eauth' or 'token' would allow a user to bypass authentication and make calls to Salt ssh (CVE-2020-25592).",
+            "cve": "CVE-2020-25592",
+            "id": "pyup.io-39571",
+            "specs": [
+                ">=3002,<3002.1"
+            ],
+            "v": ">=3002,<3002.1"
+        },
+        {
+            "advisory": "Salt 3002.1 prevents creating world-readable private keys with the TLS execution module (cve-2020-17490).",
+            "cve": "CVE-2020-17490",
+            "id": "pyup.io-39572",
+            "specs": [
+                ">=3002,<3002.1"
+            ],
+            "v": ">=3002,<3002.1"
+        },
+        {
+            "advisory": "Salt 3002.1 prevents shell injections in netapi SSH client (CVE-2020-16846).",
+            "cve": null,
             "id": "pyup.io-39157",
             "specs": [
                 ">=3002,<3002.1"
@@ -17829,8 +18461,17 @@
             "v": "<0.2.4"
         },
         {
-            "advisory": "Seldon-core 0.3.0 includes a fix for old Containers & Security Vulnerabilities (issue 528). It also updates the TF version for security (pull 575), and updates jackson-databind from version 2.8.11.2 to version 2.9.8 to address CVE-2018-12022 and CVE-2018-12023 (pull 547).",
-            "cve": "CVE-2018-12022",
+            "advisory": "Seldon-core 0.3.0 includes a fix for old Containers & Security Vulnerabilities (issue 528). It also updates the TF version for security (pull 575), and updates jackson-databind from version 2.8.11.2 to version 2.9.8 to address CVE-2018-12023 (pull 547).",
+            "cve": "CVE-2018-12023",
+            "id": "pyup.io-39547",
+            "specs": [
+                "<0.3.0"
+            ],
+            "v": "<0.3.0"
+        },
+        {
+            "advisory": "Seldon-core 0.3.0 includes a fix for old Containers & Security Vulnerabilities (issue 528). It also updates the TF version for security (pull 575), and updates jackson-databind from version 2.8.11.2 to version 2.9.8 to address CVE-2018-12022.",
+            "cve": null,
             "id": "pyup.io-39359",
             "specs": [
                 "<0.3.0"
@@ -17865,8 +18506,17 @@
             "v": "<0.5.1"
         },
         {
-            "advisory": "Seldon-core 1.0.0 includes a fix for  CVE-2019-5482 and CVE-2019-18224.",
-            "cve": "CVE-2019-5482",
+            "advisory": "Seldon-core 1.0.0 includes a fix for  CVE-2019-18224.",
+            "cve": "CVE-2019-18224",
+            "id": "pyup.io-39546",
+            "specs": [
+                "<1.0.0"
+            ],
+            "v": "<1.0.0"
+        },
+        {
+            "advisory": "Seldon-core 1.0.0 includes a fix for  CVE-2019-5482.",
+            "cve": null,
             "id": "pyup.io-39361",
             "specs": [
                 "<1.0.0"
@@ -19268,44 +19918,48 @@
             "v": "<1.15.5,>=2.0.0a0,<2.0.4,>=2.1.0rc0,<2.1.3,>=2.2.0rc0,<2.2.2,>=2.3.0rc0,<2.3.2,>=2.4.0rc0,<2.4.0,>=2.4.0rc0,<=2.4.0rc4"
         },
         {
-            "advisory": "Tensorflow 2.0.4 fixes an access to unitialized memory in Eigen code (CVE-2020-26266). Fixes a security vulnerability caused by lack of validation in 'tf.raw_ops.DataFormatVecPermute' and 'tf.raw_ops.DataFormatDimMap' (CVE-2020-26267). Fixes a vulnerability caused by attempting to write to immutable memory region in 'tf.raw_ops.ImmutableConst' (CVE-2020-26268). Fixes a 'CHECK'-fail in LSTM with zero-length input (CVE-2020-26270). Fixes a security vulnerability caused by accessing heap data outside of bounds when loading a specially crafted 'SavedModel' (CVE-2020-26271). Updates 'libjpeg-turbo' to '2.0.5' to handle CVE-2020-13790. Updates 'junit' to '4.13.1' to handle [CVE-2020-15250]. Updates 'PCRE' to '8.44' to handle [CVE-2019-20838] and [CVE-2020-14155].",
-            "cve": null,
-            "id": "pyup.io-39409",
+            "advisory": "Tensorflow 1.15.2 updates `sqlite3` to `3.30.01` to handle CVE-2019-16168.",
+            "cve": "CVE-2019-16168",
+            "id": "pyup.io-39568",
             "specs": [
-                "<2.0.4"
+                ">=1.0,<1.15.2",
+                ">=2.0.0a0,<2.0.1"
             ],
-            "v": "<2.0.4"
+            "v": ">=1.0,<1.15.2,>=2.0.0a0,<2.0.1"
         },
         {
-            "advisory": "Tensorflow 2.1.3 fixes an access to unitialized memory in Eigen code (CVE-2020-26266). Fixes a security vulnerability caused by lack of validation in 'tf.raw_ops.DataFormatVecPermute' and 'tf.raw_ops.DataFormatDimMap' (CVE-2020-26267). Fixes a vulnerability caused by attempting to write to immutable memory region in 'tf.raw_ops.ImmutableConst' (CVE-2020-26268). Fixes a 'CHECK'-fail in LSTM with zero-length input (CVE-2020-26270). Fixes a security vulnerability caused by accessing heap data outside of bounds when loading a specially crafted 'SavedModel' (CVE-2020-26271). Updates 'libjpeg-turbo' to '2.0.5' to handle CVE-2020-13790. Updates 'junit' to '4.13.1' to handle [CVE-2020-15250]. Updates 'PCRE' to '8.44' to handle [CVE-2019-20838] and [CVE-2020-14155].",
-            "cve": null,
-            "id": "pyup.io-39408",
+            "advisory": "Tensorflow 1.15.2 `sqlite3` to `3.30.01` to handle CVE-2019-19645.",
+            "cve": "CVE-2019-19645",
+            "id": "pyup.io-39569",
             "specs": [
-                "<2.1.3"
+                ">=1.0,<1.15.2",
+                ">=2.0.0a0,<2.0.1"
             ],
-            "v": "<2.1.3"
+            "v": ">=1.0,<1.15.2,>=2.0.0a0,<2.0.1"
         },
         {
-            "advisory": "Tensorflow 2.2.2 fixes an access to unitialized memory in Eigen code (CVE-2020-26266). Fixes a security vulnerability caused by lack of validation in 'tf.raw_ops.DataFormatVecPermute' and 'tf.raw_ops.DataFormatDimMap' (CVE-2020-26267). Fixes a vulnerability caused by attempting to write to immutable memory region in 'tf.raw_ops.ImmutableConst' (CVE-2020-26268). Fixes a 'CHECK'-fail in LSTM with zero-length input (CVE-2020-26270). Fixes a security vulnerability caused by accessing heap data outside of bounds when loading a specially crafted 'SavedModel' (CVE-2020-26271). Updates 'libjpeg-turbo' to '2.0.5' to handle CVE-2020-13790. Updates 'junit' to '4.13.1' to handle [CVE-2020-15250]. Updates 'PCRE' to '8.44' to handle [CVE-2019-20838] and [CVE-2020-14155].",
-            "cve": null,
-            "id": "pyup.io-39407",
+            "advisory": "Tensorflow 1.15.2 updates `curl` to `7.66.0` to handle CVE-2019-5481.",
+            "cve": "CVE-2019-5481",
+            "id": "pyup.io-39570",
             "specs": [
-                "<2.2.2"
+                ">=1.0,<1.15.2",
+                ">=2.0.0a0,<2.0.1"
             ],
-            "v": "<2.2.2"
+            "v": ">=1.0,<1.15.2,>=2.0.0a0,<2.0.1"
         },
         {
-            "advisory": "Tensorflow 2.3.2 fixes an access to unitialized memory in Eigen code (CVE-2020-26266). Fixes a security vulnerability caused by lack of validation in 'tf.raw_ops.DataFormatVecPermute' and 'tf.raw_ops.DataFormatDimMap' (CVE-2020-26267). Fixes a vulnerability caused by attempting to write to immutable memory region in 'tf.raw_ops.ImmutableConst' (CVE-2020-26268). Fixes a 'CHECK'-fail in LSTM with zero-length input (CVE-2020-26270). Fixes a security vulnerability caused by accessing heap data outside of bounds when loading a specially crafted 'SavedModel' (CVE-2020-26271). Updates 'libjpeg-turbo' to '2.0.5' to handle CVE-2020-13790. Updates 'junit' to '4.13.1' to handle [CVE-2020-15250]. Updates 'PCRE' to '8.44' to handle [CVE-2019-20838] and [CVE-2020-14155].",
+            "advisory": "Tensorflow 1.15.2 and 2.0.1 update `curl` to `7.66.0` to handle CVE-2019-5482.",
             "cve": null,
-            "id": "pyup.io-39406",
+            "id": "pyup.io-38039",
             "specs": [
-                "<2.3.2"
+                ">=1.0,<1.15.2",
+                ">=2.0.0a0,<2.0.1"
             ],
-            "v": "<2.3.2"
+            "v": ">=1.0,<1.15.2,>=2.0.0a0,<2.0.1"
         },
         {
-            "advisory": "Tensorflow 1.15.2 and 2.0.1 update `sqlite3` to `3.30.01` to handle CVE-2019-19646, CVE-2019-19645 and CVE-2019-16168.",
-            "cve": "CVE-2019-19646",
+            "advisory": "Tensorflow 1.15.2 and 2.0.1 update `sqlite3` to `3.30.01` to handle CVE-2019-19646.",
+            "cve": null,
             "id": "pyup.io-38038",
             "specs": [
                 ">=1.0,<1.15.2",
@@ -19324,18 +19978,53 @@
             "v": ">=1.0,<1.15.2,>=2.0.0a0,<2.0.1"
         },
         {
-            "advisory": "Tensorflow 1.15.2 and 2.0.1 update `curl` to `7.66.0` to handle CVE-2019-5482 and CVE-2019-5481.",
-            "cve": "CVE-2019-5482",
-            "id": "pyup.io-38039",
+            "advisory": "Tensorflow 1.15.2 updates `sqlite3` to `3.30.01` to address CVE-2019-16168.",
+            "cve": "CVE-2019-16168",
+            "id": "pyup.io-39541",
             "specs": [
-                ">=1.0,<1.15.2",
-                ">=2.0.0a0,<2.0.1"
+                ">=1.0.0,<1.15.2"
             ],
-            "v": ">=1.0,<1.15.2,>=2.0.0a0,<2.0.1"
+            "v": ">=1.0.0,<1.15.2"
         },
         {
-            "advisory": "Tensorflow 1.15.2 and 2.0.1 fix a security vulnerability to address CVE-2020-5215 where converting a Python string to a `tf.float16` value produces a segmentation fault. \r\n\r\nBoth also update `curl` to `7.66.0` to address CVE-2019-5482 and CVE-2019-5481.\r\n\r\nBoth also update `sqlite3` to `3.30.01` to address CVE-2019-19645, CVE-2019-19646, CVE-2019-16168.",
-            "cve": "CVE-2020-5215",
+            "advisory": "Tensorflow 1.15.2 updates `sqlite3` to `3.30.01` to address CVE-2019-16164.",
+            "cve": "CVE-2019-19646",
+            "id": "pyup.io-39542",
+            "specs": [
+                ">=1.0.0,<1.15.2"
+            ],
+            "v": ">=1.0.0,<1.15.2"
+        },
+        {
+            "advisory": "Tensorflow 1.15.2 updates `sqlite3` to `3.30.01` to address CVE-2019-19645.",
+            "cve": "CVE-2019-19645",
+            "id": "pyup.io-39543",
+            "specs": [
+                ">=1.0.0,<1.15.2"
+            ],
+            "v": ">=1.0.0,<1.15.2"
+        },
+        {
+            "advisory": "Tensorflow 1.15.2 updates `curl` to `7.66.0` to address CVE-2019-5481.",
+            "cve": "CVE-2019-5481",
+            "id": "pyup.io-39544",
+            "specs": [
+                ">=1.0.0,<1.15.2"
+            ],
+            "v": ">=1.0.0,<1.15.2"
+        },
+        {
+            "advisory": "Tensorflow 1.15.2 updates `curl` to `7.66.0` to address CVE-2019-5482.",
+            "cve": "CVE-2019-5482",
+            "id": "pyup.io-39545",
+            "specs": [
+                ">=1.0.0,<1.15.2"
+            ],
+            "v": ">=1.0.0,<1.15.2"
+        },
+        {
+            "advisory": "Tensorflow 1.15.2 fixes a security vulnerability to address CVE-2020-5215 where converting a Python string to a `tf.float16` value produces a segmentation fault.",
+            "cve": null,
             "id": "pyup.io-38549",
             "specs": [
                 ">=1.0.0,<1.15.2"
@@ -19365,8 +20054,62 @@
             "v": ">=1.15.0rc0,<1.15.4,>=2.0.0a0,<2.0.3,>=2.1.0rc0,<2.1.2,>=2.2.0rc0,<2.2.1,>=2.3.0rc0,<2.3.1"
         },
         {
-            "advisory": "Tensorflow 1.15.2 and 2.0.1 fix a security vulnerability to address CVE-2020-5215 where converting a Python string to a `tf.float16` value produces a segmentation fault. \r\n\r\nBoth also update `curl` to `7.66.0` to address CVE-2019-5482 and CVE-2019-5481.\r\n\r\nBoth also update `sqlite3` to `3.30.01` to address CVE-2019-19645, CVE-2019-19646, CVE-2019-16168.",
-            "cve": "CVE-2020-5215",
+            "advisory": "Tensorflow 2.0.4 fixes an access to unitialized memory in Eigen code (CVE-2020-26266). Fixes a security vulnerability caused by lack of validation in 'tf.raw_ops.DataFormatVecPermute' and 'tf.raw_ops.DataFormatDimMap' (CVE-2020-26267). Fixes a vulnerability caused by attempting to write to immutable memory region in 'tf.raw_ops.ImmutableConst' (CVE-2020-26268). Fixes a 'CHECK'-fail in LSTM with zero-length input (CVE-2020-26270). Fixes a security vulnerability caused by accessing heap data outside of bounds when loading a specially crafted 'SavedModel' (CVE-2020-26271). Updates 'libjpeg-turbo' to '2.0.5' to handle CVE-2020-13790. Updates 'junit' to '4.13.1' to handle [CVE-2020-15250]. Updates 'PCRE' to '8.44' to handle [CVE-2019-20838] and [CVE-2020-14155].",
+            "cve": null,
+            "id": "pyup.io-39409",
+            "specs": [
+                ">=2.0.0,<2.0.4"
+            ],
+            "v": ">=2.0.0,<2.0.4"
+        },
+        {
+            "advisory": "Tensorflow 2.0.1 updates `sqlite3` to `3.30.01` to address CVE-2019-16168.",
+            "cve": "CVE-2019-16168",
+            "id": "pyup.io-39536",
+            "specs": [
+                ">=2.0.0a0,<2.0.1"
+            ],
+            "v": ">=2.0.0a0,<2.0.1"
+        },
+        {
+            "advisory": "Tensorflow 2.0.1 updates `sqlite3` to `3.30.01` to address CVE-2019-19646.",
+            "cve": "CVE-2019-19646",
+            "id": "pyup.io-39537",
+            "specs": [
+                ">=2.0.0a0,<2.0.1"
+            ],
+            "v": ">=2.0.0a0,<2.0.1"
+        },
+        {
+            "advisory": "Tensorflow 2.0.1 updates `sqlite3` to `3.30.01` to address CVE-2019-19645.",
+            "cve": "CVE-2019-19645",
+            "id": "pyup.io-39538",
+            "specs": [
+                ">=2.0.0a0,<2.0.1"
+            ],
+            "v": ">=2.0.0a0,<2.0.1"
+        },
+        {
+            "advisory": "Tensorflow 2.0.1 updates `curl` to `7.66.0` to address CVE-2019-5481.",
+            "cve": "CVE-2019-5481",
+            "id": "pyup.io-39539",
+            "specs": [
+                ">=2.0.0a0,<2.0.1"
+            ],
+            "v": ">=2.0.0a0,<2.0.1"
+        },
+        {
+            "advisory": "Tensorflow 2.0.1 updates `curl` to `7.66.0` to address CVE-2019-5482.",
+            "cve": "CVE-2019-5482",
+            "id": "pyup.io-39540",
+            "specs": [
+                ">=2.0.0a0,<2.0.1"
+            ],
+            "v": ">=2.0.0a0,<2.0.1"
+        },
+        {
+            "advisory": "Tensorflow 2.0.1 fixes a security vulnerability to address CVE-2020-5215 where converting a Python string to a `tf.float16` value produces a segmentation fault.",
+            "cve": null,
             "id": "pyup.io-38550",
             "specs": [
                 ">=2.0.0a0,<2.0.1"
@@ -19392,6 +20135,15 @@
             "v": ">=2.0.0a0,<2.0.3"
         },
         {
+            "advisory": "Tensorflow 2.1.3 fixes an access to unitialized memory in Eigen code (CVE-2020-26266). Fixes a security vulnerability caused by lack of validation in 'tf.raw_ops.DataFormatVecPermute' and 'tf.raw_ops.DataFormatDimMap' (CVE-2020-26267). Fixes a vulnerability caused by attempting to write to immutable memory region in 'tf.raw_ops.ImmutableConst' (CVE-2020-26268). Fixes a 'CHECK'-fail in LSTM with zero-length input (CVE-2020-26270). Fixes a security vulnerability caused by accessing heap data outside of bounds when loading a specially crafted 'SavedModel' (CVE-2020-26271). Updates 'libjpeg-turbo' to '2.0.5' to handle CVE-2020-13790. Updates 'junit' to '4.13.1' to handle [CVE-2020-15250]. Updates 'PCRE' to '8.44' to handle [CVE-2019-20838] and [CVE-2020-14155].",
+            "cve": null,
+            "id": "pyup.io-39408",
+            "specs": [
+                ">=2.1.0,<2.1.3"
+            ],
+            "v": ">=2.1.0,<2.1.3"
+        },
+        {
             "advisory": "Tensorflow 2.1.2\r\n* Fixes an undefined behavior causing a segfault in `tf.raw_ops.Switch` (CVE-2020-15190)\r\n* Fixes three vulnerabilities in conversion to DLPack format (CVE-2020-15191, CVE-2020-15192, CVE-2020-15193)\r\n* Fixes two vulnerabilities in `SparseFillEmptyRowsGrad` (CVE-2020-15194, CVE-2020-15195)\r\n* Fixes an integer truncation vulnerability in code using the work sharder API (CVE-2020-15202)\r\n* Fixes a format string vulnerability in `tf.strings.as_string` (CVE-2020-15203)\r\n* Fixes segfault raised by calling session-only ops in eager mode (CVE-2020-15204)\r\n* Fixes data leak and potential ASLR violation from `tf.raw_ops.StringNGrams` (CVE-2020-15205)\r\n* Fixes segfaults caused by incomplete `SavedModel` validation (CVE-2020-15206)\r\n* Fixes a data corruption due to a bug in negative indexing support in TFLite (CVE-2020-15207)\r\n* Fixes a data corruption due to dimension mismatch in TFLite (CVE-2020-15208)\r\n* Fixes several vulnerabilities in TFLite saved model format (CVE-2020-15209, CVE-2020-15210, CVE-2020-15211)\r\n* Updates `sqlite3` to `3.33.00` to handle (CVE-2020-9327, CVE-2020-11655, CVE-2020-11656, CVE-2020-13434, CVE-2020-13435, CVE-2020-13630, CVE-2020-13631, CVE-2020-13871, and CVE-2020-15358)",
             "cve": null,
             "id": "pyup.io-38816",
@@ -19399,6 +20151,15 @@
                 ">=2.1.0rc0,<2.1.2"
             ],
             "v": ">=2.1.0rc0,<2.1.2"
+        },
+        {
+            "advisory": "Tensorflow 2.2.2 fixes an access to unitialized memory in Eigen code (CVE-2020-26266). Fixes a security vulnerability caused by lack of validation in 'tf.raw_ops.DataFormatVecPermute' and 'tf.raw_ops.DataFormatDimMap' (CVE-2020-26267). Fixes a vulnerability caused by attempting to write to immutable memory region in 'tf.raw_ops.ImmutableConst' (CVE-2020-26268). Fixes a 'CHECK'-fail in LSTM with zero-length input (CVE-2020-26270). Fixes a security vulnerability caused by accessing heap data outside of bounds when loading a specially crafted 'SavedModel' (CVE-2020-26271). Updates 'libjpeg-turbo' to '2.0.5' to handle CVE-2020-13790. Updates 'junit' to '4.13.1' to handle [CVE-2020-15250]. Updates 'PCRE' to '8.44' to handle [CVE-2019-20838] and [CVE-2020-14155].",
+            "cve": null,
+            "id": "pyup.io-39407",
+            "specs": [
+                ">=2.2.0,<2.2.2"
+            ],
+            "v": ">=2.2.0,<2.2.2"
         },
         {
             "advisory": "Tensorflow 2.2.1:\r\n* Fixes an undefined behavior causing a segfault in `tf.raw_ops.Switch` (CVE-2020-15190)\r\n* Fixes three vulnerabilities in conversion to DLPack format (CVE-2020-15191, CVE-2020-15192, CVE-2020-15193)\r\n* Fixes two vulnerabilities in `SparseFillEmptyRowsGrad` (CVE-2020-15194, CVE-2020-15195)\r\n* Fixes an integer truncation vulnerability in code using the work sharder API (CVE-2020-15202)\r\n* Fixes a format string vulnerability in `tf.strings.as_string` (CVE-2020-15203)\r\n* Fixes segfault raised by calling session-only ops in eager mode (CVE-2020-15204)\r\n* Fixes data leak and potential ASLR violation from `tf.raw_ops.StringNGrams` (CVE-2020-15205)\r\n* Fixes segfaults caused by incomplete `SavedModel` validation (CVE-2020-15206)\r\n* Fixes a data corruption due to a bug in negative indexing support in TFLite (CVE-2020-15207)\r\n* Fixes a data corruption due to dimension mismatch in TFLite (CVE-2020-15208)\r\n* Fixes several vulnerabilities in TFLite saved model format (CVE-2020-15209, CVE-2020-15210, CVE-2020-15211)\r\n* Fixes several vulnerabilities in TFLite implementation of segment sum (CVE-2020-15212, CVE-2020-15213, CVE-2020-15214)\r\n* Updates `sqlite3` to `3.33.00` to handle CVE-2020-9327, CVE-2020-11655, CVE-2020-11656, CVE-2020-13434, CVE-2020-13435, CVE-2020-13630, CVE-2020-13631, CVE-2020-13871,  and CVE-2020-15358.",
@@ -19418,6 +20179,15 @@
                 ">=2.3.0rc0,<2.3.1"
             ],
             "v": ">=2.2.0rc0,<2.2.1,>=2.3.0rc0,<2.3.1"
+        },
+        {
+            "advisory": "Tensorflow 2.3.2 fixes an access to unitialized memory in Eigen code (CVE-2020-26266). Fixes a security vulnerability caused by lack of validation in 'tf.raw_ops.DataFormatVecPermute' and 'tf.raw_ops.DataFormatDimMap' (CVE-2020-26267). Fixes a vulnerability caused by attempting to write to immutable memory region in 'tf.raw_ops.ImmutableConst' (CVE-2020-26268). Fixes a 'CHECK'-fail in LSTM with zero-length input (CVE-2020-26270). Fixes a security vulnerability caused by accessing heap data outside of bounds when loading a specially crafted 'SavedModel' (CVE-2020-26271). Updates 'libjpeg-turbo' to '2.0.5' to handle CVE-2020-13790. Updates 'junit' to '4.13.1' to handle [CVE-2020-15250]. Updates 'PCRE' to '8.44' to handle [CVE-2019-20838] and [CVE-2020-14155].",
+            "cve": null,
+            "id": "pyup.io-39406",
+            "specs": [
+                ">=2.3.0,<2.3.2"
+            ],
+            "v": ">=2.3.0,<2.3.2"
         },
         {
             "advisory": "Tensorflow 2.3.1:\r\n* Fixes an undefined behavior causing a segfault in `tf.raw_ops.Switch` (CVE-2020-15190)\r\n* Fixes three vulnerabilities in conversion to DLPack format (CVE-2020-15191, CVE-2020-15192, CVE-2020-15193)\r\n* Fixes two vulnerabilities in `SparseFillEmptyRowsGrad` (CVE-2020-15194, CVE-2020-15195)\r\n* Fixes several vulnerabilities in `RaggedCountSparseOutput` and `SparseCountSparseOutput` operations (CVE-2020-15196, CVE-2020-15197, CVE-2020-15198, CVE-2020-15199, CVE-2020-15200, CVE-2020-15201) \r\n* Fixes an integer truncation vulnerability in code using the work sharder API (CVE-2020-15202)\r\n* Fixes a format string vulnerability in `tf.strings.as_string` (CVE-2020-15203)\r\n* Fixes segfault raised by calling session-only ops in eager mode (CVE-2020-15204)\r\n* Fixes data leak and potential ASLR violation from `tf.raw_ops.StringNGrams` (CVE-2020-15205)\r\n* Fixes segfaults caused by incomplete `SavedModel` validation (CVE-2020-15206)\r\n* Fixes a data corruption due to a bug in negative indexing support in TFLite (CVE-2020-15207)\r\n* Fixes a data corruption due to dimension mismatch in TFLite (CVE-2020-15208)\r\n* Fixes several vulnerabilities in TFLite saved model format (CVE-2020-15209, CVE-2020-15210, CVE-2020-15211)\r\n* Fixes several vulnerabilities in TFLite implementation of segment sum (CVE-2020-15212, CVE-2020-15213, CVE-2020-15214)\r\n* Updates `sqlite3` to `3.33.00` to handle (CVE-2020-15358)",
@@ -19458,8 +20228,8 @@
             "v": "<1.12.2"
         },
         {
-            "advisory": "Tensorflow-directml 1.12.3 updates 'png_archive' dependency to 1.6.37 to not be affected by CVE-2019-7317, CVE-2018-13785, and CVE-2018-14048. It also updates 'sqlite' dependency to 3.28.0 to not be affected by CVE-2018-20506, CVE-2018-20346, and CVE-2018-20505.",
-            "cve": "CVE-2019-7317",
+            "advisory": "Tensorflow-directml 1.12.3 updates 'png_archive' dependency to 1.6.37 to not be affected by CVE-2019-7317.",
+            "cve": null,
             "id": "pyup.io-39318",
             "specs": [
                 "<1.12.3"
@@ -19467,8 +20237,98 @@
             "v": "<1.12.3"
         },
         {
-            "advisory": "Tensorflow-directml 1.15.2:\r\n* Fixes a security vulnerability where converting a Python string to a tf.float16 value produces a segmentation fault. See CVE-2020-5215.\r\n* Updates curl to 7.66.0 to handle CVE-2019-5482 and CVE-2019-5481.\r\n* Updates sqlite3 to 3.30.01 to handle CVE-2019-19646, CVE-2019-19645 and CVE-2019-16168.",
-            "cve": "CVE-2020-5215",
+            "advisory": "Tensorflow-directml 1.12.3 updates 'sqlite' dependency to 3.28.0 to not be affected by CVE-2018-20505.",
+            "cve": "CVE-2018-20505",
+            "id": "pyup.io-39563",
+            "specs": [
+                "<1.12.3"
+            ],
+            "v": "<1.12.3"
+        },
+        {
+            "advisory": "Tensorflow-directml 1.12.3 updates 'sqlite' dependency to 3.28.0 to not be affected by CVE-2018-20346.",
+            "cve": "CVE-2018-20346",
+            "id": "pyup.io-39564",
+            "specs": [
+                "<1.12.3"
+            ],
+            "v": "<1.12.3"
+        },
+        {
+            "advisory": "Tensorflow-directml 1.12.3 updates 'sqlite' dependency to 3.28.0 to not be affected by CVE-2018-20506.",
+            "cve": "CVE-2018-20506",
+            "id": "pyup.io-39565",
+            "specs": [
+                "<1.12.3"
+            ],
+            "v": "<1.12.3"
+        },
+        {
+            "advisory": "Tensorflow-directml 1.12.3 updates 'png_archive' dependency to 1.6.37 to not be affected by CVE-2018-14048.",
+            "cve": "CVE-2018-14048",
+            "id": "pyup.io-39566",
+            "specs": [
+                "<1.12.3"
+            ],
+            "v": "<1.12.3"
+        },
+        {
+            "advisory": "Tensorflow-directml 1.12.3 updates 'png_archive' dependency to 1.6.37 to not be affected by CVE-2018-13785.",
+            "cve": "CVE-2018-13785",
+            "id": "pyup.io-39567",
+            "specs": [
+                "<1.12.3"
+            ],
+            "v": "<1.12.3"
+        },
+        {
+            "advisory": "Tensorflow-directml 1.15.2:\r\n* Updates sqlite3 to 3.30.01 to handle CVE-2019-19645.",
+            "cve": null,
+            "id": "pyup.io-39559",
+            "specs": [
+                "<1.15.2"
+            ],
+            "v": "<1.15.2"
+        },
+        {
+            "advisory": "Tensorflow-directml 1.15.2:\r\n* Updates sqlite3 to 3.30.01 to handle CVE-2019-16168.",
+            "cve": null,
+            "id": "pyup.io-39558",
+            "specs": [
+                "<1.15.2"
+            ],
+            "v": "<1.15.2"
+        },
+        {
+            "advisory": "Tensorflow-directml 1.15.2:\r\n* Updates curl to 7.66.0 to handle CVE-2019-5481.",
+            "cve": null,
+            "id": "pyup.io-39561",
+            "specs": [
+                "<1.15.2"
+            ],
+            "v": "<1.15.2"
+        },
+        {
+            "advisory": "Tensorflow-directml 1.15.2:\r\n* Updates sqlite3 to 3.30.01 to handle CVE-2019-19646.",
+            "cve": null,
+            "id": "pyup.io-39560",
+            "specs": [
+                "<1.15.2"
+            ],
+            "v": "<1.15.2"
+        },
+        {
+            "advisory": "Tensorflow-directml 1.15.2:\r\n* Updates curl to 7.66.0 to handle CVE-2019-5482.",
+            "cve": null,
+            "id": "pyup.io-39562",
+            "specs": [
+                "<1.15.2"
+            ],
+            "v": "<1.15.2"
+        },
+        {
+            "advisory": "Tensorflow-directml 1.15.2:\r\n* Fixes a security vulnerability where converting a Python string to a tf.float16 value produces a segmentation fault. See CVE-2020-5215.",
+            "cve": null,
             "id": "pyup.io-38779",
             "specs": [
                 "<1.15.2"
@@ -19743,15 +20603,6 @@
                 "<2.2.1"
             ],
             "v": "<2.2.1"
-        },
-        {
-            "advisory": "All versions of package tornado are vulnerable to Web Cache Poisoning by using a vector called parameter cloaking. When the attacker can separate query parameters using a semicolon (;), they can cause a difference in the interpretation of the request between the proxy (running with default configuration) and the server. This can result in malicious requests being cached as completely safe ones, as the proxy would usually not see the semicolon as a separator, and therefore would not include it in a cache key of an unkeyed parameter. See CVE-2020-28476.",
-            "cve": null,
-            "id": "pyup.io-39462",
-            "specs": [
-                "<=6.1"
-            ],
-            "v": "<=6.1"
         }
     ],
     "tortoise-orm": [
@@ -20005,8 +20856,17 @@
             "v": "<19.7.0"
         },
         {
-            "advisory": "In twisted before 20.3.0, twisted.web.http was subject to several request smuggling attacks. Requests with multiple Content-Length headers were allowed (CVE-2020-10108) and now fail with a 400; requests with a Content-Length header and a Transfer-Encoding header honored the first header (CVE-2020-10109) and now fail with a 400; requests whose Transfer-Encoding header had a value other than \"chunked\" and \"identity\" were allowed and now fail with a 400.",
-            "cve": "CVE-2020-10108",
+            "advisory": "In twisted before 20.3.0, twisted.web.http was subject to several request smuggling attacks. Requests with a Content-Length header and a Transfer-Encoding header honored the first header (CVE-2020-10109) and now fail with a 400; requests whose Transfer-Encoding header had a value other than \"chunked\" and \"identity\" were allowed and now fail with a 400.",
+            "cve": "CVE-2020-10109",
+            "id": "pyup.io-39557",
+            "specs": [
+                "<20.3.0"
+            ],
+            "v": "<20.3.0"
+        },
+        {
+            "advisory": "In twisted before 20.3.0, twisted.web.http was subject to several request smuggling attacks. Requests with multiple Content-Length headers were allowed (CVE-2020-10108) and now fail with a 400.",
+            "cve": null,
             "id": "pyup.io-38085",
             "specs": [
                 "<20.3.0"
@@ -20067,6 +20927,17 @@
                 "<0.13.0"
             ],
             "v": "<0.13.0"
+        }
+    ],
+    "uciparse": [
+        {
+            "advisory": "Uciparse 0.1.9 updates build process to include security scans using Safety.",
+            "cve": null,
+            "id": "pyup.io-39605",
+            "specs": [
+                "<0.1.9"
+            ],
+            "v": "<0.1.9"
         }
     ],
     "udata": [
@@ -20545,8 +21416,17 @@
             "v": "<1.2.0b1"
         },
         {
-            "advisory": "Waitress 1.4.0 addresses an issue in which a recipient MAY recognize a single LF as a line terminator and ignore any preceding CR, (although the line terminator for the start-line and header fields is the sequence CRLF).\r\n\r\nSee\r\nhttps://blog.zeddyu.info/2019/12/08/HTTP-Smuggling-en/\r\nhttps://github.com/Pylons/waitress/security/advisories/GHSA-pg36-wpm5-g57p\r\nhttps://github.com/Pylons/waitress/security/advisories/GHSA-g2xc-35jw-c63p\r\nhttps://github.com/Pylons/waitress/security/advisories/GHSA-4ppp-gpcr-7qf6\r\nCVE-ID: CVE-2019-16785\r\nCVE-ID: CVE-2019-16786",
-            "cve": "CVE-2019-16785",
+            "advisory": "Waitress 1.4.0 addresses an issue in which a recipient MAY recognize a single LF as a line terminator and ignore any preceding CR, (although the line terminator for the start-line and header fields is the sequence CRLF).\r\n\r\nSee\r\nhttps://blog.zeddyu.info/2019/12/08/HTTP-Smuggling-en/\r\nhttps://github.com/Pylons/waitress/security/advisories/GHSA-pg36-wpm5-g57p\r\nhttps://github.com/Pylons/waitress/security/advisories/GHSA-g2xc-35jw-c63p\r\nhttps://github.com/Pylons/waitress/security/advisories/GHSA-4ppp-gpcr-7qf6\r\nCVE-ID: CVE-2019-16786",
+            "cve": null,
+            "id": "pyup.io-39556",
+            "specs": [
+                "<1.4.0"
+            ],
+            "v": "<1.4.0"
+        },
+        {
+            "advisory": "Waitress 1.4.0 addresses an issue in which a recipient MAY recognize a single LF as a line terminator and ignore any preceding CR, (although the line terminator for the start-line and header fields is the sequence CRLF).\r\n\r\nSee\r\nhttps://blog.zeddyu.info/2019/12/08/HTTP-Smuggling-en/\r\nhttps://github.com/Pylons/waitress/security/advisories/GHSA-pg36-wpm5-g57p\r\nhttps://github.com/Pylons/waitress/security/advisories/GHSA-g2xc-35jw-c63p\r\nhttps://github.com/Pylons/waitress/security/advisories/GHSA-4ppp-gpcr-7qf6\r\n\r\nSee: CVE-2019-16785",
+            "cve": null,
             "id": "pyup.io-37822",
             "specs": [
                 "<1.4.0"
@@ -21030,6 +21910,17 @@
             "v": "<0.0.2"
         }
     ],
+    "xscrapers": [
+        {
+            "advisory": "Xscrapers 127.0.0.150077",
+            "cve": null,
+            "id": "pyup.io-39640",
+            "specs": [
+                "<127.0.0.150077"
+            ],
+            "v": "<127.0.0.150077"
+        }
+    ],
     "xtea3": [
         {
             "advisory": "xtea3 1.0.0 change: Removal of CBCMAC (security reasons)",
@@ -21250,8 +22141,26 @@
             "v": "<2.13.19"
         },
         {
-            "advisory": "Zope 3.9.0 fixes CVE-2009-2701 and CVE-2009-0668 and CVE-2009-0669.",
-            "cve": "CVE-2009-2701",
+            "advisory": "Zope 3.9.0 fixes CVE-2009-0669.",
+            "cve": "CVE-2009-0669",
+            "id": "pyup.io-39554",
+            "specs": [
+                "<3.9.0"
+            ],
+            "v": "<3.9.0"
+        },
+        {
+            "advisory": "Zope 3.9.0 fixes CVE-2009-0668.",
+            "cve": "CVE-2009-0668",
+            "id": "pyup.io-39555",
+            "specs": [
+                "<3.9.0"
+            ],
+            "v": "<3.9.0"
+        },
+        {
+            "advisory": "Zope 3.9.0 fixes CVE-2009-2701.",
+            "cve": null,
             "id": "pyup.io-36590",
             "specs": [
                 "<3.9.0"
@@ -21378,8 +22287,17 @@
     ],
     "zulip": [
         {
-            "advisory": "Zulip 1.5.2:\r\n- CVE-2017-0896: Restricting inviting new users to admins was broken.\r\n- CVE-2015-8861: Insecure old version of handlebars templating engine.",
-            "cve": "CVE-2017-0896",
+            "advisory": "Zulip 1.5.2:\r\n- CVE-2015-8861: Insecure old version of handlebars templating engine.",
+            "cve": null,
+            "id": "pyup.io-39553",
+            "specs": [
+                "<1.5.2"
+            ],
+            "v": "<1.5.2"
+        },
+        {
+            "advisory": "Zulip 1.5.2:\r\n- CVE-2017-0896: Restricting inviting new users to admins was broken.",
+            "cve": null,
             "id": "pyup.io-35007",
             "specs": [
                 "<1.5.2"
@@ -21414,9 +22332,36 @@
             "v": "<1.7.1"
         },
         {
-            "advisory": "Zulip 1.7.2 is a security release, with a handful of cherry-picked changes since 1.7.1.\r\n- CVE-2018-9986: Fix XSS issues with frontend markdown processor.\r\n- CVE-2018-9987: Fix XSS issue with muting notifications.\r\n- CVE-2018-9990: Fix XSS issue with stream names in topic typeahead.\r\n- CVE-2018-9999: Fix XSS issue with user uploads.  The fix for this adds a Content-Security-Policy for the `LOCAL_UPLOADS_DIR` storage backend for user-uploaded files.",
-            "cve": "CVE-2018-9986",
+            "advisory": "Zulip 1.7.2 is a security release, with changes since 1.7.1.\r\n- CVE-2018-9990: Fix XSS issue with stream names in topic typeahead.",
+            "cve": null,
+            "id": "pyup.io-39551",
+            "specs": [
+                "<1.7.2"
+            ],
+            "v": "<1.7.2"
+        },
+        {
+            "advisory": "Zulip 1.7.2 is a security release, with a handful of cherry-picked changes since 1.7.1.\r\n- CVE-2018-9986: Fix XSS issues with frontend markdown processor.",
+            "cve": null,
             "id": "pyup.io-36168",
+            "specs": [
+                "<1.7.2"
+            ],
+            "v": "<1.7.2"
+        },
+        {
+            "advisory": "Zulip 1.7.2 is a security release, with changes since 1.7.1.\r\n- CVE-2018-9987: Fix XSS issue with muting notifications.",
+            "cve": null,
+            "id": "pyup.io-39552",
+            "specs": [
+                "<1.7.2"
+            ],
+            "v": "<1.7.2"
+        },
+        {
+            "advisory": "Zulip 1.7.2 is a security release, with changes since 1.7.1.\r\n- CVE-2018-9999: Fix XSS issue with user uploads.  The fix for this adds a Content-Security-Policy for the `LOCAL_UPLOADS_DIR` storage backend for user-uploaded files.",
+            "cve": null,
+            "id": "pyup.io-39550",
             "specs": [
                 "<1.7.2"
             ],
@@ -21432,8 +22377,17 @@
             "v": "<1.8.0"
         },
         {
-            "advisory": "Zulip 2.0.5 fixes DoS vulnerability in Markdown LINK_RE (CVE-2019-16215). It also fixes MIME type validation (CVE-2019-16216).",
-            "cve": "CVE-2019-16215",
+            "advisory": "Zulip 2.0.5 fixes MIME type validation (CVE-2019-16216).",
+            "cve": "CVE-2019-16216",
+            "id": "pyup.io-39549",
+            "specs": [
+                "<2.0.5"
+            ],
+            "v": "<2.0.5"
+        },
+        {
+            "advisory": "Zulip 2.0.5 fixes DoS vulnerability in Markdown LINK_RE (CVE-2019-16215).",
+            "cve": null,
             "id": "pyup.io-38117",
             "specs": [
                 "<2.0.5"
@@ -21477,8 +22431,17 @@
             "v": "<2.1.2"
         },
         {
-            "advisory": "Zulip Server 2.1.3 includes fixes for:\r\n- CVE-2020-9444: Prevent reverse tabnapping attacks.                                                 \r\n- CVE-2020-9445: Remove unused and insecure modal_link feature.                                      \r\n- CVE-2020-10935: Fix XSS vulnerability in local link rewriting.",
-            "cve": "CVE-2020-9444",
+            "advisory": "Zulip Server 2.1.3 includes a fix for:\r\n- CVE-2020-10935: Fix XSS vulnerability in local link rewriting.",
+            "cve": null,
+            "id": "pyup.io-39548",
+            "specs": [
+                "<2.1.3"
+            ],
+            "v": "<2.1.3"
+        },
+        {
+            "advisory": "Zulip Server 2.1.3 includes a fix for:\r\n- CVE-2020-9444: Prevent reverse tabnapping attacks.",
+            "cve": null,
             "id": "pyup.io-38200",
             "specs": [
                 "<2.1.3"
@@ -21495,6 +22458,15 @@
                 "<0.5.2"
             ],
             "v": "<0.5.2"
+        },
+        {
+            "advisory": "Zulip-term 0.6.0 includes a fix for a security issue (strongly recommended to upgrade immediately).",
+            "cve": null,
+            "id": "pyup.io-39511",
+            "specs": [
+                "<0.6.0"
+            ],
+            "v": "<0.6.0"
         }
     ],
     "zwiki": [
