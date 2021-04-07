@@ -1,7 +1,7 @@
 {
     "$meta": {
         "advisory": "PyUp.io metadata",
-        "timestamp": 1617256802
+        "timestamp": 1617804117
     },
     "abracadabra": [
         {
@@ -14388,6 +14388,15 @@
                 ">6.0,<6.2.2"
             ],
             "v": ">6.0,<6.2.2"
+        },
+        {
+            "advisory": "An issue was discovered in Pillow before 8.1.1. In TiffDecode.c, there is a negative-offset memcpy with an invalid size.",
+            "cve": "CVE-2021-25290",
+            "id": "pyup.io-40108",
+            "spec": [
+                "<8.1.1"
+            ],
+            "v": "<8.1.1"
         }
     ],
     "pillow-simd": [
