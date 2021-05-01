@@ -12,7 +12,10 @@ def generatePackageSpecifiers():
         database = json.loads(f.read())
     for pkg, all_specs in database.items():
         for spec in all_specs:
-            yield pkg, spec
+            if pkg == '$meta':
+                continue
+            else:
+                yield pkg, spec
 
 
 class TestData(unittest.TestCase):
