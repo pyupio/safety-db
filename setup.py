@@ -51,7 +51,7 @@ setup(
     },
     packages=['safety_db'],
     license='Attribution-NonCommercial-ShareAlike 4.0 International',
-    install_requires=[],
+    install_requires=['setuptools'],
     tests_require=tests_require,
     include_package_data=True,
 )
