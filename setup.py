@@ -40,7 +40,7 @@ setup(
         "Environment :: Web Environment",
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
-        "Development Status :: 4 - Beta",
+        "Development Status :: 5 - Production/Stable",
     ],
     keywords="security",
     author='Jannis Gebauer',
