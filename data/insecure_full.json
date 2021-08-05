@@ -3326,17 +3326,6 @@
             "v": "<2.1.1"
         }
     ],
-    "coverage": [
-        {
-            "advisory": "Coverage 6.0b1 starts to use a modern hash algorithm (sha256) when fingerprinting for high-security environments.",
-            "cve": "PVE-2021-41002",
-            "id": "pyup.io-41002",
-            "specs": [
-                "<6.0b1"
-            ],
-            "v": "<6.0b1"
-        }
-    ],
     "coveralls": [
         {
             "advisory": "coveralls 0.1.1 removes repo_token from verbose output for security reasons.",
