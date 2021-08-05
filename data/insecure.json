@@ -708,9 +708,6 @@
     "cosmos-wfm": [
         "<2.1.1"
     ],
-    "coverage": [
-        "<6.0b1"
-    ],
     "coveralls": [
         "<0.1.1"
     ],
