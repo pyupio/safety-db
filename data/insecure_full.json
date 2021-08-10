@@ -3633,15 +3633,6 @@
                 "<1.20.0"
             ],
             "v": "<1.20.0"
-        },
-        {
-            "advisory": "Dash 2.2.0 includes a security fix.",
-            "cve": "PVE-2021-40962",
-            "id": "pyup.io-40962",
-            "specs": [
-                "<2.2.0"
-            ],
-            "v": "<2.2.0"
         }
     ],
     "dash-bio": [
