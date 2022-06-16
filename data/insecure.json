@@ -2,7 +2,7 @@
     "$meta": {
         "advisory": "PyUp.io metadata",
         "base_domain": "https://pyup.io",
-        "timestamp": 1654063222
+        "timestamp": 1655356379
     },
     "10cent10": [
         "<0",
@@ -184,7 +184,6 @@
     "allmydata-tahoe": [
         "<1.1.0",
         "<1.2.0",
-        "<1.3.0",
         "<1.4.1",
         "<1.5.0",
         "<1.7.0",
@@ -359,6 +358,9 @@
     "api-client-pydantic": [
         "<1.1.0"
     ],
+    "api-res-py": [
+        "==0.1"
+    ],
     "apidev-coop": [
         "<0",
         ">0"
@@ -434,6 +436,9 @@
     "async-search-client": [
         "<0.5.1"
     ],
+    "async-tkinter-loop": [
+        "<0.3.0"
+    ],
     "asyncpg": [
         "<0.21.0"
     ],
@@ -472,7 +477,8 @@
         "<1.1.1"
     ],
     "autogluon": [
-        "<0.4.1"
+        "<0.4.1",
+        ">=0.4.0,<0.4.1"
     ],
     "av": [
         "<9.0.1",
@@ -564,18 +570,18 @@
     "babel": [
         "<2.9.1"
     ],
-    "backend.ai": [
+    "backend-ai": [
         "<19.03.0b1",
         "<19.03.0rc1",
         "<19.09.0rc4"
     ],
-    "backend.ai-client": [
+    "backend-ai-client": [
         "<21.09.0a1"
     ],
-    "backend.ai-manager": [
+    "backend-ai-manager": [
         "<19.09.0rc4"
     ],
-    "backend.ai-webserver": [
+    "backend-ai-webserver": [
         "<22.03.0a1"
     ],
     "bakercm": [
@@ -599,6 +605,9 @@
     ],
     "basxconnect": [
         "<0.3.54"
+    ],
+    "bauh": [
+        "<0.10.3"
     ],
     "bayesian-testing": [
         "<0.2.2"
@@ -656,7 +665,7 @@
     "birdhousebuilder-recipe-nginx": [
         "<0.1.5"
     ],
-    "bise.theme": [
+    "bise-theme": [
         "<2.4"
     ],
     "bitbot": [
@@ -731,6 +740,7 @@
     "bottle": [
         "<0.12.10",
         "<0.12.19",
+        "<0.12.20",
         ">=0.10,<0.10.12",
         ">=0.11,<0.11.7",
         ">=0.12,<0.12.6"
@@ -738,7 +748,7 @@
     "boussole": [
         "<1.5.0"
     ],
-    "brasil.gov.portal": [
+    "brasil-gov-portal": [
         "<1.5.1"
     ],
     "brotli": [
@@ -834,7 +844,8 @@
         "<0.0.60",
         "<0.0.83",
         "<2.0.7",
-        "<2.1.4"
+        "<2.1.4",
+        "<2.5.3"
     ],
     "cedar-backup3": [
         "<1.10"
@@ -951,7 +962,7 @@
         ">=15.0.0.0rc1,<15.2.0",
         ">=16.0.0.0b1,<16.1.0"
     ],
-    "cipher.googlepam": [
+    "cipher-googlepam": [
         "<1.5.1"
     ],
     "circuit-maintenance-parser": [
@@ -969,6 +980,9 @@
         "<2.6.9",
         ">=2.7.0,<2.7.7",
         ">=2.8.0,<2.8.4"
+    ],
+    "ckanext-dataset-reference": [
+        "<2.0.2"
     ],
     "ckuehl-celery": [
         "==4.0.2.post1"
@@ -1063,38 +1077,32 @@
     "collective-contact-core": [
         "<1.10"
     ],
+    "collective-documentviewer": [
+        "<1.5.1"
+    ],
     "collective-easyform": [
         "<3.0.5"
     ],
-    "collective-indexing": [
-        "<2.1"
+    "collective-js-datatables": [
+        "<4.1.1"
     ],
     "collective-noticeboard": [
         "<0.7.1"
     ],
-    "collective.contact.core": [
-        "<1.10"
-    ],
-    "collective.documentviewer": [
-        "<1.5.1"
-    ],
-    "collective.easyform": [
-        "<3.0.5"
-    ],
-    "collective.js.datatables": [
-        "<4.1.1"
-    ],
-    "collective.noticeboard": [
-        "<0.7.1"
-    ],
-    "collective.portlet.twitter": [
+    "collective-portlet-twitter": [
         "<1.0b3"
     ],
-    "collective.tablepage": [
+    "collective-tablepage": [
         "<0.3"
     ],
-    "collective.xmpp.chat": [
+    "collective-xmpp-chat": [
         "<0.3.1"
+    ],
+    "collective.documentgenerator": [
+        "<3.33"
+    ],
+    "collective.iconifiedcategory": [
+        "<0.54"
     ],
     "collored": [
         "<0",
@@ -1107,6 +1115,9 @@
     "compliance-trestle": [
         "<0.15.0",
         "<0.26.0"
+    ],
+    "conan": [
+        "<1.49.0"
     ],
     "concrete-datastore": [
         "<1.22.0",
@@ -1161,7 +1172,8 @@
         "<1.2.1"
     ],
     "cookiecutter": [
-        "<1.1.0"
+        "<1.1.0",
+        "<2.1.1"
     ],
     "coordination-network-toolkit": [
         "<1.0.2"
@@ -1300,7 +1312,8 @@
         "<1.1.0"
     ],
     "datacube": [
-        "<1.6.2"
+        "<1.6.2",
+        "<1.8.7"
     ],
     "datacube-ows": [
         "<1.8.8"
@@ -1313,6 +1326,9 @@
     ],
     "datalad": [
         "<0.16.0"
+    ],
+    "datalite": [
+        "<0.7.2"
     ],
     "datasette": [
         "<0.29.1",
@@ -1344,9 +1360,6 @@
         "==0.1a0"
     ],
     "dateable-chronos": [
-        "<0.8"
-    ],
-    "dateable.chronos": [
         "<0.8"
     ],
     "datera-cinder": [
@@ -1807,6 +1820,10 @@
     "django-fiber": [
         "<0.9.9.1"
     ],
+    "django-file-form": [
+        "<3.1.1",
+        "<3.2.3"
+    ],
     "django-filter": [
         "<2.4.0"
     ],
@@ -1871,6 +1888,9 @@
     ],
     "django-js-reverse": [
         "<0.9.1"
+    ],
+    "django-jsonform": [
+        "<2.10.1"
     ],
     "django-kaio": [
         "<0.15.0"
@@ -1988,6 +2008,9 @@
     "django-revproxy": [
         "<0.9.6",
         "<0.9.7"
+    ],
+    "django-s3file": [
+        "<5.5.1"
     ],
     "django-safedelete": [
         "<0.3.3"
@@ -2287,7 +2310,7 @@
     "edrn-sync": [
         "<1.0.5"
     ],
-    "edrnsite.policy": [
+    "edrnsite-policy": [
         "<1.0.5"
     ],
     "edx-ecommerce-worker": [
@@ -2319,7 +2342,8 @@
         "<2.2.3",
         "<2.3.0b0",
         "<3.0.0",
-        "<3.7.0rc0"
+        "<3.7.0rc0",
+        "<3.9.0"
     ],
     "emcache": [
         "<1.3.6"
@@ -2330,7 +2354,7 @@
     "emitter-io": [
         "<2.704"
     ],
-    "emrt.necd.content": [
+    "emrt-necd-content": [
         "<2.0.15"
     ],
     "encapsia-api": [
@@ -2350,6 +2374,9 @@
     ],
     "eoreader": [
         "<0.9.0"
+    ],
+    "epam-indigo": [
+        "<1.6.1"
     ],
     "epsagon": [
         "<1.5.0"
@@ -2455,6 +2482,9 @@
     "faker": [
         "<0.1"
     ],
+    "falocalrepo-server": [
+        "<3.2.2"
+    ],
     "fangfrisch": [
         "<1.4.0"
     ],
@@ -2476,7 +2506,14 @@
         "<1.4.0",
         "<1.6.0",
         "<1.6.1",
-        "<1.8.0"
+        "<1.8.0",
+        "<1.8.2"
+    ],
+    "fastapi-mvc": [
+        "<0.13.1"
+    ],
+    "fastapi-opa": [
+        "<1.3.7"
     ],
     "fastapi-restful": [
         "<0.3.1"
@@ -2669,6 +2706,9 @@
         "<1.0rc6",
         "<1.1.3"
     ],
+    "flower": [
+        "<=1.0.0"
+    ],
     "flytekit": [
         "<0.30.0"
     ],
@@ -2702,28 +2742,25 @@
     "friendlyshell": [
         "<1.0.3"
     ],
+    "ftw-dashboard-dragndrop": [
+        "<1.5.1"
+    ],
     "ftw-dashboard-portlets-postit": [
         "<1.3.4"
     ],
-    "ftw.dashboard.dragndrop": [
-        "<1.5.1"
-    ],
-    "ftw.dashboard.portlets.postit": [
-        "<1.3.4"
-    ],
-    "ftw.lawgiver": [
+    "ftw-lawgiver": [
         "<1.16.1"
     ],
-    "ftw.mail": [
+    "ftw-mail": [
         "<2.2.3"
     ],
-    "ftw.meeting": [
+    "ftw-meeting": [
         "<1.4.1"
     ],
-    "ftw.permissionmanager": [
+    "ftw-permissionmanager": [
         "<2.2.2"
     ],
-    "ftw.recipe.solr": [
+    "ftw-recipe-solr": [
         "<1.3.5",
         "<1.3.6"
     ],
@@ -2745,7 +2782,7 @@
     "gallery-dl": [
         "<1.5.3"
     ],
-    "gandi.cli": [
+    "gandi-cli": [
         "<0.10"
     ],
     "garbevents": [
@@ -2826,6 +2863,9 @@
     "git-big-picture": [
         "<1.0.0"
     ],
+    "git-cola": [
+        "<4.0.0"
+    ],
     "git-portfolio": [
         "<0.10.1"
     ],
@@ -2859,7 +2899,7 @@
     "gns3-server": [
         "<2.1.17"
     ],
-    "gocept.month": [
+    "gocept-month": [
         "<2.2"
     ],
     "goharbor": [
@@ -3127,8 +3167,11 @@
     "imgstore": [
         "<0.2.9"
     ],
-    "imio.dashboard": [
+    "imio-dashboard": [
         "<2.2"
+    ],
+    "imio.prettylink": [
+        "<1.20"
     ],
     "impacket": [
         "<0.9.18",
@@ -3315,6 +3358,9 @@
         "<0",
         ">0"
     ],
+    "jellyfin-mpv-shim": [
+        "<2.0.2"
+    ],
     "jetforce": [
         "<0.2.0",
         "<0.2.3"
@@ -3354,16 +3400,14 @@
     "jose": [
         "<0.3.0"
     ],
-    "js-videojs": [
-        "<4.12.5"
-    ],
-    "js.ember": [
+    "js-ember": [
         "<=1.0.0"
     ],
-    "js.mocha": [
+    "js-mocha": [
         "<=2.2.5"
     ],
-    "js.videojs": [
+    "js-videojs": [
+        "<4.12.5",
         "<5.1.0"
     ],
     "json2xml": [
@@ -3443,7 +3487,7 @@
         "<1.13.0",
         "<1.13.8"
     ],
-    "jw.util": [
+    "jw-util": [
         "<2.3"
     ],
     "jwcrypto": [
@@ -3457,7 +3501,8 @@
     ],
     "kafkacrypto": [
         "<0.9.5",
-        "<0.9.8"
+        "<0.9.8",
+        "<0.9.9.7"
     ],
     "kako": [
         "<1.1.0"
@@ -3491,6 +3536,9 @@
         "<2.1.0",
         "<3.0.0",
         "<3.3.0"
+    ],
+    "keep": [
+        "==1.2"
     ],
     "keepkey": [
         "<6.6.0"
@@ -3602,7 +3650,8 @@
         "<0.7.0"
     ],
     "kserve": [
-        "<0.8.0"
+        "<0.8.0",
+        "<0.9.0rc0"
     ],
     "kubernetes": [
         "<12.0.0a1",
@@ -3665,6 +3714,9 @@
     ],
     "layeredimage": [
         "<2021.2.1"
+    ],
+    "lc-sdk-python": [
+        "<0.3.1"
     ],
     "ldap3": [
         "<0.9.5.4",
@@ -3893,7 +3945,7 @@
     "mdcatch": [
         "<0.9.1"
     ],
-    "mega.py": [
+    "mega-py": [
         "<3.6.2"
     ],
     "megalib": [
@@ -3910,6 +3962,9 @@
     ],
     "metadataproxy": [
         "<1.1.1"
+    ],
+    "metakb": [
+        "<1.1.0a8"
     ],
     "metpx-sarracenia": [
         "<2.20.4b2"
@@ -4033,6 +4088,7 @@
     "mlrun": [
         "<0.9.0rc7",
         "<1.0.3rc1",
+        "<1.0.4rc1",
         "<=1.1.0rc1"
     ],
     "mmpm": [
@@ -4110,7 +4166,7 @@
     "mqtt-io": [
         "<0.5.2"
     ],
-    "mr.migrator": [
+    "mr-migrator": [
         "<1.2"
     ],
     "msgpack": [
@@ -4193,7 +4249,7 @@
     "napalm-panos": [
         "<0.5.3"
     ],
-    "natcap.invest": [
+    "natcap-invest": [
         "<3.8.1"
     ],
     "nautilus-trader": [
@@ -4298,7 +4354,8 @@
         "<0.1.7"
     ],
     "nikas": [
-        "<2.0.0"
+        "<2.0.0",
+        "<2.0.2"
     ],
     "nimview": [
         "<0.1.2"
@@ -4422,6 +4479,9 @@
         "<1.22.2",
         "<1.8.1"
     ],
+    "nuplone": [
+        "<2.1.0"
+    ],
     "oauth-pyzure": [
         "<0.1.4"
     ],
@@ -4467,8 +4527,12 @@
         ">=3.0.0,<3.2.0",
         ">=4.0.0,<4.1.0"
     ],
+    "octoprint": [
+        "<1.8.1"
+    ],
     "octoprint-nanny": [
-        "<0.10.0"
+        "<0.10.0",
+        "<0.11.0"
     ],
     "octue": [
         "<0.10.4"
@@ -4508,6 +4572,9 @@
     "omnizart": [
         "<0.3.3"
     ],
+    "omorfi": [
+        "<0.9.9"
+    ],
     "onecodex": [
         "<0.10.0"
     ],
@@ -4516,7 +4583,7 @@
         "<2.7.0",
         ">=2.12.0,<2.31.0"
     ],
-    "onegov.form": [
+    "onegov-form": [
         "<0.16.1"
     ],
     "onelogin-aws-assume-role": [
@@ -4555,10 +4622,14 @@
         "<4.2.1",
         "<4.3.0"
     ],
+    "opencv-python": [
+        "<3.4.18",
+        ">=4.0.0,<4.6.0"
+    ],
     "opendp-smartnoise-core": [
         "<0.1.1"
     ],
-    "openquake.engine": [
+    "openquake-engine": [
         "<3.14.0"
     ],
     "openslides": [
@@ -4617,7 +4688,7 @@
     "ormar": [
         "<0.10.9"
     ],
-    "ortec.scientific.benchmarks.loadbuilding": [
+    "ortec-scientific-benchmarks-loadbuilding": [
         "<1.0.1",
         "<=1.0.1"
     ],
@@ -4629,7 +4700,7 @@
         "<0.165.3",
         "<0.169.0"
     ],
-    "osha.oira": [
+    "osha-oira": [
         "<8.1.0"
     ],
     "osxcollector-output-filters": [
@@ -4680,6 +4751,9 @@
     "palladium": [
         "<1.2.2",
         "<1.2.3"
+    ],
+    "palm": [
+        "<2.4.1"
     ],
     "pandas-zmq": [
         "<0.0.2"
@@ -4798,6 +4872,13 @@
     ],
     "pgbedrock": [
         "<0.4.2"
+    ],
+    "pheonix-waitress": [
+        "<1.0.0",
+        "<1.4.0",
+        "<1.4.2",
+        "<2.1.1",
+        "==1.4.2"
     ],
     "phileo": [
         "<0.3"
@@ -4965,18 +5046,35 @@
         ">=5.0.0,<=5.2.4",
         ">=5.2.0,<=5.2.1"
     ],
+    "plone-app-content": [
+        "<3.3.1",
+        "<3.8.1",
+        "<4.0.0a3"
+    ],
+    "plone-app-contentlisting": [
+        "<1.2.5"
+    ],
     "plone-app-contentmenu": [
-        "<1.1.7"
+        "<1.1.7",
+        "<2.1.1"
     ],
     "plone-app-contenttypes": [
         "<1.2.15",
-        "<2.1.6"
+        "<2.1.6",
+        "<2.2.3",
+        ">=3.0.0a1,<3.0.0a9"
+    ],
+    "plone-app-dexterity": [
+        "<2.6.8"
     ],
     "plone-app-discussion": [
-        "<2.4.14"
+        "<2.4.14",
+        "<2.4.18"
     ],
     "plone-app-event": [
-        "<3.0"
+        "<3.0",
+        "<3.2.10",
+        "<4.0.0a4"
     ],
     "plone-app-layout": [
         "<2.5.1",
@@ -4992,100 +5090,44 @@
     "plone-app-users": [
         "<1.0.5"
     ],
+    "plone-app-workflow": [
+        "<1.1.0"
+    ],
     "plone-app-z3cform": [
         "<0.5.4"
     ],
     "plone-dexterity": [
         "<2.3.0"
     ],
+    "plone-memoize": [
+        "<1.0.3"
+    ],
+    "plone-mockup": [
+        "<2.1.3"
+    ],
+    "plone-namedfile": [
+        "<5.5.0"
+    ],
+    "plone-openid": [
+        "<2.0.2"
+    ],
+    "plone-portlet-collection": [
+        "<2.0.4"
+    ],
     "plone-portlet-static": [
         "<1.2"
     ],
-    "plone-restapi": [
-        "<8.4.0"
+    "plone-recipe-varnish": [
+        "<6.0.0b1"
+    ],
+    "plone-session": [
+        "<2.1",
+        "<3.6.2"
     ],
     "plone-supermodel": [
         "<1.6.3"
     ],
-    "plone-testing": [
-        "<6.1.0"
-    ],
-    "plone.app.content": [
-        "<3.3.1",
-        "<3.8.1",
-        "<4.0.0a3"
-    ],
-    "plone.app.contentlisting": [
-        "<1.2.5"
-    ],
-    "plone.app.contentmenu": [
-        "<1.1.7",
-        "<2.1.1"
-    ],
-    "plone.app.contenttypes": [
-        "<1.2.15",
-        "<2.1.6",
-        "<2.2.3",
-        ">=3.0.0a1,<3.0.0a9"
-    ],
-    "plone.app.dexterity": [
-        "<2.6.8"
-    ],
-    "plone.app.discussion": [
-        "<2.4.14",
-        "<2.4.18"
-    ],
-    "plone.app.event": [
-        "<3.0",
-        "<3.2.10",
-        "<4.0.0a4"
-    ],
-    "plone.app.layout": [
-        "<2.5.1",
-        "<3.4.1",
-        "<4.0.0a2"
-    ],
-    "plone.app.linkintegrity": [
-        "<1.0.2"
-    ],
-    "plone.app.workflow": [
-        "<1.1.0"
-    ],
-    "plone.dexterity": [
-        "<2.3.0"
-    ],
-    "plone.formwidget.contenttree": [
-        "<1.0a3"
-    ],
-    "plone.memoize": [
-        "<1.0.3"
-    ],
-    "plone.mockup": [
-        "<2.1.3"
-    ],
-    "plone.namedfile": [
-        "<5.5.0"
-    ],
-    "plone.openid": [
-        "<2.0.2"
-    ],
-    "plone.portlet.collection": [
-        "<2.0.4"
-    ],
-    "plone.portlet.static": [
-        "<1.2"
-    ],
-    "plone.recipe.varnish": [
-        "<6.0.0b1"
-    ],
-    "plone.session": [
-        "<2.1",
-        "<3.6.2"
-    ],
-    "plone.supermodel": [
-        "<1.6.3"
-    ],
-    "plone.z3cform": [
+    "plone-z3cform": [
         "<0.5.9"
     ],
     "plotly": [
@@ -5119,7 +5161,7 @@
         "<0",
         ">0"
     ],
-    "pmr2.oauth": [
+    "pmr2-oauth": [
         "<0.4.2"
     ],
     "podder-task-base": [
@@ -5128,7 +5170,7 @@
     "poetry": [
         "<=1.1.9"
     ],
-    "pokedex.py": [
+    "pokedex-py": [
         "<1.1.2"
     ],
     "pollbot": [
@@ -5184,6 +5226,9 @@
     "press": [
         "<0.5.8"
     ],
+    "pretaweb.healthcheck": [
+        "<1.0"
+    ],
     "priority": [
         "<1.2.0"
     ],
@@ -5199,102 +5244,91 @@
         "<3.7dev4"
     ],
     "products-atcontenttypes": [
-        "<3.0.6"
-    ],
-    "products-btreefolder2": [
-        "<2.13.4"
-    ],
-    "products-cmfcore": [
-        "<2.1.0beta2"
-    ],
-    "products-ploneformgen": [
-        "<1.8.1"
-    ],
-    "products-plonepas": [
-        "<3.9",
-        "<4.0.6"
-    ],
-    "products-zopetree": [
-        "<1.3"
-    ],
-    "products.atcontenttypes": [
         "<0.2",
         "<1.2.0",
         "<2.1.10",
         "<3.0.6"
     ],
-    "products.cmfcontentpanels": [
+    "products-btreefolder2": [
+        "<2.13.4"
+    ],
+    "products-cmfcontentpanels": [
         "<1.4.1"
     ],
-    "products.cmfcore": [
+    "products-cmfcore": [
         "<2.1.0beta2",
         "<2.3.0beta"
     ],
-    "products.cmfdifftool": [
+    "products-cmfdifftool": [
         "<3.3.3"
     ],
-    "products.cmfformcontroller": [
+    "products-cmfformcontroller": [
         "<3.1.3"
     ],
-    "products.cmfplomino": [
+    "products-cmfplomino": [
         "<1.13.1",
         "<1.18"
     ],
-    "products.cmfplone": [
+    "products-cmfplone": [
         "<4.3.20",
         "<5.1b1",
-        "<5.2.2",
         "<5.2.2rc1",
         "<5.2.5",
         ">4.3.20,<5.1.7",
         ">5.1.7,<5.2.5",
         ">5.2.5,<6.0.0a1.dev0"
     ],
-    "products.cmfquickinstallertool": [
+    "products-cmfquickinstallertool": [
         "<3.0.14"
     ],
-    "products.cmfuid": [
+    "products-cmfuid": [
         "<2.1.0beta2"
     ],
-    "products.dcworkflow": [
+    "products-dcworkflow": [
         "<2.1.0beta2"
     ],
-    "products.genericsetup": [
+    "products-genericsetup": [
         "<2.1.1"
     ],
-    "products.isurlinportal": [
+    "products-isurlinportal": [
         "<1.2.0"
     ],
-    "products.ldapuserfolder": [
+    "products-ldapuserfolder": [
         "<2.19",
         "<2.20",
         "<2.24"
     ],
-    "products.linguaplone": [
+    "products-linguaplone": [
         "<4.0"
     ],
-    "products.passwordresettool": [
+    "products-passwordresettool": [
         "<2.0.10",
         "<2.0.6"
     ],
-    "products.ploneformgen": [
+    "products-ploneformgen": [
         "<1.7.19",
+        "<1.8.1",
         ">=1.8.0.alpha1,<1.8.1"
     ],
-    "products.plonepas": [
+    "products-plonepas": [
+        "<3.9",
+        "<4.0.6",
         "<5.0.5",
         "<6.0.0",
         ">=3.2.0,<3.2.2",
         ">=3.3,<3.9"
     ],
-    "products.pluggableauthservice": [
+    "products-pluggableauthservice": [
         "<2.6.0",
         "<2.6.1",
         "<2.6.2",
         "<2.6.3"
     ],
-    "products.poi": [
+    "products-poi": [
         "<2.2.3"
+    ],
+    "products-zopetree": [
+        "<1.3"
     ],
     "project-manager": [
         "<0.2.0",
@@ -5303,7 +5337,7 @@
     "projen": [
         "<0.3.1"
     ],
-    "proxy.py": [
+    "proxy-py": [
         "<2.3.1"
     ],
     "psd-tools": [
@@ -5428,6 +5462,9 @@
     ],
     "pyanchor": [
         "<0.5.1"
+    ],
+    "pyanxdns": [
+        "<0.2.5"
     ],
     "pyanyapi": [
         "<0.6.1"
@@ -5608,6 +5645,9 @@
     ],
     "pylsr": [
         "<2021"
+    ],
+    "pymafka": [
+        ">0"
     ],
     "pymemcache": [
         "<1.3.6"
@@ -6221,9 +6261,6 @@
     "qi-jabberhelpdesk": [
         "<0.30"
     ],
-    "qi.jabberhelpdesk": [
-        "<0.30"
-    ],
     "qlib": [
         ">=0.0.0"
     ],
@@ -6239,9 +6276,6 @@
         "<3.1.13"
     ],
     "quintagroup-seoptimizer": [
-        "<3.0.4"
-    ],
-    "quintagroup.seoptimizer": [
         "<3.0.4"
     ],
     "quokka": [
@@ -6267,7 +6301,10 @@
         "<1.7.0",
         "<1.8.0",
         "<1.8.1",
-        "<1.8.2"
+        "<1.8.2",
+        "<2.4.0",
+        "<2.5.0",
+        ">=1.14.0,<2.3.1"
     ],
     "radicale": [
         "<1.1.2"
@@ -6399,11 +6436,11 @@
         "<=3.5.26",
         ">=0"
     ],
-    "repoze.who": [
+    "repoze-who": [
         "<2.0a4",
         "<2.0b1"
     ],
-    "request.request": [
+    "request-request": [
         "<0",
         ">0"
     ],
@@ -6876,7 +6913,8 @@
         "<0.11.0"
     ],
     "smqtk-detection": [
-        "<0.17.0"
+        "<0.17.0",
+        "<0.19.0"
     ],
     "smtpdfix": [
         "<0.2.9"
@@ -6952,6 +6990,9 @@
     ],
     "sphinx-wagtail-theme": [
         "<4.3.0"
+    ],
+    "spid-cie-oidc": [
+        "<0.7.1"
     ],
     "spinetoolbox": [
         "<0.6.0"
@@ -7037,13 +7078,16 @@
     "starkbank-ecdsa": [
         "<2.0.1"
     ],
+    "starknet.py": [
+        "<0.3.1alpha"
+    ],
     "staty": [
         "<1.2.3"
     ],
     "stegano": [
         "<0.8.6"
     ],
-    "stomp.py": [
+    "stomp-py": [
         "<4.1.22"
     ],
     "storey": [
@@ -7068,11 +7112,11 @@
     "streamsx-kafka": [
         "<1.5.1"
     ],
+    "streamsx-messagehub": [
+        "<1.5.1"
+    ],
     "streamsx-objectstorage": [
         "<1.7.0"
-    ],
-    "streamsx.messagehub": [
-        "<1.5.1"
     ],
     "stupidb": [
         "<6.1.0",
@@ -7217,6 +7261,9 @@
     "telemeter": [
         "<3.0.4"
     ],
+    "telepay": [
+        "<1.0.0"
+    ],
     "teleserver": [
         "<2.2.0"
     ],
@@ -7313,6 +7360,9 @@
     "tensorflow-estimator": [
         "<2.9.0"
     ],
+    "tensorflow-federated": [
+        "<0.25.0"
+    ],
     "tensorhive": [
         "<0.3.1",
         "<0.3.5"
@@ -7364,6 +7414,9 @@
     ],
     "thefuck": [
         "<3.31"
+    ],
+    "thera-py": [
+        "<0.3.5"
     ],
     "thinc": [
         "<8.0.4"
@@ -7524,6 +7577,7 @@
         "<13.1.4",
         "<13.1.9",
         "<13.2.0",
+        "<13.3.0",
         "<3.12.3",
         "<3.3.5",
         "<3.5.2",
@@ -7593,6 +7647,9 @@
     "ujson": [
         "<=5.1.0"
     ],
+    "unbabel-comet": [
+        "<1.1.0"
+    ],
     "unicef-locations": [
         "<=3.1"
     ],
@@ -7660,6 +7717,10 @@
         "<0.4.9",
         "<0.5.0"
     ],
+    "vhcalc": [
+        "<0.2.4",
+        "<0.2.5"
+    ],
     "vineyard": [
         "<0.1.2"
     ],
@@ -7695,9 +7756,6 @@
     "vnccollab-theme": [
         "<1.5.2"
     ],
-    "vnccollab.theme": [
-        "<1.5.2"
-    ],
     "vorta": [
         "<0.6.21"
     ],
@@ -7712,7 +7770,8 @@
     ],
     "vyper": [
         "<0.3.0",
-        "<0.3.2"
+        "<0.3.2",
+        "<0.3.4"
     ],
     "wafer": [
         "<0.11.0"
@@ -7745,10 +7804,12 @@
         "<1.4.1",
         "<2.1.1",
         "<=1.3.1",
-        "==1.4.2"
+        "==1.4.2",
+        ">=2.1.0,<2.1.2"
     ],
     "wandb": [
         "<0.12.12",
+        "<0.12.18",
         "<0.8.0",
         "<0.8.2"
     ],
@@ -7770,10 +7831,6 @@
         "<0.36",
         "<0.39"
     ],
-    "web.py": [
-        "<0.21",
-        "<0.39"
-    ],
     "web3": [
         "<4.7.0"
     ],
@@ -7786,6 +7843,7 @@
         "<0.0.10"
     ],
     "webchanges": [
+        "<3.10.2",
         "<3.7.0"
     ],
     "webcomix": [
@@ -7874,6 +7932,9 @@
     ],
     "wtforms": [
         "<3.0.0a1"
+    ],
+    "xaitk-saliency": [
+        "<0.5.0"
     ],
     "xdg": [
         "<0.26",
@@ -7975,14 +8036,20 @@
     "yubikey-manager": [
         "<0.4.6"
     ],
-    "z3c.form": [
+    "z3c-form": [
         "<2.4.2"
+    ],
+    "zanshincli": [
+        "<1.2.7"
     ],
     "zanshinsdk": [
         "<1.2.5"
     ],
     "zeep": [
         "<0.4.0"
+    ],
+    "zendesk-django-auth": [
+        "<0.2.0"
     ],
     "zhmc-ansible-modules": [
         "<0.6.0"
@@ -8032,7 +8099,7 @@
         ">=5.0a1,<5.2",
         ">=5.0a1,<5.5.1"
     ],
-    "zope.html": [
+    "zope-html": [
         "<1.2"
     ],
     "zope2": [
