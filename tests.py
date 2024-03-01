@@ -12,14 +12,13 @@ def generatePackageSpecifiers():
         database = json.loads(f.read())
     for pkg, all_specs in database.items():
         for spec in all_specs:
-            if pkg == '$meta':
+            if pkg == "$meta":
                 continue
             else:
                 yield pkg, spec
 
 
 class TestData(unittest.TestCase):
-
     @parameterized.expand(generatePackageSpecifiers)
     def test_using_valid_specifier_sets(self, pkg, spec):
         message = f"Bad specifier for {pkg}: {spec!r}"
@@ -35,5 +34,5 @@ class TestData(unittest.TestCase):
         self.assertTrue(len(INSECURE_FULL) > 0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
