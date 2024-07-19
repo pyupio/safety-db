@@ -7,7 +7,7 @@ here = path.abspath(path.dirname(__file__))
 
 
 # Get current version
-with open(path.join(here, 'data', '__init__.py')) as fp:
+with open(path.join(here, "data", "__init__.py")) as fp:
     main_package = fp.read()
 version_re = r"^__version__\s*=\s*['\"]([^'\"]*)['\"]"
 version_match = re.search(version_re, main_package, re.M)
@@ -17,17 +17,17 @@ version = version_match.group(1)
 
 
 # Get the long description from the README file
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 
 tests_require = [
-    'packaging',
-    'parameterized',
+    "packaging",
+    "parameterized",
 ]
 
 setup(
-    name='safety-db',
+    name="safety-db",
     version=version,
     description="A curated database of insecure Python packages",
     long_description=long_description,
@@ -43,14 +43,14 @@ setup(
         "Development Status :: 5 - Production/Stable",
     ],
     keywords="security",
-    author='Jannis Gebauer',
-    author_email='support@pyup.io',
-    url='https://github.com/pyupio/safety-db/',
+    author="Jannis Gebauer",
+    author_email="support@pyup.io",
+    url="https://github.com/pyupio/safety-db/",
     package_dir={
-        'safety_db': 'data',
+        "safety_db": "data",
     },
-    packages=['safety_db'],
-    license='Attribution-NonCommercial-ShareAlike 4.0 International',
+    packages=["safety_db"],
+    license="Attribution-NonCommercial-ShareAlike 4.0 International",
     install_requires=[],
     tests_require=tests_require,
     include_package_data=True,
