@@ -2,7 +2,7 @@
     "$meta": {
         "advisory": "PyUp.io metadata",
         "base_domain": "https://pyup.io",
-        "timestamp": 1780293636
+        "timestamp": 1782885656
     },
     "10cent10": [
         ">=0"
@@ -9414,7 +9414,6 @@
         "<2.95.2",
         "<2.95.3",
         "<2.95.6",
-        "<3.13.0",
         "<3.133.0",
         "<3.142.0",
         "<3.144.0",
@@ -19529,9 +19528,6 @@
     ],
     "typesafe-conductr-cli": [
         "<0.58"
-    ],
-    "typesense": [
-        "<0.13.0"
     ],
     "typestring": [
         ">0"
