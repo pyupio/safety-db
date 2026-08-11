@@ -46,3 +46,17 @@ Check out the `data` directory:
 - [insecure_full.json](https://github.com/pyupio/safety-db/blob/master/data/insecure_full.json) additionally contains the CVE description and URLs, or the relevant part of the changelog.
 
 The database is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). This allows you to use the data in any non commercial project as long as you link back to this repo. If you need a license for a commercial project, please contact support@pyup.io.
+
+## 📌 About this project
+
+This project provides a database of known security vulnerabilities in Python packages. It is useful for developers who want to identify and avoid insecure dependencies in their applications.
+
+## 🚀 How it can be used
+
+- Check for known vulnerabilities in dependencies  
+- Improve application security  
+- Support secure software development practices  
+
+## 🔒 Importance in Cybersecurity
+
+Using vulnerable libraries can expose systems to attacks. This database helps developers detect and prevent security risks early in the development process.
