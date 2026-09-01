@@ -2,7 +2,7 @@
     "$meta": {
         "advisory": "PyUp.io metadata",
         "base_domain": "https://pyup.io",
-        "timestamp": 1785564069
+        "timestamp": 1788242473
     },
     "10cent10": [
         ">=0"
